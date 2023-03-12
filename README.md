@@ -4,7 +4,7 @@ A set of easy-to-use and customizable components that follow the Material Design
 
 Briding the gap between the figma community file and React.ts with 1:1 parity.
 
-Here is the current progress of the project:
+# Progress
 
 | Component | Finished | Link |
 |-----------|----------|------|
