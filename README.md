@@ -33,8 +33,12 @@ material design 3 components for vite react ts
 | Top app bar         | FALSE    |                                                                                                                 |
 
 # Resources
-https://m3.material.io/
-https://materialpalettes.com/
-https://www.figma.com/community/file/1035203688168086460
-https://www.figma.com/file/new/Material-Symbols?node-id=0%3A1&t=RzoSzcWGopbfCZRs-0
-https://www.figma.com/community/file/1035203688168086460
+1. https://m3.material.io/
+2. https://materialpalettes.com/
+3. https://www.figma.com/community/file/1035203688168086460
+4. https://www.figma.com/file/new/Material-Symbols?node-id=0%3A1&t=RzoSzcWGopbfCZRs-0
+5. https://www.figma.com/community/file/1035203688168086460
+
+# Author
+1. Joaquin Telleria
+2. www.highnet.xyz
