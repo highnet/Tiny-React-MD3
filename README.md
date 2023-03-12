@@ -37,7 +37,6 @@ reusable material design 3 components for react.ts
 2. https://materialpalettes.com/
 3. https://www.figma.com/community/file/1035203688168086460
 4. https://www.figma.com/file/new/Material-Symbols?node-id=0%3A1&t=RzoSzcWGopbfCZRs-0
-5. https://www.figma.com/community/file/1035203688168086460
 
 # Author
 1. Joaquin Telleria www.highnet.xyz
