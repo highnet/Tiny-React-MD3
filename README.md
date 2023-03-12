@@ -1,5 +1,5 @@
-#👋 X-Small React-MD3
-Welcome to my project, where I create lightweight reusable Material Design 3 components for React.ts.
+# X-Small React-MD3
+👋 Welcome to my project, where I create lightweight reusable Material Design 3 components for React.ts.
 
 Material Design 3 is the latest design system from Google, which aims to create a unified and consistent user experience across different platforms and devices. It introduces new concepts such as dark theme, adaptive layout, and dynamic color.
 
