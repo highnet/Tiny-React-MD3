@@ -13,7 +13,9 @@ function App() {
   
   return (
     <div className="App">
-      <Button onClick={handleClick}>Click Me</Button>
+      <Button configuration="filled" onClick={handleClick}>Click Me</Button>
+      <Button configuration="outlined" onClick={handleClick}>Click Me</Button>
+
       <p>Counter: {count}</p>
     </div>
   )

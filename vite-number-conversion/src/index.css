@@ -15,20 +15,37 @@ h1 {
   line-height: 1.1;
 }
 
-button {
-  color: white;
+.btn {
   border-radius: 8px;
-  border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
   transition: background-color 0.25s;
 }
 
-button:hover {
-  background-color: #646cff;
+.btn-filled {
+  background-color: black;
+  color: white;
 }
+
+.btn-filled:hover {
+  background-color: purple;
+}
+
+.btn-outlined {
+  background-color: white;
+  color: black;
+}
+
+.btn-outlined:hover {
+  background-color: red;
+}
+
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
 
