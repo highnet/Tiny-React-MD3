@@ -1,8 +1,6 @@
 # X-Small React-MD3
 👋 Welcome to my project, where I create lightweight reusable Material Design 3 components for React.ts.
 
-Material Design 3 is the latest design system from Google, which aims to create a unified and consistent user experience across different platforms and devices. It introduces new concepts such as dark theme, adaptive layout, and dynamic color.
-
 This project is inspired by the official Material Design 3 guidelines and the Figma community file. I use materialpalettes.com to generate beautiful color schemes for my components.
 
 The goal of this project is to provide a set of easy-to-use and customizable components that follow the Material Design 3 principles and aesthetics. You can use these components to create stunning and modern web applications with React.ts.
