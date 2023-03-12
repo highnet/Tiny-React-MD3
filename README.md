@@ -1,9 +1,8 @@
 # Tiny React-MD3
-👋 Welcome to my project, where I create lightweight reusable Material Design 3 components for React.ts.
 
-This project is inspired by the official Material Design 3 guidelines and the Figma community file. 
+A set of easy-to-use and customizable components that follow the Material Design 3 principles and aesthetics. You can use these components to create stunning and modern web applications with React.ts.
 
-The goal of this project is to provide a set of easy-to-use and customizable components that follow the Material Design 3 principles and aesthetics. You can use these components to create stunning and modern web applications with React.ts.
+Briding the gap between the figma community file and React.ts with 1:1 parity.
 
 Here is the current progress of the project:
 
