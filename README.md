@@ -3,32 +3,34 @@
 material design 3 components for vite react ts
 
 # Progress
-Badges
-Bottom app bar
-Bottom sheets
-Buttons
-Cards
-Checkbox
-Chips
-Date Pickers
-Dialogs
-Dividers
-Lists
-Menus
-Navigation bar
-Navigation drawer
-Navigation rail
-Progress indicators
-Radio button
-Search
-Side sheets
-Sliders
-Snackbar
-Switch
-Tabs
-Text fields
-Time pickers
-Top app bar
+| Component           | Finished | Link                                                                                                            |
+|---------------------|----------|-----------------------------------------------------------------------------------------------------------------|
+| Badges              | FALSE    |                                                                                                                 |
+| Bottom app bar      | FALSE    |                                                                                                                 |
+| Bottom sheets       | FALSE    |                                                                                                                 |
+| Buttons             | FALSE    | https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Button.tsx |
+| Cards               | FALSE    |                                                                                                                 |
+| Checkbox            | FALSE    |                                                                                                                 |
+| Chips               | FALSE    |                                                                                                                 |
+| Date Pickers        | FALSE    |                                                                                                                 |
+| Dialogs             | FALSE    |                                                                                                                 |
+| Dividers            | FALSE    |                                                                                                                 |
+| Lists               | FALSE    |                                                                                                                 |
+| Menus               | FALSE    |                                                                                                                 |
+| Navigation bar      | FALSE    |                                                                                                                 |
+| Navigation drawer   | FALSE    |                                                                                                                 |
+| Navigation rail     | FALSE    |                                                                                                                 |
+| Progress indicators | FALSE    |                                                                                                                 |
+| Radio button        | FALSE    |                                                                                                                 |
+| Search              | FALSE    |                                                                                                                 |
+| Side sheets         | FALSE    |                                                                                                                 |
+| Sliders             | FALSE    |                                                                                                                 |
+| Snackbar            | FALSE    |                                                                                                                 |
+| Switch              | FALSE    |                                                                                                                 |
+| Tabs                | FALSE    |                                                                                                                 |
+| Text fields         | FALSE    |                                                                                                                 |
+| Time pickers        | FALSE    |                                                                                                                 |
+| Top app bar         | FALSE    |                                                                                                                 |
 
 # Resources
 https://m3.material.io/
