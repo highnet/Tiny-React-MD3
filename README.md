@@ -1,4 +1,4 @@
-# X-Small React-MD3
+# Tiny React-MD3
 👋 Welcome to my project, where I create lightweight reusable Material Design 3 components for React.ts.
 
 This project is inspired by the official Material Design 3 guidelines and the Figma community file. I use materialpalettes.com to generate beautiful color schemes for my components.
