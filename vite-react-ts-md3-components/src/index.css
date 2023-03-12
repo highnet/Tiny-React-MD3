@@ -1,4 +1,8 @@
+/* ROOT */
+
 :root {}
+
+/* BODY */
 
 body {
   margin: 0;
@@ -6,13 +10,18 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  place-content: center;
 }
+
+/* TYPOGRAPHY */
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
 
+
+/* BUTTONS */
 .btn {
   border-radius: 8px;
   padding: 0.6em 1.2em;
@@ -42,7 +51,6 @@ h1 {
 .btn-filled:disabled {}
 
 
-
 .btn-outlined {
   background-color: white;
   color: #6750A4;
@@ -52,8 +60,11 @@ h1 {
   background-color: #F3F1F8;
 }
 
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+/* ICONS */
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
 }
