@@ -1,6 +1,6 @@
 # Vite + React + TS + MD3 = 😎
 
-material design 3 components for vite react ts
+reusable material design 3 components for vite react ts
 
 # Progress
 | Component           | Finished | Link                                                                                                            |
