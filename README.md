@@ -8,7 +8,7 @@ material design 3 components for vite react ts
 | Badges              | FALSE    |                                                                                                                 |
 | Bottom app bar      | FALSE    |                                                                                                                 |
 | Bottom sheets       | FALSE    |                                                                                                                 |
-| Buttons             | FALSE    | https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Button.tsx |
+| Buttons             | In Progress    | [Button.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Button.tsx) |
 | Cards               | FALSE    |                                                                                                                 |
 | Checkbox            | FALSE    |                                                                                                                 |
 | Chips               | FALSE    |                                                                                                                 |
