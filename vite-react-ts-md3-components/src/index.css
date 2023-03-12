@@ -1,6 +1,4 @@
-:root {
-
-}
+:root {}
 
 body {
   margin: 0;
@@ -25,21 +23,33 @@ h1 {
 }
 
 .btn-filled {
-  background-color: black;
+  background-color: #6750A4;
   color: white;
 }
 
 .btn-filled:hover {
-  background-color: purple;
+  background-color: #735EAB;
 }
+
+.btn-filled:enabled {}
+
+.btn-filled:disabled {}
+
+.btn-filled:focus {}
+
+.btn-filled:active {}
+
+.btn-filled:disabled {}
+
+
 
 .btn-outlined {
   background-color: white;
-  color: black;
+  color: #6750A4;
 }
 
 .btn-outlined:hover {
-  background-color: red;
+  background-color: #F3F1F8;
 }
 
 
@@ -47,5 +57,3 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
-

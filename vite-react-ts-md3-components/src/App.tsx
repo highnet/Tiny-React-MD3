@@ -10,7 +10,7 @@ function App() {
     setCount(count + 1); // This line calls the state setter function with the new counter value
 
   };
-  
+
   return (
     <div className="App">
       <Button configuration="filled" onClick={handleClick}>Click Me</Button>
