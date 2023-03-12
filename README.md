@@ -40,5 +40,4 @@ material design 3 components for vite react ts
 5. https://www.figma.com/community/file/1035203688168086460
 
 # Author
-1. Joaquin Telleria
-2. www.highnet.xyz
+1. Joaquin Telleria www.highnet.xyz
