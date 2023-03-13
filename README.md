@@ -53,6 +53,7 @@ I hope you find this project useful and interesting. If you have any feedback, s
 * https://www.figma.com/file/new/Material-Symbols?node-id=0%3A1&t=RzoSzcWGopbfCZRs-0
 * https://fonts.google.com/icons
 * https://www.figma.com/community/plugin/1034969338659738588
+* https://developer.okta.com/blog/2022/03/14/react-vite-number-converter
 
 # Author: 
 Joaquin Telleria [www.highnet.xyz](https://www.highnet.xyz)
