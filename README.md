@@ -21,6 +21,7 @@ A set of easy-to-use and customizable components that follow the Material Design
 | Date Pickers | No | |
 | Dialogs | No | |
 | Dividers | No | |
+| Elevation | Yes | |
 | Lists | No | |
 | Menus | No | |
 | Navigation bar | No | |
