@@ -6,12 +6,12 @@
 
 [Figma Material Design 3 Kit](https://www.figma.com/community/file/1035203688168086460) 🤝 [React.ts](https://developer.okta.com/blog/2022/03/14/react-vite-number-converter) = [Tiny React MD3](https://github.com/highnet/vite-react-ts-md3-components/)
 
-# How to use?
+## How to use?
 [Starting the Project](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/readme.md)
 
 [Documentation](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/readme.md)
 
-# Progress
+## Progress
 | Component | Progress | Link |
 |-----------|----------|------|
 | Badges | No | |
@@ -46,7 +46,7 @@
 
 
 
-# Resources
+## Resources
 * https://m3.material.io/
 * https://materialpalettes.com/
 * https://www.figma.com/community/file/1035203688168086460
@@ -60,4 +60,6 @@
 # Author: 
 * Joaquin Telleria [www.highnet.xyz](https://www.highnet.xyz)
 
+## Feedback
+If you have any feedback, please reach out to me at joaquintelleria@gmail.com
 I hope you find this project useful and interesting. If you have any feedback, suggestions or questions, please feel free to contact me.
