@@ -1,4 +1,4 @@
-# Tiny MD-3 Documentation
+# Tiny React MD-3 Documentation
 
 # Icons
 Example Usage: [icon.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/icon.tsx)
