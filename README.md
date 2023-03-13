@@ -4,6 +4,9 @@ A set of easy-to-use and customizable components that follow the Material Design
 
 [Figma Material Design 3 Kit](https://www.figma.com/community/file/1035203688168086460) 🤝 [React.ts](https://developer.okta.com/blog/2022/03/14/react-vite-number-converter)
 
+
+# How to use?
+[Documentation](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/readme.md)
 # Progress
 
 | Component | Finished | Link |
@@ -11,7 +14,7 @@ A set of easy-to-use and customizable components that follow the Material Design
 | Badges | No | |
 | Bottom app bar | No | |
 | Bottom sheets | No | |
-| Buttons | In Progress | [Button.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Button.tsx) |
+| Buttons | In Progress |[Button.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Button.tsx) |
 | Cards | No | |
 | Checkbox | No | |
 | Chips | No | |
