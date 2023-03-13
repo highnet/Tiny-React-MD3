@@ -6,7 +6,7 @@ A set of easy-to-use and customizable components that follow the Material Design
 
 
 # How to use?
-[Documentation] (https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/readme.md)
+[Documentation](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/readme.md)
 # Progress
 
 | Component | Finished | Link |
