@@ -1,5 +1,10 @@
 # Tiny MD-3 Documentation
 
+# Icons
+Example Usage: [icon.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/icons.tsx)
+
+Use icons to symbolize common actions, files, devices, and directories.
+
 # Typography
 
 Example Usage: [typography.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/typography.tsx)
