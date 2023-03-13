@@ -43,7 +43,7 @@ The possible different options of <code>{level}</code> are the following:
 4. <code>4</code>
 5. <code>5</code>
 
-#: 🕹️ Buttons
+# 🕹️ Buttons
 Example Usage: [button.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/button.tsx)
 
 Use buttons to help people take actions, such as sending an email, sharing a document, or liking a comment.
