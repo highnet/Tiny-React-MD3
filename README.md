@@ -47,10 +47,12 @@
 I hope you find this project useful and interesting. If you have any feedback, suggestions or questions, please feel free to contact me.
 
 # Resources
-1. https://m3.material.io/
-2. https://materialpalettes.com/
-3. https://www.figma.com/community/file/1035203688168086460
-4. https://www.figma.com/file/new/Material-Symbols?node-id=0%3A1&t=RzoSzcWGopbfCZRs-0
+* https://m3.material.io/
+* https://materialpalettes.com/
+* https://www.figma.com/community/file/1035203688168086460
+* https://www.figma.com/file/new/Material-Symbols?node-id=0%3A1&t=RzoSzcWGopbfCZRs-0
+* https://fonts.google.com/icons
+* https://www.figma.com/community/plugin/1034969338659738588
 
 # Author: 
 Joaquin Telleria [www.highnet.xyz](https://www.highnet.xyz)
