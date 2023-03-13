@@ -1,4 +1,4 @@
-# Tiny React-MD3
+# Tiny React MD3
 
 A set of easy-to-use and customizable components that follow the Material Design 3 principles and aesthetics. You can use these components to create stunning and modern web applications with React.ts.
 
