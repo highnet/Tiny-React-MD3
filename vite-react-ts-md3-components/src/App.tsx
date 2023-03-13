@@ -17,7 +17,7 @@ function App() {
       
         <div className="text text-title text-title-small">Filled Buttons</div>
 
-        <div className="text text-label text-label-small">Active</div>
+        <div className="text text-label text-label-small">No Icon</div>
 
         <Button
           configuration="filled"
@@ -26,7 +26,7 @@ function App() {
         >
         <div className="text text-label text-label-large">Click Me</div>
         </Button>
-        <div className="text text-label text-label-small">Inactive</div>
+        <div className="text text-label text-label-small">No Icon (inactive) </div>
 
         <Button
           configuration="filled"
