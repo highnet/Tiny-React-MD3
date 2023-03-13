@@ -12,38 +12,32 @@ function App() {
 
   return (
     <div className="App">
-      <Button
-        configuration="filled"
-        icon={false}
-        iconName={undefined}
-        onClick={incrementCounter}
-      >
-       <div className="text text-label text-label-large"> Click Me </div>
-      </Button>
-      <Button
-        configuration="filled"
-        icon={true}
-        iconName={"search"}
-        onClick={incrementCounter}
-      >
-       <div className="text text-label text-label-large"> Click Me </div>
-      </Button>
-      <Button
-        configuration="outlined"
-        icon={false}
-        iconName={undefined}
-        onClick={incrementCounter}
-      >
-       <div className="text text-label text-label-large"> Click Me </div>
-      </Button>
-      <Button
-        configuration="outlined"
-        icon={true}
-        iconName={"search"}
-        onClick={incrementCounter}
-      >
-       <div className="text text-label text-label-large"> Click Me </div>
-      </Button>
+
+      <div style={{display:"flex", flexDirection:"column", alignItems:"flex-start", padding:"70px", gap:"40px"}}>
+      
+        <div className="text text-title text-title-small">Filled Buttons</div>
+
+        <div className="text text-label text-label-small">Active</div>
+
+        <Button
+          configuration="filled"
+          disabled={false}
+          onClick={incrementCounter}
+        >
+        <div className="text text-label text-label-large">Click Me</div>
+        </Button>
+        <div className="text text-label text-label-small">Inactive</div>
+
+        <Button
+          configuration="filled"
+          disabled={true}
+          onClick={incrementCounter}
+        >
+        <div className="text text-label text-label-large">Click Me</div>
+        </Button>
+        </div>
+
+
       <p className="text text-display text-display-large">Counter: {count}</p>
 
 

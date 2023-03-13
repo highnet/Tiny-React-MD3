@@ -5,6 +5,8 @@
   /* COLOR */
   --color-system-light-primary: #6750A4;
   --color-system-light-primary-hover: #735EAB;
+  --color-system-light-primary-focus: #7965AF;
+  --color-system-light-primary-press: #7965AF;
   --color-system-light-background: #FFFBFE;
   --color-system-light-background-hover: #F3EDF7;
 
@@ -195,15 +197,22 @@ body {
   box-shadow: var(--surfaces-light-elevation-1);
 }
 
-.btn-filled:enabled {}
+.btn-filled:focus {
+  background-color: var(--color-system-light-primary-focus);
+}
 
-.btn-filled:disabled {}
+.btn-filled:active {
+  background-color: var(--color-system-light-primary-press);
+}
 
-.btn-filled:focus {}
+.btn-filled:disabled {
+  background-color: #E3E0E3;
+  color: #979598;
+}
 
-.btn-filled:active {}
-
-.btn-filled:disabled {}
+.btn-filled:disabled.btn-filled:hover{
+    box-shadow: none;
+}
 
 
 .btn-outlined {
@@ -214,6 +223,8 @@ body {
 .btn-outlined:hover {
   background-color: #F3F1F8;
 }
+
+
 
 /* ICONS */
 .material-symbols-outlined {
