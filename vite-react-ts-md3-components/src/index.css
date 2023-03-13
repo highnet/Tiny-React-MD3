@@ -15,9 +15,119 @@ body {
 
 /* TYPOGRAPHY */
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.text{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+
+}
+
+.text-display{
+  font-weight: 400;
+}
+
+.text-display-large{
+  font-size: 57px;
+  line-height: 64px;
+}
+
+.text-display-medium{
+  font-size: 45px;
+  line-height: 52px;
+}
+
+.text-display-small{
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.text-headline{
+  font-weight: 400px;
+}
+
+.text-headline-large{
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.text-headline-medium{
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.text-headline-small{
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.text-title{
+
+}
+
+.text-title-large{
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.text-title-medium{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+
+}
+
+.text-title-small{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+}
+
+.text-label{
+
+}
+
+.text-label-large{
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.text-label-medium{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+
+.text-label-small{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+}
+
+.text-body{
+  font-weight: 400;
+}
+
+.text-body-large{
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+.text-body-medium{
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+
+.text-body-small{
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
 }
 
 
@@ -69,37 +179,3 @@ h1 {
     'opsz' 48
 }
 
-.text{
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  margin-top: 24px;
-  margin-left: 24px;
-}
-
-.text-display-large{
-  font-weight: 400;
-  font-size: 57px;
-  line-height: 64px;
-}
-
-.text-display-medium{
-  font-weight: 400;
-  font-size: 45px;
-  line-height: 52px;
-}
-
-.text-headline{
-
-}
-
-.text-title{
-
-}
-
-.text-label{
-
-}
-
-.text-body{
-
-}
