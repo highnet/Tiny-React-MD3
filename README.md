@@ -37,7 +37,7 @@ A set of easy-to-use and customizable components that follow the Material Design
 | Text fields | No | |
 | Time pickers | No | |
 | Top app bar | No | |
-| Typography | Yes | |
+| Typography | Yes |[typography.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/typography.tsx) |
 
 I hope you find this project useful and interesting. If you have any feedback, suggestions or questions, please feel free to contact me.
 
