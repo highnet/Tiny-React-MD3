@@ -51,7 +51,7 @@ You can pass the following properties to a button:
   
 Create button components like this:
 
-<code>`<Button onClick={incrementCounter} configuration={{configuration}} icon={true} iconName={"search"} disabled={false}> <div className="text text-label text-label-large">Click Me</div> </Button>`</code>
+<code>`<Button onClick={undefined} configuration={{configuration}} icon={true} iconName={"search"} disabled={false}> <div className="text text-label text-label-large">Click Me</div> </Button>`</code>
   
   
 The possible different options of <code>{configuration}</code> are the following: 
