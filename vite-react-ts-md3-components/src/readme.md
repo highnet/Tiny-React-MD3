@@ -23,7 +23,7 @@ and the possible different of <code>{size}</code> are the following:
 # Elevation
 Example Usage: [elevation.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/elevation.tsx)
 
-Use elevation to depict a third dimension of your content. There are 5 levels of elevation.
+Use elevation to depict a third dimension of your content.
 
 Elevate any component by adding the class name like this : <code>`<div className="elevation-light-{level}"></div>`</code>
 
