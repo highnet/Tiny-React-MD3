@@ -19,8 +19,8 @@ possible different options of <code>{type}</code> are the following:
 5. <code>text-body</code>
 
 and possible different of <code>{size}</code> are the following:
-1.<code>large</code>
-2.<code>medium</code>
-3.<code>small</code>
+1. <code>large</code>
+2. <code>medium</code>
+3. <code>small</code>
 
 # Buttons
