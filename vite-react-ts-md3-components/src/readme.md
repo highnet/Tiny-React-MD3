@@ -23,7 +23,7 @@ and the possible different of <code>{size}</code> are the following:
 # Elevation
 Example Usage: [elevation.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/elevation.tsx)
 
-Use elevation to depict a third dimension of your content. There are 5 levels of elevation.
+Use elevation to depict a third dimension of your content.
 
 Elevate any component by adding the class name like this : <code>`<div className="elevation-light-{level}"></div>`</code>
 
@@ -34,8 +34,8 @@ The possible different options of <code>{level}</code> are the following:
 4. <code>4</code>
 5. <code>5</code>
 
-# Buttons
-Example Usage: [button.tsx]()
+# TODO: Buttons
+Example Usage: [button.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/button.tsx)
 
 Use buttons to help people take actions, such as sending an email, sharing a document, or liking a comment.
 
@@ -51,7 +51,7 @@ You can pass the following properties to a button:
   
 Create button components like this:
 
-<code>`<Button onClick={incrementCounter} configuration={{configuration}} icon={true} iconName={"search"} disabled={false}> <div className="text text-label text-label-large">Click Me</div> </Button>`</code>
+<code>`<Button onClick={undefined} configuration={{configuration}} icon={true} iconName={"search"} disabled={false}> <div className="text text-label text-label-large">Click Me</div> </Button>`</code>
   
   
 The possible different options of <code>{configuration}</code> are the following: 
