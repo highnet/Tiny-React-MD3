@@ -7,7 +7,7 @@ Use icons to symbolize common actions, files, devices, and directories.
 
 Place icons like this: <code>`<span className="material-symbols-outlined">{name}
       </span>`</code>
- where {name} is the set of all accepted icon names according to [Material Symbols](https://fonts.google.com/icons)
+ where <code>{name}</code> is the set of all accepted icon names according to [Material Symbols](https://fonts.google.com/icons)
 
 # Typography
 
