@@ -22,7 +22,7 @@ A set of easy-to-use and customizable components that follow the Material Design
 | Dialogs | No | |
 | Dividers | No | |
 | Elevation | Yes | [elevation.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/elevation.tsx) |
-| Icons | Yes | [icon.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/icons.tsx) |
+| Icons | Yes | [icon.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/icon.tsx) |
 | Lists | No | |
 | Menus | No | |
 | Navigation bar | No | |
