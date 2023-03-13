@@ -12,12 +12,11 @@ function App() {
 
   return (
     <div className="App">
-
+      {/* BUTTONS */}
       <div style={{display:"flex", flexDirection:"column", alignItems:"flex-start", padding:"70px", gap:"40px"}}>
-            <div className="text text-title text-title-large">Buttons</div>
-
+        
+        <div className="text text-title text-title-large">Buttons</div>
         <div className="text text-title text-title-small">Filled Buttons</div>
-
         <div className="text text-label text-label-small">No Icon</div>
 
         <Button
@@ -41,6 +40,8 @@ function App() {
       </div>
 
     <div style={{display:"flex", flexDirection:"column", alignItems:"flex-start", padding:"70px", gap:"40px"}}>
+      {/* TYPOGRAPHY */}
+
       <div className="text text-title text-title-large">Typography</div>
 
       <div style={{boxSizing:"border-box", display:"flex", flexDirection:"column", alignItems:"flex-start", padding:"24px", gap: "24px", border:"1px solid #79747E", borderRadius:"16px"}}>
@@ -76,6 +77,7 @@ function App() {
     </div>
 
     <div style={{display: "flex", flexDirection:"row", alignItems:"flex-start", padding:"50px 60px", gap:"18px"}}>
+      {/* ELEVATION */}
       <div className="text text-title text-title-large">Elevation</div>
 
       <div className="elevation-light-1" style={{background:"linear-gradient(0deg, rgba(103, 80, 164, 0.05), rgba(103, 80, 164, 0.05))", width:"80px", height:"80px", borderRadius:"16px"}}></div>
@@ -84,6 +86,28 @@ function App() {
       <div className="elevation-light-4" style={{background:"linear-gradient(0deg, rgba(103, 80, 164, 0.12), rgba(103, 80, 164, 0.12))", width:"80px", height:"80px", borderRadius:"16px"}}></div>
       <div className="elevation-light-5" style={{background:"linear-gradient(0deg, rgba(103, 80, 164, 0.14), rgba(103, 80, 164, 0.14))", width:"80px", height:"80px", borderRadius:"16px"}}></div>
     </div>
+
+    <div style={{display: "flex", flexDirection:"row", alignItems:"flex-start", padding:"50px 60px", gap:"18px"}}>
+      {/* ICONS */}
+      <div className="text text-title text-title-large">Icons</div>
+      <span className="material-symbols-outlined">
+            search
+      </span>
+      <span className="material-symbols-outlined">
+            home
+      </span>
+          <span className="material-symbols-outlined">
+            air
+      </span>
+          <span className="material-symbols-outlined">
+            water
+      </span>
+          <span className="material-symbols-outlined">
+            check
+      </span>
+    </div>
+
+
 
     </div>
   )
