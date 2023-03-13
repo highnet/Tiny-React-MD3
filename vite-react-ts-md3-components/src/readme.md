@@ -35,25 +35,27 @@ The possible different options of <code>{level}</code> are the following:
 5. <code>5</code>
 
 # Buttons
-Example Usage: [TODO: button.tsx]()
+Example Usage: [button.tsx]()
 
 Use buttons to help people take actions, such as sending an email, sharing a document, or liking a comment.
 
 You can pass the following properties to a button:
 | Property | Type |  Default | Description |
 | --- | ----------- |  --- | --- |
-| <code>x</code> | <code>x</code> |  <code>x</code> | <code>x</code>| 
-
-1. <code>children?: React.ReactNode;</code> default: <code>undefined</code>
-2. onClick?: (event: MouseEvent<HTMLButtonElement>) => void;
-3. configuration?: string;
-4. icon?: boolean;
-5. iconName?: string;
-6. disabled?: boolean;
+| <code>children</code> | <code>React.ReactNode</code> |  <code>undefined</code> | <code>children components</code>| 
+| <code>onClick</code> | <code>(event: MouseEvent<HTMLButtonElement>) => void</code> |  <code>undefined</code> | <code>on click event</code>| 
+| <code>configuration</code> | <code>string</code> |  <code>"filled"</code> | <code>configuration of the button style</code>| 
+| <code>icon</code> | <code>boolean</code> |  <code>false</code> | <code>flag to indicate if the button has an icon on display</code>| 
+| <code>iconName</code> | <code>string</code> |  <code>"search"</code> | <code>the name of the icon on display</code>| 
+| <code>disabled</code> | <code>boolean</code> |  <code>false</code> | <code>flag to indicate if the button is disabled</code>| 
   
 Create button components like this:
 
-<code>`<Button configuration="filled" disabled={false} onClick={incrementCounter}>
-        Click Me
-        </Button> `
-</code>
+<code>`<Button onClick={incrementCounter} configuration={{configuration}} icon={true} iconName={"search"} disabled={false}> <div className="text text-label text-label-large">Click Me</div> </Button>`</code>
+  
+  
+The possible different options of <code>{configuration}</code> are the following: 
+1. <code>"filled"</code>
+2. <code>"outlined"</code>
+
+ 
