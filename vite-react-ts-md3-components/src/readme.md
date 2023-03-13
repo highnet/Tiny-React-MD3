@@ -25,7 +25,7 @@ Example Usage: [elevation.tsx](https://github.com/highnet/vite-react-ts-md3-comp
 
 Use elevation to depict a third dimension of your content. There are 5 levels of elevation.
 
-Elevate any component by adding the class name: <code>elevation-light-{level}</code> 
+Elevate any component by adding the class name like this : <code>`<div className="elevation-light-{level}"></div>`</code>
 
 The possible different options of <code>{level}</code> are the following: 
 1. <code>1</code>
@@ -39,11 +39,21 @@ Example Usage: [TODO: button.tsx]()
 
 Use buttons to help people take actions, such as sending an email, sharing a document, or liking a comment.
 
+You can pass the following properties to a button:
+| Property | Type |  Default | Description |
+| --- | ----------- |  --- | --- |
+| <code>x</code> | <code>x</code> |  <code>x</code> | <code>x</code>| 
+
+1. <code>children?: React.ReactNode;</code> default: <code>undefined</code>
+2. onClick?: (event: MouseEvent<HTMLButtonElement>) => void;
+3. configuration?: string;
+4. icon?: boolean;
+5. iconName?: string;
+6. disabled?: boolean;
+  
 Create button components like this:
-<code>`         <Button
-          configuration="filled"
-          disabled={false}
-          onClick={incrementCounter}
-        >
-        <div className="text text-label text-label-large">Click Me</div>
-        </Button> `</code>
+
+<code>`<Button configuration="filled" disabled={false} onClick={incrementCounter}>
+        Click Me
+        </Button> `
+</code>
