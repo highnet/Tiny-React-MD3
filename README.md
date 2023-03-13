@@ -6,12 +6,12 @@ A set of easy-to-use and customizable components that follow the Material Design
 
 # Progress
 
-| Component | Finished | Link |
+| Component | Finished | Links |
 |-----------|----------|------|
 | Badges | No | |
 | Bottom app bar | No | |
 | Bottom sheets | No | |
-| Buttons | In Progress | [Button.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Button.tsx) |
+| Buttons | In Progress |[Docs] [Button.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Button.tsx) |
 | Cards | No | |
 | Checkbox | No | |
 | Chips | No | |
