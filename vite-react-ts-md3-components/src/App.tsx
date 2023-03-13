@@ -40,9 +40,6 @@ function App() {
 
       </div>
 
-
-
-
     <div style={{display:"flex", flexDirection:"column", alignItems:"flex-start", padding:"70px", gap:"40px"}}>
       <div className="text text-title text-title-large">Typography</div>
 
