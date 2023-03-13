@@ -1,6 +1,6 @@
 # Tiny React MD3
 
-A set of easy-to-use and customizable components that follow the Material Design 3 principles and aesthetics. You can use these components to create stunning and modern web applications with React.ts.
+A set of easy-to-use and customizable components that follow the Material Design 3 principles and aesthetics. You can use these components to create stunning and modern web applications with React.ts. Quickly transform your design kit prototypes into functioning web applications with ensured parity.
 
 [Figma Material Design 3 Kit](https://www.figma.com/community/file/1035203688168086460) 🤝 [React.ts](https://developer.okta.com/blog/2022/03/14/react-vite-number-converter) = [Tiny React MD3](https://github.com/highnet/vite-react-ts-md3-components/)
 
