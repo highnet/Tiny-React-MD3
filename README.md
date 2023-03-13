@@ -44,7 +44,7 @@
 | Top app bar | No | |
 | Typography | Finished | [typography.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/typography.tsx) |
 
-I hope you find this project useful and interesting. If you have any feedback, suggestions or questions, please feel free to contact me.
+
 
 # Resources
 * https://m3.material.io/
@@ -56,4 +56,5 @@ I hope you find this project useful and interesting. If you have any feedback, s
 * https://developer.okta.com/blog/2022/03/14/react-vite-number-converter
 
 # Author: 
-Joaquin Telleria [www.highnet.xyz](https://www.highnet.xyz)
+* Joaquin Telleria [www.highnet.xyz](https://www.highnet.xyz)
+I hope you find this project useful and interesting. If you have any feedback, suggestions or questions, please feel free to contact me.
