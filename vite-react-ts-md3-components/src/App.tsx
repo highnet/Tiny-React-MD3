@@ -14,7 +14,8 @@ function App() {
     <div className="App">
 
       <div style={{display:"flex", flexDirection:"column", alignItems:"flex-start", padding:"70px", gap:"40px"}}>
-      
+            <div className="text text-title text-title-large">Buttons</div>
+
         <div className="text text-title text-title-small">Filled Buttons</div>
 
         <div className="text text-label text-label-small">No Icon</div>
@@ -35,13 +36,15 @@ function App() {
         >
         <div className="text text-label text-label-large">Click Me</div>
         </Button>
-        </div>
+        <p className="text text-body text-body-large">Counter: {count}</p>
+
+      </div>
 
 
-      <p className="text text-display text-display-large">Counter: {count}</p>
 
 
     <div style={{display:"flex", flexDirection:"column", alignItems:"flex-start", padding:"70px", gap:"40px"}}>
+      <div className="text text-title text-title-large">Typography</div>
 
       <div style={{boxSizing:"border-box", display:"flex", flexDirection:"column", alignItems:"flex-start", padding:"24px", gap: "24px", border:"1px solid #79747E", borderRadius:"16px"}}>
         <div className="text text-display text-display-large">Display Large - Roboto 57/54 . 0</div>
@@ -75,7 +78,9 @@ function App() {
 
     </div>
 
-    <div style={{display: "flex", flexDirection:"row", alignItems:"flex-start", padding:"50px 60px", gap:"36px"}}>
+    <div style={{display: "flex", flexDirection:"row", alignItems:"flex-start", padding:"50px 60px", gap:"18px"}}>
+      <div className="text text-title text-title-large">Elevation</div>
+
       <div className="elevation-light-1" style={{background:"linear-gradient(0deg, rgba(103, 80, 164, 0.05), rgba(103, 80, 164, 0.05))", width:"80px", height:"80px", borderRadius:"16px"}}></div>
       <div className="elevation-light-2" style={{background:"linear-gradient(0deg, rgba(103, 80, 164, 0.08), rgba(103, 80, 164, 0.08))", width:"80px", height:"80px", borderRadius:"16px"}}></div>
       <div className="elevation-light-3" style={{background:"linear-gradient(0deg, rgba(113, 90, 174, 0.11), rgba(113, 90, 174, 0.11))", width:"80px", height:"80px", borderRadius:"16px"}}></div>
