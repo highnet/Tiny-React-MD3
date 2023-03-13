@@ -44,8 +44,14 @@ function App() {
       >
         Click Me
       </Button>
+      <p className="text text-display-large">Counter: {count}</p>
 
-      <p>Counter: {count}</p>
+
+      <div className="text text-display-large">Display Large - Roboto 57/54 . 0</div>
+      <div className="text text-display-medium">Display Medium - Roboto 45/52 .  0  </div>
+      <div className="text text-display-small">Display Small - Roboto 36/44 . 0  </div>
+
+
     </div>
   )
 }
