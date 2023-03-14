@@ -1,10 +1,10 @@
       import Button from "../Button";
 
       <div style={{display:"flex", flexDirection:"column", alignItems:"flex-start", padding:"70px", gap:"40px"}}>
-            <div className="text text-title text-title-large">Buttons</div>
+        {/* BUTTONS */}
 
+        <div className="text text-title text-title-large">Buttons</div>
         <div className="text text-title text-title-small">Filled Buttons</div>
-
         <div className="text text-label text-label-small">No Icon</div>
 
         <Button
