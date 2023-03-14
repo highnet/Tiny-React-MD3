@@ -17,7 +17,7 @@
 | Badges | No | |
 | Bottom app bar | No | |
 | Bottom sheets | No | |
-| Buttons | Under Construction | [Button.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Button.tsx) |
+| Buttons | Under Construction | [button.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/button.tsx) |
 | Cards | No | |
 | Checkbox | No | |
 | Chips | No | |
