@@ -1,18 +1,6 @@
 // Import React and some hooks from React library
-import React, { MouseEvent, useState } from "react";
-
-// Define an interface for the button props
-export interface IButtonProps {
-  disabled?: boolean;
-  children?: React.ReactNode;
-  id?: string;
-  className?: string;
-  onClick?: (event: MouseEvent<HTMLButtonElement>) => void;
-  configuration?: string;
-  icon?: boolean;
-  iconName?: string;
-
-}
+import React, { useState } from "react";
+import { IButtonProps } from "./IButtonProps";
 
 // Define a functional component for the button
 const Button: React.FC<IButtonProps> = ({ disabled, children, id, className, onClick, configuration, icon, iconName }) => {
