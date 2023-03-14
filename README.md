@@ -19,15 +19,15 @@
 | Badges | No | | |
 | Bottom app bar | No | | |
 | Bottom sheets | No | | |
-| Buttons | Under Construction | [button.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/button.tsx) | [Button.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Button.tsx) |
+| Buttons | 🚧 Under Construction | [button.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/button.tsx) | [Button.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Button.tsx) |
 | Cards | No | | |
 | Checkbox | No | | |
 | Chips | No | | |
 | Date Pickers | No | | |
 | Dialogs | No | | |
 | Dividers | No | | |
-| Elevation | Finished | [elevation.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/elevation.tsx) | [index.css](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/index.css) |
-| Icons | Finished | [icon.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/icon.tsx) | [index.css](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/index.css) |
+| Elevation | ✅ Finished | [elevation.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/elevation.tsx) | [index.css](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/index.css) |
+| Icons | ✅ Finished | [icon.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/icon.tsx) | [index.css](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/index.css) |
 | Lists | No | | |
 | Menus | No | | |
 | Navigation bar | No | | |
@@ -44,7 +44,7 @@
 | Text fields | No | | |
 | Time pickers | No | | |
 | Top app bar | No | | |
-| Typography | Finished | [typography.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/typography.tsx) | [index.css](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/index.css) |
+| Typography | ✅ Finished | [typography.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/typography.tsx) | [index.css](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/index.css) |
 
 
 
