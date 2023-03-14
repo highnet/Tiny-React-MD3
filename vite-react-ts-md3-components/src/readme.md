@@ -3,7 +3,7 @@
 # 💟 Icons
 Example Usage: [icon.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/icon.tsx)
 
-Use icons to symbolize common actions, files, devices, and directories.
+<i>Use icons to symbolize common actions, files, devices, and directories.</i>
 
 Place a default icon like this: <code>`<span className="material-symbols-outlined">{name}
       </span>`</code>
@@ -13,7 +13,7 @@ Place a default icon like this: <code>`<span className="material-symbols-outline
 
 Example Usage: [typography.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/typography.tsx)
 
-Use typography to present your design and content as clearly and efficiently as possible.
+<i>Use typography to present your design and content as clearly and efficiently as possible.</i>
 
 Place div text components by combining class names like this: <code>`<div className="text text-{type} text-{type}-{size}">Hello World!</div>`</code>
 
@@ -34,7 +34,7 @@ Example Usage: [elevation.tsx](https://github.com/highnet/vite-react-ts-md3-comp
 
 Use elevation to depict a third dimension of your content.
 
-Elevate any component by adding the class name like this: <code>`<div className="elevation-light-{level}"></div>`</code>
+<i>Elevate any component by adding the class name like this: <code>`<div className="elevation-light-{level}"></div>`</code></i>
 
 The possible different options of <code>{level}</code> are the following: 
 1. <code>1</code>
@@ -46,7 +46,7 @@ The possible different options of <code>{level}</code> are the following:
 # 🕹️ Buttons
 Example Usage: [button.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/button.tsx)
 
-Use buttons to help people take actions, such as sending an email, sharing a document, or liking a comment.
+<i>Use buttons to help people take actions, such as sending an email, sharing a document, or liking a comment.</i>
 
 You may supplement the following optional properties to a button:
 | Property | Type |  Default | Description | Interface |
