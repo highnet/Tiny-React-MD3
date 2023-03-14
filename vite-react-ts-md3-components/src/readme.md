@@ -48,7 +48,7 @@ Example Usage: [button.tsx](https://github.com/highnet/vite-react-ts-md3-compone
 
 Use buttons to help people take actions, such as sending an email, sharing a document, or liking a comment.
 
-You may supplement the following properties to buttons:
+You may supplement the following optional properties to a button:
 | Property | Type |  Default | Description | Interface |
 | -------- | ---- | -------- | ----------- | --------- |
 | <code>disabled</code> | <code>boolean</code> |  <code>false</code> | <code>flag to indicate if the button is disabled</code>| [IComponentProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Component/IComponentProps.tsx) |
