@@ -1,7 +1,6 @@
 # Tiny React MD-3 Documentation
 
-# 💟 Icons
-Example Usage: [icon.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/icon.tsx)
+# 💟 [Icons](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/icon.tsx)
 
 <i>Use icons to symbolize common actions, files, devices, and directories.</i>
 
@@ -9,9 +8,7 @@ Place a default icon like this: <code>`<span className="material-symbols-outline
       </span>`</code>
  where <code>{name}</code> is the set of all accepted icon names according to [Material Symbols](https://fonts.google.com/icons)
 
-# 🔤 Typography
-
-Example Usage: [typography.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/typography.tsx)
+# 🔤 [Typography](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/typography.tsx)
 
 <i>Use typography to present your design and content as clearly and efficiently as possible.</i>
 
@@ -29,8 +26,7 @@ and the possible different of <code>{size}</code> are the following:
 2. <code>medium</code>
 3. <code>small</code>
 
-# 🏔️ Elevation
-Example Usage: [elevation.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/elevation.tsx)
+# 🏔️ [Elevation](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/elevation.tsx)
 
 <i>Use elevation to depict a third dimension of your content.</i>
 
@@ -43,8 +39,7 @@ The possible different options of <code>{level}</code> are the following:
 4. <code>4</code>
 5. <code>5</code>
 
-# 🕹️ Buttons
-Example Usage: [button.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/button.tsx)
+# 🕹️ [Buttons](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/button.tsx)
 
 <i>Use buttons to help people take actions, such as sending an email, sharing a document, or liking a comment.</i>
 
