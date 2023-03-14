@@ -3,36 +3,28 @@ import React, { MouseEvent, useState } from "react";
 
 // Define an interface for the button props
 export interface IButtonProps {
-  // The content of the button
+  disabled?: boolean;
   children?: React.ReactNode;
-  // The function to execute when the button is clicked
+  id?: string;
+  className?: string;
   onClick?: (event: MouseEvent<HTMLButtonElement>) => void;
-  // The configuration of the button style, either "filled" or "outlined"
   configuration?: string;
-  // A flag to indicate if the button has an icon
   icon?: boolean;
-
   iconName?: string;
 
-  disabled?: boolean;
-
-  className?: string;
-  id?: string;
 }
 
 // Define a functional component for the button
-const Button: React.FC<IButtonProps> = ({ children, onClick, configuration, icon, iconName, disabled, className, id }) => {
-  // Use a state hook to store the current configuration of the button
+const Button: React.FC<IButtonProps> = ({ disabled, children, id, className, onClick, configuration, icon, iconName }) => {
+  const [_disabled] = useState(disabled || false);
+  const [_id] = useState(id || undefined);
+  const [_className] = useState(className || "");
   const [_config] = useState(configuration || "filled");
   const [_icon] = useState(icon || false);
   const [_iconName] = useState(iconName || "search");
-  const [_disabled] = useState(disabled || false);
-
-  const [_className] = useState(className || "");
-  const [_id] = useState(id || undefined);
 
   const click = () => {
-    console.log("Clicked", { configuration: _config, icon: _icon, iconName: _iconName, disabled: _disabled, className: _className });
+    console.log("Clicked", { disabled: _disabled, id: _id, className: _className, configuration: _config, icon: _icon, iconName: _iconName });
   }
 
   // Return the JSX element for the button
