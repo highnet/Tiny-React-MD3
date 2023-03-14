@@ -15,25 +15,37 @@ export interface IButtonProps {
   iconName?: string;
 
   disabled?: boolean;
+
+  className?: string;
+  id?: string;
 }
 
 // Define a functional component for the button
-const Button: React.FC<IButtonProps> = ({ children, onClick, configuration, icon, iconName, disabled }) => {
+const Button: React.FC<IButtonProps> = ({ children, onClick, configuration, icon, iconName, disabled, className, id }) => {
   // Use a state hook to store the current configuration of the button
   const [_config] = useState(configuration || "filled");
   const [_icon] = useState(icon || false);
   const [_iconName] = useState(iconName || "search");
   const [_disabled] = useState(disabled || false);
 
+  const [_className] = useState(className || "");
+  const [_id] = useState(id || undefined);
+
+  const click = () => {
+    console.log("Clicked", { configuration: _config, icon: _icon, iconName: _iconName, disabled: _disabled, className: _className });
+  }
+
   // Return the JSX element for the button
   return (
     <button
+      id={_id}
       // Set the class name based on the current configuration
-      className={"btn btn-" + _config + " btn-icon-" + _icon}
+      className={"btn btn-" + _config + " btn-icon-" + _icon + " " + _className}
       disabled={_disabled}
       // Set the onClick handler to execute the prop function
       onClick={(e) => {
         onClick?.(e);
+        click();
       }}
 
     >
