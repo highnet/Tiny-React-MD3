@@ -1,17 +1,21 @@
-# Tiny MD-3 Documentation
+# Tiny React MD-3 Documentation
 
-# Icons
-Example Usage: [icon.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/icons.tsx)
+# 💟 Icons
+Example Usage: [icon.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/icon.tsx)
 
 Use icons to symbolize common actions, files, devices, and directories.
 
-# Typography
+Place icons like this: <code>`<span className="material-symbols-outlined">{name}
+      </span>`</code>
+ where <code>{name}</code> is the set of all accepted icon names according to [Material Symbols](https://fonts.google.com/icons)
+
+# 🔤 Typography
 
 Example Usage: [typography.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/typography.tsx)
 
 Use typography to present your design and content as clearly and efficiently as possible.
 
-Textify div components by combining class names like this: <code>`<div className="text text-{type} text-{type}-{size}">Hello World!</div>`</code>
+Place div text components by combining class names like this: <code>`<div className="text text-{type} text-{type}-{size}">Hello World!</div>`</code>
 
 The possible different options of <code>{type}</code> are the following: 
 1. <code>display</code>
@@ -25,7 +29,7 @@ and the possible different of <code>{size}</code> are the following:
 2. <code>medium</code>
 3. <code>small</code>
 
-# Elevation
+# 🏔️ Elevation
 Example Usage: [elevation.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/elevation.tsx)
 
 Use elevation to depict a third dimension of your content.
@@ -39,12 +43,12 @@ The possible different options of <code>{level}</code> are the following:
 4. <code>4</code>
 5. <code>5</code>
 
-# TODO: Buttons
+# 🕹️ Buttons
 Example Usage: [button.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/frames/button.tsx)
 
 Use buttons to help people take actions, such as sending an email, sharing a document, or liking a comment.
 
-You can pass the following properties to a button:
+You may pass the following properties to a button:
 | Property | Type |  Default | Description |
 | --- | ----------- |  --- | --- |
 | <code>children</code> | <code>React.ReactNode</code> |  <code>undefined</code> | <code>children components</code>| 
@@ -55,12 +59,9 @@ You can pass the following properties to a button:
 | <code>disabled</code> | <code>boolean</code> |  <code>false</code> | <code>flag to indicate if the button is disabled</code>| 
   
 Create button components like this:
-
 <code>`<Button onClick={undefined} configuration={{configuration}} icon={true} iconName={"search"} disabled={false}> <div className="text text-label text-label-large">Click Me</div> </Button>`</code>
   
   
 The possible different options of <code>{configuration}</code> are the following: 
 1. <code>"filled"</code>
 2. <code>"outlined"</code>
-
- 
