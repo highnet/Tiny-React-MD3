@@ -38,7 +38,7 @@
 | 🔍 Search | ❌ No | | |
 | 📑 Side sheets | ❌ No | | |
 | 🎚️ Sliders | ❌ No | | |
-| 🥨 Snackbar | No | | |
+| 🥨 Snackbar | ❌ No | | |
 | 🔦 Switch | ❌ No | | |
 | 📑 Tabs | ❌ No | | |
 | 📜 Text fields | ❌ No | | |
