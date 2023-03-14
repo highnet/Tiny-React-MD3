@@ -7,8 +7,9 @@
   --color-system-light-filled-hover: #735EAB;
   --color-system-light-filled-focus: #7965AF;
   --color-system-light-filled-press: #7965AF;
-  --color-system-light-filled-disable: #E4E4E4;
-  
+  --color-system-light-filled-disable-background: #E4E4E4;
+  --color-system-light-filled-disable-text: #989899;
+
   --color-system-light-outlined: #FFFBFE;
   --color-system-light-outlined-hover: #F3F1F8;
   --color-system-light-outlined-outline: #79747E;
@@ -214,8 +215,8 @@ body {
 }
 
 .btn-filled:disabled {
-  background-color: var(--color-system-light-filled-disable);
-  color: #989899;
+  background-color: var(--color-system-light-filled-disable-background);
+  color: var(--color-system-light-filled-disable-text);
 }
 
 .btn-filled:disabled.btn-filled:hover{
