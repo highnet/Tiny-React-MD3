@@ -5,7 +5,7 @@ Example Usage: [icon.tsx](https://github.com/highnet/vite-react-ts-md3-component
 
 Use icons to symbolize common actions, files, devices, and directories.
 
-Place icons like this: <code>`<span className="material-symbols-outlined">{name}
+Place a default icon like this: <code>`<span className="material-symbols-outlined">{name}
       </span>`</code>
  where <code>{name}</code> is the set of all accepted icon names according to [Material Symbols](https://fonts.google.com/icons)
 
@@ -34,7 +34,7 @@ Example Usage: [elevation.tsx](https://github.com/highnet/vite-react-ts-md3-comp
 
 Use elevation to depict a third dimension of your content.
 
-Elevate any component by adding the class name like this : <code>`<div className="elevation-light-{level}"></div>`</code>
+Elevate any component by adding the class name like this: <code>`<div className="elevation-light-{level}"></div>`</code>
 
 The possible different options of <code>{level}</code> are the following: 
 1. <code>1</code>
@@ -60,9 +60,8 @@ You may supplement the following properties to buttons:
 | <code>icon</code> | <code>boolean</code> |  <code>false</code> | <code>flag to indicate if the button has an icon on display</code>| [IButtonProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Button/IButtonProps.tsx) |
 | <code>iconName</code> | <code>string</code> |  <code>"search"</code> | <code>the name of the icon on display</code>| [IButtonProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Button/IButtonProps.tsx) |
 
-Create button components like this:
-<code>`<Button onClick={undefined} configuration={{configuration}} icon={true} iconName={"search"} disabled={false}> <div className="text text-label text-label-large">Click Me</div> </Button>`</code>
-  
+Create a default button componens like this:
+<code>`<Button onClick={undefined} configuration={{configuration}} > <div className="text text-label text-label-large">Click Me</div> </Button>`</code>
   
 The possible different options of <code>{configuration}</code> are the following: 
 1. <code>"filled"</code>
