@@ -29,7 +29,7 @@ const Button: React.FC<IButtonProps> = ({ children, onClick, configuration, icon
   return (
     <button
       // Set the class name based on the current configuration
-      className={"btn btn-" + _config}
+      className={"btn btn-" + _config + " btn-icon-" + _icon}
       disabled={_disabled}
       // Set the onClick handler to execute the prop function
       onClick={(e) => {
@@ -42,7 +42,6 @@ const Button: React.FC<IButtonProps> = ({ children, onClick, configuration, icon
           {_iconName}
         </span> : ""
       }
-
 
       {children}
     </button>

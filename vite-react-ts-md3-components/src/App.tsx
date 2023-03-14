@@ -16,7 +16,7 @@ function App() {
         {/* BUTTONS */}
 
         <div className="text text-title text-title-large">Buttons</div>
-        <div className="text text-title text-title-small">Filled Buttons</div>
+        <div className="text text-title text-title-medium">Filled Buttons</div>
         <div className="text text-label text-label-small">No Icon</div>
 
         <Button
@@ -35,6 +35,66 @@ function App() {
         >
         <div className="text text-label text-label-large">Click Me</div>
         </Button>
+        <div className="text text-label text-label-small">With Icon</div>
+        
+        <Button
+          configuration="filled"
+          disabled={false}
+          icon={true}
+          iconName={"search"}
+          onClick={incrementCounter}
+        >
+        <div className="text text-label text-label-large">Click Me</div>
+        </Button>
+
+        <div className="text text-label text-label-small">With Icon (inactive)</div>
+                <Button
+          configuration="filled"
+          disabled={true}
+          icon={true}
+          iconName={"search"}
+          onClick={incrementCounter}
+        >
+        <div className="text text-label text-label-large">Click Me</div>
+        </Button>
+
+        <div className="text text-title text-title-large">Outlined Buttons</div>
+        <div className="text text-label text-label-small">No Icon</div>
+        <Button
+          configuration="outlined"
+          disabled={false}
+          onClick={incrementCounter}
+        >
+        <div className="text text-label text-label-large">Click Me</div>
+        </Button>
+        <div className="text text-label text-label-small">No Icon (inactive)</div>
+        <Button
+          configuration="outlined"
+          disabled={true}
+          onClick={incrementCounter}
+        >
+        <div className="text text-label text-label-large">Click Me</div>
+        </Button>
+        <div className="text text-label text-label-small">With Icon</div>
+        <Button
+          configuration="outlined"
+          disabled={false}
+          onClick={incrementCounter}
+          icon={true}
+          iconName={"search"}
+        >
+        <div className="text text-label text-label-large">Click Me</div>
+        </Button>
+        <div className="text text-label text-label-small">With Icon (inactive)</div>
+        <Button
+          configuration="outlined"
+          disabled={true}
+          onClick={incrementCounter}
+          icon={true}
+          iconName={"search"}
+        >
+        <div className="text text-label text-label-large">Click Me</div>
+        </Button>
         <p className="text text-body text-body-large">Counter: {count}</p>
 
       </div>
@@ -42,7 +102,7 @@ function App() {
     <div style={{display:"flex", flexDirection:"column", alignItems:"flex-start", padding:"70px", gap:"40px"}}>
       {/* TYPOGRAPHY */}
 
-      <div className="text text-title text-title-large">Typography</div>
+      <div className="text text-title text-title-medium">Typography</div>
 
       <div style={{boxSizing:"border-box", display:"flex", flexDirection:"column", alignItems:"flex-start", padding:"24px", gap: "24px", border:"1px solid #79747E", borderRadius:"16px"}}>
         <div className="text text-display text-display-large">Display Large - Roboto 57/54 . 0</div>
