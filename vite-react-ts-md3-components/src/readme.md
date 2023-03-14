@@ -6,7 +6,7 @@
 
 Place a default icon like this: <code>`<span className="material-symbols-outlined">{name}
       </span>`</code>
- where <code>{name}</code> is the set of all accepted icon names according to [Material Symbols](https://fonts.google.com/icons)
+ where <code>{name}</code> is the set of all accepted icon names by [Material Symbols](https://fonts.google.com/icons)
 
 # 🔤 [Typography](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Typography/Frame/typography.tsx)
 
