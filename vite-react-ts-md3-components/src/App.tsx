@@ -136,6 +136,44 @@ function App() {
         >
           <div className="text text-label text-label-large">Click Me</div>
         </Button>
+
+        <div className="text text-title text-title-large">Elevated Buttons</div>
+        <div className="text text-label text-label-small">No Icon</div>
+        <Button
+          configuration="elevated"
+          disabled={false}
+          onClick={incrementCounter}
+        >
+          <div className="text text-label text-label-large">Click Me</div>
+        </Button>
+        <div className="text text-label text-label-small">No Icon (inactive)</div>
+        <Button
+          configuration="elevated"
+          disabled={true}
+          onClick={incrementCounter}
+        >
+          <div className="text text-label text-label-large">Click Me</div>
+        </Button>
+        <div className="text text-label text-label-small">With Icon</div>
+        <Button
+          configuration="elevated"
+          disabled={false}
+          onClick={incrementCounter}
+          icon={true}
+          iconName={"search"}
+        >
+          <div className="text text-label text-label-large">Click Me</div>
+        </Button>
+        <div className="text text-label text-label-small">With Icon (inactive)</div>
+        <Button
+          configuration="elevated"
+          disabled={true}
+          onClick={incrementCounter}
+          icon={true}
+          iconName={"search"}
+        >
+          <div className="text text-label text-label-large">Click Me</div>
+        </Button>
         <p className="text text-body text-body-large">Counter: {count}</p>
 
       </div>

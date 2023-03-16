@@ -3,8 +3,8 @@
 :root {
 
   /* COLOR */
-  --color-light-primary-regular: #6750A4;
-  --color-light-primary-lighter: #735EAB;
+  --color-light-primary: #6750A4;
+  --color-light-primary-hover: #735EAB;
 
   --color-system-light-neutral-0: #E4E4E4;
   --color-system-light-neutral-1: #F3F1F8;
@@ -196,21 +196,21 @@ body {
 }
 
 .btn-filled {
-  background-color: var(--color-light-primary-regular);
+  background-color: var(--color-light-primary);
   color: white;
 }
 
 .btn-filled:hover {
-  background-color: var(--color-light-primary-lighter);
+  background-color: var(--color-light-primary-hover);
   box-shadow: var(--surfaces-light-elevation-1);
 }
 
 .btn-filled:focus {
-  background-color: var(--color-light-primary-lighter);
+  background-color: var(--color-light-primary-hover);
 }
 
 .btn-filled:active {
-  background-color: var(--color-light-primary-lighter);
+  background-color: var(--color-light-primary-hover);
 }
 
 .btn-filled:disabled {
@@ -224,7 +224,7 @@ body {
 
 .btn-outlined {
   background-color: var(--color-system-light-neutral-2);
-  color: var(--color-light-primary-regular);
+  color: var(--color-light-primary);
   border: 1px solid var(--color-system-light-neutral-5);
 }
 
@@ -234,13 +234,13 @@ body {
 
 .btn-outlined:focus{
   background-color: var(--color-system-light-neutral-3);
-  color: var(--color-light-primary-regular);
-  border: 1px solid var(--color-light-primary-regular);
+  color: var(--color-light-primary);
+  border: 1px solid var(--color-light-primary);
 }
 
 .btn-outlined:active {
   background-color: var(--color-system-light-neutral-3);
-  color: var(--color-light-primary-regular);
+  color: var(--color-light-primary);
   border: 1px solid var(--color-system-light-neutral-5);
 }
 
@@ -252,7 +252,7 @@ body {
 
 .btn-text{
   background-color: transparent;
-  color: var(--color-light-primary-regular);
+  color: var(--color-light-primary);
   padding: 10px 12px;
 }
 
@@ -278,6 +278,33 @@ body {
 
 .btn-text:disabled.btn-text:active{
   background-color: transparent;
+}
+
+.btn-elevated{
+  background-color: transparent;
+  color: var(--color-light-primary);
+  box-shadow: var(--surfaces-light-elevation-1);
+}
+
+.btn-elevated:hover{
+  background-color: #E8E0F0;
+  box-shadow: var(--surfaces-light-elevation-2);
+}
+
+.btn-elevated:focus{
+  background-color: #E8E0F0;
+    box-shadow: var(--surfaces-light-elevation-1);
+}
+
+.btn-elevated:active{
+  background-color: #E8E0F0;
+  box-shadow: var(--surfaces-light-elevation-1);
+}
+
+.btn-elevated:disabled{
+  background-color: var(--color-system-light-neutral-0);
+  color: var(--color-system-light-neutral-4);
+  box-shadow: none;
 }
 
 /* ICONS */
