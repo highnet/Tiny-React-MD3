@@ -11,6 +11,7 @@ function App() {
 
   };
 
+
   return (
     <div className="App">
       <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "70px", gap: "40px" }}>
@@ -24,7 +25,7 @@ function App() {
           configuration="filled"
           disabled={false}
           onClick={incrementCounter}
-
+          id={"test"}
         >
           <div className="text text-label text-label-large">Click Me</div>
         </Button>
@@ -90,6 +91,44 @@ function App() {
         <div className="text text-label text-label-small">With Icon (inactive)</div>
         <Button
           configuration="outlined"
+          disabled={true}
+          onClick={incrementCounter}
+          icon={true}
+          iconName={"search"}
+        >
+          <div className="text text-label text-label-large">Click Me</div>
+        </Button>
+
+        <div className="text text-title text-title-large">Text Buttons</div>
+        <div className="text text-label text-label-small">No Icon</div>
+        <Button
+          configuration="text"
+          disabled={false}
+          onClick={incrementCounter}
+        >
+          <div className="text text-label text-label-large">Click Me</div>
+        </Button>
+        <div className="text text-label text-label-small">No Icon (inactive)</div>
+        <Button
+          configuration="text"
+          disabled={true}
+          onClick={incrementCounter}
+        >
+          <div className="text text-label text-label-large">Click Me</div>
+        </Button>
+        <div className="text text-label text-label-small">With Icon</div>
+        <Button
+          configuration="text"
+          disabled={false}
+          onClick={incrementCounter}
+          icon={true}
+          iconName={"search"}
+        >
+          <div className="text text-label text-label-large">Click Me</div>
+        </Button>
+        <div className="text text-label text-label-small">With Icon (inactive)</div>
+        <Button
+          configuration="text"
           disabled={true}
           onClick={incrementCounter}
           icon={true}
