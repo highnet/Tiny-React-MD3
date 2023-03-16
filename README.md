@@ -37,7 +37,7 @@
 | 📑 Side sheets | ❌ | | |
 | 🎚️ Sliders | ❌ | | |
 | 🥨 Snackbar | ❌ | | |
-| 🔦 Switch | ❌ | | |
+| 🔦 Switch | 🚧 | | |
 | 📑 Tabs | ❌ | | |
 | 📜 Text fields | ❌ | | |
 | ⌛ Time pickers | ❌ | | |
