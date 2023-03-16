@@ -56,7 +56,7 @@ You may supplement the following optional properties to a button:
 | <code>iconName</code> | <code>string</code> | <code>"search"</code> | <code>the name of the icon on display</code>| [IButtonProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Button/IButtonProps.tsx) |
 
 Create a default button component like this:
-<code>`<Button onClick={undefined} configuration={{configuration}} > <div className="text text-label text-label-large">Click Me</div> </Button>`</code>
+<code>`<Button onClick={undefined}> <div className="text text-label text-label-large">Click Me</div> </Button>`</code>
   
 The possible different options of <code>{configuration}</code> are the following: 
 1. <code>"filled"</code>
