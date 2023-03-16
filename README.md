@@ -14,37 +14,39 @@
 ## Progress
 | Component | Progress | Frame | Definition | 
 |-----------|----------|------|------|
-| 📛 Badges | ❌ No | | | 
-| ⏬ Bottom app bar | ❌ No | | |
-| 🔽 Bottom sheets | ❌ No | | |
-| 🕹️ [Buttons](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/readme.md#%EF%B8%8F-buttons) | 🚧 Under Construction | [button.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Button/Frame/button.tsx) | [Button.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Button/Button.tsx) |
-| 🪪 Cards | ❌ No | | |
-| ☑️ Checkbox | ❌ No | | |
-| 🍪 Chips | ❌ No | | |
-| 📅 Date Pickers | ❌ No | | |
-| 💬 Dialogs | ❌ No | | |
-| 🗂️ Dividers | ❌ No | | |
-| 🏔️ [Elevation](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/readme.md#%EF%B8%8F-elevation) | ✅ Finished | [elevation.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Elevation/Frame/elevation.tsx) | [index.css](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/index.css) |
-| 💟 [Icons](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/readme.md#-icons) | ✅ Finished | [icon.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Icon/Frame/icon.tsx) | [index.css](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/index.css) |
-| 📝 Lists | ❌ No | | |
-| 📚 Menus | ❌ No | | |
-| 🧭 Navigation bar | ❌ No | | |
-| 🗄️ Navigation drawer | ❌ No | | |
-| 🚈 Navigation rail | ❌ No | | |
-| 🔄 Progress indicators | ❌ No | | |
-| 🔘 Radio button | ❌ No | | |
-| 🔍 Search | ❌ No | | |
-| 📑 Side sheets | ❌ No | | |
-| 🎚️ Sliders | ❌ No | | |
-| 🥨 Snackbar | ❌ No | | |
-| 🔦 Switch | ❌ No | | |
-| 📑 Tabs | ❌ No | | |
-| 📜 Text fields | ❌ No | | |
-| ⌛ Time pickers | ❌ No | | |
-| ⏫ Top app bar | ❌ No | | |
+| 📛 Badges | ❌ | | | 
+| ⏬ Bottom app bar | ❌ | | |
+| 🔽 Bottom sheets | ❌ | | |
+| 🕹️ [Buttons](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/readme.md#%EF%B8%8F-buttons) | ✅ | [button.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Button/Frame/button.tsx) | [Button.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Button/Button.tsx) |
+| 🪪 Cards | ❌ | | |
+| ☑️ Checkbox | ❌ | | |
+| 🍪 Chips | ❌ | | |
+| 📅 Date Pickers | ❌ | | |
+| 💬 Dialogs | ❌ | | |
+| 🗂️ Dividers | ❌ | | |
+| 🏔️ [Elevation](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/readme.md#%EF%B8%8F-elevation) | ✅ | [elevation.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Elevation/Frame/elevation.tsx) | [index.css](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/index.css) |
+| 💟 [Icons](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/readme.md#-icons) | ✅ | [icon.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Icon/Frame/icon.tsx) | [index.css](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/index.css) |
+| 📝 Lists | ❌ | | |
+| 📚 Menus | ❌ | | |
+| 🧭 Navigation bar | ❌ | | |
+| 🗄️ Navigation drawer | ❌ | | |
+| 🚈 Navigation rail | ❌ | | |
+| 🔄 Progress indicators | ❌ | | |
+| 🔘 Radio button | ❌ | | |
+| 🔍 Search | ❌ | | |
+| 📑 Side sheets | ❌ | | |
+| 🎚️ Sliders | ❌ | | |
+| 🥨 Snackbar | ❌ | | |
+| 🔦 Switch | ❌ | | |
+| 📑 Tabs | ❌ | | |
+| 📜 Text fields | ❌ | | |
+| ⌛ Time pickers | ❌ | | |
+| ⏫ Top app bar | ❌ | | |
 | 🔤 [Typography](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/readme.md#-typography) | ✅ Finished | [typography.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Typography/Frame/typography.tsx) | [index.css](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/index.css) |
 
-
+✅ Finished
+❌ Not Started
+🚧 Under Construction
 
 ## Resources
 * https://m3.material.io/
