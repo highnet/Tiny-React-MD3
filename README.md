@@ -13,7 +13,7 @@
 
 ## Progress
 | Component | Progress | Frame | Definition | 
-|-----------|----------|------|------|
+|-----------|----------|-------|------------|
 | 📛 Badges | ❌ | | | 
 | ⏬ Bottom app bar | ❌ | | |
 | 🔽 Bottom sheets | ❌ | | |
