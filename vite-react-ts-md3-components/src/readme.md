@@ -1,6 +1,6 @@
 # Tiny React MD-3 Documentation
 
-# 💟 [Icons](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Icon/Frame/icon.tsx)
+## 💟 [Icons](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Icon/Frame/icon.tsx)
 
 <i>Use icons to symbolize common actions, files, devices, and directories.</i>
 
@@ -8,7 +8,7 @@ Place a default icon like this: <code>`<span className="material-symbols-outline
       </span>`</code>
  where <code>{name}</code> is the set of all accepted icon names by [Material Symbols](https://fonts.google.com/icons)
 
-# 🔤 [Typography](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Typography/Frame/typography.tsx)
+## 🔤 [Typography](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Typography/Frame/typography.tsx)
 
 <i>Use typography to present your design and content as clearly and efficiently as possible.</i>
 
@@ -26,7 +26,7 @@ and the possible different of <code>{size}</code> are the following:
 2. <code>medium</code>
 3. <code>small</code>
 
-# 🏔️ [Elevation](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Elevation/Frame/elevation.tsx)
+## 🏔️ [Elevation](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Elevation/Frame/elevation.tsx)
 
 <i>Use elevation to depict a third dimension of your content.</i>
 
@@ -39,7 +39,7 @@ The possible different options of <code>{level}</code> are the following:
 4. <code>4</code>
 5. <code>5</code>
 
-# 🕹️ [Buttons](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Button/Frame/button.tsx)
+## 🕹️ [Buttons](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Button/Frame/button.tsx)
 
 <i>Use buttons to help people take actions, such as sending an email, sharing a document, or liking a comment.</i>
 
@@ -57,6 +57,26 @@ You may supplement the following optional properties to a button:
 
 Create a default button component like this:
 <code>`<Button onClick={undefined} configuration={{configuration}} > <div className="text text-label text-label-large">Click Me</div> </Button>`</code>
+  
+The possible different options of <code>{configuration}</code> are the following: 
+1. <code>"filled"</code>
+2. <code>"outlined"</code>
+3. <code>"text"</code>
+3. <code>"elevated"</code>
+4. <code>"tonal"</code>
+
+## 🔦 [Switch](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Switch/Frame/switch.tsx)
+
+🚧 TODO: Switch with icon
+      
+<i>Switches toggle the state of a single item on or off.</i>
+
+You may supplement the following optional properties to a button:
+| Property | Type |  Default | Description | Interface |
+| -------- | ---- | -------- | ----------- | --------- |
+      
+Create a default switch component like this:
+<code>`<Switch selected={true} onChange={undefined}></Switch>`</code>
   
 The possible different options of <code>{configuration}</code> are the following: 
 1. <code>"filled"</code>
