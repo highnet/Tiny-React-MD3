@@ -67,7 +67,7 @@ The possible different options of <code>{configuration}</code> are the following
 
 ## 🔦 [Switch](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Switch/Frame/switch.tsx)
 
-🚧 TODO: Switch with icon
+🚧 UNDER CONSTRUCTION 🚧
       
 <i>Switches toggle the state of a single item on or off.</i>
 
@@ -76,8 +76,9 @@ You may supplement the following optional properties to a button:
 | -------- | ---- | -------- | ----------- | --------- |
       
 Create a default switch component like this:
-<code>`<Switch selected={true} onChange={undefined}></Switch>`</code>
-  
+<code>`<Switch selected={true} onChange={undefined} 🚧icon={true} 🚧iconName={"search"}></Switch>`</code>
+
+
 The possible different options of <code>{configuration}</code> are the following: 
 1. <code>"filled"</code>
 2. <code>"outlined"</code>
