@@ -61,3 +61,6 @@ Create a default button component like this:
 The possible different options of <code>{configuration}</code> are the following: 
 1. <code>"filled"</code>
 2. <code>"outlined"</code>
+3. <code>"text"</code>
+3. <code>"elevated"</code>
+4. <code>"tonal"</code>
