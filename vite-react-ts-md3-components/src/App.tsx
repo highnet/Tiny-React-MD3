@@ -48,7 +48,6 @@ function App() {
           configuration="filled"
           disabled={false}
           onClick={incrementCounter}
-          id={"test"}
         >
           <div className="text text-label text-label-large">Click Me</div>
         </Button>
