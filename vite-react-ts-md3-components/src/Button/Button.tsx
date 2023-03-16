@@ -4,9 +4,11 @@ import { IButtonProps } from "./IButtonProps";
 
 // Define a functional component for the button
 const Button: React.FC<IButtonProps> = ({ disabled, children, id, className, onClick, configuration, icon, iconName }) => {
+  
   const [_disabled] = useState(disabled || false);
   const [_id] = useState(id || undefined);
   const [_className] = useState(className || "");
+
   const [_config] = useState(configuration || "filled");
   const [_icon] = useState(icon || false);
   const [_iconName] = useState(iconName || "search");

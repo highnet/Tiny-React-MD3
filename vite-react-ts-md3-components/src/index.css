@@ -349,3 +349,82 @@ body {
 }
 
 
+/* SWITCHES */
+
+.switch{
+  display: flex;
+  width: 52px;
+  height: 32px;
+}
+
+.switch-track {
+  width: 100%;
+  height: 100%;
+  border-radius: 33%/50%; 
+  transition: all 250ms ease-in-out;
+  
+}
+
+.switch-track-selected-true{
+  background-color: #6750A4;
+}
+
+.switch-track-selected-false{
+  background-color: #E7E0EC;
+
+}
+
+.switch-handle{
+  position: relative;
+  border-radius: 100%;
+  transition: all 250ms ease-in-out;
+
+}
+
+.switch-handle-selected-true{
+  background-color: white;
+
+  width: 46.155%;
+  height: 75%;
+  margin: 7.69% 46.155%;
+}
+
+.switch-handle-selected-false{
+  background-color: #79747E;
+
+  width: 30.77%;
+  height: 50%;
+  margin: 15% 15%;
+}
+
+.switch-handle-overlay{
+  position: relative;
+  width: 166%;
+  height: 166%;
+  background-color: transparent;
+  border-radius: 100%; 
+  transform: translate(-20%, -20%);
+}
+
+.switch-handle-overlay:hover{
+  background-color: #6750a41f;
+}
+
+.switch-disabled-true{
+  pointer-events:none;
+}
+
+.switch-track-disabled-true.switch-track-selected-true{
+  background-color: #E9E8E9;
+}
+
+.switch-track-disabled-true.switch-track-selected-false{
+  box-sizing: border-box;
+  border: 2px solid rgba(28, 27, 31, 0.12);
+  border-radius: 35px;
+  background-color: white;
+}
+
+.switch-handle-selected-false.switch-handle-disabled-true{
+  background-color: #A7A6A8;
+}

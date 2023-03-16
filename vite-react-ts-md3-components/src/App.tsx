@@ -1,5 +1,6 @@
 import Button from "./Button/Button";
 import { useState } from 'react'
+import Switch from "./Switch/Switch";
 
 
 
@@ -11,11 +12,33 @@ function App() {
 
   };
 
-
   return (
     <div className="App">
       <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "70px", gap: "40px" }}>
-        {/* BUTTONS */}
+        {/* SWITCHES */}
+
+        <div className="text text-title text-title-large">Switches</div>
+        <div className="text text-label text-label-small">No Icon</div>
+
+        <Switch
+        selected={true}
+        onChange={incrementCounter}
+
+       ></Switch>
+        <div className="text text-label text-label-small">No Icon (Inactive)</div>
+
+        <Switch
+        selected={true}
+        onChange={incrementCounter}
+        disabled={true}
+
+       ></Switch>
+        <p className="text text-body text-body-large">Counter: {count}</p>
+      </div>
+
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "70px", gap: "40px" }}>
+        
+      {/* BUTTONS */}
 
         <div className="text text-title text-title-large">Buttons</div>
         <div className="text text-title text-title-medium">Filled Buttons</div>
