@@ -37,7 +37,7 @@
 | 📑 Side sheets | ❌ | | |
 | 🎚️ Sliders | ❌ | | |
 | 🥨 Snackbar | ❌ | | |
-| 🔦 Switch | 🚧 | [switch.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Switch/Frame/switch.tsx) | [Switch.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Switch/Switch.tsx) |
+| 🔦 [Switch](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/readme.md#-switch) | 🚧 | [switch.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Switch/Frame/switch.tsx) | [Switch.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Switch/Switch.tsx) |
 | 📑 Tabs | ❌ | | |
 | 📜 Text fields | ❌ | | |
 | ⌛ Time pickers | ❌ | | |
