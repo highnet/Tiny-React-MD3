@@ -9,16 +9,21 @@ const Switch: React.FC<ISwitchProps> = ({ disabled, children, id, className, sel
 
   const [_selected, setSelected] = useState(selected || false);
 
+  const click = () => {
+  }
+
   const handleClick = () => {
     setSelected(!_selected);
-    if (onChange) {
-      onChange(!_selected);
-    }
-  };
+  }
+
 
   return (
     <div
-      onClick={handleClick}
+      onClick={(e) => {
+        onChange?.(e);
+        handleClick();
+        click();
+      }}
       id={_id}
       className={"switch" + " " + "switch-" + (_selected ? "selected" : "deselected") + " " + "switch-" + (_disabled ? "disabled" : "enabled") + " " + _className}>
       <div className={"switch-track switch-track-" + (_selected ? "selected" : "deselected") + " " + "switch-track-" + (_disabled ? "disabled" : "enabled")}>
