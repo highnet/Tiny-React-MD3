@@ -84,6 +84,6 @@ You may supplement the following optional properties to a switch:
 | <code>🚧iconName</code> | <code>string</code> |  <code>"search"</code> | <code>the name of the icon on display</code>| [ISwitchProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Switch/Switch.tsx) |
 
 Create a default switch component like this:
-<code>`<Switch onChange={undefined} 🚧icon={true} 🚧iconName={"search"}></Switch>`</code>
+<code>`<Switch onChange={undefined}></Switch>`</code>
 
 Check if a given switch is enabled or disabled by checking if the class name list contains "switch-enabled" or "switch-disabled"
