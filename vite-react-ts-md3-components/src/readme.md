@@ -85,3 +85,5 @@ You may supplement the following optional properties to a switch:
 
 Create a default switch component like this:
 <code>`<Switch onChange={undefined} 🚧icon={true} 🚧iconName={"search"}></Switch>`</code>
+
+Check if a given switch is enabled or disabled by checking if the class name list contains "switch-enabled" or "switch-disabled"
