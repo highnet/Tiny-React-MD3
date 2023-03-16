@@ -4,11 +4,10 @@ import { IButtonProps } from "./IButtonProps";
 
 // Define a functional component for the button
 const Button: React.FC<IButtonProps> = ({ disabled, children, id, className, onClick, configuration, icon, iconName }) => {
-  
   const [_disabled] = useState(disabled || false);
   const [_id] = useState(id || undefined);
   const [_className] = useState(className || "");
-
+  
   const [_config] = useState(configuration || "filled");
   const [_icon] = useState(icon || false);
   const [_iconName] = useState(iconName || "search");
@@ -22,7 +21,7 @@ const Button: React.FC<IButtonProps> = ({ disabled, children, id, className, onC
     <button
       id={_id}
       // Set the class name based on the current configuration
-      className={"btn btn-" + _config + " btn-icon-" + _icon + " " + _className}
+      className={"btn btn-" + _config + " " + "btn-" + (_icon ? "with" : "without") + "-icon" + " " +  _className}
       disabled={_disabled}
       // Set the onClick handler to execute the prop function
       onClick={(e) => {

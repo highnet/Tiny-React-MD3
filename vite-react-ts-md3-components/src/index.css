@@ -191,7 +191,7 @@ body {
   letter-spacing: 0.1px;
 }
 
-.btn-icon-true {
+.btn-with-icon {
   flex-direction: row;
   padding: 10px 24px 10px 16px;
   gap: 8px;
@@ -258,7 +258,7 @@ body {
   padding: 10px 12px;
 }
 
-.btn-text.btn-icon-true{
+.btn-text.btn-with-icon{
   padding: 10px 16px 10px 12px;
 }
 
