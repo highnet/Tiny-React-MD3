@@ -66,8 +66,6 @@ The possible different options of <code>{configuration}</code> are the following
 4. <code>"tonal"</code>
 
 ## 🔦 [Switch](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Switch/Frame/switch.tsx)
-
-🚧 UNDER CONSTRUCTION 🚧
       
 <i>Switches toggle the state of a single item on or off.</i>
 
