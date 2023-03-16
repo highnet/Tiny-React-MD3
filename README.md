@@ -6,7 +6,7 @@
 
 [Figma Material Design 3 Kit](https://www.figma.com/community/file/1035203688168086460) 🤝 [React.ts](https://developer.okta.com/blog/2022/03/14/react-vite-number-converter) = [Tiny React MD3](https://github.com/highnet/vite-react-ts-md3-components/)
 
-## How to use?
+## How to start?
 [Starting the Project](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/readme.md)
 
 [Documentation](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/readme.md)
