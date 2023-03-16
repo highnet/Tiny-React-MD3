@@ -11,25 +11,21 @@ const Switch: React.FC<ISwitchProps> = ({ disabled, children, id, className, sel
 
   const handleClick = () => {
     setSelected(!_selected);
-    onChange(!_selected);
+    if (onChange){
+      onChange(!_selected);
+    }
   };
 
   return (
-    <div 
-        id={_id}
-        className={"switch" + " " + _className + " " +  "switch-disabled-"+_disabled}
-        >
-
-        <div className={"switch-track switch-track-selected-" + _selected + " " +"switch-track-disabled-"+ _disabled}
-        onClick={handleClick}
-        >
-            <div className={"switch-handle switch-handle-selected-" + _selected + " " + "switch-handle-disabled-" + _disabled}
-            >
-                <div className={"switch-handle-overlay switch-handle-overlay-selected-" + _selected}>
-                </div>
-            </div>
+    <div id={_id} className={"switch" + " " + _className + " " + "switch-" + (_disabled ? "disabled" : "enabled")}>
+      <div className={"switch-track switch-track-" + (_selected ? "selected" : "deselected") + " " + "switch-track-" + (_disabled ? "disabled" : "enabled")}        
+      onClick={handleClick} >
+        <div className={"switch-handle switch-handle-" + (_selected ? "selected" : "deselected") + " " + "switch-handle-" + (_disabled ? "disabled" : "enabled")}            >
+          <div className={"switch-handle-overlay"}>
+          </div>
         </div>
-        {children}
+      </div>
+      {children}
     </div>
   );
 };

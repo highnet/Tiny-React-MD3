@@ -348,7 +348,6 @@ body {
     'opsz' 20
 }
 
-
 /* SWITCHES */
 
 .switch{
@@ -365,11 +364,11 @@ body {
   
 }
 
-.switch-track-selected-true{
+.switch-track-selected{
   background-color: #6750A4;
 }
 
-.switch-track-selected-false{
+.switch-track-deselected{
   background-color: #E7E0EC;
 
 }
@@ -381,7 +380,7 @@ body {
 
 }
 
-.switch-handle-selected-true{
+.switch-handle-selected{
   background-color: white;
 
   width: 46.155%;
@@ -389,7 +388,7 @@ body {
   margin: 7.69% 46.155%;
 }
 
-.switch-handle-selected-false{
+.switch-handle-deselected{
   background-color: #79747E;
 
   width: 30.77%;
@@ -410,21 +409,21 @@ body {
   background-color: #6750a41f;
 }
 
-.switch-disabled-true{
+.switch-disabled{
   pointer-events:none;
 }
 
-.switch-track-disabled-true.switch-track-selected-true{
+.switch-track-disabled.switch-track-selected{
   background-color: #E9E8E9;
 }
 
-.switch-track-disabled-true.switch-track-selected-false{
+.switch-track-disabled.switch-track-deselected{
   box-sizing: border-box;
   border: 2px solid rgba(28, 27, 31, 0.12);
   border-radius: 35px;
   background-color: white;
 }
 
-.switch-handle-selected-false.switch-handle-disabled-true{
+.switch-handle-deselected.switch-handle-enabled{
   background-color: #A7A6A8;
 }
