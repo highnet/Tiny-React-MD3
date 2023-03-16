@@ -10,12 +10,12 @@ const Switch: React.FC<ISwitchProps> = ({ disabled, children, id, className, sel
   const [_selected, setSelected] = useState(selected || false);
 
   const click = () => {
+    console.log("Clicked", { disabled: _disabled, id: _id, className: _className, selected: _selected })
   }
 
   const handleClick = () => {
     setSelected(!_selected);
   }
-
 
   return (
     <div
