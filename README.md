@@ -42,7 +42,7 @@
 | 📜 Text fields | ❌ | | |
 | ⌛ Time pickers | ❌ | | |
 | ⏫ Top app bar | ❌ | | |
-| 🔤 [Typography](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/readme.md#-typography) | ✅ Finished | [typography.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Typography/Frame/typography.tsx) | [index.css](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/index.css) |
+| 🔤 [Typography](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/readme.md#-typography) | ✅ | [typography.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Typography/Frame/typography.tsx) | [index.css](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/index.css) |
 
 ✅ Finished
 ❌ Not Started
