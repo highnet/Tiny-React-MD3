@@ -7,9 +7,9 @@ import Switch from "./Switch/Switch";
 function App() {
   const [count, setCount] = useState(0)
 
-  const incrementCounter = (e: any) => {
-    console.log(e);
+  const incrementCounter = () => {
     setCount(count + 1); // This line calls the state setter function with the new counter value
+
   };
 
   return (
@@ -21,24 +21,44 @@ function App() {
         <div className="text text-label text-label-small">No Icon</div>
 
         <Switch
-          selected={true}
-          onChange={incrementCounter}
+        selected={true}
+        onChange={incrementCounter}
+       ></Switch>
 
-        ></Switch>
         <div className="text text-label text-label-small">No Icon (Inactive)</div>
 
         <Switch
-          selected={true}
-          onChange={incrementCounter}
-          disabled={true}
+        selected={true}
+        onChange={incrementCounter}
+        disabled={true}
+       ></Switch>
 
-        ></Switch>
+               <div className="text text-label text-label-small">With Icon</div>
+
+        <Switch
+        selected={true}
+        onChange={incrementCounter}
+        icon={true}
+        iconNameSelected={"warning"}
+        iconNameDeselected={"house"}
+       ></Switch>
+
+        <div className="text text-label text-label-small">With Icon (Inactive)</div>
+
+        <Switch
+        selected={true}
+        onChange={incrementCounter}
+        icon={true}
+
+        disabled={true}
+       ></Switch>
+       
         <p className="text text-body text-body-large">Counter: {count}</p>
       </div>
 
       <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "70px", gap: "40px" }}>
-
-        {/* BUTTONS */}
+        
+      {/* BUTTONS */}
 
         <div className="text text-title text-title-large">Buttons</div>
         <div className="text text-title text-title-medium">Filled Buttons</div>

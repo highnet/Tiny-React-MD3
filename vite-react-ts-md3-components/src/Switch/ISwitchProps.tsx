@@ -5,4 +5,7 @@ import { MouseEvent } from "react";
 export interface ISwitchProps extends IComponentProps {
     selected?: boolean;
     onChange?: (event: MouseEvent<HTMLDivElement>) => void;
+    icon?: boolean;
+    iconNameSelected?: string;
+    iconNameDeselected?: string;
 }

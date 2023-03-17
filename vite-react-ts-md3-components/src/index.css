@@ -340,6 +340,7 @@ body {
 
 /* ICONS */
 .material-symbols-outlined {
+  pointer-events:none;
 
   font-variation-settings:
     'FILL' 0,
@@ -349,6 +350,10 @@ body {
 }
 
 /* SWITCHES */
+
+
+
+
 
 .switch{
   display: flex;
@@ -374,7 +379,6 @@ body {
 }
 
 .switch-handle{
-  position: relative;
   border-radius: 100%;
   transition: all 250ms ease-in-out;
 
@@ -388,16 +392,24 @@ body {
   margin: 7.69% 46.155%;
 }
 
-.switch-handle-deselected{
+.switch-handle-deselected.switch-handle-without-icon{
   background-color: #79747E;
-
   width: 30.77%;
   height: 50%;
-  margin: 15% 15%;
+  margin: 16% 13%;
+
 }
 
+.switch-handle-deselected.switch-handle-with-icon{
+  background-color: #79747E;
+  width: 46.155%;
+  height: 75%;
+  margin: 7.69% 5%;
+}
+
+
 .switch-handle-overlay{
-  position: relative;
+  display: flex;
   width: 166%;
   height: 166%;
   background-color: transparent;
@@ -426,4 +438,27 @@ body {
 
 .switch-handle-deselected.switch-handle-enabled{
   background-color: #A7A6A8;
+}
+
+.switch-icon {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  scale: 80%;
+}
+
+.switch-icon-selected{
+  color: var(--color-light-primary-default);
+}
+
+.switch-icon-deselected{
+  color: white;
+}
+
+.switch-icon-deselected.switch-icon-disabled{
+  display: flex;
+}
+
+.switch-icon-disabled{
+  display: none;
 }
