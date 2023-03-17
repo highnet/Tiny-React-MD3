@@ -6,8 +6,7 @@ const Switch: React.FC<ISwitchProps> = ({ disabled, children, id, className, sel
   const [_disabled] = useState(disabled || false);
   const [_id] = useState(id || undefined);
   const [_className] = useState(className || "");
-
-
+  
   const [_icon] = useState(icon || false);
   const [_iconNameSelected] = useState(iconNameSelected || "check");
   const [_iconNameDeselected] = useState(iconNameDeselected || "close");
