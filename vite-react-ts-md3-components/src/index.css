@@ -3,17 +3,18 @@
 :root {
 
   /* COLOR */
-  --color-light-primary-default: #6750A4;
-  --color-light-primary-light: #735EAB;
-  --color-light-primary-elevated-0-default: #E8DEF8;
-  --color-light-primary-elevated-0-dark: #D0C6DF;
-  --color-light-primary-elevated-1-default: #D8CEE8;
-  --color-light-primary-disabled-default: #E4E4E4;
-  --color-light-primary-disabled-dark: #A9A8AA;
-  --color-light-primary-transparent-default: #F3F1F8;
-  --color-light-primary-transparent-dark: #ECEAF4;
+  --dried-lavender-flowers: #79747E;
+  --prophet-violet: #6750A4;
+  --genestealer-purple: #735EAB;
+  --ultimate-grey: #A9A8AA;
+  --dust-of-the-moon: #D0C6DF;
+  --pink-champagne: #E7E0EC;
+  --lavender-mist: #E8DEF8;
+  --plum-is-the-word: #D8CEE8;
+  --titanium-white: #E4E4E4;
+  --alpine-goat: #F3F1F8;
+  --silver-phoenix: #ECEAF4;
 
-  --color-light-neutral-border-default: #79747E;
 
   /* ELEVATION */
   --surfaces-light-elevation-1: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
@@ -170,6 +171,7 @@ body {
 }
 
 /* BUTTONS */
+
 .btn {
   box-sizing: border-box;
   display: flex;
@@ -198,25 +200,25 @@ body {
 }
 
 .btn-filled {
-  background-color: var(--color-light-primary-default);
+  background-color: var(--prophet-violet);
   color: white;
 }
 
 .btn-filled:hover {
-  background-color: var(--color-light-primary-light);
+  background-color: var(--genestealer-purple);
   box-shadow: var(--surfaces-light-elevation-1);
 }
 
 .btn-filled:focus {
-  background-color: var(--color-light-primary-light);
+  background-color: var(--genestealer-purple);
 }
 
 .btn-filled:active {
-  background-color: var(--color-light-primary-light);
+  background-color: var(--genestealer-purple);
 }
 
 .btn-filled:disabled {
-  background-color: var(--color-light-primary-disabled-default);
+  background-color: var(--titanium-white);
   color: var(--color-system-light-filled-disable-text);
 }
 
@@ -226,35 +228,35 @@ body {
 
 .btn-outlined {
   background-color: transparent;
-  color: var(--color-light-primary-default);
-  border: 1px solid var(--color-light-neutral-border-default);
+  color: var(--prophet-violet);
+  border: 1px solid var(--dried-lavender-flowers);
 }
 
 .btn-outlined:hover {
-  background-color: var(--color-light-primary-transparent-default);
+  background-color: var(--alpine-goat);
 }
 
 .btn-outlined:focus{
-  background-color: var(--color-light-primary-transparent-dark);
-  color: var(--color-light-primary-default);
-  border: 1px solid var(--color-light-primary-default);
+  background-color: var(--silver-phoenix);
+  color: var(--prophet-violet);
+  border: 1px solid var(--prophet-violet);
 }
 
 .btn-outlined:active {
-  background-color: var(--color-light-primary-transparent-dark);
-  color: var(--color-light-primary-default);
-  border: 1px solid var(--color-light-neutral-border-default);
+  background-color: var(--silver-phoenix);
+  color: var(--prophet-violet);
+  border: 1px solid var(--dried-lavender-flowers);
 }
 
 .btn-outlined:disabled {
   background-color: white;
-  color: var(--color-light-primary-disabled-dark);
-  border: 1px solid var(--color-light-primary-disabled-default);
+  color: var(--ultimate-grey);
+  border: 1px solid var(--titanium-white);
 }
 
 .btn-text{
   background-color: transparent;
-  color: var(--color-light-primary-default);
+  color: var(--prophet-violet);
   padding: 10px 12px;
 }
 
@@ -267,15 +269,15 @@ body {
 }
 
 .btn-text:focus{
-  background-color: var(--color-light-primary-transparent-dark);
+  background-color: var(--silver-phoenix);
 }
 
 .btn-text:active{
-  background-color: var(--color-light-primary-transparent-dark);
+  background-color: var(--silver-phoenix);
 }
 
 .btn-text:disabled{
-  color: var(--color-light-primary-disabled-dark);
+  color: var(--ultimate-grey);
 }
 
 .btn-text:disabled.btn-text:active{
@@ -284,54 +286,54 @@ body {
 
 .btn-elevated{
   background-color: transparent;
-  color: var(--color-light-primary-default);
+  color: var(--prophet-violet);
   box-shadow: var(--surfaces-light-elevation-1);
 }
 
 .btn-elevated:hover{
-  background-color: var(--color-light-primary-elevated-0-default);
+  background-color: var(--lavender-mist);
   box-shadow: var(--surfaces-light-elevation-2);
 }
 
 .btn-elevated:focus{
-  background-color: var(--color-light-primary-elevated-0-default);
+  background-color: var(--lavender-mist);
     box-shadow: var(--surfaces-light-elevation-1);
 }
 
 .btn-elevated:active{
-  background-color: var(--color-light-primary-elevated-0-default);
+  background-color: var(--lavender-mist);
   box-shadow: var(--surfaces-light-elevation-1);
 }
 
 .btn-elevated:disabled{
-  background-color: var(--color-light-primary-disabled-default);
-  color: var(--color-light-primary-disabled-dark);
+  background-color: var(--titanium-white);
+  color: var(--ultimate-grey);
   box-shadow: none;
 }
 
 .btn-tonal{
-  background-color: var(--color-light-primary-elevated-0-default);
+  background-color: var(--lavender-mist);
   color: black;
 }
 
 .btn-tonal:hover{
-  background-color: var(--color-light-primary-elevated-1-default);
+  background-color: var(--plum-is-the-word);
   box-shadow: var(--surfaces-light-elevation-1);
 }
 
 .btn-tonal:focus{
-  background-color: var(--color-light-primary-elevated-0-dark);
+  background-color: var(--dust-of-the-moon);
   box-shadow: none;
 }
 
 .btn-tonal:active{
-  background-color: var(--color-light-primary-elevated-0-dark);
+  background-color: var(--dust-of-the-moon);
   box-shadow: none;
 }
 
 .btn-tonal:disabled{
-  background-color: var(--color-light-primary-disabled-default);
-  color: var(--color-light-primary-disabled-dark);
+  background-color: var(--titanium-white);
+  color: var(--ultimate-grey);
 }
 
 .btn-tonal:disabled.btn-tonal:hover{
@@ -339,6 +341,7 @@ body {
 }
 
 /* ICONS */
+
 .material-symbols-outlined {
   pointer-events:none;
 
@@ -350,10 +353,6 @@ body {
 }
 
 /* SWITCHES */
-
-
-
-
 
 .switch{
   display: flex;
@@ -370,11 +369,11 @@ body {
 }
 
 .switch-track-selected{
-  background-color: #6750A4;
+  background-color: var(--prophet-violet);
 }
 
 .switch-track-deselected{
-  background-color: #E7E0EC;
+  background-color: var(--pink-champagne);
 
 }
 
@@ -393,7 +392,7 @@ body {
 }
 
 .switch-handle-deselected.switch-handle-without-icon{
-  background-color: #79747E;
+  background-color: var(--dried-lavender-flowers);
   width: 30.77%;
   height: 50%;
   margin: 16% 13%;
@@ -401,7 +400,7 @@ body {
 }
 
 .switch-handle-deselected.switch-handle-with-icon{
-  background-color: #79747E;
+  background-color: var(--dried-lavender-flowers);
   width: 46.155%;
   height: 75%;
   margin: 7.69% 5%;
@@ -448,7 +447,7 @@ body {
 }
 
 .switch-icon-selected{
-  color: var(--color-light-primary-default);
+  color: var(--prophet-violet);
 }
 
 .switch-icon-deselected{
