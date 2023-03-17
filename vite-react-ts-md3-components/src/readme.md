@@ -78,10 +78,11 @@ You may supplement the following optional properties to a switch:
 | <code>className</code> | <code>string</code> |  <code>""</code> | <code>supplementary class names</code>| [IComponentProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Component/IComponentProps.tsx) |
 | <code>selected</code> | <code>boolean</code> |  <code>false</code> | <code>flag to indicate if the component is selected</code>| [ISwitchProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Switch/Switch.tsx) | 
 | <code>onChange</code> | <code>`MouseEvent<HTMLDivElement>`</code> | <code>undefined</code> | <code>on change event</code>| [ISwitchProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Switch/Switch.tsx) |
-| <code>🚧icon</code> | <code>boolean</code> |  <code>false</code> | <code>flag to indicate if the component has an icon on display</code>| [ISwitchProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Switch/Switch.tsx) |
-| <code>🚧iconName</code> | <code>string</code> |  <code>"search"</code> | <code>the name of the icon on display</code>| [ISwitchProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Switch/Switch.tsx) |
+| <code>icon</code> | <code>boolean</code> |  <code>false</code> | <code>flag to indicate if the component has an icon on display</code>| [ISwitchProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Switch/Switch.tsx) |
+| <code>iconNameSelected</code> | <code>string</code> |  <code>"check"</code> | <code>the name of the icon on display when selected</code>| [ISwitchProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Switch/Switch.tsx) |
+| <code>iconNameDeselected</code> | <code>string</code> |  <code>"close"</code> | <code>the name of the icon on display when deselected</code>| [ISwitchProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Switch/Switch.tsx) |
 
 Create a default switch component like this:
 <code>`<Switch onChange={undefined}></Switch>`</code>
 
-Check if a given switch is enabled or disabled by checking if the class name list contains "switch-enabled" or "switch-disabled"
+<i>tip:</i> Check if a given switch is enabled or disabled by checking if the switch's class name list contains "switch-enabled" or "switch-disabled"

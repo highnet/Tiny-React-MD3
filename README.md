@@ -37,7 +37,7 @@
 | 📑 Side sheets | ❌ | | |
 | 🎚️ Sliders | ❌ | | |
 | 🥨 Snackbar | ❌ | | |
-| 🔦 [Switch](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/readme.md#-switch) | 🚧 | [switch.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Switch/Frame/switch.tsx) | [Switch.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Switch/Switch.tsx) |
+| 🔦 [Switch](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/readme.md#-switch) | ✅ | [switch.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Switch/Frame/switch.tsx) | [Switch.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Switch/Switch.tsx) |
 | 📑 Tabs | ❌ | | |
 | 📜 Text fields | ❌ | | |
 | ⌛ Time pickers | ❌ | | |
@@ -56,6 +56,7 @@
 * https://fonts.google.com/icons
 * https://www.figma.com/community/plugin/1034969338659738588
 * https://developer.okta.com/blog/2022/03/14/react-vite-number-converter
+* https://colornamer.robertcooper.me/
 
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" width="52" alt="typescript logo"  />
