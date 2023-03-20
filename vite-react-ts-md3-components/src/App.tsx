@@ -1,6 +1,8 @@
-import Button from "./Button/Button";
 import { useState } from 'react'
+
+import Button from "./Button/Button";
 import Switch from "./Switch/Switch";
+import Checkbox from "./Checkbox/Checkbox";
 
 
 
@@ -14,6 +16,45 @@ function App() {
 
   return (
     <div className="App">
+
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "70px", gap: "40px" }}>
+        {/* SWITCHES */}
+        <div className="text text-title text-title-large">Checkboxes</div>
+        <div className="text text-label text-label-small">Default</div>
+
+        <Checkbox
+          selected={true}
+          onChange={incrementCounter}
+          configuration={"default"}
+        ></Checkbox>
+        <div className="text text-label text-label-small">Default (inactive)</div>
+
+        <Checkbox
+          selected={true}
+          onChange={incrementCounter}
+          configuration={"default"}
+          disabled={true}
+        ></Checkbox>
+        <div className="text text-label text-label-small">Error</div>
+
+        <Checkbox
+          selected={true}
+          onChange={incrementCounter}
+          configuration={"error"}
+        ></Checkbox>
+        <div className="text text-label text-label-small">Error (inactive)</div>
+
+        <Checkbox
+          selected={true}
+          onChange={incrementCounter}
+          configuration={"error"}
+          disabled={true}
+
+        ></Checkbox>
+        <p className="text text-body text-body-large">Counter: {count}</p>
+
+      </div>
+
       <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "70px", gap: "40px" }}>
         {/* SWITCHES */}
 
@@ -254,7 +295,6 @@ function App() {
         >
           <div className="text text-label text-label-large">Click Me</div>
         </Button>
-        <p className="text text-body text-body-large">Counter: {count}</p>
 
       </div>
 

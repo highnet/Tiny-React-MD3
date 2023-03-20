@@ -3,7 +3,6 @@
 :root {
 
   /* COLOR */
-  --dried-lavender-flowers: #79747E;
   --prophet-violet: #6750A4;
   --genestealer-purple: #735EAB;
   --ultimate-grey: #A9A8AA;
@@ -14,6 +13,7 @@
   --titanium-white: #E4E4E4;
   --alpine-goat: #F3F1F8;
   --silver-phoenix: #ECEAF4;
+  --dried-lavender-flowers: #79747E;
 
 
   /* ELEVATION */
@@ -374,18 +374,15 @@ body {
 
 .switch-track-deselected{
   background-color: var(--pink-champagne);
-
 }
 
 .switch-handle{
   border-radius: 100%;
   transition: all 250ms ease-in-out;
-
 }
 
 .switch-handle-selected{
   background-color: white;
-
   width: 46.155%;
   height: 75%;
   margin: 7.69% 46.155%;
@@ -396,7 +393,6 @@ body {
   width: 30.77%;
   height: 50%;
   margin: 16% 13%;
-
 }
 
 .switch-handle-deselected.switch-handle-with-icon{
@@ -405,7 +401,6 @@ body {
   height: 75%;
   margin: 7.69% 5%;
 }
-
 
 .switch-handle-overlay{
   display: flex;
@@ -460,4 +455,73 @@ body {
 
 .switch-icon-disabled{
   display: none;
+}
+
+/* CHECKBOXES */
+
+.checkbox{
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  margin: 11px;
+  transition: all 250ms ease-in-out;
+  border: 2px solid transparent;
+}
+
+.checkbox-default{
+  background-color: var(--prophet-violet);
+}
+
+.checkbox-error{
+  background-color: #B3261E;
+}
+
+.checkbox-disabled{
+  background-color: #A9A6A9;
+  pointer-events: none;
+}
+
+.checkbox-deselected{
+  background-color: transparent;
+  border: 2px solid #49454F;
+}
+
+.checkbox-deselected.checkbox-error{
+  border: 2px solid #B3261E;
+}
+
+.checkbox-overlay{
+  width: 225%;
+  height: 225%;
+  background-color: transparent;
+  border-radius: 100%;
+  transform: translate(-29%, -71%);
+
+}
+
+.checkbox-overlay:hover{
+  background-color: #6750a41f;
+}
+
+.checkbox-overlay:focus{
+background-color: #7660b32d;
+}  
+
+.checkbox-overlay:active{
+    background-color: #48367b47;
+}
+
+.checkbox-icon{
+  color: white;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  right: 13%;
+}
+
+.checkbox-icon-deselected{
+  color: transparent;
 }
