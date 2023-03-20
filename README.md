@@ -19,7 +19,7 @@
 | 🔽 Bottom sheets | ❌ | | |
 | 🕹️ [Buttons](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/readme.md#%EF%B8%8F-buttons) | ✅ | [button.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Button/Frame/button.tsx) | [Button.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Button/Button.tsx) |
 | 🪪 Cards | ❌ | | |
-| ☑️ Checkbox | ❌ | | |
+| ☑️ [Checkbox](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/readme.md#%EF%B8%8F-checkbox) | ✅ | [checkbox.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Checkbox/Frame/checkbox.tsx) | [Checkbox.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Checkbox/Checkbox.tsx) |
 | 🍪 Chips | ❌ | | |
 | 📅 Date Pickers | ❌ | | |
 | 💬 Dialogs | ❌ | | |
