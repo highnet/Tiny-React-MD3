@@ -365,7 +365,6 @@ body {
   height: 100%;
   border-radius: 33%/50%; 
   transition: all 250ms ease-in-out;
-  
 }
 
 .switch-track-selected{
@@ -496,7 +495,6 @@ body {
   background-color: transparent;
   border-radius: 100%;
   transform: translate(-29%, -71%);
-
 }
 
 .checkbox-overlay:hover{
@@ -504,7 +502,7 @@ body {
 }
 
 .checkbox-overlay:focus{
-background-color: #7660b32d;
+  background-color: #7660b32d;
 }  
 
 .checkbox-overlay:active{
