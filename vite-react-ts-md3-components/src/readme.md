@@ -15,6 +15,10 @@ You may supplement the following optional properties to a checkbox:
 | <code>configuration</code> | <code>string</code> |  <code>"filled"</code> | <code>configuration of the button style</code>| [ICheckboxProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Checkbox/ICheckboxProps.tsx) |
 | <code>selected</code> | <code>boolean</code> |  <code>false</code> | <code>flag to indicate if the component is selected</code>| [ICheckboxProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Checkbox/ICheckboxProps.tsx) | 
 
+The possible different options of <code>{configuration}</code> are the following: 
+1. <code>"default"</code>
+2. <code>"error"</code>
+
 Place a default checkbox component like this: <code>`<Checkbox selected={true} onChange={undefined}></Checkbox>`</code>
 
 ## 💟 [Icons](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Icon/Frame/icon.tsx)
