@@ -11,6 +11,7 @@ You may supplement the following optional properties to a checkbox:
 | <code>className</code> | <code>string</code> |  <code>""</code> | <code>supplementary class names</code>| [IComponentProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Component/IComponentProps.tsx) |
 | <code>onChange</code> | <code>`MouseEvent<HTMLDivElement>`</code> | <code>undefined</code> | <code>on change event</code>| [ICheckboxProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Checkbox/ICheckboxProps.tsx) | 
 | <code>configuration</code> | <code>string</code> |  <code>"filled"</code> | <code>configuration of the button style</code>| [ICheckboxProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Checkbox/ICheckboxProps.tsx) |
+| <code>selected</code> | <code>boolean</code> |  <code>false</code> | <code>flag to indicate if the component is selected</code>| [ICheckboxProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Checkbox/ICheckboxProps.tsx) | 
 
 Place a default checkbox component like this: <code>`<Checkbox selected={true} onChange={undefined}></Checkbox>`</code>
 
