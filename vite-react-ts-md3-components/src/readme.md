@@ -2,6 +2,8 @@
 
 ## ☑️ [Checkbox](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Checkbox/Frame/checkbox.tsx)
 
+<i>Checkboxes allow users to select one or more items from a set and can be used to turn an option on or off. They’re a kind of selection control that helps users make a choice from a set of options.</i>
+
 You may supplement the following optional properties to a checkbox:
 | Property | Type |  Default | Description | Interface |
 | -------- | ---- | -------- | ----------- | --------- |
@@ -14,8 +16,6 @@ You may supplement the following optional properties to a checkbox:
 | <code>selected</code> | <code>boolean</code> |  <code>false</code> | <code>flag to indicate if the component is selected</code>| [ICheckboxProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Checkbox/ICheckboxProps.tsx) | 
 
 Place a default checkbox component like this: <code>`<Checkbox selected={true} onChange={undefined}></Checkbox>`</code>
-
-<i>Checkboxes allow users to select one or more items from a set and can be used to turn an option on or off. They’re a kind of selection control that helps users make a choice from a set of options.</i>
 
 ## 💟 [Icons](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Icon/Frame/icon.tsx)
 
