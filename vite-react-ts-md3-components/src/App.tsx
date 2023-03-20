@@ -25,7 +25,6 @@ function App() {
         <Checkbox
           selected={true}
           onChange={incrementCounter}
-          configuration={"default"}
         ></Checkbox>
         <div className="text text-label text-label-small">Default (inactive)</div>
 

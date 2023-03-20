@@ -25,7 +25,7 @@ const Checkbox: React.FC<ICheckboxProps> = ({ disabled, children, id, className,
   return (
     <div
     id={_id}
-    className={"checkbox " + "checkbox-" + _config + " " + "checkbox-" + (_selected ? "selected": "deselected") + " " + "checkbox-" + (_disabled ? "disabled":"enabled")}
+    className={"checkbox " + "checkbox-" + _config + " " + "checkbox-" + (_selected ? "selected": "deselected") + " " + "checkbox-" + (_disabled ? "disabled":"enabled") + " " + _className}
 
     onClick={(e) => {
       onChange?.(e);
