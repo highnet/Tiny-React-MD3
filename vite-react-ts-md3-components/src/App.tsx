@@ -3,20 +3,23 @@ import { useState } from 'react'
 import Button from "./Button/Button";
 import Switch from "./Switch/Switch";
 import Checkbox from "./Checkbox/Checkbox";
-
-
+import Badge from "./Badge/Badge";
 
 function App() {
   const [count, setCount] = useState(0)
 
   const incrementCounter = () => {
     setCount(count + 1); // This line calls the state setter function with the new counter value
-
   };
 
   return (
     <div className="App">
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "70px", gap: "40px" }}>
+        {/* BADGES */}
+        <div className="text text-title text-title-large">Badges</div>
+        <div style={{backgroundColor:"#F8AF50", width:"100px", height:"100px"}}><Badge></Badge> </div>
 
+      </div>
       <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "70px", gap: "40px" }}>
         {/* SWITCHES */}
         <div className="text text-title text-title-large">Checkboxes</div>
