@@ -101,5 +101,3 @@ You may supplement the following optional properties to a switch:
 
 Create a default switch component like this:
 <code>`<Switch onChange={undefined}></Switch>`</code>
-
-<i>tip:</i> Check if a given switch is enabled or disabled by checking if the switch's class name list contains "switch-enabled" or "switch-disabled"
