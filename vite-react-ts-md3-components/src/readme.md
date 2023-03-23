@@ -19,21 +19,27 @@ The possible different options of <code>{configuration}</code> are the following
 1. <code>"default"</code>
 2. <code>"error"</code>
 
-Place a default checkbox component like this: <code>`<Checkbox selected={true} onChange={undefined}></Checkbox>`</code>
+Place a default checkbox component like this: 
+
+```<Checkbox selected={true} onChange={undefined}></Checkbox>```
 
 ## 💟 [Icons](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Icon/Frame/icon.tsx)
 
 <i>Use icons to symbolize common actions, files, devices, and directories.</i>
 
-Place a default icon like this: <code>`<span className="material-symbols-outlined">{name}
-      </span>`</code>
+Place a default icon like this:
+
+```<span className="material-symbols-outlined">{name}</span>```
+
  where <code>{name}</code> is the set of all accepted icon names by [Material Symbols](https://fonts.google.com/icons)
 
 ## 🔤 [Typography](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Typography/Frame/typography.tsx)
 
 <i>Use typography to present your design and content as clearly and efficiently as possible.</i>
 
-Place div text components by combining class names like this: <code>`<div className="text text-{type} text-{type}-{size}">Hello World!</div>`</code>
+Place div text components by combining class names like this: 
+
+```<div className="text text-{type} text-{type}-{size}">Hello World!</div>```
 
 The possible different options of <code>{type}</code> are the following: 
 1. <code>display</code>
@@ -51,7 +57,9 @@ and the possible different of <code>{size}</code> are the following:
 
 <i>Use elevation to depict a third dimension of your content.</i>
 
-Elevate any component by adding the class name like this: <code>`<div className="elevation-light-{level}"></div>`</code>
+Elevate any component by adding the class name like this:
+
+```<div className="elevation-light-{level}"></div>```
 
 The possible different options of <code>{level}</code> are the following: 
 1. <code>1</code>
@@ -104,4 +112,5 @@ You may supplement the following optional properties to a switch:
 | <code>iconNameDeselected</code> | <code>string</code> |  <code>"close"</code> | <code>the name of the icon on display when deselected</code>| [ISwitchProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Switch/Switch.tsx) |
 
 Create a default switch component like this:
-<code>`<Switch onChange={undefined}></Switch>`</code>
+
+```<Switch onChange={undefined}></Switch>```
