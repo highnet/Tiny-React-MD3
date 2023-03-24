@@ -32,7 +32,7 @@
 | 🗄️ Navigation drawer | ❌ | | |
 | 🚈 Navigation rail | ❌ | | |
 | 🔄 Progress indicators | ❌ | | |
-| 🔘 Radio button | ❌ | | |
+| 🔘 Radio button | 🚧 | | |
 | 🔍 Search | ❌ | | |
 | 📑 Side sheets | ❌ | | |
 | 🎚️ Sliders | ❌ | | |
