@@ -14,7 +14,7 @@
 ## Progress
 | Component | Progress | Frame | Definition | 
 |-----------|----------|-------|------------|
-| 📛 Badges | 🚧 | | | 
+| 📛 Badges | ✅ | [badge.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Badge/Frame/badge.tsx) | [Badge.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Badge/Badge.tsx) | 
 | ⏬ Bottom app bar | ❌ | | |
 | 🔽 Bottom sheets | ❌ | | |
 | 🕹️ [Buttons](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/readme.md#%EF%B8%8F-buttons) | ✅ | [button.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Button/Frame/button.tsx) | [Button.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Button/Button.tsx) |
