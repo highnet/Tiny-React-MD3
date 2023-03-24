@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { IBadgeProps } from "./IBadgeProps";
 
-const Badge: React.FC<IBadgeProps> = ({ disabled, children, id, className, configuration, xOffset, yOffset, label}) => {
+const Badge: React.FC<IBadgeProps> = ({ children, id, className, configuration, xOffset, yOffset, label}) => {
 
-  const [_disabled] = useState(disabled || false);
   const [_id] = useState(id || undefined);
   const [_className] = useState(className || "");
   const [_config] = useState(configuration || "small");
@@ -12,7 +11,7 @@ const Badge: React.FC<IBadgeProps> = ({ disabled, children, id, className, confi
   const [_label] = useState(label || "");
 
   const click = () => {
-    console.log("Clicked", { disabled: _disabled, id: _id, className: _className})
+    console.log("Clicked", { id: _id, className: _className})
   }
 
   let finalXOffset: string = _xOffset.toString() + "%";
