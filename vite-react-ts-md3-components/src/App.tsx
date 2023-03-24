@@ -4,6 +4,7 @@ import Button from "./Button/Button";
 import Switch from "./Switch/Switch";
 import Checkbox from "./Checkbox/Checkbox";
 import Badge from "./Badge/Badge";
+import RadioButton from './Radio Button/RadioButton';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,20 +16,45 @@ function App() {
   return (
     <div className="App">
       <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "70px", gap: "40px" }}>
+        {/* RADIO BUTTONS */}
+        <div className="text text-title text-title-large">Radio Buttons</div>
+
+        <RadioButton
+          name={"tiny md3"}
+          value={"option-1"}
+        />
+        <div className="text text-label text-label-small">Option 1</div>
+
+        <RadioButton
+          name={"tiny md3"}
+          value={"option-2"}
+          defaultChecked={true}
+        />
+        <div className="text text-label text-label-small">Option 2</div>
+
+        <RadioButton
+          name={"tiny md3"}
+          value={"option-3"}
+        />
+        <div className="text text-label text-label-small">Option 3</div>
+
+      </div>
+
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "70px", gap: "40px" }}>
         {/* BADGES */}
         <div className="text text-title text-title-large">Badges</div>
         <div className="text text-label text-label-small">Small</div>
-        <div style={{backgroundColor:"#F8AF50", width:"50px", height:"50px"}}>
+        <div style={{ backgroundColor: "#F8AF50", width: "50px", height: "50px" }}>
           <Badge
             configuration={"small"}
             xOffset={95}
             yOffset={-2}
-            ></Badge>
+          ></Badge>
         </div>
 
         <div className="text text-label text-label-small">Single Digit</div>
-        <div style={{backgroundColor:"#F8AF50", width:"100px", height:"100px"}}>
-          <Badge 
+        <div style={{ backgroundColor: "#F8AF50", width: "100px", height: "100px" }}>
+          <Badge
             configuration={"single-digit"}
             xOffset={93}
             yOffset={-4}
@@ -38,17 +64,17 @@ function App() {
         </div>
 
         <div className="text text-label text-label-small">Multiple Digits</div>
-        <div style={{backgroundColor:"#F8AF50", width:"150px", height:"150px"}}>
+        <div style={{ backgroundColor: "#F8AF50", width: "150px", height: "150px" }}>
           <Badge
             configuration={"multiple-digits"}
             xOffset={93}
             yOffset={-4}
             label={"123"}
-            ></Badge>
+          ></Badge>
         </div>
 
       </div>
-      
+
       <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "70px", gap: "40px" }}>
         {/* SWITCHES */}
         <div className="text text-title text-title-large">Checkboxes</div>
@@ -93,44 +119,44 @@ function App() {
         <div className="text text-label text-label-small">No Icon</div>
 
         <Switch
-        selected={true}
-        onChange={incrementCounter}
-       ></Switch>
+          selected={true}
+          onChange={incrementCounter}
+        ></Switch>
 
         <div className="text text-label text-label-small">No Icon (Inactive)</div>
 
         <Switch
-        selected={true}
-        onChange={incrementCounter}
-        disabled={true}
-       ></Switch>
+          selected={true}
+          onChange={incrementCounter}
+          disabled={true}
+        ></Switch>
 
-               <div className="text text-label text-label-small">With Icon</div>
+        <div className="text text-label text-label-small">With Icon</div>
 
         <Switch
-        selected={true}
-        onChange={incrementCounter}
-        icon={true}
-        iconNameSelected={"warning"}
-        iconNameDeselected={"house"}
-       ></Switch>
+          selected={true}
+          onChange={incrementCounter}
+          icon={true}
+          iconNameSelected={"warning"}
+          iconNameDeselected={"house"}
+        ></Switch>
 
         <div className="text text-label text-label-small">With Icon (Inactive)</div>
 
         <Switch
-        selected={true}
-        onChange={incrementCounter}
-        icon={true}
+          selected={true}
+          onChange={incrementCounter}
+          icon={true}
 
-        disabled={true}
-       ></Switch>
-       
+          disabled={true}
+        ></Switch>
+
         <p className="text text-body text-body-large">Counter: {count}</p>
       </div>
 
       <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "70px", gap: "40px" }}>
-        
-      {/* BUTTONS */}
+
+        {/* BUTTONS */}
 
         <div className="text text-title text-title-large">Buttons</div>
         <div className="text text-title text-title-medium">Filled Buttons</div>
