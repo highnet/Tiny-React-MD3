@@ -4,7 +4,7 @@
 
 <i>Badges are used to convey dynamic information, such as a count or status. A badge can include text, labels, or numbers. </i>
 
-You may supplement the following optional properties to a checkbox:
+You may supplement the following optional properties to a badge:
 | Property | Type |  Default | Description | Interface |
 | -------- | ---- | -------- | ----------- | --------- |
 | <code>children</code> | <code>React.ReactNode</code> |  <code>undefined</code> | <code>children components</code>| [IComponentProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Component/IComponentProps.tsx) |
