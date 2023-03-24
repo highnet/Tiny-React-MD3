@@ -5,5 +5,5 @@ export interface IBadgeProps extends IComponentProps {
     configuration?: string;
     xOffset?: number;
     yOffset?: number;
-    label?: string;
+    label?: string
 }
