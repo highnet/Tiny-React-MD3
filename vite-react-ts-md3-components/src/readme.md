@@ -1,5 +1,29 @@
 # Tiny React MD-3 Documentation
 
+## 📛 [Badge](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Badge/Frame/badge.tsx)
+
+<i>Badges are used to convey dynamic information, such as a count or status. A badge can include text, labels, or numbers. </i>
+
+You may supplement the following optional properties to a checkbox:
+| Property | Type |  Default | Description | Interface |
+| -------- | ---- | -------- | ----------- | --------- |
+| <code>children</code> | <code>React.ReactNode</code> |  <code>undefined</code> | <code>children components</code>| [IComponentProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Component/IComponentProps.tsx) |
+| <code>id</code> | <code>string</code> |  <code>undefined</code> | <code>supplementary component id</code>|  [IComponentProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Component/IComponentProps.tsx) |
+| <code>className</code> | <code>string</code> |  <code>""</code> | <code>supplementary class names</code>| [IComponentProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Component/IComponentProps.tsx) |
+| <code>configuration</code> | <code>`string`</code> | <code>"small"</code> | <code>configuration of the component</code>| [IBadgeProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Badge/IBadgeProps.tsx) |
+| <code>xOffset</code> | <code>`number`</code> | <code>0</code> | <code>x axis offset based on the parent container in percentage</code>| [IBadgeProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Badge/IBadgeProps.tsx) | 
+| <code>yOffset</code> | <code>`number`</code> | <code>0</code> | <code>y axis offset based on the parent container in percentage</code>| [IBadgeProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Badge/IBadgeProps.tsx) | 
+| <code>label</code> | <code>`string`</code> | <code>""</code> | <code>label inside the badge</code>| [IBadgeProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Badge/IBadgeProps.tsx) |
+
+The possible different options of <code>{configuration}</code> are the following: 
+1. <code>"small"</code>
+2. <code>"single-digit"</code>
+3. <code>"multiple-digits"</code>
+
+Place a default badge component like this:
+
+```<Badge configuration={"single-digit"} xOffset={93} yOffset={-4} label={"3"}></Badge>```
+
 ## ☑️ [Checkbox](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Checkbox/Frame/checkbox.tsx)
 
 <i>Checkboxes allow users to select one or more items from a set and can be used to turn an option on or off. They’re a kind of selection control that helps users make a choice from a set of options.</i>
@@ -19,7 +43,7 @@ The possible different options of <code>{configuration}</code> are the following
 1. <code>"default"</code>
 2. <code>"error"</code>
 
-Place a default checkbox component like this: 
+Place a default checkbox component like this:
 
 ```<Checkbox selected={true} onChange={undefined}></Checkbox>```
 
