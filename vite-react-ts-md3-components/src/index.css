@@ -14,6 +14,10 @@
   --alpine-goat: #F3F1F8;
   --silver-phoenix: #ECEAF4;
   --dried-lavender-flowers: #79747E;
+  --firebrick: #B3261E;
+  --ishtar: #49454F;
+  --snowbank: #E9E8E9;
+  --moon-landing: #A7A6A8;
 
 
   /* ELEVATION */
@@ -419,7 +423,7 @@ body {
 }
 
 .switch-track-disabled.switch-track-selected{
-  background-color: #E9E8E9;
+  background-color: var(--snowbank);
 }
 
 .switch-track-disabled.switch-track-deselected{
@@ -430,7 +434,7 @@ body {
 }
 
 .switch-handle-deselected.switch-handle-enabled{
-  background-color: #A7A6A8;
+  background-color: var(--moon-landing);
 }
 
 .switch-icon {
@@ -472,21 +476,21 @@ body {
 }
 
 .checkbox-error{
-  background-color: #B3261E;
+  background-color: var(--firebrick);
 }
 
 .checkbox-disabled{
-  background-color: #A9A6A9;
+  background-color: var(--ultimate-grey);
   pointer-events: none;
 }
 
 .checkbox-deselected{
   background-color: transparent;
-  border: 2px solid #49454F;
+  border: 2px solid var(--ishtar);
 }
 
 .checkbox-deselected.checkbox-error{
-  border: 2px solid #B3261E;
+  border: 2px solid var(--firebrick);
 }
 
 .checkbox-overlay{
@@ -522,4 +526,29 @@ body {
 
 .checkbox-icon-deselected{
   color: transparent;
+}
+
+/* BADGES */
+
+.badge {
+  color: white;
+  background-color: var(--firebrick);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+}
+
+
+.badge-small{
+    width: 6px;
+    height: 6px;
+}
+
+.badge-single-digit{
+  width: 16px;
+  height: 16px;
+}
+
+.badge-multiple-digits{
+  display: inline-block;
 }
