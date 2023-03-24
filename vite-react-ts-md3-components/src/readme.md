@@ -15,7 +15,7 @@ You may supplement the following optional properties to a checkbox:
 | <code>yOffset</code> | <code>`number`</code> | <code>0</code> | <code>y axis offset percentage</code>| [IBadgeProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Badge/IBadgeProps.tsx) | 
 | <code>label</code> | <code>`string`</code> | <code>""</code> | <code>label inside the badge</code>| [IBadgeProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Badge/IBadgeProps.tsx) |
 
-The possible different options of <code>{configuration}</code> are the following: 
+The supported options of <code>{configuration}</code> are the following: 
 1. <code>"small"</code>
 2. <code>"single-digit"</code>
 3. <code>"multiple-digits"</code>
@@ -39,7 +39,7 @@ You may supplement the following optional properties to a checkbox:
 | <code>configuration</code> | <code>string</code> |  <code>"filled"</code> | <code>configuration of the button style</code>| [ICheckboxProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Checkbox/ICheckboxProps.tsx) |
 | <code>selected</code> | <code>boolean</code> |  <code>false</code> | <code>flag to indicate if the component is selected</code>| [ICheckboxProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Checkbox/ICheckboxProps.tsx) | 
 
-The possible different options of <code>{configuration}</code> are the following: 
+The supported options of <code>{configuration}</code> are the following: 
 1. <code>"default"</code>
 2. <code>"error"</code>
 
@@ -85,7 +85,7 @@ Elevate any component by adding the class name like this:
 
 ```<div className="elevation-light-{level}"></div>```
 
-The possible different options of <code>{level}</code> are the following: 
+The supported options of <code>{level}</code> are the following: 
 1. <code>1</code>
 2. <code>2</code>
 3. <code>3</code>
@@ -112,7 +112,7 @@ Create a default button component like this:
 
 ```<Button onClick={undefined}> <div className="text text-label text-label-large">Click Me</div></Button>```
   
-The possible different options of <code>{configuration}</code> are the following: 
+The supported options of <code>{configuration}</code> are the following: 
 1. <code>"filled"</code>
 2. <code>"outlined"</code>
 3. <code>"text"</code>
