@@ -57,7 +57,6 @@ function App() {
           value={"option-4"}
           disabled={true}
           defaultChecked={true}
-
         />
         <div 
           className="text text-label text-label-small">
