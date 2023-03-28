@@ -11,6 +11,10 @@ You may supplement the following optional properties to a radio button:
 | <code>children</code> | <code>React.ReactNode</code> |  <code>undefined</code> | <code>children components</code>| [IComponentProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Component/IComponentProps.tsx) |
 | <code>id</code> | <code>string</code> |  <code>undefined</code> | <code>supplementary component id</code>|  [IComponentProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Component/IComponentProps.tsx) |
 | <code>className</code> | <code>string</code> |  <code>""</code> | <code>supplementary class names</code>| [IComponentProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Component/IComponentProps.tsx) |
+| <code>onClick</code> | <code>MouseEvent<HTMLDivElement></code> |  <code>undefined</code> | <code>on click event</code> | <code>[IRadioButtonProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Radio%20Button/IRadioButtonProps.tsx)</code> |
+| <code>name</code> | <code>string</code> |  <code>"radio"</code> | <code>name of the radio button group</code> | <code>[IRadioButtonProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Radio%20Button/IRadioButtonProps.tsx)</code> |
+| <code>value</code> | <code>string</code> |  <code>"radio"</code> | <code>value of the radio button</code> | <code>[IRadioButtonProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Radio%20Button/IRadioButtonProps.tsx)</code> |
+| <code>defaultChecked</code> | <code>boolean</code> |  <code>false</code> | <code>default checked state of the radio button</code> | <code>[IRadioButtonProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Radio%20Button/IRadioButtonProps.tsx)</code> |
 
 Place a default radio button like this:
 ```<RadioButton name={"tiny md3"} value={"option-1"}/>```
