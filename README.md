@@ -1,6 +1,6 @@
 # Tiny React MD3
 
-You like Figma? You like React? then you will love Tiny React MD3!
+❤️ You like Figma? ❤️ You like React? ❤️❤️❤️ Then you love Tiny React MD3!
 
 [Figma Material Design 3 Kit](https://www.figma.com/community/file/1035203688168086460) 🤝 [React.ts](https://developer.okta.com/blog/2022/03/14/react-vite-number-converter) = [Tiny React MD3](https://github.com/highnet/vite-react-ts-md3-components/)
 
