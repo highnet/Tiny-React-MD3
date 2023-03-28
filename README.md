@@ -10,10 +10,9 @@
 
 
 
-## How to start?
-[Starting the Project](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/readme.md)
-
-[Documentation](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/readme.md)
+## How to get started?
+* [Starting the Project](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/readme.md)
+* [Documentation](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/readme.md)
 
 ## Progress
 | Component | Progress | Frame | Definition | 
