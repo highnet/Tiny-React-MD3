@@ -2,7 +2,7 @@
 
 * Quickly transform your design kit prototypes into stunning and modern web applications
 * A set of easy-to-use and customizable components that follow the Material Design 3 principles and aesthetics.
-* Developer handoffs made easy with ensured parity.
+* Developer handoffs made easy with ensured parity between the Figma material Design 3 Kit and React.
 
 [Figma Material Design 3 Kit](https://www.figma.com/community/file/1035203688168086460) 🤝 [React.ts](https://developer.okta.com/blog/2022/03/14/react-vite-number-converter) = [Tiny React MD3](https://github.com/highnet/vite-react-ts-md3-components/)
 
