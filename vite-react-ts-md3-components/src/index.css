@@ -611,9 +611,9 @@ input[type="radio"]:checked::before {
 }
 
 input[type="radio"].radio-button-input-disabled{
-    border: 2px solid #A9A6A9;
+    border: 2px solid var(--ultimate-grey);
 }
 
 input[type="radio"].radio-button-input-disabled::before{
-  background-color: #A9A6A9;
+  background-color: var(--ultimate-grey);
 }
