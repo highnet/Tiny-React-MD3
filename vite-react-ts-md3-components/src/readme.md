@@ -2,9 +2,18 @@
 
 ## 🔘 [Radio Button](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Radio%20Button/Frame/radioButton.tsx)
 
+<i>Checkboxes allow users to select one or more items from a set and can be used to turn an option on or off. They’re a kind of selection control that helps users make a choice from a set of options.</i>
+
+You may supplement the following optional properties to a checkbox:
+| Property | Type |  Default | Description | Interface |
+| -------- | ---- | -------- | ----------- | --------- |
+| <code>children</code> | <code>React.ReactNode</code> |  <code>undefined</code> | <code>children components</code>| [IComponentProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Component/IComponentProps.tsx) |
+| <code>id</code> | <code>string</code> |  <code>undefined</code> | <code>supplementary component id</code>|  [IComponentProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Component/IComponentProps.tsx) |
+| <code>className</code> | <code>string</code> |  <code>""</code> | <code>supplementary class names</code>| [IComponentProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Component/IComponentProps.tsx) |
+
 ## 📛 [Badge](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Badge/Frame/badge.tsx)
 
-<i>Badges are used to convey dynamic information, such as a count or status. A badge can include text, labels, or numbers. </i>
+<i>Badges are used to convey dynamic information, such as a count or status. A badge can include text, labels, or numbers.</i>
 
 You may supplement the following optional properties to a badge:
 | Property | Type |  Default | Description | Interface |
