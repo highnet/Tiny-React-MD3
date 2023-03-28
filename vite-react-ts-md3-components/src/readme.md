@@ -12,6 +12,9 @@ You may supplement the following optional properties to a radio button:
 | <code>id</code> | <code>string</code> |  <code>undefined</code> | <code>supplementary component id</code>|  [IComponentProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Component/IComponentProps.tsx) |
 | <code>className</code> | <code>string</code> |  <code>""</code> | <code>supplementary class names</code>| [IComponentProps](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Component/IComponentProps.tsx) |
 
+Place a default radio button like this:
+```<RadioButton name={"tiny md3"} value={"option-1"}/>```
+
 ## 📛 [Badge](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Badge/Frame/badge.tsx)
 
 <i>Badges are used to convey dynamic information, such as a count or status. A badge can include text, labels, or numbers.</i>
