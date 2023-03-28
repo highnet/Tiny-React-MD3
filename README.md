@@ -69,7 +69,7 @@
 ###
 
 # Author: 
-* Joaquin Telleria [www.highnet.xyz](https://www.highnet.xyz)
+* Joaquin 'Highnet' Telleria@[www.highnet.xyz](https://www.highnet.xyz)
 
 ## Feedback
 If you have any feedback, please reach out to me at joaquintelleria@gmail.com
