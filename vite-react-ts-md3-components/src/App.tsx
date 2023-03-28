@@ -39,7 +39,6 @@ function App() {
         <RadioButton
           name={"tiny md3"}
           value={"option-2"}
-          defaultChecked={true}
         />
         <div 
         className="text text-label text-label-small">
@@ -52,6 +51,17 @@ function App() {
         <div 
           className="text text-label text-label-small">
             Option 3
+        </div>
+        <RadioButton
+          name={"tiny md3"}
+          value={"option-4"}
+          disabled={true}
+          defaultChecked={true}
+
+        />
+        <div 
+          className="text text-label text-label-small">
+            Option 4 (Inactive)
         </div>
       </div>
       <div 

@@ -605,3 +605,15 @@ input[type="radio"]:checked::before {
   position: absolute;
   translate: 10px -50px;
 }
+
+.radio-button-disabled{
+   pointer-events: none; 
+}
+
+input[type="radio"].radio-button-input-disabled{
+    border: 2px solid #A9A6A9;
+}
+
+input[type="radio"].radio-button-input-disabled::before{
+  background-color: #A9A6A9;
+}
