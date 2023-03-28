@@ -15,37 +15,36 @@
 | Component | Progress | Frame | Definition | 
 |-----------|----------|-------|------------|
 | 📛 [Badges](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/readme.md#-badge) | ✅ | [badge.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Badge/Frame/badge.tsx) | [Badge.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Badge/Badge.tsx) | 
-| ⏬ Bottom app bar | ❌ | | |
-| 🔽 Bottom sheets | ❌ | | |
+| ⏬ Bottom app bar | 🚧 | | |
+| 🔽 Bottom sheets | 🚧 | | |
 | 🕹️ [Buttons](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/readme.md#%EF%B8%8F-buttons) | ✅ | [button.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Button/Frame/button.tsx) | [Button.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Button/Button.tsx) |
-| 🪪 Cards | ❌ | | |
+| 🪪 Cards | 🚧 | | |
 | ☑️ [Checkbox](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/readme.md#%EF%B8%8F-checkbox) | ✅ | [checkbox.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Checkbox/Frame/checkbox.tsx) | [Checkbox.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Checkbox/Checkbox.tsx) |
-| 🍪 Chips | ❌ | | |
-| 📅 Date Pickers | ❌ | | |
-| 💬 Dialogs | ❌ | | |
-| 🗂️ Dividers | ❌ | | |
+| 🍪 Chips | 🚧 | | |
+| 📅 Date Pickers | 🚧 | | |
+| 💬 Dialogs | 🚧 | | |
+| 🗂️ Dividers | 🚧 | | |
 | 🏔️ [Elevation](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/readme.md#%EF%B8%8F-elevation) | ✅ | [elevation.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Elevation/Frame/elevation.tsx) | [index.css](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/index.css) |
 | 💟 [Icons](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/readme.md#-icons) | ✅ | [icon.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Icon/Frame/icon.tsx) | [index.css](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/index.css) |
-| 📝 Lists | ❌ | | |
-| 📚 Menus | ❌ | | |
-| 🧭 Navigation bar | ❌ | | |
-| 🗄️ Navigation drawer | ❌ | | |
-| 🚈 Navigation rail | ❌ | | |
-| 🔄 Progress indicators | ❌ | | |
+| 📝 Lists | 🚧 | | |
+| 📚 Menus | 🚧 | | |
+| 🧭 Navigation bar | 🚧 | | |
+| 🗄️ Navigation drawer | 🚧 | | |
+| 🚈 Navigation rail | 🚧 | | |
+| 🔄 Progress indicators | 🚧 | | |
 | 🔘 [Radio button](https://github.com/highnet/vite-react-ts-md3-components/tree/master/vite-react-ts-md3-components/src#-radio-button) | ✅ | [radioButton.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Radio%20Button/Frame/radioButton.tsx) | [RadioButton.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Radio%20Button/RadioButton.tsx) |
-| 🔍 Search | ❌ | | |
-| 📑 Side sheets | ❌ | | |
-| 🎚️ Sliders | ❌ | | |
-| 🥨 Snackbar | ❌ | | |
+| 🔍 Search | 🚧 | | |
+| 📑 Side sheets | 🚧 | | |
+| 🎚️ Sliders | 🚧 | | |
+| 🥨 Snackbar | 🚧 | | |
 | 🔦 [Switch](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/readme.md#-switch) | ✅ | [switch.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Switch/Frame/switch.tsx) | [Switch.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Switch/Switch.tsx) |
-| 📑 Tabs | ❌ | | |
-| 📜 Text fields | ❌ | | |
-| ⌛ Time pickers | ❌ | | |
-| ⏫ Top app bar | ❌ | | |
+| 📑 Tabs | 🚧 | | |
+| 📜 Text fields | 🚧 | | |
+| ⌛ Time pickers | 🚧 | | |
+| ⏫ Top app bar | 🚧 | | |
 | 🔤 [Typography](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/readme.md#-typography) | ✅ | [typography.tsx](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/Typography/Frame/typography.tsx) | [index.css](https://github.com/highnet/vite-react-ts-md3-components/blob/master/vite-react-ts-md3-components/src/index.css) |
 
 ✅ Finished
-❌ Not Started
 🚧 Under Construction
 
 ## Resources
