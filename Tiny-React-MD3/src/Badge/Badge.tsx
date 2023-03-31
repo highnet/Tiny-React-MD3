@@ -3,29 +3,19 @@ import { IBadgeProps } from "./IBadgeProps";
 
 const Badge: React.FC<IBadgeProps> = ({ children, id, className, configuration, xOffset, yOffset, label}) => {
 
-  const [_id] = useState(id || undefined);
-  const [_className] = useState(className || "");
-  const [_config] = useState(configuration || "small");
-  const [_xOffset] = useState(xOffset || 0);
-  const [_yOffset] = useState(yOffset || 0);
-  const [_label] = useState(label || "");
+  const [_id] = useState(id || undefined); // State for the ID of the badge
+  const [_className] = useState(className || ""); // State for the class name of the badge
+  const [_config] = useState(configuration || "small"); // State for the configuration of the badge
+  const [_xOffset] = useState(xOffset || 0); // State for the x offset of the badge
+  const [_yOffset] = useState(yOffset || 0); // State for the y offset of the badge
+  const [_label] = useState(label || ""); // State for the label of the badge
 
-  const click = () => {
-    console.log("Clicked", { id: _id, className: _className})
-  }
-
-  let finalXOffset: string = _xOffset.toString() + "%";
-  let finalYOffset: string = _yOffset.toString() + "%";
-
-  const handleClick = () => {
-    click();
-  }
+  let finalXOffset: string = _xOffset.toString() + "%"; // Final x offset value
+  let finalYOffset: string = _yOffset.toString() + "%"; // Final y offset value
 
   return (
     <div
-      onClick={(e) => {
-        handleClick();
-      }}
+
       id={_id}
       className={"badge badge-" + _config}
       style={{marginLeft: finalXOffset, marginTop:finalYOffset}}

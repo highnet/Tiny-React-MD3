@@ -4,15 +4,15 @@ import { IRadioButtonProps } from "./IRadioButtonProps";
 
 // Define a functional component for the button
 const RadioButton: React.FC<IRadioButtonProps> = ({ disabled, children, id, className, onClick, name, value, defaultChecked }) => {
-    const [_disabled] = useState(disabled || false);
-    const [_id] = useState(id || undefined);
-    const [_className] = useState(className || "");
-    const [_name] = useState(name || "radio");
-    const [_value] = useState(value || "radio");
-    const [_defaultChecked] = useState(defaultChecked || false);
+    const [_disabled] = useState(disabled || false); // State for whether or not the button is disabled
+    const [_id] = useState(id || undefined); // State for the ID of the button
+    const [_className] = useState(className || ""); // State for the class name of the button
+    const [_name] = useState(name || "radio"); // State for the name of the radio button
+    const [_value] = useState(value || "radio"); // State for the value of the radio button
+    const [_defaultChecked] = useState(defaultChecked || false); // State for whether or not the radio button is checked by default
 
     const click = () => {
-        console.log("Clicked", { disabled: _disabled, id: _id, className: _className });
+        console.log("Thank you for using Tiny React MD3!");
     }
 
     // Return the JSX element for the button

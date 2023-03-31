@@ -1,8 +1,10 @@
+// Import React and some hooks from React library
+
 import React, { useState } from "react";
 import { ISwitchProps } from "./ISwitchProps";
 
+// Define a functional component for the button
 const Switch: React.FC<ISwitchProps> = ({ disabled, children, id, className, selected, onChange, icon, iconNameSelected, iconNameDeselected }) => {
-
   const [_disabled] = useState(disabled || false);
   const [_id] = useState(id || undefined);
   const [_className] = useState(className || "");
@@ -14,7 +16,7 @@ const Switch: React.FC<ISwitchProps> = ({ disabled, children, id, className, sel
   const [_selected, setSelected] = useState(selected || false);
 
   const click = () => {
-    console.log("Clicked", { disabled: _disabled, id: _id, className: _className, selected: _selected })
+        console.log("Thank you for using Tiny React MD3!");
   }
 
   const handleClick = () => {
@@ -22,6 +24,7 @@ const Switch: React.FC<ISwitchProps> = ({ disabled, children, id, className, sel
     click();
   }
 
+    // Return the JSX element for the button
   return (
     <div
       onClick={(e) => {
@@ -42,4 +45,5 @@ const Switch: React.FC<ISwitchProps> = ({ disabled, children, id, className, sel
   );
 };
 
+// Export the button component as default
 export default Switch;

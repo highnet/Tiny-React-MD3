@@ -4,21 +4,20 @@ import { ICheckboxProps } from "./ICheckboxProps";
 
 // Define a functional component for the button
 const Checkbox: React.FC<ICheckboxProps> = ({ disabled, children, id, className, configuration, onChange, selected }) => {
-  const [_disabled] = useState(disabled || false);
-  const [_id] = useState(id || undefined);
-  const [_className] = useState(className || "");
+  const [_disabled] = useState(disabled || false); // State for the disabled property of the checkbox
+  const [_id] = useState(id || undefined); // State for the ID of the checkbox
+  const [_className] = useState(className || ""); // State for the class name of the checkbox
 
-  const [_config] = useState(configuration || "default");
-  const [_selected, setSelected] = useState(selected || false);
+  const [_config] = useState(configuration || "default"); // State for the configuration of the checkbox
+  const [_selected, setSelected] = useState(selected || false); // State for whether or not the checkbox is selected
 
   const click = () => {
-    console.log("Clicked", { disabled: _disabled, id: _id, className: _className, configuration: _config });
+    console.log("Thanks for Using Tiny React MD3!");
   }
 
   const handleClick = () => {
     click();
     setSelected(!_selected);
-
   }
 
   // Return the JSX element for the button

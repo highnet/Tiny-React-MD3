@@ -4,16 +4,17 @@ import { IButtonProps } from "./IButtonProps";
 
 // Define a functional component for the button
 const Button: React.FC<IButtonProps> = ({ disabled, children, id, className, onClick, configuration, icon, iconName }) => {
+  // Initialize state variables
   const [_disabled] = useState(disabled || false);
   const [_id] = useState(id || undefined);
   const [_className] = useState(className || "");
-
   const [_config] = useState(configuration || "filled");
   const [_icon] = useState(icon || false);
   const [_iconName] = useState(iconName || "search");
 
+  // Define click function
   const click = () => {
-    console.log("Clicked", { disabled: _disabled, id: _id, className: _className, configuration: _config, icon: _icon, iconName: _iconName });
+    console.log("Thanks for Using Tiny React MD3!");
   }
 
   // Return the JSX element for the button
@@ -28,20 +29,16 @@ const Button: React.FC<IButtonProps> = ({ disabled, children, id, className, onC
         onClick?.(e);
         click();
       }}
-
     >
       {_icon ?
         <span className="material-symbols-outlined">
           {_iconName}
         </span> : ""
       }
-
       {children}
     </button>
   );
 };
-
-
 
 // Export the button component as default
 export default Button;
