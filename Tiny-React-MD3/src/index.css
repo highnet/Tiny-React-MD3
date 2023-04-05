@@ -1,3 +1,9 @@
+/* EVERYTHING */
+
+*:focus {
+    outline: none;
+}
+
 /* ROOT */
 :root {
 
