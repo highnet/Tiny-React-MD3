@@ -23,6 +23,7 @@
   --ishtar: #49454F;
   --snowbank: #E9E8E9;
   --moon-landing: #A7A6A8;
+  --laughing-jack: #CAC4D0;
 
 
   /* ELEVATION */
@@ -622,4 +623,22 @@ input[type="radio"].radio-button-input-disabled{
 
 input[type="radio"].radio-button-input-disabled::before{
   background-color: var(--ultimate-grey);
+}
+
+/* HORIZONTAL DIVIDERS */
+
+.horizontal-divider{
+  display: flex;
+}
+
+.horizontal-divider-bar{
+  background-color: var(--laughing-jack);
+}
+
+.horizontal-divider-inset-right{
+  background-color: red;
+}
+
+.horizontal-divider-inset-left{
+  background-color: red;
 }

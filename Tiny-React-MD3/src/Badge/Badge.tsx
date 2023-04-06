@@ -10,15 +10,15 @@ const Badge: React.FC<IBadgeProps> = ({ children, id, className, configuration, 
   const [_yOffset] = useState(yOffset || 0); // State for the y offset of the badge
   const [_label] = useState(label || ""); // State for the label of the badge
 
-  let finalXOffset: string = _xOffset.toString() + "%"; // Final x offset value
-  let finalYOffset: string = _yOffset.toString() + "%"; // Final y offset value
+  let _finalXOffset: string = _xOffset.toString() + "%"; // Final x offset value
+  let _finalYOffset: string = _yOffset.toString() + "%"; // Final y offset value
 
   return (
     <div
 
       id={_id}
       className={"badge badge-" + _config}
-      style={{marginLeft: finalXOffset, marginTop:finalYOffset}}
+      style={{marginLeft: _finalXOffset, marginTop:_finalYOffset}}
       >
       <div style={{paddingLeft:"4px", paddingRight:"4px", margin: "0 auto"}} className="text text-label text-label-small">{_label}</div>
       {children}

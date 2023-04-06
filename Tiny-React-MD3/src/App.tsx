@@ -5,6 +5,7 @@ import Switch from "./Switch/Switch";
 import Checkbox from "./Checkbox/Checkbox";
 import Badge from "./Badge/Badge";
 import RadioButton from './Radio Button/RadioButton';
+import HorizontalDivider from './HorizontalDivider/HorizontalDivider';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +16,105 @@ function App() {
 
   return (
     <div className="App">
+
+      <div 
+        style={{ 
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "flex-start",
+          padding: "70px",
+          gap: "40px"
+          }}>
+        {/* HORIZONTAL DIVIDERS */}
+
+        <div 
+          className="text text-title text-title-large">
+          Horizontal Dividers
+        </div>
+
+        <div 
+          className="text text-label text-label-small">
+            Inset None
+        </div>
+        <HorizontalDivider
+          inset={"none"}
+        />
+
+        <div 
+          className="text text-label text-label-small">
+            Inset Right
+        </div>
+        <HorizontalDivider 
+          inset={"right"}
+        />
+        
+        <div 
+          className="text text-label text-label-small">
+            Inset Left
+        </div>
+        <HorizontalDivider
+          inset={"left"}
+        />
+
+        <div 
+          className="text text-label text-label-small">
+            Inset Center
+        </div>
+        <HorizontalDivider 
+          inset={"center"}
+        />
+      </div>
+
+            <div 
+        style={{ 
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "flex-start",
+          padding: "70px",
+          gap: "40px"
+          }}>
+        {/* VERTICAL DIVIDERS */}
+
+        <div 
+          className="text text-title text-title-large">
+          Vertical Dividers
+        </div>
+
+        <div 
+          className="text text-label text-label-small">
+            Inset None
+        </div>
+        <HorizontalDivider
+          inset={"none"}
+        />
+
+        <div 
+          className="text text-label text-label-small">
+            Inset Right
+        </div>
+        <HorizontalDivider 
+          inset={"right"}
+        />
+        
+        <div 
+          className="text text-label text-label-small">
+            Inset Left
+        </div>
+        <HorizontalDivider
+          inset={"left"}
+        />
+
+        <div 
+          className="text text-label text-label-small">
+            Inset Center
+        </div>
+        <HorizontalDivider 
+          inset={"center"}
+        />
+      </div>
+
+      
+
       <div 
         style={{ 
           display: "flex",

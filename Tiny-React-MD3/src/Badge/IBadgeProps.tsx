@@ -1,6 +1,6 @@
 import { IComponentProps } from "../Component/IComponentProps";
 
-// Define an interface for the button props
+// Define an interface for the badge props
 export interface IBadgeProps extends IComponentProps {
     configuration?: string; // Configuration of the badge
     xOffset?: number; // X offset of the badge
