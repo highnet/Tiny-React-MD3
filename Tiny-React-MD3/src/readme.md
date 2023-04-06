@@ -1,6 +1,6 @@
 # Tiny React MD-3 Documentation
 
-## 👆 Horizontal Divider
+## 👉 Horizontal Divider
 
 <i>A divider is a thin line used to group content in lists and layouts.</i>
 
@@ -22,7 +22,7 @@ You may supplement the following optional properties to a horizontal divider:
 | <code>insetLeftWidth</code> | <code>number</code> | <code>16</code> | <code>width of the left inset</code> | [IHorizontalDividerProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/HorizontalDivider/IHorizontalDividerProps.tsx) |
 | <code>showInsets</code> | <code>boolean</code> | <code>false</code> | <code>visibility of the inset</code> | [IHorizontalDividerProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/HorizontalDivider/IHorizontalDividerProps.tsx) |
 
-## 👉 Vertical Divider
+## 👆 Vertical Divider
 
 <i>A divider is a thin line used to group content in lists and layouts.</i>
 
