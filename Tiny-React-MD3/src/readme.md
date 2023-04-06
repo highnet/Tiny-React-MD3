@@ -1,5 +1,9 @@
 # Tiny React MD-3 Documentation
 
+## 👆 Horizontal Divider
+a
+## 👉 Vertical Divider
+a
 ## 🔘 [Radio Button](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Radio%20Button/Frame/radioButton.tsx)
 
 <i>Radio buttons allow users to select one option from a set. They’re a selection control that often appears when users are asked to make decisions or select a choice from options.</i>
@@ -17,7 +21,9 @@ You may supplement the following optional properties to a radio button:
 | <code>defaultChecked</code> | <code>boolean</code> |  <code>false</code> | <code>default checked state of the component</code> | [IRadioButtonProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Radio%20Button/IRadioButtonProps.tsx) |
 
 Place a default radio button like this:
-```<RadioButton name={"tiny md3"} value={"option-1"}/>```
+```JSX
+<RadioButton name={"tiny md3"} value={"option-1"}/>
+```
 
 ## 📛 [Badge](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Badge/Frame/badge.tsx)
 
@@ -41,7 +47,9 @@ The supported options of <code>{configuration}</code> are the following:
 
 Place a default badge component like this:
 
-```<Badge configuration={"single-digit"} xOffset={93} yOffset={-4} label={"3"}></Badge>```
+```JSX
+<Badge configuration={"single-digit"} xOffset={93} yOffset={-4} label={"3"}></Badge>
+```
 
 ## ☑️ [Checkbox](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Checkbox/Frame/checkbox.tsx)
 
@@ -64,7 +72,9 @@ The supported options of <code>{configuration}</code> are the following:
 
 Place a default checkbox component like this:
 
-```<Checkbox selected={true} onChange={undefined}></Checkbox>```
+```JSX
+<Checkbox selected={true} onChange={undefined}></Checkbox>
+```
 
 ## 💟 [Icons](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Icon/Frame/icon.tsx)
 
@@ -72,7 +82,9 @@ Place a default checkbox component like this:
 
 Place a default icon like this:
 
-```<span className="material-symbols-outlined">{name}</span>```
+```JSX
+<span className="material-symbols-outlined">{name}</span>
+```
 
  where <code>{name}</code> is the set of all accepted icon names by [Material Symbols](https://fonts.google.com/icons)
 
@@ -82,7 +94,9 @@ Place a default icon like this:
 
 Place div text components by combining class names like this: 
 
-```<div className="text text-{type} text-{type}-{size}">Hello World!</div>```
+```JSX
+<div className="text text-{type} text-{type}-{size}">Hello World!</div>
+```
 
 The possible different options of <code>{type}</code> are the following: 
 1. <code>display</code>
@@ -102,7 +116,9 @@ and the possible different of <code>{size}</code> are the following:
 
 Elevate any component by adding the class name like this:
 
-```<div className="elevation-light-{level}"></div>```
+```JSX
+<div className="elevation-light-{level}"></div>
+```
 
 The supported options of <code>{level}</code> are the following: 
 1. <code>1</code>
@@ -129,7 +145,9 @@ You may supplement the following optional properties to a button:
 
 Create a default button component like this:
 
-```<Button onClick={undefined}> <div className="text text-label text-label-large">Click Me</div></Button>```
+```JSX
+<Button onClick={undefined}> <div className="text text-label text-label-large">Click Me</div></Button>
+```
   
 The supported options of <code>{configuration}</code> are the following: 
 1. <code>"filled"</code>
@@ -157,4 +175,6 @@ You may supplement the following optional properties to a switch:
 
 Create a default switch component like this:
 
-```<Switch onChange={undefined}></Switch>```
+```JSX
+<Switch onChange={undefined}></Switch>
+```
