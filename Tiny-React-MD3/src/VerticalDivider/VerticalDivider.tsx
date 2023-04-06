@@ -3,9 +3,10 @@ import React, { useState } from "react";
 import { IVerticalDividerProps } from "./IVerticalDividerProps";
 
 // Define a functional component for the button
-const VerticalDivider: React.FC<IVerticalDividerProps> = ({ disabled, children, id, className, height, width, inset, insetTopHeight, insetBottomHeight, showInsets }) => {
+const VerticalDivider: React.FC<IVerticalDividerProps> = ({ id, className, height, width, inset, insetTopHeight, insetBottomHeight, showInsets }) => {
   // Initialize state variables
-
+  const [_id] = useState(id || undefined);
+  const [_className] = useState(className || "");
   const [_width] = useState(width || 1);
   const [_height] = useState(height || 288)
   const [_inset] = useState(inset || "none");
@@ -21,8 +22,8 @@ const VerticalDivider: React.FC<IVerticalDividerProps> = ({ disabled, children, 
 
   // Return the JSX element for the button
   return (
-    <div className={"vertical-divider"}>
-
+    <div className={"vertical-divider" + " " + _className}>
+      id={_id}
       {_inset == "top" || _inset == "center" ?
         <div
           className={"vertical-divider-inset-top"}

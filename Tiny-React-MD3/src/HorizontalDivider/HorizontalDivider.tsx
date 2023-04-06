@@ -3,8 +3,10 @@ import React, { useState } from "react";
 import { IHorizontalDividerProps } from "./IHorizontalDividerProps";
 
 // Define a functional component for the button
-const HorizontalDivider: React.FC<IHorizontalDividerProps> = ({ disabled, children, id, className, height, width, inset, insetRightWidth, insetLeftWidth, showInsets }) => {
+const HorizontalDivider: React.FC<IHorizontalDividerProps> = ({ id, className, height, width, inset, insetRightWidth, insetLeftWidth, showInsets }) => {
     // Initialize state variables
+    const [_id] = useState(id || undefined);
+    const [_className] = useState(className || "");
     const [_height] = useState(height || 1)
     const [_width] = useState(width || 288);
     const [_inset] = useState(inset || "none");
@@ -20,7 +22,8 @@ const HorizontalDivider: React.FC<IHorizontalDividerProps> = ({ disabled, childr
 
     // Return the JSX element for the button
     return (
-        <div className={"horizontal-divider"}>
+        <div className={"horizontal-divider" + " " + _className}>
+            id={_id}
             {_inset == "right" || _inset == "center" ?
                 <div
                     className={"horizontal-divider-inset-right"}
