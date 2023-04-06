@@ -6,6 +6,7 @@ import Checkbox from "./Checkbox/Checkbox";
 import Badge from "./Badge/Badge";
 import RadioButton from './Radio Button/RadioButton';
 import HorizontalDivider from './HorizontalDivider/HorizontalDivider';
+import VerticalDivider from './VerticalDivider/VerticalDivider';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -26,7 +27,7 @@ function App() {
           gap: "40px"
           }}>
         {/* HORIZONTAL DIVIDERS */}
-
+              
         <div 
           className="text text-title text-title-large">
           Horizontal Dividers
@@ -36,9 +37,10 @@ function App() {
           className="text text-label text-label-small">
             Inset None
         </div>
-        <HorizontalDivider
-          inset={"none"}
-        />
+       
+      <HorizontalDivider
+        inset={"none"}
+      />
 
         <div 
           className="text text-label text-label-small">
@@ -46,6 +48,7 @@ function App() {
         </div>
         <HorizontalDivider 
           inset={"right"}
+          showInsets={true}
         />
         
         <div 
@@ -54,6 +57,7 @@ function App() {
         </div>
         <HorizontalDivider
           inset={"left"}
+          showInsets={true}
         />
 
         <div 
@@ -62,10 +66,11 @@ function App() {
         </div>
         <HorizontalDivider 
           inset={"center"}
+          showInsets={true}
         />
       </div>
 
-            <div 
+      <div 
         style={{ 
           display: "flex",
           flexDirection: "column",
@@ -84,37 +89,43 @@ function App() {
           className="text text-label text-label-small">
             Inset None
         </div>
-        <HorizontalDivider
+        <VerticalDivider
           inset={"none"}
         />
 
         <div 
           className="text text-label text-label-small">
-            Inset Right
+            Inset Top
         </div>
-        <HorizontalDivider 
-          inset={"right"}
+        <VerticalDivider 
+          inset={"top"}
+          showInsets={true}
+          insetTopHeight={50}
         />
         
         <div 
           className="text text-label text-label-small">
-            Inset Left
+            Inset Bottom
         </div>
-        <HorizontalDivider
-          inset={"left"}
+        <VerticalDivider
+          inset={"bottom"}
+          insetBottomHeight={50}
+          showInsets={true}
         />
 
         <div 
           className="text text-label text-label-small">
             Inset Center
         </div>
-        <HorizontalDivider 
+        <VerticalDivider 
           inset={"center"}
+          insetBottomHeight={50}
+          insetTopHeight={50}
+          showInsets={true}
         />
       </div>
 
       
-
       <div 
         style={{ 
           display: "flex",

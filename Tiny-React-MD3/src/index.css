@@ -642,3 +642,31 @@ input[type="radio"].radio-button-input-disabled::before{
 .horizontal-divider-inset-left{
   background-color: red;
 }
+
+/* VERTICAL DIVIDERS */
+
+.vertical-divider{
+  display: flex;
+  flex-direction: column;
+}
+
+.vertical-divider-bar{
+    background-color: var(--laughing-jack);
+}
+
+.vertical-divider-inset-top{
+  background-color: red;
+}
+
+.vertical-divider-inset-bottom{
+  background-color: red;
+}
+
+pre{
+}
+
+code {
+   color: #7A3E9D; 
+   font-weight: bold;
+   font-family: Consolas;
+}
