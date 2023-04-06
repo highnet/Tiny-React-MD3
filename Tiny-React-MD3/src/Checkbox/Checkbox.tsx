@@ -23,22 +23,22 @@ const Checkbox: React.FC<ICheckboxProps> = ({ disabled, children, id, className,
   // Return the JSX element for the button
   return (
     <div
-    id={_id}
-    className={"checkbox " + "checkbox-" + _config + " " + "checkbox-" + (_selected ? "selected": "deselected") + " " + "checkbox-" + (_disabled ? "disabled":"enabled") + " " + _className}
+      id={_id}
+      className={"checkbox " + "checkbox-" + _config + " " + "checkbox-" + (_selected ? "selected" : "deselected") + " " + "checkbox-" + (_disabled ? "disabled" : "enabled") + " " + _className}
 
-    onClick={(e) => {
-      onChange?.(e);
-      handleClick();
-    }}
+      onClick={(e) => {
+        onChange?.(e);
+        handleClick();
+      }}
     >
       <span className={"material-symbols-outlined checkbox-icon " + "checkbox-icon-" + (_selected ? "selected" : "deselected")}
       >
         check
       </span>
-      <div className={"checkbox-overlay " + "checkbox-overlay-" + (_selected ? "selected": "deselected") + " " + "checkbox-overlay-" + (_disabled ? "disabled":"enabled")}>      
+      <div className={"checkbox-overlay " + "checkbox-overlay-" + (_selected ? "selected" : "deselected") + " " + "checkbox-overlay-" + (_disabled ? "disabled" : "enabled")}>
       </div>
 
-    {children}
+      {children}
     </div>
   );
 };

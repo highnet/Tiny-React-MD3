@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { IVerticalDividerProps } from "./IVerticalDividerProps";
 
 // Define a functional component for the button
-const VerticalDivider: React.FC<IVerticalDividerProps> = ({ disabled, children, id, className, height, width, inset, insetTopHeight, insetBottomHeight, showInsets}) => {
+const VerticalDivider: React.FC<IVerticalDividerProps> = ({ disabled, children, id, className, height, width, inset, insetTopHeight, insetBottomHeight, showInsets }) => {
   // Initialize state variables
 
   const [_width] = useState(width || 1);
@@ -17,41 +17,41 @@ const VerticalDivider: React.FC<IVerticalDividerProps> = ({ disabled, children, 
   let _finalHeight: string = _height.toString() + "px"; // Final height value
   let _finalInsetTopHeight = _insetTopHeight + "px";
   let _finalInsetBottomHeight = _insetBottomHeight + "px";
-  let _finalInsetColor: string = (_showInsets ? "red" : "transparent" ); // Final inset color
+  let _finalInsetColor: string = (_showInsets ? "red" : "transparent"); // Final inset color
 
   // Return the JSX element for the button
   return (
     <div className={"vertical-divider"}>
 
-      {_inset == "top" || _inset == "center" ? 
-        <div 
-          className={"vertical-divider-inset-top"} 
+      {_inset == "top" || _inset == "center" ?
+        <div
+          className={"vertical-divider-inset-top"}
           style={{
             width: _finalWidth,
             height: _finalInsetTopHeight,
             color: _finalInsetColor
-                }}>
-        </div>:
-        "" }
+          }}>
+        </div> :
+        ""}
 
-        <div 
-            className={"vertical-divider-bar"} 
-            style={{
-                width: _finalWidth,
-                height: _finalHeight
-                }}>
-        </div>
+      <div
+        className={"vertical-divider-bar"}
+        style={{
+          width: _finalWidth,
+          height: _finalHeight
+        }}>
+      </div>
 
-      {_inset == "bottom" || _inset == "center" ? 
-        <div 
-          className={"vertical-divider-inset-bottom"} 
+      {_inset == "bottom" || _inset == "center" ?
+        <div
+          className={"vertical-divider-inset-bottom"}
           style={{
             width: _finalWidth,
             height: _finalInsetBottomHeight,
             color: _finalInsetColor
-                }}>
-        </div>:
-        "" }
+          }}>
+        </div> :
+        ""}
 
     </div>
   );

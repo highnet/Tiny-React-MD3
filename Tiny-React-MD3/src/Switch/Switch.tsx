@@ -16,7 +16,7 @@ const Switch: React.FC<ISwitchProps> = ({ disabled, children, id, className, sel
   const [_selected, setSelected] = useState(selected || false);
 
   const click = () => {
-        console.log("Thank you for using Tiny React MD3!");
+    console.log("Thank you for using Tiny React MD3!");
   }
 
   const handleClick = () => {
@@ -24,7 +24,7 @@ const Switch: React.FC<ISwitchProps> = ({ disabled, children, id, className, sel
     click();
   }
 
-    // Return the JSX element for the button
+  // Return the JSX element for the button
   return (
     <div
       onClick={(e) => {
@@ -36,7 +36,7 @@ const Switch: React.FC<ISwitchProps> = ({ disabled, children, id, className, sel
       <div className={"switch-track switch-track-" + (_selected ? "selected" : "deselected") + " " + "switch-track-" + (_disabled ? "disabled" : "enabled") + " " + "switch-track-" + (_icon ? "with" : "without") + "-icon"}>
         <div className={"switch-handle switch-handle-" + (_selected ? "selected" : "deselected") + " " + "switch-handle-" + (_disabled ? "disabled" : "enabled") + " " + "switch-handle-" + (_icon ? "with" : "without") + "-icon"}>
           <div className={"switch-handle-overlay"}>
-            {_icon ? <span className={"material-symbols-outlined" + " " + "switch-icon" + " " + "switch-icon-" + (_selected ? "selected" : "deselected") + " " + "switch-icon-" + (_disabled ? "disabled" : "enabled")}> {(_selected ? _iconNameSelected : _iconNameDeselected) } </span> : ""}
+            {_icon ? <span className={"material-symbols-outlined" + " " + "switch-icon" + " " + "switch-icon-" + (_selected ? "selected" : "deselected") + " " + "switch-icon-" + (_disabled ? "disabled" : "enabled")}> {(_selected ? _iconNameSelected : _iconNameDeselected)} </span> : ""}
           </div>
         </div>
       </div>

@@ -661,12 +661,3 @@ input[type="radio"].radio-button-input-disabled::before{
 .vertical-divider-inset-bottom{
   background-color: red;
 }
-
-pre{
-}
-
-code {
-   color: #7A3E9D; 
-   font-weight: bold;
-   font-family: Consolas;
-}

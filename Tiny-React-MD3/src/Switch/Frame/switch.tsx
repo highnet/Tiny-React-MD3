@@ -6,36 +6,36 @@ import Switch from "../Switch";
         <div className="text text-label text-label-small">No Icon</div>
 
         <Switch
-        selected={true}
-        onChange={undefined}
-       ></Switch>
+                selected={true}
+                onChange={undefined}
+        ></Switch>
 
         <div className="text text-label text-label-small">No Icon (Inactive)</div>
 
         <Switch
-        selected={true}
-        onChange={undefined}
-        disabled={true}
-       ></Switch>
+                selected={true}
+                onChange={undefined}
+                disabled={true}
+        ></Switch>
 
-               <div className="text text-label text-label-small">With Icon</div>
+        <div className="text text-label text-label-small">With Icon</div>
 
         <Switch
-        selected={true}
-        onChange={undefined}
-        icon={true}
-        iconNameSelected={"warning"}
-        iconNameDeselected={"house"}
-       ></Switch>
+                selected={true}
+                onChange={undefined}
+                icon={true}
+                iconNameSelected={"warning"}
+                iconNameDeselected={"house"}
+        ></Switch>
 
         <div className="text text-label text-label-small">With Icon (Inactive)</div>
 
         <Switch
-        selected={true}
-        onChange={undefined}
-        icon={true}
+                selected={true}
+                onChange={undefined}
+                icon={true}
 
-        disabled={true}
-       ></Switch>
-       
-      </div>
+                disabled={true}
+        ></Switch>
+
+</div>

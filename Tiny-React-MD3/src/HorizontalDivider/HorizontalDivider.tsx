@@ -16,40 +16,40 @@ const HorizontalDivider: React.FC<IHorizontalDividerProps> = ({ disabled, childr
     let _finalWidth: string = _width.toString() + "px"; // Final width value
     let _finalInsetRightWidth: string = _insetRightWidth + "px";  // Final inset right width value
     let _finalInsetLeftWidth: string = _insetLeftWidth + "px"; // Final inset left width value
-    let _finalInsetColor:string = (_showInsets ? "red" : "transparent" ); // Final inset color
+    let _finalInsetColor: string = (_showInsets ? "red" : "transparent"); // Final inset color
 
-  // Return the JSX element for the button
+    // Return the JSX element for the button
     return (
         <div className={"horizontal-divider"}>
-            {_inset == "right" || _inset == "center" ? 
-                <div 
-                    className={"horizontal-divider-inset-right"} 
+            {_inset == "right" || _inset == "center" ?
+                <div
+                    className={"horizontal-divider-inset-right"}
                     style={{
                         height: _finalHeight,
                         width: _finalInsetRightWidth,
                         backgroundColor: _finalInsetColor
-                        }}>
-                </div>:
-                "" }
+                    }}>
+                </div> :
+                ""}
 
-            <div 
-                className={"horizontal-divider-bar"} 
+            <div
+                className={"horizontal-divider-bar"}
                 style={{
                     width: _finalWidth,
                     height: _finalHeight
-                    }}>
+                }}>
             </div>
 
             {_inset == "left" || _inset == "center" ?
-                <div 
-                    className={"horizontal-divider-inset-left"} 
+                <div
+                    className={"horizontal-divider-inset-left"}
                     style={{
                         height: _finalHeight,
                         width: _finalInsetLeftWidth,
                         backgroundColor: _finalInsetColor
-                        }}>
-                </div>:
-                "" }
+                    }}>
+                </div> :
+                ""}
         </div>
     );
 };
