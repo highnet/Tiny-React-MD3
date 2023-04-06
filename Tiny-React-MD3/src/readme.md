@@ -1,5 +1,9 @@
 # Tiny React MD-3 Documentation
 
+## 👆 Horizontal Divider
+
+## 👉 Vertical Divider
+
 ## 🔘 [Radio Button](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Radio%20Button/Frame/radioButton.tsx)
 
 <i>Radio buttons allow users to select one option from a set. They’re a selection control that often appears when users are asked to make decisions or select a choice from options.</i>
