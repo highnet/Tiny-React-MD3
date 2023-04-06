@@ -22,8 +22,11 @@ const HorizontalDivider: React.FC<IHorizontalDividerProps> = ({ id, className, h
 
     // Return the JSX element for the button
     return (
-        <div className={"horizontal-divider" + " " + _className}>
+        <div 
             id={_id}
+            className={"horizontal-divider" + " " + _className}
+        >
+             
             {_inset == "right" || _inset == "center" ?
                 <div
                     className={"horizontal-divider-inset-right"}

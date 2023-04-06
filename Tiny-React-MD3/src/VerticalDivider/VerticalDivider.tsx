@@ -22,8 +22,11 @@ const VerticalDivider: React.FC<IVerticalDividerProps> = ({ id, className, heigh
 
   // Return the JSX element for the button
   return (
-    <div className={"vertical-divider" + " " + _className}>
+    <div 
       id={_id}
+      className={"vertical-divider" + " " + _className}
+    >
+      
       {_inset == "top" || _inset == "center" ?
         <div
           className={"vertical-divider-inset-top"}
