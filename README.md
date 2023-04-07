@@ -11,11 +11,11 @@ Tired of bloated React frameworks with thousands of lines of code which you will
 * A set of easy-to-use, high-peformance and customizable components that follow the Material Design 3 principles and aesthetics
 * Developer handoffs made easy with ensured parity between the Figma material Design 3 Kit and React
 
-## How to get started?
+## ❓ How to get started?
 * [Starting the Project](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/readme.md)
 * [Documentation](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/readme.md)
 
-## Progress In Development
+## 🚧 Progress In Development
 | Component | Light Theme | Dark Theme | Frame | Component | 
 |:---------:|:-----------:|:----------:|:-----:|:---------:|
 | 📛 [Badges](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/readme.md#-badge) | ✅ | 🚧 | [badge.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Badge/Frame/badge.tsx) | [Badge.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Badge/Badge.tsx) | 
@@ -52,7 +52,7 @@ Tired of bloated React frameworks with thousands of lines of code which you will
 ✅ Finished
 🚧 Under Construction
 
-## Resources
+## 📚 Resources
 * https://m3.material.io/
 * https://materialpalettes.com/
 * https://www.figma.com/community/file/1035203688168086460
@@ -71,13 +71,13 @@ Tired of bloated React frameworks with thousands of lines of code which you will
 
 ###
 
-# Collaborators: 
+## 👥 Collaborators: 
 * [Joaquin 'Highnet' Telleria](https://www.linkedin.com/in/joaquin-telleria-57957aa5/)
   * [highnet.xyz](https://www.highnet.xyz)
 * [Maria 'Uebersetzerin' Palma](https://www.linkedin.com/in/maria-palma-a9a101189/)
   * [mariapalma.at](https://mariapalma.at/)
 
-## Feedback
+## 🛎️ Feedback
 If you have any feedback, please reach out to me at joaquintelleria@gmail.com.
 I hope you find this project useful and interesting. If you have any feedback, suggestions, or questions, please feel free to contact me.
 
