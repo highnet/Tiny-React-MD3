@@ -1,5 +1,12 @@
 import Button from "../Button";
 
+/* 
+    This code is used to create different types of buttons for a web page. It imports a Button component from another 
+    file and uses it to render various buttons with different configurations, icons, and states. The code also uses some
+    styles and text components to arrange and label the buttons. The code demonstrates how to use the Button component with 
+    different props and how to handle the disabled and active states of the buttons. 
+*/
+
 <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "70px", gap: "40px" }}>
   {/* BUTTONS */}
 

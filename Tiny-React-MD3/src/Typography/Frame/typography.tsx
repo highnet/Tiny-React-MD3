@@ -1,3 +1,13 @@
+/*
+  This code defines a HTML div element that displays some examples of typography styles using CSS classes.
+  The code uses inline styles to set the display, flex direction, alignment, padding, gap, border and border
+  radius of the div element and its children. The code also uses some predefined CSS classes to style the text
+  elements inside the div element. The CSS classes specify the font family, size, weight, line height and letter
+  spacing of the text elements. The code shows four categories of typography styles: display, headline, title and body.
+  Each category has three variants: large, medium and small. The code also shows the font specifications for each text element
+  as a comment next to it. 
+*/
+
 <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "70px", gap: "40px" }}>
   {/* TYPOGRAPHY */}
 

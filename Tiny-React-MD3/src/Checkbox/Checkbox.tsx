@@ -2,7 +2,16 @@
 import React, { useState } from "react";
 import { ICheckboxProps } from "./ICheckboxProps";
 
-// Define a functional component for the button
+/* 
+  This code is used to create a custom checkbox component for React. It uses the ICheckboxProps interface to define the props
+  for the checkbox, such as disabled, id, className, configuration, onChange, and selected. The checkbox component can render
+  different styles of checkboxes based on the configuration prop, which can be either “default” or “error”. It can also render
+  an optional text after the checkbox icon based on the children prop. The checkbox component also has a default click function
+  that logs a message to the console. The code uses React hooks to initialize and manage the state variables for the checkbox props
+  and the selected state. The code returns a JSX element for the checkbox with the appropriate class names and event handlers.
+*/
+
+// Define a functional component for the checkbox
 const Checkbox: React.FC<ICheckboxProps> = ({ disabled, children, id, className, configuration, onChange, selected }) => {
   const [_disabled] = useState(disabled || false); // State for the disabled property of the checkbox
   const [_id] = useState(id || undefined); // State for the ID of the checkbox
@@ -20,7 +29,7 @@ const Checkbox: React.FC<ICheckboxProps> = ({ disabled, children, id, className,
     setSelected(!_selected);
   }
 
-  // Return the JSX element for the button
+  // Return the JSX element for the checkbox
   return (
     <div
       id={_id}
@@ -43,7 +52,5 @@ const Checkbox: React.FC<ICheckboxProps> = ({ disabled, children, id, className,
   );
 };
 
-
-
-// Export the button component as default
+// Export the checkbox component as default
 export default Checkbox;

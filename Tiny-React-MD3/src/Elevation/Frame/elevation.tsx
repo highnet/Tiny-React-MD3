@@ -1,3 +1,12 @@
+/* 
+  This code is used to create a row of five div elements with different elevation styles. It uses a flexbox layout
+  to arrange the div elements horizontally with some gap between them. It also uses some text components to display
+  the title of the row. Each div element has a fixed width, height, and border radius, and a linear gradient background
+  color with different shades of purple. The elevation styles are defined by the class names of the div elements, such
+  as “elevation-light-1” or “elevation-light-5”. The elevation styles create a visual effect of depth and shadow for the
+  div elements.
+*/
+
 <div style={{ display: "flex", flexDirection: "row", alignItems: "flex-start", padding: "50px 60px", gap: "18px" }}>
   {/* ELEVATION */}
   <div className="text text-title text-title-large">Elevation</div>

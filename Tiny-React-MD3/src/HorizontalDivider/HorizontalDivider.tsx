@@ -2,6 +2,17 @@
 import React, { useState } from "react";
 import { IHorizontalDividerProps } from "./IHorizontalDividerProps";
 
+/*
+    This code is used to create a custom horizontal divider component for React.
+    It uses the IHorizontalDividerProps interface to define the props for the divider,
+    such as id, className, height, width, inset, insetRightWidth, insetLeftWidth, and showInsets.
+    The divider component can render different styles of dividers based on the inset prop, which determines
+    how much space is left on the left and right sides of the divider. The inset prop can be either “none”, “right”,
+    “left”, or “center”. The divider component also has a showInsets prop that controls whether or not to show the inset
+    spaces with a different color. The code uses React hooks to initialize and manage the state variables for the divider props.
+    The code returns a JSX element for the divider with the appropriate styles and class names. 
+*/
+
 // Define a functional component for the button
 const HorizontalDivider: React.FC<IHorizontalDividerProps> = ({ id, className, height, width, inset, insetRightWidth, insetLeftWidth, showInsets }) => {
     // Initialize state variables
@@ -22,11 +33,11 @@ const HorizontalDivider: React.FC<IHorizontalDividerProps> = ({ id, className, h
 
     // Return the JSX element for the button
     return (
-        <div 
+        <div
             id={_id}
             className={"horizontal-divider" + " " + _className}
         >
-             
+
             {_inset == "right" || _inset == "center" ?
                 <div
                     className={"horizontal-divider-inset-right"}
