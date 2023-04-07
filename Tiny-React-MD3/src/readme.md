@@ -31,9 +31,8 @@ You may supplement the following optional properties to a horizontal divider:
 <i>A divider is a thin line used to group content in lists and layouts.</i>
 
     Dividers have an inset prop that determines how much space is left on the left and right sides of the divider. The inset prop can be either
-    “none”, “top”, “bopttom”, or “center”. The dividers also have a showInsets prop that controls whether
-    or not to show the inset spaces with a different color. The code demonstrates how to use the HorizontalDivider
-    component with different props and styles.
+    “none”, “top”, “bottom”, or “center”. The dividers also have a showInsets prop that controls whether
+    or not to show the inset spaces with a different color.
 
 Place a default vertical divider like this:
 
@@ -60,7 +59,6 @@ You may supplement the following optional properties to a vertical divider:
     groups the radio buttons together. The value prop is a string that assigns a value to each radio button.
     The disabled prop is a boolean that determines whether or not the radio button is disabled and cannot be selected.
     The defaultChecked prop is a boolean that determines whether or not the radio button is selected by default.
-    The code demonstrates how to use the RadioButton component with different props and styles. 
 
 Place a default radio button like this:
 ```JSX
@@ -83,7 +81,7 @@ You may supplement the following optional properties to a radio button:
 
 <i>Badges are used to convey dynamic information, such as a count or status. A badge can include text, labels, or numbers.</i>
 
-    Badges come in different sizes and numbers, and are small circular indicators that can be used to show counts, statuses or notifications 
+    Badges come in different sizes and numbers, and are small circular indicators that can be used to show counts, statuses, or notifications 
     on other elements. The Badge component takes a configuration prop to specify the size of the badge,
     an xOffset and yOffset prop to adjust the position of the badge relative to its parent element,
     and an optional label prop to display a number on the badge.
@@ -163,8 +161,8 @@ Place a default icon like this:
 <i>Use typography to present your design and content as clearly and efficiently as possible.</i>
 
 	Typography styles are defined using CSS classes to style text elements inside of div elements. The CSS classes specify the font family,
-	size, weight, line height and letter spacing of the text elements.There are typography styles display, headline, title and body.
-	Each category has three variants: large, medium and small.
+	size, weight, line height, and letter spacing of the text elements. There are four typography variants: display, headline, title, and body.
+	Each variant has three subvariants: large, medium, and small.
 
 Place div text components by combining class names like this: 
 
