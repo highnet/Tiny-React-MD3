@@ -35,7 +35,7 @@ const RadioButton: React.FC<IRadioButtonProps> = ({ disabled, children, id, clas
         console.log("Thank you for using Tiny React MD3!");
     }
 
-    // Return the JSX element for the button
+    // Return the JSX element for the radio button
     return (
         <div
             className={"radio-button radio-button-" + (_disabled ? "disabled" : "enabled") + " " + _className}
@@ -61,5 +61,5 @@ const RadioButton: React.FC<IRadioButtonProps> = ({ disabled, children, id, clas
 
 
 
-// Export the button component as default
+// Export the radio button component as default
 export default RadioButton;

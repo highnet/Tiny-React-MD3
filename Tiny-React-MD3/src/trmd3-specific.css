@@ -1,0 +1,20 @@
+body{
+    background: rgb(82,196,254);
+    background: linear-gradient(90deg, rgba(82,196,254,0.3) 0%, rgba(248,194,255,0.3) 100%); 
+}
+
+.logo-trmd3{
+    width: 300px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    padding-top: 100px;
+}
+
+.flex-trmd3{
+    display: flex;
+}
+
+.title-trmd3{
+    text-align: center;
+    color: #0088FC;
+}

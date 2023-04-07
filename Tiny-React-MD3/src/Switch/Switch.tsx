@@ -44,7 +44,7 @@ const Switch: React.FC<ISwitchProps> = ({ disabled, children, id, className, sel
     click();
   }
 
-  // Return the JSX element for the button
+  // Return the JSX element for the switch
   return (
     <div
       onClick={(e) => {

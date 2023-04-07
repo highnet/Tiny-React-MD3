@@ -80,5 +80,5 @@ const VerticalDivider: React.FC<IVerticalDividerProps> = ({ id, className, heigh
   );
 };
 
-// Export the button component as default
+// Export the vertical divider component as default
 export default VerticalDivider;

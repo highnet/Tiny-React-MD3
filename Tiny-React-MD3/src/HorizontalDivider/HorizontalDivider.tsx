@@ -13,7 +13,7 @@ import { IHorizontalDividerProps } from "./IHorizontalDividerProps";
     The code returns a JSX element for the divider with the appropriate styles and class names. 
 */
 
-// Define a functional component for the button
+// Define a functional component for the horizontal divider
 const HorizontalDivider: React.FC<IHorizontalDividerProps> = ({ id, className, height, width, inset, insetRightWidth, insetLeftWidth, showInsets }) => {
     // Initialize state variables
     const [_id] = useState(id || undefined);
@@ -31,7 +31,7 @@ const HorizontalDivider: React.FC<IHorizontalDividerProps> = ({ id, className, h
     let _finalInsetLeftWidth: string = _insetLeftWidth + "px"; // Final inset left width value
     let _finalInsetColor: string = (_showInsets ? "red" : "transparent"); // Final inset color
 
-    // Return the JSX element for the button
+    // Return the JSX element for the horizontal divider
     return (
         <div
             id={_id}
@@ -71,5 +71,5 @@ const HorizontalDivider: React.FC<IHorizontalDividerProps> = ({ id, className, h
     );
 };
 
-// Export the button component as default
+// Export the horizontal divider component as default
 export default HorizontalDivider;
