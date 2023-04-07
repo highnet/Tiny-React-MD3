@@ -1,10 +1,11 @@
 import Checkbox from "../Checkbox";
 
 /* 
-  This code is used to create different types of checkboxes for a web page. It imports a Checkbox component from another
-  file and uses it to render various checkboxes with different configurations, states, and styles. The code also uses some 
-  styles and text components to arrange and label the checkboxes. The code demonstrates how to use the Checkbox component with 
-  different props and how to handle the selected and disabled states of the checkboxes. 
+  Checkboxes can have different configurations, states, and styles.
+  selected: a boolean value that indicates whether the checkbox is checked or not
+  onChange: a function that is called when the user clicks on the checkbox
+  configuration: a string that specifies the style of the checkbox, such as “default” or “error”
+  disabled: a boolean value that indicates whether the checkbox is interactive or not
 */
 
 <div

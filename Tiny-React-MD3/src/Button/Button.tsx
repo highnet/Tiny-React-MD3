@@ -3,12 +3,10 @@ import React, { useState } from "react";
 import { IButtonProps } from "./IButtonProps";
 
 /*
-    This code is used to create a custom button component for React. It uses the IButtonProps interface to define the props
-    for the button, such as disabled, id, className, onClick, configuration, icon, and iconName. The button component can render 
-    different styles of buttons based on the configuration prop, which can be either “filled” or “outlined”. It can also render an 
-    optional icon before the button text based on the icon and iconName props. The button component also has a default click function 
-    that logs a message to the console. The code uses React hooks to initialize and manage the state variables for the button props.
-    The code returns a JSX element for the button with the appropriate class names and event handlers. 
+  The button component can render different styles of buttons based on the configuration prop, which can be either “filled”
+  or “outlined”. It can also render an optional icon inside the button text based on the icon and iconName props. The button
+  component also has a default click function that logs a message to the console. The code uses React hooks to initialize
+  and manage the state variables for the button props.
 */
 
 // Define a functional component for the button
