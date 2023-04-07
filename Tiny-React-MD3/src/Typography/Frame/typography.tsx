@@ -1,7 +1,7 @@
 /*
 	Typography styles are defined using CSS classes to style text elements inside of div elements. The CSS classes specify the font family,
-	size, weight, line height, and letter spacing of the text elements. There are typography styles display, headline, title, and body.
-	Each category has three variants: large, medium, and small.
+	size, weight, line height, and letter spacing of the text elements. There are four typography variants: display, headline, title, and body.
+	Each variant has three subvariants: large, medium, and small.
 */
 
 <div
