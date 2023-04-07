@@ -11,6 +11,7 @@ import { MouseEvent } from "react";
     icon: a boolean value that indicates whether to display an icon in the switch or not
     iconNameSelected: a string value that specifies the name of the icon to display when the switch is selected
     iconNameDeselected: a string value that specifies the name of the icon to display when the switch is deselected
+    
     The interface is exported so it can be imported and used in other files.
  */
 
