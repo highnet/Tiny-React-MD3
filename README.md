@@ -79,3 +79,5 @@ Tired of bloated React frameworks with millions of lines of code which you will 
 ## Feedback
 If you have any feedback, please reach out to me at joaquintelleria@gmail.com.
 I hope you find this project useful and interesting. If you have any feedback, suggestions, or questions, please feel free to contact me.
+
+<i>If you read this far, here is a cookie! 🍪 Write me a private message and let’s talk! 😊 I hope to hear from you soon!</i>
