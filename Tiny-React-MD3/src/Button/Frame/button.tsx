@@ -6,11 +6,11 @@ import Button from "../Button";
 	It can also render an optional icon inside the button text based on the icon and iconName props. 
 	The button component also has a default click function that logs a message to the console.
 	The props for the Button component are:
-	configuration: a string that specifies the style of the button, such as “filled” or “outlined”
-	disabled: a boolean value that indicates whether the button is interactive or not
-	onClick: a function that is called when the user clicks on the button
-	icon: a boolean value that indicates whether the button has an icon or not
-	iconName: a string that specifies the name of the icon, such as “search” or “home” The text inside the
+	configuration: a string that specifies the style of the button, such as “filled” or “outlined”.
+	disabled: a boolean value that indicates whether the button is interactive or not.
+	onClick: a function that is called when the user clicks on the button.
+	icon: a boolean value that indicates whether the button has an icon or not.
+	iconName: a string that specifies the name of the icon, such as “search” or “home”. The text inside the
 	button is wrapped in a div with a text-label class to apply some styling. 
 */
 
