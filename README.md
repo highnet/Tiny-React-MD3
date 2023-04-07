@@ -14,7 +14,7 @@ Tired of bloated React frameworks with thousands of lines of code which you will
 * [Starting the Project](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/readme.md)
 * [Documentation](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/readme.md)
 
-## Progress
+## Progress In Development
 | Component | Light Theme | Dark Theme | Frame | Component | 
 |:---------:|:-----------:|:----------:|:-----:|:---------:|
 | 📛 [Badges](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/readme.md#-badge) | ✅ | 🚧 | [badge.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Badge/Frame/badge.tsx) | [Badge.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Badge/Badge.tsx) | 
