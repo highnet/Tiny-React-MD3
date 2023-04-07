@@ -45,7 +45,7 @@ function App() {
             Quickly transform your design kit prototypes into stunning and modern web applications <br /> <br />
           </li>
           <li>
-            A set of easy-to-use, high-peformance and customizable components that follow the Material Design 3 principles and aesthetics <br /> <br />
+            A set of easy-to-use, high-peformance, and customizable components that follow the Material Design 3 principles and aesthetics <br /> <br />
           </li>
           <li>
             Developer handoffs made easy with ensured parity between the Figma material Design 3 Kit and React
