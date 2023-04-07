@@ -1,8 +1,7 @@
 import HorizontalDivider from "../HorizontalDivider";
 
 /* 
-    Each divider is a component imported from another file and has an inset prop that determines
-    how much space is left on the left and right sides of the divider. The inset prop can be either
+    Dividers have an inset prop that determines how much space is left on the left and right sides of the divider. The inset prop can be either
     “none”, “right”, “left”, or “center”. The dividers also have a showInsets prop that controls whether
     or not to show the inset spaces with a different color. The code demonstrates how to use the HorizontalDivider
     component with different props and styles.

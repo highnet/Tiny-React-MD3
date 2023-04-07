@@ -1,5 +1,12 @@
 import VerticalDivider from "../VerticalDivider";
 
+/*
+    Dividers have an inset prop that determines how much space is left on the left and right sides of the divider. The inset prop can be either
+    “none”, “top”, “bopttom”, or “center”. The dividers also have a showInsets prop that controls whether
+    or not to show the inset spaces with a different color. The code demonstrates how to use the HorizontalDivider
+    component with different props and styles.
+*/
+
 <div
     className="component-display-section-row-trmd3"
 >
