@@ -9,13 +9,13 @@ import { IVerticalDividerProps } from "./IVerticalDividerProps";
   - className: a string value that adds additional CSS classes to the divider element
   - width: a number value that specifies the width of the divider in pixels
   - height: a number value that specifies the height of the divider in pixels
-  - inset: a string value that specifies the inset configuration of the divider, such as "top", "bottom", "center" or "none"
+  - inset: a string value that specifies the inset configuration of the divider, such as "top", "bottom", "center", or "none"
   - insetTopHeight: a number value that specifies the height of the top inset in pixels
   - insetBottomHeight: a number value that specifies the height of the bottom inset in pixels
   - showInsets: a boolean value that indicates whether to show or hide the insets
 
   The component uses some state variables to store the props values and updates them accordingly. 
-  It also defines some local variables to store the final values of the width, height, inset heights and inset color. 
+  It also defines some local variables to store the final values of the width, height, inset heights, and inset color. 
   The component returns a JSX element that renders the divider and its insets using HTML div elements. 
   The component uses some inline styles and CSS classes to style the divider and its insets based on its state and props. 
   The component is exported as default so it can be imported and used in other files.
