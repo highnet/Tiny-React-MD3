@@ -248,7 +248,7 @@ The supported options of <code>{configuration}</code> are the following:
       
 <i>Switches toggle the state of a single item on or off.</i>
 
-	The Switch component is essentially toggle button that can be selected or deselected by the user.
+	The Switch component is essentially a toggle button that can be selected or deselected by the user.
 	The props are: selected: a boolean value that indicates whether the switch is on or off
 	onChange: a function that is called when the user clicks on the switch
 	disabled: a boolean value that indicates whether the switch is interactive or not
