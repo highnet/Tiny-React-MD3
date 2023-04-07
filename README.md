@@ -1,6 +1,6 @@
 # Tiny React MD3
 
-Tired of bloated frameworks with millions of lines of code which you will never use?
+Tired of bloated React frameworks with millions of lines of code which you will never use?
 
 ❤️ You like Figma? ❤️ You Like Material Design 3? ❤️ You like React? ❤️ Then you love Tiny React MD3!
 
