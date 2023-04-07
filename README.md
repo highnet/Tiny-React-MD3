@@ -28,8 +28,8 @@ Tired of bloated React frameworks with thousands of lines of code which you will
 | 💬 Dialogs | 🚧 | 🚧 | | |
 | 👉 [Horizontal Divider](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/readme.md#-horizontal-divider) | ✅ | 🚧 | [horizontalDivider.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/HorizontalDivider/Frame/horizontalDivider.tsx) | [HorizontalDivider.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/HorizontalDivider/HorizontalDivider.tsx) |
 | 👆 [Vertical Divider](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/readme.md#-vertical-divider) | ✅ | 🚧 | [verticalDivider.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/VerticalDivider/Frame/verticalDivider.tsx) | [VerticalDivider.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/VerticalDivider/VerticalDivider.tsx) |
-| 🏔️ [Elevation](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/readme.md#%EF%B8%8F-elevation) | ✅ | 🚧 | [elevation.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Elevation/Frame/elevation.tsx) | [index.css](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/index.css) |
-| 💟 [Icons](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/readme.md#-icons) | ✅ | 🚧 | [icon.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Icon/Frame/icon.tsx) | [index.css](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/index.css) |
+| 🏔️ [Elevation](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/readme.md#%EF%B8%8F-elevation) | ✅ | 🚧 | [elevation.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Elevation/Frame/elevation.tsx) | [trmd3.css](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/trmd3.css) |
+| 💟 [Icons](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/readme.md#-icons) | ✅ | 🚧 | [icon.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Icon/Frame/icon.tsx) | [t3md3.css](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/trmd3.css) |
 | 📝 Lists | 🚧 | 🚧 | | |
 | 📚 Menus | 🚧 | 🚧 | | |
 | 🧭 Navigation bar | 🚧 | 🚧 | | |
@@ -46,7 +46,7 @@ Tired of bloated React frameworks with thousands of lines of code which you will
 | 📜 Text fields | 🚧 | 🚧 | | |
 | ⌛ Time pickers | 🚧 | 🚧 | | |
 | ⏫ Top app bar | 🚧 | 🚧 | | |
-| 🔤 [Typography](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/readme.md#-typography) | ✅ | 🚧 | [typography.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Typography/Frame/typography.tsx) | [index.css](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/index.css) |
+| 🔤 [Typography](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/readme.md#-typography) | ✅ | 🚧 | [typography.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Typography/Frame/typography.tsx) | [trmd3.css](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/trmd3.css) |
 
 ✅ Finished
 🚧 Under Construction
