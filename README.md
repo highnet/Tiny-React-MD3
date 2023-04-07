@@ -72,9 +72,11 @@ Tired of bloated React frameworks with millions of lines of code which you will 
 
 ###
 
-# Author: 
+# Collaborators: 
 * [Joaquin 'Highnet' Telleria](https://www.linkedin.com/in/joaquin-telleria-57957aa5/)
-  * [www.highnet.xyz](https://www.highnet.xyz)
+  * [highnet.xyz](https://www.highnet.xyz)
+* [Maria 'Uebersetzerin' Palma](https://www.linkedin.com/in/maria-palma-a9a101189/)
+  * [mariapalma.at](https://mariapalma.at/)
 
 ## Feedback
 If you have any feedback, please reach out to me at joaquintelleria@gmail.com.
