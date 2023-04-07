@@ -1,9 +1,9 @@
 <div align="center""><img src="/Tiny-React-MD3/src/assets/tiny-react-md3-logo.png" width="300px"/></div>
 
-# Tiny React MD3
+# 🐝 Tiny React MD3
 Tired of bloated React frameworks with thousands of lines of code which you will never use?
 
-❤️ You like Figma? ❤️ You Like Material Design 3? ❤️ You like React? ❤️ Then you love Tiny React MD3!
+❤️ You like Figma? ❤️ You Like Material Design 3? ❤️ You like React? 🐝 Then you love Tiny React MD3!
 
 [Figma Material Design 3 Kit](https://www.figma.com/community/file/1035203688168086460) 🤝 [React.ts](https://developer.okta.com/blog/2022/03/14/react-vite-number-converter) = [Tiny React MD3](https://github.com/highnet/Tiny-React-MD3/)
 
