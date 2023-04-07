@@ -3,10 +3,9 @@
 🐝 Tiny React MD3 🐝
 <div align="center""> 
 <br/>
-<img src="/Tiny-React-MD3/src/assets/tiny-react-md3-logo.png" width="300px"/>  
+<img src="/Tiny-React-MD3/src/assets/tiny-react-md3-logo.png" width="250px"/>  
 </div>
 <h1>
- 
 
 ## 
 Tired of bloated React frameworks with thousands of lines of code which you will never use?
