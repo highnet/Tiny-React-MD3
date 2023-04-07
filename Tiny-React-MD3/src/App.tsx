@@ -16,8 +16,9 @@ function App() {
   };
 
   return (
-    <div className="App">
-
+    <div
+      className="App"
+    >
       <div
         className="flex-trmd3"
       >
@@ -25,15 +26,12 @@ function App() {
           src="src/assets/tiny-react-md3-logo.png"
           className="logo-trmd3"
         />
-
       </div>
-
       <div
         className="text text-display text-display-medium title-trmd3"
       >
         Tiny React MD3
       </div>
-
       <div
         className="text text-body text-body-large title-trmd3"
       >
@@ -41,10 +39,10 @@ function App() {
         Tired of bloated React frameworks with thousands of lines of code which you will never use? <br /> <br />
         ❤️ You like Figma? ❤️ You Like Material Design 3? ❤️ You like React? <br /> ❤️Then you love Tiny React MD3! <br />
         <br />
-        Figma Material Design 3 Kit 🤝 React.ts = Tiny React MD3 <br />
+        <a href="https://www.figma.com/community/file/1035203688168086460">Figma Material Design 3 Kit</a> 🤝 <a href="https://developer.okta.com/blog/2022/03/14/react-vite-number-converter">React.ts</a> =  <a href="https://github.com/highnet/Tiny-React-MD3/">Tiny React MD3</a> <br />
         <ul>
           <li>
-            Quickly transform your design kit prototypes into stunning and modern web applications <br />
+            Quickly transform your design kit prototypes into stunning and modern web applications <br /> <br />
           </li>
           <li>
             A set of easy-to-use, high-peformance and customizable components that follow the Material Design 3 principles and aesthetics <br /> <br />
@@ -53,57 +51,52 @@ function App() {
             Developer handoffs made easy with ensured parity between the Figma material Design 3 Kit and React
           </li>
         </ul>
-
       </div>
-
       <div
         className="text text-display text-display-medium title-trmd3"
       >
       </div>
-
+      <p
+        className="text text-body text-body-large">Counter: {count}
+      </p>
       <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "flex-start",
-          padding: "70px",
-          gap: "40px"
-        }}>
+        className="text text-title text-title-large"
+      >
+        Horizontal Dividers
+      </div>
+      <div
+        className="component-display-section-column-trmd3"
+      >
         {/* HORIZONTAL DIVIDERS */}
-
         <div
-          className="text text-title text-title-large">
-          Horizontal Dividers
-        </div>
-
-        <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           Inset None
         </div>
         <HorizontalDivider
           inset={"none"}
         />
-
         <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           Inset Right
         </div>
         <HorizontalDivider
           inset={"right"}
           showInsets={true}
         />
-
         <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           Inset Left
         </div>
         <HorizontalDivider
           inset={"left"}
           showInsets={true}
         />
-
         <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           Inset Center
         </div>
         <HorizontalDivider
@@ -111,32 +104,26 @@ function App() {
           showInsets={true}
         />
       </div>
-
       <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "flex-start",
-          padding: "70px",
-          gap: "40px"
-        }}>
+        className="text text-title text-title-large"
+      >
+        Vertical Dividers
+      </div>
+      <div
+        className="component-display-section-row-trmd3"
+      >
         {/* VERTICAL DIVIDERS */}
-
         <div
-          className="text text-title text-title-large">
-          Vertical Dividers
-        </div>
-
-        <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           Inset None
         </div>
         <VerticalDivider
           inset={"none"}
         />
-
         <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           Inset Top
         </div>
         <VerticalDivider
@@ -144,9 +131,9 @@ function App() {
           showInsets={true}
           insetTopHeight={50}
         />
-
         <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           Inset Bottom
         </div>
         <VerticalDivider
@@ -154,9 +141,9 @@ function App() {
           insetBottomHeight={50}
           showInsets={true}
         />
-
         <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           Inset Center
         </div>
         <VerticalDivider
@@ -166,26 +153,22 @@ function App() {
           showInsets={true}
         />
       </div>
-
       <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "flex-start",
-          padding: "70px",
-          gap: "40px"
-        }}>
+        className="text text-title text-title-large"
+      >
+        Radio Buttons
+      </div>
+      <div
+        className="component-display-section-row-trmd3"
+      >
         {/* RADIO BUTTONS */}
-        <div
-          className="text text-title text-title-large">
-          Radio Buttons
-        </div>
         <RadioButton
           name={"tiny md3"}
           value={"option-1"}
         />
         <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           Option 1
         </div>
         <RadioButton
@@ -193,7 +176,8 @@ function App() {
           value={"option-2"}
         />
         <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           Option 2
         </div>
         <RadioButton
@@ -201,7 +185,8 @@ function App() {
           value={"option-3"}
         />
         <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           Option 3
         </div>
         <RadioButton
@@ -211,34 +196,28 @@ function App() {
           defaultChecked={true}
         />
         <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           Option 4 (Inactive)
         </div>
       </div>
-
       <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "flex-start",
-          padding: "70px",
-          gap: "40px"
-        }}>
+        className="text text-title text-title-large"
+      >
+        Badges
+      </div>
+      <div
+        className="component-display-section-row-trmd3"
+      >
         {/* BADGES */}
         <div
-          className="text text-title text-title-large">
-          Badges
-        </div>
-        <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           Small
         </div>
         <div
-          style={{
-            backgroundColor: "#F8AF50",
-            width: "50px",
-            height: "50px"
-          }}>
+          className="badge-box-trmd3"
+        >
           <Badge
             configuration={"small"}
             xOffset={95}
@@ -246,17 +225,14 @@ function App() {
           >
           </Badge>
         </div>
-
         <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           Single Digit
         </div>
         <div
-          style={{
-            backgroundColor: "#F8AF50",
-            width: "100px",
-            height: "100px"
-          }}>
+          className="badge-box-trmd3"
+        >
           <Badge
             configuration={"single-digit"}
             xOffset={93}
@@ -265,17 +241,14 @@ function App() {
           >
           </Badge>
         </div>
-
         <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           Multiple Digits
         </div>
         <div
-          style={{
-            backgroundColor: "#F8AF50",
-            width: "150px",
-            height: "150px"
-          }}>
+          className="badge-box-trmd3"
+        >
           <Badge
             configuration={"multiple-digits"}
             xOffset={93}
@@ -284,17 +257,19 @@ function App() {
           >
           </Badge>
         </div>
-
       </div>
-
-      <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "70px", gap: "40px" }}>
-        {/* SWITCHES */}
+      <div
+        className="text text-title text-title-large"
+      >
+        Checkboxes
+      </div>
+      <div
+        className="component-display-section-row-trmd3"
+      >
+        {/* CHECKBOXES */}
         <div
-          className="text text-title text-title-large">
-          Checkboxes
-        </div>
-        <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           Default
         </div>
         <Checkbox
@@ -302,10 +277,10 @@ function App() {
           onChange={incrementCounter}
         ></Checkbox>
         <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           Default (inactive)
         </div>
-
         <Checkbox
           selected={true}
           onChange={incrementCounter}
@@ -314,20 +289,20 @@ function App() {
         >
         </Checkbox>
         <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           Error
         </div>
-
         <Checkbox
           selected={true}
           onChange={incrementCounter}
           configuration={"error"}
         ></Checkbox>
         <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           Error (inactive)
         </div>
-
         <Checkbox
           selected={true}
           onChange={incrementCounter}
@@ -335,41 +310,31 @@ function App() {
           disabled={true}
         >
         </Checkbox>
-        <p
-          className="text text-body text-body-large">Counter: {count}
-        </p>
       </div>
-
       <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "flex-start",
-          padding: "70px",
-          gap: "40px"
-        }}>
+        className="text text-title text-title-large"
+      >
+        Switches
+      </div>
+      <div
+        className="component-display-section-row-trmd3"
+      >
         {/* SWITCHES */}
-
         <div
-          className="text text-title text-title-large">
-          Switches
-        </div>
-        <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           No Icon
         </div>
-
         <Switch
           selected={true}
           onChange={incrementCounter}
         >
         </Switch>
-
         <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           No Icon (Inactive)
         </div>
-
         <Switch
           selected={true}
           onChange={incrementCounter}
@@ -377,10 +342,10 @@ function App() {
         >
         </Switch>
         <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           With Icon
         </div>
-
         <Switch
           selected={true}
           onChange={incrementCounter}
@@ -390,10 +355,10 @@ function App() {
         >
         </Switch>
         <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           With Icon (Inactive)
         </div>
-
         <Switch
           selected={true}
           onChange={incrementCounter}
@@ -401,64 +366,58 @@ function App() {
           disabled={true}
         >
         </Switch>
-        <p
-          className="text text-body text-body-large">
-          Counter: {count}
-        </p>
       </div>
-
       <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "flex-start",
-          padding: "70px",
-          gap: "40px"
-        }}>
+        className="component-display-section-column-trmd3"
+      >
         {/* BUTTONS */}
         <div
-          className="text text-title text-title-large">
+          className="text text-title text-title-large"
+        >
           Buttons
         </div>
         <div
-          className="text text-title text-title-medium">
+          className="text text-title text-title-medium"
+        >
           Filled Buttons
         </div>
         <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           No Icon
         </div>
-
         <Button
           configuration="filled"
           disabled={false}
           onClick={incrementCounter}
         >
           <div
-            className="text text-label text-label-large">
+            className="text text-label text-label-large"
+          >
             Click Me
           </div>
         </Button>
         <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           No Icon (inactive)
         </div>
-
         <Button
           configuration="filled"
           disabled={true}
           onClick={incrementCounter}
         >
           <div
-            className="text text-label text-label-large">
+            className="text text-label text-label-large"
+          >
             Click Me
           </div>
         </Button>
         <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           With Icon
         </div>
-
         <Button
           configuration="filled"
           disabled={false}
@@ -467,12 +426,14 @@ function App() {
           onClick={incrementCounter}
         >
           <div
-            className="text text-label text-label-large">
+            className="text text-label text-label-large"
+          >
             Click Me
           </div>
         </Button>
         <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           With Icon (inactive)
         </div>
         <Button
@@ -483,17 +444,19 @@ function App() {
           onClick={incrementCounter}
         >
           <div
-            className="text text-label text-label-large">
+            className="text text-label text-label-large"
+          >
             Click Me
           </div>
         </Button>
-
         <div
-          className="text text-title text-title-large">
+          className="text text-title text-title-large"
+        >
           Outlined Buttons
         </div>
         <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           No Icon
         </div>
         <Button
@@ -502,12 +465,14 @@ function App() {
           onClick={incrementCounter}
         >
           <div
-            className="text text-label text-label-large">
+            className="text text-label text-label-large"
+          >
             Click Me
           </div>
         </Button>
         <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           No Icon (inactive)
         </div>
         <Button
@@ -516,12 +481,14 @@ function App() {
           onClick={incrementCounter}
         >
           <div
-            className="text text-label text-label-large">
+            className="text text-label text-label-large"
+          >
             Click Me
           </div>
         </Button>
         <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           With Icon
         </div>
         <Button
@@ -532,12 +499,14 @@ function App() {
           iconName={"search"}
         >
           <div
-            className="text text-label text-label-large">
+            className="text text-label text-label-large"
+          >
             Click Me
           </div>
         </Button>
         <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           With Icon (inactive)
         </div>
         <Button
@@ -548,15 +517,20 @@ function App() {
           iconName={"search"}
         >
           <div
-            className="text text-label text-label-large">Click Me
+            className="text text-label text-label-large"
+          >
+            Click Me
           </div>
         </Button>
-
         <div
-          className="text text-title text-title-large">Text Buttons
+          className="text text-title text-title-large"
+        >
+          Text Buttons
         </div>
         <div
-          className="text text-label text-label-small">No Icon
+          className="text text-label text-label-small"
+        >
+          No Icon
         </div>
         <Button
           configuration="text"
@@ -564,11 +538,15 @@ function App() {
           onClick={incrementCounter}
         >
           <div
-            className="text text-label text-label-large">Click Me
+            className="text text-label text-label-large"
+          >
+            Click Me
           </div>
         </Button>
         <div
-          className="text text-label text-label-small">No Icon (inactive)
+          className="text text-label text-label-small"
+        >
+          No Icon (inactive)
         </div>
         <Button
           configuration="text"
@@ -576,11 +554,15 @@ function App() {
           onClick={incrementCounter}
         >
           <div
-            className="text text-label text-label-large">Click Me
+            className="text text-label text-label-large"
+          >
+            Click Me
           </div>
         </Button>
         <div
-          className="text text-label text-label-small">With Icon
+          className="text text-label text-label-small"
+        >
+          With Icon
         </div>
         <Button
           configuration="text"
@@ -590,12 +572,14 @@ function App() {
           iconName={"search"}
         >
           <div
-            className="text text-label text-label-large">
+            className="text text-label text-label-large"
+          >
             Click Me
           </div>
         </Button>
         <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           With Icon (inactive)
         </div>
         <Button
@@ -606,16 +590,19 @@ function App() {
           iconName={"search"}
         >
           <div
-            className="text text-label text-label-large">
+            className="text text-label text-label-large"
+          >
             Click Me
           </div>
         </Button>
         <div
-          className="text text-title text-title-large">
+          className="text text-title text-title-large"
+        >
           Elevated Buttons
         </div>
         <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           No Icon
         </div>
         <Button
@@ -624,12 +611,14 @@ function App() {
           onClick={incrementCounter}
         >
           <div
-            className="text text-label text-label-large">
+            className="text text-label text-label-large"
+          >
             Click Me
           </div>
         </Button>
         <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           No Icon (inactive)
         </div>
         <Button
@@ -638,11 +627,14 @@ function App() {
           onClick={incrementCounter}
         >
           <div
-            className="text text-label text-label-large">Click Me
+            className="text text-label text-label-large"
+          >
+            Click Me
           </div>
         </Button>
         <div
-          className="text text-label text-label-small">
+          className="text text-label text-label-small"
+        >
           With Icon
         </div>
         <Button
@@ -653,10 +645,16 @@ function App() {
           iconName={"search"}
         >
           <div
-            className="text text-label text-label-large">Click Me</div>
+            className="text text-label text-label-large"
+          >
+            Click Me
+          </div>
         </Button>
         <div
-          className="text text-label text-label-small">With Icon (inactive)</div>
+          className="text text-label text-label-small"
+        >
+          With Icon (inactive)
+        </div>
         <Button
           configuration="elevated"
           disabled={true}
@@ -665,32 +663,51 @@ function App() {
           iconName={"search"}
         >
           <div
-            className="text text-label text-label-large">Click Me</div>
+            className="text text-label text-label-large"
+          >
+            Click Me</div>
         </Button>
         <div
-          className="text text-title text-title-large">Tonal Buttons</div>
+          className="text text-title text-title-large"
+        >
+          Tonal Buttons
+        </div>
         <div
-          className="text text-label text-label-small">No Icon</div>
+          className="text text-label text-label-small"
+        >
+          No Icon
+        </div>
         <Button
           configuration="tonal"
           disabled={false}
           onClick={incrementCounter}
         >
           <div
-            className="text text-label text-label-large">Click Me</div>
+            className="text text-label text-label-large"
+          >
+            Click Me
+          </div>
         </Button>
         <div
-          className="text text-label text-label-small">No Icon (inactive)</div>
+          className="text text-label text-label-small">
+          No Icon (inactive)
+        </div>
         <Button
           configuration="tonal"
           disabled={true}
           onClick={incrementCounter}
         >
           <div
-            className="text text-label text-label-large">Click Me</div>
+            className="text text-label text-label-large"
+          >
+            Click Me
+          </div>
         </Button>
         <div
-          className="text text-label text-label-small">With Icon</div>
+          className="text text-label text-label-small"
+        >
+          With Icon
+        </div>
         <Button
           configuration="tonal"
           disabled={false}
@@ -699,12 +716,16 @@ function App() {
           iconName={"search"}
         >
           <div
-            className="text text-label text-label-large">
+            className="text text-label text-label-large"
+          >
             Click Me
           </div>
         </Button>
         <div
-          className="text text-label text-label-small">With Icon (inactive)</div>
+          className="text text-label text-label-small"
+        >
+          With Icon (inactive)
+        </div>
         <Button
           configuration="tonal"
           disabled={true}
@@ -713,251 +734,182 @@ function App() {
           iconName={"search"}
         >
           <div
-            className="text text-label text-label-large">
+            className="text text-label text-label-large"
+          >
             Click Me
           </div>
         </Button>
-
       </div>
-
       <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "flex-start",
-          padding: "70px",
-          gap: "40px"
-        }}
+        className="text text-title text-title-medium"
+      >
+        Typography
+      </div>
+      <div
+        className="component-display-section-column-trmd3"
       >
         {/* TYPOGRAPHY */}
         <div
-          className="text text-title text-title-medium">
-          Typography
-        </div>
-
-        <div
-          style={{
-            boxSizing: "border-box",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "flex-start",
-            padding: "24px",
-            gap: "24px",
-            border: "1px solid #79747E",
-            borderRadius: "16px"
-          }}
+          className="typography-display-section-trmd3"
         >
           <div
-            className="text text-display text-display-large">
+            className="text text-display text-display-large"
+          >
             Display Large - Roboto 57/54 . 0
           </div>
           <div
-            className="text text-display text-display-medium">
+            className="text text-display text-display-medium"
+          >
             Display Medium - Roboto 45/52 .  0
           </div>
           <div
-            className="text text-display text-display-small">
+            className="text text-display text-display-small"
+          >
             Display Small - Roboto 36/44 . 0
           </div>
         </div>
-
-        <div style={{
-          boxSizing: "border-box",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "flex-start",
-          padding: "24px",
-          gap: "24px",
-          border: "1px solid #79747E",
-          borderRadius: "16px"
-        }}
+        <div
+          className="typography-display-section-trmd3"
         >
           <div
-            className="text text-headline text-headline-large">
+            className="text text-headline text-headline-large"
+          >
             Headline Large - Roboto 32/40 . 0
           </div>
           <div
-            className="text text-headline text-headline-medium">
+            className="text text-headline text-headline-medium"
+          >
             Headline Medium - Roboto 28/36 . 0
           </div>
           <div
-            className="text text-headline text-headline-small">
+            className="text text-headline text-headline-small"
+          >
             Headline Small - Roboto 24/32 . 0
           </div>
         </div>
-        <div style={{
-          boxSizing: "border-box",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "flex-start",
-          padding: "24px",
-          gap: "24px",
-          border: "1px solid #79747E",
-          borderRadius: "16px"
-        }}
+        <div
+          className="typography-display-section-trmd3"
         >
           <div
-            className="text text-title text-title-large">
+            className="text text-title text-title-large"
+          >
             Title Large - Roboto Regular 22/28 . 0
           </div>
           <div
-            className="text text-title text-title-medium">
+            className="text text-title text-title-medium"
+          >
             Title Medium - Roboto Medium 16/24 . +0.15
           </div>
           <div
-            className="text text-title text-title-small">
+            className="text text-title text-title-small"
+          >
             Title Small - Roboto Medium 14/20 . +0.1
           </div>
         </div>
-
         <div
-          style={{
-            boxSizing: "border-box",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "flex-start",
-            padding: "24px",
-            gap: "24px",
-            border: "1px solid #79747E",
-            borderRadius: "16px"
-          }}
+          className="typography-display-section-trmd3"
         >
           <div
-            className="text text-label text-label-large">
+            className="text text-label text-label-large"
+          >
             Label Large - Roboto Medium 14/20 . +0.1
           </div>
           <div
-            className="text text-label text-label-medium">
+            className="text text-label text-label-medium"
+          >
             Label Medium - Roboto Medium 12/16 . +0.5
           </div>
           <div
-            className="text text-label text-label-small">
+            className="text text-label text-label-small"
+          >
             Label Small - Roboto Medium 11/16 . +0.5
           </div>
         </div>
-
         <div
-          style={{
-            boxSizing: "border-box",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "flex-start",
-            padding: "24px", gap: "24px",
-            border: "1px solid #79747E",
-            borderRadius: "16px"
-          }}
+          className="typography-display-section-trmd3"
         >
           <div
-            className="text text-body text-body-large">
+            className="text text-body text-body-large"
+          >
             Body Large - Roboto 16/24 . +0.5
           </div>
           <div
-            className="text text-body text-body-medium">
+            className="text text-body text-body-medium"
+          >
             Body Large - Roboto 16/24 . +0.5
           </div>
           <div
-            className="text text-body text-body-small">
+            className="text text-body text-body-small"
+          >
             Body Large - Roboto 16/24 . +0.5
           </div>
         </div>
       </div>
-
       <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "flex-start",
-          padding: "50px 60px",
-          gap: "18px"
-        }}
+        className="text text-title text-title-large"
+      >
+        Elevation
+      </div>
+      <div
+        className="elevation-display-section-trmd3"
       >
         {/* ELEVATION */}
         <div
-          className="text text-title text-title-large">
-          Elevation
-        </div>
-
-        <div
-          className="elevation-light-1"
-          style={{
-            background: "linear-gradient(0deg, rgba(103, 80, 164, 0.05), rgba(103, 80, 164, 0.05))",
-            width: "80px",
-            height: "80px",
-            borderRadius: "16px"
-          }}
+          className="elevation-light-1 elevation-box-trmd3 elevation-box-1-trmd3"
         >
         </div>
         <div
-          className="elevation-light-2"
-          style={{
-            background: "linear-gradient(0deg, rgba(103, 80, 164, 0.08), rgba(103, 80, 164, 0.08))",
-            width: "80px",
-            height: "80px",
-            borderRadius: "16px"
-          }}
+          className="elevation-light-2 elevation-box-trmd3 elevation-box-2-trmd3"
         >
         </div>
         <div
-          className="elevation-light-3"
-          style={{
-            background: "linear-gradient(0deg, rgba(113, 90, 174, 0.11), rgba(113, 90, 174, 0.11))",
-            width: "80px", height: "80px", borderRadius: "16px"
-          }}></div>
-        <div
-          className="elevation-light-4"
-          style={{
-            background: "linear-gradient(0deg, rgba(103, 80, 164, 0.12), rgba(103, 80, 164, 0.12))",
-            width: "80px",
-            height: "80px",
-            borderRadius: "16px"
-          }}
+          className="elevation-light-3 elevation-box-trmd3 elevation-box-3-trmd3"
         >
         </div>
         <div
-          className="elevation-light-5"
-          style={{
-            background: "linear-gradient(0deg, rgba(103, 80, 164, 0.14), rgba(103, 80, 164, 0.14))",
-            width: "80px",
-            height: "80px",
-            borderRadius: "16px"
-          }}
+          className="elevation-light-4 elevation-box-trmd3 elevation-box-4-trmd3"
+        >
+        </div>
+        <div
+          className="elevation-light-5 elevation-box-trmd3 elevation-box-5-trmd3"
         >
         </div>
       </div>
-
       <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "flex-start",
-          padding: "50px 60px",
-          gap: "18px"
-        }}>
+        className="text text-title text-title-large"
+      >
+        Icons
+      </div>
+      <div
+        className="component-display-section-row-trmd3"
+      >
         {/* ICONS */}
-        <div
-          className="text text-title text-title-large">Icons</div>
         <span
-          className="material-symbols-outlined">
+          className="material-symbols-outlined"
+        >
           search
         </span>
         <span
-          className="material-symbols-outlined">
+          className="material-symbols-outlined"
+        >
           home
         </span>
         <span
-          className="material-symbols-outlined">
+          className="material-symbols-outlined"
+        >
           air
         </span>
         <span
-          className="material-symbols-outlined">
+          className="material-symbols-outlined"
+        >
           water
         </span>
         <span
-          className="material-symbols-outlined">
+          className="material-symbols-outlined"
+        >
           check
         </span>
       </div>
-
     </div>
   )
 }

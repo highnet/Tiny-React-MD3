@@ -237,7 +237,7 @@ body {
 }
 
 .btn-outlined {
-  background-color: transparent;
+  background-color: white;
   color: var(--prophet-violet);
   border: 1px solid var(--dried-lavender-flowers);
 }

@@ -9,11 +9,18 @@ import Badge from "../Badge";
     and an optional label prop to display a number on the badge.
 */
 
-<div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "70px", gap: "40px" }}>
+<div
+    className="component-display-section-row-trmd3"
+>
     {/* BADGES */}
-    <div className="text text-title text-title-large">Badges</div>
-    <div className="text text-label text-label-small">Small</div>
-    <div style={{ backgroundColor: "#F8AF50", width: "50px", height: "50px" }}>
+    <div
+        className="text text-label text-label-small"
+    >
+        Small
+    </div>
+    <div
+        className="badge-box-trmd3"
+    >
         <Badge
             configuration={"small"}
             xOffset={95}
@@ -21,9 +28,14 @@ import Badge from "../Badge";
         >
         </Badge>
     </div>
-
-    <div className="text text-label text-label-small">Single Digit</div>
-    <div style={{ backgroundColor: "#F8AF50", width: "100px", height: "100px" }}>
+    <div
+        className="text text-label text-label-small"
+    >
+        Single Digit
+    </div>
+    <div
+        className="badge-box-trmd3"
+    >
         <Badge
             configuration={"single-digit"}
             xOffset={93}
@@ -32,9 +44,14 @@ import Badge from "../Badge";
         >
         </Badge>
     </div>
-
-    <div className="text text-label text-label-small">Multiple Digits</div>
-    <div style={{ backgroundColor: "#F8AF50", width: "150px", height: "150px" }}>
+    <div
+        className="text text-label text-label-small"
+    >
+        Multiple Digits
+    </div>
+    <div
+        className="badge-box-trmd3"
+    >
         <Badge
             configuration={"multiple-digits"}
             xOffset={93}
@@ -43,5 +60,4 @@ import Badge from "../Badge";
         >
         </Badge>
     </div>
-
 </div>

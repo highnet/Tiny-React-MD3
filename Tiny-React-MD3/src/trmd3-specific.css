@@ -18,3 +18,71 @@ body{
     text-align: center;
     color: #0088FC;
 }
+
+.component-display-section-column-trmd3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 70px;
+    gap: 40px;
+}
+
+.component-display-section-row-trmd3{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 70px;
+    gap: 10px;
+}
+
+.typography-display-section-trmd3{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 24px;
+    border: 1px solid #79747E;
+    border-radius: 16px;
+}
+
+.elevation-display-section-trmd3{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 50px 60px;
+    gap: 18px;
+}
+
+
+.elevation-box-trmd3{
+    width: 80px;
+    height: 80px;
+    border-radius: 16px;
+}
+
+.elevation-box-1-trmd3{
+    background: linear-gradient(0deg, rgba(103, 80, 164, 0.05), rgba(103, 80, 164, 0.05));
+}
+.elevation-box-2-trmd3{
+    background: linear-gradient(0deg, rgba(103, 80, 164, 0.08), rgba(103, 80, 164, 0.08));
+
+}
+.elevation-box-3-trmd3{
+    background: linear-gradient(0deg, rgba(113, 90, 174, 0.11), rgba(113, 90, 174, 0.11));
+
+}
+.elevation-box-4-trmd3{
+    background: linear-gradient(0deg, rgba(103, 80, 164, 0.12), rgba(103, 80, 164, 0.12));
+
+}
+.elevation-box-5-trmd3{
+    background: linear-gradient(0deg, rgba(103, 80, 164, 0.14), rgba(103, 80, 164, 0.14));
+
+}
+
+.badge-box-trmd3{
+    background-color: #F8AF50;
+    width: 50px;
+    height: 50px;
+}
