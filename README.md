@@ -1,6 +1,14 @@
-<div align="center""><img src="/Tiny-React-MD3/src/assets/tiny-react-md3-logo.png" width="300px"/></div>
 
-# 🐝 Tiny React MD3
+<h1 align="center">
+🐝 Tiny React MD3 🐝
+<div align="center""> 
+<br/>
+<img src="/Tiny-React-MD3/src/assets/tiny-react-md3-logo.png" width="300px"/>  
+</div>
+<h1>
+ 
+
+## 
 Tired of bloated React frameworks with thousands of lines of code which you will never use?
 
 ❤️ You like Figma? ❤️ You Like Material Design 3? ❤️ You like React? 🐝 Then you love Tiny React MD3!
