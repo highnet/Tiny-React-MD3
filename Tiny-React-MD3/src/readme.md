@@ -158,6 +158,11 @@ Place a default icon like this:
 ```
 
  where <code>{name}</code> is the set of all accepted icon names by [Material Symbols](https://fonts.google.com/icons)
+ 
+ <div align="center""> 
+<br/>
+<img src="/Tiny-React-MD3/src/assets/icon.png" width="250px"/>  
+</div>
 
 ## 🔤 [Typography](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Typography/Frame/typography.tsx)
 
