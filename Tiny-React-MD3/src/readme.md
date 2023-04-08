@@ -238,7 +238,7 @@ The supported options of <code>{level}</code> are the following:
 
 <div align="center"> 
 <br/>
-<img src="/Tiny-React-MD3/src/assets/elevation.png"/>
+<img src="/Tiny-React-MD3/src/assets/elevations.png"/>
 </div>
 
 ## 🕹️ [Buttons](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Button/Frame/button.tsx)
