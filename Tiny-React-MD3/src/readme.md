@@ -281,6 +281,14 @@ The supported options of <code>{configuration}</code> are the following:
 3. <code>"text"</code>
 3. <code>"elevated"</code>
 4. <code>"tonal"</code>
+	
+<div align="center"> 
+<img src="/Tiny-React-MD3/src/assets/filled-buttons.png" height="884px"/>
+<img src="/Tiny-React-MD3/src/assets/outlined-buttons.png" height="884px"/>
+<img src="/Tiny-React-MD3/src/assets/text-buttons.png" height="884px"/>
+<img src="/Tiny-React-MD3/src/assets/tonal-buttons.png" height="884px"/>
+</div>
+
 
 ## 🔦 [Switch](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Switch/Frame/switch.tsx)
       
