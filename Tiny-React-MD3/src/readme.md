@@ -289,7 +289,6 @@ The supported options of <code>{configuration}</code> are the following:
 <img src="/Tiny-React-MD3/src/assets/tonal-buttons.png" height="884px"/>
 </div>
 
-
 ## 🔦 [Switch](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Switch/Frame/switch.tsx)
       
 <i>Switches toggle the state of a single item on or off.</i>
