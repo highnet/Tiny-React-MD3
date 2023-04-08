@@ -128,7 +128,7 @@ The supported options of <code>{configuration}</code> are the following:
 
 <div align="center""> 
 <br/>
-<img src="/Tiny-React-MD3/src/assets/badge.png"/>
+<img src="/Tiny-React-MD3/src/assets/badges.png"/>
 </div>
 
 ## ☑️ [Checkbox](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Checkbox/Frame/checkbox.tsx)
