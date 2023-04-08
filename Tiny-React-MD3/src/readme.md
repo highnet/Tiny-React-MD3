@@ -29,7 +29,7 @@ You may supplement the following optional properties to a horizontal divider:
 | <code>insetLeftWidth</code> | <code>number</code> | <code>16</code> | <code>width of the left inset</code> | [IHorizontalDividerProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/HorizontalDivider/IHorizontalDividerProps.tsx) |
 | <code>showInsets</code> | <code>boolean</code> | <code>false</code> | <code>visibility of the inset</code> | [IHorizontalDividerProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/HorizontalDivider/IHorizontalDividerProps.tsx) |
 
-<div align="center""> 
+<div align="center"> 
 <br/>
 <img src="/Tiny-React-MD3/src/assets/horizontal-divider.png"/>  
 </div>
@@ -59,7 +59,7 @@ You may supplement the following optional properties to a vertical divider:
 | <code>insetBottomHeight</code> | <code>number</code> | <code>16</code> | <code>height of the bottom inset</code> | [IVerticalDividerProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/VerticalDivider/IVerticalDividerProps.tsx) |
 | <code>showInsets</code> | <code>boolean</code> | <code>false</code> | <code>visibility of the inset</code> | [IVerticalDividerProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/VerticalDivider/IVerticalDividerProps.tsx) |
 
-<div align="center""> 
+<div align="center"> 
 <br/>
 <img src="/Tiny-React-MD3/src/assets/vertical-divider.png"/>  
 </div>
@@ -90,7 +90,7 @@ You may supplement the following optional properties to a radio button:
 | <code>value</code> | <code>string</code> | <code>"radio"</code> | <code>value of the component</code> | [IRadioButtonProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Radio%20Button/IRadioButtonProps.tsx) |
 | <code>defaultChecked</code> | <code>boolean</code> | <code>false</code> | <code>default checked state of the component</code> | [IRadioButtonProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Radio%20Button/IRadioButtonProps.tsx) |
 
-<div align="center""> 
+<div align="center"> 
 <br/>
 <img src="/Tiny-React-MD3/src/assets/radio-button.png"/>
 </div>
@@ -126,7 +126,7 @@ The supported options of <code>{configuration}</code> are the following:
 2. <code>"single-digit"</code>
 3. <code>"multiple-digits"</code>
 
-<div align="center""> 
+<div align="center"> 
 <br/>
 <img src="/Tiny-React-MD3/src/assets/badges.png"/>
 </div>
@@ -162,7 +162,7 @@ The supported options of <code>{configuration}</code> are the following:
 1. <code>"default"</code>
 2. <code>"error"</code>
 
-<div align="center""> 
+<div align="center"> 
 <br/>
 <img src="/Tiny-React-MD3/src/assets/checkbox.png"/>
 </div>
@@ -184,7 +184,7 @@ Place a default icon like this:
 
  where <code>{name}</code> is the set of all accepted icon names by [Material Symbols](https://fonts.google.com/icons)
  
-<div align="center""> 
+<div align="center"> 
 <br/>
 <img src="/Tiny-React-MD3/src/assets/icon.png"/>
 </div>
@@ -236,7 +236,7 @@ The supported options of <code>{level}</code> are the following:
 4. <code>4</code>
 5. <code>5</code>
 
-<div align="center""> 
+<div align="center"> 
 <br/>
 <img src="/Tiny-React-MD3/src/assets/elevation.png"/>
 </div>
@@ -313,7 +313,7 @@ You may supplement the following optional properties to a switch:
 | <code>iconNameSelected</code> | <code>string</code> | <code>"check"</code> | <code>the name of the icon on display when selected</code>| [ISwitchProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Switch/Switch.tsx) |
 | <code>iconNameDeselected</code> | <code>string</code> | <code>"close"</code> | <code>the name of the icon on display when deselected</code>| [ISwitchProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Switch/Switch.tsx) |
 
-<div align="center""> 
+<div align="center"> 
 <br/>
 <img src="/Tiny-React-MD3/src/assets/switch.png"/>
 </div>
