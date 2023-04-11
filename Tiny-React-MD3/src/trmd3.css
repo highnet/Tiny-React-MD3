@@ -293,7 +293,7 @@ body {
 }
 
 .btn-elevated {
-  background-color: transparent;
+  background-color: white;
   color: var(--prophet-violet);
   box-shadow: var(--surfaces-light-elevation-1);
 }
