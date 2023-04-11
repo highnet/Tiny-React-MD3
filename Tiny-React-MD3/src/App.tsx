@@ -1,11 +1,3 @@
-import { useState } from 'react'
-
-import Switch from "./Switch/Switch";
-import Checkbox from "./Checkbox/Checkbox";
-import Badge from "./Badge/Badge";
-import RadioButton from './Radio Button/RadioButton';
-import VerticalDivider from './VerticalDivider/VerticalDivider';
-
 import ButtonsFrame from './Button/Frame/ButtonsFrame';
 import HorizontalDividersFrame from './HorizontalDivider/Frame/HorizontalDividersFrame';
 import Hero from './TRMD3/Hero';
