@@ -10,7 +10,7 @@
 # How to host the project using Firebase:
 
 1. go to https://firebase.google.com/ and start a firebase project.
-2. navigate to the project root folder and type 'npm install -g firebase-tools' into the terminal.
+2. navigate to the Tiny-React-MD3 root folder and type 'npm install -g firebase-tools' into the terminal.
 3. type 'firebase login' and follow the instructions to log in using the account that created the firebase project.
 4. type 'firebase init hosting' into the terminal. Select "Use an existing project" and choose the firebase project from the list.
 5. use 'dist' as your public directory
