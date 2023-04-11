@@ -1,10 +1,27 @@
+import { initializeApp } from 'firebase/app';
+import { getDownloadURL, getStorage, ref } from "firebase/storage";
+
+const firebaseConfig = {
+  storageBucket: 'gs://tiny-react-md3.appspot.com'
+}
+
+const app = initializeApp(firebaseConfig);
+const storage = getStorage(app);
+const logoRef = ref(storage, 'tiny-react-md3-logo.png');
+let logoUrl = '';
+
+getDownloadURL(logoRef).then((url)=> {
+   logoUrl = url;
+   console.log(logoUrl);
+});
+
 function Hero() {
   return (<div>
     <div
       className="flex-trmd3"
     >
       <img
-        src="src/assets/tiny-react-md3-logo.png"
+        src="https://firebasestorage.googleapis.com/v0/b/tiny-react-md3.appspot.com/o/tiny-react-md3-logo.png?alt=media&token=dec17fd2-62ac-4a54-b6f5-758bdca88823"
         className="logo-trmd3"
       />
     </div>

@@ -9,6 +9,20 @@ import SwitchesFrame from './Switch/Frame/SwitchesFrame';
 import TypographiesFrame from './Typography/Frame/TypographiesFrame';
 import ElevationsFrame from './Elevation/Frame/ElevationsFrame';
 import IconsFrame from './Icon/Frame/IconsFrame';
+import { initializeApp } from 'firebase/app';
+import { getDownloadURL, getStorage, ref } from "firebase/storage";
+
+
+const firebaseConfig = {
+  storageBucket: 'gs://tiny-react-md3.appspot.com'
+}
+
+const app = initializeApp(firebaseConfig);
+const storage = getStorage(app);
+const logoRef = ref(storage, 'tiny-react-md3-logo.png');
+getDownloadURL(logoRef).then((url)=> {
+  const logoUrl = url;
+});
 
 function App() {
 
