@@ -12,7 +12,6 @@ let logoUrl = '';
 
 getDownloadURL(logoRef).then((url)=> {
    logoUrl = url;
-   console.log(logoUrl);
 });
 
 function Hero() {
@@ -21,7 +20,7 @@ function Hero() {
       className="flex-trmd3"
     >
       <img
-        src="https://firebasestorage.googleapis.com/v0/b/tiny-react-md3.appspot.com/o/tiny-react-md3-logo.png?alt=media&token=dec17fd2-62ac-4a54-b6f5-758bdca88823"
+        src="https://firebasestorage.googleapis.com/v0/b/tiny-react-dev.appspot.com/o/tiny-react-md3-logo.png?alt=media&token=749a4667-737c-4423-9b2f-c64ae1212f65"
         className="logo-trmd3"
       />
     </div>

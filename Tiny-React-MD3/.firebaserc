@@ -1,8 +1,5 @@
 {
   "projects": {
-    "default": "tiny-react-md3",
-    "tiny-r": "tiny-react-md3"
-  },
-  "targets": {},
-  "etags": {}
+    "default": "tiny-react-dev"
+  }
 }
