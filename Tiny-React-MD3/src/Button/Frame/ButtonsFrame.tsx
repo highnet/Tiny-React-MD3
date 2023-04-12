@@ -34,7 +34,8 @@ function ButtonsFrame() {
 				disabled={false}
 				icon={true}
 				iconName={"search"}
-				onClick={undefined}>
+				onClick={undefined}
+			>
 				<div className="text text-label text-label-large">Click Me</div>
 			</Button>
 			<div className="text text-label text-label-small">
@@ -45,7 +46,8 @@ function ButtonsFrame() {
 				disabled={true}
 				icon={true}
 				iconName={"search"}
-				onClick={undefined}>
+				onClick={undefined}
+			>
 				<div className="text text-label text-label-large">Click Me</div>
 			</Button>
 			<div className="text text-title text-title-large">Outlined Buttons</div>
@@ -63,7 +65,8 @@ function ButtonsFrame() {
 				disabled={false}
 				onClick={undefined}
 				icon={true}
-				iconName={"search"}>
+				iconName={"search"}
+			>
 				<div className="text text-label text-label-large">Click Me</div>
 			</Button>
 			<div className="text text-label text-label-small">
@@ -74,7 +77,8 @@ function ButtonsFrame() {
 				disabled={true}
 				onClick={undefined}
 				icon={true}
-				iconName={"search"}>
+				iconName={"search"}
+			>
 				<div className="text text-label text-label-large">Click Me</div>
 			</Button>
 			<div className="text text-title text-title-large">Text Buttons</div>
@@ -92,7 +96,8 @@ function ButtonsFrame() {
 				disabled={false}
 				onClick={undefined}
 				icon={true}
-				iconName={"search"}>
+				iconName={"search"}
+			>
 				<div className="text text-label text-label-large">Click Me</div>
 			</Button>
 			<div className="text text-label text-label-small">
@@ -103,7 +108,8 @@ function ButtonsFrame() {
 				disabled={true}
 				onClick={undefined}
 				icon={true}
-				iconName={"search"}>
+				iconName={"search"}
+			>
 				<div className="text text-label text-label-large">Click Me</div>
 			</Button>
 			<div className="text text-title text-title-large">Elevated Buttons</div>
@@ -121,7 +127,8 @@ function ButtonsFrame() {
 				disabled={false}
 				onClick={undefined}
 				icon={true}
-				iconName={"search"}>
+				iconName={"search"}
+			>
 				<div className="text text-label text-label-large">Click Me</div>
 			</Button>
 			<div className="text text-label text-label-small">
@@ -132,7 +139,8 @@ function ButtonsFrame() {
 				disabled={true}
 				onClick={undefined}
 				icon={true}
-				iconName={"search"}>
+				iconName={"search"}
+			>
 				<div className="text text-label text-label-large">Click Me</div>
 			</Button>
 			<div className="text text-title text-title-large">Tonal Buttons</div>
@@ -150,7 +158,8 @@ function ButtonsFrame() {
 				disabled={false}
 				onClick={undefined}
 				icon={true}
-				iconName={"search"}>
+				iconName={"search"}
+			>
 				<div className="text text-label text-label-large">Click Me</div>
 			</Button>
 			<div className="text text-label text-label-small">
@@ -161,7 +170,8 @@ function ButtonsFrame() {
 				disabled={true}
 				onClick={undefined}
 				icon={true}
-				iconName={"search"}>
+				iconName={"search"}
+			>
 				<div className="text text-label text-label-large">Click Me</div>
 			</Button>
 		</div>

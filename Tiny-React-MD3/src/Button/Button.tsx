@@ -53,7 +53,8 @@ const Button: React.FC<IButtonProps> = ({
 			onClick={(e) => {
 				onClick?.(e);
 				click();
-			}}>
+			}}
+		>
 			{_icon ? (
 				<span className="material-symbols-outlined">{_iconName}</span>
 			) : (

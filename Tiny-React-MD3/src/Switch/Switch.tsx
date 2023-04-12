@@ -76,7 +76,8 @@ const Switch: React.FC<ISwitchProps> = ({
 				"-icon" +
 				" " +
 				_className
-			}>
+			}
+		>
 			<div
 				className={
 					"switch-track switch-track-" +
@@ -88,7 +89,8 @@ const Switch: React.FC<ISwitchProps> = ({
 					"switch-track-" +
 					(_icon ? "with" : "without") +
 					"-icon"
-				}>
+				}
+			>
 				<div
 					className={
 						"switch-handle switch-handle-" +
@@ -100,7 +102,8 @@ const Switch: React.FC<ISwitchProps> = ({
 						"switch-handle-" +
 						(_icon ? "with" : "without") +
 						"-icon"
-					}>
+					}
+				>
 					<div className={"switch-handle-overlay"}>
 						{_icon ? (
 							<span
@@ -114,7 +117,8 @@ const Switch: React.FC<ISwitchProps> = ({
 									" " +
 									"switch-icon-" +
 									(_disabled ? "disabled" : "enabled")
-								}>
+								}
+							>
 								{" "}
 								{_selected ? _iconNameSelected : _iconNameDeselected}{" "}
 							</span>

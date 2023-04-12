@@ -57,13 +57,15 @@ const Checkbox: React.FC<ICheckboxProps> = ({
 			onClick={(e) => {
 				onChange?.(e);
 				handleClick();
-			}}>
+			}}
+		>
 			<span
 				className={
 					"material-symbols-outlined checkbox-icon " +
 					"checkbox-icon-" +
 					(_selected ? "selected" : "deselected")
-				}>
+				}
+			>
 				check
 			</span>
 			<div
@@ -74,7 +76,8 @@ const Checkbox: React.FC<ICheckboxProps> = ({
 					" " +
 					"checkbox-overlay-" +
 					(_disabled ? "disabled" : "enabled")
-				}></div>
+				}
+			></div>
 
 			{children}
 		</div>

@@ -24,7 +24,8 @@ function SwitchesFrame() {
 				onChange={undefined}
 				icon={true}
 				iconNameSelected={"warning"}
-				iconNameDeselected={"house"}></Switch>
+				iconNameDeselected={"house"}
+			></Switch>
 			<div className="text text-label text-label-small">
 				With Icon (Inactive)
 			</div>
@@ -32,7 +33,8 @@ function SwitchesFrame() {
 				selected={true}
 				onChange={undefined}
 				icon={true}
-				disabled={true}></Switch>
+				disabled={true}
+			></Switch>
 		</div>
 	);
 }

@@ -57,7 +57,8 @@ const RadioButton: React.FC<IRadioButtonProps> = ({
 			onClick={(e) => {
 				onClick?.(e);
 				click();
-			}}>
+			}}
+		>
 			<input
 				className={
 					"radio-button-input radio-button-input-" +

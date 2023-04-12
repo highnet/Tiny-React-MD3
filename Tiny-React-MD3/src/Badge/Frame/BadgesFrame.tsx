@@ -21,7 +21,8 @@ function BadgesFrame() {
 					configuration={"single-digit"}
 					xOffset={93}
 					yOffset={-4}
-					label={"3"}></Badge>
+					label={"3"}
+				></Badge>
 			</div>
 			<div className="text text-label text-label-small">Multiple Digits</div>
 			<div className="badge-box-trmd3">
@@ -29,7 +30,8 @@ function BadgesFrame() {
 					configuration={"multiple-digits"}
 					xOffset={93}
 					yOffset={-4}
-					label={"123"}></Badge>
+					label={"123"}
+				></Badge>
 			</div>
 		</div>
 	);

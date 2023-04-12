@@ -58,7 +58,8 @@ const VerticalDivider: React.FC<IVerticalDividerProps> = ({
 						width: _finalWidth,
 						height: _finalInsetTopHeight,
 						color: _finalInsetColor,
-					}}></div>
+					}}
+				></div>
 			) : (
 				""
 			)}
@@ -68,7 +69,8 @@ const VerticalDivider: React.FC<IVerticalDividerProps> = ({
 				style={{
 					width: _finalWidth,
 					height: _finalHeight,
-				}}></div>
+				}}
+			></div>
 
 			{_inset == "bottom" || _inset == "center" ? (
 				<div
@@ -77,7 +79,8 @@ const VerticalDivider: React.FC<IVerticalDividerProps> = ({
 						width: _finalWidth,
 						height: _finalInsetBottomHeight,
 						color: _finalInsetColor,
-					}}></div>
+					}}
+				></div>
 			) : (
 				""
 			)}

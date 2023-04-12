@@ -35,10 +35,12 @@ const Badge: React.FC<IBadgeProps> = ({
 		<div
 			id={_id}
 			className={"badge badge-" + _config}
-			style={{ marginLeft: _finalXOffset, marginTop: _finalYOffset }}>
+			style={{ marginLeft: _finalXOffset, marginTop: _finalYOffset }}
+		>
 			<div
 				style={{ paddingLeft: "4px", paddingRight: "4px", margin: "0 auto" }}
-				className="text text-label text-label-small">
+				className="text text-label text-label-small"
+			>
 				{_label}
 			</div>
 			{children}

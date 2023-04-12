@@ -19,18 +19,21 @@ function CheckboxesFrame() {
 				selected={true}
 				onChange={undefined}
 				configuration={"default"}
-				disabled={true}></Checkbox>
+				disabled={true}
+			></Checkbox>
 			<div className="text text-label text-label-small">Error</div>
 			<Checkbox
 				selected={true}
 				onChange={undefined}
-				configuration={"error"}></Checkbox>
+				configuration={"error"}
+			></Checkbox>
 			<div className="text text-label text-label-small">Error (inactive)</div>
 			<Checkbox
 				selected={true}
 				onChange={undefined}
 				configuration={"error"}
-				disabled={true}></Checkbox>
+				disabled={true}
+			></Checkbox>
 		</div>
 	);
 }
