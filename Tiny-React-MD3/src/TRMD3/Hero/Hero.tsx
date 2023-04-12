@@ -9,7 +9,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const storage = getStorage(app);
 const logoRef = ref(storage, 'tiny-react-md3-logo.png');
-
+console.log("this is a test");
 interface IHeroProps {
   hasLogo?: boolean;
 }
