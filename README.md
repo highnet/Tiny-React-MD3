@@ -19,7 +19,7 @@ Tired of bloated React frameworks with thousands of lines of code which you will
 * Developer handoffs made easy with ensured parity between the Figma material Design 3 Kit and React
 
 ## ❓ How to get started?
-* [Starting the Project](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/readme.md)
+* [Running your first development environment](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/readme.md#-running-your-first-development-environment)
 * [Documentation](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/readme.md)
 
 ## 🚧 Progress In Development
