@@ -83,7 +83,9 @@ Tired of bloated React frameworks with thousands of lines of code which you will
   * [highnet.xyz](https://www.highnet.xyz)
 * [Maria 'Uebersetzerin' Palma](https://www.linkedin.com/in/maria-palma-a9a101189/)
   * [mariapalma.at](https://mariapalma.at/)
-
+* [Manuel 'Manucapo' Telleria](https://manucapo.me/)
+  * [manucapo.me](https://manucapo.me/)
+                                                                                                                             
 ## 🛎️ Feedback
 If you have any feedback, please reach out to me at joaquintelleria@gmail.com.
 I hope you find this project useful and interesting. If you have any feedback, suggestions, or questions, please feel free to contact me.
