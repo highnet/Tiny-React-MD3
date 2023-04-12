@@ -1,6 +1,6 @@
 import ButtonsFrame from './Button/Frame/ButtonsFrame';
 import HorizontalDividersFrame from './HorizontalDivider/Frame/HorizontalDividersFrame';
-import Hero from './TRMD3/Hero';
+import Hero from './TRMD3/Hero/Hero';
 import VerticalDividersFrame from './VerticalDivider/Frame/VerticalDividersFrame';
 import RadioButtonsFrame from './Radio Button/Frame/RadioButtonsFrame';
 import BadgesFrame from './Badge/Frame/BadgesFrame';
@@ -9,20 +9,6 @@ import SwitchesFrame from './Switch/Frame/SwitchesFrame';
 import TypographiesFrame from './Typography/Frame/TypographiesFrame';
 import ElevationsFrame from './Elevation/Frame/ElevationsFrame';
 import IconsFrame from './Icon/Frame/IconsFrame';
-import { initializeApp } from 'firebase/app';
-import { getDownloadURL, getStorage, ref } from "firebase/storage";
-
-
-const firebaseConfig = {
-  storageBucket: 'gs://tiny-react-md3.appspot.com'
-}
-
-const app = initializeApp(firebaseConfig);
-const storage = getStorage(app);
-const logoRef = ref(storage, 'tiny-react-md3-logo.png');
-getDownloadURL(logoRef).then((url)=> {
-  const logoUrl = url;
-});
 
 function App() {
 
@@ -30,7 +16,9 @@ function App() {
     <div
       className="App"
     >
-      <Hero />
+      <Hero 
+        hasLogo={true}
+      />
 
       <div
         className="text text-title text-title-large"
