@@ -1,76 +1,76 @@
-import React, {useState, useEffect} from "react";
-import { initializeApp } from 'firebase/app';
+// TODO: Needs documentation
+
+import React, { useState, useEffect } from "react";
+import { initializeApp } from "firebase/app";
 import { getDownloadURL, getStorage, ref } from "firebase/storage";
 
 const firebaseConfig = {
-  storageBucket: 'gs://tiny-react-md3.appspot.com'
-}
+	storageBucket: "gs://tiny-react-md3.appspot.com",
+};
 
 const app = initializeApp(firebaseConfig);
 const storage = getStorage(app);
-const logoRef = ref(storage, 'tiny-react-md3-logo.png');
-console.log("this is a test");
+const logoRef = ref(storage, "tiny-react-md3-logo.png");
+
 interface IHeroProps {
-  hasLogo?: boolean;
+	hasLogo?: boolean;
 }
 
-const Hero: React.FC<IHeroProps> = ({hasLogo}) => {
+const Hero: React.FC<IHeroProps> = ({ hasLogo }) => {
+	const [_hasLogo] = useState(hasLogo || false);
 
-  const [_hasLogo] = useState(hasLogo || false);
+	const [logoUrl, setLogoUrl] = useState("");
 
-  const [logoUrl, setLogoUrl] = useState('');
+	useEffect(() => {
+		getDownloadURL(logoRef).then((url) => {
+			setLogoUrl(url);
+		});
+	}, []);
 
-    useEffect(() => {
-    getDownloadURL(logoRef).then((url) => {
-      setLogoUrl(url);
-    });
-  }, []);
+	return (
+		<div className="hero-section-trmd3">
+			<div className="flex-trmd3">
+				{_hasLogo ? (
+					<img loading="lazy" src={logoUrl} className="logo-trmd3" />
+				) : (
+					""
+				)}
+			</div>
 
-  return (
-  <div>
-    <div
-      className="flex-trmd3"
-    >
-      {_hasLogo ?
-      <img
-        loading="lazy"
-        src={logoUrl}
-        className="logo-trmd3"
-      />
-      
-       : ""}
-    </div>
-    <div
-      className="text text-display text-display-medium title-trmd3"
-    >
-      Tiny React MD3
-    </div>
-    <div
-      className="text text-body text-body-large title-trmd3"
-    >
-      <br />
-      Tired of bloated React frameworks with thousands of lines of code which you will never use? <br /> <br />
-      ❤️ You like Figma? ❤️ You Like Material Design 3? ❤️ You like React? <br /> ❤️Then you love Tiny React MD3! <br />
-      <br />
-      <a href="https://www.figma.com/community/file/1035203688168086460">Figma Material Design 3 Kit</a> 🤝 <a href="https://developer.okta.com/blog/2022/03/14/react-vite-number-converter">React.ts</a> =  <a href="https://github.com/highnet/Tiny-React-MD3/">Tiny React MD3</a> <br />
-      <ul>
-        <li>
-          Quickly transform your design kit prototypes into stunning and modern web applications <br /> <br />
-        </li>
-        <li>
-          A set of easy-to-use, high-peformance, and customizable components that follow the Material Design 3 principles and aesthetics <br /> <br />
-        </li>
-        <li>
-          Developer handoffs made easy with ensured parity between the Figma material Design 3 Kit and React
-        </li>
-      </ul>
-    </div>
-    <div
-      className="text text-display text-display-medium title-trmd3"
-    >
-    </div>
-  </div>
-  );
+			<div className="text text-display text-display-medium">
+				🐝Tiny React MD3🐝
+			</div>
+
+			<ul className="hero-features-trmd3 text text-title text-title-large">
+				<li>
+					<a href="https://www.figma.com/community/file/1035203688168086460">
+						MD3 🤝
+					</a>
+					<a href="https://react.dev/">React</a>
+				</li>
+				<li>
+					Tired of bloated React frameworks with thousands of lines of code
+					which you will never use?
+				</li>
+				<li>You like Figma?</li>
+				<li>You Like Material Design 3?</li>
+				<li>You like React?</li>
+				<li>❤️ Then you love Tiny React MD3! ❤️</li>
+				<li>
+					• Quickly transform your design kit prototypes into stunning and
+					modern web applications
+				</li>
+				<li>
+					• A set of easy-to-use, high-peformance, and customizable components
+					that follow the Material Design 3 principles and aesthetics
+				</li>
+				<li>
+					• Developer handoffs made easy with ensured parity between the Figma
+					material Design 3 Kit and React
+				</li>
+			</ul>
+		</div>
+	);
 };
 
 export default Hero;

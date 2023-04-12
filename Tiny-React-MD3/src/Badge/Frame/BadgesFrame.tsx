@@ -8,58 +8,31 @@ import Badge from "../Badge";
 */
 
 function BadgesFrame() {
-    return (<div
-        className="component-display-section-row-trmd3"
-    >
-        {/* BADGES */}
-        <div
-            className="text text-label text-label-small"
-        >
-            Small
-        </div>
-        <div
-            className="badge-box-trmd3"
-        >
-            <Badge
-                configuration={"small"}
-                xOffset={95}
-                yOffset={-2}
-            >
-            </Badge>
-        </div>
-        <div
-            className="text text-label text-label-small"
-        >
-            Single Digit
-        </div>
-        <div
-            className="badge-box-trmd3"
-        >
-            <Badge
-                configuration={"single-digit"}
-                xOffset={93}
-                yOffset={-4}
-                label={"3"}
-            >
-            </Badge>
-        </div>
-        <div
-            className="text text-label text-label-small"
-        >
-            Multiple Digits
-        </div>
-        <div
-            className="badge-box-trmd3"
-        >
-            <Badge
-                configuration={"multiple-digits"}
-                xOffset={93}
-                yOffset={-4}
-                label={"123"}
-            >
-            </Badge>
-        </div>
-    </div>);
+	return (
+		<div className="component-display-section-row-trmd3">
+			{/* BADGES */}
+			<div className="text text-label text-label-small">Small</div>
+			<div className="badge-box-trmd3">
+				<Badge configuration={"small"} xOffset={95} yOffset={-2}></Badge>
+			</div>
+			<div className="text text-label text-label-small">Single Digit</div>
+			<div className="badge-box-trmd3">
+				<Badge
+					configuration={"single-digit"}
+					xOffset={93}
+					yOffset={-4}
+					label={"3"}></Badge>
+			</div>
+			<div className="text text-label text-label-small">Multiple Digits</div>
+			<div className="badge-box-trmd3">
+				<Badge
+					configuration={"multiple-digits"}
+					xOffset={93}
+					yOffset={-4}
+					label={"123"}></Badge>
+			</div>
+		</div>
+	);
 }
 
 export default BadgesFrame;

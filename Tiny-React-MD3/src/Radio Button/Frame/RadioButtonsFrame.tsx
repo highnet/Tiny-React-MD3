@@ -8,49 +8,26 @@ import RadioButton from "../RadioButton";
 */
 
 function RadioButtonsFrame() {
-    return (<div
-        className="component-display-section-row-trmd3"
-    >
-        {/* RADIO BUTTONS */}
-        <RadioButton
-            name={"tiny md3"}
-            value={"option-1"}
-        />
-        <div
-            className="text text-label text-label-small"
-        >
-            Option 1
-        </div>
-        <RadioButton
-            name={"tiny md3"}
-            value={"option-2"}
-        />
-        <div
-            className="text text-label text-label-small"
-        >
-            Option 2
-        </div>
-        <RadioButton
-            name={"tiny md3"}
-            value={"option-3"}
-        />
-        <div
-            className="text text-label text-label-small"
-        >
-            Option 3
-        </div>
-        <RadioButton
-            name={"tiny md3"}
-            value={"option-4"}
-            disabled={true}
-            defaultChecked={true}
-        />
-        <div
-            className="text text-label text-label-small"
-        >
-            Option 4 (Inactive)
-        </div>
-    </div>);
+	return (
+		<div className="component-display-section-row-trmd3">
+			{/* RADIO BUTTONS */}
+			<RadioButton name={"tiny md3"} value={"option-1"} />
+			<div className="text text-label text-label-small">Option 1</div>
+			<RadioButton name={"tiny md3"} value={"option-2"} />
+			<div className="text text-label text-label-small">Option 2</div>
+			<RadioButton name={"tiny md3"} value={"option-3"} />
+			<div className="text text-label text-label-small">Option 3</div>
+			<RadioButton
+				name={"tiny md3"}
+				value={"option-4"}
+				disabled={true}
+				defaultChecked={true}
+			/>
+			<div className="text text-label text-label-small">
+				Option 4 (Inactive)
+			</div>
+		</div>
+	);
 }
 
 export default RadioButtonsFrame;

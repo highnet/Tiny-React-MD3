@@ -11,7 +11,15 @@ import { IBadgeProps } from "./IBadgeProps";
 */
 
 // Define a functional component for the badge
-const Badge: React.FC<IBadgeProps> = ({ children, id, className, configuration, xOffset, yOffset, label }) => {
+const Badge: React.FC<IBadgeProps> = ({
+	children,
+	id,
+	className,
+	configuration,
+	xOffset,
+	yOffset,
+	label,
+}) => {
 	const [_id] = useState(id || undefined); // State for the ID of the badge
 	const [_className] = useState(className || ""); // State for the class name of the badge
 	const [_config] = useState(configuration || "small"); // State for the configuration of the badge
@@ -27,9 +35,12 @@ const Badge: React.FC<IBadgeProps> = ({ children, id, className, configuration, 
 		<div
 			id={_id}
 			className={"badge badge-" + _config}
-			style={{ marginLeft: _finalXOffset, marginTop: _finalYOffset }}
-		>
-			<div style={{ paddingLeft: "4px", paddingRight: "4px", margin: "0 auto" }} className="text text-label text-label-small">{_label}</div>
+			style={{ marginLeft: _finalXOffset, marginTop: _finalYOffset }}>
+			<div
+				style={{ paddingLeft: "4px", paddingRight: "4px", margin: "0 auto" }}
+				className="text text-label text-label-small">
+				{_label}
+			</div>
 			{children}
 		</div>
 	);
