@@ -6,7 +6,7 @@
 
 function TypographiesFrame() {
 	return (
-		<div className="component-display-section-column-trmd3">
+		<div className="flex-trmd3 flex-column-trmd3">
 			{/* TYPOGRAPHY */}
 			<div className="typography-display-section-trmd3">
 				<div className="text text-display text-display-large">

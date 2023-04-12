@@ -8,7 +8,7 @@ import VerticalDivider from "../VerticalDivider";
 
 function VerticalDividersFrame() {
 	return (
-		<div className="component-display-section-row-trmd3">
+		<div className="flex-trmd3 flex-row-trmd3">
 			{/* VERTICAL DIVIDERS */}
 			<div className="text text-label text-label-small">Inset None</div>
 			<VerticalDivider inset={"none"} />

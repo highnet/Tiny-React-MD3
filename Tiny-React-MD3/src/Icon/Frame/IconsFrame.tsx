@@ -7,7 +7,7 @@
 
 function IconsFrame() {
 	return (
-		<div className="component-display-section-row-trmd3">
+		<div className="flex-trmd3 flex-row-trmd3">
 			{/* ICONS */}
 			<span className="material-symbols-outlined">search</span>
 			<span className="material-symbols-outlined">home</span>

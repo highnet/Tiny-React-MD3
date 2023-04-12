@@ -24,22 +24,12 @@ body {
 	display: flex;
 }
 
-/* COMPONENT */
-
-.component-display-section-column-trmd3 {
-	display: flex;
+.flex-column-trmd3 {
 	flex-direction: column;
-	align-items: flex-start;
-	padding: 70px;
-	gap: 40px;
 }
 
-.component-display-section-row-trmd3 {
-	display: flex;
+.flex-row-trmd3 {
 	flex-direction: row;
-	align-items: flex-start;
-	padding: 70px;
-	gap: 10px;
 }
 
 /* TYPOGRAPHY */

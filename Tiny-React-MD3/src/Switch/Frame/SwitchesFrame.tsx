@@ -12,7 +12,7 @@ import Switch from "../Switch";
 
 function SwitchesFrame() {
 	return (
-		<div className="component-display-section-row-trmd3">
+		<div className="flex-trmd3 flex-row-trmd3">
 			{/* SWITCHES */}
 			<div className="text text-label text-label-small">No Icon</div>
 			<Switch selected={true} onChange={undefined}></Switch>

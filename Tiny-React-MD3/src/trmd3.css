@@ -195,6 +195,8 @@ body {
 	border-radius: 100px;
 	transition: background-color 0.3s, box-shadow 0.3s;
 	border: none;
+	height: 40px;
+	width: 90px;
 }
 
 .btn > .text {
@@ -208,6 +210,7 @@ body {
 	flex-direction: row;
 	padding: 10px 24px 10px 16px;
 	gap: 8px;
+	width: 117px;
 }
 
 .btn-filled {
@@ -362,8 +365,10 @@ body {
 
 .switch {
 	display: flex;
-	width: 52px;
-	height: 32px;
+	min-width: 52px;
+	max-width: 52px;
+	min-height: 32px;
+	max-height: 32px;
 }
 
 .switch-track {
@@ -657,4 +662,18 @@ input[type="radio"].radio-button-input-disabled::before {
 
 .vertical-divider-inset-bottom {
 	background-color: red;
+}
+
+/* RADIO BUTTONS */
+
+.radio-buttons-frame-trmd3 {
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+	.radio-buttons-frame-trmd3 {
+		flex-direction: column;
+	}
 }

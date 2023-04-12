@@ -8,7 +8,7 @@ import HorizontalDivider from "../HorizontalDivider";
 
 function HorizontalDividersFrame() {
 	return (
-		<div className="component-display-section-column-trmd3">
+		<div className="flex-trmd3 flex-column-trmd3">
 			{/* HORIZONTAL DIVIDERS */}
 			<div className="text text-label text-label-small">Inset None</div>
 			<HorizontalDivider inset={"none"} />

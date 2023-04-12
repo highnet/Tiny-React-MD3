@@ -9,7 +9,7 @@ import RadioButton from "../RadioButton";
 
 function RadioButtonsFrame() {
 	return (
-		<div className="component-display-section-row-trmd3">
+		<div className="flex-trmd3 radio-buttons-frame-trmd3">
 			{/* RADIO BUTTONS */}
 			<RadioButton name={"tiny md3"} value={"option-1"} />
 			<div className="text text-label text-label-small">Option 1</div>

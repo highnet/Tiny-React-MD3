@@ -10,7 +10,7 @@ import Checkbox from "../Checkbox";
 
 function CheckboxesFrame() {
 	return (
-		<div className="component-display-section-row-trmd3">
+		<div className="flex-trmd3 flex-row-trmd3">
 			{/* CHECKBOXES */}
 			<div className="text text-label text-label-small">Default</div>
 			<Checkbox selected={true} onChange={undefined}></Checkbox>

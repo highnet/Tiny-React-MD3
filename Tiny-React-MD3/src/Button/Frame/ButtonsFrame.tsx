@@ -16,17 +16,17 @@ import Button from "../Button";
 
 function ButtonsFrame() {
 	return (
-		<div className="component-display-section-column-trmd3">
+		<div className="flex-trmd3 flex-column-trmd3">
 			{/* BUTTONS */}
 			<div className="text text-title text-title-large">Buttons</div>
 			<div className="text text-title text-title-medium">Filled Buttons</div>
 			<div className="text text-label text-label-small">No Icon</div>
 			<Button configuration="filled" disabled={false} onClick={undefined}>
-				<div className="text text-label text-label-large">Click Me</div>
+				<div className="text text-label text-label-small">Enabled</div>
 			</Button>
 			<div className="text text-label text-label-small">No Icon (inactive)</div>
 			<Button configuration="filled" disabled={true} onClick={undefined}>
-				<div className="text text-label text-label-large">Click Me</div>
+				<div className="text text-label text-label-small">Enabled</div>
 			</Button>
 			<div className="text text-label text-label-small">With Icon</div>
 			<Button
@@ -36,7 +36,7 @@ function ButtonsFrame() {
 				iconName={"search"}
 				onClick={undefined}
 			>
-				<div className="text text-label text-label-large">Click Me</div>
+				<div className="text text-label text-label-small">Enabled</div>
 			</Button>
 			<div className="text text-label text-label-small">
 				With Icon (inactive)
@@ -48,16 +48,16 @@ function ButtonsFrame() {
 				iconName={"search"}
 				onClick={undefined}
 			>
-				<div className="text text-label text-label-large">Click Me</div>
+				<div className="text text-label text-label-small">Enabled</div>
 			</Button>
 			<div className="text text-title text-title-large">Outlined Buttons</div>
 			<div className="text text-label text-label-small">No Icon</div>
 			<Button configuration="outlined" disabled={false} onClick={undefined}>
-				<div className="text text-label text-label-large">Click Me</div>
+				<div className="text text-label text-label-small">Enabled</div>
 			</Button>
 			<div className="text text-label text-label-small">No Icon (inactive)</div>
 			<Button configuration="outlined" disabled={true} onClick={undefined}>
-				<div className="text text-label text-label-large">Click Me</div>
+				<div className="text text-label text-label-small">Enabled</div>
 			</Button>
 			<div className="text text-label text-label-small">With Icon</div>
 			<Button
@@ -67,7 +67,7 @@ function ButtonsFrame() {
 				icon={true}
 				iconName={"search"}
 			>
-				<div className="text text-label text-label-large">Click Me</div>
+				<div className="text text-label text-label-small">Enabled</div>
 			</Button>
 			<div className="text text-label text-label-small">
 				With Icon (inactive)
@@ -79,16 +79,16 @@ function ButtonsFrame() {
 				icon={true}
 				iconName={"search"}
 			>
-				<div className="text text-label text-label-large">Click Me</div>
+				<div className="text text-label text-label-small">Enabled</div>
 			</Button>
 			<div className="text text-title text-title-large">Text Buttons</div>
 			<div className="text text-label text-label-small">No Icon</div>
 			<Button configuration="text" disabled={false} onClick={undefined}>
-				<div className="text text-label text-label-large">Click Me</div>
+				<div className="text text-label text-label-small">Enabled</div>
 			</Button>
 			<div className="text text-label text-label-small">No Icon (inactive)</div>
 			<Button configuration="text" disabled={true} onClick={undefined}>
-				<div className="text text-label text-label-large">Click Me</div>
+				<div className="text text-label text-label-small">Enabled</div>
 			</Button>
 			<div className="text text-label text-label-small">With Icon</div>
 			<Button
@@ -98,7 +98,7 @@ function ButtonsFrame() {
 				icon={true}
 				iconName={"search"}
 			>
-				<div className="text text-label text-label-large">Click Me</div>
+				<div className="text text-label text-label-small">Enabled</div>
 			</Button>
 			<div className="text text-label text-label-small">
 				With Icon (inactive)
@@ -110,16 +110,16 @@ function ButtonsFrame() {
 				icon={true}
 				iconName={"search"}
 			>
-				<div className="text text-label text-label-large">Click Me</div>
+				<div className="text text-label text-label-small">Enabled</div>
 			</Button>
 			<div className="text text-title text-title-large">Elevated Buttons</div>
 			<div className="text text-label text-label-small">No Icon</div>
 			<Button configuration="elevated" disabled={false} onClick={undefined}>
-				<div className="text text-label text-label-large">Click Me</div>
+				<div className="text text-label text-label-small">Enabled</div>
 			</Button>
 			<div className="text text-label text-label-small">No Icon (inactive)</div>
 			<Button configuration="elevated" disabled={true} onClick={undefined}>
-				<div className="text text-label text-label-large">Click Me</div>
+				<div className="text text-label text-label-small">Enabled</div>
 			</Button>
 			<div className="text text-label text-label-small">With Icon</div>
 			<Button
@@ -129,7 +129,7 @@ function ButtonsFrame() {
 				icon={true}
 				iconName={"search"}
 			>
-				<div className="text text-label text-label-large">Click Me</div>
+				<div className="text text-label text-label-small">Enabled</div>
 			</Button>
 			<div className="text text-label text-label-small">
 				With Icon (inactive)
@@ -141,16 +141,16 @@ function ButtonsFrame() {
 				icon={true}
 				iconName={"search"}
 			>
-				<div className="text text-label text-label-large">Click Me</div>
+				<div className="text text-label text-label-small">Enabled</div>
 			</Button>
 			<div className="text text-title text-title-large">Tonal Buttons</div>
 			<div className="text text-label text-label-small">No Icon</div>
 			<Button configuration="tonal" disabled={false} onClick={undefined}>
-				<div className="text text-label text-label-large">Click Me</div>
+				<div className="text text-label text-label-small">Enabled</div>
 			</Button>
 			<div className="text text-label text-label-small">No Icon (inactive)</div>
 			<Button configuration="tonal" disabled={true} onClick={undefined}>
-				<div className="text text-label text-label-large">Click Me</div>
+				<div className="text text-label text-label-small">Enabled</div>
 			</Button>
 			<div className="text text-label text-label-small">With Icon</div>
 			<Button
@@ -160,7 +160,7 @@ function ButtonsFrame() {
 				icon={true}
 				iconName={"search"}
 			>
-				<div className="text text-label text-label-large">Click Me</div>
+				<div className="text text-label text-label-small">Enabled</div>
 			</Button>
 			<div className="text text-label text-label-small">
 				With Icon (inactive)
@@ -172,7 +172,7 @@ function ButtonsFrame() {
 				icon={true}
 				iconName={"search"}
 			>
-				<div className="text text-label text-label-large">Click Me</div>
+				<div className="text text-label text-label-small">Enabled</div>
 			</Button>
 		</div>
 	);
