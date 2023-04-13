@@ -27,6 +27,7 @@ const Button: React.FC<IButtonProps> = ({
 	const [_config] = useState(configuration || "filled");
 	const [_icon] = useState(icon || false);
 	const [_iconName] = useState(iconName || "search");
+	const _theme = document.body.className;
 
 	// Define click function
 	const click = () => {

@@ -11,6 +11,8 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const storage = getStorage(app);
 const logoRef = ref(storage, "tiny-react-md3-logo.png");
+const _theme = localStorage.getItem("theme");
+console.log(_theme);
 
 interface IHeroProps {
 	hasLogo?: boolean;
@@ -28,7 +30,7 @@ const Hero: React.FC<IHeroProps> = ({ hasLogo }) => {
 	}, []);
 
 	return (
-		<div className="hero-section-trmd3">
+		<div className={"hero-section-trmd3 hero-section-" + _theme + "-trmd3"}>
 			<div className="flex-trmd3">
 				{_hasLogo ? (
 					<img loading="lazy" src={logoUrl} className="logo-trmd3" />

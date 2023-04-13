@@ -1,13 +1,25 @@
 /* BODY */
 
 body {
+	overflow-x: hidden;
+}
+
+.body-light-theme {
 	background: rgb(82, 196, 254);
 	background: linear-gradient(
 		90deg,
 		rgba(82, 196, 254, 0.3) 0%,
 		rgba(248, 194, 255, 0.3) 100%
 	);
-	overflow-x: hidden;
+}
+
+.body-dark-theme {
+	background: rgb(2, 0, 36);
+	background: linear-gradient(
+		90deg,
+		rgba(0, 212, 255, 0.3) 0%,
+		rgba(2, 0, 36, 0.3) 100%
+	);
 }
 
 /* TRMD3 */
@@ -107,7 +119,7 @@ body {
 	height: 50px;
 }
 
-/* HERO */
+/* HERO SECTION*/
 
 .hero-section-trmd3 {
 	display: flex;
@@ -115,8 +127,15 @@ body {
 	justify-content: center;
 	margin-right: 5%;
 	margin-left: 5%;
-	color: #0088fc;
 	text-align: center;
+}
+
+.hero-section-light-theme-trmd3 {
+	color: #0088fc;
+}
+
+.hero-section-dark-theme-trmd3 {
+	color: #ffffff;
 }
 
 .hero-features-trmd3 {
@@ -127,4 +146,10 @@ body {
 
 .hero-features-trmd3 > li {
 	margin-bottom: 1rem;
+}
+
+/* THEME TOGGLING */
+
+.theme-toggler-trmd3 {
+	margin: 0 auto;
 }
