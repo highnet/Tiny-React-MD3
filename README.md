@@ -20,7 +20,7 @@ Tired of bloated React frameworks with thousands of lines of code which you will
 
 ## ❓ How to get started?
 
-- [Running your first development environment](https://github.com/highnet/Tiny-React-MD3/edit/master/README.md#-running-your-first-development-environment)
+- [Running your first development environment](https://github.com/highnet/Tiny-React-MD3/tree/master#-running-your-first-development-environment)
 - [Documentation](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md)
 
 ## 🚧 Progress In Development
