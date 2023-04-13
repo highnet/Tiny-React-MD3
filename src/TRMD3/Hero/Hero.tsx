@@ -11,7 +11,8 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const storage = getStorage(app);
 const logoRef = ref(storage, "tiny-react-md3-logo.png");
-const _theme = localStorage.getItem("theme");
+const _theme = localStorage.getItem("theme") || "light-theme";
+
 console.log(_theme);
 
 interface IHeroProps {
