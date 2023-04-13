@@ -2,7 +2,7 @@
 🐝 Tiny React MD3 🐝
 <div align="center""> 
 <br/>
-<img src="/Tiny-React-MD3/src/assets/tiny-react-md3-logo.png" width="250px"/>  
+<img src="/src/assets/tiny-react-md3-logo.png" width="250px"/>  
 </div>
 <h1>
 
