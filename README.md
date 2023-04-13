@@ -8,6 +8,12 @@
 
 ##
 
+<div align="center""> 
+<img alt="GitHub issues" src="https://img.shields.io/github/issues/highnet/Tiny-React-MD3?style=for-the-badge">
+<img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/highnet/Tiny-React-MD3?style=for-the-badge">
+<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/highnet/Tiny-React-MD3?style=for-the-badge">
+</div>
+
 Tired of bloated React frameworks with thousands of lines of code which you will never use?
 
 ❤️ You like Figma? ❤️ You Like Material Design 3? ❤️ You like React? 🐝 Then you love Tiny React MD3!

@@ -32,7 +32,7 @@ You may supplement the following optional properties to a horizontal divider:
 
 <div align="center"> 
 <br/>
-<img src="/Tiny-React-MD3/src/assets/horizontal-divider.png"/>  
+<img src="/src/assets/horizontal-divider.png"/>  
 </div>
 
 ## 👆 Vertical Divider
@@ -63,7 +63,7 @@ You may supplement the following optional properties to a vertical divider:
 
 <div align="center"> 
 <br/>
-<img src="/Tiny-React-MD3/src/assets/vertical-divider.png"/>  
+<img src="/src/assets/vertical-divider.png"/>  
 </div>
 
 ## 🔘 [Radio Button](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Radio%20Button/Frame/radioButton.tsx)
@@ -95,7 +95,7 @@ You may supplement the following optional properties to a radio button:
 
 <div align="center"> 
 <br/>
-<img src="/Tiny-React-MD3/src/assets/radio-button.png"/>
+<img src="/src/assets/radio-button.png"/>
 </div>
 
 ## 📛 [Badge](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Badge/Frame/badge.tsx)
@@ -132,7 +132,7 @@ The supported options of <code>{configuration}</code> are the following:
 
 <div align="center"> 
 <br/>
-<img src="/Tiny-React-MD3/src/assets/badges.png"/>
+<img src="/src/assets/badges.png"/>
 </div>
 
 ## ☑️ [Checkbox](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Checkbox/Frame/checkbox.tsx)
@@ -168,7 +168,7 @@ The supported options of <code>{configuration}</code> are the following:
 
 <div align="center"> 
 <br/>
-<img src="/Tiny-React-MD3/src/assets/checkbox.png"/>
+<img src="/src/assets/checkbox.png"/>
 </div>
 
 ## 💟 [Icons](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Icon/Frame/icon.tsx)
@@ -190,7 +190,7 @@ where <code>{name}</code> is the set of all accepted icon names by [Material Sym
 
 <div align="center"> 
 <br/>
-<img src="/Tiny-React-MD3/src/assets/icon.png"/>
+<img src="/src/assets/icon.png"/>
 </div>
 
 ## 🔤 [Typography](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Typography/Frame/typography.tsx)
@@ -245,7 +245,7 @@ The supported options of <code>{level}</code> are the following:
 
 <div align="center"> 
 <br/>
-<img src="/Tiny-React-MD3/src/assets/elevations.png"/>
+<img src="/src/assets/elevations.png"/>
 </div>
 
 ## 🕹️ [Buttons](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Button/Frame/button.tsx)
@@ -291,10 +291,10 @@ The supported options of <code>{configuration}</code> are the following:
 5. <code>"tonal"</code>
 
 <div align="center"> 
-<img src="/Tiny-React-MD3/src/assets/filled-buttons.png" height="884px"/>
-<img src="/Tiny-React-MD3/src/assets/outlined-buttons.png" height="884px"/>
-<img src="/Tiny-React-MD3/src/assets/text-buttons.png" height="884px"/>
-<img src="/Tiny-React-MD3/src/assets/tonal-buttons.png" height="884px"/>
+<img src="/src/assets/filled-buttons.png" height="884px"/>
+<img src="/src/assets/outlined-buttons.png" height="884px"/>
+<img src="/src/assets/text-buttons.png" height="884px"/>
+<img src="/src/assets/tonal-buttons.png" height="884px"/>
 </div>
 
 ## 🔦 [Switch](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Switch/Frame/switch.tsx)
@@ -330,5 +330,5 @@ You may supplement the following optional properties to a switch:
 
 <div align="center"> 
 <br/>
-<img src="/Tiny-React-MD3/src/assets/switch.png"/>
+<img src="/src/assets/switch.png"/>
 </div>
