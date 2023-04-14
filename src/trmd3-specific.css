@@ -2,10 +2,11 @@
 
 body {
 	overflow-x: hidden;
+	width: 100vw;
 }
 
 .body-light-theme {
-	background: rgb(82, 196, 254);
+	background: transparent;
 	background: linear-gradient(
 		90deg,
 		rgba(82, 196, 254, 0.3) 0%,
@@ -14,11 +15,11 @@ body {
 }
 
 .body-dark-theme {
-	background: rgb(2, 0, 36);
+	background: transparent;
 	background: linear-gradient(
 		90deg,
-		rgba(0, 212, 255, 0.3) 0%,
-		rgba(2, 0, 36, 0.3) 100%
+		rgb(82, 197, 254) 0%,
+		rgb(248, 194, 255) 100%
 	);
 }
 
@@ -42,6 +43,10 @@ body {
 
 .flex-row-trmd3 {
 	flex-direction: row;
+}
+
+.frame-label-trmd3 {
+	text-align: center;
 }
 
 /* TYPOGRAPHY */
@@ -111,14 +116,6 @@ body {
 	);
 }
 
-/* BADGE */
-
-.badge-box-trmd3 {
-	background-color: #f8af50;
-	width: 50px;
-	height: 50px;
-}
-
 /* HERO SECTION*/
 
 .hero-section-trmd3 {
@@ -128,6 +125,7 @@ body {
 	margin-right: 5%;
 	margin-left: 5%;
 	text-align: center;
+	overflow: hidden;
 }
 
 .hero-section-light-theme-trmd3 {
@@ -152,4 +150,162 @@ body {
 
 .theme-toggler-trmd3 {
 	margin: 0 auto;
+	width: 80%;
+	position: sticky;
+	top: 0;
+	transform: translateY(10px);
 }
+
+/* HORIZONTAL DIVIDERS SECTION */
+
+.horizontal-dividers-frame-trmd3 {
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	gap: 30px;
+}
+
+.horizontal-dividers-frame-light-theme-trmd3 {
+	color: black;
+}
+
+.horizontal-dividers-frame-dark-theme-trmd3 {
+	color: white;
+}
+
+/* VERTICAL DIVIDERS SECTION */
+
+.vertical-dividers-frame-trmd3 {
+	align-items: center;
+
+	justify-content: center;
+	gap: 40px;
+}
+
+.vertical-dividers-frame-light-theme-trmd3 {
+	color: black;
+}
+
+.vertical-dividers-frame-dark-theme-trmd3 {
+	color: white;
+}
+
+/* RADIO BUTTONS SECTION */
+
+.radio-buttons-frame-trmd3 {
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.radio-buttons-frame-light-theme-trmd3 {
+	color: black;
+}
+
+.radio-buttons-frame-dark-theme-trmd3 {
+	color: white;
+}
+
+@media screen and (max-width: 600px) {
+	.radio-buttons-frame-trmd3 {
+		flex-direction: column;
+	}
+}
+
+/* SECTION TITLES */
+
+.section-title-trmd3 {
+	text-align: center;
+	margin: 60px;
+}
+
+.section-title-light-theme-trmd3 {
+	color: black;
+}
+
+.section-title-dark-theme-trmd3 {
+	color: white;
+}
+
+/* BADGES SECTION */
+
+.badges-frame-trmd3 {
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.badges-frame-light-theme-trmd3 {
+	color: black;
+}
+
+.badges-frame-dark-theme-trmd3 {
+	color: white;
+}
+
+.badge-box-trmd3 {
+	background-color: #f8af50;
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+}
+
+/* CHECKBOXES SECTION */
+
+.checkboxes-frame-trmd3 {
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+}
+
+@media screen and (max-width: 600px) {
+	.checkboxes-frame-trmd3 {
+		flex-direction: column;
+	}
+}
+
+.checkboxes-frame-light-theme-trmd3 {
+	color: black;
+}
+
+.checkboxes-frame-dark-theme-trmd3 {
+	color: white;
+}
+
+.checkbox-label-trmd3 {
+	text-align: center;
+	line-height: 44px;
+}
+
+/* SWITCHES SECTION */
+
+.switches-section-trmd3 {
+	flex-direction: row;
+	align-items: center;
+	gap: 5px;
+	justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+	.switches-section-trmd3 {
+		flex-direction: column;
+	}
+}
+
+.switches-section-light-theme-trmd3 {
+	color: black;
+}
+
+.switches-section-dark-theme-trmd3 {
+	color: white;
+}
+
+/* BUTTONS SECTION */
+
+/* TYPOGRAPHY SECTION */
+
+/* ELEVATION SECTION */
+
+/* ICONS SECTION */

@@ -7,27 +7,47 @@ import Checkbox from "../Checkbox";
   configuration: a string that specifies the style of the checkbox, such as “default” or “error”
   disabled: a boolean value that indicates whether the checkbox is interactive or not
 */
+const _theme = localStorage.getItem("theme") || "light-theme";
 
 function CheckboxesFrame() {
 	return (
-		<div className="flex-trmd3 flex-row-trmd3">
+		<div
+			className={
+				"flex-trmd3 " +
+				"checkboxes-frame-trmd3 " +
+				"checkboxes-frame-" +
+				_theme +
+				"-trmd3"
+			}
+		>
 			{/* CHECKBOXES */}
-			<div className="text text-label text-label-small">Default</div>
+			<div className="text text-label text-label-small frame-label-trmd3">
+				Default
+			</div>
 			<Checkbox selected={true} onChange={undefined}></Checkbox>
-			<div className="text text-label text-label-small">Default (inactive)</div>
+
+			<div className="text text-label text-label-small frame-label-trmd3">
+				Default (inactive)
+			</div>
 			<Checkbox
 				selected={true}
 				onChange={undefined}
 				configuration={"default"}
 				disabled={true}
 			></Checkbox>
-			<div className="text text-label text-label-small">Error</div>
+
+			<div className="text text-label text-label-small frame-label-trmd3">
+				Error
+			</div>
 			<Checkbox
 				selected={true}
 				onChange={undefined}
 				configuration={"error"}
 			></Checkbox>
-			<div className="text text-label text-label-small">Error (inactive)</div>
+
+			<div className="text text-label text-label-small frame-label-trmd3">
+				Error (inactive)
+			</div>
 			<Checkbox
 				selected={true}
 				onChange={undefined}

@@ -8,30 +8,55 @@ import Badge from "../Badge";
 */
 
 function BadgesFrame() {
+	const _theme = localStorage.getItem("theme") || "light-theme";
+
 	return (
-		<div className="flex-trmd3 flex-row-trmd3">
+		<div
+			className={
+				"flex-trmd3 flex-column-trmd3 badges-frame-trmd3 badges-frame-" +
+				_theme +
+				"-trmd3"
+			}
+		>
 			{/* BADGES */}
-			<div className="text text-label text-label-small">Small</div>
-			<div className="badge-box-trmd3">
-				<Badge configuration={"small"} xOffset={95} yOffset={-2}></Badge>
-			</div>
-			<div className="text text-label text-label-small">Single Digit</div>
-			<div className="badge-box-trmd3">
-				<Badge
-					configuration={"single-digit"}
-					xOffset={93}
-					yOffset={-4}
-					label={"3"}
-				></Badge>
-			</div>
-			<div className="text text-label text-label-small">Multiple Digits</div>
-			<div className="badge-box-trmd3">
-				<Badge
-					configuration={"multiple-digits"}
-					xOffset={93}
-					yOffset={-4}
-					label={"123"}
-				></Badge>
+
+			<div>
+				<div>
+					<div className="text text-label text-label-small frame-label-trmd3">
+						Small
+					</div>
+					<div className="badge-box-trmd3">
+						<Badge configuration={"small"} xOffset={95} yOffset={-2}></Badge>
+					</div>
+				</div>
+
+				<div>
+					<div className="text text-label text-label-small frame-label-trmd3">
+						Single Digit
+					</div>
+					<div className="badge-box-trmd3">
+						<Badge
+							configuration={"single-digit"}
+							xOffset={93}
+							yOffset={-4}
+							label={"3"}
+						></Badge>
+					</div>
+				</div>
+
+				<div>
+					<div className="text text-label text-label-small frame-label-trmd3">
+						Multiple Digits
+					</div>
+					<div className="badge-box-trmd3">
+						<Badge
+							configuration={"multiple-digits"}
+							xOffset={93}
+							yOffset={-4}
+							label={"123"}
+						></Badge>
+					</div>
+				</div>
 			</div>
 		</div>
 	);

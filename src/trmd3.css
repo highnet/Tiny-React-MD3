@@ -373,7 +373,6 @@ body {
 
 .switch-track {
 	width: 100%;
-	height: 100%;
 	border-radius: 33%/50%;
 	transition: all 250ms ease-in-out;
 }
@@ -650,6 +649,7 @@ input[type="radio"].radio-button-input-disabled::before {
 .vertical-divider {
 	display: flex;
 	flex-direction: column;
+	margin: 0 auto;
 }
 
 .vertical-divider-bar {
@@ -662,18 +662,4 @@ input[type="radio"].radio-button-input-disabled::before {
 
 .vertical-divider-inset-bottom {
 	background-color: red;
-}
-
-/* RADIO BUTTONS */
-
-.radio-buttons-frame-trmd3 {
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-}
-
-@media screen and (max-width: 600px) {
-	.radio-buttons-frame-trmd3 {
-		flex-direction: column;
-	}
 }

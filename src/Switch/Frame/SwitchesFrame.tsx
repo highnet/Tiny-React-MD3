@@ -11,14 +11,28 @@ import Switch from "../Switch";
 */
 
 function SwitchesFrame() {
+	const _theme = localStorage.getItem("theme") || "light-theme";
+
 	return (
-		<div className="flex-trmd3 flex-row-trmd3">
+		<div
+			className={
+				"flex-trmd3 switches-section-trmd3 switches-section-" +
+				_theme +
+				"-trmd3"
+			}
+		>
 			{/* SWITCHES */}
-			<div className="text text-label text-label-small">No Icon</div>
+			<div className="text text-label text-label-small fra-label-trmd3">
+				No Icon
+			</div>
 			<Switch selected={true} onChange={undefined}></Switch>
-			<div className="text text-label text-label-small">No Icon (Inactive)</div>
+			<div className="text text-label text-label-small checkbox-label-trmd3">
+				No Icon (Inactive)
+			</div>
 			<Switch selected={true} onChange={undefined} disabled={true}></Switch>
-			<div className="text text-label text-label-small">With Icon</div>
+			<div className="text text-label text-label-small checkbox-label-trmd3">
+				With Icon
+			</div>
 			<Switch
 				selected={true}
 				onChange={undefined}
@@ -26,7 +40,7 @@ function SwitchesFrame() {
 				iconNameSelected={"warning"}
 				iconNameDeselected={"house"}
 			></Switch>
-			<div className="text text-label text-label-small">
+			<div className="text text-label text-label-small checkbox-label-trmd3">
 				With Icon (Inactive)
 			</div>
 			<Switch
