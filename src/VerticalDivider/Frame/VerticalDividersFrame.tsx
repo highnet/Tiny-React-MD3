@@ -7,8 +7,16 @@ import VerticalDivider from "../VerticalDivider";
 */
 
 function VerticalDividersFrame() {
+	const _theme = localStorage.getItem("theme") || "light-theme";
+
 	return (
-		<div className="flex-trmd3 flex-row-trmd3">
+		<div
+			className={
+				"flex-trmd3 flex-row-trmd3 vertical-dividers-frame-trmd3 vertical-dividers-frame-" +
+				_theme +
+				"-trmd3"
+			}
+		>
 			{/* VERTICAL DIVIDERS */}
 			<div className="text text-label text-label-small">Inset None</div>
 			<VerticalDivider inset={"none"} />

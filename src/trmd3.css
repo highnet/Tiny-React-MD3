@@ -663,17 +663,3 @@ input[type="radio"].radio-button-input-disabled::before {
 .vertical-divider-inset-bottom {
 	background-color: red;
 }
-
-/* RADIO BUTTONS */
-
-.radio-buttons-frame-trmd3 {
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-}
-
-@media screen and (max-width: 600px) {
-	.radio-buttons-frame-trmd3 {
-		flex-direction: column;
-	}
-}

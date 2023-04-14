@@ -38,36 +38,105 @@ function App() {
 
 			<ThemeSwitcher toggleTheme={toggleTheme} />
 
-			<div className="text text-title text-title-large title-trmd3">
+			<div
+				className={
+					"text text-title text-title-large section-title-trmd3 section-title-" +
+					theme +
+					"-trmd3"
+				}
+			>
 				Horizontal Dividers
 			</div>
-
 			<HorizontalDividersFrame />
 
-			<div className="text text-title text-title-large">Vertical Dividers</div>
+			<div
+				className={
+					"text text-title text-title-large section-title-trmd3 section-title-" +
+					theme +
+					"-trmd3"
+				}
+			>
+				Vertical Dividers
+			</div>
 			<VerticalDividersFrame />
 
-			<div className="text text-title text-title-large">Radio Buttons</div>
+			<div
+				className={
+					"text text-title text-title-large section-title-trmd3 section-title-" +
+					theme +
+					"-trmd3"
+				}
+			>
+				Radio Buttons
+			</div>
 			<RadioButtonsFrame />
 
-			<div className="text text-title text-title-large">Badges</div>
+			<div
+				className={
+					"text text-title text-title-large section-title-trmd3 section-title-" +
+					theme +
+					"-trmd3"
+				}
+			>
+				Badges
+			</div>
 			<BadgesFrame />
 
-			<div className="text text-title text-title-large">Checkboxes</div>
+			<div
+				className={
+					"text text-title text-title-large section-title-trmd3 section-title-" +
+					theme +
+					"-trmd3"
+				}
+			>
+				Checkboxes
+			</div>
 			<CheckboxesFrame />
 
-			<div className="text text-title text-title-large">Switches</div>
+			<div
+				className={
+					"text text-title text-title-large section-title-trmd3 section-title-" +
+					theme +
+					"-trmd3"
+				}
+			>
+				Switches
+			</div>
 			<SwitchesFrame />
 
 			<ButtonsFrame />
 
-			<div className="text text-title text-title-medium">Typography</div>
+			<div
+				className={
+					"text text-title text-title-large section-title-trmd3 section-title-" +
+					theme +
+					"-trmd3"
+				}
+			>
+				Typography
+			</div>
 			<TypographiesFrame />
 
-			<div className="text text-title text-title-large">Elevation</div>
+			<div
+				className={
+					"text text-title text-title-large section-title-trmd3 section-title-" +
+					theme +
+					"-trmd3"
+				}
+			>
+				Elevation
+			</div>
 			<ElevationsFrame />
 
-			<div className="text text-title text-title-large">Icons</div>
+			<div
+				className={
+					"text text-title text-title-large section-title-trmd3 section-title-" +
+					theme +
+					"-trmd3"
+				}
+			>
+				Icons
+			</div>
 			<IconsFrame />
 		</div>
 	);

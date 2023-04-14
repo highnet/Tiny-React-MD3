@@ -7,8 +7,16 @@ import HorizontalDivider from "../HorizontalDivider";
 */
 
 function HorizontalDividersFrame() {
+	const _theme = localStorage.getItem("theme") || "light-theme";
+
 	return (
-		<div className="flex-trmd3 flex-column-trmd3">
+		<div
+			className={
+				"flex-trmd3 flex-column-trmd3 horizontal-dividers-frame-trmd3 horizontal-dividers-frame-" +
+				_theme +
+				"-trmd3"
+			}
+		>
 			{/* HORIZONTAL DIVIDERS */}
 			<div className="text text-label text-label-small">Inset None</div>
 			<HorizontalDivider inset={"none"} />
