@@ -2,10 +2,11 @@
 
 body {
 	overflow-x: hidden;
+	width: 100vw;
 }
 
 .body-light-theme {
-	background: rgb(82, 196, 254);
+	background: transparent;
 	background: linear-gradient(
 		90deg,
 		rgba(82, 196, 254, 0.3) 0%,
@@ -14,11 +15,11 @@ body {
 }
 
 .body-dark-theme {
-	background: rgb(2, 0, 36);
+	background: transparent;
 	background: linear-gradient(
 		90deg,
-		rgba(0, 212, 255, 0.3) 0%,
-		rgba(2, 0, 36, 0.3) 100%
+		rgb(82, 197, 254) 0%,
+		rgb(248, 194, 255) 100%
 	);
 }
 
@@ -42,6 +43,10 @@ body {
 
 .flex-row-trmd3 {
 	flex-direction: row;
+}
+
+.frame-label-trmd3 {
+	text-align: center;
 }
 
 /* TYPOGRAPHY */
@@ -146,6 +151,9 @@ body {
 .theme-toggler-trmd3 {
 	margin: 0 auto;
 	width: 80%;
+	position: sticky;
+	top: 0;
+	transform: translateY(10px);
 }
 
 /* HORIZONTAL DIVIDERS SECTION */
@@ -189,6 +197,14 @@ body {
 	align-items: center;
 	justify-content: center;
 	overflow: hidden;
+}
+
+.radio-buttons-frame-light-theme-trmd3 {
+	color: black;
+}
+
+.radio-buttons-frame-dark-theme-trmd3 {
+	color: white;
 }
 
 @media screen and (max-width: 600px) {
@@ -241,7 +257,13 @@ body {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	gap: 15px;
+	gap: 5px;
+}
+
+@media screen and (max-width: 600px) {
+	.checkboxes-frame-trmd3 {
+		flex-direction: column;
+	}
 }
 
 .checkboxes-frame-light-theme-trmd3 {
@@ -253,7 +275,31 @@ body {
 }
 
 .checkbox-label-trmd3 {
+	text-align: center;
 	line-height: 44px;
+}
+
+/* SWITCHES SECTION */
+
+.switches-section-trmd3 {
+	flex-direction: row;
+	align-items: center;
+	gap: 5px;
+	justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+	.switches-section-trmd3 {
+		flex-direction: column;
+	}
+}
+
+.switches-section-light-theme-trmd3 {
+	color: black;
+}
+
+.switches-section-dark-theme-trmd3 {
+	color: white;
 }
 
 /* BUTTONS SECTION */

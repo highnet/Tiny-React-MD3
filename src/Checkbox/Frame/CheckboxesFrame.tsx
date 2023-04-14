@@ -21,47 +21,39 @@ function CheckboxesFrame() {
 			}
 		>
 			{/* CHECKBOXES */}
-			<div className={"flex-trmd3 flex-row-trmd3"}>
-				<div className="text text-label text-label-small checkbox-label-trmd3">
-					Default
-				</div>
-				<Checkbox selected={true} onChange={undefined}></Checkbox>
+			<div className="text text-label text-label-small frame-label-trmd3">
+				Default
 			</div>
+			<Checkbox selected={true} onChange={undefined}></Checkbox>
 
-			<div className={"flex-trmd3 flex-row-trmd3"}>
-				<div className="text text-label text-label-small checkbox-label-trmd3">
-					Default (inactive)
-				</div>
-				<Checkbox
-					selected={true}
-					onChange={undefined}
-					configuration={"default"}
-					disabled={true}
-				></Checkbox>
+			<div className="text text-label text-label-small frame-label-trmd3">
+				Default (inactive)
 			</div>
+			<Checkbox
+				selected={true}
+				onChange={undefined}
+				configuration={"default"}
+				disabled={true}
+			></Checkbox>
 
-			<div className={"flex-trmd3 flex-row-trmd3"}>
-				<div className="text text-label text-label-small checkbox-label-trmd3">
-					Error
-				</div>
-				<Checkbox
-					selected={true}
-					onChange={undefined}
-					configuration={"error"}
-				></Checkbox>
+			<div className="text text-label text-label-small frame-label-trmd3">
+				Error
 			</div>
+			<Checkbox
+				selected={true}
+				onChange={undefined}
+				configuration={"error"}
+			></Checkbox>
 
-			<div className={"flex-trmd3 flex-row-trmd3"}>
-				<div className="text text-label text-label-small checkbox-label-trmd3">
-					Error (inactive)
-				</div>
-				<Checkbox
-					selected={true}
-					onChange={undefined}
-					configuration={"error"}
-					disabled={true}
-				></Checkbox>
+			<div className="text text-label text-label-small frame-label-trmd3">
+				Error (inactive)
 			</div>
+			<Checkbox
+				selected={true}
+				onChange={undefined}
+				configuration={"error"}
+				disabled={true}
+			></Checkbox>
 		</div>
 	);
 }

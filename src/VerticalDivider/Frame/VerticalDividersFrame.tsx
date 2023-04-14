@@ -19,15 +19,21 @@ function VerticalDividersFrame() {
 		>
 			{/* VERTICAL DIVIDERS */}
 			<div className="flex-trmd3 flex-column-trmd3">
-				<div className="text text-label text-label-small">Inset None</div>
+				<div className="text text-label text-label-small frame-label-trmd3">
+					Inset None
+				</div>
 				<VerticalDivider inset={"none"} />
 			</div>
 			<div className="flex-trmd3 flex-column-trmd3">
-				<div className="text text-label text-label-small">Inset Top</div>
+				<div className="text text-label text-label-small frame-label-trmd3">
+					Inset Top
+				</div>
 				<VerticalDivider inset={"top"} showInsets={true} insetTopHeight={50} />
 			</div>
 			<div className="flex-trmd3 flex-column-trmd3">
-				<div className="text text-label text-label-small">Inset Bottom</div>
+				<div className="text text-label text-label-small frame-label-trmd3">
+					Inset Bottom
+				</div>
 				<VerticalDivider
 					inset={"bottom"}
 					insetBottomHeight={50}
@@ -35,7 +41,9 @@ function VerticalDividersFrame() {
 				/>
 			</div>
 			<div className="flex-trmd3 flex-column-trmd3">
-				<div className="text text-label text-label-small">Inset Center</div>
+				<div className="text text-label text-label-small frame-label-trmd3">
+					Inset Center
+				</div>
 				<VerticalDivider
 					inset={"center"}
 					insetBottomHeight={50}

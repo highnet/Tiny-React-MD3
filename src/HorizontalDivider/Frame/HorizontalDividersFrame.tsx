@@ -18,13 +18,21 @@ function HorizontalDividersFrame() {
 			}
 		>
 			{/* HORIZONTAL DIVIDERS */}
-			<div className="text text-label text-label-small">Inset None</div>
+			<div className="text text-label text-label-small frame-label-trmd3">
+				Inset None
+			</div>
 			<HorizontalDivider inset={"none"} />
-			<div className="text text-label text-label-small">Inset Right</div>
+			<div className="text text-label text-label-small frame-label-trmd3">
+				Inset Right
+			</div>
 			<HorizontalDivider inset={"right"} showInsets={true} />
-			<div className="text text-label text-label-small">Inset Left</div>
+			<div className="text text-label text-label-small frame-label-trmd3">
+				Inset Left
+			</div>
 			<HorizontalDivider inset={"left"} showInsets={true} />
-			<div className="text text-label text-label-small">Inset Center</div>
+			<div className="text text-label text-label-small frame-label-trmd3">
+				Inset Center
+			</div>
 			<HorizontalDivider inset={"center"} showInsets={true} />
 		</div>
 	);

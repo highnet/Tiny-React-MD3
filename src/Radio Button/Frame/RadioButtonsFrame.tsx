@@ -8,22 +8,36 @@ import RadioButton from "../RadioButton";
 */
 
 function RadioButtonsFrame() {
+	const _theme = localStorage.getItem("theme") || "light-theme";
+
 	return (
-		<div className="flex-trmd3 radio-buttons-frame-trmd3">
+		<div
+			className={
+				"flex-trmd3 radio-buttons-frame-trmd3 radio-buttons-frame-" +
+				_theme +
+				"-trmd3"
+			}
+		>
 			{/* RADIO BUTTONS */}
 			<RadioButton name={"tiny md3"} value={"option-1"} />
-			<div className="text text-label text-label-small">Option 1</div>
+			<div className="text text-label text-label-small frame-label-trmd3">
+				Option 1
+			</div>
 			<RadioButton name={"tiny md3"} value={"option-2"} />
-			<div className="text text-label text-label-small">Option 2</div>
+			<div className="text text-label text-label-small frame-label-trmd3">
+				Option 2
+			</div>
 			<RadioButton name={"tiny md3"} value={"option-3"} />
-			<div className="text text-label text-label-small">Option 3</div>
+			<div className="text text-label text-label-small frame-label-trmd3">
+				Option 3
+			</div>
 			<RadioButton
 				name={"tiny md3"}
 				value={"option-4"}
 				disabled={true}
 				defaultChecked={true}
 			/>
-			<div className="text text-label text-label-small">
+			<div className="text text-label text-label-small frame-label-trmd3">
 				Option 4 (Inactive)
 			</div>
 		</div>

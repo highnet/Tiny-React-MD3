@@ -15,6 +15,8 @@ import Button from "../Button";
 */
 
 function ButtonsFrame() {
+	const _theme = localStorage.getItem("theme") || "light-theme";
+
 	return (
 		<div className="flex-trmd3 flex-column-trmd3">
 			{/* BUTTONS */}

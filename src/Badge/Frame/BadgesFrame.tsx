@@ -13,23 +13,27 @@ function BadgesFrame() {
 	return (
 		<div
 			className={
-				"flex-trmd3 flex-column-trmd3 badges-frame-trmd3 badges-frame" +
+				"flex-trmd3 flex-column-trmd3 badges-frame-trmd3 badges-frame-" +
 				_theme +
-				"-trmd3 "
+				"-trmd3"
 			}
 		>
 			{/* BADGES */}
 
 			<div>
 				<div>
-					<div className="text text-label text-label-small">Small</div>
+					<div className="text text-label text-label-small frame-label-trmd3">
+						Small
+					</div>
 					<div className="badge-box-trmd3">
 						<Badge configuration={"small"} xOffset={95} yOffset={-2}></Badge>
 					</div>
 				</div>
 
 				<div>
-					<div className="text text-label text-label-small">Single Digit</div>
+					<div className="text text-label text-label-small frame-label-trmd3">
+						Single Digit
+					</div>
 					<div className="badge-box-trmd3">
 						<Badge
 							configuration={"single-digit"}
@@ -41,7 +45,7 @@ function BadgesFrame() {
 				</div>
 
 				<div>
-					<div className="text text-label text-label-small">
+					<div className="text text-label text-label-small frame-label-trmd3">
 						Multiple Digits
 					</div>
 					<div className="badge-box-trmd3">
