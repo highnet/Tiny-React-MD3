@@ -90,10 +90,9 @@ Tired of bloated React frameworks with thousands of lines of code which you will
 # 🤓👆 Running your first development environment:
 
 1. Clone the repository and navigate to it
-2. Type `cd Tiny-React-MD3` into the terminal
-3. Type `npm install` into the terminal, this will download all required dependencies
-4. Type `npm run dev` (or, if you want to expose the website to your local network, use `npm run dev -- --host` instead) into the terminal, this will create a localhost development environment
-5. That's it! Get to building and have fun!
+2. Type `npm install` into the terminal, this will download all required dependencies
+3. Type `npm run dev` (or, if you want to expose the website to your local network, use `npm run dev -- --host` instead) into the terminal, this will create a localhost development environment
+4. That's it! Get to building and have fun!
 
 # 🔥 Deploying with [Firebase](https://firebase.google.com/)
 
