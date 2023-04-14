@@ -11,18 +11,14 @@ import SwitchesFrame from "./Switch/Frame/SwitchesFrame";
 import TypographiesFrame from "./Typography/Frame/TypographiesFrame";
 import ElevationsFrame from "./Elevation/Frame/ElevationsFrame";
 import IconsFrame from "./Icon/Frame/IconsFrame";
-import Button from "./Button/Button";
+import ThemeSwitcher from "./TRMD3/ThemeSwitcher/ThemeSwitcher";
 
 function App() {
-	// localStorage.clear();
-
 	const [theme, setTheme] = useState(
-		// TODO: NEEDS DOCUMENTATION
 		localStorage.getItem("theme") || "light-theme"
 	);
 
 	const toggleTheme = () => {
-		// TODO: NEEDS DOCUMENTATION
 		if (theme === "light-theme") {
 			setTheme("dark-theme");
 		} else {
@@ -32,7 +28,6 @@ function App() {
 	};
 
 	useEffect(() => {
-		// TODO: NEEDS DOCUMENTATION
 		localStorage.setItem("theme", theme);
 		document.body.className = "body-" + theme;
 	}, [theme]);
@@ -41,14 +36,7 @@ function App() {
 		<div className={"App"}>
 			<Hero hasLogo={true} />
 
-			<Button
-				configuration="filled"
-				disabled={false}
-				onClick={toggleTheme}
-				className="theme-toggler-trmd3"
-			>
-				<div className="text text-label text-label-small">Toggle Theme</div>
-			</Button>
+			<ThemeSwitcher toggleTheme={toggleTheme} />
 
 			<div className="text text-title text-title-large title-trmd3">
 				Horizontal Dividers
