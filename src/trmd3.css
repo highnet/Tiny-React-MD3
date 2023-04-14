@@ -650,6 +650,7 @@ input[type="radio"].radio-button-input-disabled::before {
 .vertical-divider {
 	display: flex;
 	flex-direction: column;
+	margin: 0 auto;
 }
 
 .vertical-divider-bar {
