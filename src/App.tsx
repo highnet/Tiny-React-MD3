@@ -52,7 +52,7 @@ function App() {
 					"-trmd3"
 				}
 			>
-				Horizontal Dividers
+				👉 Horizontal Dividers 👉
 			</div>
 			<HorizontalDividersFrame />
 
@@ -63,7 +63,7 @@ function App() {
 					"-trmd3"
 				}
 			>
-				Vertical Dividers
+				👆 Vertical Dividers 👆
 			</div>
 			<VerticalDividersFrame />
 
@@ -111,6 +111,15 @@ function App() {
 			</div>
 			<SwitchesFrame />
 
+			<div
+				className={
+					"text text-title text-title-large section-title-trmd3 section-title-" +
+					theme +
+					"-trmd3"
+				}
+			>
+				Buttons
+			</div>
 			<ButtonsFrame />
 
 			<div

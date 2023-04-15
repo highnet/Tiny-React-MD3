@@ -12,7 +12,7 @@ function VerticalDividersFrame() {
 	return (
 		<div
 			className={
-				"flex-trmd3 frame-trmd3 flex-row-trmd3 vertical-dividers-frame-trmd3 vertical-dividers-frame-" +
+				"flex-trmd3 frame-trmd3 flex-column-trmd3 vertical-dividers-frame-trmd3 vertical-dividers-frame-" +
 				_theme +
 				"-trmd3"
 			}
@@ -23,12 +23,26 @@ function VerticalDividersFrame() {
 					Inset None
 				</div>
 				<VerticalDivider inset={"none"} />
+				<pre>
+					<code className="language-html">
+						{" "}
+						{'<VerticalDivider inset={"none"} />'}{" "}
+					</code>
+				</pre>
 			</div>
 			<div className="flex-trmd3 flex-column-trmd3">
 				<div className="text text-label text-label-small frame-label-trmd3">
 					Inset Top
 				</div>
 				<VerticalDivider inset={"top"} showInsets={true} insetTopHeight={50} />
+				<pre>
+					<code className="language-html">
+						{" "}
+						{
+							'<VerticalDivider inset={"top"} showInsets={true} insetTopHeight={50} />'
+						}{" "}
+					</code>
+				</pre>
 			</div>
 			<div className="flex-trmd3 flex-column-trmd3">
 				<div className="text text-label text-label-small frame-label-trmd3">
@@ -39,6 +53,14 @@ function VerticalDividersFrame() {
 					insetBottomHeight={50}
 					showInsets={true}
 				/>
+				<pre>
+					<code className="language-html">
+						{" "}
+						{
+							'<VerticalDivider inset={"bottom"} insetBottomHeight={50} showInsets={true} />'
+						}{" "}
+					</code>
+				</pre>
 			</div>
 			<div className="flex-trmd3 flex-column-trmd3">
 				<div className="text text-label text-label-small frame-label-trmd3">
@@ -50,6 +72,14 @@ function VerticalDividersFrame() {
 					insetTopHeight={50}
 					showInsets={true}
 				/>
+				<pre>
+					<code className="language-html">
+						{" "}
+						{
+							'<VerticalDivider inset={"center"} insetBottomHeight={50} insetTopHeight={50} showInsets={true} />'
+						}{" "}
+					</code>
+				</pre>
 			</div>
 		</div>
 	);

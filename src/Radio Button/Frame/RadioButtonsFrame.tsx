@@ -13,26 +13,34 @@ function RadioButtonsFrame() {
 	return (
 		<div
 			className={
-				"flex-trmd3 frame-trmd3 radio-buttons-frame-trmd3 radio-buttons-frame-" +
+				"flex-trmd3 flex-column-trmd3 frame-trmd3 radio-buttons-frame-trmd3 radio-buttons-frame-" +
 				_theme +
 				"-trmd3"
 			}
 		>
 			{/* RADIO BUTTONS */}
-			<RadioButton name={"tiny md3"} value={"option-1"} />
+			<RadioButton name={"trmd3"} value={"option-1"} />
 			<div className="text text-label text-label-small frame-label-trmd3">
 				Option 1
 			</div>
-			<RadioButton name={"tiny md3"} value={"option-2"} />
+			<pre>
+				<code className="language-html">
+					{" "}
+					{'<RadioButton name={"trmd3"} value={"option-1"} />'}{" "}
+				</code>
+			</pre>
+			<RadioButton name={"trmd3"} value={"option-2"} />
 			<div className="text text-label text-label-small frame-label-trmd3">
 				Option 2
 			</div>
-			<RadioButton name={"tiny md3"} value={"option-3"} />
-			<div className="text text-label text-label-small frame-label-trmd3">
-				Option 3
-			</div>
+			<pre>
+				<code className="language-html">
+					{" "}
+					{'<RadioButton name={"trmd3"} value={"option-2"} />'}{" "}
+				</code>
+			</pre>
 			<RadioButton
-				name={"tiny md3"}
+				name={"trmd3"}
 				value={"option-4"}
 				disabled={true}
 				defaultChecked={true}
@@ -40,6 +48,14 @@ function RadioButtonsFrame() {
 			<div className="text text-label text-label-small frame-label-trmd3">
 				Option 4 (Inactive)
 			</div>
+			<pre>
+				<code className="language-html">
+					{" "}
+					{
+						'<RadioButton name={"trmd3"} value={"option-4"} disabled={true} defaultChecked={true} />'
+					}{" "}
+				</code>
+			</pre>
 		</div>
 	);
 }
