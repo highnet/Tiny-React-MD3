@@ -13,7 +13,7 @@ function CheckboxesFrame() {
 	return (
 		<div
 			className={
-				"flex-trmd3 " +
+				"flex-trmd3 frame-trmd3 " +
 				"checkboxes-frame-trmd3 " +
 				"checkboxes-frame-" +
 				_theme +

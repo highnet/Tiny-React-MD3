@@ -12,7 +12,7 @@ function VerticalDividersFrame() {
 	return (
 		<div
 			className={
-				"flex-trmd3 flex-row-trmd3 vertical-dividers-frame-trmd3 vertical-dividers-frame-" +
+				"flex-trmd3 frame-trmd3 flex-row-trmd3 vertical-dividers-frame-trmd3 vertical-dividers-frame-" +
 				_theme +
 				"-trmd3"
 			}
