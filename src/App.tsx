@@ -22,7 +22,8 @@ function App() {
 			? "dark"
 			: "light";
 
-	console.log();
+	console.log(`	👋 Welcome to TRMD3! 👋	`);
+
 	const [theme, setTheme] = useState(
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme"
 	);
