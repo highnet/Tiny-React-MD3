@@ -12,7 +12,7 @@ function HorizontalDividersFrame() {
 	return (
 		<div
 			className={
-				"flex-trmd3 flex-column-trmd3 horizontal-dividers-frame-trmd3 horizontal-dividers-frame-" +
+				"flex-trmd3 frame-trmd3 flex-column-trmd3 horizontal-dividers-frame-trmd3 horizontal-dividers-frame-" +
 				_theme +
 				"-trmd3"
 			}

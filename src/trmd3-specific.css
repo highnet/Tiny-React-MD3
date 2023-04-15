@@ -1,13 +1,10 @@
 /* BODY */
 
 body {
-	overflow-x: hidden;
-	width: 100vw;
 }
 
 .body-light-theme {
-	background: transparent;
-	background: linear-gradient(
+	background-image: linear-gradient(
 		90deg,
 		rgba(82, 196, 254, 0.3) 0%,
 		rgba(248, 194, 255, 0.3) 100%
@@ -15,7 +12,6 @@ body {
 }
 
 .body-dark-theme {
-	background: transparent;
 	background: linear-gradient(
 		90deg,
 		rgb(82, 197, 254) 0%,
@@ -47,6 +43,32 @@ body {
 
 .frame-label-trmd3 {
 	text-align: center;
+}
+
+.hljs {
+	background: linear-gradient(
+		0deg,
+		rgba(103, 80, 164, 0.08),
+		rgba(103, 80, 164, 0.08)
+	);
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3),
+		0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+	font-weight: bolder;
+	margin: 0 auto;
+	overflow: scroll;
+	width: 80%;
+	border-radius: 3px;
+}
+
+@media screen and (max-width: 600px) {
+	.hljs {
+		width: 20%;
+	}
+}
+
+.hljs:hover {
+	box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15),
+		0px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 /* TYPOGRAPHY */
@@ -194,9 +216,6 @@ body {
 
 .radio-buttons-frame-trmd3 {
 	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
 }
 
 .radio-buttons-frame-light-theme-trmd3 {
@@ -217,7 +236,8 @@ body {
 
 .section-title-trmd3 {
 	text-align: center;
-	margin: 60px;
+	margin-top: 60px;
+	margin-bottom: 10px;
 }
 
 .section-title-light-theme-trmd3 {
@@ -281,24 +301,24 @@ body {
 
 /* SWITCHES SECTION */
 
-.switches-section-trmd3 {
+.switches-frame-trmd3 {
 	flex-direction: row;
 	align-items: center;
-	gap: 5px;
 	justify-content: center;
+	gap: 5px;
 }
 
 @media screen and (max-width: 600px) {
-	.switches-section-trmd3 {
+	.switches-frame-trmd3 {
 		flex-direction: column;
 	}
 }
 
-.switches-section-light-theme-trmd3 {
+.switches-frame-light-theme-trmd3 {
 	color: black;
 }
 
-.switches-section-dark-theme-trmd3 {
+.switches-frame-dark-theme-trmd3 {
 	color: white;
 }
 
@@ -309,3 +329,24 @@ body {
 /* ELEVATION SECTION */
 
 /* ICONS SECTION */
+
+/* FRAME */
+
+.frame-trmd3 {
+	background: linear-gradient(
+		0deg,
+		rgba(103, 80, 164, 0.05),
+		rgba(103, 80, 164, 0.05)
+	);
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3),
+		0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+
+	width: 97%;
+	margin: 0 auto;
+	overflow: clip;
+	border-radius: 3px;
+	align-items: center;
+	justify-content: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}

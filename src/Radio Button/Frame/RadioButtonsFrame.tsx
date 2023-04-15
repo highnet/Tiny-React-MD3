@@ -13,7 +13,7 @@ function RadioButtonsFrame() {
 	return (
 		<div
 			className={
-				"flex-trmd3 radio-buttons-frame-trmd3 radio-buttons-frame-" +
+				"flex-trmd3 frame-trmd3 radio-buttons-frame-trmd3 radio-buttons-frame-" +
 				_theme +
 				"-trmd3"
 			}

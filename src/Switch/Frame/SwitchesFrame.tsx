@@ -16,13 +16,13 @@ function SwitchesFrame() {
 	return (
 		<div
 			className={
-				"flex-trmd3 switches-section-trmd3 switches-section-" +
+				"flex-trmd3 frame-trmd3 switches-frame-trmd3 switches-frame-" +
 				_theme +
 				"-trmd3"
 			}
 		>
 			{/* SWITCHES */}
-			<div className="text text-label text-label-small fra-label-trmd3">
+			<div className="text text-label text-label-small frame-label-trmd3">
 				No Icon
 			</div>
 			<Switch selected={true} onChange={undefined}></Switch>
