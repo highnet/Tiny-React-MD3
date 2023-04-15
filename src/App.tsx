@@ -17,8 +17,14 @@ import hljs from "highlight.js";
 import "highlight.js/styles/base16/material-lighter.css";
 
 function App() {
+	const getPreferredScheme = () =>
+		window?.matchMedia?.("(prefers-color-scheme:dark)")?.matches
+			? "dark"
+			: "light";
+
+	console.log();
 	const [theme, setTheme] = useState(
-		localStorage.getItem("theme") || "light-theme"
+		localStorage.getItem("theme") || getPreferredScheme() + "-theme"
 	);
 
 	const toggleTheme = () => {
