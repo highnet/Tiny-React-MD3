@@ -74,7 +74,7 @@ function App() {
 					"-trmd3"
 				}
 			>
-				Radio Buttons
+				🔘 Radio Buttons 🔘
 			</div>
 			<RadioButtonsFrame />
 
@@ -85,7 +85,7 @@ function App() {
 					"-trmd3"
 				}
 			>
-				Badges
+				📛 Badges 📛
 			</div>
 			<BadgesFrame />
 
@@ -96,7 +96,7 @@ function App() {
 					"-trmd3"
 				}
 			>
-				Checkboxes
+				☑️ Checkboxes ☑️
 			</div>
 			<CheckboxesFrame />
 
@@ -107,7 +107,7 @@ function App() {
 					"-trmd3"
 				}
 			>
-				Switches
+				🔦 Switches 🔦
 			</div>
 			<SwitchesFrame />
 
@@ -118,7 +118,7 @@ function App() {
 					"-trmd3"
 				}
 			>
-				Buttons
+				🕹️ Buttons 🕹️
 			</div>
 			<ButtonsFrame />
 
@@ -129,7 +129,7 @@ function App() {
 					"-trmd3"
 				}
 			>
-				Typography
+				🔤 Typography 🔤
 			</div>
 			<TypographiesFrame />
 
@@ -140,7 +140,7 @@ function App() {
 					"-trmd3"
 				}
 			>
-				Elevation
+				🏔️ Elevation 🏔️
 			</div>
 			<ElevationsFrame />
 
@@ -151,7 +151,7 @@ function App() {
 					"-trmd3"
 				}
 			>
-				Icons
+				💟 Icons 💟
 			</div>
 			<IconsFrame />
 		</div>
