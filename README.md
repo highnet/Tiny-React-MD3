@@ -18,7 +18,12 @@
 
 Tired of bloated React frameworks with thousands of lines of code which you will never use?
 
-❤️ You like Figma? ❤️ You Like Material Design 3? ❤️ You like React? 🐝 Then you love Tiny React MD3!
+<ul>
+<li>❤️ You like Figma? ❤️</li>
+<li>❤️ You Like Material Design 3? ❤️</li>
+<li>❤️ You like React? 🐝 Then you ❤️</li>
+<li>🐝 love Tiny React MD3! 🐝</li>
+</ul>
 
 [Figma Material Design 3 Kit](https://www.figma.com/community/file/1035203688168086460) 🤝 [React.ts](https://developer.okta.com/blog/2022/03/14/react-vite-number-converter) = [Tiny React MD3](https://github.com/highnet/Tiny-React-MD3/)
 
