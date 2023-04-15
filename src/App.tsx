@@ -13,6 +13,9 @@ import ElevationsFrame from "./Elevation/Frame/ElevationsFrame";
 import IconsFrame from "./Icon/Frame/IconsFrame";
 import ThemeSwitcher from "./TRMD3/ThemeSwitcher/ThemeSwitcher";
 
+import hljs from "highlight.js";
+import "highlight.js/styles/base16/material-lighter.css";
+
 function App() {
 	const [theme, setTheme] = useState(
 		localStorage.getItem("theme") || "light-theme"
@@ -31,6 +34,10 @@ function App() {
 		localStorage.setItem("theme", theme);
 		document.body.className = "body-" + theme;
 	}, [theme]);
+
+	useEffect(() => {
+		hljs.highlightAll();
+	}, []);
 
 	return (
 		<div className={"App"}>

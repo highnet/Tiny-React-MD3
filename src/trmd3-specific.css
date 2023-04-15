@@ -12,11 +12,7 @@ body {
 }
 
 .body-dark-theme {
-	background: linear-gradient(
-		90deg,
-		rgb(82, 197, 254) 0%,
-		rgb(248, 194, 255) 100%
-	);
+	background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
 }
 
 /* TRMD3 */
