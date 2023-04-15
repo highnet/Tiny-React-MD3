@@ -16,18 +16,21 @@
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/highnet/Tiny-React-MD3?style=for-the-badge">
 </div>
 
-Tired of bloated React frameworks with thousands of lines of code which you will never use?
 
-<div align="center""> 
-<ul>
-<li>❤️ You like Figma? ❤️</li>
-<li>❤️ You Like Material Design 3? ❤️</li>
-<li>❤️ You like React? ❤️</li>
-<li>🐝 Then you love Tiny React MD3! 🐝</li>
-</ul>
+<div align="center">
+Tired of bloated React frameworks with thousands of lines of code which you will never use? </br>
+
+❤️ You like Figma? ❤️ </br>
+  
+❤️ You Like Material Design 3? ❤️</br>
+  
+❤️ You like React? ❤️ </br>
+  
+🐝 Then you love Tiny React MD3! 🐝 </br>
+
+[Figma Material Design 3 Kit](https://www.figma.com/community/file/1035203688168086460) 🤝 [React.ts](https://developer.okta.com/blog/2022/03/14/react-vite-number-converter) = [Tiny React MD3](https://github.com/highnet/Tiny-React-MD3/) </br>
+  
 </div>
-
-[Figma Material Design 3 Kit](https://www.figma.com/community/file/1035203688168086460) 🤝 [React.ts](https://developer.okta.com/blog/2022/03/14/react-vite-number-converter) = [Tiny React MD3](https://github.com/highnet/Tiny-React-MD3/)
 
 - Quickly transform your design kit prototypes into stunning and modern web applications
 - A set of easy-to-use, high-peformance and customizable components that follow the Material Design 3 principles and aesthetics
