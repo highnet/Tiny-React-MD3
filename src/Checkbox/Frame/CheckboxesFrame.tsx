@@ -13,7 +13,7 @@ function CheckboxesFrame() {
 	return (
 		<div
 			className={
-				"flex-trmd3 frame-trmd3 " +
+				"flex-trmd3 flex-column-trmd3 frame-trmd3 " +
 				"checkboxes-frame-trmd3 " +
 				"checkboxes-frame-" +
 				_theme +
@@ -24,8 +24,13 @@ function CheckboxesFrame() {
 			<div className="text text-label text-label-small frame-label-trmd3">
 				Default
 			</div>
-			<Checkbox selected={true} onChange={undefined}></Checkbox>
-
+			<Checkbox selected={true} onChange={undefined} />
+			<pre>
+				<code className="language-html">
+					{" "}
+					{"<Checkbox selected={true} onChange={undefined} />"}{" "}
+				</code>
+			</pre>
 			<div className="text text-label text-label-small frame-label-trmd3">
 				Default (inactive)
 			</div>
@@ -34,17 +39,27 @@ function CheckboxesFrame() {
 				onChange={undefined}
 				configuration={"default"}
 				disabled={true}
-			></Checkbox>
-
+			/>
+			<pre>
+				<code className="language-html">
+					{" "}
+					{
+						'<Checkbox selected={true} onChange={undefined} configuration={"default"} disabled={true} />'
+					}{" "}
+				</code>
+			</pre>
 			<div className="text text-label text-label-small frame-label-trmd3">
 				Error
 			</div>
-			<Checkbox
-				selected={true}
-				onChange={undefined}
-				configuration={"error"}
-			></Checkbox>
-
+			<Checkbox selected={true} onChange={undefined} configuration={"error"} />
+			<pre>
+				<code className="language-html">
+					{" "}
+					{
+						'<Checkbox selected={true} onChange={undefined} configuration={"error"} />'
+					}{" "}
+				</code>
+			</pre>
 			<div className="text text-label text-label-small frame-label-trmd3">
 				Error (inactive)
 			</div>
@@ -53,7 +68,15 @@ function CheckboxesFrame() {
 				onChange={undefined}
 				configuration={"error"}
 				disabled={true}
-			></Checkbox>
+			/>
+			<pre>
+				<code className="language-html">
+					{" "}
+					{
+						'<Checkbox selected={true} onChange={undefined} configuration={"error"} disabled={true} />'
+					}{" "}
+				</code>
+			</pre>
 		</div>
 	);
 }

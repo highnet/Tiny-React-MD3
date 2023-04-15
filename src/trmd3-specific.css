@@ -52,13 +52,13 @@ body {
 	font-weight: bolder;
 	margin: 0 auto;
 	overflow: scroll;
-	width: 80%;
+	max-width: 90vw;
 	border-radius: 3px;
 }
 
 @media screen and (max-width: 600px) {
 	.hljs {
-		width: 20%;
+		max-width: 70vw;
 	}
 }
 
@@ -147,7 +147,7 @@ body {
 }
 
 .hero-section-light-theme-trmd3 {
-	color: #0088fc;
+	color: #533566;
 }
 
 .hero-section-dark-theme-trmd3 {
@@ -177,9 +177,6 @@ body {
 /* HORIZONTAL DIVIDERS SECTION */
 
 .horizontal-dividers-frame-trmd3 {
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
 	gap: 30px;
 }
 
@@ -194,9 +191,6 @@ body {
 /* VERTICAL DIVIDERS SECTION */
 
 .vertical-dividers-frame-trmd3 {
-	align-items: center;
-
-	justify-content: center;
 	gap: 40px;
 }
 
@@ -211,7 +205,6 @@ body {
 /* RADIO BUTTONS SECTION */
 
 .radio-buttons-frame-trmd3 {
-	flex-direction: row;
 }
 
 .radio-buttons-frame-light-theme-trmd3 {
@@ -220,12 +213,6 @@ body {
 
 .radio-buttons-frame-dark-theme-trmd3 {
 	color: white;
-}
-
-@media screen and (max-width: 600px) {
-	.radio-buttons-frame-trmd3 {
-		flex-direction: column;
-	}
 }
 
 /* SECTION TITLES */
@@ -237,7 +224,7 @@ body {
 }
 
 .section-title-light-theme-trmd3 {
-	color: black;
+	color: #533566;
 }
 
 .section-title-dark-theme-trmd3 {
@@ -247,9 +234,6 @@ body {
 /* BADGES SECTION */
 
 .badges-frame-trmd3 {
-	align-items: center;
-	justify-content: center;
-	text-align: center;
 }
 
 .badges-frame-light-theme-trmd3 {
@@ -270,16 +254,6 @@ body {
 /* CHECKBOXES SECTION */
 
 .checkboxes-frame-trmd3 {
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	gap: 5px;
-}
-
-@media screen and (max-width: 600px) {
-	.checkboxes-frame-trmd3 {
-		flex-direction: column;
-	}
 }
 
 .checkboxes-frame-light-theme-trmd3 {
@@ -298,16 +272,7 @@ body {
 /* SWITCHES SECTION */
 
 .switches-frame-trmd3 {
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
 	gap: 5px;
-}
-
-@media screen and (max-width: 600px) {
-	.switches-frame-trmd3 {
-		flex-direction: column;
-	}
 }
 
 .switches-frame-light-theme-trmd3 {
@@ -319,6 +284,18 @@ body {
 }
 
 /* BUTTONS SECTION */
+
+.buttons-frame-trmd3 {
+	gap: 5;
+}
+
+.buttons-frame-light-theme-trmd3 {
+	color: black;
+}
+
+.buttons-frame-dark-theme-trmd3 {
+	color: white;
+}
 
 /* TYPOGRAPHY SECTION */
 
@@ -345,4 +322,5 @@ body {
 	justify-content: center;
 	padding-top: 15px;
 	padding-bottom: 15px;
+	text-align: center;
 }

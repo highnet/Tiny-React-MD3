@@ -22,18 +22,42 @@ function HorizontalDividersFrame() {
 				Inset None
 			</div>
 			<HorizontalDivider inset={"none"} />
+			<pre>
+				<code className="language-html">
+					{" "}
+					{'<HorizontalDivider inset={"none"} />'}{" "}
+				</code>
+			</pre>
 			<div className="text text-label text-label-small frame-label-trmd3">
 				Inset Right
 			</div>
 			<HorizontalDivider inset={"right"} showInsets={true} />
+			<pre>
+				<code className="language-html">
+					{" "}
+					{'<HorizontalDivider inset={"right"} showInsets={true} />'}{" "}
+				</code>
+			</pre>
 			<div className="text text-label text-label-small frame-label-trmd3">
 				Inset Left
 			</div>
 			<HorizontalDivider inset={"left"} showInsets={true} />
+			<pre>
+				<code className="language-html">
+					{" "}
+					{'<HorizontalDivider inset={"left"} showInsets={true} />'}{" "}
+				</code>
+			</pre>
 			<div className="text text-label text-label-small frame-label-trmd3">
 				Inset Center
 			</div>
 			<HorizontalDivider inset={"center"} showInsets={true} />
+			<pre>
+				<code className="language-html">
+					{" "}
+					{'<HorizontalDivider inset={"center"} showInsets={true} />'}{" "}
+				</code>
+			</pre>
 		</div>
 	);
 }

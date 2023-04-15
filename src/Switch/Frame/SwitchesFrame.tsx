@@ -16,7 +16,7 @@ function SwitchesFrame() {
 	return (
 		<div
 			className={
-				"flex-trmd3 frame-trmd3 switches-frame-trmd3 switches-frame-" +
+				"flex-trmd3 flex-column-trmd3 frame-trmd3 switches-frame-trmd3 switches-frame-" +
 				_theme +
 				"-trmd3"
 			}
@@ -25,11 +25,25 @@ function SwitchesFrame() {
 			<div className="text text-label text-label-small frame-label-trmd3">
 				No Icon
 			</div>
-			<Switch selected={true} onChange={undefined}></Switch>
+			<Switch selected={true} onChange={undefined} />
+			<pre>
+				<code className="language-html">
+					{" "}
+					{"<Switch selected={true} onChange={undefined} />"}{" "}
+				</code>
+			</pre>
 			<div className="text text-label text-label-small checkbox-label-trmd3">
 				No Icon (Inactive)
 			</div>
-			<Switch selected={true} onChange={undefined} disabled={true}></Switch>
+			<Switch selected={true} onChange={undefined} disabled={true} />
+			<pre>
+				<code className="language-html">
+					{" "}
+					{
+						"<Switch selected={true} onChange={undefined} disabled={true} />"
+					}{" "}
+				</code>
+			</pre>
 			<div className="text text-label text-label-small checkbox-label-trmd3">
 				With Icon
 			</div>
@@ -39,16 +53,27 @@ function SwitchesFrame() {
 				icon={true}
 				iconNameSelected={"warning"}
 				iconNameDeselected={"house"}
-			></Switch>
+			/>
+			<pre>
+				<code className="language-html">
+					{" "}
+					{
+						'<Switch selected={true} onChange={undefined} icon={true} iconNameSelected={"warning"} iconNameDeselected={"house"} />'
+					}{" "}
+				</code>
+			</pre>
 			<div className="text text-label text-label-small checkbox-label-trmd3">
 				With Icon (Inactive)
 			</div>
-			<Switch
-				selected={true}
-				onChange={undefined}
-				icon={true}
-				disabled={true}
-			></Switch>
+			<Switch selected={true} onChange={undefined} disabled={true} />
+			<pre>
+				<code className="language-html">
+					{" "}
+					{
+						"<Switch selected={true} onChange={undefined} disabled={true} />"
+					}{" "}
+				</code>
+			</pre>
 		</div>
 	);
 }
