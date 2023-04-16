@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
+import Hero from "./TRMD3/Hero/Hero";
 import ButtonsFrame from "./Button/Frame/ButtonsFrame";
 import HorizontalDividersFrame from "./HorizontalDivider/Frame/HorizontalDividersFrame";
-import Hero from "./TRMD3/Hero/Hero";
 import VerticalDividersFrame from "./VerticalDivider/Frame/VerticalDividersFrame";
 import RadioButtonsFrame from "./Radio Button/Frame/RadioButtonsFrame";
 import BadgesFrame from "./Badge/Frame/BadgesFrame";
@@ -17,12 +17,12 @@ import hljs from "highlight.js";
 import "highlight.js/styles/base16/material-lighter.css";
 
 function App() {
+	console.log(`	👋 Welcome to TRMD3! 👋	`);
+
 	const getPreferredScheme = () =>
 		window?.matchMedia?.("(prefers-color-scheme:dark)")?.matches
 			? "dark"
 			: "light";
-
-	console.log(`	👋 Welcome to TRMD3! 👋	`);
 
 	const [theme, setTheme] = useState(
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme"

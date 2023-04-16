@@ -6,6 +6,15 @@
 */
 
 function IconsFrame() {
+	const getPreferredScheme = () => {
+		window?.matchMedia?.("(prefers-color-scheme:dark)")?.matches
+			? "dark"
+			: "light";
+	};
+
+	const _theme =
+		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
+
 	return (
 		<div className="flex-trmd3 flex-row-trmd3">
 			{/* ICONS */}

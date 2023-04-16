@@ -7,9 +7,17 @@ import Checkbox from "../Checkbox";
   configuration: a string that specifies the style of the checkbox, such as “default” or “error”
   disabled: a boolean value that indicates whether the checkbox is interactive or not
 */
-const _theme = localStorage.getItem("theme") || "light-theme";
 
 function CheckboxesFrame() {
+	const getPreferredScheme = () => {
+		window?.matchMedia?.("(prefers-color-scheme:dark)")?.matches
+			? "dark"
+			: "light";
+	};
+
+	const _theme =
+		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
+
 	return (
 		<div
 			className={

@@ -11,7 +11,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const storage = getStorage(app);
 const logoRef = ref(storage, "tiny-react-md3-logo.png");
-const _theme = localStorage.getItem("theme") || "light-theme";
 
 interface IHeroProps {
 	hasLogo?: boolean;
@@ -19,7 +18,6 @@ interface IHeroProps {
 
 const Hero: React.FC<IHeroProps> = ({ hasLogo }) => {
 	const [_hasLogo] = useState(hasLogo || false);
-
 	const [logoUrl, setLogoUrl] = useState("");
 
 	useEffect(() => {
@@ -27,6 +25,15 @@ const Hero: React.FC<IHeroProps> = ({ hasLogo }) => {
 			setLogoUrl(url);
 		});
 	}, []);
+
+	const getPreferredScheme = () => {
+		window?.matchMedia?.("(prefers-color-scheme:dark)")?.matches
+			? "dark"
+			: "light";
+	};
+
+	const _theme =
+		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
 	return (
 		<div className={"hero-section-trmd3 hero-section-" + _theme + "-trmd3"}>

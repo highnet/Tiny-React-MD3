@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Button from "../Button";
 
 /* 
@@ -15,7 +16,14 @@ import Button from "../Button";
 */
 
 function ButtonsFrame() {
-	const _theme = localStorage.getItem("theme") || "light-theme";
+	const getPreferredScheme = () => {
+		window?.matchMedia?.("(prefers-color-scheme:dark)")?.matches
+			? "dark"
+			: "light";
+	};
+
+	const _theme =
+		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
 	return (
 		<div

@@ -5,6 +5,15 @@
 */
 
 function ElevationsFrame() {
+	const getPreferredScheme = () => {
+		window?.matchMedia?.("(prefers-color-scheme:dark)")?.matches
+			? "dark"
+			: "light";
+	};
+
+	const _theme =
+		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
+
 	return (
 		<div className="elevation-display-section-trmd3">
 			{/* ELEVATION */}
