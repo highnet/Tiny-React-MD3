@@ -45,11 +45,14 @@ const Hero: React.FC<IHeroProps> = ({ hasLogo }) => {
 				)}
 			</div>
 
-			<div className="text text-display text-display-medium">
+			<div className="text text-display text-display-medium main-title-trmd3">
 				🐝Tiny React MD3🐝
 			</div>
 
-			<ul className="hero-features-trmd3 text text-title text-title-large">
+			<ul
+				className=" 
+			text text-title text-title-large hero-features-trmd3"
+			>
 				<li>
 					<a href="https://www.figma.com/community/file/1035203688168086460">
 						MD3 🤝

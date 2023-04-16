@@ -350,7 +350,6 @@
 
 .material-symbols-outlined {
 	pointer-events: none;
-
 	font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 20;
 }
 
@@ -362,6 +361,7 @@
 	max-width: 52px;
 	min-height: 32px;
 	max-height: 32px;
+	user-select: none;
 }
 
 .switch-track {
