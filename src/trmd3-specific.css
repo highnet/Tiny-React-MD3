@@ -1,8 +1,5 @@
 /* BODY */
 
-body {
-}
-
 .body-light-theme {
 	background-image: linear-gradient(
 		95deg,
@@ -29,6 +26,14 @@ body {
 	width: 50vw;
 }
 
+.main-title-trmd3 {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* SINGLE-RULE-CLASSES	*/
+
 .flex-trmd3 {
 	display: flex;
 }
@@ -41,9 +46,7 @@ body {
 	flex-direction: row;
 }
 
-.frame-label-trmd3 {
-	text-align: center;
-}
+/* HIGHLIGHT.JS */
 
 .hljs {
 	background: linear-gradient(
@@ -326,5 +329,9 @@ body {
 	justify-content: center;
 	padding-top: 15px;
 	padding-bottom: 15px;
+	text-align: center;
+}
+
+.frame-label-trmd3 {
 	text-align: center;
 }
