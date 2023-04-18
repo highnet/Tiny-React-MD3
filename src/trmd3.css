@@ -190,7 +190,7 @@
 	transition: background-color 0.3s, box-shadow 0.3s;
 	border: none;
 	height: 40px;
-	width: 90px;
+	width: fit-content;
 }
 
 .btn > .text {
@@ -204,7 +204,6 @@
 	flex-direction: row;
 	padding: 10px 24px 10px 16px;
 	gap: 8px;
-	width: 117px;
 }
 
 .btn-filled {

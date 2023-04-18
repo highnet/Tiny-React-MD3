@@ -118,6 +118,31 @@
 	margin-bottom: 1rem;
 }
 
+/* COOKIETRAIL SECTION */
+
+.cookietrail-section-trmd3 {
+	margin-bottom: 3px;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
+.cookietrail-buttons-trmd3 {
+	overflow: hidden;
+	gap: 10px;
+}
+
+.cookietrail-section-light-theme-trmd3 {
+	color: #533566;
+}
+
+.cookietrail-section-dark-theme-trmd3 {
+	color: #ffffff;
+}
+
+.cookietrail-button-trmd3 {
+	flex-basis: 100%;
+}
+
 /* SECTION TITLES */
 
 .section-title-trmd3 {

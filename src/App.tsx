@@ -15,6 +15,8 @@ import ThemeSwitcher from "./TRMD3/ThemeSwitcher/ThemeSwitcher";
 
 import hljs from "highlight.js";
 import "highlight.js/styles/base16/material-lighter.css";
+import Button from "./Button/Button";
+import Cookietrail from "./TRMD3/Cookietrail/Cookietrail";
 
 function App() {
 	console.log(`	👋 Welcome to TRMD3! 👋	`);
@@ -49,9 +51,8 @@ function App() {
 	return (
 		<div className={"App"}>
 			<Hero hasLogo={true} />
-
+			<Cookietrail />
 			<ThemeSwitcher toggleTheme={toggleTheme} />
-
 			<div
 				className={
 					"text text-title text-title-large section-title-trmd3 section-title-" +
@@ -62,7 +63,6 @@ function App() {
 				👉 Horizontal Dividers 👉
 			</div>
 			<HorizontalDividersFrame />
-
 			<div
 				className={
 					"text text-title text-title-large section-title-trmd3 section-title-" +
@@ -73,7 +73,6 @@ function App() {
 				👆 Vertical Dividers 👆
 			</div>
 			<VerticalDividersFrame />
-
 			<div
 				className={
 					"text text-title text-title-large section-title-trmd3 section-title-" +
@@ -84,7 +83,6 @@ function App() {
 				🔘 Radio Buttons 🔘
 			</div>
 			<RadioButtonsFrame />
-
 			<div
 				className={
 					"text text-title text-title-large section-title-trmd3 section-title-" +
@@ -95,7 +93,6 @@ function App() {
 				📛 Badges 📛
 			</div>
 			<BadgesFrame />
-
 			<div
 				className={
 					"text text-title text-title-large section-title-trmd3 section-title-" +
@@ -106,7 +103,6 @@ function App() {
 				☑️ Checkboxes ☑️
 			</div>
 			<CheckboxesFrame />
-
 			<div
 				className={
 					"text text-title text-title-large section-title-trmd3 section-title-" +
@@ -117,7 +113,6 @@ function App() {
 				🔦 Switches 🔦
 			</div>
 			<SwitchesFrame />
-
 			<div
 				className={
 					"text text-title text-title-large section-title-trmd3 section-title-" +
@@ -128,7 +123,6 @@ function App() {
 				🕹️ Buttons 🕹️
 			</div>
 			<ButtonsFrame />
-
 			<div
 				className={
 					"text text-title text-title-large section-title-trmd3 section-title-" +
@@ -139,7 +133,6 @@ function App() {
 				🔤 Typography 🔤
 			</div>
 			<TypographiesFrame />
-
 			<div
 				className={
 					"text text-title text-title-large section-title-trmd3 section-title-" +
@@ -150,7 +143,6 @@ function App() {
 				🏔️ Elevation 🏔️
 			</div>
 			<ElevationsFrame />
-
 			<div
 				className={
 					"text text-title text-title-large section-title-trmd3 section-title-" +
@@ -170,7 +162,6 @@ function App() {
 				For a full list of all accepted icon strings, visit:{" "}
 				<a href="https://fonts.google.com/icons">Material Smbols and Icons</a>
 			</div>
-
 			<IconsFrame />
 		</div>
 	);
