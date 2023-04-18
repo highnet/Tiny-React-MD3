@@ -25,18 +25,19 @@
 	--snowbank: #e9e8e9;
 	--moon-landing: #a7a6a8;
 	--laughing-jack: #cac4d0;
+	--formal-grey: #979598;
 
-	/* ELEVATION */
+	/* ELEVATION FILLS */
 
-	--surfaces-light-elevation-1: 0px 1px 2px rgba(0, 0, 0, 0.3),
+	--surfaces-elevation-1: 0px 1px 2px rgba(0, 0, 0, 0.3),
 		0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-	--surfaces-light-elevation-2: 0px 1px 2px rgba(0, 0, 0, 0.3),
+	--surfaces-elevation-2: 0px 1px 2px rgba(0, 0, 0, 0.3),
 		0px 2px 6px 2px rgba(0, 0, 0, 0.15);
-	--surfaces-light-elevation-3: 0px 4px 8px 3px rgba(0, 0, 0, 0.15),
+	--surfaces-elevation-3: 0px 4px 8px 3px rgba(0, 0, 0, 0.15),
 		0px 1px 3px rgba(0, 0, 0, 0.3);
-	--surfaces-light-elevation-4: 0px 6px 10px 4px rgba(0, 0, 0, 0.15),
+	--surfaces-elevation-4: 0px 6px 10px 4px rgba(0, 0, 0, 0.15),
 		0px 2px 3px rgba(0, 0, 0, 0.3);
-	--surfaces-light-elevation-5: 0px 8px 12px 6px rgba(0, 0, 0, 0.15),
+	--surfaces-elevation-5: 0px 8px 12px 6px rgba(0, 0, 0, 0.15),
 		0px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -155,23 +156,23 @@
 /* ELEVATIONS */
 
 .elevation-1 {
-	box-shadow: var(--surfaces-light-elevation-1);
+	box-shadow: var(--surfaces-elevation-1);
 }
 
 .elevation-2 {
-	box-shadow: var(--surfaces-light-elevation-2);
+	box-shadow: var(--surfaces-elevation-2);
 }
 
 .elevation-3 {
-	box-shadow: var(--surfaces-light-elevation-3);
+	box-shadow: var(--surfaces-elevation-3);
 }
 
 .elevation-4 {
-	box-shadow: var(--surfaces-light-elevation-4);
+	box-shadow: var(--surfaces-elevation-4);
 }
 
 .elevation-5 {
-	box-shadow: var(--surfaces-light-elevation-5);
+	box-shadow: var(--surfaces-elevation-5);
 }
 
 /* BUTTONS */
@@ -213,7 +214,7 @@
 
 .btn-filled:hover {
 	background-color: var(--genestealer-purple);
-	box-shadow: var(--surfaces-light-elevation-1);
+	box-shadow: var(--surfaces-elevation-1);
 }
 
 .btn-filled:focus {
@@ -226,7 +227,7 @@
 
 .btn-filled:disabled {
 	background-color: var(--titanium-white);
-	color: var(--color-system-light-filled-disable-text);
+	color: var(--formal-grey);
 }
 
 .btn-filled:disabled.btn-filled:hover {
@@ -293,22 +294,22 @@
 .btn-elevated {
 	background-color: white;
 	color: var(--prophet-violet);
-	box-shadow: var(--surfaces-light-elevation-1);
+	box-shadow: var(--surfaces-elevation-1);
 }
 
 .btn-elevated:hover {
 	background-color: var(--lavender-mist);
-	box-shadow: var(--surfaces-light-elevation-2);
+	box-shadow: var(--surfaces-elevation-2);
 }
 
 .btn-elevated:focus {
 	background-color: var(--lavender-mist);
-	box-shadow: var(--surfaces-light-elevation-1);
+	box-shadow: var(--surfaces-elevation-1);
 }
 
 .btn-elevated:active {
 	background-color: var(--lavender-mist);
-	box-shadow: var(--surfaces-light-elevation-1);
+	box-shadow: var(--surfaces-elevation-1);
 }
 
 .btn-elevated:disabled {
@@ -324,7 +325,7 @@
 
 .btn-tonal:hover {
 	background-color: var(--plum-is-the-word);
-	box-shadow: var(--surfaces-light-elevation-1);
+	box-shadow: var(--surfaces-elevation-1);
 }
 
 .btn-tonal:focus {
