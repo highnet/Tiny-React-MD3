@@ -46,6 +46,16 @@
 	flex-direction: row;
 }
 
+/* THEME TOGGLING */
+
+.theme-toggler-trmd3 {
+	margin: 0 auto;
+	width: 80%;
+	position: sticky;
+	top: 0;
+	transform: translateY(10px);
+}
+
 /* HIGHLIGHT.JS */
 
 .hljs {
@@ -74,71 +84,8 @@
 		0px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* TYPOGRAPHY */
-
-.typography-display-section-trmd3 {
-	box-sizing: border-box;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	padding: 24px;
-	gap: 24px;
-	border: 1px solid #79747e;
-	border-radius: 16px;
-}
-
-/* ELEVATION */
-
-.elevation-display-section-trmd3 {
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	padding: 50px 60px;
-	gap: 18px;
-}
-
-.elevation-box-trmd3 {
-	width: 80px;
-	height: 80px;
-	border-radius: 16px;
-}
-
-.elevation-box-1-trmd3 {
-	background: linear-gradient(
-		0deg,
-		rgba(103, 80, 164, 0.05),
-		rgba(103, 80, 164, 0.05)
-	);
-}
-.elevation-box-2-trmd3 {
-	background: linear-gradient(
-		0deg,
-		rgba(103, 80, 164, 0.08),
-		rgba(103, 80, 164, 0.08)
-	);
-}
-.elevation-box-3-trmd3 {
-	background: linear-gradient(
-		0deg,
-		rgba(113, 90, 174, 0.11),
-		rgba(113, 90, 174, 0.11)
-	);
-}
-
-.elevation-box-4-trmd3 {
-	background: linear-gradient(
-		0deg,
-		rgba(103, 80, 164, 0.12),
-		rgba(103, 80, 164, 0.12)
-	);
-}
-
-.elevation-box-5-trmd3 {
-	background: linear-gradient(
-		0deg,
-		rgba(103, 80, 164, 0.14),
-		rgba(103, 80, 164, 0.14)
-	);
+.hljs-multiline-trmd3 {
+	white-space: pre-wrap;
 }
 
 /* HERO SECTION*/
@@ -171,57 +118,6 @@
 	margin-bottom: 1rem;
 }
 
-/* THEME TOGGLING */
-
-.theme-toggler-trmd3 {
-	margin: 0 auto;
-	width: 80%;
-	position: sticky;
-	top: 0;
-	transform: translateY(10px);
-}
-
-/* HORIZONTAL DIVIDERS SECTION */
-
-.horizontal-dividers-frame-trmd3 {
-	gap: 30px;
-}
-
-.horizontal-dividers-frame-light-theme-trmd3 {
-	color: black;
-}
-
-.horizontal-dividers-frame-dark-theme-trmd3 {
-	color: white;
-}
-
-/* VERTICAL DIVIDERS SECTION */
-
-.vertical-dividers-frame-trmd3 {
-	gap: 40px;
-}
-
-.vertical-dividers-frame-light-theme-trmd3 {
-	color: black;
-}
-
-.vertical-dividers-frame-dark-theme-trmd3 {
-	color: white;
-}
-
-/* RADIO BUTTONS SECTION */
-
-.radio-buttons-frame-trmd3 {
-}
-
-.radio-buttons-frame-light-theme-trmd3 {
-	color: black;
-}
-
-.radio-buttons-frame-dark-theme-trmd3 {
-	color: white;
-}
-
 /* SECTION TITLES */
 
 .section-title-trmd3 {
@@ -238,79 +134,22 @@
 	color: white;
 }
 
-/* BADGES SECTION */
+/* SECTION SUBTITLES */
 
-.badges-frame-trmd3 {
-}
-
-.badges-frame-light-theme-trmd3 {
-	color: black;
-}
-
-.badges-frame-dark-theme-trmd3 {
-	color: white;
-}
-
-.badge-box-trmd3 {
-	background-color: #f8af50;
-	width: 50px;
-	height: 50px;
-	margin: 0 auto;
-}
-
-/* CHECKBOXES SECTION */
-
-.checkboxes-frame-trmd3 {
-}
-
-.checkboxes-frame-light-theme-trmd3 {
-	color: black;
-}
-
-.checkboxes-frame-dark-theme-trmd3 {
-	color: white;
-}
-
-.checkbox-label-trmd3 {
+.section-subtitle-trmd3 {
 	text-align: center;
-	line-height: 44px;
+	margin-bottom: 10px;
 }
 
-/* SWITCHES SECTION */
-
-.switches-frame-trmd3 {
-	gap: 5px;
+.section-subtitle-light-theme-trmd3 {
+	color: #533566;
 }
 
-.switches-frame-light-theme-trmd3 {
-	color: black;
-}
-
-.switches-frame-dark-theme-trmd3 {
+.section-subtitle-dark-theme-trmd3 {
 	color: white;
 }
 
-/* BUTTONS SECTION */
-
-.buttons-frame-trmd3 {
-	gap: 5;
-}
-
-.buttons-frame-light-theme-trmd3 {
-	color: black;
-}
-
-.buttons-frame-dark-theme-trmd3 {
-	color: white;
-}
-
-/* TYPOGRAPHY SECTION */
-
-/* ELEVATION SECTION */
-
-/* ICONS SECTION */
-
-/* FRAME */
+/* FRAMES */
 
 .frame-trmd3 {
 	background: linear-gradient(
@@ -334,4 +173,163 @@
 
 .frame-label-trmd3 {
 	text-align: center;
+}
+
+/* HORIZONTAL DIVIDERS FRAME SECTION */
+
+.horizontal-dividers-frame-trmd3 {
+	gap: 30px;
+}
+
+.horizontal-dividers-frame-light-theme-trmd3 {
+	color: black;
+}
+
+.horizontal-dividers-frame-dark-theme-trmd3 {
+	color: white;
+}
+
+/* VERTICAL DIVIDERS FRAME SECTION */
+
+.vertical-dividers-frame-trmd3 {
+	gap: 40px;
+}
+
+.vertical-dividers-frame-light-theme-trmd3 {
+	color: black;
+}
+
+.vertical-dividers-frame-dark-theme-trmd3 {
+	color: white;
+}
+
+/* RADIO BUTTONS FRAME SECTION */
+
+.radio-buttons-frame-trmd3 {
+}
+
+.radio-buttons-frame-light-theme-trmd3 {
+	color: black;
+}
+
+.radio-buttons-frame-dark-theme-trmd3 {
+	color: white;
+}
+
+/* BADGES FRAME SECTION */
+
+.badges-frame-trmd3 {
+}
+
+.badges-frame-light-theme-trmd3 {
+	color: black;
+}
+
+.badges-frame-dark-theme-trmd3 {
+	color: white;
+}
+
+.badge-box-trmd3 {
+	background-color: #f8af50;
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+}
+
+/* CHECKBOXES FRAME SECTION */
+
+.checkboxes-frame-trmd3 {
+}
+
+.checkboxes-frame-light-theme-trmd3 {
+	color: black;
+}
+
+.checkboxes-frame-dark-theme-trmd3 {
+	color: white;
+}
+
+.checkbox-label-trmd3 {
+	text-align: center;
+	line-height: 44px;
+}
+
+/* SWITCHES FRAME SECTION */
+
+.switches-frame-trmd3 {
+	gap: 5px;
+}
+
+.switches-frame-light-theme-trmd3 {
+	color: black;
+}
+
+.switches-frame-dark-theme-trmd3 {
+	color: white;
+}
+
+/* BUTTONS FRAME SECTION */
+
+.buttons-frame-trmd3 {
+	gap: 5;
+}
+
+.buttons-frame-light-theme-trmd3 {
+	color: black;
+}
+
+.buttons-frame-dark-theme-trmd3 {
+	color: white;
+}
+
+/* TYPOGRAPHIES FRAME SECTION */
+
+.typographies-frame-trmd3 {
+	gap: 0px;
+}
+
+.typographies-frame-light-theme-trmd3 {
+	color: black;
+}
+
+.typographies-frame-dark-theme-trmd3 {
+	color: white;
+}
+
+.typographies-subframe-trmd3 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 24px;
+	gap: 24px;
+	border: 1px solid #79747e;
+	border-radius: 16px;
+}
+
+/* ELEVATIONS FRAME SECTION */
+
+.elevations-frame-trmd3 {
+	gap: 5px;
+}
+
+.elevations-frame-light-theme-trmd3 {
+	color: black;
+}
+
+.elevations-frame-dark-theme-trmd3 {
+	color: white;
+}
+
+/* ICONS FRAME SECTION */
+
+.icons-frame-trmd3 {
+	gap: 1px;
+}
+
+.icons-frame-light-theme-trmd3 {
+	color: black;
+}
+
+.icons-frame-dark-theme-trmd3 {
+	color: white;
 }

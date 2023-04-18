@@ -160,6 +160,17 @@ function App() {
 			>
 				💟 Icons 💟
 			</div>
+			<div
+				className={
+					"text text-title text-title-medium section-subtitle-trmd3 section-subtitle-" +
+					theme +
+					"-trmd3"
+				}
+			>
+				For a full list of all accepted icon strings, visit:{" "}
+				<a href="https://fonts.google.com/icons">Material Smbols and Icons</a>
+			</div>
+
 			<IconsFrame />
 		</div>
 	);

@@ -16,13 +16,42 @@ function IconsFrame() {
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
 	return (
-		<div className="flex-trmd3 flex-row-trmd3">
+		<div
+			className={
+				"flex-trmd3 flex-column-trmd3 frame-trmd3 icons-frame-trmd3 icons-frame-" +
+				_theme +
+				"-trmd3"
+			}
+		>
 			{/* ICONS */}
-			<span className="material-symbols-outlined">search</span>
-			<span className="material-symbols-outlined">home</span>
+			<span className="material-symbols-outlined">hive</span>
+			<pre>
+				<code className="language-html">
+					{" "}
+					{'<span className="material-symbols-outlined">hive</span>'}{" "}
+				</code>
+			</pre>
+			<span className="material-symbols-outlined">spa</span>
+			<pre>
+				<code className="language-html">
+					{" "}
+					{'<span className="material-symbols-outlined">spa</span>'}{" "}
+				</code>
+			</pre>
 			<span className="material-symbols-outlined">air</span>
+			<pre>
+				<code className="language-html">
+					{" "}
+					{'<span className="material-symbols-outlined">air</span>'}{" "}
+				</code>
+			</pre>
 			<span className="material-symbols-outlined">water</span>
-			<span className="material-symbols-outlined">check</span>
+			<pre>
+				<code className="language-html">
+					{" "}
+					{'<span className="material-symbols-outlined">water</span>'}{" "}
+				</code>
+			</pre>
 		</div>
 	);
 }

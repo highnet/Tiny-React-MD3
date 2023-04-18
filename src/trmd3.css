@@ -154,23 +154,23 @@
 
 /* ELEVATIONS */
 
-.elevation-light-1 {
+.elevation-1 {
 	box-shadow: var(--surfaces-light-elevation-1);
 }
 
-.elevation-light-2 {
+.elevation-2 {
 	box-shadow: var(--surfaces-light-elevation-2);
 }
 
-.elevation-light-3 {
+.elevation-3 {
 	box-shadow: var(--surfaces-light-elevation-3);
 }
 
-.elevation-light-4 {
+.elevation-4 {
 	box-shadow: var(--surfaces-light-elevation-4);
 }
 
-.elevation-light-5 {
+.elevation-5 {
 	box-shadow: var(--surfaces-light-elevation-5);
 }
 

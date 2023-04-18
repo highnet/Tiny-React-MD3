@@ -1,6 +1,7 @@
 # 📚 Tiny React MD-3 Documentation
 
-Use Tiny React MD-3 to create web apps, and experiences. 
+Use Tiny React MD-3 to create web apps, and experiences.
+
 <ul>
 <li>Download Tiny React MD-3 here https://github.com/highnet/Tiny-React-MD3.git</li>
 <li>Visit the trmd3 web page here: https://tiny-react-dev.web.app/</li>
@@ -229,13 +230,13 @@ and the possible different of <code>{size}</code> are the following:
 <i>Use elevation to depict a third dimension of your content.</i>
 
     The elevation styles are defined by the class names of the div elements, such as
-    “elevation-light-1” or “elevation-light-5”. The elevation styles create a visual effect
+    “elevation-1” or “elevation-5”. The elevation styles create a visual effect
     of depth and shadow for the div elements.
 
 Elevate any component by adding the class name like this:
 
 ```JSX
-<div className="elevation-light-{level}"></div>
+<div className="elevation-{level}"></div>
 ```
 
 The supported options of <code>{level}</code> are the following:

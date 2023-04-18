@@ -15,13 +15,74 @@ function ElevationsFrame() {
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
 	return (
-		<div className="elevation-display-section-trmd3">
+		<div
+			className={
+				"flex-trmd3 flex-column-trmd3 frame-trmd3 elevations-frame-trmd3 buttons-frame-" +
+				_theme +
+				"-trmd3"
+			}
+		>
 			{/* ELEVATION */}
-			<div className="elevation-light-1 elevation-box-trmd3 elevation-box-1-trmd3"></div>
-			<div className="elevation-light-2 elevation-box-trmd3 elevation-box-2-trmd3"></div>
-			<div className="elevation-light-3 elevation-box-trmd3 elevation-box-3-trmd3"></div>
-			<div className="elevation-light-4 elevation-box-trmd3 elevation-box-4-trmd3"></div>
-			<div className="elevation-light-5 elevation-box-trmd3 elevation-box-5-trmd3"></div>
+			<div
+				className="elevation-1"
+				style={{ width: "80px", height: "80px", borderRadius: "16px" }}
+			/>
+			<pre>
+				<code className="language-html">
+					{" "}
+					{
+						'<div className="elevation-1" style={{ width: "80px", height: "80px", borderRadius: "16px" }} />'
+					}{" "}
+				</code>
+			</pre>
+			<div
+				className="elevation-2"
+				style={{ width: "80px", height: "80px", borderRadius: "16px" }}
+			/>
+			<pre>
+				<code className="language-html">
+					{" "}
+					{
+						'<div className="elevation-2" style={{ width: "80px", height: "80px", borderRadius: "16px" }} />'
+					}{" "}
+				</code>
+			</pre>
+			<div
+				className="elevation-3"
+				style={{ width: "80px", height: "80px", borderRadius: "16px" }}
+			/>
+			<pre>
+				<code className="language-html">
+					{" "}
+					{
+						'<div className="elevation-3" style={{ width: "80px", height: "80px", borderRadius: "16px" }} />'
+					}{" "}
+				</code>
+			</pre>
+			<div
+				className="elevation-4"
+				style={{ width: "80px", height: "80px", borderRadius: "16px" }}
+			/>
+			<pre>
+				<code className="language-html">
+					{" "}
+					{
+						'<div className="elevation-4" style={{ width: "80px", height: "80px", borderRadius: "16px" }} />'
+					}{" "}
+				</code>
+			</pre>
+			<div
+				className="elevation-5"
+				style={{ width: "80px", height: "80px", borderRadius: "16px" }}
+			/>
+			<pre>
+				<code className="language-html">
+					{" "}
+					{
+						'<div className="elevation-5" style={{ width: "80px", height: "80px", borderRadius: "16px" }} />'
+					}{" "}
+				</code>
+			</pre>
 		</div>
 	);
 }
