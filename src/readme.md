@@ -142,11 +142,12 @@ The supported options of <code>{configuration}</code> are the following:
 ## ☑️ [Checkbox](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Checkbox/Frame/checkbox.tsx)
 
 <i>Checkboxes allow users to select one or more items from a set and can be used to turn an option on or off. They’re a kind of selection control that helps users make a choice from a set of options.</i>
-Checkboxes can have different configurations, states, and styles.
-selected: a boolean value that indicates whether the checkbox is checked or not
-onChange: a function that is called when the user clicks on the checkbox
-configuration: a string that specifies the style of the checkbox, such as “default” or “error”
-disabled: a boolean value that indicates whether the checkbox is interactive or not
+    
+    Checkboxes can have different configurations, states, and styles.
+    selected: a boolean value that indicates whether the checkbox is checked or not
+    onChange: a function that is called when the user clicks on the checkbox
+    configuration: a string that specifies the style of the checkbox, such as “default” or “error”
+    disabled: a boolean value that indicates whether the checkbox is interactive or not
 
 Place a default checkbox component like this:
 
