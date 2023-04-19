@@ -45,7 +45,7 @@ const Hero: React.FC<IHeroProps> = ({ hasLogo }) => {
 				)}
 			</div>
 
-			<div className="text text-display text-display-medium main-title-trmd3">
+			<div className="text text-display text-display-small main-title-trmd3">
 				🐝Tiny React MD3🐝
 			</div>
 
