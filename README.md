@@ -18,7 +18,6 @@
 
 
 <div align="center">
-Tired of bloated React frameworks with thousands of lines of code which you will never use? </br>
 ❤️ You like Figma? ❤️ </br>
 ❤️ You Like Material Design 3? ❤️</br>
 ❤️ You like React? ❤️ </br>
