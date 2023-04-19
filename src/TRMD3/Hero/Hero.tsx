@@ -54,30 +54,21 @@ const Hero: React.FC<IHeroProps> = ({ hasLogo }) => {
 			text text-title text-title-large hero-features-trmd3"
 			>
 				<li>
-					<a href="https://www.figma.com/community/file/1035203688168086460">
-						MD3 🤝
+					<a className="hero-link-trmd3" href="https://react.dev/">
+						React
 					</a>
-					<a href="https://react.dev/">React</a>
-				</li>
-				<li>
-					Tired of bloated React frameworks with thousands of lines of code
-					which you will never use?
-				</li>
-				<li>You like Figma?</li>
-				<li>You Like Material Design 3?</li>
-				<li>You like React?</li>
-				<li>❤️ Then you love Tiny React MD3! ❤️</li>
-				<li>
-					• Quickly transform your design kit prototypes into stunning and
-					modern web applications
-				</li>
-				<li>
-					• A set of easy-to-use, high-peformance, and customizable components
-					that follow the Material Design 3 principles and aesthetics
-				</li>
-				<li>
-					• Developer handoffs made easy with ensured parity between the Figma
-					material Design 3 Kit and React
+					<a
+						className="hero-link-trmd3 hero-handshake-trmd3"
+						href="https://github.com/highnet/Tiny-React-MD3"
+					>
+						🤝
+					</a>
+					<a
+						className="hero-link-trmd3"
+						href="https://www.figma.com/community/file/1035203688168086460"
+					>
+						MD3
+					</a>
 				</li>
 			</ul>
 		</div>

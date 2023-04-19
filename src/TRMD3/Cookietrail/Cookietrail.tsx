@@ -24,10 +24,6 @@ const Cookietrail: React.FC<ICookietrailProps> = () => {
 				"cookietrail-section-trmd3 cookietrail-section-" + _theme + "-trmd3"
 			}
 		>
-			<div className="text text-title text-title-small section-title-trmd3">
-				⬇️ Useful Links ⬇️
-			</div>
-
 			<div className={"flex-trmd3 flex-row-trmd3 cookietrail-buttons-trmd3"}>
 				<Button
 					configuration="tonal"

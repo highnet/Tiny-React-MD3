@@ -17,6 +17,7 @@ import hljs from "highlight.js";
 import "highlight.js/styles/base16/material-lighter.css";
 import Button from "./Button/Button";
 import Cookietrail from "./TRMD3/Cookietrail/Cookietrail";
+import TourGuide from "./TRMD3/TourGuide/TourGuide";
 
 function App() {
 	console.log(`	👋 Welcome to TRMD3! 👋	`);
@@ -52,8 +53,10 @@ function App() {
 		<div className={"App"}>
 			<Hero hasLogo={true} />
 			<Cookietrail />
+			<TourGuide />
 			<ThemeSwitcher toggleTheme={toggleTheme} />
 			<div
+				id="horizontal-dividers-section"
 				className={
 					"text text-title text-title-large section-title-trmd3 section-title-" +
 					theme +
@@ -64,6 +67,7 @@ function App() {
 			</div>
 			<HorizontalDividersFrame />
 			<div
+				id="vertical-dividers-section"
 				className={
 					"text text-title text-title-large section-title-trmd3 section-title-" +
 					theme +
@@ -74,6 +78,7 @@ function App() {
 			</div>
 			<VerticalDividersFrame />
 			<div
+				id="radio-buttons-section"
 				className={
 					"text text-title text-title-large section-title-trmd3 section-title-" +
 					theme +
@@ -84,6 +89,7 @@ function App() {
 			</div>
 			<RadioButtonsFrame />
 			<div
+				id="badges-section"
 				className={
 					"text text-title text-title-large section-title-trmd3 section-title-" +
 					theme +
@@ -94,6 +100,7 @@ function App() {
 			</div>
 			<BadgesFrame />
 			<div
+				id="checkboxes-section"
 				className={
 					"text text-title text-title-large section-title-trmd3 section-title-" +
 					theme +
@@ -104,6 +111,7 @@ function App() {
 			</div>
 			<CheckboxesFrame />
 			<div
+				id="switches-section"
 				className={
 					"text text-title text-title-large section-title-trmd3 section-title-" +
 					theme +
@@ -114,6 +122,7 @@ function App() {
 			</div>
 			<SwitchesFrame />
 			<div
+				id="buttons-section"
 				className={
 					"text text-title text-title-large section-title-trmd3 section-title-" +
 					theme +
@@ -124,6 +133,7 @@ function App() {
 			</div>
 			<ButtonsFrame />
 			<div
+				id="typography-section"
 				className={
 					"text text-title text-title-large section-title-trmd3 section-title-" +
 					theme +
@@ -134,6 +144,7 @@ function App() {
 			</div>
 			<TypographiesFrame />
 			<div
+				id="elevation-section"
 				className={
 					"text text-title text-title-large section-title-trmd3 section-title-" +
 					theme +
@@ -144,6 +155,7 @@ function App() {
 			</div>
 			<ElevationsFrame />
 			<div
+				id="icons-section"
 				className={
 					"text text-title text-title-large section-title-trmd3 section-title-" +
 					theme +
