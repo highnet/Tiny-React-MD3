@@ -40,6 +40,15 @@ const HorizontalDivider: React.FC<IHorizontalDividerProps> = ({
 	let _finalInsetLeftWidth: string = _insetLeftWidth + "px"; // Final inset left width value
 	let _finalInsetColor: string = _showInsets ? "red" : "transparent"; // Final inset color
 
+	const getPreferredScheme = () => {
+		window?.matchMedia?.("(prefers-color-scheme:dark)")?.matches
+			? "dark"
+			: "light";
+	};
+
+	const _theme =
+		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
+
 	// Return the JSX element for the horizontal divider
 	return (
 		<div id={_id} className={"horizontal-divider" + " " + _className}>
@@ -50,17 +59,19 @@ const HorizontalDivider: React.FC<IHorizontalDividerProps> = ({
 						height: _finalHeight,
 						width: _finalInsetRightWidth,
 						backgroundColor: _finalInsetColor,
-					}}></div>
+					}}
+				></div>
 			) : (
 				""
 			)}
 
 			<div
-				className={"horizontal-divider-bar"}
+				className={"horizontal-divider-bar-" + _theme}
 				style={{
 					width: _finalWidth,
 					height: _finalHeight,
-				}}></div>
+				}}
+			></div>
 
 			{_inset == "left" || _inset == "center" ? (
 				<div
@@ -69,7 +80,8 @@ const HorizontalDivider: React.FC<IHorizontalDividerProps> = ({
 						height: _finalHeight,
 						width: _finalInsetLeftWidth,
 						backgroundColor: _finalInsetColor,
-					}}></div>
+					}}
+				></div>
 			) : (
 				""
 			)}

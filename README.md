@@ -16,7 +16,6 @@
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/highnet/Tiny-React-MD3?style=for-the-badge">
 </div>
 
-
 <div align="center">
 ❤️ You like Figma? ❤️ </br>
 ❤️ You Like Material Design 3? ❤️</br>
@@ -32,6 +31,7 @@
 - Developer handoffs made easy with ensured parity between the Figma material Design 3 Kit and React
 
 ## 🌐 Home Page
+
 The Official trmd3 home page
 
 https://tiny-react-dev.web.app/
@@ -54,8 +54,8 @@ https://tiny-react-dev.web.app/
 |                                                     🍪 Chips                                                     |     🚧      |     🚧     |                                                                                                                                              |                                                                                                                            |
 |                                                 📅 Date Pickers                                                  |     🚧      |     🚧     |                                                                                                                                              |                                                                                                                            |
 |                                                    💬 Dialogs                                                    |     🚧      |     🚧     |                                                                                                                                              |                                                                                                                            |
-| 👉 [Horizontal Divider](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-horizontal-divider) |     ✅      |     🚧     | [HorizontalDividersFrame.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/HorizontalDivider/Frame/HorizontalDividersFrame.tsx) | [HorizontalDivider.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/HorizontalDivider/HorizontalDivider.tsx) |
-|   👆 [Vertical Divider](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-vertical-divider)   |     ✅      |     🚧     |    [VerticalDividersFrame.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/VerticalDivider/Frame/VerticalDividersFrame.tsx)    |    [VerticalDivider.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/VerticalDivider/VerticalDivider.tsx)    |
+| 👉 [Horizontal Divider](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-horizontal-divider) |     ✅      |     ✅     | [HorizontalDividersFrame.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/HorizontalDivider/Frame/HorizontalDividersFrame.tsx) | [HorizontalDivider.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/HorizontalDivider/HorizontalDivider.tsx) |
+|   👆 [Vertical Divider](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-vertical-divider)   |     ✅      |     ✅     |    [VerticalDividersFrame.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/VerticalDivider/Frame/VerticalDividersFrame.tsx)    |    [VerticalDivider.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/VerticalDivider/VerticalDivider.tsx)    |
 |     🏔️ [Elevation](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#%EF%B8%8F-elevation)      |     ✅      |     🚧     |             [ElevationsFrame.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Elevation/Frame/ElevationsFrame.tsx)             |                      [trmd3.css](https://github.com/highnet/Tiny-React-MD3/blob/master/src/trmd3.css)                      |
 |              💟 [Icons](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-icons)              |     ✅      |     🚧     |                    [IconsFrame.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Icon/Frame/IconsFrame.tsx)                     |                      [trmd3.css](https://github.com/highnet/Tiny-React-MD3/blob/master/src/trmd3.css)                      |
 |                                                     📝 Lists                                                     |     🚧      |     🚧     |                                                                                                                                              |                                                                                                                            |
@@ -114,7 +114,6 @@ https://tiny-react-dev.web.app/
 6. Configure the project as a single-page app by typing `y` when prompted.
 7. Type `npm run deploy` into the console to build and deploy the app using Firebase.
 8. (Optional) Configure "Firebase Storage" inside your Firebase project to host and serve any static assets.
-
 
 ## 👥 Collaborators:
 

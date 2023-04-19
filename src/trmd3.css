@@ -625,8 +625,12 @@ input[type="radio"].radio-button-input-disabled::before {
 	display: flex;
 }
 
-.horizontal-divider-bar {
+.horizontal-divider-bar-light-theme {
 	background-color: var(--laughing-jack);
+}
+
+.horizontal-divider-bar-dark-theme {
+	background-color: var(--ishtar);
 }
 
 .horizontal-divider-inset-right {
@@ -645,8 +649,12 @@ input[type="radio"].radio-button-input-disabled::before {
 	margin: 0 auto;
 }
 
-.vertical-divider-bar {
+.vertical-divider-bar-light-theme {
 	background-color: var(--laughing-jack);
+}
+
+.vertical-divider-bar-dark-theme {
+	background-color: var(--ishtar);
 }
 
 .vertical-divider-inset-top {

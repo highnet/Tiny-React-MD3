@@ -48,6 +48,15 @@ const VerticalDivider: React.FC<IVerticalDividerProps> = ({
 	let _finalInsetBottomHeight = _insetBottomHeight + "px";
 	let _finalInsetColor: string = _showInsets ? "red" : "transparent"; // Final inset color
 
+	const getPreferredScheme = () => {
+		window?.matchMedia?.("(prefers-color-scheme:dark)")?.matches
+			? "dark"
+			: "light";
+	};
+
+	const _theme =
+		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
+
 	// Return the JSX element for the vertical divider
 	return (
 		<div id={_id} className={"vertical-divider" + " " + _className}>
@@ -65,7 +74,7 @@ const VerticalDivider: React.FC<IVerticalDividerProps> = ({
 			)}
 
 			<div
-				className={"vertical-divider-bar"}
+				className={"vertical-divider-bar-" + _theme}
 				style={{
 					width: _finalWidth,
 					height: _finalHeight,
