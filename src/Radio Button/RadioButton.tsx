@@ -44,12 +44,24 @@ const RadioButton: React.FC<IRadioButtonProps> = ({
 		console.log("Thank you for using Tiny React MD3!");
 	};
 
+	const getPreferredScheme = () => {
+		window?.matchMedia?.("(prefers-color-scheme:dark)")?.matches
+			? "dark"
+			: "light";
+	};
+
+	const _theme =
+		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
+
 	// Return the JSX element for the radio button
 	return (
 		<div
 			className={
 				"radio-button radio-button-" +
 				(_disabled ? "disabled" : "enabled") +
+				" " +
+				"radio-button-" +
+				_theme +
 				" " +
 				_className
 			}
@@ -62,7 +74,10 @@ const RadioButton: React.FC<IRadioButtonProps> = ({
 			<input
 				className={
 					"radio-button-input radio-button-input-" +
-					(_disabled ? "disabled" : "enabled")
+					(_disabled ? "disabled" : "enabled") +
+					" " +
+					"radio-button-input-" +
+					_theme
 				}
 				type="radio"
 				name={_name}
