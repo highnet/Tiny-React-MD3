@@ -1,3 +1,4 @@
+import { getPreferredScheme } from "../../TRMD3/Gizmos/Themeing";
 import VerticalDivider from "../VerticalDivider";
 
 /*
@@ -7,12 +8,6 @@ import VerticalDivider from "../VerticalDivider";
 */
 
 function VerticalDividersFrame() {
-	const getPreferredScheme = () => {
-		window?.matchMedia?.("(prefers-color-scheme:dark)")?.matches
-			? "dark"
-			: "light";
-	};
-
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 

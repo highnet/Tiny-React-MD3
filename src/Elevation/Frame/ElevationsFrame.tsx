@@ -4,13 +4,9 @@
   of depth and shadow for the div elements.
 */
 
-function ElevationsFrame() {
-	const getPreferredScheme = () => {
-		window?.matchMedia?.("(prefers-color-scheme:dark)")?.matches
-			? "dark"
-			: "light";
-	};
+import { getPreferredScheme } from "../../TRMD3/Gizmos/Themeing";
 
+function ElevationsFrame() {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 

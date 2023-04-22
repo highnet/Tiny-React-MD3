@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { initializeApp } from "firebase/app";
 import { getDownloadURL, getStorage, ref } from "firebase/storage";
+import { getPreferredScheme } from "../Gizmos/Themeing";
 
 const firebaseConfig = {
 	storageBucket: "gs://tiny-react-md3.appspot.com",
@@ -25,12 +26,6 @@ const Hero: React.FC<IHeroProps> = ({ hasLogo }) => {
 			setLogoUrl(url);
 		});
 	}, []);
-
-	const getPreferredScheme = () => {
-		window?.matchMedia?.("(prefers-color-scheme:dark)")?.matches
-			? "dark"
-			: "light";
-	};
 
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";

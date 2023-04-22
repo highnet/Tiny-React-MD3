@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Button from "../Button";
+import { getPreferredScheme } from "../../TRMD3/Gizmos/Themeing";
 
 /* 
   Buttons are an essential part of websites that inspire action and conversion. The button component can render 
@@ -16,12 +17,6 @@ import Button from "../Button";
 */
 
 function ButtonsFrame() {
-	const getPreferredScheme = () => {
-		window?.matchMedia?.("(prefers-color-scheme:dark)")?.matches
-			? "dark"
-			: "light";
-	};
-
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 

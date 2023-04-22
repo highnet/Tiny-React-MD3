@@ -1,6 +1,7 @@
 // Import React and some hooks from React library
 import React, { useState } from "react";
 import { ISwitchProps } from "./ISwitchProps";
+import { StringBuilder } from "../TRMD3/Gizmos/StringBuilder";
 
 /* 
   This code defines a React component for a switch that can be used to toggle between two states, such as on and off. 
@@ -54,6 +55,35 @@ const Switch: React.FC<ISwitchProps> = ({
 		click();
 	};
 
+	let _computedComponentClassName = new StringBuilder()
+		.add("switch")
+		.add("switch-" + (_selected ? "selected" : "deselected"))
+		.add("switch-" + (_disabled ? "disabled" : "enabled"))
+		.add("switch-" + (_icon ? "with" : "without") + "-icon")
+		.add(_className)
+		.toString();
+
+	let _computedComponentTrackClassName = new StringBuilder()
+		.add("switch-track")
+		.add("switch-track-" + (_selected ? "selected" : "deselected"))
+		.add("switch-track-" + (_disabled ? "disabled" : "enabled"))
+		.add("switch-track-" + (_icon ? "with" : "without") + "-icon")
+		.toString();
+
+	let _computedComponentHandleClassName = new StringBuilder()
+		.add("switch-handle")
+		.add("switch-handle-" + (_selected ? "selected" : "deselected"))
+		.add("switch-handle-" + (_disabled ? "disabled" : "enabled"))
+		.add("switch-handle-" + (_icon ? "with" : "without") + "-icon")
+		.toString();
+
+	let _computedComponentIconClassName = new StringBuilder()
+		.add("material-symbols-outlined")
+		.add("switch-icon")
+		.add("switch-icon-" + (_selected ? "selected" : "deselected"))
+		.add("switch-icon-" + (_disabled ? "disabled" : "enabled"))
+		.toString();
+
 	// Return the JSX element for the switch
 	return (
 		<div
@@ -62,63 +92,13 @@ const Switch: React.FC<ISwitchProps> = ({
 				handleClick();
 			}}
 			id={_id}
-			className={
-				"switch" +
-				" " +
-				"switch-" +
-				(_selected ? "selected" : "deselected") +
-				" " +
-				"switch-" +
-				(_disabled ? "disabled" : "enabled") +
-				" " +
-				"switch-" +
-				(_icon ? "with" : "without") +
-				"-icon" +
-				" " +
-				_className
-			}
+			className={_computedComponentClassName}
 		>
-			<div
-				className={
-					"switch-track switch-track-" +
-					(_selected ? "selected" : "deselected") +
-					" " +
-					"switch-track-" +
-					(_disabled ? "disabled" : "enabled") +
-					" " +
-					"switch-track-" +
-					(_icon ? "with" : "without") +
-					"-icon"
-				}
-			>
-				<div
-					className={
-						"switch-handle switch-handle-" +
-						(_selected ? "selected" : "deselected") +
-						" " +
-						"switch-handle-" +
-						(_disabled ? "disabled" : "enabled") +
-						" " +
-						"switch-handle-" +
-						(_icon ? "with" : "without") +
-						"-icon"
-					}
-				>
+			<div className={_computedComponentTrackClassName}>
+				<div className={_computedComponentHandleClassName}>
 					<div className={"switch-handle-overlay"}>
 						{_icon ? (
-							<span
-								className={
-									"material-symbols-outlined" +
-									" " +
-									"switch-icon" +
-									" " +
-									"switch-icon-" +
-									(_selected ? "selected" : "deselected") +
-									" " +
-									"switch-icon-" +
-									(_disabled ? "disabled" : "enabled")
-								}
-							>
+							<span className={_computedComponentIconClassName}>
 								{" "}
 								{_selected ? _iconNameSelected : _iconNameDeselected}{" "}
 							</span>

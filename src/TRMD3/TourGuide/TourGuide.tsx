@@ -1,14 +1,9 @@
 import Button from "../../Button/Button";
+import { getPreferredScheme } from "../Gizmos/Themeing";
 
 interface ITourGuide {}
 
 const TourGuide: React.FC<ITourGuide> = () => {
-	const getPreferredScheme = () => {
-		window?.matchMedia?.("(prefers-color-scheme:dark)")?.matches
-			? "dark"
-			: "light";
-	};
-
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 

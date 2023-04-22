@@ -15,29 +15,19 @@ import ThemeSwitcher from "./TRMD3/ThemeSwitcher/ThemeSwitcher";
 
 import hljs from "highlight.js";
 import "highlight.js/styles/base16/material-lighter.css";
-import Button from "./Button/Button";
 import Cookietrail from "./TRMD3/Cookietrail/Cookietrail";
 import TourGuide from "./TRMD3/TourGuide/TourGuide";
+import { getPreferredScheme, toggleTheme } from "./TRMD3/Gizmos/Themeing";
 
 function App() {
 	console.log(`	👋 Welcome to TRMD3! 👋	`);
-
-	const getPreferredScheme = () =>
-		window?.matchMedia?.("(prefers-color-scheme:dark)")?.matches
-			? "dark"
-			: "light";
 
 	const [theme, setTheme] = useState(
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme"
 	);
 
-	const toggleTheme = () => {
-		if (theme === "light-theme") {
-			setTheme("dark-theme");
-		} else {
-			setTheme("light-theme");
-		}
-		window.location.reload();
+	const handleToggleTheme = (): void => {
+		toggleTheme(theme, setTheme);
 	};
 
 	useEffect(() => {
@@ -54,7 +44,7 @@ function App() {
 			<Hero hasLogo={true} />
 			<Cookietrail />
 			<TourGuide />
-			<ThemeSwitcher toggleTheme={toggleTheme} />
+			<ThemeSwitcher toggleTheme={handleToggleTheme} />
 			<div
 				id="horizontal-dividers-section"
 				className={

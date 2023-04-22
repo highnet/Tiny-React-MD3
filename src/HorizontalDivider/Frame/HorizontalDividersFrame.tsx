@@ -1,3 +1,4 @@
+import { getPreferredScheme } from "../../TRMD3/Gizmos/Themeing";
 import HorizontalDivider from "../HorizontalDivider";
 
 /* 
@@ -7,12 +8,6 @@ import HorizontalDivider from "../HorizontalDivider";
 */
 
 function HorizontalDividersFrame() {
-	const getPreferredScheme = () => {
-		window?.matchMedia?.("(prefers-color-scheme:dark)")?.matches
-			? "dark"
-			: "light";
-	};
-
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 	return (

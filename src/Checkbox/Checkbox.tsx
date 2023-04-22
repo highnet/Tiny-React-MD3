@@ -1,6 +1,7 @@
 // Import React and some hooks from React library
 import React, { useState } from "react";
 import { ICheckboxProps } from "./ICheckboxProps";
+import { StringBuilder } from "../TRMD3/Gizmos/StringBuilder";
 
 /* 
   This code is used to create a custom checkbox component for React. It uses the ICheckboxProps interface to define the props
@@ -37,47 +38,38 @@ const Checkbox: React.FC<ICheckboxProps> = ({
 		setSelected(!_selected);
 	};
 
+	let _computedComponentClassName = new StringBuilder()
+		.add("checkbox")
+		.add("checkbox-" + _config)
+		.add("checkbox-" + (_selected ? "selected" : "deselected"))
+		.add("checkbox-" + (_disabled ? "disabled" : "enabled"))
+		.add(_className)
+		.toString();
+
+	let _computedComponentIconClassName = new StringBuilder()
+		.add("material-symbols-outlined")
+		.add("checkbox-icon")
+		.add("checkbox-icon-" + (_selected ? "selected" : "deselected"))
+		.toString();
+
+	let _computedComponentOverlayClassName = new StringBuilder()
+		.add("checkbox-overlay")
+		.add("checkbox-overlay-" + (_selected ? "selected" : "deselected"))
+		.add("checkbox-overlay-" + (_disabled ? "disabled" : "enabled"))
+		.toString();
+
 	// Return the JSX element for the checkbox
 	return (
 		<div
 			id={_id}
-			className={
-				"checkbox " +
-				"checkbox-" +
-				_config +
-				" " +
-				"checkbox-" +
-				(_selected ? "selected" : "deselected") +
-				" " +
-				"checkbox-" +
-				(_disabled ? "disabled" : "enabled") +
-				" " +
-				_className
-			}
+			className={_computedComponentClassName}
 			onClick={(e) => {
 				onChange?.(e);
 				handleClick();
 			}}
 		>
-			<span
-				className={
-					"material-symbols-outlined checkbox-icon " +
-					"checkbox-icon-" +
-					(_selected ? "selected" : "deselected")
-				}
-			>
-				check
-			</span>
-			<div
-				className={
-					"checkbox-overlay " +
-					"checkbox-overlay-" +
-					(_selected ? "selected" : "deselected") +
-					" " +
-					"checkbox-overlay-" +
-					(_disabled ? "disabled" : "enabled")
-				}
-			></div>
+			<span className={_computedComponentIconClassName}>check</span>
+			<div className={_computedComponentOverlayClassName}></div>
 
 			{children}
 		</div>

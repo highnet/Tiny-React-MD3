@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { IBadgeProps } from "./IBadgeProps";
+import { StringBuilder } from "../TRMD3/Gizmos/StringBuilder";
 
 /*  
 	This code defines a Badge component that renders a small circular indicator that can be used to show counts, 
@@ -27,18 +28,27 @@ const Badge: React.FC<IBadgeProps> = ({
 	const [_yOffset] = useState(yOffset || 0); // State for the y offset of the badge
 	const [_label] = useState(label || ""); // State for the label of the badge
 
-	let _finalXOffset: string = _xOffset.toString() + "%"; // Final x offset value
-	let _finalYOffset: string = _yOffset.toString() + "%"; // Final y offset value
+	let _computedXOffset: string = _xOffset.toString() + "%"; // Final x offset value
+	let _computedYOffset: string = _yOffset.toString() + "%"; // Final y offset value
+
+	let _computedComponentClassName = new StringBuilder()
+		.add("badge")
+		.add("badge-" + _config)
+		.toString();
 
 	// Return the JSX element for the badge
 	return (
 		<div
 			id={_id}
-			className={"badge badge-" + _config}
-			style={{ marginLeft: _finalXOffset, marginTop: _finalYOffset }}
+			className={_computedComponentClassName}
+			style={{ marginLeft: _computedXOffset, marginTop: _computedYOffset }}
 		>
 			<div
-				style={{ paddingLeft: "4px", paddingRight: "4px", margin: "0 auto" }}
+				style={{
+					paddingLeft: "6px",
+					paddingRight: "6px",
+					margin: "0 auto",
+				}}
 				className="text text-label text-label-small"
 			>
 				{_label}

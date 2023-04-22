@@ -1,3 +1,4 @@
+import { getPreferredScheme } from "../../TRMD3/Gizmos/Themeing";
 import Badge from "../Badge";
 
 /*  
@@ -8,12 +9,6 @@ import Badge from "../Badge";
 */
 
 function BadgesFrame() {
-	const getPreferredScheme = () => {
-		window?.matchMedia?.("(prefers-color-scheme:dark)")?.matches
-			? "dark"
-			: "light";
-	};
-
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 

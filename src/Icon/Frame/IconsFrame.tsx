@@ -5,13 +5,9 @@
   different names and styles. 
 */
 
-function IconsFrame() {
-	const getPreferredScheme = () => {
-		window?.matchMedia?.("(prefers-color-scheme:dark)")?.matches
-			? "dark"
-			: "light";
-	};
+import { getPreferredScheme } from "../../TRMD3/Gizmos/Themeing";
 
+function IconsFrame() {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 

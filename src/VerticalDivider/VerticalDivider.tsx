@@ -1,6 +1,8 @@
 // Import React and some hooks from React library
 import React, { useState } from "react";
 import { IVerticalDividerProps } from "./IVerticalDividerProps";
+import { getPreferredScheme } from "../TRMD3/Gizmos/Themeing";
+import { StringBuilder } from "../TRMD3/Gizmos/StringBuilder";
 
 /* 
   This code defines a React component for a vertical divider that can be used to separate two sections of content vertically. 
@@ -48,18 +50,17 @@ const VerticalDivider: React.FC<IVerticalDividerProps> = ({
 	let _finalInsetBottomHeight = _insetBottomHeight + "px";
 	let _finalInsetColor: string = _showInsets ? "red" : "transparent"; // Final inset color
 
-	const getPreferredScheme = () => {
-		window?.matchMedia?.("(prefers-color-scheme:dark)")?.matches
-			? "dark"
-			: "light";
-	};
-
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
+	let _computedComponentClassName = new StringBuilder()
+		.add("vertical-divider")
+		.add(_className)
+		.toString();
+
 	// Return the JSX element for the vertical divider
 	return (
-		<div id={_id} className={"vertical-divider" + " " + _className}>
+		<div id={_id} className={_computedComponentClassName}>
 			{_inset == "top" || _inset == "center" ? (
 				<div
 					className={"vertical-divider-inset-top"}

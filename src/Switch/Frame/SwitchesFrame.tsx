@@ -1,3 +1,4 @@
+import { getPreferredScheme } from "../../TRMD3/Gizmos/Themeing";
 import Switch from "../Switch";
 
 /*
@@ -11,12 +12,6 @@ import Switch from "../Switch";
 */
 
 function SwitchesFrame() {
-	const getPreferredScheme = () => {
-		window?.matchMedia?.("(prefers-color-scheme:dark)")?.matches
-			? "dark"
-			: "light";
-	};
-
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 

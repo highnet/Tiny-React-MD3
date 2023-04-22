@@ -1,6 +1,7 @@
 // Import React and some hooks from React library
 import React, { useState } from "react";
 import { IButtonProps } from "./IButtonProps";
+import { StringBuilder } from "../TRMD3/Gizmos/StringBuilder";
 
 /*
 	The button component can render different styles of buttons based on the configuration prop, which can be either “filled”
@@ -27,7 +28,13 @@ const Button: React.FC<IButtonProps> = ({
 	const [_config] = useState(configuration || "filled");
 	const [_icon] = useState(icon || false);
 	const [_iconName] = useState(iconName || "search");
-	const _theme = document.body.className;
+
+	let _computedComponentClassName = new StringBuilder()
+		.add("btn")
+		.add("btn-" + _config)
+		.add("btn-" + (_icon ? "with" : "without") + "-icon")
+		.add(_className)
+		.toString();
 
 	// Define click function
 	const click = () => {
@@ -39,16 +46,7 @@ const Button: React.FC<IButtonProps> = ({
 		<button
 			id={_id}
 			// Set the class name based on the current configuration
-			className={
-				"btn btn-" +
-				_config +
-				" " +
-				"btn-" +
-				(_icon ? "with" : "without") +
-				"-icon" +
-				" " +
-				_className
-			}
+			className={_computedComponentClassName}
 			disabled={_disabled}
 			// Set the onClick handler to execute the prop function
 			onClick={(e) => {

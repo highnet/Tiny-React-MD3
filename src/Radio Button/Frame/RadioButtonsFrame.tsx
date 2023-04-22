@@ -1,3 +1,4 @@
+import { getPreferredScheme } from "../../TRMD3/Gizmos/Themeing";
 import RadioButton from "../RadioButton";
 
 /*
@@ -8,12 +9,6 @@ import RadioButton from "../RadioButton";
 */
 
 function RadioButtonsFrame() {
-	const getPreferredScheme = () => {
-		window?.matchMedia?.("(prefers-color-scheme:dark)")?.matches
-			? "dark"
-			: "light";
-	};
-
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 

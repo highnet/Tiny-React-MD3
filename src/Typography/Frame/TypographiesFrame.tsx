@@ -4,13 +4,9 @@
     Each variant has three subvariants: large, medium, and small.
 */
 
-function TypographiesFrame() {
-	const getPreferredScheme = () => {
-		window?.matchMedia?.("(prefers-color-scheme:dark)")?.matches
-			? "dark"
-			: "light";
-	};
+import { getPreferredScheme } from "../../TRMD3/Gizmos/Themeing";
 
+function TypographiesFrame() {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 

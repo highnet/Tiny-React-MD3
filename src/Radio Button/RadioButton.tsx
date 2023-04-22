@@ -1,6 +1,8 @@
 // Import React and some hooks from React library
 import React, { useState } from "react";
 import { IRadioButtonProps } from "./IRadioButtonProps";
+import { getPreferredScheme } from "../TRMD3/Gizmos/Themeing";
+import { StringBuilder } from "../TRMD3/Gizmos/StringBuilder";
 
 /* 
   This code defines a React component for a radio button that can be used in a form or a survey. 
@@ -44,27 +46,26 @@ const RadioButton: React.FC<IRadioButtonProps> = ({
 		console.log("Thank you for using Tiny React MD3!");
 	};
 
-	const getPreferredScheme = () => {
-		window?.matchMedia?.("(prefers-color-scheme:dark)")?.matches
-			? "dark"
-			: "light";
-	};
-
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
+
+	let _computedComponentClassName = new StringBuilder()
+		.add("radio-button")
+		.add("radio-button-" + (_disabled ? "disabled" : "enabled"))
+		.add("radio-button-" + _theme)
+		.add(_className)
+		.toString();
+
+	let _computedComponentInputClassName = new StringBuilder()
+		.add("radio-button-input")
+		.add("radio-button-input-" + (_disabled ? "disabled" : "enabled"))
+		.add("radio-button-input-" + _theme)
+		.toString();
 
 	// Return the JSX element for the radio button
 	return (
 		<div
-			className={
-				"radio-button radio-button-" +
-				(_disabled ? "disabled" : "enabled") +
-				" " +
-				"radio-button-" +
-				_theme +
-				" " +
-				_className
-			}
+			className={_computedComponentClassName}
 			id={_id}
 			onClick={(e) => {
 				onClick?.(e);
@@ -72,13 +73,7 @@ const RadioButton: React.FC<IRadioButtonProps> = ({
 			}}
 		>
 			<input
-				className={
-					"radio-button-input radio-button-input-" +
-					(_disabled ? "disabled" : "enabled") +
-					" " +
-					"radio-button-input-" +
-					_theme
-				}
+				className={_computedComponentInputClassName}
 				type="radio"
 				name={_name}
 				value={_value}
