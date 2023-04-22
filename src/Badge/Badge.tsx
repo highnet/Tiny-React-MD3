@@ -36,6 +36,14 @@ const Badge: React.FC<IBadgeProps> = ({
 		.add("badge-" + _config)
 		.toString();
 
+	let _computedComponentLabelClassName = new StringBuilder()
+		.add("text")
+		.add("text-label")
+		.add("text-label-small")
+		.add("badge-label-text")
+		.add("badge-label-text-" + _config)
+		.toString();
+
 	// Return the JSX element for the badge
 	return (
 		<div
@@ -43,16 +51,7 @@ const Badge: React.FC<IBadgeProps> = ({
 			className={_computedComponentClassName}
 			style={{ marginLeft: _computedXOffset, marginTop: _computedYOffset }}
 		>
-			<div
-				style={{
-					paddingLeft: "6px",
-					paddingRight: "6px",
-					margin: "0 auto",
-				}}
-				className="text text-label text-label-small"
-			>
-				{_label}
-			</div>
+			<div className={_computedComponentLabelClassName}>{_label}</div>
 			{children}
 		</div>
 	);

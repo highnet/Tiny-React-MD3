@@ -564,6 +564,20 @@
 	display: inline-block;
 }
 
+.badge-label-text {
+	padding-left: 6px;
+	padding-right: 6px;
+	margin: 0 auto;
+}
+
+.badge-label-text-single-digit {
+	font-weight: bold;
+}
+
+.badge-label-text-multiple-digit {
+	font-weight: normal;
+}
+
 /* RADIO BUTTONS */
 
 input[type="radio"] {
