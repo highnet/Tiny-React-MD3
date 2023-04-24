@@ -1,11 +1,20 @@
 import { IComponentProps } from "../Component/IComponentProps";
 
 /*  
-    This code defines an IBadgeProps interface that extends the IComponentProps interface and specifies the types of 
-    the props for the Badge component. The props include configuration, xOffset, yOffset and label. The configuration 
-    prop determines the size of the badge (small, single-digit or multiple-digits). The xOffset and yOffset props adjust
-    the position of the badge relative to its parent element. The label prop displays a number on the badge if provided. 
-    The interface also inherits the id and className props from the IComponentProps interface.
+    1
+    1682360238
+
+    This code defines an interface called "IBadgeProps" which extends another interface
+    called "IComponentProps".
+
+    The "IBadgeProps" interface includes four optional props: "configuration" is a
+    string prop that specifies the configuration of the badge. "xOffset" is a number
+    prop that specifies the X offset of the badge. "yOffset" is a number prop that
+    specifies the Y offset of the badge. "label" is a string prop that specifies the
+    label of the badge.
+
+    These props are used in the "Badge" component to customize the appearance and
+    positioning of the badge element.
 */
 
 // Define an interface for the badge props

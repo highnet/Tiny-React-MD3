@@ -2,10 +2,22 @@ import { getPreferredScheme } from "../../TRMD3/Gizmos/Themeing";
 import Badge from "../Badge";
 
 /*  
-  Badges come in different sizes and numbers, and are small circular indicators that can be used to show counts, statuses, or notifications 
-  on other elements. The Badge component takes a configuration prop to specify the size of the badge,
-  an xOffset and yOffset prop to adjust the position of the badge relative to its parent element,
-  and an optional label prop to display a number on the badge.
+	1	
+	1682360238
+	
+	This function returns a React component called "BadgesFrame" which displays
+	a set of badges of different configurations.
+
+	The component first gets the preferred theme from local storage or the user's
+	system preferences and applies it to the class name of the component.
+
+	The component then displays three badges of different configurations: small,
+	single-digit, and multiple-digits. The badges are displayed inside a div with
+	the class "badge-box-trmd3". Each badge has its own label and offsets for
+	positioning.
+
+	The HTML code for each badge is also displayed below each badge using the "pre"
+	and "code" elements with the "language-html" class.
 */
 
 function BadgesFrame() {

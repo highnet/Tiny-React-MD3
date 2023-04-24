@@ -3,12 +3,29 @@ import { IBadgeProps } from "./IBadgeProps";
 import { StringBuilder } from "../TRMD3/Gizmos/StringBuilder";
 
 /*  
-	This code defines a Badge component that renders a small circular indicator that can be used to show counts, 
-	statuses or notifications on other elements. The component takes props for the id, className, configuration,
-	xOffset, yOffset and label of the badge. The configuration prop determines the size of the badge (small, single-digit or multiple-digits). 
-	The xOffset and yOffset props adjust the position of the badge relative to its parent element. The label prop displays a number on the badge
-	if provided. The component also accepts children elements that can be rendered inside the badge. The component uses React hooks to store the
-	props in state variables and applies some styles to the badge element based on the configuration and offsets.
+	1
+	1682360238
+
+	This code defines a React functional component called "Badge". The component creates
+	a badge element that can be customized with several props such as "children", "id",
+	"className", "configuration", "xOffset", "yOffset", and "label".
+
+	The useState hook is used to create several state variables that hold the values passed
+	via the corresponding props. If no value is passed, a default value is used instead.
+
+	The "_computedXOffset" and "_computedYOffset" variables calculate the final values
+	for the X and Y offsets respectively. These values are computed based on the "xOffset"
+	and "yOffset" values passed via props and converted to a string with a percent sign.
+
+	The "_computedComponentClassName" and "_computedComponentLabelClassName" variables
+	hold the CSS class names for the badge element and label element respectively. These
+	class names are constructed using the StringBuilder class and concatenated with the
+	configuration value passed via props.
+
+	Finally, the JSX element for the badge is returned. It is a <div> element with an
+	optional "id" and "className" attribute. The computed X and Y offsets are applied
+	using the "style" attribute. The label and children (if any) are rendered within the
+	<div> element.
 */
 
 // Define a functional component for the badge
