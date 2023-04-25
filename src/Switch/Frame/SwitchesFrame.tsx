@@ -2,13 +2,20 @@ import { getPreferredScheme } from "../../TRMD3/Gizmos/Themeing";
 import Switch from "../Switch";
 
 /*
-  The Switch component is essentially toggle button that can be selected or deselected by the user.
-  The props are: selected: a boolean value that indicates whether the switch is on or off
-  onChange: a function that is called when the user clicks on the switch
-  disabled: a boolean value that indicates whether the switch is interactive or not
-  icon: a boolean value that indicates whether the switch has an icon or not
-  iconNameSelected: a string that specifies the name of the icon when the switch is on
-  iconNameDeselected: a string that specifies the name of the icon when the switch is off 
+	1
+	1682360238
+
+	The SwitchesFrame function returns a set of four switches in a frame. Each switch can be
+	toggled on and off by the user, and may or may not include an icon. The theme of the
+	switches is determined by the user's preferred scheme, which is obtained from local
+	storage.
+
+	The first switch has no icon and is labeled "No Icon." The second switch also has no
+	icon, but is labeled "No Icon (Inactive)" and cannot be toggled because it is disabled.
+	The third switch has an icon and is labeled "With Icon." The icon changes depending on
+	whether the switch is on or off, and the available icons are "warning" and "house".
+	The fourth switch is similar to the second one, but also includes an icon and is labeled
+	"With Icon (Inactive)."
 */
 
 function SwitchesFrame() {

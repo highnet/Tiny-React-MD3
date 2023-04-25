@@ -2,12 +2,18 @@ import { IComponentProps } from "../Component/IComponentProps";
 import { MouseEvent } from "react";
 
 /*
-  This code is used to define an interface for the props of a radio button component.
-  It extends the IComponentProps interface, which contains common props for all components, such as id and className.
-  It also adds four specific props for the radio button component: onClick, name, value, and defaultChecked.
-  The onClick prop is a function that takes a mouse event as an argument and performs some action when the radio button is clicked.
-  The name prop is a string that groups the radio buttons together. The value prop is a string that assigns a value to each radio button.
-  The defaultChecked prop is a boolean that determines whether or not the radio button is checked by default. 
+  1
+  1682423199
+
+  This code defines an interface for the properties that can be passed to a
+  React functional component called RadioButton. The interface includes several
+  props, such as onClick, name, value, and defaultChecked. The onClick prop is a
+  function that handles the click event of the radio button. The name and value
+  props define the name and value of the radio button, respectively. The
+  defaultChecked prop determines whether the radio button is checked by default.
+  The interface extends another interface called IComponentProps, which likely
+  includes more general properties that are common to all components in the
+  application.
 */
 
 // Define an interface for the radio button props

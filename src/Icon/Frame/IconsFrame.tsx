@@ -1,8 +1,13 @@
 /*
-  Each icon is a span element with a class name of “material-symbols-outlined”, which uses a custom font to render the icons.
-  The icons are specified by the text content of the span elements, such as “search”, “home”, “air”,
-  “water”, or “check”. The code demonstrates how to use the material symbols font to create icons with
-  different names and styles. 
+	1
+	1682423199
+
+	The code defines a React function component called IconsFrame.
+	The component retrieves the preferred color scheme of the user from localStorage.
+	The component returns a div with a combination of class names for styling.
+	The div includes several child elements that represent icons.
+	Each child element has a class name corresponding to a Material symbol.
+	Each child element also has a code block displaying the HTML code used to create it
 */
 
 import { getPreferredScheme } from "../../TRMD3/Gizmos/Themeing";

@@ -1,8 +1,12 @@
 /* 
-  This code is used to define an interface for the common props of all components. It includes four props: disabled, children, id,
-  and className. The disabled prop is a boolean that determines whether or not the component is disabled and cannot be interacted
-  with. The children prop is a React node that represents the child elements of the component. The id prop is a string that assigns
-  a unique identifier to the component. The className prop is a string that assigns a class name to the component for styling purposes.
+1
+1682423199
+
+This code defines an interface called IComponentProps that has four optional properties.
+disabled: a boolean that represents whether or not the component is disabled.
+children: a React node that represents the child elements of the component.
+id: a string that represents the ID of the component.
+className: a string that represents the class name of the component.
 */
 
 export interface IComponentProps {

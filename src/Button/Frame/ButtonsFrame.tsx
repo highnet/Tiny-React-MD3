@@ -3,17 +3,32 @@ import Button from "../Button";
 import { getPreferredScheme } from "../../TRMD3/Gizmos/Themeing";
 
 /* 
-  Buttons are an essential part of websites that inspire action and conversion. The button component can render 
-  different styles of buttons based on the configuration prop, which can be either “filled” or “outlined”. 
-  It can also render an optional icon inside the button text based on the icon and iconName props. 
-  The button component also has a default click function that logs a message to the console.
-  The props for the Button component are:
-  configuration: a string that specifies the style of the button, such as “filled” or “outlined”.
-  disabled: a boolean value that indicates whether the button is interactive or not.
-  onClick: a function that is called when the user clicks on the button.
-  icon: a boolean value that indicates whether the button has an icon or not.
-  iconName: a string that specifies the name of the icon, such as “search” or “home”. The text inside the
-  button is wrapped in a div with a text-label class to apply some styling. 
+	1
+	1682423199
+
+	The code defines a functional component called ButtonsFrame. The component
+	returns a collection of buttons with different configurations (filled, outlined,
+	text, elevated, and tonal) and states (enabled or disabled) for each
+	configuration.
+
+	The component also allows the addition of icons to the buttons when desired.
+	Each button has a label indicating whether it is enabled or disabled. The
+	component uses the localStorage API to check for the theme preference set by
+	the user and applies the corresponding CSS class to the button container.
+
+	The code includes HTML and CSS classes that determine the layout and styling of
+	the buttons. The HTML is wrapped in a div container with a flex display and
+	several CSS classes that determine the layout and theme of the buttons.
+
+	The button configurations and properties are passed as props to the Button
+	component, which is imported from another module. The Button component is
+	responsible for rendering each button with its respective configuration and
+	properties. The button labels and icon names are passed as children props to
+	the Button component.
+
+	The code also includes a <pre> element containing a <code> element with the
+	HTML code that should be used to create each button, which can be copied and
+	pasted to use in other parts of the application.
 */
 
 function ButtonsFrame() {

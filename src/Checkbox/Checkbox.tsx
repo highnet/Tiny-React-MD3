@@ -4,12 +4,26 @@ import { ICheckboxProps } from "./ICheckboxProps";
 import { StringBuilder } from "../TRMD3/Gizmos/StringBuilder";
 
 /* 
-  This code is used to create a custom checkbox component for React. It uses the ICheckboxProps interface to define the props
-  for the checkbox, such as disabled, id, className, configuration, onChange, and selected. The checkbox component can render
-  different styles of checkboxes based on the configuration prop, which can be either “default” or “error”. It can also render
-  an optional text after the checkbox icon based on the children prop. The checkbox component also has a default click function
-  that logs a message to the console. The code uses React hooks to initialize and manage the state variables for the checkbox props
-  and the selected state. The code returns a JSX element for the checkbox with the appropriate class names and event handlers.
+	1
+	1682423199
+
+	This code is a functional component called Checkbox that creates a checkbox
+	element in React.
+
+	The component uses states for disabled, id, className, configuration, and
+	selected, which can be initialized with provided props or default values.
+
+	The component has two functions: click that logs a message to the console, and
+	handleClick that updates the selected state and triggers the click function.
+
+	The component uses a StringBuilder to build class names for the different
+	components of the checkbox based on the states and props.
+
+	The returned JSX element includes an icon and overlay element, and any child
+	elements provided.
+
+	The onChange prop is called when the checkbox is clicked, and the handleClick
+	function updates the selected state and triggers the click function.
 */
 
 // Define a functional component for the checkbox

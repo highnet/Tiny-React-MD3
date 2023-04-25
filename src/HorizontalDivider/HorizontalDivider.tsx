@@ -5,14 +5,17 @@ import { getPreferredScheme } from "../TRMD3/Gizmos/Themeing";
 import { StringBuilder } from "../TRMD3/Gizmos/StringBuilder";
 
 /*
-  This code is used to create a custom horizontal divider component for React.
-  It uses the IHorizontalDividerProps interface to define the props for the divider,
-  such as id, className, height, width, inset, insetRightWidth, insetLeftWidth, and showInsets.
-  The divider component can render different styles of dividers based on the inset prop, which determines
-  how much space is left on the left and right sides of the divider. The inset prop can be either “none”, “right”,
-  “left”, or “center”. The divider component also has a showInsets prop that controls whether or not to show the inset
-  spaces with a different color. The code uses React hooks to initialize and manage the state variables for the divider props.
-  The code returns a JSX element for the divider with the appropriate styles and class names. 
+	1
+	1682423199
+
+	The code defines a React function component called HorizontalDivider that accepts props.
+	The props include optional values for ID, class name, height, width, inset, insetRightWidth, insetLeftWidth, and showInsets.
+	The component initializes state variables for each of the props.
+	The component calculates various styles based on the props and state variables.
+	The component uses StringBuilder to build a class name for the component.
+	The component returns a div element that includes one or two inset divs and a horizontal bar div.
+	The horizontal bar div has a class name based on the theme, and its width and height are based on the props and state variables.
+	The inset divs, if present, have their width, height, and color based on the props and state variables
 */
 
 // Define a functional component for the horizontal divider

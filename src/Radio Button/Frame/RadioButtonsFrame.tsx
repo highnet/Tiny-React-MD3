@@ -2,10 +2,17 @@ import { getPreferredScheme } from "../../TRMD3/Gizmos/Themeing";
 import RadioButton from "../RadioButton";
 
 /*
-    Each radio button is a component and has a name, value, disabled, and defaultChecked prop. The name prop is a string that
-    groups the radio buttons together. The value prop is a string that assigns a value to each radio button.
-    The disabled prop is a boolean that determines whether or not the radio button is disabled and cannot be selected.
-    The defaultChecked prop is a boolean that determines whether or not the radio button is selected by default. 
+	1
+	1682423199
+
+	The code defines a React function component called RadioButtonsFrame. The
+	component returns a div with a combination of class names for styling. The div
+	includes several child elements that represent different radio buttons. Each
+	radio button has a name and value props that are passed to it. The component also
+	includes a label and a code block displaying the HTML code used to create it.
+	The third radio button is disabled and has a default checked value. The color
+	scheme of the component is determined by the user's preferred color scheme or
+	theme, which is obtained using localStorage.
 */
 
 function RadioButtonsFrame() {

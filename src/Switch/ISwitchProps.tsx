@@ -2,17 +2,25 @@ import { IComponentProps } from "../Component/IComponentProps";
 import { MouseEvent } from "react";
 
 /*
-  This code defines an interface for the props of a switch component. A switch is a graphical user interface
-  element that allows the user to toggle between two states, such as on and off. The interface extends from the
-  IComponentProps interface, which defines some common props for all components, such as id, className, and style.
-  The interface also defines some specific props for the switch component, such as:
-  selected: a boolean value that indicates whether the switch is selected or not
-  onChange: a function that is executed when the switch is changed by the user
-  icon: a boolean value that indicates whether to display an icon in the switch or not
-  iconNameSelected: a string value that specifies the name of the icon to display when the switch is selected
-  iconNameDeselected: a string value that specifies the name of the icon to display when the switch is deselected
-  The interface is exported so it can be imported and used in other files.
- */
+  1
+  1682360238 
+  
+  This code exports an interface called ISwitchProps, which is used to define the properties
+  of a switch component. The ISwitchProps interface extends another interface called
+  IComponentProps.
+
+  The ISwitchProps interface includes several properties that define the behavior and
+  appearance of the switch component. These properties include "selected", which is a boolean
+  value that determines whether the switch is selected or not, and "onChange", which is a
+  function that handles the change event of the switch.
+
+  The "icon" property is another boolean value that indicates whether an icon should be
+  displayed in the switch. The "iconNameSelected" and "iconNameDeselected" properties determine
+  the name of the icon to be displayed when the switch is selected or deselected.
+
+  Together, these properties define the behavior and appearance of a switch component, and
+  can be used to customize its functionality in an application.
+*/
 
 // Define an interface for the switch props
 export interface ISwitchProps extends IComponentProps {

@@ -1,4 +1,17 @@
-// TODO: needs documentation
+/*
+	1
+	1682423199
+
+	The code defines a React functional component called Cookietrail, which
+	doesn't receive any properties. The component initializes a variable called
+	_theme to determine the user's preferred color scheme. The component returns a
+	div element with a class name based on the theme. The div includes two child
+	elements, each of them being a Button component with different properties such
+	as configuration, disabled, icon, iconName, onClick, and className. The Buttons
+	have icons and labels, and clicking on them opens a link in a new tab. The
+	component is likely used to display links to documentation or additional
+	resources for the user.
+*/
 
 import Button from "../../Button/Button";
 import { getPreferredScheme } from "../Gizmos/Themeing";
