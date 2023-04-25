@@ -34,6 +34,7 @@ const Badge: React.FC<IBadgeProps> = ({
 	let _computedComponentClassName = new StringBuilder()
 		.add("badge")
 		.add("badge-" + _config)
+		.add(_className)
 		.toString();
 
 	let _computedComponentLabelClassName = new StringBuilder()
