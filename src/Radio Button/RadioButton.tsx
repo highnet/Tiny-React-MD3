@@ -5,23 +5,20 @@ import { getPreferredScheme } from "../TRMD3/Gizmos/Themeing";
 import { StringBuilder } from "../TRMD3/Gizmos/StringBuilder";
 
 /* 
-  This code defines a React component for a radio button that can be used in a form or a survey. 
-  A radio button is a graphical user interface element that allows the user to choose one option from a set of mutually exclusive options. 
-  The component takes some props that customize its appearance and behavior, such as:
-  - disabled: a boolean value that indicates whether the button is disabled or not
-  - children: the content to be displayed next to the button, such as a label or an icon
-  - id: a string value that identifies the button element
-  - className: a string value that adds additional CSS classes to the button element
-  - onClick: a function that is executed when the button is clicked
-  - name: a string value that groups the radio buttons with the same name together
-  - value: a string value that represents the value of the button
-  - defaultChecked: a boolean value that indicates whether the button is checked by default or not
+	1
+	1682423199
 
-  The component uses some state variables to store the props values and updates them accordingly. 
-  It also defines a click function that logs a message to the console when the button is clicked. 
-  The component returns a JSX element that renders the button and its content using HTML input and div elements. 
-  The component uses some CSS classes to style the button based on its state and props. 
-  The component is exported as default so it can be imported and used in other files.
+	The code defines a React function component called RadioButton, which receives
+	a series of properties through an interface called IRadioButtonProps. These
+	properties include the disabled, children, id, className, onClick, name, value,
+	and defaultChecked props. The component initializes state variables to manage
+	these properties. The component also defines a function called click that logs a
+	message to the console when the radio button is clicked. The component uses the
+	localStorage API to determine the user's preferred color scheme and applies
+	appropriate class names for styling. Finally, the component returns a JSX
+	element for the radio button, which includes an input element and the children
+	of the component. The onClick function passed as a prop is called when the radio
+	button is clicked, followed by the click function defined in the component.
 */
 
 // Define a functional component for the radio button

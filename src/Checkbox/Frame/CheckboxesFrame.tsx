@@ -2,11 +2,19 @@ import { getPreferredScheme } from "../../TRMD3/Gizmos/Themeing";
 import Checkbox from "../Checkbox";
 
 /* 
-  Checkboxes can have different configurations, states, and styles.
-  selected: a boolean value that indicates whether the checkbox is checked or not
-  onChange: a function that is called when the user clicks on the checkbox
-  configuration: a string that specifies the style of the checkbox, such as “default” or “error”
-  disabled: a boolean value that indicates whether the checkbox is interactive or not
+	1
+	1682423199
+
+	The code defines a function called CheckboxesFrame() that returns a div container with four different types
+	of checkboxes inside it. The appearance of the container and checkboxes is determined by several CSS classes
+	added to the className attribute of the div.
+
+	Each checkbox is represented by a Checkbox component with various props, such as selected, onChange,
+	configuration, and disabled. The props are used to specify the appearance and behavior of the checkboxes.
+
+	The checkboxes are grouped into two categories: default and error. Each category has an active and an inactive
+	checkbox. The text describing each checkbox is displayed in a div element with a label, and a pre element with
+	a code example inside that shows how to create the checkbox using HTML.
 */
 
 function CheckboxesFrame() {

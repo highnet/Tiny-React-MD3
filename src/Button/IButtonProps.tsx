@@ -2,12 +2,14 @@ import { IComponentProps } from "../Component/IComponentProps";
 import { MouseEvent } from "react";
 
 /* 
-  This code is used to define an interface for the props of a button component. It extends the IComponentProps interface, 
-  which contains common props for all components, such as id and className. It also adds four specific props for the button
-  component: onClick, configuration, icon, and iconName. The onClick prop is a function that takes a mouse event as an argument
-  and performs some action when the button is clicked. The configuration prop is a string that determines the style of the button,
-  such as “filled” or “outlined”. The icon prop is a boolean that indicates whether the button has an icon before the text. The
-  iconName prop is a string that specifies the name of the icon to use. 
+  1
+  1682423199
+
+  IButtonProps is an interface that extends IComponentProps and includes optional properties such as onClick, configuration, icon, and iconName.
+  onClick is a function that executes when the button is clicked.
+  configuration determines the visual style of the button.
+  icon is a boolean that specifies whether the button has an icon.
+  iconName is a string that contains the name of the icon displayed in the button. 
 */
 
 // Define an interface for the button props

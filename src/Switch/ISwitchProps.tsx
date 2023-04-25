@@ -20,7 +20,7 @@ import { MouseEvent } from "react";
 
   Together, these properties define the behavior and appearance of a switch component, and
   can be used to customize its functionality in an application.
- */
+*/
 
 // Define an interface for the switch props
 export interface ISwitchProps extends IComponentProps {

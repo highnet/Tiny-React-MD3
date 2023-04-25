@@ -2,9 +2,16 @@ import { getPreferredScheme } from "../../TRMD3/Gizmos/Themeing";
 import HorizontalDivider from "../HorizontalDivider";
 
 /* 
-  Dividers have an inset prop that determines how much space is left on the left and right sides of the divider. The inset prop can be either
-  “none”, “right”, “left”, or “center”. The dividers also have a showInsets prop that controls whether
-  or not to show the inset spaces with a different color.
+	1
+	1682423199
+
+	The code creates a React functional component called HorizontalDividersFrame.
+	The component gets the preferred color scheme of the user from localStorage.
+	The component returns a div with a combination of class names for styling.
+	The div includes several child elements that represent horizontal dividers.
+	Each child element has a different inset value for positioning.
+	Each child element has a prop for showing or hiding the insets.
+	Each child element also has a code block displaying the HTML code used to create it.
 */
 
 function HorizontalDividersFrame() {

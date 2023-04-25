@@ -4,10 +4,21 @@ import { IButtonProps } from "./IButtonProps";
 import { StringBuilder } from "../TRMD3/Gizmos/StringBuilder";
 
 /*
-	The button component can render different styles of buttons based on the configuration prop, which can be either “filled”
-  or “outlined”. It can also render an optional icon inside the button text based on the icon and iconName props. The button
-  component also has a default click function that logs a message to the console. The code uses React hooks to initialize
-  and manage the state variables for the button props.
+	1
+	1682423199
+
+	This code defines a React functional component called Button that takes in
+	several props, including whether the button is disabled, its ID, a class name,
+	an onClick function, and the button's configuration.
+
+	State variables are used to set default values for the props. A string of class
+	names is created based on the current configuration and whether the button has
+	an icon.
+
+	A click function logs a message to the console when the button is clicked. The
+	component returns a button JSX element with the appropriate props and class
+	names, including a span element with the icon's name if the button has an icon.
+	The onClick function is set to execute the prop function and the click function.
 */
 
 // Define a functional component for the button
