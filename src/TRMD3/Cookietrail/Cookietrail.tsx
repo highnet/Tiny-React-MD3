@@ -14,7 +14,7 @@
 */
 
 import Button from "../../Button/Button";
-import { getPreferredScheme } from "../Gizmos/Themeing";
+import { getPreferredScheme } from "../../Gizmos/Themeing";
 
 interface ICookietrailProps {}
 

@@ -4,7 +4,7 @@
     Each variant has three subvariants: large, medium, and small.
 */
 
-import { getPreferredScheme } from "../../TRMD3/Gizmos/Themeing";
+import { getPreferredScheme } from "../../Gizmos/Themeing";
 
 function TypographiesFrame() {
 	const _theme =

@@ -17,7 +17,7 @@ import hljs from "highlight.js";
 import "highlight.js/styles/base16/material-lighter.css";
 import Cookietrail from "./TRMD3/Cookietrail/Cookietrail";
 import TourGuide from "./TRMD3/TourGuide/TourGuide";
-import { getPreferredScheme, toggleTheme } from "./TRMD3/Gizmos/Themeing";
+import { getPreferredScheme, toggleTheme } from "./Gizmos/Themeing";
 
 function App() {
 	console.log(`	👋 Welcome to TRMD3! 👋	`);

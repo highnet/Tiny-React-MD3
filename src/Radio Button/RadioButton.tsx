@@ -1,8 +1,8 @@
 // Import React and some hooks from React library
 import React, { useState } from "react";
 import { IRadioButtonProps } from "./IRadioButtonProps";
-import { getPreferredScheme } from "../TRMD3/Gizmos/Themeing";
-import { StringBuilder } from "../TRMD3/Gizmos/StringBuilder";
+import { getPreferredScheme } from "../Gizmos/Themeing";
+import { StringBuilder } from "../Gizmos/StringBuilder";
 
 /* 
 	1

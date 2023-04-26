@@ -1,4 +1,4 @@
-import { getPreferredScheme } from "../../TRMD3/Gizmos/Themeing";
+import { getPreferredScheme } from "../../Gizmos/Themeing";
 import HorizontalDivider from "../HorizontalDivider";
 
 /* 

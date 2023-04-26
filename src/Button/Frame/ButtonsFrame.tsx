@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Button from "../Button";
-import { getPreferredScheme } from "../../TRMD3/Gizmos/Themeing";
+import { getPreferredScheme } from "../../Gizmos/Themeing";
 
 /* 
 	1

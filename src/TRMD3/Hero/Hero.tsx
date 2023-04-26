@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { initializeApp } from "firebase/app";
 import { getDownloadURL, getStorage, ref } from "firebase/storage";
-import { getPreferredScheme } from "../Gizmos/Themeing";
+import { getPreferredScheme } from "../../Gizmos/Themeing";
 
 const firebaseConfig = {
 	storageBucket: "gs://tiny-react-md3.appspot.com",

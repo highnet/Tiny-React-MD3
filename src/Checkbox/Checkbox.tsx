@@ -1,7 +1,7 @@
 // Import React and some hooks from React library
 import React, { useState } from "react";
 import { ICheckboxProps } from "./ICheckboxProps";
-import { StringBuilder } from "../TRMD3/Gizmos/StringBuilder";
+import { StringBuilder } from "../Gizmos/StringBuilder";
 
 /* 
 	1

@@ -11,7 +11,7 @@ Each child element has inline styles defining its width, height, and border radi
 Each child element has a code block displaying the HTML code used to create it.
 */
 
-import { getPreferredScheme } from "../../TRMD3/Gizmos/Themeing";
+import { getPreferredScheme } from "../../Gizmos/Themeing";
 
 function ElevationsFrame() {
 	const _theme =

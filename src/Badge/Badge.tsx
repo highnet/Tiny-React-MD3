@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { IBadgeProps } from "./IBadgeProps";
-import { StringBuilder } from "../TRMD3/Gizmos/StringBuilder";
+import { StringBuilder } from "../Gizmos/StringBuilder";
 
 /*  
 	1
