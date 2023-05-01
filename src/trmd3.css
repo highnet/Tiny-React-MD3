@@ -1002,7 +1002,7 @@ input[type="radio"].radio-button-input-dark-theme::before {
 
 /* RADIO BUTTONS / BORDER / UNSELECTED / LIGHT */
 input[type="radio"].radio-button-input-light-theme {
-	border: 2px solid var(--m3-sys-dark-on-surface-variant);
+	border: 2px solid var(--m3-sys-light-on-surface-variant);
 }
 
 /* RADIO BUTTONS / BORDER  / UNSELECTED / DARK */
