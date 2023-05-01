@@ -162,7 +162,7 @@ function App() {
 				}
 			>
 				For a full list of all accepted icon strings, visit:{" "}
-				<a href="https://fonts.google.com/icons">Material Smbols and Icons</a>
+				<a href="https://fonts.google.com/icons">Material Symbols and Icons</a>
 			</div>
 			<IconsFrame />
 		</div>
