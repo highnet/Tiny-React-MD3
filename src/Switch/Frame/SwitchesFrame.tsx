@@ -44,7 +44,7 @@ function SwitchesFrame() {
 			<div className="text text-label text-label-small checkbox-label-trmd3">
 				No Icon (Inactive)
 			</div>
-			<Switch selected={true} onChange={undefined} disabled={true} />
+			<Switch selected={false} onChange={undefined} disabled={true} />
 			<pre>
 				<code className="language-html">
 					{" "}

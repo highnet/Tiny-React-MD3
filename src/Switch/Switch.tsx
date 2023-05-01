@@ -73,6 +73,7 @@ const Switch: React.FC<ISwitchProps> = ({
 		.add("switch-track-" + (_selected ? "selected" : "deselected"))
 		.add("switch-track-" + (_disabled ? "disabled" : "enabled"))
 		.add("switch-track-" + (_icon ? "with" : "without") + "-icon")
+		.add("switch-track-" + _theme)
 		.toString();
 
 	let _computedComponentHandleClassName = new StringBuilder()
@@ -80,6 +81,7 @@ const Switch: React.FC<ISwitchProps> = ({
 		.add("switch-handle-" + (_selected ? "selected" : "deselected"))
 		.add("switch-handle-" + (_disabled ? "disabled" : "enabled"))
 		.add("switch-handle-" + (_icon ? "with" : "without") + "-icon")
+		.add("switch-handle-" + _theme)
 		.toString();
 
 	let _computedComponentIconClassName = new StringBuilder()
@@ -87,6 +89,7 @@ const Switch: React.FC<ISwitchProps> = ({
 		.add("switch-icon")
 		.add("switch-icon-" + (_selected ? "selected" : "deselected"))
 		.add("switch-icon-" + (_disabled ? "disabled" : "enabled"))
+		.add("switch-icon-" + _theme)
 		.toString();
 
 	// Return the JSX element for the switch
