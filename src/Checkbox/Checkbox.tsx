@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { ICheckboxProps } from "./ICheckboxProps";
 import { StringBuilder } from "../Gizmos/StringBuilder";
+import { getPreferredScheme } from "../Gizmos/Themeing";
 
 /* 
 	1
@@ -43,6 +44,9 @@ const Checkbox: React.FC<ICheckboxProps> = ({
 	const [_config] = useState(configuration || "default"); // State for the configuration of the checkbox
 	const [_selected, setSelected] = useState(selected || false); // State for whether or not the checkbox is selected
 
+	const _theme =
+		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
+
 	const click = () => {
 		console.log("Thanks for Using Tiny React MD3!");
 	};
@@ -57,6 +61,7 @@ const Checkbox: React.FC<ICheckboxProps> = ({
 		.add("checkbox-" + _config)
 		.add("checkbox-" + (_selected ? "selected" : "deselected"))
 		.add("checkbox-" + (_disabled ? "disabled" : "enabled"))
+		.add("checkbox-" + _theme)
 		.add(_className)
 		.toString();
 

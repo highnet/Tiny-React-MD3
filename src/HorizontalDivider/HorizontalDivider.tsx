@@ -39,6 +39,9 @@ const HorizontalDivider: React.FC<IHorizontalDividerProps> = ({
 	const [_insetLeftWidth] = useState(insetLeftWidth || 16);
 	const [_showInsets] = useState(showInsets || false);
 
+	const _theme =
+		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
+
 	let _computedHeight: string = _height.toString() + "px"; // Final height value
 	let _computedWidth: string = _width.toString() + "px"; // Final width value
 	let _computedInsetRightWidth: string = _insetRightWidth + "px"; // Final inset right width value
@@ -49,9 +52,6 @@ const HorizontalDivider: React.FC<IHorizontalDividerProps> = ({
 		.add("horizontal-divider")
 		.add(_className)
 		.toString();
-
-	const _theme =
-		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
 	// Return the JSX element for the horizontal divider
 	return (

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { IBadgeProps } from "./IBadgeProps";
 import { StringBuilder } from "../Gizmos/StringBuilder";
+import { getPreferredScheme } from "../Gizmos/Themeing";
 
 /*  
 	1
@@ -45,12 +46,16 @@ const Badge: React.FC<IBadgeProps> = ({
 	const [_yOffset] = useState(yOffset || 0); // State for the y offset of the badge
 	const [_label] = useState(label || ""); // State for the label of the badge
 
+	const _theme =
+		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
+
 	let _computedXOffset: string = _xOffset.toString() + "%"; // Final x offset value
 	let _computedYOffset: string = _yOffset.toString() + "%"; // Final y offset value
 
 	let _computedComponentClassName = new StringBuilder()
 		.add("badge")
 		.add("badge-" + _config)
+		.add("badge-" + _theme)
 		.add(_className)
 		.toString();
 

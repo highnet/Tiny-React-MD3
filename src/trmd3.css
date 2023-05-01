@@ -13,15 +13,18 @@
 
 	/* M3/SYS/LIGHT/PRIMARY */
 	--prophet-violet: #6750a4;
-	--prophet-violet-08: rgba(103, 80, 164, 0.08);
-	--prophet-violet-12: rgba(103, 80, 164, 0.12);
-	--prophet-violet-16: rgba(103, 80, 164, 0.16);
 
 	/* M3/SYS/DARK/PRIMARY */
 	--lavender-tonic: #d0bcff;
-	--lavender-tonic-08: rgb(208, 188, 255, 0.08);
-	--lavender-tonic-12: rgb(208, 188, 255, 0.12);
-	--lavender-tonic-16: rgb(208, 188, 255, 0.16);
+
+	/* M3/SYS/LIGHT/ERROR */
+	--firebrick: #b3261e;
+
+	/* M3/SYS/DARK/ON-ERROR */
+	--blood-organ: #601410;
+
+	/* M3/SYS/DARK/ERROR */
+	--old-flame: #f2b8b5;
 
 	--genestealer-purple: #735eab;
 	--ultimate-grey: #a9a8aa;
@@ -33,11 +36,9 @@
 	--alpine-goat: #f3f1f8;
 	--silver-phoenix: #eceaf4;
 	--dried-lavender-flowers: #79747e;
-	--firebrick: #b3261e;
 	--ishtar: #49454f;
 	--snowbank: #e9e8e9;
 	--moon-landing: #a7a6a8;
-	--laughing-jack: #cac4d0;
 	--formal-grey: #979598;
 	--windsor-grey: #636067;
 
@@ -53,6 +54,271 @@
 		0px 2px 3px rgba(0, 0, 0, 0.3);
 	--surfaces-elevation-5: 0px 8px 12px 6px rgba(0, 0, 0, 0.15),
 		0px 4px 4px rgba(0, 0, 0, 0.3);
+
+	/* M3 COLORS */
+
+	/* TONAL PALETTES */
+
+	/* PRIMARY */
+	--m3-ref-primary-primary0: #000000;
+	--m3-ref-primary-primary10: #21005d;
+	--m3-ref-primary-primary20: #381e72;
+	--m3-ref-primary-primary30: #4f378b;
+	--m3-ref-primary-primary40: #6750a4;
+	--m3-ref-primary-primary50: #7f67be;
+	--m3-ref-primary-primary60: #9a82db;
+	--m3-ref-primary-primary70: #b69df8;
+	--m3-ref-primary-primary80: #d0bcff;
+	--m3-ref-primary-primary90: #eaddff;
+	--m3-ref-primary-primary95: #f6edff;
+	--m3-ref-primary-primary99: #fffbfe;
+	--m3-ref-primary-primary100: #000000;
+
+	/* SECONDARY */
+	--m3-ref-secondary-secondary0: #000000;
+	--m3-ref-secondary-secondary10: #1d192b;
+	--m3-ref-secondary-secondary20: #332d41;
+	--m3-ref-secondary-secondary30: #4a4458;
+	--m3-ref-secondary-secondary40: #625b71;
+	--m3-ref-secondary-secondary50: #7a7289;
+	--m3-ref-secondary-secondary60: #958da5;
+	--m3-ref-secondary-secondary70: #b0a7c0;
+	--m3-ref-secondary-secondary80: #ccc2dc;
+	--m3-ref-secondary-secondary90: #e8def8;
+	--m3-ref-secondary-secondary95: #f6edff;
+	--m3-ref-secondary-secondary99: #fffbfe;
+	--m3-ref-secondary-secondary100: #ffffff;
+
+	/* TERTIARY */
+	--m3-ref-tertiary-tertiary0: #000000;
+	--m3-ref-tertiary-tertiary10: #31111d;
+	--m3-ref-tertiary-tertiary20: #492532;
+	--m3-ref-tertiary-tertiary30: #633b48;
+	--m3-ref-tertiary-tertiary40: #7d5260;
+	--m3-ref-tertiary-tertiary50: #986977;
+	--m3-ref-tertiary-tertiary60: #b58392;
+	--m3-ref-tertiary-tertiary70: #d29dac;
+	--m3-ref-tertiary-tertiary80: #efb8c8;
+	--m3-ref-tertiary-tertiary90: #ffd8e4;
+	--m3-ref-tertiary-tertiary95: #ffecf1;
+	--m3-ref-tertiary-tertiary99: #fffbfa;
+	--m3-ref-tertiary-tertiary100: #ffffff;
+
+	/* ERROR */
+	--m3-ref-error-error0: #000000;
+	--m3-ref-error-error10: #410e0b;
+	--m3-ref-error-error20: #601410;
+	--m3-ref-error-error30: #8c1d18;
+	--m3-ref-error-error40: #b3261e;
+	--m3-ref-error-error50: #dc362e;
+	--m3-ref-error-error60: #e46962;
+	--m3-ref-error-error70: #ec928e;
+	--m3-ref-error-error80: #f2b8b5;
+	--m3-ref-error-error90: #f9dedc;
+	--m3-ref-error-error95: #fceeee;
+	--m3-ref-error-error99: #fffbf9;
+	--m3-ref-error-error100: #ffffff;
+
+	/* NEUTRAL */
+	--m3-ref-neutral-neutral0: #000000;
+	--m3-ref-neutral-neutral10: #1d1b20;
+	--m3-ref-neutral-neutral20: #48464c;
+	--m3-ref-neutral-neutral30: #48464c;
+	--m3-ref-neutral-neutral40: #605d64;
+	--m3-ref-neutral-neutral50: #79767d;
+	--m3-ref-neutral-neutral60: #938f96;
+	--m3-ref-neutral-neutral70: #aea9b1;
+	--m3-ref-neutral-neutral80: #cac5cd;
+	--m3-ref-neutral-neutral90: #e6e0e9;
+	--m3-ref-neutral-neutral95: #f5eff7;
+	--m3-ref-neutral-neutral99: #fffbfe;
+	--m3-ref-neutral-neutral100: #ffffff;
+
+	/* NEUTRAL VARIANT */
+	--m3-ref-neutral-variant-neutral-variant0: #000000;
+	--m3-ref-neutral-variant-neutral-variant10: #1d1a22;
+	--m3-ref-neutral-variant-neutral-variant20: #322f37;
+	--m3-ref-neutral-variant-neutral-variant30: #49454f;
+	--m3-ref-neutral-variant-neutral-variant40: #605d66;
+	--m3-ref-neutral-variant-neutral-variant50: #79747e;
+	--m3-ref-neutral-variant-neutral-variant60: #938f99;
+	--m3-ref-neutral-variant-neutral-variant70: #aea9b4;
+	--m3-ref-neutral-variant-neutral-variant80: #cac4d0;
+	--m3-ref-neutral-variant-neutral-variant90: #e7e0ec;
+	--m3-ref-neutral-variant-neutral-variant95: #f5eefa;
+	--m3-ref-neutral-variant-neutral-variant99: #fffbfe;
+	--m3-ref-neutral-variant-neutral-variant100: #ffffff;
+
+	/* LIGHT THEME */
+	/* PRIMARY */
+	--m3-sys-light-primary: #6750a4;
+	--m3-sys-light-primary-opacity08: rgba(103, 80, 164, 0.08);
+	--m3-sys-light-primary-opacity12: rgba(103, 80, 164, 0.12);
+	--m3-sys-light-primary-opacity16: rgba(103, 80, 164, 0.16);
+
+	--m3-sys-light-on-primary: #ffffff;
+
+	--m3-sys-light-primary-container: #eaddff;
+	--m3-sys-light-on-primary-container: #21005d;
+
+	--m3-sys-light-primary-fixed: #eaddff;
+	--m3-sys-light-on-primary-fixed: #21005d;
+
+	--m3-sys-light-primary-fixed-dim: #d0bcff;
+	--m3-sys-light-on-primary-fixed-variant: #4f378b;
+
+	/* SECONDARY */
+	--m3-sys-light-secondary: #625b71;
+	--m3-sys-light-on-secondary: #ffffff;
+
+	--m3-sys-light-secondary-container: #e8def8;
+	--m3-sys-light-on-secondary-container: #1d192b;
+
+	--m3-sys-light-secondary-fixed: #e8def8;
+	--m3-sys-light-on-secondary-fixed: #1d192b;
+
+	--m3-sys-light-secondary-fixed-dim: #ccc2dc;
+	--m3-sys-light-on-secondary-fixed-variant: #4a4458;
+
+	/* TERTIARY */
+	--m3-sys-light-tertiary: #7d5260;
+	--m3-sys-light-on-tertiary: #ffffff;
+
+	--m3-sys-light-tertiary-container: #ffd8e4;
+	--m3-sys-light-on-tertiary-container: #31111d;
+
+	--m3-sys-light-tertiary-fixed: #ffd8e4;
+	--m3-sys-light-on-tertiary-fixed: #31111d;
+
+	--m3-sys-light-tertiary-fixed-dim: #efb8c8;
+	--m3-sys-light-on-tertiary-fixed-variant: #633b48;
+
+	/* ERROR */
+
+	--m3-sys-light-error: #b3261e;
+	--m3-sys-light-error-opacity08: rgba(179, 38, 30, 0.08);
+	--m3-sys-light-error-opacity12: rgba(179, 38, 30, 0.12);
+	--m3-sys-light-error-opacity16: rgba(179, 38, 30, 0.16);
+
+	--m3-sys-light-on-error: #ffffff;
+
+	--m3-sys-light-error-container: #f9dedc;
+	--m3-sys-light-on-error-container: #410e0b;
+
+	/* SURFACE */
+
+	--m3-sys-light-surface-dim: #ded8e1;
+	--m3-sys-light-surface: #fef7ff;
+	--m3-sys-light-surface-bright: #fef7ff;
+
+	--m3-sys-light-surface-container-lowest: #ffffff;
+	--m3-sys-light-surface-container-low: #f7f2fa;
+	--m3-sys-light-surface-container: #f3edf7;
+	--m3-sys-light-surface-container-high: #ece6f0;
+	--m3-sys-light-surface-container-highest: #e6e0e9;
+
+	--m3-sys-light-surface: #fef7ff;
+	--m3-sys-light-on-surface: #1d1b20;
+
+	--m3-sys-light-on-surface-variant: #49454f;
+	--m3-sys-light-outline: #79747e;
+
+	--m3-sys-light-outline-variant: #cac4d0;
+
+	--m3-sys-light-inverse-surface: #322f35;
+	--m3-sys-light-inverse-on-surface: #f5eff7;
+
+	--m3-sys-light-on-primary-container: #21005d;
+	--m3-sys-light-inverse-primary: #d0bcff;
+
+	--m3-sys-light-scrim: #000000;
+	--m3-sys-light-shadow: #000000;
+
+	/* DARK THEME */
+
+	/* PRIMARY */
+
+	--m3-sys-dark-primary: #d0bcff;
+	--m3-sys-dark-primary-opacity08: rgb(208, 188, 255, 0.08);
+	--m3-sys-dark-primary-opacity12: rgb(208, 188, 255, 0.12);
+	--m3-sys-dark-primary-opacity16: rgb(208, 188, 255, 0.16);
+
+	--m3-sys-dark-on-primary: #381e72;
+
+	--m3-sys-dark-primary-container: #4e3689;
+	--m3-sys-dark-on-primary-container: #e8dbfd;
+
+	--m3-sys-dark-primary-fixed: #eaddff;
+	--m3-sys-dark-on-primary-fixed: #21005d;
+
+	--m3-sys-dark-primary-fixed-dim: #d0bcff;
+	--m3-sys-dark-on-primary-fixed-variant: #4f378b;
+
+	/* SECONDARY */
+
+	--m3-sys-dark-secondary: #ccc2dc;
+	--m3-sys-dark-on-secondary: #332d41;
+
+	--m3-sys-dark-secondary-container: #4a4458;
+	--m3-sys-dark-on-secondary-container: #e8def8;
+
+	--m3-sys-dark-secondary-fixed: #e8def8;
+	--m3-sys-dark-on-secondary-fixed: #1d192b;
+
+	--m3-sys-dark-secondary-fixed-dim: #ccc2dc;
+	--m3-sys-dark-on-secondary-fixed-variant: #4a4458;
+
+	/* TERTIARY */
+
+	--m3-sys-dark-tertiary: #efb8c8;
+	--m3-sys-dark-on-tertiary: #492532;
+
+	--m3-sys-dark-tertiary-container: #633b48;
+	--m3-sys-dark-on-tertiary-container: #ffd8e4;
+
+	--m3-sys-dark-tertiary-fixed: #ffd8e4;
+	--m3-sys-dark-on-tertiary-fixed: #31111d;
+
+	--m3-sys-dark-tertiary-fixed-dim: #efb8c8;
+	--m3-sys-dark-on-tertiary-fixed-variant: #633b48;
+
+	/* ERROR */
+
+	--m3-sys-dark-error: #f2b8b5;
+	--m3-sys-dark-error-opacity08: rgb(242, 184, 181, 0.08);
+	--m3-sys-dark-error-opacity12: rgb(242, 184, 181, 0.12);
+	--m3-sys-dark-error-opacity16: rgb(242, 184, 181, 0.16);
+
+	--m3-sys-dark-on-error: #601410;
+
+	--m3-sys-dark-error-container: #8c1d18;
+	--m3-sys-dark-on-error-container: #f9dedc;
+
+	/* SURFACE */
+
+	--m3-sys-dark-surface-dim: #141218;
+	--m3-sys-dark-surface: #141218;
+	--m3-sys-dark-surface-bright: #3b383e;
+
+	--m3-sys-dark-surface-container-lowest: #0f0d13;
+	--m3-sys-dark-surface-container-low: #1d1b20;
+	--m3-sys-dark-surface-container: #211f26;
+	--m3-sys-dark-surface-container-high: #2b2930;
+	--m3-sys-dark-surface-container-highest: #36343b;
+
+	--m3-sys-dark-surface: #141218;
+	--m3-sys-dark-on-surface: #e6e0e9;
+
+	--m3-sys-dark-on-surface-variant: #cac4d0;
+	--m3-sys-dark-outline: #938f99;
+
+	--m3-sys-dark-outline-variant: #49454f;
+
+	--m3-sys-dark-inverse-surface: #e6e0e9;
+	--m3-sys-dark-inverse-on-surface: #322f35;
+	--m3-sys-dark-inverse-primary: #6750a4;
+	--m3-sys-light-scrim: #ffffff;
+	--m3-sys-dark-shadow: #000000;
 }
 
 /* TYPOGRAPHY */
@@ -207,7 +473,7 @@
 	width: fit-content;
 }
 
-.btn > .text {
+.btn text {
 	display: flex;
 	align-items: center;
 	text-align: center;
@@ -484,50 +750,62 @@
 	border: 2px solid transparent;
 }
 
-.checkbox-default {
-	background-color: var(--prophet-violet);
+/* CHECKBOX / DEFAULT / LIGHT / BACKGROUND */
+.checkbox-default.checkbox-light-theme {
+	background-color: var(--m3-sys-light-primary);
 }
 
-.checkbox-error {
-	background-color: var(--firebrick);
+/* CHECKBOX / DEFAULT / DARK / BACKGROUND */
+.checkbox-default.checkbox-dark-theme {
+	background-color: var(--m3-sys-dark-primary);
 }
 
-.checkbox-disabled {
+/* CHECKBOX / ERROR / LIGHT / BACKGROUND */
+.checkbox-error.checkbox-light-theme {
+	background-color: var(--m3-sys-light-error);
+}
+
+/* CHECKBOX / ERROR / DARK / BACKGROUND */
+.checkbox-error.checkbox-dark-theme {
+	background-color: var(--m3-sys-dark-error);
+}
+
+/* CHECKBOX / DISABLED / LIGHT / BACKGROUND */
+.checkbox-disabled.checkbox-light-theme {
 	background-color: var(--ultimate-grey);
 	pointer-events: none;
 }
 
-.checkbox-deselected {
+/* CHECKBOX / DISABLED / DARK / BACKGROUND */
+.checkbox-disabled.checkbox-dark-theme {
+	background-color: var(--ultimate-grey);
+	pointer-events: none;
+}
+
+/* CHECKBOX / DESELECTED / LIGHT / BACKGROUND AND BORDER */
+.checkbox-deselected.checkbox-light-theme {
 	background-color: transparent;
-	border: 2px solid var(--ishtar);
+	border: 2px solid var(--m3-sys-light-on-surface-variant);
 }
 
-.checkbox-deselected.checkbox-error {
-	border: 2px solid var(--firebrick);
-}
-
-.checkbox-overlay {
-	width: 225%;
-	height: 225%;
+/* CHECKBOX / DESELECTED / DARK / BACKGROUND AND BORDER */
+.checkbox-deselected.checkbox-dark-theme {
 	background-color: transparent;
-	border-radius: 100%;
-	transform: translate(-29%, -71%);
+	border: 2px solid var(--m3-sys-dark-on-surface-variant);
 }
 
-.checkbox-overlay:hover {
-	background-color: #6750a41f;
+/* CHECKBOX / DESELECTED / ERROR / LIGHT */
+.checkbox-deselected.checkbox-error.checkbox-light-theme {
+	border: 2px solid var(--m3-sys-light-error);
 }
 
-.checkbox-overlay:focus {
-	background-color: #7660b32d;
+/* CHECKBOX / DESELECTED / ERROR / DARK */
+.checkbox-deselected.checkbox-error.checkbox-dark-theme {
+	border: 2px solid var(--m3-sys-dark-error);
 }
 
-.checkbox-overlay:active {
-	background-color: #48367b47;
-}
-
+/* CHECKBOX / ICON */
 .checkbox-icon {
-	color: white;
 	display: flex;
 	margin: 0 auto;
 	align-items: center;
@@ -537,18 +815,128 @@
 	right: 13%;
 }
 
-.checkbox-icon-deselected {
+/* CHECKBOX / LIGHT / ICON */
+.checkbox-light-theme > .checkbox-icon {
+	color: var(--m3-sys-light-on-primary);
+}
+
+/* CHECKBOX / ENABLED / DARK / ICON */
+.checkbox-enabled.checkbox-dark-theme > .checkbox-icon {
+	color: var(--m3-sys-dark-on-primary);
+}
+
+/* CHECKBOX / DISABLED / DARK / ICON */
+.checkbox-disabled.checkbox-dark-theme > .checkbox-icon {
+	color: var(--m3-sys-dark-surface);
+}
+
+/* CHECKBOX / DESELECTED / ICON */
+.material-symbols-outlined.checkbox-icon.checkbox-icon-deselected {
 	color: transparent;
+}
+
+/* CHECKBOX / ERROR / ENABLED / DARK / ICON */
+.checkbox-error.checkbox-enabled.checkbox-dark-theme
+	> .material-symbols-outlined.checkbox-icon.checkbox-icon-selected {
+	color: var(--m3-sys-dark-on-error);
+}
+
+/* CHECKBOX / OVERLAY */
+.checkbox-overlay {
+	width: 225%;
+	height: 225%;
+	background-color: transparent;
+	border-radius: 100%;
+	transform: translate(-29%, -71%);
+}
+
+/* CHECKBOX / DEFAULT / LIGHT/ OVERLAY / HOVER */
+.checkbox-default.checkbox-light-theme > .checkbox-overlay:hover {
+	background-color: var(--m3-sys-light-primary-opacity08);
+}
+
+/* CHECKBOX / DEFAULT / LIGHT / OVERLAY / FOCUS */
+.checkbox-default.checkbox-light-theme > .checkbox-overlay:focus {
+	background-color: var(--m3-sys-light-primary-opacity12);
+}
+
+/* CHECKBOX / DEFAULT / /LIGHT OVERLAY / ACTIVE */
+.checkbox-default.checkbox-light-theme > .checkbox-overlay:active {
+	background-color: var(--m3-sys-light-primary-opacity16);
+}
+
+/* CHECKBOX / ERROR / LIGHT / OVERLAY / HOVER */
+.checkbox-error.checkbox-light-theme > .checkbox-overlay:hover {
+	background-color: var(--m3-sys-light-error-opacity08);
+}
+
+/* CHECKBOX / ERROR / LIGHT / OVERLAY / FOCUS */
+.checkbox-error.checkbox-light-theme > .checkbox-overlay:focus {
+	background-color: var(--m3-sys-light-error-opacity12);
+}
+
+/* CHECKBOX / ERROR / LIGHT / OVERLAY / ACTIVE */
+.checkbox-error.checkbox-light-theme > .checkbox-overlay:active {
+	background-color: var(--m3-sys-light-error-opacity16);
+}
+
+/*JT*/
+/* CHECKBOX / DEFAULT / DARK / OVERLAY / HOVER */
+.checkbox-default.checkbox-dark-theme > .checkbox-overlay:hover {
+	background-color: var(--m3-sys-dark-primary-opacity08);
+}
+
+/* CHECKBOX / DEFAULT / DARK / OVERLAY / FOCUS */
+.checkbox-default.checkbox-dark-theme > .checkbox-overlay:focus {
+	background-color: var(--m3-sys-dark-primary-opacity12);
+}
+
+/* CHECKBOX / DEFAULT / DARK / OVERLAY / ACTIVE */
+.checkbox-default.checkbox-dark-theme > .checkbox-overlay:active {
+	background-color: var(--m3-sys-dark-primary-opacity16);
+}
+
+/* CHECKBOX / ERROR / DARK / OVERLAY / HOVER */
+.checkbox-error.checkbox-dark-theme > .checkbox-overlay:hover {
+	background-color: var(--m3-sys-dark-error-opacity08);
+}
+
+/* CHECKBOX / ERROR / DARK / OVERLAY / FOCUS */
+.checkbox-error.checkbox-dark-theme > .checkbox-overlay:focus {
+	background-color: var(--m3-sys-dark-error-opacity12);
+}
+
+/* CHECKBOX / ERROR / DARK / OVERLAY / ACTIVE */
+.checkbox-error.checkbox-dark-theme > .checkbox-overlay:active {
+	background-color: var(--m3-sys-dark-error-opacity16);
 }
 
 /* BADGES */
 
 .badge {
-	color: white;
-	background-color: var(--firebrick);
 	border-radius: 100px;
 	display: flex;
 	align-items: center;
+}
+
+/* BADGES / BACKGROUND / LIGHT */
+.badge-light-theme {
+	background-color: var(--m3-sys-light-error);
+}
+
+/* BADGES / BACKGROUND / DARK */
+.badge-dark-theme {
+	background-color: var(--m3-sys-dark-error);
+}
+
+/* BADGES / LABEL / LIGHT */
+.badge-light-theme .badge-label-text {
+	color: var(--m3-sys-light-on-error);
+}
+
+/* BADGES / LABEL / DARK */
+.badge-dark-theme .badge-label-text {
+	color: var(--m3-sys-dark-on-error);
 }
 
 .badge-small {
@@ -616,31 +1004,31 @@ input[type="radio"]:checked::before {
 
 /* RADIO BUTTONS / DOT / LIGHT */
 input[type="radio"].radio-button-input-light-theme::before {
-	background-color: var(--prophet-violet);
+	background-color: var(--m3-sys-light-primary);
 }
 
 /* RADIO BUTTONS / DOT / DARK */
 input[type="radio"].radio-button-input-dark-theme::before {
-	background-color: var(--lavender-tonic);
+	background-color: var(--m3-sys-dark-primary);
 }
 
 /* RADIO BUTTONS / BORDER / UNSELECTED / LIGHT */
 input[type="radio"].radio-button-input-light-theme {
-	border: 2px solid var(--ishtar);
+	border: 2px solid var(--m3-sys-dark-on-surface-variant);
 }
 
 /* RADIO BUTTONS / BORDER  / UNSELECTED / DARK */
 input[type="radio"].radio-button-input-dark-theme {
-	border: 2px solid var(--laughing-jack);
+	border: 2px solid var(--m3-sys-light-outline-variant);
 }
 
 /* RADIO BUTTONS / BORDER / SELECTED / LIGHT */
 input[type="radio"]:checked.radio-button-input-light-theme {
-	border: 0.15em solid var(--prophet-violet);
+	border: 0.15em solid var(--m3-sys-light-primary);
 }
 /* RADIO BUTTONS / BORDER / SELECTED / DARK */
 input[type="radio"]:checked.radio-button-input-dark-theme {
-	border: 0.15em solid var(--lavender-tonic);
+	border: 0.15em solid var(--m3-sys-dark-primary);
 }
 
 /* RADIO BUTTONS / DISABLED / BORDER / LIGHT */
@@ -666,33 +1054,33 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 /* RADIO BUTTONS / OVERLAY / HOVER / LIGHT */
 .radio-button-light-theme:hover {
 	border-radius: 50%;
-	background-color: var(--prophet-violet-08);
+	background-color: var(--m3-sys-light-primary-opacity08);
 }
 
 /* RADIO BUTTONS / OVERLAY / HOVER / DARK */
 .radio-button-dark-theme:hover {
 	border-radius: 50%;
-	background-color: var(--lavender-tonic-08);
+	background-color: var(--m3-sys-dark-primary-opacity08);
 }
 
 /* RADIO BUTTONS / OVERLAY / FOCUS / LIGHT */
 .radio-button-light-theme:focus {
-	background-color: var(--prophet-violet-12);
+	background-color: var(--m3-sys-light-primary-opacity12);
 }
 
 /* RADIO BUTTONS / OVERLAY / FOCUS / DARK */
 .radio-button-dark-theme:focus {
-	background-color: var(--lavender-tonic-12);
+	background-color: var(--m3-sys-dark-primary-opacity12);
 }
 
 /* RADIO BUTTONS / OVERLAY / PRESSED / LIGHT */
 .radio-button-light-theme:active {
-	background-color: var(--prophet-violet-16);
+	background-color: var(--m3-sys-light-primary-opacity16);
 }
 
 /* RADIO BUTTONS / OVERLAY / PRESSED / DARK */
 .radio-button-dark-theme:active {
-	background-color: var(--lavender-tonic-16);
+	background-color: var(--m3-sys-dark-primary-opacity16);
 }
 
 /* HORIZONTAL DIVIDERS */
@@ -703,12 +1091,12 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 
 /* HORIZONTAL DIVIDERS / BAR / LIGHT */
 .horizontal-divider-bar-light-theme {
-	background-color: var(--laughing-jack);
+	background-color: var(--m3-sys-light-outline-variant);
 }
 
 /* HORIZONTAL DIVIDERS / BAR / DARK */
 .horizontal-divider-bar-dark-theme {
-	background-color: var(--ishtar);
+	background-color: var(--m3-sys-dark-outline-variant);
 }
 
 /* HORIZONTAL DIVIDERS / INSET / RIGHT */
@@ -731,12 +1119,12 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 
 /* VERTICAL DIVIDERS / BAR / LIGHT */
 .vertical-divider-bar-light-theme {
-	background-color: var(--laughing-jack);
+	background-color: var(--m3-sys-light-outline-variant);
 }
 
 /* VERTICAL DIVIDERS / BAR / DARK */
 .vertical-divider-bar-dark-theme {
-	background-color: var(--ishtar);
+	background-color: var(--m3-sys-dark-outline-variant);
 }
 
 /* VERTICAL DIVIDERS / INSET / TOP */
