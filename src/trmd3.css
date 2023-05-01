@@ -639,11 +639,13 @@
 }
 
 .switch-track-selected {
-	background-color: var(--prophet-violet);
+	background-color: var(--m3-sys-light-primary);
 }
 
 .switch-track-deselected {
-	background-color: var(--pink-champagne);
+	background-color: var(--m3-sys-light-surface-container-highest);
+	border: 2px solid var(--m3-sys-light-outline);
+	border-radius: 100px;
 }
 
 .switch-handle {
@@ -652,21 +654,27 @@
 }
 
 .switch-handle-selected {
-	background-color: white;
+	background-color: var(--m3-sys-light-on-primary);
 	width: 46.155%;
 	height: 75%;
 	margin: 7.69% 46.155%;
 }
 
+.switch-handle-deselected {
+	background-color: var(--m3-sys-light-outline);
+}
+
+.switch-handle-deselected:hover {
+	background-color: var(--m3-sys-light-on-surface-variant);
+}
+
 .switch-handle-deselected.switch-handle-without-icon {
-	background-color: var(--dried-lavender-flowers);
 	width: 30.77%;
 	height: 50%;
 	margin: 16% 13%;
 }
 
 .switch-handle-deselected.switch-handle-with-icon {
-	background-color: var(--dried-lavender-flowers);
 	width: 46.155%;
 	height: 75%;
 	margin: 7.69% 5%;
@@ -682,7 +690,15 @@
 }
 
 .switch-handle-overlay:hover {
-	background-color: #6750a41f;
+	background-color: var(--m3-sys-light-primary-opacity08);
+}
+
+.switch-handle-overlay:focus {
+	background-color: var(--m3-sys-light-primary-opacity12);
+}
+
+.switch-handle-overlay:active {
+	background-color: var(--m3-sys-light-primary-opacity12);
 }
 
 .switch-disabled {
@@ -698,10 +714,6 @@
 	border: 2px solid rgba(28, 27, 31, 0.12);
 	border-radius: 35px;
 	background-color: white;
-}
-
-.switch-handle-deselected.switch-handle-enabled {
-	background-color: var(--moon-landing);
 }
 
 .switch-icon {

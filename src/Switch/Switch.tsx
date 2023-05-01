@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { ISwitchProps } from "./ISwitchProps";
 import { StringBuilder } from "../Gizmos/StringBuilder";
+import { getPreferredScheme } from "../Gizmos/Themeing";
 
 /* 
 	1
@@ -46,6 +47,9 @@ const Switch: React.FC<ISwitchProps> = ({
 
 	const [_selected, setSelected] = useState(selected || false);
 
+	const _theme =
+		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
+
 	const click = () => {
 		console.log("Thank you for using Tiny React MD3!");
 	};
@@ -60,6 +64,7 @@ const Switch: React.FC<ISwitchProps> = ({
 		.add("switch-" + (_selected ? "selected" : "deselected"))
 		.add("switch-" + (_disabled ? "disabled" : "enabled"))
 		.add("switch-" + (_icon ? "with" : "without") + "-icon")
+		.add("switch-" + _theme)
 		.add(_className)
 		.toString();
 
