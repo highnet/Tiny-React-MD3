@@ -14,20 +14,8 @@
 	/* M3/SYS/LIGHT/PRIMARY */
 	--prophet-violet: #6750a4;
 
-	/* M3/SYS/DARK/PRIMARY */
-	--lavender-tonic: #d0bcff;
-
-	/* M3/SYS/LIGHT/ERROR */
-	--firebrick: #b3261e;
-
-	/* M3/SYS/DARK/ON-ERROR */
-	--blood-organ: #601410;
-
-	/* M3/SYS/DARK/ERROR */
-	--old-flame: #f2b8b5;
-
 	--genestealer-purple: #735eab;
-	--ultimate-grey: #a9a8aa;
+
 	--dust-of-the-moon: #d0c6df;
 	--pink-champagne: #e7e0ec;
 	--lavender-mist: #e8def8;
@@ -36,10 +24,10 @@
 	--alpine-goat: #f3f1f8;
 	--silver-phoenix: #eceaf4;
 	--dried-lavender-flowers: #79747e;
-	--ishtar: #49454f;
 	--snowbank: #e9e8e9;
 	--moon-landing: #a7a6a8;
 	--formal-grey: #979598;
+	--ultimate-grey: #a9a8aa;
 	--windsor-grey: #636067;
 
 	/* ELEVATION FILLS */
