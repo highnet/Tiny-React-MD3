@@ -142,7 +142,7 @@ The supported options of <code>{configuration}</code> are the following:
 ## ☑️ [Checkbox](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Checkbox/Frame/checkbox.tsx)
 
 <i>Checkboxes allow users to select one or more items from a set and can be used to turn an option on or off. They’re a kind of selection control that helps users make a choice from a set of options.</i>
-    
+
     Checkboxes can have different configurations, states, and styles.
     selected: a boolean value that indicates whether the checkbox is checked or not
     onChange: a function that is called when the user clicks on the checkbox
@@ -225,33 +225,6 @@ and the possible different of <code>{size}</code> are the following:
 1. <code>large</code>
 2. <code>medium</code>
 3. <code>small</code>
-
-## 🏔️ [Elevation](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Elevation/Frame/elevation.tsx)
-
-<i>Use elevation to depict a third dimension of your content.</i>
-
-    The elevation styles are defined by the class names of the div elements, such as
-    “elevation-1” or “elevation-5”. The elevation styles create a visual effect
-    of depth and shadow for the div elements.
-
-Elevate any component by adding the class name like this:
-
-```JSX
-<div className="elevation-{level}"></div>
-```
-
-The supported options of <code>{level}</code> are the following:
-
-1. <code>1</code>
-2. <code>2</code>
-3. <code>3</code>
-4. <code>4</code>
-5. <code>5</code>
-
-<div align="center"> 
-<br/>
-<img src="/src/assets/elevations.png"/>
-</div>
 
 ## 🕹️ [Buttons](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Button/Frame/button.tsx)
 

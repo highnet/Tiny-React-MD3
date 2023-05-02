@@ -101,16 +101,6 @@ const TourGuide: React.FC<ITourGuide> = () => {
 					className="tourguide-button"
 					configuration="elevated"
 					disabled={false}
-					onClick={() => scrollToSection("elevation-section", -60)}
-				>
-					<div className="text text-label text-label-small">
-						🏔️ Elevation 🏔️
-					</div>
-				</Button>
-				<Button
-					className="tourguide-button"
-					configuration="elevated"
-					disabled={false}
 					onClick={() => scrollToSection("icons-section", -60)}
 				>
 					<div className="text text-label text-label-small">💟 Icons 💟</div>

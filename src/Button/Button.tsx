@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { IButtonProps } from "./IButtonProps";
 import { StringBuilder } from "../Gizmos/StringBuilder";
+import { getPreferredScheme } from "../Gizmos/Themeing";
 
 /*
 	1
@@ -40,11 +41,22 @@ const Button: React.FC<IButtonProps> = ({
 	const [_icon] = useState(icon || false);
 	const [_iconName] = useState(iconName || "search");
 
+	const _theme =
+		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
+
 	let _computedComponentClassName = new StringBuilder()
 		.add("btn")
 		.add("btn-" + _config)
 		.add("btn-" + (_icon ? "with" : "without") + "-icon")
+		.add("btn-" + (_disabled ? "disabled" : "enabled"))
+		.add("btn-" + _theme)
 		.add(_className)
+		.toString();
+
+	let _computedComponentIconClassName = new StringBuilder()
+		.add("material-symbols-outlined")
+		.add("btn-icon")
+		.add("btn-icon-" + _theme)
 		.toString();
 
 	// Define click function
@@ -66,7 +78,7 @@ const Button: React.FC<IButtonProps> = ({
 			}}
 		>
 			{_icon ? (
-				<span className="material-symbols-outlined">{_iconName}</span>
+				<span className={_computedComponentIconClassName}>{_iconName}</span>
 			) : (
 				""
 			)}

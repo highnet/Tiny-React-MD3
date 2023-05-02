@@ -9,7 +9,6 @@ import BadgesFrame from "./Badge/Frame/BadgesFrame";
 import CheckboxesFrame from "./Checkbox/Frame/CheckboxesFrame";
 import SwitchesFrame from "./Switch/Frame/SwitchesFrame";
 import TypographiesFrame from "./Typography/Frame/TypographiesFrame";
-import ElevationsFrame from "./Elevation/Frame/ElevationsFrame";
 import IconsFrame from "./Icon/Frame/IconsFrame";
 import ThemeSwitcher from "./TRMD3/ThemeSwitcher/ThemeSwitcher";
 
@@ -143,17 +142,6 @@ function App() {
 			<TypographiesFrame />
 			<div
 				id="elevation-section"
-				className={
-					"text text-title text-title-large section-title-trmd3 section-title-" +
-					theme +
-					"-trmd3"
-				}
-			>
-				🏔️ Elevation 🏔️
-			</div>
-			<ElevationsFrame />
-			<div
-				id="icons-section"
 				className={
 					"text text-title text-title-large section-title-trmd3 section-title-" +
 					theme +
