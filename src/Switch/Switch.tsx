@@ -84,6 +84,11 @@ const Switch: React.FC<ISwitchProps> = ({
 		.add("switch-handle-" + _theme)
 		.toString();
 
+	let _computedComponentHandleOverlayClassName = new StringBuilder()
+		.add("switch-handle-overlay")
+		.add("switch-handle-overlay-" + _theme)
+		.toString();
+
 	let _computedComponentIconClassName = new StringBuilder()
 		.add("material-symbols-outlined")
 		.add("switch-icon")
@@ -104,7 +109,7 @@ const Switch: React.FC<ISwitchProps> = ({
 		>
 			<div className={_computedComponentTrackClassName}>
 				<div className={_computedComponentHandleClassName}>
-					<div className={"switch-handle-overlay"}>
+					<div className={_computedComponentHandleOverlayClassName}>
 						{_icon ? (
 							<span className={_computedComponentIconClassName}>
 								{" "}

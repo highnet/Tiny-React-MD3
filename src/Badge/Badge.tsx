@@ -65,6 +65,7 @@ const Badge: React.FC<IBadgeProps> = ({
 		.add("text-label-small")
 		.add("badge-label-text")
 		.add("badge-label-text-" + _config)
+		.add("badge-label-text-" + _theme)
 		.toString();
 
 	// Return the JSX element for the badge

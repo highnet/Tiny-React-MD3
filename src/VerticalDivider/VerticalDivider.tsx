@@ -55,7 +55,23 @@ const VerticalDivider: React.FC<IVerticalDividerProps> = ({
 
 	let _computedComponentClassName = new StringBuilder()
 		.add("vertical-divider")
+		.add("vertical-divider-" + _theme)
 		.add(_className)
+		.toString();
+
+	let _computedComponentInsetTopClassName = new StringBuilder()
+		.add("vertical-divider-inset-top")
+		.add("vertical-divider-inset-top-" + _theme)
+		.toString();
+
+	let _computedComponentBarClassName = new StringBuilder()
+		.add("vertical-divider-bar")
+		.add("vertical-divider-bar-" + _theme)
+		.toString();
+
+	let _computedComponentInsetBottomClassName = new StringBuilder()
+		.add("vertical-divider-inset-bottom")
+		.add("vertical-divider-inset-bottom-" + _theme)
 		.toString();
 
 	// Return the JSX element for the vertical divider
@@ -63,7 +79,7 @@ const VerticalDivider: React.FC<IVerticalDividerProps> = ({
 		<div id={_id} className={_computedComponentClassName}>
 			{_inset == "top" || _inset == "center" ? (
 				<div
-					className={"vertical-divider-inset-top"}
+					className={_computedComponentInsetTopClassName}
 					style={{
 						width: _finalWidth,
 						height: _finalInsetTopHeight,
@@ -75,7 +91,7 @@ const VerticalDivider: React.FC<IVerticalDividerProps> = ({
 			)}
 
 			<div
-				className={"vertical-divider-bar-" + _theme}
+				className={_computedComponentBarClassName}
 				style={{
 					width: _finalWidth,
 					height: _finalHeight,
@@ -84,7 +100,7 @@ const VerticalDivider: React.FC<IVerticalDividerProps> = ({
 
 			{_inset == "bottom" || _inset == "center" ? (
 				<div
-					className={"vertical-divider-inset-bottom"}
+					className={_computedComponentInsetBottomClassName}
 					style={{
 						width: _finalWidth,
 						height: _finalInsetBottomHeight,
