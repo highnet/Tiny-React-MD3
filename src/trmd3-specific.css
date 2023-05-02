@@ -400,3 +400,10 @@ html {
 .icons-frame-dark-theme-trmd3 {
 	color: white;
 }
+
+.video-trmd3 {
+	display: flex;
+	margin: 0 auto;
+	border: none;
+	margin-bottom: 25px;
+}
