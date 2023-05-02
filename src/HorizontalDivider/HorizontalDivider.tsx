@@ -59,9 +59,15 @@ const HorizontalDivider: React.FC<IHorizontalDividerProps> = ({
 		.add("horizontal-divider-inset-right-" + _theme)
 		.toString();
 
-	let computedComponentBarClassName = new StringBuilder()
+	let _computedComponentBarClassName = new StringBuilder()
 		.add("horizontal-divider-bar")
-		.add("horizontal-divider-bar-" + _theme);
+		.add("horizontal-divider-bar-" + _theme)
+		.toString();
+
+	let _computedComponentInsetLeftClassName = new StringBuilder()
+		.add("horizontal-divider-inset-left")
+		.add("horizontal-divider-inset-left-" + _theme)
+		.toString();
 
 	// Return the JSX element for the horizontal divider
 	return (
@@ -80,7 +86,7 @@ const HorizontalDivider: React.FC<IHorizontalDividerProps> = ({
 			)}
 
 			<div
-				className={"horizontal-divider-bar-" + _theme}
+				className={_computedComponentBarClassName}
 				style={{
 					width: _computedWidth,
 					height: _computedHeight,
@@ -89,7 +95,7 @@ const HorizontalDivider: React.FC<IHorizontalDividerProps> = ({
 
 			{_inset == "left" || _inset == "center" ? (
 				<div
-					className={"horizontal-divider-inset-left"}
+					className={_computedComponentInsetLeftClassName}
 					style={{
 						height: _computedHeight,
 						width: _computedInsetLeftWidth,
