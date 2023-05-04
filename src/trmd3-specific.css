@@ -78,6 +78,7 @@ html {
 	overflow: scroll;
 	max-width: 90vw;
 	border-radius: 3px;
+	overflow-y: hidden;
 }
 
 @media screen and (max-width: 600px) {
