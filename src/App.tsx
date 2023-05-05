@@ -17,6 +17,7 @@ import "highlight.js/styles/base16/material-lighter.css";
 import Cookietrail from "./TRMD3/Cookietrail/Cookietrail";
 import TourGuide from "./TRMD3/TourGuide/TourGuide";
 import { getPreferredScheme, toggleTheme } from "./Gizmos/Themeing";
+import ChipsFrame from "./Chip/Frame/ChipsFrame";
 
 function App() {
 	console.log(`	👋 Welcome to TRMD3! 👋	`);
@@ -41,17 +42,22 @@ function App() {
 	return (
 		<div className={"App"}>
 			<Hero hasLogo={true} />
-			<iframe
-				className="video-trmd3"
-				width="560"
-				height="315"
-				src="https://www.youtube-nocookie.com/embed/yIQd2Ya0Ziw"
-				title="YouTube video player"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-			></iframe>
 			<Cookietrail />
 			<TourGuide />
 			<ThemeSwitcher toggleTheme={handleToggleTheme} />
+
+			<div
+				id="chips-section"
+				className={
+					"text text-title text-title-large section-title-trmd3 section-title-" +
+					theme +
+					"-trmd3"
+				}
+			>
+				🍪 Chips 🍪
+			</div>
+			<ChipsFrame />
+
 			<div
 				id="horizontal-dividers-section"
 				className={

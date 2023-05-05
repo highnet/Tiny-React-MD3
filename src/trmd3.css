@@ -952,7 +952,6 @@
 }
 
 /* TYPOGRAPHY */
-
 /* TEXT */
 .text {
 	font-family: "Roboto", sans-serif;
@@ -1005,7 +1004,6 @@
 }
 
 /* TEXT / TITLE */
-
 /* TEXT / TITLE / LARGE */
 .text-title-large {
 	font-weight: 400;
@@ -1080,7 +1078,6 @@
 }
 
 /* BUTTONS */
-
 .btn {
 	box-sizing: border-box;
 	display: flex;
@@ -1097,7 +1094,7 @@
 	width: fit-content;
 }
 
-/* BUTTONS / TEXT(Label) */
+/* BUTTONS / TEXT (LABEL) */
 .btn text {
 	display: flex;
 	align-items: center;
@@ -2100,7 +2097,6 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 }
 
 /* HORIZONTAL DIVIDERS */
-
 .horizontal-divider {
 	display: flex;
 }
@@ -2126,7 +2122,6 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 }
 
 /* VERTICAL DIVIDERS */
-
 .vertical-divider {
 	display: flex;
 	flex-direction: column;
@@ -2151,4 +2146,23 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 /* VERTICAL DIVIDERS / INSET / BOTTOM */
 .vertical-divider-inset-bottom {
 	background-color: red;
+}
+
+/* CHIPS */
+
+.chip {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 12px 6px;
+	gap: 10px;
+	cursor: pointer;
+	border-radius: 8px;
+	transition: background-color, box-shadow 0.3s;
+	border: 0;
+	height: 40px;
+	width: fit-content;
+	border: 1px solid red;
 }

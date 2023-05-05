@@ -368,9 +368,15 @@ html {
 	color: white;
 }
 
-.video-trmd3 {
-	display: flex;
-	margin: 0 auto;
-	border: none;
-	margin-bottom: 25px;
+/* CHIPS FRAME SECTION */
+.chips-frame-trmd3 {
+	gap: 5px;
+}
+
+.chips-frame-light-theme-trmd3 {
+	color: black;
+}
+
+.chips-frame-dark-theme-trmd3 {
+	color: white;
 }

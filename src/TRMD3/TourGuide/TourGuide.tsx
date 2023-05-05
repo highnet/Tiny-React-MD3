@@ -1,4 +1,5 @@
 import Button from "../../Button/Button";
+import { scrollToSection } from "../../Gizmos/Scrolling";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 
 interface ITourGuide {}
@@ -6,15 +7,6 @@ interface ITourGuide {}
 const TourGuide: React.FC<ITourGuide> = () => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
-
-	function scrollToSection(sectionId: string, yOffset = 0) {
-		const section = document.querySelector(`#${sectionId}`);
-		if (section) {
-			const y =
-				section.getBoundingClientRect().top + window.pageYOffset + yOffset;
-			window.scrollTo({ top: y, behavior: "smooth" });
-		}
-	}
 
 	return (
 		<div
