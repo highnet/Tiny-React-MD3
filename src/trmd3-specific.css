@@ -1,11 +1,9 @@
 /* HTML */
-
 html {
 	scroll-behavior: smooth;
 }
 
 /* BODY */
-
 .body-light-theme {
 	background-image: linear-gradient(
 		95deg,
@@ -23,7 +21,6 @@ html {
 }
 
 /* TRMD3 */
-
 .logo-trmd3 {
 	max-width: 300px;
 	margin: 0 auto;
@@ -40,7 +37,6 @@ html {
 }
 
 /* SINGLE-RULE-CLASSES	*/
-
 .flex-trmd3 {
 	display: flex;
 }
@@ -54,7 +50,6 @@ html {
 }
 
 /* THEME TOGGLING */
-
 .theme-toggler-trmd3 {
 	margin: 0 auto;
 	width: 80%;
@@ -64,7 +59,6 @@ html {
 }
 
 /* HIGHLIGHT.JS */
-
 .hljs {
 	background: linear-gradient(
 		0deg,
@@ -97,7 +91,6 @@ html {
 }
 
 /* HERO SECTION*/
-
 .hero-section-trmd3 {
 	display: flex;
 	flex-direction: column;
@@ -134,7 +127,6 @@ html {
 }
 
 /* COOKIETRAIL SECTION */
-
 .cookietrail-section-trmd3 {
 	margin-bottom: 3px;
 	margin-right: 5%;
@@ -159,7 +151,6 @@ html {
 }
 
 /* TOURGUIDE SECTION */
-
 .tourguide-section-trmd3 {
 	display: flex;
 	flex-direction: column;
@@ -178,16 +169,12 @@ html {
 	color: #ffffff;
 }
 
-.tourguide-buttons {
-}
-
 .tourguide-button {
 	display: inline-grid;
 	margin: 5px;
 }
 
 /* SECTION TITLES */
-
 .section-title-trmd3 {
 	text-align: center;
 	margin-top: 60px;
@@ -203,7 +190,6 @@ html {
 }
 
 /* SECTION SUBTITLES */
-
 .section-subtitle-trmd3 {
 	text-align: center;
 	margin-bottom: 10px;
@@ -218,7 +204,6 @@ html {
 }
 
 /* FRAMES */
-
 .frame-trmd3 {
 	background: linear-gradient(
 		0deg,
@@ -244,7 +229,6 @@ html {
 }
 
 /* HORIZONTAL DIVIDERS FRAME SECTION */
-
 .horizontal-dividers-frame-trmd3 {
 	gap: 30px;
 }
@@ -258,7 +242,6 @@ html {
 }
 
 /* VERTICAL DIVIDERS FRAME SECTION */
-
 .vertical-dividers-frame-trmd3 {
 	gap: 40px;
 }
@@ -272,10 +255,6 @@ html {
 }
 
 /* RADIO BUTTONS FRAME SECTION */
-
-.radio-buttons-frame-trmd3 {
-}
-
 .radio-buttons-frame-light-theme-trmd3 {
 	color: black;
 }
@@ -285,10 +264,6 @@ html {
 }
 
 /* BADGES FRAME SECTION */
-
-.badges-frame-trmd3 {
-}
-
 .badges-frame-light-theme-trmd3 {
 	color: black;
 }
@@ -305,10 +280,6 @@ html {
 }
 
 /* CHECKBOXES FRAME SECTION */
-
-.checkboxes-frame-trmd3 {
-}
-
 .checkboxes-frame-light-theme-trmd3 {
 	color: black;
 }
@@ -323,7 +294,6 @@ html {
 }
 
 /* SWITCHES FRAME SECTION */
-
 .switches-frame-trmd3 {
 	gap: 5px;
 }
@@ -337,7 +307,6 @@ html {
 }
 
 /* BUTTONS FRAME SECTION */
-
 .buttons-frame-trmd3 {
 	gap: 5;
 }
@@ -351,7 +320,6 @@ html {
 }
 
 /* TYPOGRAPHIES FRAME SECTION */
-
 .typographies-frame-trmd3 {
 	gap: 0px;
 }
@@ -375,7 +343,6 @@ html {
 }
 
 /* ELEVATIONS FRAME SECTION */
-
 .elevations-frame-trmd3 {
 	gap: 5px;
 }
@@ -389,7 +356,6 @@ html {
 }
 
 /* ICONS FRAME SECTION */
-
 .icons-frame-trmd3 {
 	gap: 1px;
 }
