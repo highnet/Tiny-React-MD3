@@ -24,7 +24,10 @@ function ChipsFrame() {
 			<div className="text text-label text-label-small">Label Only</div>
 			<Chip onClick={undefined}></Chip>
 			<pre>
-				<code className="language-html"> {"<Chip></Chip>"} </code>
+				<code className="language-html">
+					{" "}
+					{"<Chip onClick={undefined}></Chip>"}{" "}
+				</code>
 			</pre>
 
 			<div className="text text-label text-label-small">
@@ -32,7 +35,10 @@ function ChipsFrame() {
 			</div>
 			<Chip trailingIcon={true} onClick={undefined}></Chip>
 			<pre>
-				<code className="language-html"> {"<Chip></Chip>"} </code>
+				<code className="language-html">
+					{" "}
+					{"<Chip trailingIcon={true} onClick={undefined}></Chip>"}{" "}
+				</code>
 			</pre>
 
 			<div className="text text-label text-label-small">
@@ -40,22 +46,32 @@ function ChipsFrame() {
 			</div>
 			<Chip leadingIcon={true} onClick={undefined}></Chip>
 			<pre>
-				<code className="language-html"> {"<Chip></Chip>"} </code>
+				<code className="language-html">
+					{" "}
+					{"<Chip leadingIcon={true} onClick={undefined}></Chip>"}{" "}
+				</code>
 			</pre>
 
 			<div className="text text-label text-label-small">
 				Leading icon, label & trailing icon
 			</div>
 			<Chip leadingIcon={true} trailingIcon={true} onClick={undefined}></Chip>
-
 			<pre>
-				<code className="language-html"> {"<Chip></Chip>"} </code>
+				<code className="language-html">
+					{" "}
+					{
+						"<Chip leadingIcon={true} trailingIcon={true} onClick={undefined}></Chip>"
+					}{" "}
+				</code>
 			</pre>
 			<div className="text text-label text-label-small">Label & avatar</div>
 			<Chip avatar={true} onClick={undefined}></Chip>
 
 			<pre>
-				<code className="language-html"> {"<Chip></Chip>"} </code>
+				<code className="language-html">
+					{" "}
+					{"<Chip avatar={true} onClick={undefined}></Chip>"}{" "}
+				</code>
 			</pre>
 			<div className="text text-label text-label-small">
 				Label, avatar & trailing icon
@@ -63,7 +79,12 @@ function ChipsFrame() {
 			<Chip avatar={true} trailingIcon={true} onClick={undefined}></Chip>
 
 			<pre>
-				<code className="language-html"> {"<Chip></Chip>"} </code>
+				<code className="language-html">
+					{" "}
+					{
+						"<Chip avatar={true} trailingIcon={true} onClick={undefined}></Chip>"
+					}{" "}
+				</code>
 			</pre>
 
 			<div className="text text-title text-title-large">Assist Chips</div>
