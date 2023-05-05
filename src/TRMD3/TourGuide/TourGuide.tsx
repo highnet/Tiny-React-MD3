@@ -19,6 +19,14 @@ const TourGuide: React.FC<ITourGuide> = () => {
 					className="tourguide-button"
 					configuration="elevated"
 					disabled={false}
+					onClick={() => scrollToSection("chips-section", -60)}
+				>
+					<div className="text text-label text-label-small">🍪 Chips 🍪</div>
+				</Button>
+				<Button
+					className="tourguide-button"
+					configuration="elevated"
+					disabled={false}
 					onClick={() => scrollToSection("horizontal-dividers-section", -60)}
 				>
 					<div className="text text-label text-label-small">
