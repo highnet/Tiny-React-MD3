@@ -22,67 +22,125 @@ function ChipsFrame() {
 			<div className="text text-title text-title-large">Input Chips</div>
 
 			<div className="text text-label text-label-small">Label Only</div>
-			<Chip configuration="label-only" onClick={undefined}>
-				<div className="text text-label text-label-large">Label</div>
-			</Chip>
+			<Chip onClick={undefined}></Chip>
 			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						'<Chip configuration="label-only" onClick={undefined}><div className="text text-label text-label-large">Label</div></Chip>'
-					}{" "}
-				</code>
+				<code className="language-html"> {"<Chip></Chip>"} </code>
 			</pre>
 
 			<div className="text text-label text-label-small">
 				Label & trailing icon
 			</div>
+			<Chip trailingIcon={true} onClick={undefined}></Chip>
+			<pre>
+				<code className="language-html"> {"<Chip></Chip>"} </code>
+			</pre>
+
 			<div className="text text-label text-label-small">
 				Leading icon & label
 			</div>
+			<Chip leadingIcon={true} onClick={undefined}></Chip>
+			<pre>
+				<code className="language-html"> {"<Chip></Chip>"} </code>
+			</pre>
+
 			<div className="text text-label text-label-small">
 				Leading icon, label & trailing icon
 			</div>
+			<Chip leadingIcon={true} trailingIcon={true} onClick={undefined}></Chip>
+
+			<pre>
+				<code className="language-html"> {"<Chip></Chip>"} </code>
+			</pre>
 			<div className="text text-label text-label-small">Label & avatar</div>
+			<Chip avatar={true} onClick={undefined}></Chip>
+
+			<pre>
+				<code className="language-html"> {"<Chip></Chip>"} </code>
+			</pre>
 			<div className="text text-label text-label-small">
 				Label, avatar & trailing icon
 			</div>
+			<Chip avatar={true} trailingIcon={true} onClick={undefined}></Chip>
+
+			<pre>
+				<code className="language-html"> {"<Chip></Chip>"} </code>
+			</pre>
 
 			<div className="text text-title text-title-large">Assist Chips</div>
 
 			<div className="text text-label text-label-small">Label Only</div>
+			<pre>
+				<code className="language-html"> {"<Chip></Chip>"} </code>
+			</pre>
 			<div className="text text-label text-label-small">
 				Label only - elevated
 			</div>
+			<pre>
+				<code className="language-html"> {"<Chip></Chip>"} </code>
+			</pre>
 			<div className="text text-label text-label-small">Label & icon</div>
+			<pre>
+				<code className="language-html"> {"<Chip></Chip>"} </code>
+			</pre>
 			<div className="text text-label text-label-small">
 				Label & icon - elevated
 			</div>
+			<pre>
+				<code className="language-html"> {"<Chip></Chip>"} </code>
+			</pre>
 			<div className="text text-label text-label-small">Label & icon</div>
 
 			<div className="text text-title text-title-large">
 				Label only - elevated
 			</div>
+			<pre>
+				<code className="language-html"> {"<Chip></Chip>"} </code>
+			</pre>
 			<div className="text text-label text-label-small">Label & favicon</div>
+			<pre>
+				<code className="language-html"> {"<Chip></Chip>"} </code>
+			</pre>
 			<div className="text text-label text-label-small">
 				Label & favicon - elevated
 			</div>
+			<pre>
+				<code className="language-html"> {"<Chip></Chip>"} </code>
+			</pre>
 			<div className="text text-label text-label-small">
 				Label & branded icon
 			</div>
+			<pre>
+				<code className="language-html"> {"<Chip></Chip>"} </code>
+			</pre>
 			<div className="text text-label text-label-small">
 				Label & branded icon - elevated
 			</div>
+			<pre>
+				<code className="language-html"> {"<Chip></Chip>"} </code>
+			</pre>
 
 			<div className="text text-title text-title-large">Suggestion Chips</div>
+
 			<div className="text text-label text-label-small">Outlined </div>
+			<pre>
+				<code className="language-html"> {"<Chip></Chip>"} </code>
+			</pre>
 			<div className="text text-label text-label-small">Elevated </div>
+			<pre>
+				<code className="language-html"> {"<Chip></Chip>"} </code>
+			</pre>
 			<div className="text text-label text-label-small">
 				Leading icon & label Outlined
 			</div>
+			<pre>
+				<code className="language-html"> {"<Chip></Chip>"} </code>
+			</pre>
 			<div className="text text-label text-label-small">
 				Leading icon & label Elevated
 			</div>
+			<pre>
+				<code className="language-html"> {"<Chip></Chip>"} </code>
+			</pre>
 		</div>
 	);
 }

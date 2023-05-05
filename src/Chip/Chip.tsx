@@ -5,49 +5,92 @@ import { getPreferredScheme } from "../Gizmos/Themeing";
 import { StringBuilder } from "../Gizmos/StringBuilder";
 
 const Chip: React.FC<IChipProps> = ({
-	disabled,
-	children,
 	id,
-	className,
-	onClick,
 	configuration,
+	className,
+	children,
+	onClick,
 	selected,
-	icon,
+	leadingIcon,
+	leadingIconName,
+	trailingIcon,
+	trailingIconName,
+	avatar,
+	avatarIconNameDeselected,
+	avatarIconNameSelected,
 }) => {
-	const [_disabled] = useState(disabled || false);
 	const [_id] = useState(id || undefined);
 	const [_className] = useState(className || "");
-	const [_config] = useState(configuration || "label-only");
-	const [_selected] = useState(selected || false);
-	const [_icon] = useState(icon || false);
+	const [_configuration] = useState(configuration || "input");
+
+	const [_selected, setSelected] = useState(selected || false);
+
+	const [_leadingIcon] = useState(leadingIcon || false);
+	const [_leadingIconName] = useState(leadingIconName || undefined);
+
+	const [_trailingIcon] = useState(trailingIcon || false);
+	const [_trailingIconName] = useState(trailingIconName || undefined);
+
+	const [_avatar] = useState(avatar || false);
+	const [_avatarIconNameDeselected] = useState(
+		avatarIconNameDeselected || "person"
+	);
+	const [_avatarIconNameSelected] = useState(avatarIconNameSelected || "check");
 
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
+	const click = () => {
+		console.log("Thank you for using Tiny React MD3!");
+	};
+
+	const handleClick = () => {
+		setSelected(!_selected);
+		click();
+	};
+
 	let _computedComponentClassName = new StringBuilder()
 		.add("chip")
-		.add("chip-" + _config)
-		.add("chip-" + (_icon ? "with" : "without") + "-icon")
-		.add("chip-" + (_disabled ? "disabled" : "enabled"))
+		.add("chip-" + _configuration)
+		.add("chip-" + (_selected ? "selected" : "deselected"))
 		.add("chip-" + _theme)
 		.add(_className)
 		.toString();
-
-	// Define click function
-	const click = () => {
-		console.log("Thanks for Using Tiny React MD3!");
-	};
 
 	return (
 		<button
 			id={_id}
 			className={_computedComponentClassName}
-			disabled={_disabled}
 			onClick={(e) => {
 				onClick?.(e);
-				click();
+				handleClick();
 			}}
 		>
+			{_avatar ? (
+				<span className="material-symbols-outlined chip-avatar">
+					{_selected ? _avatarIconNameSelected : _avatarIconNameDeselected}
+				</span>
+			) : (
+				""
+			)}
+
+			{_leadingIcon && !_avatar ? (
+				<span className="material-symbols-outlined chip-icon-leading">
+					{_leadingIconName ? _leadingIconName : "local_taxi"}
+				</span>
+			) : (
+				""
+			)}
+
+			<div className="text text-label text-label-large">Label</div>
+
+			{_trailingIcon ? (
+				<span className="material-symbols-outlined chip-icon-trailing">
+					{_trailingIconName ? _trailingIcon : "close"}
+				</span>
+			) : (
+				""
+			)}
 			{children}
 		</button>
 	);

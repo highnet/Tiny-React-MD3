@@ -1088,7 +1088,7 @@
 	gap: 10px;
 	cursor: pointer;
 	border-radius: 100px;
-	transition: background-color, box-shadow 0.3s;
+	transition: background-color 0.3s, box-shadow 0.3s;
 	border: 0;
 	height: 40px;
 	width: fit-content;
@@ -2153,16 +2153,101 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .chip {
 	box-sizing: border-box;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	padding: 12px 6px;
+	padding: 16px 12px;
 	gap: 10px;
 	cursor: pointer;
 	border-radius: 8px;
-	transition: background-color, box-shadow 0.3s;
+	transition: background-color 0.3s, box-shadow 0.3s;
 	border: 0;
 	height: 40px;
 	width: fit-content;
-	border: 1px solid red;
+}
+
+.chip.chip-light-theme {
+	border: 1px solid var(--m3-sys-light-outline);
+	background-color: transparent;
+	color: var(--m3-sys-light-on-surface-variant);
+}
+
+.chip:hover.chip-light-theme {
+	background-color: var(--m3-state-layers-light-on-surface-variant-opacity-08);
+}
+
+.chip:focus.chip-light-theme {
+	background-color: var(--m3-sys-light-surface);
+	border: 1px solid var(--m3-sys-light-on-surface-variant);
+}
+
+.chip.chip-selected.chip-light-theme {
+	border: none;
+	color: var(--m3-sys-light-on-secondary-container);
+}
+
+.chip.chip-selected.chip-light-theme {
+	background-color: var(--m3-sys-light-secondary-container);
+}
+
+.chip:hover.chip-selected.chip-light-theme {
+	background-color: color-mix(
+		in srgb,
+		var(--m3-sys-light-secondary-container) 92%,
+		var(--m3-state-layers-light-on-container-opacity-08)
+	);
+}
+
+.chip:focus.chip-selected.chip-light-theme {
+	background-color: color-mix(
+		in srgb,
+		var(--m3-sys-light-secondary-container) 88%,
+		var(--m3-state-layers-light-on-secondary-container-opacity-12)
+	);
+}
+
+.chip:active.chip-deselected.chip-light-theme {
+	background-color: color-mix(
+		in srgb,
+		var(--m3-sys-light-surface) 84%,
+		var(--m3-state-layers-light-on-surface-variant-opacity-16)
+	);
+	box-shadow: var(--m3-elevation-light-3);
+}
+
+.chip:active.chip-selected.chip-light-theme {
+	background-color: color-mix(
+		in srgb,
+		var(--m3-sys-light-secondary-container) 84%,
+		var(--m3-state-layers-light-on-secondary-container-opacity-16)
+	);
+	box-shadow: var(--m3-elevation-light-3);
+}
+
+.chip.chip-light-theme > .chip-icon-trailing {
+	color: var(--m3-sys-light-on-surface-variant);
+}
+
+.chip-selected.chip-light-theme > .chip-icon-trailing {
+	color: var(--m3-sys-light-on-secondary-container);
+}
+
+.chip.chip-light-theme > .chip-icon-leading {
+	color: var(--m3-sys-light-primary);
+}
+
+.chip > .chip-avatar {
+	border-radius: 50%;
+	scale: 1.5;
+	margin-right: 8px;
+}
+
+.chip.chip-deselected.chip-light-theme > .chip-avatar {
+	background-color: var(--m3-sys-light-on-surface-variant);
+	color: var(--m3-sys-light-on-primary);
+}
+
+.chip.chip-selected.chip-light-theme > .chip-avatar {
+	background-color: var(--m3-sys-light-on-secondary-container);
+	color: var(--m3-sys-light-on-secondary);
 }
