@@ -2166,23 +2166,29 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	transition: background-color 0.3s, box-shadow 0.3s;
 }
 
+.avatar-on-chip {
+	border-radius: 50%;
+	scale: 1.15;
+	margin-right: 8px;
+}
+
+.label-on-chip {
+	margin: 0px 4px;
+}
+
 .chip-one-items {
 	gap: 8px;
-	padding: 0px 12px;
+	padding: 0px 8px;
 }
 
 .chip-two-items {
-	gap: 8px;
+	gap: 2px;
 	padding: 0px 6px;
 }
 
 .chip-three-items {
 	gap: 2px;
 	padding: 0px 4px;
-}
-
-.chip-avatar {
-	gap: 2px;
 }
 
 .chip.chip-light-theme {
@@ -2316,12 +2322,6 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 
 .chip.chip-dark-theme > .chip-icon-leading {
 	color: var(--m3-sys-dark-primary);
-}
-
-.chip > .avatar-on-chip {
-	border-radius: 50%;
-	scale: 1.15;
-	margin-right: 8px;
 }
 
 .chip.chip-deselected.chip-light-theme > .avatar-on-chip {

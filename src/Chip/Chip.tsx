@@ -102,7 +102,9 @@ const Chip: React.FC<IChipProps> = ({
 			) : (
 				""
 			)}
-			<div className="text text-label text-label-large">{_label}</div>
+			<div className="text text-label text-label-large label-on-chip">
+				{_label}
+			</div>
 			{_trailingIcon ? (
 				<span className="material-symbols-outlined chip-icon-trailing">
 					{_trailingIconName ? _trailingIcon : "close"}
