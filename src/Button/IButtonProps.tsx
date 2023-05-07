@@ -18,4 +18,5 @@ export interface IButtonProps extends IComponentProps {
 	configuration?: string; // Configuration of the button
 	icon?: boolean; // Whether the button has an icon
 	iconName?: string; // Name of the icon
+	label?: string; // Label of the button
 }

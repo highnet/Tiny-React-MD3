@@ -966,6 +966,7 @@
 .text-display-large {
 	font-size: 57px;
 	line-height: 64px;
+	letter-spacing: -0.25px;
 }
 
 /* TEXT / DISPLAY / MEDIUM */
@@ -1028,27 +1029,27 @@
 }
 
 /* TEXT / LABEL */
+.text-label {
+	font-weight: 500;
+	letter-spacing: 0.5px;
+}
 /* TEXT / LABEL / LARGE */
 .text-label-large {
-	font-weight: 400;
-	font-size: 22px;
-	line-height: 28px;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.1px;
 }
 
 /* TEXT / LABEL / MEDIUM */
 .text-label-medium {
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 24px;
-	letter-spacing: 0.15px;
+	font-size: 12px;
+	line-height: 16px;
 }
 
 /* TEXT / LABEL / SMALL */
 .text-label-small {
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 20px;
-	letter-spacing: 0.1px;
+	font-size: 11px;
+	line-height: 16px;
 }
 
 /* TEXT / BODY */
@@ -1081,17 +1082,17 @@
 .btn {
 	box-sizing: border-box;
 	display: flex;
+	gap: 8px;
+	padding: 0px 16px;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 10px 24px;
-	gap: 10px;
 	cursor: pointer;
 	border-radius: 100px;
 	transition: background-color 0.3s, box-shadow 0.3s;
 	border: 0;
-	height: 40px;
 	width: fit-content;
+	height: 40px;
 }
 
 /* BUTTONS / TEXT (LABEL) */
@@ -1105,7 +1106,7 @@
 /* BUTTONS / WITH ICON */
 .btn-with-icon {
 	flex-direction: row;
-	padding: 10px 24px 10px 16px;
+	padding: 0px 9px;
 	gap: 8px;
 }
 
@@ -2156,24 +2157,49 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	padding: 16px 12px;
-	gap: 10px;
 	cursor: pointer;
-	border-radius: 8px;
-	transition: background-color 0.3s, box-shadow 0.3s;
+	border-radius: 6px;
 	border: 0;
-	height: 40px;
+	height: 32px;
 	width: fit-content;
+	background-color: transparent;
+	transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.chip-one-items {
+	gap: 8px;
+	padding: 0px 12px;
+}
+
+.chip-two-items {
+	gap: 8px;
+	padding: 0px 6px;
+}
+
+.chip-three-items {
+	gap: 2px;
+	padding: 0px 4px;
+}
+
+.chip-avatar {
+	gap: 2px;
 }
 
 .chip.chip-light-theme {
 	border: 1px solid var(--m3-sys-light-outline);
-	background-color: transparent;
 	color: var(--m3-sys-light-on-surface-variant);
+}
+
+.chip.chip-dark-theme {
+	border: 1px solid var(--m3-sys-dark-outline);
+	color: var(--m3-sys-dark-on-surface-variant);
 }
 
 .chip:hover.chip-light-theme {
 	background-color: var(--m3-state-layers-light-on-surface-variant-opacity-08);
+}
+.chip:hover.chip-dark-theme {
+	background-color: var(--m3-state-layers-dark-on-surface-variant-opacity-08);
 }
 
 .chip:focus.chip-light-theme {
@@ -2181,13 +2207,23 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	border: 1px solid var(--m3-sys-light-on-surface-variant);
 }
 
-.chip.chip-selected.chip-light-theme {
+.chip:focus.chip-dark-theme {
+	background-color: var(--m3-state-layers-dark-on-surface-variant-opacity-12);
+	border: 1px solid var(--m3-state-layers-dark-on-surface-variant-opacity-12);
+}
+
+.chip.chip-selected {
 	border: none;
-	color: var(--m3-sys-light-on-secondary-container);
 }
 
 .chip.chip-selected.chip-light-theme {
+	color: var(--m3-sys-light-on-secondary-container);
 	background-color: var(--m3-sys-light-secondary-container);
+}
+
+.chip.chip-selected.chip-dark-theme {
+	color: var(--m3-sys-dark-on-secondary-container);
+	background-color: var(--m3-sys-dark-secondary-container);
 }
 
 .chip:hover.chip-selected.chip-light-theme {
@@ -2198,11 +2234,27 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	);
 }
 
+.chip:hover.chip-selected.chip-dark-theme {
+	background-color: color-mix(
+		in srgb,
+		var(--m3-sys-dark-secondary-container) 92%,
+		var(--m3-state-layers-dark-on-container-opacity-08)
+	);
+}
+
 .chip:focus.chip-selected.chip-light-theme {
 	background-color: color-mix(
 		in srgb,
 		var(--m3-sys-light-secondary-container) 88%,
 		var(--m3-state-layers-light-on-secondary-container-opacity-12)
+	);
+}
+
+.chip:focus.chip-selected.chip-dark-theme {
+	background-color: color-mix(
+		in srgb,
+		var(--m3-sys-dark-secondary-container) 88%,
+		var(--m3-state-layers-dark-on-secondary-container-opacity-12)
 	);
 }
 
@@ -2215,6 +2267,15 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	box-shadow: var(--m3-elevation-light-3);
 }
 
+.chip:active.chip-deselected.chip-dark-theme {
+	background-color: color-mix(
+		in srgb,
+		var(--m3-sys-dark-surface) 84%,
+		var(--m3-state-layers-dark-on-surface-variant-opacity-16)
+	);
+	box-shadow: var(--m3-elevation-dark-3);
+}
+
 .chip:active.chip-selected.chip-light-theme {
 	background-color: color-mix(
 		in srgb,
@@ -2224,30 +2285,65 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	box-shadow: var(--m3-elevation-light-3);
 }
 
+.chip:active.chip-selected.chip-dark-theme {
+	background-color: color-mix(
+		in srgb,
+		var(--m3-sys-dark-secondary-container) 84%,
+		var(--m3-state-layers-dark-on-secondary-container-opacity-16)
+	);
+	box-shadow: var(--m3-elevation-dark-3);
+}
+
 .chip.chip-light-theme > .chip-icon-trailing {
 	color: var(--m3-sys-light-on-surface-variant);
+}
+
+.chip.chip-dark-theme > .chip-icon-trailing {
+	color: var(--m3-sys-dark-on-surface-variant);
 }
 
 .chip-selected.chip-light-theme > .chip-icon-trailing {
 	color: var(--m3-sys-light-on-secondary-container);
 }
 
+.chip-selected.chip-dark-theme > .chip-icon-trailing {
+	color: var(--m3-sys-dark-on-secondary-container);
+}
+
 .chip.chip-light-theme > .chip-icon-leading {
 	color: var(--m3-sys-light-primary);
 }
 
-.chip > .chip-avatar {
+.chip.chip-dark-theme > .chip-icon-leading {
+	color: var(--m3-sys-dark-primary);
+}
+
+.chip > .avatar-on-chip {
 	border-radius: 50%;
-	scale: 1.5;
+	scale: 1.15;
 	margin-right: 8px;
 }
 
-.chip.chip-deselected.chip-light-theme > .chip-avatar {
+.chip.chip-deselected.chip-light-theme > .avatar-on-chip {
 	background-color: var(--m3-sys-light-on-surface-variant);
 	color: var(--m3-sys-light-on-primary);
 }
 
-.chip.chip-selected.chip-light-theme > .chip-avatar {
+.chip.chip-deselected.chip-dark-theme > .avatar-on-chip {
+	background-color: var(--m3-sys-dark-on-surface-variant);
+	color: var(--m3-sys-dark-on-primary);
+}
+
+.chip.chip-selected.chip-light-theme > .avatar-on-chip {
 	background-color: var(--m3-sys-light-on-secondary-container);
 	color: var(--m3-sys-light-on-secondary);
+}
+
+.chip.chip-selected.chip-dark-theme > .avatar-on-chip {
+	background-color: var(--m3-sys-dark-on-secondary-container);
+	color: var(--m3-sys-dark-on-secondary);
+}
+
+.chip-avatar {
+	border-radius: 30px;
 }

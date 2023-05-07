@@ -1,5 +1,6 @@
 import Button from "../Button";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
+import React from "react";
 
 /* 
 	1
@@ -30,7 +31,7 @@ import { getPreferredScheme } from "../../Gizmos/Themeing";
 	pasted to use in other parts of the application.
 */
 
-function ButtonsFrame() {
+const ButtonsFrame = () => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
@@ -45,21 +46,25 @@ function ButtonsFrame() {
 			{/* BUTTONS */}
 			<div className="text text-title text-title-large">Filled Buttons</div>
 			<div className="text text-label text-label-small">No Icon</div>
-			<Button configuration="filled" disabled={false} onClick={undefined}>
-				<div className="text text-label text-label-small">Enabled</div>
-			</Button>
+			<Button
+				configuration="filled"
+				disabled={false}
+				onClick={undefined}
+			></Button>
 			<pre>
 				<code className="language-html">
 					{" "}
 					{
-						'<Button configuration="filled" disabled={false} onClick={undefined}><div className="text text-label text-label-small">Enabled</div></Button>'
+						'<Button configuration="filled" disabled={false} onClick={undefined}></Button>'
 					}{" "}
 				</code>
 			</pre>
 			<div className="text text-label text-label-small">No Icon (inactive)</div>
-			<Button configuration="filled" disabled={true} onClick={undefined}>
-				<div className="text text-label text-label-small">Disabled</div>
-			</Button>
+			<Button
+				configuration="filled"
+				disabled={true}
+				onClick={undefined}
+			></Button>
 			<pre>
 				<code className="language-html">
 					{" "}
@@ -75,14 +80,12 @@ function ButtonsFrame() {
 				icon={true}
 				iconName={"search"}
 				onClick={undefined}
-			>
-				<div className="text text-label text-label-small">Enabled</div>
-			</Button>
+			></Button>
 			<pre>
 				<code className="language-html">
 					{" "}
 					{
-						'<Button configuration="filled" disabled={false} icon={true} iconName={"search"} onClick={undefined}><div className="text text-label text-label-small">Enabled</div></Button>'
+						'<Button configuration="filled" disabled={false} icon={true} iconName={"search"} onClick={undefined}></Button>'
 					}{" "}
 				</code>
 			</pre>
@@ -95,9 +98,7 @@ function ButtonsFrame() {
 				icon={true}
 				iconName={"search"}
 				onClick={undefined}
-			>
-				<div className="text text-label text-label-small">Disabled</div>
-			</Button>
+			></Button>
 			<pre>
 				<code className="language-html">
 					{" "}
@@ -108,21 +109,25 @@ function ButtonsFrame() {
 			</pre>
 			<div className="text text-title text-title-large">Outlined Buttons</div>
 			<div className="text text-label text-label-small">No Icon</div>
-			<Button configuration="outlined" disabled={false} onClick={undefined}>
-				<div className="text text-label text-label-small">Enabled</div>
-			</Button>
+			<Button
+				configuration="outlined"
+				disabled={false}
+				onClick={undefined}
+			></Button>
 			<pre>
 				<code className="language-html">
 					{" "}
 					{
-						'<Button configuration="outlined" disabled={false} onClick={undefined}><div className="text text-label text-label-small">Enabled</div></Button>'
+						'<Button configuration="outlined" disabled={false} onClick={undefined}></Button>'
 					}{" "}
 				</code>
 			</pre>
 			<div className="text text-label text-label-small">No Icon (inactive)</div>
-			<Button configuration="outlined" disabled={true} onClick={undefined}>
-				<div className="text text-label text-label-small">Disabled</div>
-			</Button>
+			<Button
+				configuration="outlined"
+				disabled={true}
+				onClick={undefined}
+			></Button>
 			<pre>
 				<code className="language-html">
 					{" "}
@@ -138,14 +143,12 @@ function ButtonsFrame() {
 				onClick={undefined}
 				icon={true}
 				iconName={"search"}
-			>
-				<div className="text text-label text-label-small">Enabled</div>
-			</Button>
+			></Button>
 			<pre>
 				<code className="language-html">
 					{" "}
 					{
-						'<Button configuration="outlined" disabled={false} onClick={undefined} icon={true} iconName={"search"}><div className="text text-label text-label-small">Enabled</div></Button>'
+						'<Button configuration="outlined" disabled={false} onClick={undefined} icon={true} iconName={"search"}></Button>'
 					}{" "}
 				</code>
 			</pre>
@@ -158,9 +161,7 @@ function ButtonsFrame() {
 				onClick={undefined}
 				icon={true}
 				iconName={"search"}
-			>
-				<div className="text text-label text-label-small">Disabled</div>
-			</Button>
+			></Button>
 			<pre>
 				<code className="language-html">
 					{" "}
@@ -171,27 +172,27 @@ function ButtonsFrame() {
 			</pre>
 			<div className="text text-title text-title-large">Text Buttons</div>
 			<div className="text text-label text-label-small">No Icon</div>
-			<Button configuration="text" disabled={false} onClick={undefined}>
-				<div className="text text-label text-label-small">Enabled</div>
-			</Button>
+			<Button
+				configuration="text"
+				disabled={false}
+				onClick={undefined}
+			></Button>
 
 			<pre>
 				<code className="language-html">
 					{" "}
 					{
-						'<Button configuration="text" disabled={false} onClick={undefined}><div className="text text-label text-label-small">Enabled</div></Button>'
+						'<Button configuration="text" disabled={false} onClick={undefined}></Button>'
 					}{" "}
 				</code>
 			</pre>
 			<div className="text text-label text-label-small">No Icon (inactive)</div>
-			<Button configuration="text" disabled={true} onClick={undefined}>
-				<div className="text text-label text-label-small">Enabled</div>
-			</Button>
+			<Button configuration="text" disabled={true} onClick={undefined}></Button>
 			<pre>
 				<code className="language-html">
 					{" "}
 					{
-						'<Button configuration="text" disabled={true} onClick={undefined}><div className="text text-label text-label-small">Enabled</div></Button>'
+						'<Button configuration="text" disabled={true} onClick={undefined}></Button>'
 					}{" "}
 				</code>
 			</pre>
@@ -202,14 +203,12 @@ function ButtonsFrame() {
 				onClick={undefined}
 				icon={true}
 				iconName={"search"}
-			>
-				<div className="text text-label text-label-small">Enabled</div>
-			</Button>
+			></Button>
 			<pre>
 				<code className="language-html">
 					{" "}
 					{
-						'<Button configuration="text" disabled={false} onClick={undefined} icon={true} iconName={"search"}><div className="text text-label text-label-small">Enabled</div></Button>'
+						'<Button configuration="text" disabled={false} onClick={undefined} icon={true} iconName={"search"}></Button>'
 					}{" "}
 				</code>
 			</pre>
@@ -222,9 +221,7 @@ function ButtonsFrame() {
 				onClick={undefined}
 				icon={true}
 				iconName={"search"}
-			>
-				<div className="text text-label text-label-small">Disabled</div>
-			</Button>
+			></Button>
 			<pre>
 				<code className="language-html">
 					{" "}
@@ -235,26 +232,30 @@ function ButtonsFrame() {
 			</pre>
 			<div className="text text-title text-title-large">Elevated Buttons</div>
 			<div className="text text-label text-label-small">No Icon</div>
-			<Button configuration="elevated" disabled={false} onClick={undefined}>
-				<div className="text text-label text-label-small">Enabled</div>
-			</Button>
+			<Button
+				configuration="elevated"
+				disabled={false}
+				onClick={undefined}
+			></Button>
 			<pre>
 				<code className="language-html">
 					{" "}
 					{
-						'<Button configuration="elevated" disabled={false} onClick={undefined}><div className="text text-label text-label-small">Enabled</div></Button>'
+						'<Button configuration="elevated" disabled={false} onClick={undefined}></Button>'
 					}{" "}
 				</code>
 			</pre>
 			<div className="text text-label text-label-small">No Icon (inactive)</div>
-			<Button configuration="elevated" disabled={true} onClick={undefined}>
-				<div className="text text-label text-label-small">Enabled</div>
-			</Button>
+			<Button
+				configuration="elevated"
+				disabled={true}
+				onClick={undefined}
+			></Button>
 			<pre>
 				<code className="language-html">
 					{" "}
 					{
-						'<Button configuration="elevated" disabled={true} onClick={undefined}><div className="text text-label text-label-small">Enabled</div></Button>'
+						'<Button configuration="elevated" disabled={true} onClick={undefined}></Button>'
 					}{" "}
 				</code>
 			</pre>
@@ -265,14 +266,12 @@ function ButtonsFrame() {
 				onClick={undefined}
 				icon={true}
 				iconName={"search"}
-			>
-				<div className="text text-label text-label-small">Enabled</div>
-			</Button>
+			></Button>
 			<pre>
 				<code className="language-html">
 					{" "}
 					{
-						'<Button configuration="elevated" disabled={false} onClick={undefined} icon={true} iconName={"search"}><div className="text text-label text-label-small">Enabled</div></Button>'
+						'<Button configuration="elevated" disabled={false} onClick={undefined} icon={true} iconName={"search"}></Button>'
 					}{" "}
 				</code>
 			</pre>
@@ -285,9 +284,7 @@ function ButtonsFrame() {
 				onClick={undefined}
 				icon={true}
 				iconName={"search"}
-			>
-				<div className="text text-label text-label-small">Disabled</div>
-			</Button>
+			></Button>
 			<pre>
 				<code className="language-html">
 					{" "}
@@ -298,21 +295,25 @@ function ButtonsFrame() {
 			</pre>
 			<div className="text text-title text-title-large">Tonal Buttons</div>
 			<div className="text text-label text-label-small">No Icon</div>
-			<Button configuration="tonal" disabled={false} onClick={undefined}>
-				<div className="text text-label text-label-small">Enabled</div>
-			</Button>
+			<Button
+				configuration="tonal"
+				disabled={false}
+				onClick={undefined}
+			></Button>
 			<pre>
 				<code className="language-html">
 					{" "}
 					{
-						'<Button configuration="tonal" disabled={false} onClick={undefined}><div className="text text-label text-label-small">Enabled</div></Button>'
+						'<Button configuration="tonal" disabled={false} onClick={undefined}></Button>'
 					}{" "}
 				</code>
 			</pre>
 			<div className="text text-label text-label-small">No Icon (inactive)</div>
-			<Button configuration="tonal" disabled={true} onClick={undefined}>
-				<div className="text text-label text-label-small">Disabled</div>
-			</Button>
+			<Button
+				configuration="tonal"
+				disabled={true}
+				onClick={undefined}
+			></Button>
 			<pre>
 				<code className="language-html">
 					{" "}
@@ -328,14 +329,12 @@ function ButtonsFrame() {
 				onClick={undefined}
 				icon={true}
 				iconName={"search"}
-			>
-				<div className="text text-label text-label-small">Enabled</div>
-			</Button>
+			></Button>
 			<pre>
 				<code className="language-html">
 					{" "}
 					{
-						'<Button configuration="tonal" disabled={false} onClick={undefined} icon={true} iconName={"search"}><div className="text text-label text-label-small">Enabled</div></Button>'
+						'<Button configuration="tonal" disabled={false} onClick={undefined} icon={true} iconName={"search"}></Button>'
 					}{" "}
 				</code>
 			</pre>
@@ -348,9 +347,7 @@ function ButtonsFrame() {
 				onClick={undefined}
 				icon={true}
 				iconName={"search"}
-			>
-				<div className="text text-label text-label-small">Disabled</div>
-			</Button>
+			></Button>
 			<pre>
 				<code className="language-html">
 					{" "}
@@ -361,6 +358,6 @@ function ButtonsFrame() {
 			</pre>
 		</div>
 	);
-}
+};
 
 export default ButtonsFrame;

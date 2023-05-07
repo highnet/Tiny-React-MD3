@@ -18,93 +18,73 @@ const TourGuide: React.FC<ITourGuide> = () => {
 				<Button
 					className="tourguide-button"
 					configuration="elevated"
+					label="🍪 Chips 🍪"
 					disabled={false}
 					onClick={() => scrollToSection("chips-section", -60)}
-				>
-					<div className="text text-label text-label-small">🍪 Chips 🍪</div>
-				</Button>
+				></Button>
 				<Button
 					className="tourguide-button"
 					configuration="elevated"
+					label="👉 Horizontal Dividers 👉"
 					disabled={false}
 					onClick={() => scrollToSection("horizontal-dividers-section", -60)}
-				>
-					<div className="text text-label text-label-small">
-						👉 Horizontal Dividers 👉
-					</div>
-				</Button>
+				></Button>
 				<Button
 					className="tourguide-button"
 					configuration="elevated"
+					label="👆 Vertical Dividers 👆"
 					disabled={false}
 					onClick={() => scrollToSection("vertical-dividers-section", -60)}
-				>
-					<div className="text text-label text-label-small">
-						👆 Vertical Dividers 👆
-					</div>
-				</Button>
+				></Button>
 				<Button
 					className="tourguide-button"
 					configuration="elevated"
+					label="🔘 Radio Buttons 🔘"
 					disabled={false}
 					onClick={() => scrollToSection("radio-buttons-section", -60)}
-				>
-					<div className="text text-label text-label-small">
-						🔘 Radio Buttons 🔘
-					</div>
-				</Button>
+				></Button>
 				<Button
 					className="tourguide-button"
 					configuration="elevated"
+					label="📛 Badges 📛"
 					disabled={false}
 					onClick={() => scrollToSection("badges-section", -60)}
-				>
-					<div className="text text-label text-label-small">📛 Badges 📛</div>
-				</Button>
+				></Button>
 				<Button
 					className="tourguide-button"
 					configuration="elevated"
+					label="☑️ Checkboxes ☑️"
 					disabled={false}
 					onClick={() => scrollToSection("checkboxes-section", -60)}
-				>
-					<div className="text text-label text-label-small">
-						☑️ Checkboxes ☑️
-					</div>
-				</Button>
+				></Button>
 				<Button
 					className="tourguide-button"
 					configuration="elevated"
+					label="🔦 Switches 🔦"
 					disabled={false}
 					onClick={() => scrollToSection("switches-section", -60)}
-				>
-					<div className="text text-label text-label-small">🔦 Switches 🔦</div>
-				</Button>
+				></Button>
 				<Button
 					className="tourguide-button"
 					configuration="elevated"
+					label="🕹️ Buttons 🕹️"
 					disabled={false}
 					onClick={() => scrollToSection("buttons-section", -60)}
-				>
-					<div className="text text-label text-label-small">🕹️ Buttons 🕹️</div>
-				</Button>
+				></Button>
 				<Button
 					className="tourguide-button"
 					configuration="elevated"
+					label="🔤 Typography 🔤"
 					disabled={false}
 					onClick={() => scrollToSection("typography-section", -60)}
-				>
-					<div className="text text-label text-label-small">
-						🔤 Typography 🔤
-					</div>
-				</Button>
+				></Button>
 				<Button
 					className="tourguide-button"
 					configuration="elevated"
+					label="💟 Icons 💟"
 					disabled={false}
 					onClick={() => scrollToSection("icons-section", -60)}
-				>
-					<div className="text text-label text-label-small">💟 Icons 💟</div>
-				</Button>{" "}
+				></Button>
 			</div>
 		</div>
 	);

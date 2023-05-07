@@ -22,11 +22,11 @@ function ChipsFrame() {
 			<div className="text text-title text-title-large">Input Chips</div>
 
 			<div className="text text-label text-label-small">Label Only</div>
-			<Chip onClick={undefined}></Chip>
+			<Chip configuration={"input"} onClick={undefined}></Chip>
 			<pre>
 				<code className="language-html">
 					{" "}
-					{"<Chip onClick={undefined}></Chip>"}{" "}
+					{'<Chip configuration={"input"} onClick={undefined}></Chip>'}{" "}
 				</code>
 			</pre>
 
@@ -37,7 +37,9 @@ function ChipsFrame() {
 			<pre>
 				<code className="language-html">
 					{" "}
-					{"<Chip trailingIcon={true} onClick={undefined}></Chip>"}{" "}
+					{
+						'<Chip configuration={"input"} trailingIcon={true} onClick={undefined}></Chip>'
+					}{" "}
 				</code>
 			</pre>
 
@@ -48,7 +50,9 @@ function ChipsFrame() {
 			<pre>
 				<code className="language-html">
 					{" "}
-					{"<Chip leadingIcon={true} onClick={undefined}></Chip>"}{" "}
+					{
+						'<Chip configuration={"input"} leadingIcon={true} onClick={undefined}></Chip>'
+					}{" "}
 				</code>
 			</pre>
 
@@ -60,7 +64,7 @@ function ChipsFrame() {
 				<code className="language-html">
 					{" "}
 					{
-						"<Chip leadingIcon={true} trailingIcon={true} onClick={undefined}></Chip>"
+						'<Chip configuration={"input"} leadingIcon={true} trailingIcon={true} onClick={undefined}></Chip>'
 					}{" "}
 				</code>
 			</pre>
@@ -70,7 +74,9 @@ function ChipsFrame() {
 			<pre>
 				<code className="language-html">
 					{" "}
-					{"<Chip avatar={true} onClick={undefined}></Chip>"}{" "}
+					{
+						'<Chip configuration={"input"} avatar={true} onClick={undefined}></Chip>'
+					}{" "}
 				</code>
 			</pre>
 			<div className="text text-label text-label-small">
@@ -82,7 +88,7 @@ function ChipsFrame() {
 				<code className="language-html">
 					{" "}
 					{
-						"<Chip avatar={true} trailingIcon={true} onClick={undefined}></Chip>"
+						'<Chip configuration={"input"} avatar={true} trailingIcon={true} onClick={undefined}></Chip>'
 					}{" "}
 				</code>
 			</pre>
@@ -90,30 +96,38 @@ function ChipsFrame() {
 			<div className="text text-title text-title-large">Assist Chips</div>
 
 			<div className="text text-label text-label-small">Label Only</div>
+			<Chip configuration={"assist"} onClick={undefined}></Chip>
+
 			<pre>
 				<code className="language-html"> {"<Chip></Chip>"} </code>
 			</pre>
 			<div className="text text-label text-label-small">
 				Label only - elevated
 			</div>
+			<Chip configuration={"assist"} onClick={undefined}></Chip>
+
 			<pre>
 				<code className="language-html"> {"<Chip></Chip>"} </code>
 			</pre>
 			<div className="text text-label text-label-small">Label & icon</div>
+			<Chip configuration={"assist"} onClick={undefined}></Chip>
+
 			<pre>
 				<code className="language-html"> {"<Chip></Chip>"} </code>
 			</pre>
 			<div className="text text-label text-label-small">
 				Label & icon - elevated
 			</div>
+			<Chip configuration={"assist"} onClick={undefined}></Chip>
+
 			<pre>
 				<code className="language-html"> {"<Chip></Chip>"} </code>
 			</pre>
 			<div className="text text-label text-label-small">Label & icon</div>
 
-			<div className="text text-title text-title-large">
-				Label only - elevated
-			</div>
+			<div className="text text-title text-title-large">Filter Chips</div>
+			<Chip configuration={"assist"} onClick={undefined}></Chip>
+
 			<pre>
 				<code className="language-html"> {"<Chip></Chip>"} </code>
 			</pre>
@@ -124,18 +138,24 @@ function ChipsFrame() {
 			<div className="text text-label text-label-small">
 				Label & favicon - elevated
 			</div>
+			<Chip configuration={"assist"} onClick={undefined}></Chip>
+
 			<pre>
 				<code className="language-html"> {"<Chip></Chip>"} </code>
 			</pre>
 			<div className="text text-label text-label-small">
 				Label & branded icon
 			</div>
+			<Chip configuration={"assist"} onClick={undefined}></Chip>
+
 			<pre>
 				<code className="language-html"> {"<Chip></Chip>"} </code>
 			</pre>
 			<div className="text text-label text-label-small">
 				Label & branded icon - elevated
 			</div>
+			<Chip configuration={"assist"} onClick={undefined}></Chip>
+
 			<pre>
 				<code className="language-html"> {"<Chip></Chip>"} </code>
 			</pre>

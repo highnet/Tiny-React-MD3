@@ -49,7 +49,14 @@ const Hero: React.FC<IHeroProps> = ({ hasLogo }) => {
 			text text-title text-title-large hero-features-trmd3"
 			>
 				<li>
-					<a className="hero-link-trmd3" href="https://react.dev/">
+					<a
+						className={
+							"hero-link-trmd3 hero-link-text-trmd3 hero-link-text-" +
+							_theme +
+							"-trmd3"
+						}
+						href="https://react.dev/"
+					>
 						React
 					</a>
 					<a
@@ -59,7 +66,11 @@ const Hero: React.FC<IHeroProps> = ({ hasLogo }) => {
 						🤝
 					</a>
 					<a
-						className="hero-link-trmd3"
+						className={
+							"hero-link-trmd3 hero-link-text-trmd3 hero-link-text-" +
+							_theme +
+							"-trmd3"
+						}
 						href="https://www.figma.com/community/file/1035203688168086460"
 					>
 						MD3

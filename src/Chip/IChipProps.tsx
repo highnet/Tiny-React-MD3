@@ -13,6 +13,8 @@ export interface IChipProps extends IComponentProps {
 	selected?: boolean;
 	configuration?: string;
 
+	label?: string;
+
 	avatar?: boolean;
 	avatarIconNameSelected?: string;
 	avatarIconNameDeselected?: string;
