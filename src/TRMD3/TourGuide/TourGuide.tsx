@@ -24,7 +24,7 @@ const TourGuide: React.FC = () => {
 				<Button
 					className="tourguide-button"
 					configuration="elevated"
-					label="👉 Dividers 👆"
+					label="➕ Dividers ➕"
 					disabled={false}
 					onClick={() => scrollToSection("horizontal-dividers-section", -60)}
 				></Button>
