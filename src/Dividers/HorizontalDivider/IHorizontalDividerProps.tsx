@@ -1,5 +1,3 @@
-import { IComponentProps } from "../Component/IComponentProps";
-
 /*
   1
   1682423199
@@ -14,6 +12,8 @@ import { IComponentProps } from "../Component/IComponentProps";
   insetLeftWidth: a number that represents the width of the left inset.
   showInsets: a boolean that represents whether to show the insets or not, for debugging purposes only. 
 */
+
+import { IComponentProps } from "../../Component/IComponentProps";
 
 // Define an interface for the divider props
 export interface IHorizontalDividerProps extends IComponentProps {

@@ -1,8 +1,8 @@
 // Import React and some hooks from React library
 import React, { useState } from "react";
 import { IVerticalDividerProps } from "./IVerticalDividerProps";
-import { getPreferredScheme } from "../Gizmos/Themeing";
-import { StringBuilder } from "../Gizmos/StringBuilder";
+import { getPreferredScheme } from "../../Gizmos/Themeing";
+import { StringBuilder } from "../../Gizmos/StringBuilder";
 
 /* 
   This code defines a React component for a vertical divider that can be used to separate two sections of content vertically. 

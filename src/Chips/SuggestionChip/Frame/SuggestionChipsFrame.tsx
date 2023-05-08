@@ -1,12 +1,11 @@
-import { getPreferredScheme } from "../../Gizmos/Themeing";
-import SuggestionChip from "../SuggestionChip";
-import Inputchip from "../SuggestionChip";
-
 /*
 
 TODO: NEEDS DOCUMENTATION
 
 */
+
+import { getPreferredScheme } from "../../../Gizmos/Themeing";
+import SuggestionChip from "../SuggestionChip";
 
 function SuggestionChipsFrame() {
 	const _theme =

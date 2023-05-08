@@ -1,5 +1,5 @@
-import { IComponentProps } from "../Component/IComponentProps";
 import { MouseEvent } from "react";
+import { IComponentProps } from "../../Component/IComponentProps";
 
 /* 
 

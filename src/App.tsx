@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 
 import Hero from "./TRMD3/Hero/Hero";
 import ButtonsFrame from "./Button/Frame/ButtonsFrame";
-import HorizontalDividersFrame from "./HorizontalDivider/Frame/HorizontalDividersFrame";
-import VerticalDividersFrame from "./VerticalDivider/Frame/VerticalDividersFrame";
+import HorizontalDividersFrame from "./Dividers/HorizontalDivider/Frame/HorizontalDividersFrame";
+import VerticalDividersFrame from "./Dividers/VerticalDivider/Frame/VerticalDividersFrame";
 import RadioButtonsFrame from "./Radio Button/Frame/RadioButtonsFrame";
 import BadgesFrame from "./Badge/Frame/BadgesFrame";
 import CheckboxesFrame from "./Checkbox/Frame/CheckboxesFrame";
@@ -18,10 +18,10 @@ import Cookietrail from "./TRMD3/Cookietrail/Cookietrail";
 import TourGuide from "./TRMD3/TourGuide/TourGuide";
 import { getPreferredScheme, toggleTheme } from "./Gizmos/Themeing";
 import { scrollToSection } from "./Gizmos/Scrolling";
-import InputChipsFrame from "./InputChip/Frame/InputChipsFrame";
-import AssistChipsFrame from "./AssistChip/Frame/AssistChipsFrame";
-import FilterChipsFrame from "./FilterChip/Frame/FilterChipsFrame";
-import SuggestionChipsFrame from "./SuggestionChip/Frame/SuggestionChipsFrame";
+import InputChipsFrame from "./Chips/InputChip/Frame/InputChipsFrame";
+import AssistChipsFrame from "./Chips/AssistChip/Frame/AssistChipsFrame";
+import FilterChipsFrame from "./Chips/FilterChip/Frame/FilterChipsFrame";
+import SuggestionChipsFrame from "./Chips/SuggestionChip/Frame/SuggestionChipsFrame";
 
 function App() {
 	console.log(`	👋 Welcome to TRMD3! 👋	`);
@@ -80,20 +80,11 @@ function App() {
 					"-trmd3"
 				}
 			>
-				👉 Horizontal Dividers 👉
+				👉 Dividers 👆
 			</div>
 			<HorizontalDividersFrame />
-			<div
-				id="vertical-dividers-section"
-				className={
-					"text text-title text-title-large section-title-trmd3 section-title-" +
-					theme +
-					"-trmd3"
-				}
-			>
-				👆 Vertical Dividers 👆
-			</div>
 			<VerticalDividersFrame />
+
 			<div
 				id="radio-buttons-section"
 				className={

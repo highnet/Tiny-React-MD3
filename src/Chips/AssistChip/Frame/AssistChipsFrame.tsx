@@ -1,11 +1,11 @@
-import { getPreferredScheme } from "../../Gizmos/Themeing";
-import AssistChip from "../AssistChip";
-
 /*
 
 TODO: NEEDS DOCUMENTATION
 
 */
+
+import { getPreferredScheme } from "../../../Gizmos/Themeing";
+import AssistChip from "../AssistChip";
 
 function AssistChipsFrame() {
 	const _theme =

@@ -1,4 +1,4 @@
-import { getPreferredScheme } from "../../Gizmos/Themeing";
+import { getPreferredScheme } from "../../../Gizmos/Themeing";
 import FilterChip from "../FilterChip";
 
 /*

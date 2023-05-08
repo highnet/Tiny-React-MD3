@@ -1,10 +1,11 @@
 // Import React and some hooks from React library
 import React, { useState } from "react";
-import { getPreferredScheme } from "../Gizmos/Themeing";
-import { StringBuilder } from "../Gizmos/StringBuilder";
-import { ISuggestionChipProps } from "./ISuggestionChipProps";
 
-const SuggestionChip: React.FC<ISuggestionChipProps> = ({}) => {
+import { IAssistChipProps } from "./IAssistChipProps";
+import { getPreferredScheme } from "../../Gizmos/Themeing";
+import { StringBuilder } from "../../Gizmos/StringBuilder";
+
+const AssistChip: React.FC<IAssistChipProps> = ({}) => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
@@ -17,4 +18,4 @@ const SuggestionChip: React.FC<ISuggestionChipProps> = ({}) => {
 	return <button></button>;
 };
 
-export default SuggestionChip;
+export default AssistChip;

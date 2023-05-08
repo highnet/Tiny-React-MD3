@@ -1,8 +1,8 @@
 // Import React and some hooks from React library
 import React, { useState } from "react";
 import { IHorizontalDividerProps } from "./IHorizontalDividerProps";
-import { getPreferredScheme } from "../Gizmos/Themeing";
-import { StringBuilder } from "../Gizmos/StringBuilder";
+import { getPreferredScheme } from "../../Gizmos/Themeing";
+import { StringBuilder } from "../../Gizmos/StringBuilder";
 
 /*
 	1

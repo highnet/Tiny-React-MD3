@@ -1,5 +1,3 @@
-import { IComponentProps } from "../Component/IComponentProps";
-
 /* 
   This code defines an interface for the props of a vertical divider component.
   A vertical divider is a graphical user interface element that separates two sections of content vertically.
@@ -13,6 +11,8 @@ import { IComponentProps } from "../Component/IComponentProps";
   showInsets: a boolean value that indicates whether to show or hide the insets
   The interface is exported so it can be imported and used in other files. 
 */
+
+import { IComponentProps } from "../../Component/IComponentProps";
 
 // Define an interface for the divider props
 export interface IVerticalDividerProps extends IComponentProps {
