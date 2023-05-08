@@ -1,6 +1,7 @@
 import Button from "../Button";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 import React from "react";
+import { StringBuilder } from "../../Gizmos/StringBuilder";
 
 /* 
 	1
@@ -31,18 +32,21 @@ import React from "react";
 	pasted to use in other parts of the application.
 */
 
-const ButtonsFrame = () => {
+const ButtonsFrame: React.FC = () => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
+	let _computedFrameClassName = new StringBuilder()
+		.add("flex-trmd3")
+		.add("flex-column-trmd3")
+		.add("frame-trmd3")
+		.add("frame-" + _theme)
+		.add("buttons-frame-trmd3")
+		.add("buttons-frame-" + _theme + "-trmd3")
+		.toString();
+
 	return (
-		<div
-			className={
-				"flex-trmd3 flex-column-trmd3 frame-trmd3 buttons-frame-trmd3 buttons-frame-" +
-				_theme +
-				"-trmd3"
-			}
-		>
+		<div className={_computedFrameClassName}>
 			{/* BUTTONS */}
 			<div className="text text-title text-title-large">Filled Buttons</div>
 			<div className="text text-label text-label-small">No Icon</div>

@@ -1,3 +1,4 @@
+import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 import Badge from "../Badge";
 
@@ -20,18 +21,23 @@ import Badge from "../Badge";
 	and "code" elements with the "language-html" class.
 */
 
-function BadgesFrame() {
+// TODO: use stringbuilder for classnames
+
+const BadgesFrame: React.FC = () => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
+	let _computedFrameClassName = new StringBuilder()
+		.add("flex-trmd3")
+		.add("flex-column-trmd3")
+		.add("frame-trmd3")
+		.add("frame-" + _theme)
+		.add("badges-frame-trmd3")
+		.add("badges-frame-" + _theme + "-trmd3")
+		.toString();
+
 	return (
-		<div
-			className={
-				"flex-trmd3 flex-column-trmd3 frame-trmd3 badges-frame-trmd3 badges-frame-" +
-				_theme +
-				"-trmd3"
-			}
-		>
+		<div className={_computedFrameClassName}>
 			{/* BADGES */}
 			<div>
 				<div>
@@ -93,6 +99,6 @@ function BadgesFrame() {
 			</div>
 		</div>
 	);
-}
+};
 
 export default BadgesFrame;

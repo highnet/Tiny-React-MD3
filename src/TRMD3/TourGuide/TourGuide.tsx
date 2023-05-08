@@ -2,9 +2,7 @@ import Button from "../../Button/Button";
 import { scrollToSection } from "../../Gizmos/Scrolling";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 
-interface ITourGuide {}
-
-const TourGuide: React.FC<ITourGuide> = () => {
+const TourGuide: React.FC = () => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
@@ -26,16 +24,9 @@ const TourGuide: React.FC<ITourGuide> = () => {
 				<Button
 					className="tourguide-button"
 					configuration="elevated"
-					label="👉 Horizontal Dividers 👉"
+					label="👉 Dividers 👆"
 					disabled={false}
 					onClick={() => scrollToSection("horizontal-dividers-section", -60)}
-				></Button>
-				<Button
-					className="tourguide-button"
-					configuration="elevated"
-					label="👆 Vertical Dividers 👆"
-					disabled={false}
-					onClick={() => scrollToSection("vertical-dividers-section", -60)}
 				></Button>
 				<Button
 					className="tourguide-button"

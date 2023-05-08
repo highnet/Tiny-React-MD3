@@ -4,25 +4,29 @@ TODO: NEEDS DOCUMENTATION
 
 */
 
+import { StringBuilder } from "../../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../../Gizmos/Themeing";
 import AssistChip from "../AssistChip";
 
-function AssistChipsFrame() {
+const AssistChipsFrame: React.FC = () => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
+	let _computedFrameClassName = new StringBuilder()
+		.add("flex-trmd3")
+		.add("flex-column-trmd3")
+		.add("frame-trmd3")
+		.add("frame-" + _theme)
+		.add("chips-frame-trmd3")
+		.add("chips-frame-" + _theme + "-trmd3")
+		.toString();
+
 	return (
-		<div
-			className={
-				"flex-trmd3 flex-column-trmd3 frame-trmd3 chips-frame-trmd3 chips-frame-" +
-				_theme +
-				"-trmd3"
-			}
-		>
+		<div className={_computedFrameClassName}>
 			<div className="text text-title text-title-large">Assist Chips</div>
 
 			<div className="text text-label text-label-small">Label Only</div>
-			<AssistChip></AssistChip>
+			<AssistChip onClick={undefined}></AssistChip>
 
 			<pre>
 				<code className="language-html"> {"<Chip></Chip>"} </code>
@@ -30,13 +34,13 @@ function AssistChipsFrame() {
 			<div className="text text-label text-label-small">
 				Label only - elevated
 			</div>
-			<AssistChip></AssistChip>
+			<AssistChip elevated={true} onClick={undefined}></AssistChip>
 
 			<pre>
 				<code className="language-html"> {"<Chip></Chip>"} </code>
 			</pre>
 			<div className="text text-label text-label-small">Label & icon</div>
-			<AssistChip></AssistChip>
+			<AssistChip iconType="icon" onClick={undefined}></AssistChip>
 
 			<pre>
 				<code className="language-html"> {"<Chip></Chip>"} </code>
@@ -44,35 +48,37 @@ function AssistChipsFrame() {
 			<div className="text text-label text-label-small">
 				Label & icon - elevated
 			</div>
-			<AssistChip></AssistChip>
-
+			<AssistChip
+				iconType="icon"
+				elevated={true}
+				onClick={undefined}
+			></AssistChip>
 			<pre>
 				<code className="language-html"> {"<Chip></Chip>"} </code>
 			</pre>
-			<div className="text text-label text-label-small">Label & icon</div>
 
-			<div className="text text-title text-title-large">Filter Chips</div>
-			<AssistChip></AssistChip>
-
-			<pre>
-				<code className="language-html"> {"<Chip></Chip>"} </code>
-			</pre>
 			<div className="text text-label text-label-small">Label & favicon</div>
+			<AssistChip iconType="favicon" onClick={undefined}></AssistChip>
 			<pre>
 				<code className="language-html"> {"<Chip></Chip>"} </code>
 			</pre>
+
 			<div className="text text-label text-label-small">
 				Label & favicon - elevated
 			</div>
-			<AssistChip></AssistChip>
-
+			<AssistChip
+				iconType="favicon"
+				elevated={true}
+				onClick={undefined}
+			></AssistChip>
 			<pre>
 				<code className="language-html"> {"<Chip></Chip>"} </code>
 			</pre>
+
 			<div className="text text-label text-label-small">
 				Label & branded icon
 			</div>
-			<AssistChip></AssistChip>
+			<AssistChip iconType="branded" onClick={undefined}></AssistChip>
 
 			<pre>
 				<code className="language-html"> {"<Chip></Chip>"} </code>
@@ -80,12 +86,16 @@ function AssistChipsFrame() {
 			<div className="text text-label text-label-small">
 				Label & branded icon - elevated
 			</div>
-			<AssistChip></AssistChip>
+			<AssistChip
+				iconType="branded"
+				elevated={true}
+				onClick={undefined}
+			></AssistChip>
 
 			<pre>
 				<code className="language-html"> {"<Chip></Chip>"} </code>
 			</pre>
 		</div>
 	);
-}
+};
 export default AssistChipsFrame;

@@ -2149,16 +2149,16 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	background-color: red;
 }
 
-/* INPUT CHIPS */
+/* CHIPS */
 
-.inputchip {
+.chip {
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
-	border-radius: 6px;
+	border-radius: 8px;
 	border: 0;
 	height: 32px;
 	width: fit-content;
@@ -2166,88 +2166,66 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-/* CHIPS / AVATAR */
-.avatar-on-inputchip {
-	border-radius: 50%;
-	scale: 1.15;
-	margin-right: 8px;
+.inputchip {
 }
 
-/* CHIPS / LABEL */
-.label-on-inputchip {
-	margin: 0px 4px;
+.assistchip {
 }
 
-/* CHIPS / ONE ITEMS */
-.inputchip-one-items {
-	gap: 8px;
-	padding: 0px 8px;
-}
+/* INPUT-CHIPS */
 
-/* CHIPS / TWO ITEMS */
-.inputchip-two-items {
-	gap: 2px;
-	padding: 0px 6px;
-}
-
-/* CHIPS / THREE ITEMS */
-.inputchip-three-items {
-	gap: 2px;
-	padding: 0px 4px;
-}
-
-/* CHIPS / LIGHT */
+/* INPUT-CHIPS / LIGHT */
 .inputchip.inputchip-light-theme {
 	border: 1px solid var(--m3-sys-light-outline);
 	color: var(--m3-sys-light-on-surface-variant);
 }
 
-/* CHIPS / DARK */
+/* INPUT-CHIPS / DARK */
 .inputchip.inputchip-dark-theme {
 	border: 1px solid var(--m3-sys-dark-outline);
 	color: var(--m3-sys-dark-on-surface-variant);
 }
 
-/* CHIPS / HOVER / LIGHT */
+/* INPUT-CHIPS / HOVER / LIGHT */
 .inputchip:hover.inputchip-light-theme {
 	background-color: var(--m3-state-layers-light-on-surface-variant-opacity-08);
 }
 
-/* CHIPS / HOVER / DARK */
+/* INPUT-CHIPS / HOVER / DARK */
 .inputchip:hover.inputchip-dark-theme {
 	background-color: var(--m3-state-layers-dark-on-surface-variant-opacity-08);
 }
 
-/* CHIPS / FOCUS / LIGHT */
+/* INPUT-CHIPS / FOCUS / LIGHT */
 .inputchip:focus.inputchip-light-theme {
 	background-color: var(--m3-sys-light-surface);
 	border: 1px solid var(--m3-sys-light-on-surface-variant);
 }
 
-/* CHIPS / FOCUS / DARK */
+/* INPUT-CHIPS / FOCUS / DARK */
 .inputchip:focus.inputchip-dark-theme {
 	background-color: var(--m3-state-layers-dark-on-surface-variant-opacity-12);
 	border: 1px solid var(--m3-state-layers-dark-on-surface-variant-opacity-12);
 }
 
-/* CHIP / SELECTED */
+/* INPUT-CHIPS / SELECTED */
 .inputchip.inputchip-selected {
 	border: none;
 }
 
-/* CHIP / SELECTED / LIGHT */
+/* INPUT-CHIPS / SELECTED / LIGHT */
 .inputchip.inputchip-selected.inputchip-light-theme {
 	color: var(--m3-sys-light-on-secondary-container);
 	background-color: var(--m3-sys-light-secondary-container);
 }
 
-/* CHIP / SELECTED / DARK */
+/* INPUT-CHIPS / SELECTED / DARK */
 .inputchip.inputchip-selected.inputchip-dark-theme {
 	color: var(--m3-sys-dark-on-secondary-container);
 	background-color: var(--m3-sys-dark-secondary-container);
 }
 
-/* CHIPS / HOVER / SELECTED / LIGHT */
+/* INPUT-CHIPS / HOVER / SELECTED / LIGHT */
 .inputchip:hover.inputchip-selected.inputchip-light-theme {
 	background-color: color-mix(
 		in srgb,
@@ -2256,7 +2234,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	);
 }
 
-/* CHIPS / HOVER / SELECTED / DARK */
+/* INPUT-CHIPS / HOVER / SELECTED / DARK */
 .inputchip:hover.inputchip-selected.inputchip-dark-theme {
 	background-color: color-mix(
 		in srgb,
@@ -2265,7 +2243,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	);
 }
 
-/* CHIPS / FOCUS / SELECTED / LIGHT */
+/* INPUT-CHIPS / FOCUS / SELECTED / LIGHT */
 .inputchip:focus.inputchip-selected.inputchip-light-theme {
 	background-color: color-mix(
 		in srgb,
@@ -2274,7 +2252,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	);
 }
 
-/* CHIPS / FOCUS / SELECTED / DARK */
+/* INPUT-CHIPS / FOCUS / SELECTED / DARK */
 .inputchip:focus.inputchip-selected.inputchip-dark-theme {
 	background-color: color-mix(
 		in srgb,
@@ -2283,7 +2261,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	);
 }
 
-/* CHIPS / ACTIVE / DESELECTED / LIGHT */
+/* INPUT-CHIPS / ACTIVE / DESELECTED / LIGHT */
 .inputchip:active.inputchip-deselected.inputchip-light-theme {
 	background-color: color-mix(
 		in srgb,
@@ -2293,7 +2271,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	box-shadow: var(--m3-elevation-light-3);
 }
 
-/* CHIPS / ACTIVE / DESELECTED / DARK */
+/* INPUT-CHIPS / ACTIVE / DESELECTED / DARK */
 .inputchip:active.inputchip-deselected.inputchip-dark-theme {
 	background-color: color-mix(
 		in srgb,
@@ -2303,7 +2281,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	box-shadow: var(--m3-elevation-dark-3);
 }
 
-/* CHIPS / ACTIVE / SELECTED / LIGHT */
+/* INPUT-CHIPS / ACTIVE / SELECTED / LIGHT */
 .inputchip:active.inputchip-selected.inputchip-light-theme {
 	background-color: color-mix(
 		in srgb,
@@ -2313,7 +2291,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	box-shadow: var(--m3-elevation-light-3);
 }
 
-/* CHIPS / ACTIVE / SELECTED / DARK */
+/* INPUT-CHIPS / ACTIVE / SELECTED / DARK */
 .inputchip:active.inputchip-selected.inputchip-dark-theme {
 	background-color: color-mix(
 		in srgb,
@@ -2323,61 +2301,93 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	box-shadow: var(--m3-elevation-dark-3);
 }
 
-/* CHIPS / LIGHT / ICON / TRAILING */
+/* INPUT-CHIPS / LIGHT / ICON / TRAILING */
 .inputchip.inputchip-light-theme > .inputchip-icon-trailing {
 	color: var(--m3-sys-light-on-surface-variant);
 }
 
-/* CHIPS / DARK / ICON / TRAILING */
+/* INPUT-CHIPS / DARK / ICON / TRAILING */
 .inputchip.inputchip-dark-theme > .inputchip-icon-trailing {
 	color: var(--m3-sys-dark-on-surface-variant);
 }
 
-/* CHIPS / SELECTED / LIGHT / ICON / TRAILING */
+/* INPUT-CHIPS / SELECTED / LIGHT / ICON / TRAILING */
 .inputchip-selected.inputchip-light-theme > .inputchip-icon-trailing {
 	color: var(--m3-sys-light-on-secondary-container);
 }
 
-/* CHIPS / SELECTED / DARK / ICON / TRAILING */
+/* INPUT-CHIPS / SELECTED / DARK / ICON / TRAILING */
 .inputchip-selected.inputchip-dark-theme > .inputchip-icon-trailing {
 	color: var(--m3-sys-dark-on-secondary-container);
 }
 
-/* CHIPS / LIGHT / ICON / LEADING */
+/* INPUT-CHIPS / LIGHT / ICON / LEADING */
 .inputchip.inputchip-light-theme > .inputchip-icon-leading {
 	color: var(--m3-sys-light-primary);
 }
 
-/* CHIPS / DARK / ICON / LEADING */
+/* INPUT-CHIPS / DARK / ICON / LEADING */
 .inputchip.inputchip-dark-theme > .inputchip-icon-leading {
 	color: var(--m3-sys-dark-primary);
 }
 
-/* CHIPS / DESELECTED / LIGHT / AVATAR */
+/* INPUT-CHIPS / DESELECTED / LIGHT / AVATAR */
 .inputchip.inputchip-deselected.inputchip-light-theme > .avatar-on-inputchip {
 	background-color: var(--m3-sys-light-on-surface-variant);
 	color: var(--m3-sys-light-on-primary);
 }
 
-/* CHIPS / DESELECTED / DARK / AVATAR */
+/* INPUT-CHIPS / DESELECTED / DARK / AVATAR */
 .inputchip.inputchip-deselected.inputchip-dark-theme > .avatar-on-inputchip {
 	background-color: var(--m3-sys-dark-on-surface-variant);
 	color: var(--m3-sys-dark-on-primary);
 }
 
-/* CHIPS / SELECTED / LIGHT / AVATAR */
+/* INPUT-CHIPS / SELECTED / LIGHT / AVATAR */
 .inputchip.inputchip-selected.inputchip-light-theme > .avatar-on-inputchip {
 	background-color: var(--m3-sys-light-on-secondary-container);
 	color: var(--m3-sys-light-on-secondary);
 }
 
-/* CHIPS / SELECTED / DARK / AVATAR */
+/* INPUT-CHIPS / SELECTED / DARK / AVATAR */
 .inputchip.inputchip-selected.inputchip-dark-theme > .avatar-on-inputchip {
 	background-color: var(--m3-sys-dark-on-secondary-container);
 	color: var(--m3-sys-dark-on-secondary);
 }
 
-/* CHIPS / AVATAR */
-.inputchip-avatar {
-	border-radius: 30px;
+/* INPUT-CHIPS / AVATAR */
+.avatar-on-inputchip {
+	border-radius: 50%;
+	scale: 1.15;
+	margin-right: 8px;
+}
+
+/* INPUT-CHIPS / LABEL */
+.label-on-inputchip {
+	margin: 0px 4px;
+}
+
+/* INPUT-CHIPS / ONE ITEMS */
+.inputchip-one-items {
+	gap: 8px;
+	padding: 0px 8px;
+}
+
+/* INPUT-CHIPS / TWO ITEMS */
+.inputchip-two-items {
+	gap: 2px;
+	padding: 0px 6px;
+}
+
+/* INPUT-CHIPS / THREE ITEMS */
+.inputchip-three-items {
+	gap: 2px;
+	padding: 0px 4px;
+}
+
+/* ASSIST-CHIPS */
+
+.favicon-on-assistchip {
+	width: 12px;
+	height: 14px;
 }

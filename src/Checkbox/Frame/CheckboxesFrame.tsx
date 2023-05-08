@@ -1,3 +1,4 @@
+import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 import Checkbox from "../Checkbox";
 
@@ -17,20 +18,21 @@ import Checkbox from "../Checkbox";
 	a code example inside that shows how to create the checkbox using HTML.
 */
 
-function CheckboxesFrame() {
+const CheckboxesFrame: React.FC = () => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
+	let _computedFrameClassName = new StringBuilder()
+		.add("flex-trmd3")
+		.add("flex-column-trmd3")
+		.add("frame-trmd3")
+		.add("frame-" + _theme)
+		.add("checkboxes-frame-trmd3")
+		.add("checkboxes-frame-" + _theme + "-trmd3")
+		.toString();
+
 	return (
-		<div
-			className={
-				"flex-trmd3 flex-column-trmd3 frame-trmd3 " +
-				"checkboxes-frame-trmd3 " +
-				"checkboxes-frame-" +
-				_theme +
-				"-trmd3"
-			}
-		>
+		<div className={_computedFrameClassName}>
 			{/* CHECKBOXES */}
 			<div className="text text-label text-label-small frame-label-trmd3">
 				Default
@@ -90,6 +92,6 @@ function CheckboxesFrame() {
 			</pre>
 		</div>
 	);
-}
+};
 
 export default CheckboxesFrame;

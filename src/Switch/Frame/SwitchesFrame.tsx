@@ -1,3 +1,4 @@
+import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 import Switch from "../Switch";
 
@@ -18,18 +19,21 @@ import Switch from "../Switch";
 	"With Icon (Inactive)."
 */
 
-function SwitchesFrame() {
+const SwitchesFrame: React.FC = () => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
+	let _computedFrameClassName = new StringBuilder()
+		.add("flex-trmd3")
+		.add("flex-column-trmd3")
+		.add("frame-trmd3")
+		.add("frame-" + _theme)
+		.add("switches-frame-trmd3")
+		.add("switches-frame-" + _theme + "-trmd3")
+		.toString();
+
 	return (
-		<div
-			className={
-				"flex-trmd3 flex-column-trmd3 frame-trmd3 switches-frame-trmd3 switches-frame-" +
-				_theme +
-				"-trmd3"
-			}
-		>
+		<div className={_computedFrameClassName}>
 			{/* SWITCHES */}
 			<div className="text text-label text-label-small frame-label-trmd3">
 				No Icon
@@ -85,6 +89,6 @@ function SwitchesFrame() {
 			</pre>
 		</div>
 	);
-}
+};
 
 export default SwitchesFrame;

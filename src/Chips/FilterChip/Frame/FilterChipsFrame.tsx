@@ -1,3 +1,4 @@
+import { StringBuilder } from "../../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../../Gizmos/Themeing";
 import FilterChip from "../FilterChip";
 
@@ -7,47 +8,22 @@ TODO: NEEDS DOCUMENTATION
 
 */
 
-function FilterChipsFrame() {
+const FilterChipsFrame: React.FC = () => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
+	let _computedFrameClassName = new StringBuilder()
+		.add("flex-trmd3")
+		.add("flex-column-trmd3")
+		.add("frame-trmd3")
+		.add("frame-" + _theme)
+		.add("chips-frame-trmd3")
+		.add("chips-frame-" + _theme + "-trmd3")
+		.toString();
+
 	return (
-		<div
-			className={
-				"flex-trmd3 flex-column-trmd3 frame-trmd3 chips-frame-trmd3 chips-frame-" +
-				_theme +
-				"-trmd3"
-			}
-		>
+		<div className={_computedFrameClassName}>
 			<div className="text text-title text-title-large">Filter Chips</div>
-			<FilterChip></FilterChip>
-
-			<pre>
-				<code className="language-html"> {"<Chip></Chip>"} </code>
-			</pre>
-			<div className="text text-label text-label-small">Label & favicon</div>
-			<pre>
-				<code className="language-html"> {"<Chip></Chip>"} </code>
-			</pre>
-			<div className="text text-label text-label-small">
-				Label & favicon - elevated
-			</div>
-			<FilterChip></FilterChip>
-
-			<pre>
-				<code className="language-html"> {"<Chip></Chip>"} </code>
-			</pre>
-			<div className="text text-label text-label-small">
-				Label & branded icon
-			</div>
-			<FilterChip></FilterChip>
-
-			<pre>
-				<code className="language-html"> {"<Chip></Chip>"} </code>
-			</pre>
-			<div className="text text-label text-label-small">
-				Label & branded icon - elevated
-			</div>
 			<FilterChip></FilterChip>
 
 			<pre>
@@ -55,5 +31,5 @@ function FilterChipsFrame() {
 			</pre>
 		</div>
 	);
-}
+};
 export default FilterChipsFrame;

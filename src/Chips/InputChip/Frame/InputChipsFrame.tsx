@@ -1,3 +1,4 @@
+import { StringBuilder } from "../../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../../Gizmos/Themeing";
 import InputChip from "../InputChip";
 
@@ -7,18 +8,21 @@ TODO: NEEDS DOCUMENTATION
 
 */
 
-function InputChipsFrame() {
+const InputChipsFrame: React.FC = () => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
+	let _computedFrameClassName = new StringBuilder()
+		.add("flex-trmd3")
+		.add("flex-column-trmd3")
+		.add("frame-trmd3")
+		.add("frame-" + _theme)
+		.add("chips-frame-trmd3")
+		.add("chips-frame-" + _theme + "-trmd3")
+		.toString();
+
 	return (
-		<div
-			className={
-				"flex-trmd3 flex-column-trmd3 frame-trmd3 chips-frame-trmd3 chips-frame-" +
-				_theme +
-				"-trmd3"
-			}
-		>
+		<div className={_computedFrameClassName}>
 			<div className="text text-title text-title-large">Input Chips</div>
 
 			<div className="text text-label text-label-small">Label Only</div>
@@ -100,6 +104,6 @@ function InputChipsFrame() {
 			</pre>
 		</div>
 	);
-}
+};
 
 export default InputChipsFrame;

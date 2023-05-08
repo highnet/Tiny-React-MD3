@@ -1,3 +1,4 @@
+import { StringBuilder } from "../../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../../Gizmos/Themeing";
 import VerticalDivider from "../VerticalDivider";
 
@@ -7,20 +8,26 @@ import VerticalDivider from "../VerticalDivider";
   or not to show the inset spaces with a different color.
 */
 
-function VerticalDividersFrame() {
+const VerticalDividersFrame: React.FC = () => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
+	let _computedFrameClassName = new StringBuilder()
+		.add("flex-trmd3")
+		.add("flex-column-trmd3")
+		.add("frame-trmd3")
+		.add("frame-" + _theme)
+		.add("dividers-frame-trmd3")
+		.add("dividers-frame-" + _theme + "-trmd3")
+		.toString();
+
 	return (
-		<div
-			className={
-				"flex-trmd3 frame-trmd3 flex-column-trmd3 vertical-dividers-frame-trmd3 vertical-dividers-frame-" +
-				_theme +
-				"-trmd3"
-			}
-		>
+		<div className={_computedFrameClassName}>
 			{/* VERTICAL DIVIDERS */}
 			<div className="flex-trmd3 flex-column-trmd3">
+				<div className="text text-title text-title-large">
+					Vertical Dividers
+				</div>
 				<div className="text text-label text-label-small frame-label-trmd3">
 					Inset None
 				</div>
@@ -85,6 +92,6 @@ function VerticalDividersFrame() {
 			</div>
 		</div>
 	);
-}
+};
 
 export default VerticalDividersFrame;

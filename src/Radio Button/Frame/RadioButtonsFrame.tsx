@@ -1,3 +1,4 @@
+import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 import RadioButton from "../RadioButton";
 
@@ -15,18 +16,21 @@ import RadioButton from "../RadioButton";
 	theme, which is obtained using localStorage.
 */
 
-function RadioButtonsFrame() {
+const RadioButtonsFrame: React.FC = () => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
+	let _computedFrameClassName = new StringBuilder()
+		.add("flex-trmd3")
+		.add("flex-column-trmd3")
+		.add("frame-trmd3")
+		.add("frame-" + _theme)
+		.add("radio-buttons-frame-trmd3")
+		.add("radio-buttons-frame-" + _theme + "-trmd3")
+		.toString();
+
 	return (
-		<div
-			className={
-				"flex-trmd3 flex-column-trmd3 frame-trmd3 radio-buttons-frame-trmd3 radio-buttons-frame-" +
-				_theme +
-				"-trmd3"
-			}
-		>
+		<div className={_computedFrameClassName}>
 			{/* RADIO BUTTONS */}
 			<RadioButton name={"trmd3"} value={"option-1"} />
 			<div className="text text-label text-label-small frame-label-trmd3">
@@ -67,6 +71,6 @@ function RadioButtonsFrame() {
 			</pre>
 		</div>
 	);
-}
+};
 
 export default RadioButtonsFrame;

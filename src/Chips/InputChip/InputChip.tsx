@@ -43,9 +43,9 @@ const InputChip: React.FC<IInputChipProps> = ({
 	const [_label] = useState(label || "Label");
 	const [_selected, setSelected] = useState(selected || false);
 	const [_leadingIcon] = useState(leadingIcon || false);
-	const [_leadingIconName] = useState(leadingIconName || undefined);
+	const [_leadingIconName] = useState(leadingIconName || "local_taxi");
 	const [_trailingIcon] = useState(trailingIcon || false);
-	const [_trailingIconName] = useState(trailingIconName || undefined);
+	const [_trailingIconName] = useState(trailingIconName || "close");
 	const [_avatar] = useState(avatar || false);
 	const [_avatarIconNameDeselected] = useState(
 		avatarIconNameDeselected || "person"
@@ -65,6 +65,7 @@ const InputChip: React.FC<IInputChipProps> = ({
 	};
 
 	let _computedComponentClassName = new StringBuilder()
+		.add("chip")
 		.add("inputchip")
 		.add(
 			"inputchip-" +
@@ -95,7 +96,7 @@ const InputChip: React.FC<IInputChipProps> = ({
 			)}
 			{_leadingIcon && !_avatar ? (
 				<span className="material-symbols-outlined inputchip-icon-leading">
-					{_leadingIconName ? _leadingIconName : "local_taxi"}
+					{_leadingIconName}
 				</span>
 			) : (
 				""
@@ -105,7 +106,7 @@ const InputChip: React.FC<IInputChipProps> = ({
 			</div>
 			{_trailingIcon ? (
 				<span className="material-symbols-outlined inputchip-icon-trailing">
-					{_trailingIconName ? _trailingIcon : "close"}
+					{_trailingIconName}
 				</span>
 			) : (
 				""
