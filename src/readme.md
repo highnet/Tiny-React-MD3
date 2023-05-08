@@ -7,6 +7,78 @@ Use Tiny React MD-3 to create web apps, and experiences.
 <li>Visit the trmd3 web page here: https://tiny-react-dev.web.app/</li>
 
 The Tiny React MD-3 Documentation helps you on your journey to learn how to use Tiny React MD-3 and its associated services. You can read it from start to finish, or use it as a reference.
+    
+## ℹ️ Assist Chip
+
+<i>Chips help people enter information, make selections, filter content, or trigger actions.  </i>
+
+[FRAME_TEXT_PLACEHOLDER]
+
+Place a default assist chip like this:
+
+```JSX
+[SUBCOMPONENT_JSX_PLACEHOLDER]
+```
+
+You may supplement the following optional properties to a assist chip:
+| Property | Type | Default | Description | Interface |
+| -------- | ---- | -------- | ----------- | --------- |
+| <code>id</code> | <code>string</code> | <code>undefined</code> | <code>supplementary component id</code>| [IComponentProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Component/IComponentProps.tsx) |
+| <code>className</code> | <code>string</code> | <code>""</code> | <code>supplementary class names</code>| [IComponentProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Component/IComponentProps.tsx) |
+    
+## 🥅 Filter Chip
+
+<i>Chips help people enter information, make selections, filter content, or trigger actions.</i>
+
+[FRAME_TEXT_PLACEHOLDER]
+
+Place a default filter chip like this:
+
+```JSX
+[SUBCOMPONENT_JSX_PLACEHOLDER]
+```
+
+You may supplement the following optional properties to a filter chip:
+| Property | Type | Default | Description | Interface |
+| -------- | ---- | -------- | ----------- | --------- |
+| <code>id</code> | <code>string</code> | <code>undefined</code> | <code>supplementary component id</code>| [IComponentProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Component/IComponentProps.tsx) |
+| <code>className</code> | <code>string</code> | <code>""</code> | <code>supplementary class names</code>| [IComponentProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Component/IComponentProps.tsx) |    
+
+## 🔌 Input Chip
+
+<i>Chips help people enter information, make selections, filter content, or trigger actions.</i>
+
+[FRAME_TEXT_PLACEHOLDER]
+
+Place a default input chip like this:
+
+```JSX
+[SUBCOMPONENT_JSX_PLACEHOLDER]
+```
+
+You may supplement the following optional properties to an input chip:
+| Property | Type | Default | Description | Interface |
+| -------- | ---- | -------- | ----------- | --------- |
+| <code>id</code> | <code>string</code> | <code>undefined</code> | <code>supplementary component id</code>| [IComponentProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Component/IComponentProps.tsx) |
+| <code>className</code> | <code>string</code> | <code>""</code> | <code>supplementary class names</code>| [IComponentProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Component/IComponentProps.tsx) |
+ 
+## 😉 Suggestion Chip
+
+<i>Chips help people enter information, make selections, filter content, or trigger actions.</i>
+
+[FRAME_TEXT_PLACEHOLDER]
+
+Place a default suggestion chip like this:
+
+```JSX
+[SUBCOMPONENT_JSX_PLACEHOLDER]
+```
+
+You may supplement the following optional properties to a suggestion chip:
+| Property | Type | Default | Description | Interface |
+| -------- | ---- | -------- | ----------- | --------- |
+| <code>id</code> | <code>string</code> | <code>undefined</code> | <code>supplementary component id</code>| [IComponentProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Component/IComponentProps.tsx) |
+| <code>className</code> | <code>string</code> | <code>""</code> | <code>supplementary class names</code>| [IComponentProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Component/IComponentProps.tsx) |
 
 ## 👉 Horizontal Divider
 
