@@ -10,6 +10,7 @@ const TourGuide: React.FC<ITourGuide> = () => {
 
 	return (
 		<div
+			id="tourguide-section"
 			className={
 				"tourguide-section-trmd3 tourguide-section-" + _theme + "-trmd3"
 			}

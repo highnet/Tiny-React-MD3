@@ -2166,72 +2166,88 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	transition: background-color 0.3s, box-shadow 0.3s;
 }
 
+/* CHIPS / AVATAR */
 .avatar-on-chip {
 	border-radius: 50%;
 	scale: 1.15;
 	margin-right: 8px;
 }
 
+/* CHIPS / LABEL */
 .label-on-chip {
 	margin: 0px 4px;
 }
 
+/* CHIPS / ONE ITEMS */
 .chip-one-items {
 	gap: 8px;
 	padding: 0px 8px;
 }
 
+/* CHIPS / TWO ITEMS */
 .chip-two-items {
 	gap: 2px;
 	padding: 0px 6px;
 }
 
+/* CHIPS / THREE ITEMS */
 .chip-three-items {
 	gap: 2px;
 	padding: 0px 4px;
 }
 
+/* CHIPS / LIGHT */
 .chip.chip-light-theme {
 	border: 1px solid var(--m3-sys-light-outline);
 	color: var(--m3-sys-light-on-surface-variant);
 }
 
+/* CHIPS / DARK */
 .chip.chip-dark-theme {
 	border: 1px solid var(--m3-sys-dark-outline);
 	color: var(--m3-sys-dark-on-surface-variant);
 }
 
+/* CHIPS / HOVER / LIGHT */
 .chip:hover.chip-light-theme {
 	background-color: var(--m3-state-layers-light-on-surface-variant-opacity-08);
 }
+
+/* CHIPS / HOVER / DARK */
 .chip:hover.chip-dark-theme {
 	background-color: var(--m3-state-layers-dark-on-surface-variant-opacity-08);
 }
 
+/* CHIPS / FOCUS / LIGHT */
 .chip:focus.chip-light-theme {
 	background-color: var(--m3-sys-light-surface);
 	border: 1px solid var(--m3-sys-light-on-surface-variant);
 }
 
+/* CHIPS / FOCUS / DARK */
 .chip:focus.chip-dark-theme {
 	background-color: var(--m3-state-layers-dark-on-surface-variant-opacity-12);
 	border: 1px solid var(--m3-state-layers-dark-on-surface-variant-opacity-12);
 }
 
+/* CHIP / SELECTED */
 .chip.chip-selected {
 	border: none;
 }
 
+/* CHIP / SELECTED / LIGHT */
 .chip.chip-selected.chip-light-theme {
 	color: var(--m3-sys-light-on-secondary-container);
 	background-color: var(--m3-sys-light-secondary-container);
 }
 
+/* CHIP / SELECTED / DARK */
 .chip.chip-selected.chip-dark-theme {
 	color: var(--m3-sys-dark-on-secondary-container);
 	background-color: var(--m3-sys-dark-secondary-container);
 }
 
+/* CHIPS / HOVER / SELECTED / LIGHT */
 .chip:hover.chip-selected.chip-light-theme {
 	background-color: color-mix(
 		in srgb,
@@ -2240,6 +2256,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	);
 }
 
+/* CHIPS / HOVER / SELECTED / DARK */
 .chip:hover.chip-selected.chip-dark-theme {
 	background-color: color-mix(
 		in srgb,
@@ -2248,6 +2265,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	);
 }
 
+/* CHIPS / FOCUS / SELECTED / LIGHT */
 .chip:focus.chip-selected.chip-light-theme {
 	background-color: color-mix(
 		in srgb,
@@ -2256,6 +2274,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	);
 }
 
+/* CHIPS / FOCUS / SELECTED / DARK */
 .chip:focus.chip-selected.chip-dark-theme {
 	background-color: color-mix(
 		in srgb,
@@ -2264,6 +2283,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	);
 }
 
+/* CHIPS / ACTIVE / DESELECTED / LIGHT */
 .chip:active.chip-deselected.chip-light-theme {
 	background-color: color-mix(
 		in srgb,
@@ -2273,6 +2293,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	box-shadow: var(--m3-elevation-light-3);
 }
 
+/* CHIPS / ACTIVE / DESELECTED / DARK */
 .chip:active.chip-deselected.chip-dark-theme {
 	background-color: color-mix(
 		in srgb,
@@ -2282,6 +2303,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	box-shadow: var(--m3-elevation-dark-3);
 }
 
+/* CHIPS / ACTIVE / SELECTED / LIGHT */
 .chip:active.chip-selected.chip-light-theme {
 	background-color: color-mix(
 		in srgb,
@@ -2291,6 +2313,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	box-shadow: var(--m3-elevation-light-3);
 }
 
+/* CHIPS / ACTIVE / SELECTED / DARK */
 .chip:active.chip-selected.chip-dark-theme {
 	background-color: color-mix(
 		in srgb,
@@ -2300,50 +2323,61 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	box-shadow: var(--m3-elevation-dark-3);
 }
 
+/* CHIPS / LIGHT / ICON / TRAILING */
 .chip.chip-light-theme > .chip-icon-trailing {
 	color: var(--m3-sys-light-on-surface-variant);
 }
 
+/* CHIPS / DARK / ICON / TRAILING */
 .chip.chip-dark-theme > .chip-icon-trailing {
 	color: var(--m3-sys-dark-on-surface-variant);
 }
 
+/* CHIPS / SELECTED / LIGHT / ICON / TRAILING */
 .chip-selected.chip-light-theme > .chip-icon-trailing {
 	color: var(--m3-sys-light-on-secondary-container);
 }
 
+/* CHIPS / SELECTED / DARK / ICON / TRAILING */
 .chip-selected.chip-dark-theme > .chip-icon-trailing {
 	color: var(--m3-sys-dark-on-secondary-container);
 }
 
+/* CHIPS / LIGHT / ICON / LEADING */
 .chip.chip-light-theme > .chip-icon-leading {
 	color: var(--m3-sys-light-primary);
 }
 
+/* CHIPS / DARK / ICON / LEADING */
 .chip.chip-dark-theme > .chip-icon-leading {
 	color: var(--m3-sys-dark-primary);
 }
 
+/* CHIPS / DESELECTED / LIGHT / AVATAR */
 .chip.chip-deselected.chip-light-theme > .avatar-on-chip {
 	background-color: var(--m3-sys-light-on-surface-variant);
 	color: var(--m3-sys-light-on-primary);
 }
 
+/* CHIPS / DESELECTED / DARK / AVATAR */
 .chip.chip-deselected.chip-dark-theme > .avatar-on-chip {
 	background-color: var(--m3-sys-dark-on-surface-variant);
 	color: var(--m3-sys-dark-on-primary);
 }
 
+/* CHIPS / SELECTED / LIGHT / AVATAR */
 .chip.chip-selected.chip-light-theme > .avatar-on-chip {
 	background-color: var(--m3-sys-light-on-secondary-container);
 	color: var(--m3-sys-light-on-secondary);
 }
 
+/* CHIPS / SELECTED / DARK / AVATAR */
 .chip.chip-selected.chip-dark-theme > .avatar-on-chip {
 	background-color: var(--m3-sys-dark-on-secondary-container);
 	color: var(--m3-sys-dark-on-secondary);
 }
 
+/* CHIPS / AVATAR */
 .chip-avatar {
 	border-radius: 30px;
 }

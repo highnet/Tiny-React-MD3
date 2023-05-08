@@ -10,7 +10,7 @@ import CheckboxesFrame from "./Checkbox/Frame/CheckboxesFrame";
 import SwitchesFrame from "./Switch/Frame/SwitchesFrame";
 import TypographiesFrame from "./Typography/Frame/TypographiesFrame";
 import IconsFrame from "./Icon/Frame/IconsFrame";
-import ThemeSwitcher from "./TRMD3/ThemeSwitcher/ThemeSwitcher";
+import StickyToolbar from "./TRMD3/StickyToolbar/StickyToolbar";
 
 import hljs from "highlight.js";
 import "highlight.js/styles/base16/material-lighter.css";
@@ -18,6 +18,7 @@ import Cookietrail from "./TRMD3/Cookietrail/Cookietrail";
 import TourGuide from "./TRMD3/TourGuide/TourGuide";
 import { getPreferredScheme, toggleTheme } from "./Gizmos/Themeing";
 import ChipsFrame from "./Chip/Frame/ChipsFrame";
+import { scrollToSection } from "./Gizmos/Scrolling";
 
 function App() {
 	console.log(`	👋 Welcome to TRMD3! 👋	`);
@@ -28,6 +29,10 @@ function App() {
 
 	const handleToggleTheme = (): void => {
 		toggleTheme(theme, setTheme);
+	};
+
+	const handleScrollToTop = (): void => {
+		scrollToSection("tourguide-section", -60);
 	};
 
 	useEffect(() => {
@@ -44,7 +49,10 @@ function App() {
 			<Hero hasLogo={true} />
 			<Cookietrail />
 			<TourGuide />
-			<ThemeSwitcher toggleTheme={handleToggleTheme} />
+			<StickyToolbar
+				toggleTheme={handleToggleTheme}
+				scrollToTop={handleScrollToTop}
+			/>
 
 			<div
 				id="chips-section"
@@ -157,6 +165,7 @@ function App() {
 				💟 Icons 💟
 			</div>
 			<div
+				id="icons-section"
 				className={
 					"text text-title text-title-medium section-subtitle-trmd3 section-subtitle-" +
 					theme +
