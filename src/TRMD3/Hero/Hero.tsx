@@ -40,8 +40,12 @@ const Hero: React.FC<IHeroProps> = ({ hasLogo }) => {
 				)}
 			</div>
 
-			<div className="text text-display text-display-small main-title-trmd3">
-				🐝Tiny React MD3🐝
+			<div className="text text-headline text-headline-large main-title-trmd3">
+				TRMD3
+			</div>
+
+			<div className="text text-headline text-headline-small ">
+				Tiny React Material Design 3
 			</div>
 
 			<ul

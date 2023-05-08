@@ -24,4 +24,6 @@ export interface IChipProps extends IComponentProps {
 
 	trailingIcon?: boolean;
 	trailingIconName?: string;
+
+	elevated?: boolean;
 }

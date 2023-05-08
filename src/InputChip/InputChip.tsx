@@ -1,6 +1,6 @@
 // Import React and some hooks from React library
 import React, { useState } from "react";
-import { IChipProps } from "./IChipProps";
+import { IChipProps as IInputChipProps } from "./IInputChipProps";
 import { getPreferredScheme } from "../Gizmos/Themeing";
 import { StringBuilder } from "../Gizmos/StringBuilder";
 
@@ -23,7 +23,7 @@ function computeNumberOfItems(
 	return numberToStringDictionary[computedNumberOfItems];
 }
 
-const Chip: React.FC<IChipProps> = ({
+const InputChip: React.FC<IInputChipProps> = ({
 	id,
 	configuration,
 	className,
@@ -53,6 +53,7 @@ const Chip: React.FC<IChipProps> = ({
 		avatarIconNameDeselected || "person"
 	);
 	const [_avatarIconNameSelected] = useState(avatarIconNameSelected || "check");
+
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
@@ -117,4 +118,4 @@ const Chip: React.FC<IChipProps> = ({
 	);
 };
 
-export default Chip;
+export default InputChip;

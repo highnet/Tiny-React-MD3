@@ -24,8 +24,8 @@ html {
 .logo-trmd3 {
 	max-width: 300px;
 	margin: 0 auto;
-	padding-top: 100px;
-	padding-bottom: 80px;
+	padding-top: 80px;
+	padding-bottom: 20px;
 	width: 50vw;
 }
 
@@ -33,7 +33,7 @@ html {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	margin-bottom: 20px;
+	margin-bottom: 60px;
 }
 
 /* SINGLE-RULE-CLASSES	*/
@@ -111,7 +111,6 @@ html {
 	margin-left: 5%;
 	text-align: center;
 	overflow: hidden;
-	margin-bottom: 30px;
 }
 
 .hero-section-light-theme-trmd3 {

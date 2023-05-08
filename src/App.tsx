@@ -17,8 +17,11 @@ import "highlight.js/styles/base16/material-lighter.css";
 import Cookietrail from "./TRMD3/Cookietrail/Cookietrail";
 import TourGuide from "./TRMD3/TourGuide/TourGuide";
 import { getPreferredScheme, toggleTheme } from "./Gizmos/Themeing";
-import ChipsFrame from "./Chip/Frame/ChipsFrame";
 import { scrollToSection } from "./Gizmos/Scrolling";
+import InputChipsFrame from "./InputChip/Frame/InputChipsFrame";
+import AssistChipsFrame from "./AssistChip/Frame/AssistChipsFrame";
+import FilterChipsFrame from "./FilterChip/Frame/FilterChipsFrame";
+import SuggestionChipsFrame from "./SuggestionChip/Frame/SuggestionChipsFrame";
 
 function App() {
 	console.log(`	👋 Welcome to TRMD3! 👋	`);
@@ -64,7 +67,10 @@ function App() {
 			>
 				🍪 Chips 🍪
 			</div>
-			<ChipsFrame />
+			<InputChipsFrame />
+			<AssistChipsFrame />
+			<FilterChipsFrame />
+			<SuggestionChipsFrame />
 
 			<div
 				id="horizontal-dividers-section"

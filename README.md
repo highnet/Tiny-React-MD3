@@ -32,9 +32,9 @@
 
 ## 🌐 Home Page
 
-The Official trmd3 home page
+The Official TRMD3 home page
 
-https://tiny-react-dev.web.app/
+https://trmd3.com/
 
 ## ❓ How to get started?
 
