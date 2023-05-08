@@ -49,24 +49,24 @@ const HorizontalDivider: React.FC<IHorizontalDividerProps> = ({
 	let _computedInsetColor: string = _showInsets ? "red" : "transparent"; // Final inset color
 
 	let _computedComponentClassName = new StringBuilder()
-		.add("horizontal-divider")
-		.add("horizontal-divider-" + _theme)
+		.add("horizontaldivider")
+		.add("horizontaldivider-" + _theme)
 		.add(_className)
 		.toString();
 
 	let _computedComponentInsetRightClassName = new StringBuilder()
-		.add("horizontal-divider-inset-right")
-		.add("horizontal-divider-inset-right-" + _theme)
+		.add("horizontaldivider-inset-right")
+		.add("horizontaldivider-inset-right-" + _theme)
 		.toString();
 
 	let _computedComponentBarClassName = new StringBuilder()
-		.add("horizontal-divider-bar")
-		.add("horizontal-divider-bar-" + _theme)
+		.add("horizontaldivider-bar")
+		.add("horizontaldivider-bar-" + _theme)
 		.toString();
 
 	let _computedComponentInsetLeftClassName = new StringBuilder()
-		.add("horizontal-divider-inset-left")
-		.add("horizontal-divider-inset-left-" + _theme)
+		.add("horizontaldivider-inset-left")
+		.add("horizontaldivider-inset-left-" + _theme)
 		.toString();
 
 	// Return the JSX element for the horizontal divider

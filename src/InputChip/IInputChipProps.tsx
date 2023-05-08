@@ -11,7 +11,6 @@ import { MouseEvent } from "react";
 export interface IChipProps extends IComponentProps {
 	onClick?: (event: MouseEvent<HTMLButtonElement>) => void; // Function to execute when button is clicked
 	selected?: boolean;
-	configuration?: string;
 
 	label?: string;
 
@@ -24,6 +23,4 @@ export interface IChipProps extends IComponentProps {
 
 	trailingIcon?: boolean;
 	trailingIconName?: string;
-
-	elevated?: boolean;
 }

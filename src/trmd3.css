@@ -2098,60 +2098,60 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 }
 
 /* HORIZONTAL DIVIDERS */
-.horizontal-divider {
+.horizontaldivider {
 	display: flex;
 }
 
 /* HORIZONTAL DIVIDERS / BAR / LIGHT */
-.horizontal-divider-bar-light-theme {
+.horizontaldivider-bar-light-theme {
 	background-color: var(--m3-sys-light-outline-variant);
 }
 
 /* HORIZONTAL DIVIDERS / BAR / DARK */
-.horizontal-divider-bar-dark-theme {
+.horizontaldivider-bar-dark-theme {
 	background-color: var(--m3-sys-dark-outline-variant);
 }
 
 /* HORIZONTAL DIVIDERS / INSET / RIGHT */
-.horizontal-divider-inset-right {
+.horizontaldivider-inset-right {
 	background-color: red;
 }
 
 /* HORIZONTAL DIVIDERS / INSET / LEFT */
-.horizontal-divider-inset-left {
+.horizontaldivider-inset-left {
 	background-color: red;
 }
 
 /* VERTICAL DIVIDERS */
-.vertical-divider {
+.verticaldivider {
 	display: flex;
 	flex-direction: column;
 	margin: 0 auto;
 }
 
 /* VERTICAL DIVIDERS / BAR / LIGHT */
-.vertical-divider-bar-light-theme {
+.verticaldivider-bar-light-theme {
 	background-color: var(--m3-sys-light-outline-variant);
 }
 
 /* VERTICAL DIVIDERS / BAR / DARK */
-.vertical-divider-bar-dark-theme {
+.verticaldivider-bar-dark-theme {
 	background-color: var(--m3-sys-dark-outline-variant);
 }
 
 /* VERTICAL DIVIDERS / INSET / TOP */
-.vertical-divider-inset-top {
+.verticaldivider-inset-top {
 	background-color: red;
 }
 
 /* VERTICAL DIVIDERS / INSET / BOTTOM */
-.vertical-divider-inset-bottom {
+.verticaldivider-inset-bottom {
 	background-color: red;
 }
 
-/* CHIPS */
+/* INPUT CHIPS */
 
-.chip {
+.inputchip {
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: row;
@@ -2167,88 +2167,88 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 }
 
 /* CHIPS / AVATAR */
-.avatar-on-chip {
+.avatar-on-inputchip {
 	border-radius: 50%;
 	scale: 1.15;
 	margin-right: 8px;
 }
 
 /* CHIPS / LABEL */
-.label-on-chip {
+.label-on-inputchip {
 	margin: 0px 4px;
 }
 
 /* CHIPS / ONE ITEMS */
-.chip-one-items {
+.inputchip-one-items {
 	gap: 8px;
 	padding: 0px 8px;
 }
 
 /* CHIPS / TWO ITEMS */
-.chip-two-items {
+.inputchip-two-items {
 	gap: 2px;
 	padding: 0px 6px;
 }
 
 /* CHIPS / THREE ITEMS */
-.chip-three-items {
+.inputchip-three-items {
 	gap: 2px;
 	padding: 0px 4px;
 }
 
 /* CHIPS / LIGHT */
-.chip.chip-light-theme {
+.inputchip.inputchip-light-theme {
 	border: 1px solid var(--m3-sys-light-outline);
 	color: var(--m3-sys-light-on-surface-variant);
 }
 
 /* CHIPS / DARK */
-.chip.chip-dark-theme {
+.inputchip.inputchip-dark-theme {
 	border: 1px solid var(--m3-sys-dark-outline);
 	color: var(--m3-sys-dark-on-surface-variant);
 }
 
 /* CHIPS / HOVER / LIGHT */
-.chip:hover.chip-light-theme {
+.inputchip:hover.inputchip-light-theme {
 	background-color: var(--m3-state-layers-light-on-surface-variant-opacity-08);
 }
 
 /* CHIPS / HOVER / DARK */
-.chip:hover.chip-dark-theme {
+.inputchip:hover.inputchip-dark-theme {
 	background-color: var(--m3-state-layers-dark-on-surface-variant-opacity-08);
 }
 
 /* CHIPS / FOCUS / LIGHT */
-.chip:focus.chip-light-theme {
+.inputchip:focus.inputchip-light-theme {
 	background-color: var(--m3-sys-light-surface);
 	border: 1px solid var(--m3-sys-light-on-surface-variant);
 }
 
 /* CHIPS / FOCUS / DARK */
-.chip:focus.chip-dark-theme {
+.inputchip:focus.inputchip-dark-theme {
 	background-color: var(--m3-state-layers-dark-on-surface-variant-opacity-12);
 	border: 1px solid var(--m3-state-layers-dark-on-surface-variant-opacity-12);
 }
 
 /* CHIP / SELECTED */
-.chip.chip-selected {
+.inputchip.inputchip-selected {
 	border: none;
 }
 
 /* CHIP / SELECTED / LIGHT */
-.chip.chip-selected.chip-light-theme {
+.inputchip.inputchip-selected.inputchip-light-theme {
 	color: var(--m3-sys-light-on-secondary-container);
 	background-color: var(--m3-sys-light-secondary-container);
 }
 
 /* CHIP / SELECTED / DARK */
-.chip.chip-selected.chip-dark-theme {
+.inputchip.inputchip-selected.inputchip-dark-theme {
 	color: var(--m3-sys-dark-on-secondary-container);
 	background-color: var(--m3-sys-dark-secondary-container);
 }
 
 /* CHIPS / HOVER / SELECTED / LIGHT */
-.chip:hover.chip-selected.chip-light-theme {
+.inputchip:hover.inputchip-selected.inputchip-light-theme {
 	background-color: color-mix(
 		in srgb,
 		var(--m3-sys-light-secondary-container) 92%,
@@ -2257,7 +2257,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 }
 
 /* CHIPS / HOVER / SELECTED / DARK */
-.chip:hover.chip-selected.chip-dark-theme {
+.inputchip:hover.inputchip-selected.inputchip-dark-theme {
 	background-color: color-mix(
 		in srgb,
 		var(--m3-sys-dark-secondary-container) 92%,
@@ -2266,7 +2266,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 }
 
 /* CHIPS / FOCUS / SELECTED / LIGHT */
-.chip:focus.chip-selected.chip-light-theme {
+.inputchip:focus.inputchip-selected.inputchip-light-theme {
 	background-color: color-mix(
 		in srgb,
 		var(--m3-sys-light-secondary-container) 88%,
@@ -2275,7 +2275,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 }
 
 /* CHIPS / FOCUS / SELECTED / DARK */
-.chip:focus.chip-selected.chip-dark-theme {
+.inputchip:focus.inputchip-selected.inputchip-dark-theme {
 	background-color: color-mix(
 		in srgb,
 		var(--m3-sys-dark-secondary-container) 88%,
@@ -2284,7 +2284,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 }
 
 /* CHIPS / ACTIVE / DESELECTED / LIGHT */
-.chip:active.chip-deselected.chip-light-theme {
+.inputchip:active.inputchip-deselected.inputchip-light-theme {
 	background-color: color-mix(
 		in srgb,
 		var(--m3-sys-light-surface) 84%,
@@ -2294,7 +2294,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 }
 
 /* CHIPS / ACTIVE / DESELECTED / DARK */
-.chip:active.chip-deselected.chip-dark-theme {
+.inputchip:active.inputchip-deselected.inputchip-dark-theme {
 	background-color: color-mix(
 		in srgb,
 		var(--m3-sys-dark-surface) 84%,
@@ -2304,7 +2304,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 }
 
 /* CHIPS / ACTIVE / SELECTED / LIGHT */
-.chip:active.chip-selected.chip-light-theme {
+.inputchip:active.inputchip-selected.inputchip-light-theme {
 	background-color: color-mix(
 		in srgb,
 		var(--m3-sys-light-secondary-container) 84%,
@@ -2314,7 +2314,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 }
 
 /* CHIPS / ACTIVE / SELECTED / DARK */
-.chip:active.chip-selected.chip-dark-theme {
+.inputchip:active.inputchip-selected.inputchip-dark-theme {
 	background-color: color-mix(
 		in srgb,
 		var(--m3-sys-dark-secondary-container) 84%,
@@ -2324,60 +2324,60 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 }
 
 /* CHIPS / LIGHT / ICON / TRAILING */
-.chip.chip-light-theme > .chip-icon-trailing {
+.inputchip.inputchip-light-theme > .inputchip-icon-trailing {
 	color: var(--m3-sys-light-on-surface-variant);
 }
 
 /* CHIPS / DARK / ICON / TRAILING */
-.chip.chip-dark-theme > .chip-icon-trailing {
+.inputchip.inputchip-dark-theme > .inputchip-icon-trailing {
 	color: var(--m3-sys-dark-on-surface-variant);
 }
 
 /* CHIPS / SELECTED / LIGHT / ICON / TRAILING */
-.chip-selected.chip-light-theme > .chip-icon-trailing {
+.inputchip-selected.inputchip-light-theme > .inputchip-icon-trailing {
 	color: var(--m3-sys-light-on-secondary-container);
 }
 
 /* CHIPS / SELECTED / DARK / ICON / TRAILING */
-.chip-selected.chip-dark-theme > .chip-icon-trailing {
+.inputchip-selected.inputchip-dark-theme > .inputchip-icon-trailing {
 	color: var(--m3-sys-dark-on-secondary-container);
 }
 
 /* CHIPS / LIGHT / ICON / LEADING */
-.chip.chip-light-theme > .chip-icon-leading {
+.inputchip.inputchip-light-theme > .inputchip-icon-leading {
 	color: var(--m3-sys-light-primary);
 }
 
 /* CHIPS / DARK / ICON / LEADING */
-.chip.chip-dark-theme > .chip-icon-leading {
+.inputchip.inputchip-dark-theme > .inputchip-icon-leading {
 	color: var(--m3-sys-dark-primary);
 }
 
 /* CHIPS / DESELECTED / LIGHT / AVATAR */
-.chip.chip-deselected.chip-light-theme > .avatar-on-chip {
+.inputchip.inputchip-deselected.inputchip-light-theme > .avatar-on-inputchip {
 	background-color: var(--m3-sys-light-on-surface-variant);
 	color: var(--m3-sys-light-on-primary);
 }
 
 /* CHIPS / DESELECTED / DARK / AVATAR */
-.chip.chip-deselected.chip-dark-theme > .avatar-on-chip {
+.inputchip.inputchip-deselected.inputchip-dark-theme > .avatar-on-inputchip {
 	background-color: var(--m3-sys-dark-on-surface-variant);
 	color: var(--m3-sys-dark-on-primary);
 }
 
 /* CHIPS / SELECTED / LIGHT / AVATAR */
-.chip.chip-selected.chip-light-theme > .avatar-on-chip {
+.inputchip.inputchip-selected.inputchip-light-theme > .avatar-on-inputchip {
 	background-color: var(--m3-sys-light-on-secondary-container);
 	color: var(--m3-sys-light-on-secondary);
 }
 
 /* CHIPS / SELECTED / DARK / AVATAR */
-.chip.chip-selected.chip-dark-theme > .avatar-on-chip {
+.inputchip.inputchip-selected.inputchip-dark-theme > .avatar-on-inputchip {
 	background-color: var(--m3-sys-dark-on-secondary-container);
 	color: var(--m3-sys-dark-on-secondary);
 }
 
 /* CHIPS / AVATAR */
-.chip-avatar {
+.inputchip-avatar {
 	border-radius: 30px;
 }

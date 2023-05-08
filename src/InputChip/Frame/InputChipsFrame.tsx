@@ -22,11 +22,11 @@ function InputChipsFrame() {
 			<div className="text text-title text-title-large">Input Chips</div>
 
 			<div className="text text-label text-label-small">Label Only</div>
-			<InputChip configuration={"input"} onClick={undefined}></InputChip>
+			<InputChip onClick={undefined}></InputChip>
 			<pre>
 				<code className="language-html">
 					{" "}
-					{'<Chip configuration={"input"} onClick={undefined}></Chip>'}{" "}
+					{"<InputChip onClick={undefined}></InputChip>"}{" "}
 				</code>
 			</pre>
 
@@ -38,7 +38,7 @@ function InputChipsFrame() {
 				<code className="language-html">
 					{" "}
 					{
-						'<Chip configuration={"input"} trailingIcon={true} onClick={undefined}></Chip>'
+						"<InputChip trailingIcon={true} onClick={undefined}></InputChip>"
 					}{" "}
 				</code>
 			</pre>
@@ -51,7 +51,7 @@ function InputChipsFrame() {
 				<code className="language-html">
 					{" "}
 					{
-						'<Chip configuration={"input"} leadingIcon={true} onClick={undefined}></Chip>'
+						"<InputChip leadingIcon={true} onClick={undefined}></InputChip>"
 					}{" "}
 				</code>
 			</pre>
@@ -68,7 +68,7 @@ function InputChipsFrame() {
 				<code className="language-html">
 					{" "}
 					{
-						'<Chip configuration={"input"} leadingIcon={true} trailingIcon={true} onClick={undefined}></Chip>'
+						"<InputChip leadingIcon={true} trailingIcon={true} onClick={undefined}></InputChip>"
 					}{" "}
 				</code>
 			</pre>
@@ -78,9 +78,7 @@ function InputChipsFrame() {
 			<pre>
 				<code className="language-html">
 					{" "}
-					{
-						'<Chip configuration={"input"} avatar={true} onClick={undefined}></Chip>'
-					}{" "}
+					{"<InputChip avatar={true} onClick={undefined}></InputChip>"}{" "}
 				</code>
 			</pre>
 			<div className="text text-label text-label-small">
@@ -96,7 +94,7 @@ function InputChipsFrame() {
 				<code className="language-html">
 					{" "}
 					{
-						'<Chip configuration={"input"} avatar={true} trailingIcon={true} onClick={undefined}></Chip>'
+						"<InputChip avatar={true} trailingIcon={true} onClick={undefined}></InputChip>"
 					}{" "}
 				</code>
 			</pre>

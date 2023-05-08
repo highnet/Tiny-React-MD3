@@ -25,7 +25,6 @@ function computeNumberOfItems(
 
 const InputChip: React.FC<IInputChipProps> = ({
 	id,
-	configuration,
 	className,
 	children,
 	onClick,
@@ -41,7 +40,6 @@ const InputChip: React.FC<IInputChipProps> = ({
 }) => {
 	const [_id] = useState(id || undefined);
 	const [_className] = useState(className || "");
-	const [_configuration] = useState(configuration || "input");
 	const [_label] = useState(label || "Label");
 	const [_selected, setSelected] = useState(selected || false);
 	const [_leadingIcon] = useState(leadingIcon || false);
@@ -67,16 +65,15 @@ const InputChip: React.FC<IInputChipProps> = ({
 	};
 
 	let _computedComponentClassName = new StringBuilder()
-		.add("chip")
-		.add("chip-" + _configuration)
+		.add("inputchip")
 		.add(
-			"chip-" +
+			"inputchip-" +
 				computeNumberOfItems(_leadingIcon, _trailingIcon, _avatar) +
 				"-items"
 		)
-		.add("chip-" + (_selected ? "selected" : "deselected"))
-		.add(_avatar ? "chip-avatar" : "")
-		.add("chip-" + _theme)
+		.add("inputchip-" + (_selected ? "selected" : "deselected"))
+		.add(_avatar ? "inputchip-avatar" : "")
+		.add("inputchip-" + _theme)
 		.add(_className)
 		.toString();
 
@@ -90,24 +87,24 @@ const InputChip: React.FC<IInputChipProps> = ({
 			}}
 		>
 			{_avatar ? (
-				<span className="material-symbols-outlined avatar-on-chip">
+				<span className="material-symbols-outlined avatar-on-inputchip">
 					{_selected ? _avatarIconNameSelected : _avatarIconNameDeselected}
 				</span>
 			) : (
 				""
 			)}
 			{_leadingIcon && !_avatar ? (
-				<span className="material-symbols-outlined chip-icon-leading">
+				<span className="material-symbols-outlined inputchip-icon-leading">
 					{_leadingIconName ? _leadingIconName : "local_taxi"}
 				</span>
 			) : (
 				""
 			)}
-			<div className="text text-label text-label-large label-on-chip">
+			<div className="text text-label text-label-large label-on-inputchip">
 				{_label}
 			</div>
 			{_trailingIcon ? (
-				<span className="material-symbols-outlined chip-icon-trailing">
+				<span className="material-symbols-outlined inputchip-icon-trailing">
 					{_trailingIconName ? _trailingIcon : "close"}
 				</span>
 			) : (

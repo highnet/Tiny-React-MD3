@@ -54,24 +54,24 @@ const VerticalDivider: React.FC<IVerticalDividerProps> = ({
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
 	let _computedComponentClassName = new StringBuilder()
-		.add("vertical-divider")
-		.add("vertical-divider-" + _theme)
+		.add("verticaldivider")
+		.add("verticaldivider-" + _theme)
 		.add(_className)
 		.toString();
 
 	let _computedComponentInsetTopClassName = new StringBuilder()
-		.add("vertical-divider-inset-top")
-		.add("vertical-divider-inset-top-" + _theme)
+		.add("verticaldivider-inset-top")
+		.add("verticaldivider-inset-top-" + _theme)
 		.toString();
 
 	let _computedComponentBarClassName = new StringBuilder()
-		.add("vertical-divider-bar")
-		.add("vertical-divider-bar-" + _theme)
+		.add("verticaldivider-bar")
+		.add("verticaldivider-bar-" + _theme)
 		.toString();
 
 	let _computedComponentInsetBottomClassName = new StringBuilder()
-		.add("vertical-divider-inset-bottom")
-		.add("vertical-divider-inset-bottom-" + _theme)
+		.add("verticaldivider-inset-bottom")
+		.add("verticaldivider-inset-bottom-" + _theme)
 		.toString();
 
 	// Return the JSX element for the vertical divider
