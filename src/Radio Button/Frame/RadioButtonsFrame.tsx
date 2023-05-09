@@ -42,7 +42,7 @@ const RadioButtonsFrame: React.FC = () => {
 					{'<RadioButton name={"trmd3"} value={"option-1"} />'}{" "}
 				</code>
 			</pre>
-			<RadioButton name={"trmd3"} value={"option-2"} />
+			<RadioButton name={"trmd3"} value={"option-2"} defaultChecked={true} />
 			<div className="text text-label text-label-small frame-label-trmd3">
 				Option 2
 			</div>
@@ -50,23 +50,6 @@ const RadioButtonsFrame: React.FC = () => {
 				<code className="language-html">
 					{" "}
 					{'<RadioButton name={"trmd3"} value={"option-2"} />'}{" "}
-				</code>
-			</pre>
-			<RadioButton
-				name={"trmd3"}
-				value={"option-4"}
-				disabled={true}
-				defaultChecked={true}
-			/>
-			<div className="text text-label text-label-small frame-label-trmd3">
-				Option 4 (Inactive)
-			</div>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						'<RadioButton name={"trmd3"} value={"option-4"} disabled={true} defaultChecked={true} />'
-					}{" "}
 				</code>
 			</pre>
 		</div>

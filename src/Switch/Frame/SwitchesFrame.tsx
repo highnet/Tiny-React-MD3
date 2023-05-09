@@ -46,18 +46,6 @@ const SwitchesFrame: React.FC = () => {
 				</code>
 			</pre>
 			<div className="text text-label text-label-small checkbox-label-trmd3">
-				No Icon (Inactive)
-			</div>
-			<Switch selected={false} onChange={undefined} disabled={true} />
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						"<Switch selected={true} onChange={undefined} disabled={true} />"
-					}{" "}
-				</code>
-			</pre>
-			<div className="text text-label text-label-small checkbox-label-trmd3">
 				With Icon
 			</div>
 			<Switch
@@ -72,18 +60,6 @@ const SwitchesFrame: React.FC = () => {
 					{" "}
 					{
 						'<Switch selected={true} onChange={undefined} icon={true} iconNameSelected={"warning"} iconNameDeselected={"house"} />'
-					}{" "}
-				</code>
-			</pre>
-			<div className="text text-label text-label-small checkbox-label-trmd3">
-				With Icon (Inactive)
-			</div>
-			<Switch selected={true} onChange={undefined} disabled={true} />
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						"<Switch selected={true} onChange={undefined} disabled={true} />"
 					}{" "}
 				</code>
 			</pre>

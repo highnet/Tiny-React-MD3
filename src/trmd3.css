@@ -2166,12 +2166,6 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-.inputchip {
-}
-
-.assistchip {
-}
-
 /* INPUT-CHIPS */
 
 /* INPUT-CHIPS / LIGHT */
@@ -2369,7 +2363,6 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 
 /* INPUT-CHIPS / ONE ITEMS */
 .inputchip-one-items {
-	gap: 8px;
 	padding: 0px 8px;
 }
 
@@ -2386,6 +2379,132 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 }
 
 /* ASSIST-CHIPS */
+
+.assistchip {
+	padding: 0px 16px;
+}
+
+.assistchip-disabled {
+	opacity: 38%;
+}
+
+/* ASSIST-CHIPS / LIGHT */
+
+.assistchip.assistchip-light-theme {
+	color: var(--m3-sys-light-on-surface);
+	border: 1px solid var(--m3-sys-light-outline);
+}
+
+/* ASSIST-CHIPS / DARK */
+
+/* ASSIST-CHIPS / HOVER / LIGHT */
+
+.assistchip:hover.assistchip-light-theme {
+	color: var(--m3-sys-light-on-surface);
+	border: 1px solid var(--m3-sys-light-outline);
+	background-color: color-mix(
+		in srgb,
+		var(--m3-sys-light-surface) 92%,
+		var(--m3-state-layers-light-on-surface-opacity-08)
+	);
+}
+
+/* ASSIST-CHIPS / HOVER / DARK */
+
+/* ASSIST-CHIPS / FOCUS / LIGHT */
+
+.assistchip:focus.assistchip-light-theme {
+	color: var(--m3-sys-light-on-surface);
+	border: 1px solid var(--m3-sys-light-on-surface);
+	background-color: color-mix(
+		in srgb,
+		var(--m3-sys-light-surface) 88%,
+		var(--m3-state-layers-light-on-surface-opacity-12)
+	);
+}
+
+/* ASSIST-CHIPS / ACTIVE / LIGHT */
+
+.assistchip:active.assistchip-light-theme {
+	color: var(--m3-sys-light-on-surface);
+	border: 1px solid var(--m3-sys-light-outline);
+	background-color: color-mix(
+		in srgb,
+		var(--m3-sys-light-surface) 84%,
+		var(--m3-state-layers-light-on-surface-opacity-16)
+	);
+	box-shadow: var(--m3-elevation-light-4);
+}
+
+/* ASSIST-CHIPS / ACTIVE / DARK */
+
+/* ASSIST-CHIPS / ELEVATED */
+/* ASSIST-CHIPS / ELEVATED / LIGHT */
+
+.assistchip.assistchip-elevated {
+	border: none;
+	color: var(--m3-sys-light-on-surface);
+	background-color: var(--m3-sys-light-surface-container-low);
+	box-shadow: var(--m3-elevation-light-1);
+}
+
+/* ASSIST-CHIPS / ELEVATED / DARK */
+
+/* ASSIST-CHIPS / ELEVATED / HOVER / LIGHT */
+
+.assistchip:hover.assistchip-elevated.assistchip-light-theme {
+	border: none;
+	color: var(--m3-sys-light-on-surface);
+	background-color: color-mix(
+		in srgb,
+		var(--m3-sys-light-surface-container-low) 92%,
+		var(--m3-state-layers-light-on-surface-variant-opacity-08)
+	);
+	box-shadow: var(--m3-elevation-light-1);
+}
+
+/* ASSIST-CHIPS / ELEVATED / HOVER / DARK */
+
+/* ASSIST-CHIPS / ELEVATED / FOCUS / LIGHT */
+
+.assistchip:focus.assistchip-elevated.assistchip-light-theme {
+	border: none;
+	color: var(--m3-sys-light-on-surface);
+	background-color: color-mix(
+		in srgb,
+		var(--m3-sys-light-surface-container-low) 88%,
+		var(--m3-state-layers-light-on-surface-variant-opacity-12)
+	);
+	box-shadow: var(--m3-elevation-light-1);
+}
+
+/* ASSIST-CHIPS / ELEVATED / ACTIVE / LIGHT */
+
+.assistchip:active.assistchip-elevated.assistchip-light-theme {
+	border: none;
+	color: var(--m3-sys-light-on-surface);
+	background-color: color-mix(
+		in srgb,
+		var(--m3-sys-light-surface-container-low) 84%,
+		var(--m3-state-layers-light-on-surface-variant-opacity-16)
+	);
+	box-shadow: var(--m3-elevation-light-4);
+}
+
+/* ASSIST-CHIPS / ELEVATED / ACTIVE / DARK */
+
+.assistchip-with-icon {
+	gap: 8px;
+	padding: 0px 9px;
+}
+
+.assistchip.assistchip-light-theme > .icon-on-assistchip {
+	color: var(--m3-sys-light-primary);
+}
+
+.assistchip.assistchip-dark-theme > .icon-on-assistchip {
+	color: var(--m3-sys-dark-primary);
+}
 
 .favicon-on-assistchip {
 	width: 12px;

@@ -8,10 +8,10 @@ import { StringBuilder } from "../../Gizmos/StringBuilder";
 const AssistChip: React.FC<IAssistChipProps> = ({
 	id,
 	className,
+	disabled,
 	children,
 	onClick,
 	label,
-	selected,
 	iconType,
 	iconName,
 	iconSrc,
@@ -19,8 +19,8 @@ const AssistChip: React.FC<IAssistChipProps> = ({
 }) => {
 	const [_id] = useState(id || undefined);
 	const [_className] = useState(className || "");
+	const [_disabled] = useState(disabled || false);
 	const [_label] = useState(label || "Label");
-	const [_selected, setSelected] = useState(selected || false);
 	const [_iconType] = useState(iconType || undefined);
 	const [_iconName] = useState(iconName || "local_taxi");
 	const [_elevated] = useState(elevated || false);
@@ -28,9 +28,9 @@ const AssistChip: React.FC<IAssistChipProps> = ({
 		if (iconSrc) {
 			return iconSrc;
 		} else if (_iconType === "favicon") {
-			return "../../public/Netflix_Symbol_RGB.png";
+			return "../../Netflix_Symbol_RGB.png";
 		} else if (_iconType === "branded") {
-			return "../../public/Colourful_Logo.png";
+			return "../../Colourful_Logo.png";
 		}
 	});
 
@@ -42,19 +42,18 @@ const AssistChip: React.FC<IAssistChipProps> = ({
 	};
 
 	const handleClick = () => {
-		setSelected(!_selected);
 		click();
 	};
 
 	let _computedComponentClassName = new StringBuilder()
 		.add("chip")
 		.add("assistchip")
+		.add(_disabled ? "assistchip-disabled" : "")
 		.add(_iconType ? "assistchip-" + _iconType : "")
+		.add(_iconType ? "assistchip-with-icon" : "")
 		.add(_elevated ? "assistchip-elevated" : "")
-		.add("assistchip-" + (_selected ? "selected" : "deselected"))
 		.add("assistchip-" + _theme)
 		.add(_className)
-
 		.toString();
 
 	return (

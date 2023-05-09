@@ -50,37 +50,16 @@ const ButtonsFrame: React.FC = () => {
 			{/* BUTTONS */}
 			<div className="text text-title text-title-large">Filled Buttons</div>
 			<div className="text text-label text-label-small">No Icon</div>
-			<Button
-				configuration="filled"
-				disabled={false}
-				onClick={undefined}
-			></Button>
+			<Button configuration="filled" onClick={undefined}></Button>
 			<pre>
 				<code className="language-html">
 					{" "}
-					{
-						'<Button configuration="filled" disabled={false} onClick={undefined}></Button>'
-					}{" "}
-				</code>
-			</pre>
-			<div className="text text-label text-label-small">No Icon (inactive)</div>
-			<Button
-				configuration="filled"
-				disabled={true}
-				onClick={undefined}
-			></Button>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						'<Button configuration="filled" disabled={true} onClick={undefined}><div className="text text-label text-label-small">Disabled</div></Button>'
-					}{" "}
+					{'<Button configuration="filled" onClick={undefined}></Button>'}{" "}
 				</code>
 			</pre>
 			<div className="text text-label text-label-small">With Icon</div>
 			<Button
 				configuration="filled"
-				disabled={false}
 				icon={true}
 				iconName={"search"}
 				onClick={undefined}
@@ -89,61 +68,24 @@ const ButtonsFrame: React.FC = () => {
 				<code className="language-html">
 					{" "}
 					{
-						'<Button configuration="filled" disabled={false} icon={true} iconName={"search"} onClick={undefined}></Button>'
-					}{" "}
-				</code>
-			</pre>
-			<div className="text text-label text-label-small">
-				With Icon (inactive)
-			</div>
-			<Button
-				configuration="filled"
-				disabled={true}
-				icon={true}
-				iconName={"search"}
-				onClick={undefined}
-			></Button>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						'<Button configuration="filled" disabled={true} icon={true} iconName={"search"} onClick={undefined}><div className="text text-label text-label-small">Disabled</div></Button>'
+						'<Button configuration="filled" icon={true} iconName={"search"} onClick={undefined}></Button>'
 					}{" "}
 				</code>
 			</pre>
 			<div className="text text-title text-title-large">Outlined Buttons</div>
 			<div className="text text-label text-label-small">No Icon</div>
-			<Button
-				configuration="outlined"
-				disabled={false}
-				onClick={undefined}
-			></Button>
+			<Button configuration="outlined" onClick={undefined}></Button>
 			<pre>
 				<code className="language-html">
 					{" "}
 					{
-						'<Button configuration="outlined" disabled={false} onClick={undefined}></Button>'
-					}{" "}
-				</code>
-			</pre>
-			<div className="text text-label text-label-small">No Icon (inactive)</div>
-			<Button
-				configuration="outlined"
-				disabled={true}
-				onClick={undefined}
-			></Button>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						'<Button configuration="outlined" disabled={true} onClick={undefined}><div className="text text-label text-label-small">Disabled</div></Button>'
+						'<Button configuration="outlined" onClick={undefined}></Button>'
 					}{" "}
 				</code>
 			</pre>
 			<div className="text text-label text-label-small">With Icon</div>
 			<Button
 				configuration="outlined"
-				disabled={false}
 				onClick={undefined}
 				icon={true}
 				iconName={"search"}
@@ -152,58 +94,23 @@ const ButtonsFrame: React.FC = () => {
 				<code className="language-html">
 					{" "}
 					{
-						'<Button configuration="outlined" disabled={false} onClick={undefined} icon={true} iconName={"search"}></Button>'
-					}{" "}
-				</code>
-			</pre>
-			<div className="text text-label text-label-small">
-				With Icon (inactive)
-			</div>
-			<Button
-				configuration="outlined"
-				disabled={true}
-				onClick={undefined}
-				icon={true}
-				iconName={"search"}
-			></Button>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						'<Button configuration="outlined" disabled={true} onClick={undefined} icon={true} iconName={"search"}><div className="text text-label text-label-small">Disabled</div></Button>'
+						'<Button configuration="outlined" onClick={undefined} icon={true} iconName={"search"}></Button>'
 					}{" "}
 				</code>
 			</pre>
 			<div className="text text-title text-title-large">Text Buttons</div>
 			<div className="text text-label text-label-small">No Icon</div>
-			<Button
-				configuration="text"
-				disabled={false}
-				onClick={undefined}
-			></Button>
+			<Button configuration="text" onClick={undefined}></Button>
 
 			<pre>
 				<code className="language-html">
 					{" "}
-					{
-						'<Button configuration="text" disabled={false} onClick={undefined}></Button>'
-					}{" "}
-				</code>
-			</pre>
-			<div className="text text-label text-label-small">No Icon (inactive)</div>
-			<Button configuration="text" disabled={true} onClick={undefined}></Button>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						'<Button configuration="text" disabled={true} onClick={undefined}></Button>'
-					}{" "}
+					{'<Button configuration="text" onClick={undefined}></Button>'}{" "}
 				</code>
 			</pre>
 			<div className="text text-label text-label-small">With Icon</div>
 			<Button
 				configuration="text"
-				disabled={false}
 				onClick={undefined}
 				icon={true}
 				iconName={"search"}
@@ -212,61 +119,24 @@ const ButtonsFrame: React.FC = () => {
 				<code className="language-html">
 					{" "}
 					{
-						'<Button configuration="text" disabled={false} onClick={undefined} icon={true} iconName={"search"}></Button>'
-					}{" "}
-				</code>
-			</pre>
-			<div className="text text-label text-label-small">
-				With Icon (inactive)
-			</div>
-			<Button
-				configuration="text"
-				disabled={true}
-				onClick={undefined}
-				icon={true}
-				iconName={"search"}
-			></Button>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						'<Button configuration="text" disabled={true} onClick={undefined} icon={true} iconName={"search"}><div className="text text-label text-label-small">Disabled</div></Button>'
+						'<Button configuration="text" onClick={undefined} icon={true} iconName={"search"}></Button>'
 					}{" "}
 				</code>
 			</pre>
 			<div className="text text-title text-title-large">Elevated Buttons</div>
 			<div className="text text-label text-label-small">No Icon</div>
-			<Button
-				configuration="elevated"
-				disabled={false}
-				onClick={undefined}
-			></Button>
+			<Button configuration="elevated" onClick={undefined}></Button>
 			<pre>
 				<code className="language-html">
 					{" "}
 					{
-						'<Button configuration="elevated" disabled={false} onClick={undefined}></Button>'
-					}{" "}
-				</code>
-			</pre>
-			<div className="text text-label text-label-small">No Icon (inactive)</div>
-			<Button
-				configuration="elevated"
-				disabled={true}
-				onClick={undefined}
-			></Button>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						'<Button configuration="elevated" disabled={true} onClick={undefined}></Button>'
+						'<Button configuration="elevated" onClick={undefined}></Button>'
 					}{" "}
 				</code>
 			</pre>
 			<div className="text text-label text-label-small">With Icon</div>
 			<Button
 				configuration="elevated"
-				disabled={false}
 				onClick={undefined}
 				icon={true}
 				iconName={"search"}
@@ -275,61 +145,22 @@ const ButtonsFrame: React.FC = () => {
 				<code className="language-html">
 					{" "}
 					{
-						'<Button configuration="elevated" disabled={false} onClick={undefined} icon={true} iconName={"search"}></Button>'
-					}{" "}
-				</code>
-			</pre>
-			<div className="text text-label text-label-small">
-				With Icon (inactive)
-			</div>
-			<Button
-				configuration="elevated"
-				disabled={true}
-				onClick={undefined}
-				icon={true}
-				iconName={"search"}
-			></Button>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						'<Button configuration="elevated" disabled={true} onClick={undefined} icon={true} iconName={"search"}><div className="text text-label text-label-small">Disabled</div></Button>'
+						'<Button configuration="elevated" onClick={undefined} icon={true} iconName={"search"}></Button>'
 					}{" "}
 				</code>
 			</pre>
 			<div className="text text-title text-title-large">Tonal Buttons</div>
 			<div className="text text-label text-label-small">No Icon</div>
-			<Button
-				configuration="tonal"
-				disabled={false}
-				onClick={undefined}
-			></Button>
+			<Button configuration="tonal" onClick={undefined}></Button>
 			<pre>
 				<code className="language-html">
 					{" "}
-					{
-						'<Button configuration="tonal" disabled={false} onClick={undefined}></Button>'
-					}{" "}
-				</code>
-			</pre>
-			<div className="text text-label text-label-small">No Icon (inactive)</div>
-			<Button
-				configuration="tonal"
-				disabled={true}
-				onClick={undefined}
-			></Button>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						'<Button configuration="tonal" disabled={true} onClick={undefined}><div className="text text-label text-label-small">Disabled</div></Button>'
-					}{" "}
+					{'<Button configuration="tonal" onClick={undefined}></Button>'}{" "}
 				</code>
 			</pre>
 			<div className="text text-label text-label-small">With Icon</div>
 			<Button
 				configuration="tonal"
-				disabled={false}
 				onClick={undefined}
 				icon={true}
 				iconName={"search"}
@@ -338,25 +169,7 @@ const ButtonsFrame: React.FC = () => {
 				<code className="language-html">
 					{" "}
 					{
-						'<Button configuration="tonal" disabled={false} onClick={undefined} icon={true} iconName={"search"}></Button>'
-					}{" "}
-				</code>
-			</pre>
-			<div className="text text-label text-label-small">
-				With Icon (inactive)
-			</div>
-			<Button
-				configuration="tonal"
-				disabled={true}
-				onClick={undefined}
-				icon={true}
-				iconName={"search"}
-			></Button>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						'<Button configuration="tonal" disabled={true} onClick={undefined} icon={true} iconName={"search"}><div className="text text-label text-label-small">Disabled</div></Button>'
+						'<Button configuration="tonal" onClick={undefined} icon={true} iconName={"search"}></Button>'
 					}{" "}
 				</code>
 			</pre>

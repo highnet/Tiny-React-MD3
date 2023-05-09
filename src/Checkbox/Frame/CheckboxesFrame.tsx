@@ -45,23 +45,6 @@ const CheckboxesFrame: React.FC = () => {
 				</code>
 			</pre>
 			<div className="text text-label text-label-small frame-label-trmd3">
-				Default (inactive)
-			</div>
-			<Checkbox
-				selected={true}
-				onChange={undefined}
-				configuration={"default"}
-				disabled={true}
-			/>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						'<Checkbox selected={true} onChange={undefined} configuration={"default"} disabled={true} />'
-					}{" "}
-				</code>
-			</pre>
-			<div className="text text-label text-label-small frame-label-trmd3">
 				Error
 			</div>
 			<Checkbox selected={true} onChange={undefined} configuration={"error"} />
@@ -70,23 +53,6 @@ const CheckboxesFrame: React.FC = () => {
 					{" "}
 					{
 						'<Checkbox selected={true} onChange={undefined} configuration={"error"} />'
-					}{" "}
-				</code>
-			</pre>
-			<div className="text text-label text-label-small frame-label-trmd3">
-				Error (inactive)
-			</div>
-			<Checkbox
-				selected={true}
-				onChange={undefined}
-				configuration={"error"}
-				disabled={true}
-			/>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						'<Checkbox selected={true} onChange={undefined} configuration={"error"} disabled={true} />'
 					}{" "}
 				</code>
 			</pre>
