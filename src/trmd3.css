@@ -949,6 +949,19 @@
 	--m3-state-layers-dark-shadow-opacity-08: rgba(0, 0, 0, 0.08);
 	--m3-state-layers-dark-shadow-opacity-12: rgba(0, 0, 0, 0.12);
 	--m3-state-layers-dark-shadow-opacity-16: rgba(0, 0, 0, 0.16);
+
+	/* M3 / COMPOSITES / LIGHT */
+	--m3-composite-light-primary-passthrough-on-primary-opacity-08: #735eab;
+	--m3-composite-light-primary-passthrough-on-primary-opacity-12: #7965af;
+
+	--m3-composite-light-surface-container-low-passthrough-primary-opacity-08: #ebe5f3;
+
+	--m3-composite-light-surface-container-low-passthrough-on-surface-variant-opacity-12: #e2dde5;
+	--m3-composite-light-surface-container-low-passthrough-on-surface-variant-opacity-16: #e2dde5;
+
+	/* M3 / COMPOSITES / DARK */
+	--m3-composite-dark-primary-passthrough-on-primary-opacity-08: #c4aff4;
+	--m3-composite-dark-primary-passthrough-on-primary-opacity-12: #bea9ee;
 }
 
 /* TYPOGRAPHY */
@@ -1124,65 +1137,50 @@
 
 /* BUTTONS / FILLED / HOVER / LIGHT */
 .btn-filled:hover.btn-light-theme {
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-light-primary) 92%,
-		var(--m3-state-layers-light-on-primary-opacity-08)
-	);
-}
-
-/* BUTTONS / FILLED / HOVER / DARK */
-.btn-filled:hover.btn-dark-theme {
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-dark-primary) 92%,
-		var(--m3-state-layers-dark-on-primary-opacity-08)
-	);
-}
-
-/* BUTTONS / FILLED / HOVER / LIGHT */
-.btn-filled:hover.btn-light-theme {
 	box-shadow: var(--m3-elevation-light-1);
+	background-color: var(
+		--m3-composite-light-primary-passthrough-on-primary-opacity-08
+	);
 }
 
 /* BUTTONS / FILLED / HOVER / DARK */
 .btn-filled:hover.btn-dark-theme {
 	box-shadow: var(--m3-elevation-dark-1);
+	background-color: var(
+		--m3-composite-dark-primary-passthrough-on-primary-opacity-08
+	);
 }
 
 /* BUTTONS / FILLED / FOCUS / LIGHT */
 .btn-filled:focus.btn-light-theme {
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-light-primary) 88%,
-		var(--m3-state-layers-light-on-primary-opacity-12)
+	box-shadow: none;
+	background-color: var(
+		--m3-composite-light-primary-passthrough-on-primary-opacity-12
 	);
 }
 
 /* BUTTONS / FILLED / FOCUS / DARK */
 .btn-filled:focus.btn-dark-theme {
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-dark-primary) 88%,
-		var(--m3-state-layers-dark-on-primary-opacity-12)
+	box-shadow: none;
+
+	background-color: var(
+		--m3-composite-dark-primary-passthrough-on-primary-opacity-12
 	);
 }
 
 /* BUTTONS / FILLED / ACTIVE / LIGHT */
 .btn-filled:active.btn-light-theme {
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-light-primary) 88%,
-		var(--m3-state-layers-light-on-primary-opacity-12)
+	box-shadow: none;
+	background-color: var(
+		--m3-composite-light-primary-passthrough-on-primary-opacity-12
 	);
 }
 
 /* BUTTONS / FILLED / ACTIVE / DARK */
 .btn-filled:active.btn-dark-theme {
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-dark-primary) 88%,
-		var(--m3-state-layers-dark-on-primary-opacity-12)
+	box-shadow: none;
+	background-color: var(
+		--m3-composite-dark-primary-passthrough-on-primary-opacity-12
 	);
 }
 
@@ -1355,10 +1353,8 @@
 
 /* BUTTONS / ELEVATED / HOVER / LIGHT */
 .btn-elevated:hover.btn-light-theme {
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-light-surface-container-low),
-		var(--m3-state-layers-light-primary-opacity-08)
+	background-color: var(
+		--m3-composite-light-surface-container-low-passthrough-primary-opacity-08
 	);
 
 	box-shadow: var(--m3-elevation-light-2);
@@ -2402,11 +2398,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .assistchip:hover.assistchip-light-theme {
 	color: var(--m3-sys-light-on-surface);
 	border: 1px solid var(--m3-sys-light-outline);
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-light-surface) 92%,
-		var(--m3-state-layers-light-on-surface-opacity-08)
-	);
+	background-color: var(--m3-state-layers-light-on-surface-variant-opacity-08);
 }
 
 /* ASSIST-CHIPS / HOVER / DARK */
@@ -2416,11 +2408,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .assistchip:focus.assistchip-light-theme {
 	color: var(--m3-sys-light-on-surface);
 	border: 1px solid var(--m3-sys-light-on-surface);
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-light-surface) 88%,
-		var(--m3-state-layers-light-on-surface-opacity-12)
-	);
+	background-color: var(--m3-state-layers-light-on-surface-variant-opacity-12);
 }
 
 /* ASSIST-CHIPS / ACTIVE / LIGHT */
@@ -2428,11 +2416,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .assistchip:active.assistchip-light-theme {
 	color: var(--m3-sys-light-on-surface);
 	border: 1px solid var(--m3-sys-light-outline);
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-light-surface) 84%,
-		var(--m3-state-layers-light-on-surface-opacity-16)
-	);
+	background-color: var(--m3-state-layers-light-on-surface-variant-opacity-12);
 	box-shadow: var(--m3-elevation-light-4);
 }
 
@@ -2470,10 +2454,8 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .assistchip:focus.assistchip-elevated.assistchip-light-theme {
 	border: none;
 	color: var(--m3-sys-light-on-surface);
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-light-surface-container-low) 88%,
-		var(--m3-state-layers-light-on-surface-variant-opacity-12)
+	background-color: var(
+		--m3-composite-light-surface-container-low-passthrough-on-surface-variant-opacity-12
 	);
 	box-shadow: var(--m3-elevation-light-1);
 }
@@ -2483,10 +2465,8 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .assistchip:active.assistchip-elevated.assistchip-light-theme {
 	border: none;
 	color: var(--m3-sys-light-on-surface);
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-light-surface-container-low) 84%,
-		var(--m3-state-layers-light-on-surface-variant-opacity-16)
+	background-color: var(
+		--m3-composite-light-surface-container-low-passthrough-on-surface-variant-opacity-16
 	);
 	box-shadow: var(--m3-elevation-light-4);
 }

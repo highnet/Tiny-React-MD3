@@ -43,7 +43,7 @@ const TypographiesFrame: React.FC = () => {
 				<code className="language-html">
 					{" "}
 					{
-						'<Typography variant="text-display-large content="Display Large - Roboto 57/54 . 0" " />'
+						'<Typography variant="text-display-large" content="Display Large - Roboto 57/54 . 0" />'
 					}{" "}
 				</code>
 			</pre>
