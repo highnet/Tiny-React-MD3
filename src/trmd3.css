@@ -953,15 +953,28 @@
 	/* M3 / COMPOSITES / LIGHT */
 	--m3-composite-light-primary-passthrough-on-primary-opacity-08: #735eab;
 	--m3-composite-light-primary-passthrough-on-primary-opacity-12: #7965af;
-
 	--m3-composite-light-surface-container-low-passthrough-primary-opacity-08: #ebe5f3;
-
+	--m3-composite-light-surface-container-low-passthrough-primary-opacity-12: #e6dff0;
+	--m3-composite-light-surface-container-low-passthrough-on-surface-variant-opacity-08: #f7f2fa;
 	--m3-composite-light-surface-container-low-passthrough-on-surface-variant-opacity-12: #e2dde5;
 	--m3-composite-light-surface-container-low-passthrough-on-surface-variant-opacity-16: #e2dde5;
+	--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-08: #d8cee8;
+	--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-12: #d0c6df;
+	--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-16: #c8bfd7;
 
 	/* M3 / COMPOSITES / DARK */
+	--m3-composite-dark-surface-container-low-passthrough-on-primary-opacity-08: #2b2832;
+	--m3-composite-dark-surface-container-low-passthrough-on-primary-opacity-12: #322e3b;
+	--m3-composite-dark-surface-container-low-passthrough-primary-opacity-12: #322e3b;
+
 	--m3-composite-dark-primary-passthrough-on-primary-opacity-08: #c4aff4;
 	--m3-composite-dark-primary-passthrough-on-primary-opacity-12: #bea9ee;
+	--m3-composite-dark-surface-passthrough-on-surface-variant-opacity-16: #1c1a21;
+
+	--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12: #5d566b;
+	--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-16: #635d72;
+
+	--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-08: #575065;
 }
 
 /* TYPOGRAPHY */
@@ -1362,10 +1375,8 @@
 
 /* BUTTONS / ELEVATED / HOVER / DARK */
 .btn-elevated:hover.btn-dark-theme {
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-dark-surface-container-low),
-		var(--m3-state-layers-dark-primary-opacity-08)
+	background-color: var(
+		--m3-composite-dark-surface-container-low-passthrough-on-primary-opacity-08
 	);
 
 	box-shadow: var(--m3-elevation-dark-2);
@@ -1373,40 +1384,32 @@
 
 /* BUTTONS / ELEVATED / FOCUS / LIGHT */
 .btn-elevated:focus.btn-light-theme {
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-light-surface-container-low),
-		var(--m3-state-layers-light-primary-opacity-12)
+	background-color: var(
+		--m3-composite-light-surface-container-low-passthrough-primary-opacity-08
 	);
 	box-shadow: var(--m3-elevation-light-1);
 }
 
 /* BUTTONS / ELEVATED / FOCUS / DARK */
 .btn-elevated:focus.btn-dark-theme {
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-dark-surface-container-low),
-		var(--m3-state-layers-dark-primary-opacity-12)
+	background-color: var(
+		--m3-composite-dark-surface-container-low-passthrough-primary-opacity-12
 	);
 	box-shadow: var(--m3-elevation-dark-1);
 }
 
 /* BUTTONS / ELEVATED / ACTIVE / LIGHT */
 .btn-elevated:active.btn-light-theme {
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-light-surface-container-low),
-		var(--m3-state-layers-light-primary-opacity-12)
+	background-color: var(
+		--m3-composite-light-surface-container-low-passthrough-primary-opacity-12
 	);
 	box-shadow: var(--m3-elevation-light-1);
 }
 
 /* BUTTONS / ELEVATED / ACTIVE / DARK */
 .btn-elevated:active.btn-dark-theme {
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-dark-surface-container-low),
-		var(--m3-state-layers-dark-primary-opacity-12)
+	background-color: var(
+		--m3-composite-dark-surface-container-low-passthrough-on-primary-opacity-12
 	);
 	box-shadow: var(--m3-elevation-dark-1);
 }
@@ -1420,21 +1423,13 @@
 
 /* BUTTONS / ELEVATED / DISABLED / LIGHT */
 .btn-elevated:disabled.btn-light-theme {
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-light-on-surface),
-		white 88%
-	);
+	background-color: var(--m3-sys-light-on-surface);
 	color: var(--m3-sys-light-on-surface);
 }
 
 /* BUTTONS / ELEVATED / DISABLED / DARK */
 .btn-elevated:disabled.btn-dark-theme {
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-dark-on-surface),
-		white 88%
-	);
+	background-color: var(--m3-sys-dark-on-surface);
 	color: var(--m3-sys-dark-on-surface);
 }
 
@@ -1452,20 +1447,16 @@
 
 /* BUTTONS / TONAL / HOVER / LIGHT */
 .btn-tonal:hover.btn-light-theme {
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-light-secondary-container),
-		var(--m3-state-layers-light-on-secondary-container-opacity-08)
+	background-color: var(
+		--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-08
 	);
 	box-shadow: var(--m3-elevation-light-1);
 }
 
 /* BUTTONS / TONAL / HOVER / DARK */
 .btn-tonal:hover.btn-dark-theme {
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-dark-secondary-container),
-		var(--m3-state-layers-dark-on-secondary-container-opacity-08)
+	background-color: var(
+		--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-08
 	);
 	box-shadow: var(--m3-elevation-dark-1);
 }
@@ -1477,19 +1468,15 @@
 
 /* BUTTONS / TONAL / FOCUS / LIGHT */
 .btn-tonal:focus.btn-light-theme {
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-light-secondary-container),
-		var(--m3-state-layers-light-on-secondary-container-opacity-12)
+	background-color: var(
+		--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-12
 	);
 }
 
 /* BUTTONS / TONAL / FOCUS / DARK */
 .btn-tonal:focus.btn-dark-theme {
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-dark-secondary-container),
-		var(--m3-state-layers-dark-on-secondary-container-opacity-12)
+	background-color: var(
+		--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12
 	);
 }
 
@@ -1500,19 +1487,15 @@
 
 /* BUTTONS / TONAL / ACTIVE / LIGHT */
 .btn-tonal:active.btn-light-theme {
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-light-secondary-container),
-		var(--m3-state-layers-light-on-secondary-container-opacity-12)
+	background-color: var(
+		--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-12
 	);
 }
 
 /* BUTTONS / TONAL / ACTIVE / DARK */
 .btn-tonal:active.btn-dark-theme {
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-dark-secondary-container),
-		var(--m3-state-layers-dark-on-secondary-container-opacity-12)
+	background-color: var(
+		-m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12
 	);
 }
 
@@ -2217,76 +2200,58 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 
 /* INPUT-CHIPS / HOVER / SELECTED / LIGHT */
 .inputchip:hover.inputchip-selected.inputchip-light-theme {
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-light-secondary-container) 92%,
-		var(--m3-state-layers-light-on-container-opacity-08)
+	background-color: var(
+		--m3-composite-light-secondary-container-passthrough-on
 	);
 }
 
 /* INPUT-CHIPS / HOVER / SELECTED / DARK */
 .inputchip:hover.inputchip-selected.inputchip-dark-theme {
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-dark-secondary-container) 92%,
-		var(--m3-state-layers-dark-on-container-opacity-08)
+	background-color: var(
+		--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-08
 	);
 }
 
 /* INPUT-CHIPS / FOCUS / SELECTED / LIGHT */
 .inputchip:focus.inputchip-selected.inputchip-light-theme {
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-light-secondary-container) 88%,
-		var(--m3-state-layers-light-on-secondary-container-opacity-12)
+	background-color: var(
+		--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-12
 	);
 }
 
 /* INPUT-CHIPS / FOCUS / SELECTED / DARK */
 .inputchip:focus.inputchip-selected.inputchip-dark-theme {
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-dark-secondary-container) 88%,
-		var(--m3-state-layers-dark-on-secondary-container-opacity-12)
+	background-color: var(
+		--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12
 	);
 }
 
 /* INPUT-CHIPS / ACTIVE / DESELECTED / LIGHT */
 .inputchip:active.inputchip-deselected.inputchip-light-theme {
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-light-surface) 84%,
-		var(--m3-state-layers-light-on-surface-variant-opacity-16)
-	);
+	background-color: var(#dad4db);
 	box-shadow: var(--m3-elevation-light-3);
 }
 
 /* INPUT-CHIPS / ACTIVE / DESELECTED / DARK */
 .inputchip:active.inputchip-deselected.inputchip-dark-theme {
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-dark-surface) 84%,
-		var(--m3-state-layers-dark-on-surface-variant-opacity-16)
+	background-color: var(
+		--m3-composite-dark-surface-passthrough-on-surface-variant-opacity-16
 	);
 	box-shadow: var(--m3-elevation-dark-3);
 }
 
 /* INPUT-CHIPS / ACTIVE / SELECTED / LIGHT */
 .inputchip:active.inputchip-selected.inputchip-light-theme {
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-light-secondary-container) 84%,
-		var(--m3-state-layers-light-on-secondary-container-opacity-16)
+	background-color: var(
+		--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-16
 	);
 	box-shadow: var(--m3-elevation-light-3);
 }
 
 /* INPUT-CHIPS / ACTIVE / SELECTED / DARK */
 .inputchip:active.inputchip-selected.inputchip-dark-theme {
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-dark-secondary-container) 84%,
-		var(--m3-state-layers-dark-on-secondary-container-opacity-16)
+	background-color: var(
+		--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-16
 	);
 	box-shadow: var(--m3-elevation-dark-3);
 }
@@ -2439,10 +2404,8 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .assistchip:hover.assistchip-elevated.assistchip-light-theme {
 	border: none;
 	color: var(--m3-sys-light-on-surface);
-	background-color: color-mix(
-		in srgb,
-		var(--m3-sys-light-surface-container-low) 92%,
-		var(--m3-state-layers-light-on-surface-variant-opacity-08)
+	background-color: var(
+		--m3-composite-light-surface-container-low-passthrough-on-surface-variant-opacity-08
 	);
 	box-shadow: var(--m3-elevation-light-1);
 }
