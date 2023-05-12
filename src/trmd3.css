@@ -2358,6 +2358,11 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 
 /* ASSIST-CHIPS / DARK */
 
+.assistchip.assistchip-dark-theme {
+	color: var(--m3-sys-dark-on-surface);
+	border: 1px solid var(--m3-sys-dark-outline);
+}
+
 /* ASSIST-CHIPS / HOVER / LIGHT */
 
 .assistchip:hover.assistchip-light-theme {
@@ -2368,6 +2373,12 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 
 /* ASSIST-CHIPS / HOVER / DARK */
 
+.assistchip:hover.assistchip-dark-theme {
+	color: var(--m3-sys-dark-on-surface);
+	border: 1px solid var(--m3-sys-dark-outline);
+	background-color: var(--m3-state-layers-dark-on-surface-variant-opacity-08);
+}
+
 /* ASSIST-CHIPS / FOCUS / LIGHT */
 
 .assistchip:focus.assistchip-light-theme {
@@ -2376,18 +2387,32 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	background-color: var(--m3-state-layers-light-on-surface-variant-opacity-12);
 }
 
+/* ASSIST-CHIPS / FOCUS / DARK */
+
+.assistchip:focus.assistchip-dark-theme {
+	color: var(--m3-sys-dark-on-surface);
+	border: 1px solid var(--m3-sys-dark-on-surface);
+	background-color: var(--m3-state-layers-dark-on-surface-variant-opacity-12);
+}
+
 /* ASSIST-CHIPS / ACTIVE / LIGHT */
 
 .assistchip:active.assistchip-light-theme {
 	color: var(--m3-sys-light-on-surface);
 	border: 1px solid var(--m3-sys-light-outline);
 	background-color: var(--m3-state-layers-light-on-surface-variant-opacity-12);
-	box-shadow: var(--m3-elevation-light-4);
 }
 
 /* ASSIST-CHIPS / ACTIVE / DARK */
 
+.assistchip:active.assistchip-dark-theme {
+	color: var(--m3-sys-dark-on-surface);
+	border: 1px solid var(--m3-sys-dark-outline);
+	background-color: var(--m3-state-layers-light-on-surface-variant-opacity-16);
+}
+
 /* ASSIST-CHIPS / ELEVATED */
+
 /* ASSIST-CHIPS / ELEVATED / LIGHT */
 
 .assistchip.assistchip-elevated {
