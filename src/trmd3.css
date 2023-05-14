@@ -1105,6 +1105,14 @@
 	letter-spacing: 0.4px;
 }
 
+.typography-light-theme {
+	color: var(--m3-sys-light-on-surface);
+}
+
+.typography-dark-theme {
+	color: var(--m3-sys-dark-on-surface);
+}
+
 /* BUTTONS */
 .btn {
 	box-sizing: border-box;
