@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { IButtonProps } from "./IButtonProps";
 import { StringBuilder } from "../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../Gizmos/Themeing";
+import Icon from "../Icon/Icon";
 
 /*
 	1
@@ -55,12 +56,6 @@ const Button: React.FC<IButtonProps> = ({
 		.add(_className)
 		.toString();
 
-	let _computedComponentIconClassName = new StringBuilder()
-		.add("material-symbols-outlined")
-		.add("btn-icon")
-		.add("btn-icon-" + _theme)
-		.toString();
-
 	// Define click function
 	const click = () => {
 		console.log("Thanks for Using Tiny React MD3!");
@@ -79,11 +74,7 @@ const Button: React.FC<IButtonProps> = ({
 				click();
 			}}
 		>
-			{_icon ? (
-				<span className={_computedComponentIconClassName}>{_iconName}</span>
-			) : (
-				""
-			)}
+			{_icon ? <Icon iconName={_iconName}></Icon> : ""}
 			<div className="text text-label text-label-large">{_label}</div>
 			{children}
 		</button>
