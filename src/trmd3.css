@@ -970,6 +970,7 @@
 	--m3-composite-dark-surface-container-low-passthrough-primary-opacity-12: #322e3b;
 	--m3-composite-dark-primary-passthrough-on-primary-opacity-08: #c4aff4;
 	--m3-composite-dark-primary-passthrough-on-primary-opacity-12: #bea9ee;
+	--m3-composite-dark-surface-passthrough-on-surface-variant-opacity-08: #1e1c23;
 	--m3-composite-dark-surface-passthrough-on-surface-variant-opacity-12: #1a181f;
 	--m3-composite-dark-surface-passthrough-on-surface-variant-opacity-16: #1c1a21;
 	--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-08: #575065;
@@ -2169,21 +2170,23 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 /* INPUT-CHIPS / HOVER / DARK */
 .inputchip:hover.inputchip-dark-theme {
 	background-color: var(
-		--m3-state-layers-dark-on-surface-variant-opacity-08
-	); /* FIXME #33 */
+		--m3-composite-dark-surface-passthrough-on-surface-variant-opacity-08
+	);
 }
 
 /* INPUT-CHIPS / FOCUS / LIGHT */
 .inputchip:focus.inputchip-light-theme {
-	background-color: var(--m3-sys-light-surface); /* FIXME #33 */
+	background-color: var(
+		--m3-composite-light-surface-passthrough-on-surface-variant-opacity-12
+	);
 	border: 1px solid var(--m3-sys-light-on-surface-variant);
 }
 
 /* INPUT-CHIPS / FOCUS / DARK */
 .inputchip:focus.inputchip-dark-theme {
 	background-color: var(
-		--m3-state-layers-dark-on-surface-variant-opacity-12
-	); /* FIXME #33 */
+		--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12
+	);
 	border: 1px solid var(--m3-sys-dark-on-surface-variant);
 }
 
@@ -2375,8 +2378,8 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	color: var(--m3-sys-light-on-surface);
 	border: 1px solid var(--m3-sys-light-outline);
 	background-color: var(
-		--m3-state-layers-light-on-surface-variant-opacity-08
-	); /* FIXME #33 */
+		--m3-composite-light-surface-passthrough-on-surface-variant-opacity-08
+	);
 }
 
 /* ASSIST-CHIPS / HOVER / DARK */
@@ -2385,8 +2388,8 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	color: var(--m3-sys-dark-on-surface);
 	border: 1px solid var(--m3-sys-dark-outline);
 	background-color: var(
-		--m3-state-layers-dark-on-surface-variant-opacity-08
-	); /* FIXME #33 */
+		--m3-composite-dark-surface-passthrough-on-surface-variant-opacity-08
+	);
 }
 
 /* ASSIST-CHIPS / FOCUS / LIGHT */
@@ -2395,8 +2398,8 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	color: var(--m3-sys-light-on-surface);
 	border: 1px solid var(--m3-sys-light-on-surface);
 	background-color: var(
-		--m3-state-layers-light-on-surface-variant-opacity-12
-	); /* FIXME #33 */
+		--m3-composite-light-surface-passthrough-on-surface-variant-opacity-12
+	);
 }
 
 /* ASSIST-CHIPS / FOCUS / DARK */
@@ -2405,8 +2408,8 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	color: var(--m3-sys-dark-on-surface);
 	border: 1px solid var(--m3-sys-dark-on-surface);
 	background-color: var(
-		--m3-state-layers-dark-on-surface-variant-opacity-12
-	); /* FIXME #33 */
+		--m3-composite-dark-surface-passthrough-on-surface-variant-opacity-12
+	);
 }
 
 /* ASSIST-CHIPS / ACTIVE / LIGHT */
