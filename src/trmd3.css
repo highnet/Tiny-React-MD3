@@ -962,6 +962,7 @@
 	--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-12: #d0c6df;
 	--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-16: #c8bfd7;
 	--m3-composite-light-surface-passthrough-on-surface-variant-opacity-12: #e8e2ea;
+	--m3-composite-light-surface-passthrough-on-surface-variant-opacity-08: #f0e9f1;
 
 	/* M3 / COMPOSITES / DARK */
 	--m3-composite-dark-surface-container-low-passthrough-on-primary-opacity-08: #2b2832;
@@ -2161,8 +2162,8 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 /* INPUT-CHIPS / HOVER / LIGHT */
 .inputchip:hover.inputchip-light-theme {
 	background-color: var(
-		--m3-state-layers-light-on-surface-variant-opacity-08
-	); /* FIXME #33 */
+		--m3-composite-light-surface-passthrough-on-surface-variant-opacity-08
+	);
 }
 
 /* INPUT-CHIPS / HOVER / DARK */
