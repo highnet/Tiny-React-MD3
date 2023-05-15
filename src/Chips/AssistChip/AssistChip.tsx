@@ -12,7 +12,6 @@ const AssistChip: React.FC<IAssistChipProps> = ({
 	disabled,
 	children,
 	onClick,
-	label,
 	iconType,
 	iconName,
 	iconSrc,
@@ -21,7 +20,7 @@ const AssistChip: React.FC<IAssistChipProps> = ({
 	const [_id] = useState(id || undefined);
 	const [_className] = useState(className || "");
 	const [_disabled] = useState(disabled || false);
-	const [_label] = useState(label || "Label");
+	const [_children] = useState(children || "Label");
 	const [_iconType] = useState(iconType || undefined);
 	const [_iconName] = useState(iconName || "local_taxi");
 	const [_elevated] = useState(elevated || false);
@@ -79,9 +78,8 @@ const AssistChip: React.FC<IAssistChipProps> = ({
 			)}
 
 			<div className="text text-label text-label-large label-on-assistchip">
-				{_label}
+				{_children}
 			</div>
-			{children}
 		</button>
 	);
 };
