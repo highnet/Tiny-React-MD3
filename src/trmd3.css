@@ -1105,6 +1105,14 @@
 	letter-spacing: 0.4px;
 }
 
+.typography-light-theme {
+	color: var(--m3-sys-light-on-surface);
+}
+
+.typography-dark-theme {
+	color: var(--m3-sys-dark-on-surface);
+}
+
 /* BUTTONS */
 .btn {
 	box-sizing: border-box;
@@ -1735,6 +1743,7 @@
 	margin: 11px;
 	transition: all 250ms ease-in-out;
 	border: 2px solid transparent;
+	display: flex;
 }
 
 /* CHECKBOX / DEFAULT / LIGHT / BACKGROUND */
@@ -1819,11 +1828,6 @@
 	color: var(--m3-sys-dark-surface);
 }
 
-/* CHECKBOX / DESELECTED / ICON */
-.material-symbols-outlined.checkbox-icon.checkbox-icon-deselected {
-	color: transparent;
-}
-
 /* CHECKBOX / ERROR / ENABLED / DARK / ICON */
 .checkbox-error.checkbox-enabled.checkbox-dark-theme
 	> .material-symbols-outlined.checkbox-icon.checkbox-icon-selected {
@@ -1832,11 +1836,12 @@
 
 /* CHECKBOX / OVERLAY */
 .checkbox-overlay {
-	width: 225%;
-	height: 225%;
+	width: 50px;
+	height: 50px;
 	background-color: transparent;
 	border-radius: 100%;
-	transform: translate(-29%, -71%);
+	transform: translate(-33%, -33%);
+	position: absolute;
 }
 
 /* CHECKBOX / DEFAULT / LIGHT/ OVERLAY / HOVER */

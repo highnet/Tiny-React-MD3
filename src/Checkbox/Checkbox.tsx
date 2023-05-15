@@ -1,8 +1,9 @@
 // Import React and some hooks from React library
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ICheckboxProps } from "./ICheckboxProps";
 import { StringBuilder } from "../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../Gizmos/Themeing";
+import Icon from "../Icon/Icon";
 
 /* 
 	1
@@ -27,7 +28,6 @@ import { getPreferredScheme } from "../Gizmos/Themeing";
 	function updates the selected state and triggers the click function.
 */
 
-// Define a functional component for the checkbox
 const Checkbox: React.FC<ICheckboxProps> = ({
 	disabled,
 	children,
@@ -37,12 +37,12 @@ const Checkbox: React.FC<ICheckboxProps> = ({
 	onChange,
 	selected,
 }) => {
-	const [_disabled] = useState(disabled || false); // State for the disabled property of the checkbox
-	const [_id] = useState(id || undefined); // State for the ID of the checkbox
-	const [_className] = useState(className || ""); // State for the class name of the checkbox
+	const [_disabled] = useState(disabled || false);
+	const [_id] = useState(id || undefined);
+	const [_className] = useState(className || "");
 
-	const [_config] = useState(configuration || "default"); // State for the configuration of the checkbox
-	const [_selected, setSelected] = useState(selected || false); // State for whether or not the checkbox is selected
+	const [_config] = useState(configuration || "default");
+	const [_selected, setSelected] = useState(selected || false);
 
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
@@ -66,9 +66,7 @@ const Checkbox: React.FC<ICheckboxProps> = ({
 		.toString();
 
 	let _computedComponentIconClassName = new StringBuilder()
-		.add("material-symbols-outlined")
 		.add("checkbox-icon")
-		.add("checkbox-icon-" + (_selected ? "selected" : "deselected"))
 		.toString();
 
 	let _computedComponentOverlayClassName = new StringBuilder()
@@ -77,17 +75,21 @@ const Checkbox: React.FC<ICheckboxProps> = ({
 		.add("checkbox-overlay-" + (_disabled ? "disabled" : "enabled"))
 		.toString();
 
-	// Return the JSX element for the checkbox
 	return (
 		<div
 			id={_id}
 			className={_computedComponentClassName}
 			onClick={(e) => {
-				onChange?.(e);
 				handleClick();
+				onChange?.(e);
 			}}
 		>
-			<span className={_computedComponentIconClassName}>check</span>
+			{_selected ? (
+				<Icon className={_computedComponentIconClassName}>check</Icon>
+			) : (
+				""
+			)}
+
 			<div className={_computedComponentOverlayClassName}></div>
 
 			{children}
@@ -95,5 +97,4 @@ const Checkbox: React.FC<ICheckboxProps> = ({
 	);
 };
 
-// Export the checkbox component as default
 export default Checkbox;

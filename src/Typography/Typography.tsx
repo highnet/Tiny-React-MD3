@@ -43,11 +43,13 @@ const Typography: React.FC<ITypographyProps> = ({
 		.add(_computedSplitProps[0])
 		.add(_computedSplitProps[1])
 		.add(_computedSplitProps[2])
+		.add("typography")
+		.add("typography-" + _theme)
 		.toString();
 
 	// Return the JSX element for the badge
 	return (
-		<div className={_computedComponentClassName}>
+		<div id={_id} className={_computedComponentClassName}>
 			{_content}
 			{children}
 		</div>

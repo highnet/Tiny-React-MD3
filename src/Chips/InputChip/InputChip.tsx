@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { IChipProps as IInputChipProps } from "./IInputChipProps";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 import { StringBuilder } from "../../Gizmos/StringBuilder";
+import Icon from "../../Icon/Icon";
 
 function computeNumberOfItems(
 	leadingIcon: boolean,
@@ -88,16 +89,14 @@ const InputChip: React.FC<IInputChipProps> = ({
 			}}
 		>
 			{_avatar ? (
-				<span className="material-symbols-outlined avatar-on-inputchip">
+				<Icon className="avatar-on-inputchip">
 					{_selected ? _avatarIconNameSelected : _avatarIconNameDeselected}
-				</span>
+				</Icon>
 			) : (
 				""
 			)}
 			{_leadingIcon && !_avatar ? (
-				<span className="material-symbols-outlined inputchip-icon-leading">
-					{_leadingIconName}
-				</span>
+				<Icon className="inputchip-icon-leading">{_leadingIconName}</Icon>
 			) : (
 				""
 			)}
@@ -105,9 +104,7 @@ const InputChip: React.FC<IInputChipProps> = ({
 				{_label}
 			</div>
 			{_trailingIcon ? (
-				<span className="material-symbols-outlined inputchip-icon-trailing">
-					{_trailingIconName}
-				</span>
+				<Icon className="inputchip-icon-trailing">{_trailingIconName}</Icon>
 			) : (
 				""
 			)}
