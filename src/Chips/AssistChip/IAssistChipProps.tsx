@@ -10,7 +10,6 @@ import { IComponentProps } from "../../Component/IComponentProps";
 // Define an interface for the button props
 export interface IAssistChipProps extends IComponentProps {
 	onClick?: (event: MouseEvent<HTMLButtonElement>) => void;
-	label?: string;
 	iconType?: string;
 	iconName?: string;
 	iconSrc?: string;

@@ -33,7 +33,6 @@ const Button: React.FC<IButtonProps> = ({
 	configuration,
 	icon,
 	iconName,
-	label,
 }) => {
 	// Initialize state variables
 	const [_disabled] = useState(disabled || false);
@@ -42,7 +41,9 @@ const Button: React.FC<IButtonProps> = ({
 	const [_config] = useState(configuration || "filled");
 	const [_icon] = useState(icon || false);
 	const [_iconName] = useState(iconName || "search");
-	const [_label] = useState(label || (_disabled ? "Disabled" : "Enabled"));
+	const [_children] = useState(
+		children || (_disabled ? "Disabled" : "Enabled")
+	);
 
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
@@ -75,8 +76,7 @@ const Button: React.FC<IButtonProps> = ({
 			}}
 		>
 			{_icon ? <Icon>{_iconName}</Icon> : ""}
-			<div className="text text-label text-label-large">{_label}</div>
-			{children}
+			<div className="text text-label text-label-large">{_children}</div>
 		</button>
 	);
 };

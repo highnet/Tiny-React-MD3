@@ -13,20 +13,22 @@ const StickyToolbar: React.FC<IStickyToolbarProps> = ({
 		<div className="sticky-toolbar-trmd3">
 			<Button
 				configuration="elevated"
-				label="Toggle Theme"
 				disabled={false}
 				onClick={toggleTheme}
 				className="theme-toggler-trmd3"
-			></Button>
+			>
+				Toggle Theme
+			</Button>
 			<Button
 				configuration="elevated"
 				icon={true}
 				iconName="arrow_upward"
-				label="Up"
 				disabled={false}
 				onClick={scrollToTop}
 				className="top-scroller-trmd3"
-			></Button>
+			>
+				Up
+			</Button>
 		</div>
 	);
 };

@@ -1,6 +1,3 @@
-import { IComponentProps } from "../Component/IComponentProps";
-import { MouseEvent } from "react";
-
 /* 
   1
   1682423199
@@ -12,11 +9,12 @@ import { MouseEvent } from "react";
   iconName is a string that contains the name of the icon displayed in the button. 
 */
 
-// Define an interface for the button props
+import { IComponentProps } from "../Component/IComponentProps";
+import { MouseEvent } from "react";
+
 export interface IButtonProps extends IComponentProps {
-	onClick?: (event: MouseEvent<HTMLButtonElement>) => void; // Function to execute when button is clicked
-	configuration?: string; // Configuration of the button
-	icon?: boolean; // Whether the button has an icon
-	iconName?: string; // Name of the icon
-	label?: string; // Label of the button
+	onClick?: (event: MouseEvent<HTMLButtonElement>) => void;
+	configuration?: string;
+	icon?: boolean;
+	iconName?: string;
 }

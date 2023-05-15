@@ -29,7 +29,6 @@ const InputChip: React.FC<IInputChipProps> = ({
 	className,
 	children,
 	onClick,
-	label,
 	selected,
 	leadingIcon,
 	leadingIconName,
@@ -41,7 +40,7 @@ const InputChip: React.FC<IInputChipProps> = ({
 }) => {
 	const [_id] = useState(id || undefined);
 	const [_className] = useState(className || "");
-	const [_label] = useState(label || "Label");
+	const [_children] = useState(children || "Label");
 	const [_selected, setSelected] = useState(selected || false);
 	const [_leadingIcon] = useState(leadingIcon || false);
 	const [_leadingIconName] = useState(leadingIconName || "local_taxi");
@@ -101,14 +100,13 @@ const InputChip: React.FC<IInputChipProps> = ({
 				""
 			)}
 			<div className="text text-label text-label-large label-on-inputchip">
-				{_label}
+				{_children}
 			</div>
 			{_trailingIcon ? (
 				<Icon className="inputchip-icon-trailing">{_trailingIconName}</Icon>
 			) : (
 				""
 			)}
-			{children}
 		</button>
 	);
 };

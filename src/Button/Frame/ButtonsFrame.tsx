@@ -1,8 +1,3 @@
-import Button from "../Button";
-import { getPreferredScheme } from "../../Gizmos/Themeing";
-import React from "react";
-import { StringBuilder } from "../../Gizmos/StringBuilder";
-
 /* 
 	1
 	1682423199
@@ -31,6 +26,11 @@ import { StringBuilder } from "../../Gizmos/StringBuilder";
 	HTML code that should be used to create each button, which can be copied and
 	pasted to use in other parts of the application.
 */
+
+import Button from "../Button";
+import { getPreferredScheme } from "../../Gizmos/Themeing";
+import React from "react";
+import { StringBuilder } from "../../Gizmos/StringBuilder";
 
 const ButtonsFrame: React.FC = () => {
 	const _theme =

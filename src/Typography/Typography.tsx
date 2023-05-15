@@ -23,16 +23,14 @@ function splitProps(props: string): string[] {
 }
 
 const Typography: React.FC<ITypographyProps> = ({
-	children,
 	id,
 	className,
 	variant,
-	content,
+	children,
 }) => {
 	const [_id] = useState(id || undefined); // State for the ID of the badge
 	const [_className] = useState(className || ""); // State for the class name of the badge
 	const [_variant] = useState(variant || "text-body-small"); // State for the variant of the badge
-	const [_content] = useState(content || ""); // State for the content of the badge
 
 	let _computedSplitProps = splitProps(_variant);
 
@@ -45,12 +43,12 @@ const Typography: React.FC<ITypographyProps> = ({
 		.add(_computedSplitProps[2])
 		.add("typography")
 		.add("typography-" + _theme)
+		.add(_className)
 		.toString();
 
 	// Return the JSX element for the badge
 	return (
 		<div id={_id} className={_computedComponentClassName}>
-			{_content}
 			{children}
 		</div>
 	);

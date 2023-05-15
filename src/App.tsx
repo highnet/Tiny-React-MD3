@@ -22,6 +22,8 @@ import InputChipsFrame from "./Chips/InputChip/Frame/InputChipsFrame";
 import AssistChipsFrame from "./Chips/AssistChip/Frame/AssistChipsFrame";
 import FilterChipsFrame from "./Chips/FilterChip/Frame/FilterChipsFrame";
 import SuggestionChipsFrame from "./Chips/SuggestionChip/Frame/SuggestionChipsFrame";
+import StackedCardsFrame from "./Cards/StackedCard/Frame/StackedCardsFrame";
+import Typography from "./Typography/Typography";
 
 function App() {
 	console.log(`	👋 Welcome to TRMD3! 👋	`);
@@ -56,6 +58,15 @@ function App() {
 				toggleTheme={handleToggleTheme}
 				scrollToTop={handleScrollToTop}
 			/>
+
+			<Typography
+				id="cards-section"
+				variant="text-title-large"
+				className={"section-title-trmd3 section-title-" + theme + "-trmd3"}
+			>
+				💳 Cards 💳
+			</Typography>
+			<StackedCardsFrame />
 
 			<div
 				id="chips-section"

@@ -35,7 +35,6 @@ const Cookietrail: React.FC<ICookietrailProps> = () => {
 			<div className={"flex-trmd3 flex-row-trmd3 cookietrail-buttons-trmd3"}>
 				<Button
 					configuration="tonal"
-					label="Read Me"
 					disabled={false}
 					icon={true}
 					iconName={"bookmark"}
@@ -45,10 +44,11 @@ const Cookietrail: React.FC<ICookietrailProps> = () => {
 						)
 					}
 					className="cookietrail-button-trmd3"
-				></Button>
+				>
+					Read Me
+				</Button>
 				<Button
 					configuration="tonal"
-					label="Documentation"
 					disabled={false}
 					icon={true}
 					iconName={"menu_book"}
@@ -58,7 +58,9 @@ const Cookietrail: React.FC<ICookietrailProps> = () => {
 						)
 					}
 					className="cookietrail-button-trmd3"
-				></Button>
+				>
+					Documentation
+				</Button>
 			</div>
 		</div>
 	);
