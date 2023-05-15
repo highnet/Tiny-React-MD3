@@ -85,10 +85,7 @@ const Checkbox: React.FC<ICheckboxProps> = ({
 			}}
 		>
 			{_selected ? (
-				<Icon
-					iconName="check"
-					className={_computedComponentIconClassName}
-				></Icon>
+				<Icon className={_computedComponentIconClassName}>check</Icon>
 			) : (
 				""
 			)}

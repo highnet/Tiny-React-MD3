@@ -6,7 +6,6 @@ import { IIconProps } from "./IIconProps";
 const Icon: React.FC<IIconProps> = ({ children, id, className, iconName }) => {
 	const [_id] = useState(id || undefined); // State for the ID of the badge
 	const [_className] = useState(className || ""); // State for the class name of the badge
-	const [_iconName] = useState(iconName || ""); // State for the variant of the badge
 
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
@@ -20,7 +19,7 @@ const Icon: React.FC<IIconProps> = ({ children, id, className, iconName }) => {
 
 	return (
 		<span id={_id} className={_computedComponentClassName}>
-			{_iconName} {children}
+			{children}
 		</span>
 	);
 };

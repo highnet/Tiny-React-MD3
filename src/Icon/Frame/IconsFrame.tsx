@@ -30,33 +30,21 @@ const IconsFrame: React.FC = () => {
 	return (
 		<div className={_computedFrameClassName}>
 			{/* ICONS */}
-			<Icon iconName="hive"></Icon>
+			<Icon>hive</Icon>
 			<pre>
-				<code className="language-html">
-					{" "}
-					{'<Icon iconName="hive"></Icon>'}{" "}
-				</code>
+				<code className="language-html"> {"<Icon>hive</Icon>"} </code>
 			</pre>
-			<Icon iconName="spa"></Icon>
+			<Icon>spa</Icon>
 			<pre>
-				<code className="language-html">
-					{" "}
-					{'<Icon iconName="spa"></Icon>'}{" "}
-				</code>
+				<code className="language-html"> {"<Icon>spa</Icon>"} </code>
 			</pre>
-			<Icon iconName="air"></Icon>{" "}
+			<Icon>air</Icon>{" "}
 			<pre>
-				<code className="language-html">
-					{" "}
-					{'<Icon iconName="air"></Icon>'}{" "}
-				</code>
+				<code className="language-html"> {"<Icon>air</Icon>"} </code>
 			</pre>
-			<Icon iconName="water"></Icon>
+			<Icon>water</Icon>
 			<pre>
-				<code className="language-html">
-					{" "}
-					{'<Icon iconName="water"></Icon>'}{" "}
-				</code>
+				<code className="language-html"> {"<Icon>water</Icon>"} </code>
 			</pre>
 		</div>
 	);

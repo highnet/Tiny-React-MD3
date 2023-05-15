@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { IAssistChipProps } from "./IAssistChipProps";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 import { StringBuilder } from "../../Gizmos/StringBuilder";
+import Icon from "../../Icon/Icon";
 
 const AssistChip: React.FC<IAssistChipProps> = ({
 	id,
@@ -66,9 +67,7 @@ const AssistChip: React.FC<IAssistChipProps> = ({
 			}}
 		>
 			{_iconType === "icon" ? (
-				<span className="material-symbols-outlined icon-on-assistchip">
-					{_iconName}
-				</span>
+				<Icon iconName={_iconName} className="icon-on-assistchip"></Icon>
 			) : (
 				""
 			)}

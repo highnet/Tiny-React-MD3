@@ -74,7 +74,7 @@ const Button: React.FC<IButtonProps> = ({
 				click();
 			}}
 		>
-			{_icon ? <Icon iconName={_iconName}></Icon> : ""}
+			{_icon ? <Icon>{_iconName}</Icon> : ""}
 			<div className="text text-label text-label-large">{_label}</div>
 			{children}
 		</button>
