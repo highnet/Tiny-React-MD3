@@ -67,7 +67,7 @@ const AssistChip: React.FC<IAssistChipProps> = ({
 			}}
 		>
 			{_iconType === "icon" ? (
-				<Icon iconName={_iconName} className="icon-on-assistchip"></Icon>
+				<Icon className="icon-on-assistchip">{_iconName}</Icon>
 			) : (
 				""
 			)}

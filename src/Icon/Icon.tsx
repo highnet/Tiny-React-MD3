@@ -3,7 +3,7 @@ import { StringBuilder } from "../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../Gizmos/Themeing";
 import { IIconProps } from "./IIconProps";
 
-const Icon: React.FC<IIconProps> = ({ children, id, className, iconName }) => {
+const Icon: React.FC<IIconProps> = ({ children, id, className }) => {
 	const [_id] = useState(id || undefined); // State for the ID of the badge
 	const [_className] = useState(className || ""); // State for the class name of the badge
 

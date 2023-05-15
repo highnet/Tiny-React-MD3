@@ -1,5 +1,3 @@
 import { IComponentProps } from "../Component/IComponentProps";
 
-export interface IIconProps extends IComponentProps {
-	iconName?: string;
-}
+export interface IIconProps extends IComponentProps {}

@@ -976,6 +976,8 @@
 	--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-08: #575065;
 	--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12: #5d566b;
 	--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-16: #635d72;
+	--m3-composite-dark-surface-container-low-passthrough-on-surface-variant-opacity-08: #2b292e;
+	--m3-composite-dark-surface-container-low-passthrough-on-surface-variant-opacity-12: #322f35;
 }
 
 /* TYPOGRAPHY */
@@ -2441,7 +2443,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 
 /* ASSIST-CHIPS / ELEVATED / LIGHT */
 
-.assistchip.assistchip-elevated {
+.assistchip.assistchip-elevated.assistchip-light-theme {
 	border: none;
 	color: var(--m3-sys-light-on-surface);
 	background-color: var(--m3-sys-light-surface-container-low);
@@ -2449,6 +2451,13 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 }
 
 /* ASSIST-CHIPS / ELEVATED / DARK */
+
+.assistchip.assistchip-elevated.assistchip-dark-theme {
+	border: none;
+	color: var(--m3-sys-dark-on-surface);
+	background-color: var(--m3-sys-dark-surface-container-low);
+	box-shadow: var(--m3-elevation-dark-1);
+}
 
 /* ASSIST-CHIPS / ELEVATED / HOVER / LIGHT */
 
@@ -2463,6 +2472,12 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 
 /* ASSIST-CHIPS / ELEVATED / HOVER / DARK */
 
+.assistchip:hover.assistchip-elevated.assistchip-dark-theme {
+	background-color: var(
+		--m3-composite-dark-surface-container-low-passthrough-on-surface-variant-opacity-08
+	);
+}
+
 /* ASSIST-CHIPS / ELEVATED / FOCUS / LIGHT */
 
 .assistchip:focus.assistchip-elevated.assistchip-light-theme {
@@ -2474,31 +2489,58 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	box-shadow: var(--m3-elevation-light-1);
 }
 
+/* ASSIST-CHIPS / ELEVATED / FOCUS / DARK */
+
+.assistchip:focus.assistchip-elevated.assistchip-dark-theme {
+	border: none;
+	color: var(--m3-sys-dark-on-surface);
+	background-color: var(
+		--m3-composite-dark-surface-container-low-passthrough-on-surface-variant-opacity-12
+	);
+	box-shadow: var(--m3-elevation-dark-1);
+}
+
 /* ASSIST-CHIPS / ELEVATED / ACTIVE / LIGHT */
 
 .assistchip:active.assistchip-elevated.assistchip-light-theme {
 	border: none;
 	color: var(--m3-sys-light-on-surface);
 	background-color: var(
-		--m3-composite-light-surface-container-low-passthrough-on-surface-variant-opacity-16
+		--m3-composite-light-surface-container-low-passthrough-on-surface-variant-opacity-12
 	);
-	box-shadow: var(--m3-elevation-light-4);
+	box-shadow: var(--m3-elevation-light-2);
 }
 
 /* ASSIST-CHIPS / ELEVATED / ACTIVE / DARK */
 
+.assistchip:active.assistchip-elevated.assistchip-dark-theme {
+	border: none;
+	color: var(--m3-sys-dark-on-surface);
+	background-color: var(
+		--m3-composite-dark-surface-container-low-passthrough-on-surface-variant-opacity-12
+	);
+	box-shadow: var(--m3-elevation-dark-2);
+}
+
+/* ASSIST-CHIPS / WITH-ICON*/
 .assistchip-with-icon {
 	gap: 8px;
 	padding: 0px 9px;
 }
 
+/* ASSIST-CHIPS / LIGHT / ICON-ON-ASSIST-CHIP */
+
 .assistchip.assistchip-light-theme > .icon-on-assistchip {
 	color: var(--m3-sys-light-primary);
 }
 
+/* ASSIST-CHIPS / DARK / ICON-ON-ASSIST-CHIP */
+
 .assistchip.assistchip-dark-theme > .icon-on-assistchip {
 	color: var(--m3-sys-dark-primary);
 }
+
+/* ASSIST-CHIPS / FAVICON-ON-ASSIST-CHIP */
 
 .favicon-on-assistchip {
 	width: 12px;
