@@ -6,6 +6,7 @@ TODO: NEEDS DOCUMENTATION
 
 import { StringBuilder } from "../../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../../Gizmos/Themeing";
+import Typography from "../../../Typography/Typography";
 import AssistChip from "../AssistChip";
 
 const AssistChipsFrame: React.FC = () => {
@@ -23,9 +24,8 @@ const AssistChipsFrame: React.FC = () => {
 
 	return (
 		<div className={_computedFrameClassName}>
-			<div className="text text-title text-title-large">Assist Chips</div>
-
-			<div className="text text-label text-label-small">Label Only</div>
+			<Typography variant={"text-title-large"}>Assist Chips</Typography>
+			<Typography variant={"text-label-small"}>Label Only</Typography>
 			<AssistChip onClick={undefined}></AssistChip>
 
 			<pre>
@@ -34,9 +34,9 @@ const AssistChipsFrame: React.FC = () => {
 					{"<AssistChip onClick={undefined}></AssistChip>"}{" "}
 				</code>
 			</pre>
-			<div className="text text-label text-label-small">
+			<Typography variant={"text-label-small"}>
 				Label only - elevated
-			</div>
+			</Typography>
 			<AssistChip elevated={true} onClick={undefined}></AssistChip>
 
 			<pre>
@@ -45,7 +45,7 @@ const AssistChipsFrame: React.FC = () => {
 					{"<AssistChip elevated={true} onClick={undefined}></AssistChip>"}{" "}
 				</code>
 			</pre>
-			<div className="text text-label text-label-small">Label & icon</div>
+			<Typography variant={"text-label-small"}>Label & icon</Typography>
 			<AssistChip iconType="icon" onClick={undefined}></AssistChip>
 
 			<pre>
@@ -54,9 +54,9 @@ const AssistChipsFrame: React.FC = () => {
 					{'<AssistChip iconType="icon" onClick={undefined}></AssistChip>'}{" "}
 				</code>
 			</pre>
-			<div className="text text-label text-label-small">
+			<Typography variant={"text-label-small"}>
 				Label & icon - elevated
-			</div>
+			</Typography>
 			<AssistChip
 				iconType="icon"
 				elevated={true}
@@ -70,8 +70,7 @@ const AssistChipsFrame: React.FC = () => {
 					}{" "}
 				</code>
 			</pre>
-
-			<div className="text text-label text-label-small">Label & favicon</div>
+			<Typography variant={"text-label-small"}>Label & favicon</Typography>
 			<AssistChip iconType="favicon" onClick={undefined}></AssistChip>
 			<pre>
 				<code className="language-html">
@@ -81,10 +80,9 @@ const AssistChipsFrame: React.FC = () => {
 					}{" "}
 				</code>
 			</pre>
-
-			<div className="text text-label text-label-small">
+			<Typography variant={"text-label-small"}>
 				Label & favicon - elevated
-			</div>
+			</Typography>
 			<AssistChip
 				iconType="favicon"
 				elevated={true}
@@ -98,12 +96,8 @@ const AssistChipsFrame: React.FC = () => {
 					}{" "}
 				</code>
 			</pre>
-
-			<div className="text text-label text-label-small">
-				Label & branded icon
-			</div>
+			<Typography variant={"text-label-small"}>Label & branded icon</Typography>
 			<AssistChip iconType="branded" onClick={undefined}></AssistChip>
-
 			<pre>
 				<code className="language-html">
 					{" "}
@@ -112,15 +106,14 @@ const AssistChipsFrame: React.FC = () => {
 					}{" "}
 				</code>
 			</pre>
-			<div className="text text-label text-label-small">
+			<Typography variant={"text-label-small"}>
 				Label & branded icon - elevated
-			</div>
+			</Typography>
 			<AssistChip
 				iconType="branded"
 				elevated={true}
 				onClick={undefined}
 			></AssistChip>
-
 			<pre>
 				<code className="language-html">
 					{" "}

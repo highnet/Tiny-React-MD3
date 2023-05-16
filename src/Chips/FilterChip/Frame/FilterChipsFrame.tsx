@@ -1,5 +1,6 @@
 import { StringBuilder } from "../../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../../Gizmos/Themeing";
+import Typography from "../../../Typography/Typography";
 import FilterChip from "../FilterChip";
 
 /*
@@ -23,9 +24,8 @@ const FilterChipsFrame: React.FC = () => {
 
 	return (
 		<div className={_computedFrameClassName}>
-			<div className="text text-title text-title-large">Filter Chips</div>
+			<Typography variant={"text-title-large"}>Filter Chips</Typography>
 			<FilterChip></FilterChip>
-
 			<pre>
 				<code className="language-html"> {"<Chip></Chip>"} </code>
 			</pre>

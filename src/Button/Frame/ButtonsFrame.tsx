@@ -31,6 +31,7 @@ import Button from "../Button";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 import React from "react";
 import { StringBuilder } from "../../Gizmos/StringBuilder";
+import Typography from "../../Typography/Typography";
 
 const ButtonsFrame: React.FC = () => {
 	const _theme =
@@ -48,8 +49,8 @@ const ButtonsFrame: React.FC = () => {
 	return (
 		<div className={_computedFrameClassName}>
 			{/* BUTTONS */}
-			<div className="text text-title text-title-large">Filled Buttons</div>
-			<div className="text text-label text-label-small">No Icon</div>
+			<Typography variant={"text-title-large"}>Filled Buttons</Typography>
+			<Typography variant={"text-label-small"}>No Icon</Typography>
 			<Button configuration="filled" onClick={undefined}></Button>
 			<pre>
 				<code className="language-html">
@@ -57,7 +58,7 @@ const ButtonsFrame: React.FC = () => {
 					{'<Button configuration="filled" onClick={undefined}></Button>'}{" "}
 				</code>
 			</pre>
-			<div className="text text-label text-label-small">With Icon</div>
+			<Typography variant={"text-label-small"}>With Icon</Typography>
 			<Button
 				configuration="filled"
 				icon={true}
@@ -72,8 +73,8 @@ const ButtonsFrame: React.FC = () => {
 					}{" "}
 				</code>
 			</pre>
-			<div className="text text-title text-title-large">Outlined Buttons</div>
-			<div className="text text-label text-label-small">No Icon</div>
+			<Typography variant={"text-title-large"}>Outlined Buttons</Typography>
+			<Typography variant={"text-label-small"}>No Icon</Typography>
 			<Button configuration="outlined" onClick={undefined}></Button>
 			<pre>
 				<code className="language-html">
@@ -83,7 +84,7 @@ const ButtonsFrame: React.FC = () => {
 					}{" "}
 				</code>
 			</pre>
-			<div className="text text-label text-label-small">With Icon</div>
+			<Typography variant={"text-label-small"}>With Icon</Typography>
 			<Button
 				configuration="outlined"
 				onClick={undefined}
@@ -98,17 +99,16 @@ const ButtonsFrame: React.FC = () => {
 					}{" "}
 				</code>
 			</pre>
-			<div className="text text-title text-title-large">Text Buttons</div>
-			<div className="text text-label text-label-small">No Icon</div>
+			<Typography variant={"text-title-large"}>Text Buttons</Typography>
+			<Typography variant={"text-label-small"}>No Icon</Typography>
 			<Button configuration="text" onClick={undefined}></Button>
-
 			<pre>
 				<code className="language-html">
 					{" "}
 					{'<Button configuration="text" onClick={undefined}></Button>'}{" "}
 				</code>
 			</pre>
-			<div className="text text-label text-label-small">With Icon</div>
+			<Typography variant={"text-label-small"}>With Icon</Typography>
 			<Button
 				configuration="text"
 				onClick={undefined}
@@ -123,8 +123,8 @@ const ButtonsFrame: React.FC = () => {
 					}{" "}
 				</code>
 			</pre>
-			<div className="text text-title text-title-large">Elevated Buttons</div>
-			<div className="text text-label text-label-small">No Icon</div>
+			<Typography variant={"text-title-large"}>Elevated Buttons</Typography>
+			<Typography variant={"text-label-small"}>No Icon</Typography>
 			<Button configuration="elevated" onClick={undefined}></Button>
 			<pre>
 				<code className="language-html">
@@ -134,7 +134,7 @@ const ButtonsFrame: React.FC = () => {
 					}{" "}
 				</code>
 			</pre>
-			<div className="text text-label text-label-small">With Icon</div>
+			<Typography variant={"text-label-small"}>With Icon</Typography>
 			<Button
 				configuration="elevated"
 				onClick={undefined}
@@ -149,8 +149,8 @@ const ButtonsFrame: React.FC = () => {
 					}{" "}
 				</code>
 			</pre>
-			<div className="text text-title text-title-large">Tonal Buttons</div>
-			<div className="text text-label text-label-small">No Icon</div>
+			<Typography variant={"text-title-large"}>Tonal Buttons</Typography>
+			<Typography variant={"text-label-small"}>No Icon</Typography>
 			<Button configuration="tonal" onClick={undefined}></Button>
 			<pre>
 				<code className="language-html">
@@ -158,7 +158,7 @@ const ButtonsFrame: React.FC = () => {
 					{'<Button configuration="tonal" onClick={undefined}></Button>'}{" "}
 				</code>
 			</pre>
-			<div className="text text-label text-label-small">With Icon</div>
+			<Typography variant={"text-label-small"}>With Icon</Typography>
 			<Button
 				configuration="tonal"
 				onClick={undefined}

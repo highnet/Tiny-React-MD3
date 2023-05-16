@@ -1,5 +1,6 @@
 import { StringBuilder } from "../../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../../Gizmos/Themeing";
+import Typography from "../../../Typography/Typography";
 import InputChip from "../InputChip";
 
 /*
@@ -23,9 +24,8 @@ const InputChipsFrame: React.FC = () => {
 
 	return (
 		<div className={_computedFrameClassName}>
-			<div className="text text-title text-title-large">Input Chips</div>
-
-			<div className="text text-label text-label-small">Label Only</div>
+			<Typography variant={"text-title-large"}>Input Chips</Typography>
+			<Typography variant={"text-label-small"}>Label Only</Typography>
 			<InputChip onClick={undefined}></InputChip>
 			<pre>
 				<code className="language-html">
@@ -33,10 +33,9 @@ const InputChipsFrame: React.FC = () => {
 					{"<InputChip onClick={undefined}></InputChip>"}{" "}
 				</code>
 			</pre>
-
-			<div className="text text-label text-label-small">
+			<Typography variant={"text-label-small"}>
 				Label & trailing icon
-			</div>
+			</Typography>
 			<InputChip trailingIcon={true} onClick={undefined}></InputChip>
 			<pre>
 				<code className="language-html">

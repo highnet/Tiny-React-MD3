@@ -1,5 +1,6 @@
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
+import Typography from "../../Typography/Typography";
 import Checkbox from "../Checkbox";
 
 /* 
@@ -34,9 +35,10 @@ const CheckboxesFrame: React.FC = () => {
 	return (
 		<div className={_computedFrameClassName}>
 			{/* CHECKBOXES */}
-			<div className="text text-label text-label-small frame-label-trmd3">
+			<Typography variant={"text-title-large"} className="frame-label-trmd3">
 				Default
-			</div>
+			</Typography>
+
 			<Checkbox selected={true} onChange={undefined} />
 			<pre>
 				<code className="language-html">
@@ -44,9 +46,9 @@ const CheckboxesFrame: React.FC = () => {
 					{"<Checkbox selected={true} onChange={undefined} />"}{" "}
 				</code>
 			</pre>
-			<div className="text text-label text-label-small frame-label-trmd3">
+			<Typography variant={"text-label-small"} className="frame-label-trmd3">
 				Error
-			</div>
+			</Typography>
 			<Checkbox selected={true} onChange={undefined} configuration={"error"} />
 			<pre>
 				<code className="language-html">

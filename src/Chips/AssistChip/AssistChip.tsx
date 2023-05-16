@@ -5,6 +5,7 @@ import { IAssistChipProps } from "./IAssistChipProps";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import Icon from "../../Icon/Icon";
+import Typography from "../../Typography/Typography";
 
 const AssistChip: React.FC<IAssistChipProps> = ({
 	id,
@@ -77,9 +78,9 @@ const AssistChip: React.FC<IAssistChipProps> = ({
 				""
 			)}
 
-			<div className="text text-label text-label-large label-on-assistchip">
+			<Typography variant={"text-label-large"} className="text-on-assistchip">
 				{_children}
-			</div>
+			</Typography>
 		</button>
 	);
 };
