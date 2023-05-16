@@ -78,12 +78,13 @@ html {
 		rgba(103, 80, 164, 0.08)
 	);
 	box-shadow: var(--m3-elevation-light-2);
-	font-weight: bolder;
+	font-weight: bold;
 	margin: 0 auto;
 	overflow: scroll;
 	max-width: 90vw;
 	border-radius: 0.3rem;
 	overflow-y: hidden;
+	font-size: 1.4rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -220,7 +221,7 @@ html {
 /* SECTION SUBTITLES */
 .section-subtitle-trmd3 {
 	text-align: center;
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 }
 
 .section-subtitle-light-theme-trmd3 {
@@ -229,6 +230,16 @@ html {
 
 .section-subtitle-dark-theme-trmd3 {
 	color: var(--m3-sys-dark-primary);
+}
+
+.subsection-link-trmd3 {
+	transition: font-size 0.3s ease-in-out;
+	text-decoration: none;
+}
+
+.subsection-link-trmd3:hover {
+	text-decoration: underline;
+	font-size: 1.65rem;
 }
 
 /* FRAMES */

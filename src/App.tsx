@@ -98,93 +98,88 @@ function App() {
 			<HorizontalDividersFrame />
 			<VerticalDividersFrame />
 
-			<div
+			<Typography
 				id="radio-buttons-section"
-				className={
-					"text text-title text-title-large section-title-trmd3 section-title-" +
-					theme +
-					"-trmd3"
-				}
+				variant="text-title-large"
+				className={_computedTrmd3SectionTitlesClassName}
 			>
 				🔘 Radio Buttons 🔘
-			</div>
+			</Typography>
+
 			<RadioButtonsFrame />
-			<div
+
+			<Typography
 				id="badges-section"
-				className={
-					"text text-title text-title-large section-title-trmd3 section-title-" +
-					theme +
-					"-trmd3"
-				}
+				variant="text-title-large"
+				className={_computedTrmd3SectionTitlesClassName}
 			>
 				📛 Badges 📛
-			</div>
+			</Typography>
+
 			<BadgesFrame />
-			<div
+
+			<Typography
 				id="checkboxes-section"
-				className={
-					"text text-title text-title-large section-title-trmd3 section-title-" +
-					theme +
-					"-trmd3"
-				}
+				variant="text-title-large"
+				className={_computedTrmd3SectionTitlesClassName}
 			>
 				☑️ Checkboxes ☑️
-			</div>
+			</Typography>
+
 			<CheckboxesFrame />
-			<div
+
+			<Typography
 				id="switches-section"
-				className={
-					"text text-title text-title-large section-title-trmd3 section-title-" +
-					theme +
-					"-trmd3"
-				}
+				variant="text-title-large"
+				className={_computedTrmd3SectionTitlesClassName}
 			>
 				🔦 Switches 🔦
-			</div>
+			</Typography>
+
 			<SwitchesFrame />
-			<div
+
+			<Typography
 				id="buttons-section"
-				className={
-					"text text-title text-title-large section-title-trmd3 section-title-" +
-					theme +
-					"-trmd3"
-				}
+				variant="text-title-large"
+				className={_computedTrmd3SectionTitlesClassName}
 			>
 				🕹️ Buttons 🕹️
-			</div>
+			</Typography>
+
 			<ButtonsFrame />
-			<div
+
+			<Typography
 				id="typography-section"
-				className={
-					"text text-title text-title-large section-title-trmd3 section-title-" +
-					theme +
-					"-trmd3"
-				}
+				variant="text-title-large"
+				className={_computedTrmd3SectionTitlesClassName}
 			>
 				🔤 Typography 🔤
-			</div>
+			</Typography>
 			<TypographiesFrame />
-			<div
-				id="elevation-section"
-				className={
-					"text text-title text-title-large section-title-trmd3 section-title-" +
-					theme +
-					"-trmd3"
-				}
+
+			<Typography
+				id="icons-section"
+				variant="text-title-large"
+				className={_computedTrmd3SectionTitlesClassName}
 			>
 				💟 Icons 💟
-			</div>
-			<div
-				id="icons-section"
+			</Typography>
+
+			<Typography
+				variant="text-title-medium"
 				className={
-					"text text-title text-title-medium section-subtitle-trmd3 section-subtitle-" +
-					theme +
-					"-trmd3"
+					"section-subtitle-trmd3 section-subtitle-" + theme + "-trmd3"
 				}
 			>
 				For a full list of all accepted icon strings, visit:{" "}
-				<a href="https://fonts.google.com/icons">Material Symbols and Icons</a>
-			</div>
+				<a
+					className="subsection-link-trmd3"
+					href="https://fonts.google.com/icons"
+				>
+					Material Symbols and Icons
+				</a>
+			</Typography>
+
 			<IconsFrame />
 		</div>
 	);
