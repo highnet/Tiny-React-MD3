@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { IBadgeProps } from "./IBadgeProps";
 import { StringBuilder } from "../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../Gizmos/Themeing";
+import Typography from "../Typography/Typography";
 
 /*  
 	1
@@ -37,15 +38,13 @@ const Badge: React.FC<IBadgeProps> = ({
 	configuration,
 	xOffset,
 	yOffset,
-	label,
 }) => {
-	const [_id] = useState(id || undefined); // State for the ID of the badge
-	const [_className] = useState(className || ""); // State for the class name of the badge
-	const [_config] = useState(configuration || "small"); // State for the configuration of the badge
-	const [_xOffset] = useState(xOffset || 0); // State for the x offset of the badge
-	const [_yOffset] = useState(yOffset || 0); // State for the y offset of the badge
-	const [_label] = useState(label || ""); // State for the label of the badge
-
+	const [_id] = useState(id || undefined);
+	const [_className] = useState(className || "");
+	const [_config] = useState(configuration || "small");
+	const [_xOffset] = useState(xOffset || 0);
+	const [_yOffset] = useState(yOffset || 0);
+	const [_children] = useState(children || "");
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
@@ -60,9 +59,6 @@ const Badge: React.FC<IBadgeProps> = ({
 		.toString();
 
 	let _computedComponentLabelClassName = new StringBuilder()
-		.add("text")
-		.add("text-label")
-		.add("text-label-small")
 		.add("badge-label-text")
 		.add("badge-label-text-" + _config)
 		.add("badge-label-text-" + _theme)
@@ -75,8 +71,12 @@ const Badge: React.FC<IBadgeProps> = ({
 			className={_computedComponentClassName}
 			style={{ marginLeft: _computedXOffset, marginTop: _computedYOffset }}
 		>
-			<div className={_computedComponentLabelClassName}>{_label}</div>
-			{children}
+			<Typography
+				variant="text-label-small"
+				className={_computedComponentLabelClassName}
+			>
+				{_children}
+			</Typography>
 		</div>
 	);
 };

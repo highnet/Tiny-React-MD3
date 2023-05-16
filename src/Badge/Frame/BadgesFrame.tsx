@@ -59,19 +59,16 @@ const BadgesFrame: React.FC = () => {
 						Single Digit
 					</div>
 					<div className="badge-box-trmd3">
-						<Badge
-							configuration={"single-digit"}
-							xOffset={93}
-							yOffset={-4}
-							label={"3"}
-						/>
+						<Badge configuration={"single-digit"} xOffset={93} yOffset={-4}>
+							3
+						</Badge>
 					</div>
 				</div>
 				<pre>
 					<code className="language-html">
 						{" "}
 						{
-							'<Badge configuration={"single-digit"} xOffset={93} yOffset={-4} label={"3"} />'
+							'<Badge configuration={"single-digit"} xOffset={93} yOffset={-4}>3</Badge>'
 						}{" "}
 					</code>
 				</pre>
@@ -80,19 +77,16 @@ const BadgesFrame: React.FC = () => {
 						Multiple Digits
 					</div>
 					<div className="badge-box-trmd3">
-						<Badge
-							configuration={"multiple-digits"}
-							xOffset={93}
-							yOffset={-4}
-							label={"123"}
-						/>
+						<Badge configuration={"multiple-digits"} xOffset={93} yOffset={-4}>
+							123
+						</Badge>
 					</div>
 				</div>
 				<pre>
 					<code className="language-html">
 						{" "}
 						{
-							'<Badge configuration={"multiple-digits"} xOffset={93} yOffset={-4} label={"123"} />'
+							'<Badge configuration={"multiple-digits"} xOffset={93} yOffset={-4}>123</Badge>'
 						}{" "}
 					</code>
 				</pre>
