@@ -1,7 +1,3 @@
-import { StringBuilder } from "../../Gizmos/StringBuilder";
-import { getPreferredScheme } from "../../Gizmos/Themeing";
-import Switch from "../Switch";
-
 /*
 	1
 	1682360238
@@ -18,6 +14,10 @@ import Switch from "../Switch";
 	The fourth switch is similar to the second one, but also includes an icon and is labeled
 	"With Icon (Inactive)."
 */
+
+import { StringBuilder } from "../../Gizmos/StringBuilder";
+import { getPreferredScheme } from "../../Gizmos/Themeing";
+import Switch from "../Switch";
 
 const SwitchesFrame: React.FC = () => {
 	const _theme =
@@ -45,9 +45,7 @@ const SwitchesFrame: React.FC = () => {
 					{"<Switch selected={true} onChange={undefined} />"}{" "}
 				</code>
 			</pre>
-			<div className="text text-label text-label-small checkbox-label-trmd3">
-				With Icon
-			</div>
+			<div className="text text-label text-label-small">With Icon</div>
 			<Switch
 				selected={true}
 				onChange={undefined}

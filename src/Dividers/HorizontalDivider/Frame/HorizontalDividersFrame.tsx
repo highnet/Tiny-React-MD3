@@ -34,7 +34,6 @@ const HorizontalDividersFrame: React.FC = () => {
 			<div className="text text-title text-title-large">
 				Horizontal Dividers
 			</div>
-
 			<div className="text text-label text-label-small frame-label-trmd3">
 				Inset None
 			</div>

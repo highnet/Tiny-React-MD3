@@ -17,8 +17,8 @@ const VerticalDividersFrame: React.FC = () => {
 		.add("flex-column-trmd3")
 		.add("frame-trmd3")
 		.add("frame-" + _theme)
-		.add("dividers-frame-trmd3")
-		.add("dividers-frame-" + _theme + "-trmd3")
+		.add("verticaldividers-frame-trmd3")
+		.add("verticaldividers-frame-" + _theme + "-trmd3")
 		.toString();
 
 	return (

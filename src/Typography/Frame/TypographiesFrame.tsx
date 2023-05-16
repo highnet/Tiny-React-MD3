@@ -24,7 +24,6 @@ const TypographiesFrame: React.FC = () => {
 	return (
 		<div className={_computedFrameClassName}>
 			{/* TYPOGRAPHY */}
-
 			<div className="typographies-subframe-trmd3">
 				<Typography variant="text-display-large">
 					Display Large - Roboto 57/54 . 0
@@ -64,11 +63,9 @@ const TypographiesFrame: React.FC = () => {
 				<Typography variant="text-headline-large">
 					Headline Large - Roboto 32/40 . 0
 				</Typography>
-
 				<Typography variant="text-headline-medium">
 					Headline Medium - Roboto 28/36 . 0
 				</Typography>
-
 				<Typography variant="text-headline-small">
 					Headline Small - Roboto 24/32 . 0
 				</Typography>
@@ -101,11 +98,9 @@ const TypographiesFrame: React.FC = () => {
 				<Typography variant="text-title-large">
 					Title Large - Roboto Regular 22/28 . 0
 				</Typography>
-
 				<Typography variant="text-title-medium">
 					Title Medium - Roboto Medium 16/24 . +0.15
 				</Typography>
-
 				<Typography variant="text-title-small">
 					Title Small - Roboto Medium 14/20 . +0.1
 				</Typography>
@@ -138,11 +133,9 @@ const TypographiesFrame: React.FC = () => {
 				<Typography variant="text-label-large">
 					Label Large - Roboto Medium 14/20 . +0.1
 				</Typography>
-
 				<Typography variant="text-label-medium">
 					Label Medium - Roboto Medium 12/16 . +0.5
 				</Typography>
-
 				<Typography variant="text-label-small">
 					Label Small - Roboto Medium 11/16 . +0.5
 				</Typography>
@@ -175,11 +168,9 @@ const TypographiesFrame: React.FC = () => {
 				<Typography variant="text-body-large">
 					Body Large - Roboto 16/24 . +0.5
 				</Typography>
-
 				<Typography variant="text-body-medium">
 					Body Medium - Roboto 16/24 . +0.5
 				</Typography>
-
 				<Typography variant="text-body-small">
 					Body Small - Roboto 16/24 . +0.5
 				</Typography>
@@ -211,5 +202,4 @@ const TypographiesFrame: React.FC = () => {
 		</div>
 	);
 };
-
 export default TypographiesFrame;
