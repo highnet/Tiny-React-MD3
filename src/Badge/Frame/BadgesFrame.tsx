@@ -1,5 +1,6 @@
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
+import Typography from "../../Typography/Typography";
 import Badge from "../Badge";
 
 /*  
@@ -41,9 +42,12 @@ const BadgesFrame: React.FC = () => {
 			{/* BADGES */}
 			<div>
 				<div>
-					<div className="text text-label text-label-small frame-label-trmd3">
+					<Typography
+						variant={"text-label-small"}
+						className={"frame-label-trmd3"}
+					>
 						Small
-					</div>
+					</Typography>
 					<div className="badge-box-trmd3">
 						<Badge configuration={"small"} xOffset={95} yOffset={-2} />
 					</div>
@@ -55,9 +59,12 @@ const BadgesFrame: React.FC = () => {
 					</code>
 				</pre>
 				<div>
-					<div className="text text-label text-label-small frame-label-trmd3">
+					<Typography
+						variant={"text-label-small"}
+						className={"frame-label-trmd3"}
+					>
 						Single Digit
-					</div>
+					</Typography>
 					<div className="badge-box-trmd3">
 						<Badge configuration={"single-digit"} xOffset={93} yOffset={-4}>
 							3
@@ -73,9 +80,12 @@ const BadgesFrame: React.FC = () => {
 					</code>
 				</pre>
 				<div>
-					<div className="text text-label text-label-small frame-label-trmd3">
+					<Typography
+						variant={"text-label-small"}
+						className={"frame-label-trmd3"}
+					>
 						Multiple Digits
-					</div>
+					</Typography>
 					<div className="badge-box-trmd3">
 						<Badge configuration={"multiple-digits"} xOffset={93} yOffset={-4}>
 							123
