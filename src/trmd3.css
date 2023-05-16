@@ -1157,12 +1157,18 @@ html {
 /* BUTTONS / FILLED / LIGHT */
 .btn-filled.btn-light-theme {
 	background-color: var(--m3-sys-light-primary);
-	color: var(--m3-sys-light-on-primary);
 }
 
 /* BUTTONS / FILLED / DARK */
 .btn-filled.btn-dark-theme {
 	background-color: var(--m3-sys-dark-primary);
+}
+
+.btn-filled > .element-on-button-light-theme {
+	color: var(--m3-sys-light-on-primary);
+}
+
+.btn-filled > .element-on-button-dark-theme {
 	color: var(--m3-sys-dark-on-primary);
 }
 
@@ -1193,7 +1199,6 @@ html {
 /* BUTTONS / FILLED / FOCUS / DARK */
 .btn-filled:focus.btn-dark-theme {
 	box-shadow: none;
-
 	background-color: var(
 		--m3-composite-dark-primary-passthrough-on-primary-opacity-12
 	);
@@ -1240,15 +1245,21 @@ html {
 /* BUTTONS / OUTLINED / LIGHT */
 .btn-outlined.btn-light-theme {
 	background-color: var(--m3-sys-light-surface);
-	color: var(--m3-sys-light-primary);
 	border: 0.1rem solid var(--m3-sys-light-outline);
 }
 
 /* BUTTONS / OUTLINED / DARK */
 .btn-outlined.btn-dark-theme {
 	background-color: var(--m3-sys-dark-surface);
-	color: var(--m3-sys-dark-primary);
 	border: 0.1rem solid var(--m3-sys-dark-outline);
+}
+
+.btn-outlined > .element-on-button-light-theme {
+	color: var(--m3-sys-light-primary);
+}
+
+.btn-outlined > .element-on-button-dark-theme {
+	color: var(--m3-sys-dark-primary);
 }
 
 /* BUTTONS / OUTLINED / HOVER / LIGHT */
@@ -1307,13 +1318,11 @@ html {
 	padding: 1rem 1.2rem;
 }
 
-/* BUTTONS / TEXT / LIGHT */
-.btn-text.btn-light-theme {
+.btn-text > .element-on-button-light-theme {
 	color: var(--m3-sys-light-primary);
 }
 
-/* BUTTONS / TEXT / DARK */
-.btn-text.btn-dark-theme {
+.btn-text > .element-on-button-dark-theme {
 	color: var(--m3-sys-dark-primary);
 }
 
@@ -1358,28 +1367,24 @@ html {
 	pointer-events: none;
 }
 
-/* BUTTONS / TEXT / DISABLED / LIGHT */
-.btn-text:disabled.btn-light-theme {
-	color: var(--m3-sys-light-on-surface);
-}
-
-/* BUTTONS / TEXT / DISABLED / DARK */
-.btn-text:disabled.btn-dark-theme {
-	color: var(--m3-sys-dark-on-surface);
-}
-
 /* BUTTONS / ELEVATED / LIGHT */
 .btn-elevated.btn-light-theme {
 	background-color: var(--m3-sys-light-surface-container-low);
-	color: var(--m3-sys-light-primary);
 	box-shadow: var(--m3-elevation-light-1);
+}
+
+.btn-elevated > .element-on-button-light-theme {
+	color: var(--m3-sys-light-primary);
 }
 
 /* BUTTONS / ELEVATED / DARK */
 .btn-elevated.btn-dark-theme {
 	background-color: var(--m3-sys-dark-surface-container-low);
-	color: var(--m3-sys-dark-primary);
 	box-shadow: var(--m3-elevation-dark-1);
+}
+
+.btn-elevated > .element-on-button-dark-theme {
+	color: var(--m3-sys-dark-primary);
 }
 
 /* BUTTONS / ELEVATED / HOVER / LIGHT */
@@ -1439,27 +1444,21 @@ html {
 	opacity: 38%;
 }
 
-/* BUTTONS / ELEVATED / DISABLED / LIGHT */
-.btn-elevated:disabled.btn-light-theme {
-	background-color: var(--m3-sys-light-on-surface);
-	color: var(--m3-sys-light-on-surface);
-}
-
-/* BUTTONS / ELEVATED / DISABLED / DARK */
-.btn-elevated:disabled.btn-dark-theme {
-	background-color: var(--m3-sys-dark-on-surface);
-	color: var(--m3-sys-dark-on-surface);
-}
-
 /* BUTTONS / TONAL / LIGHT */
 .btn-tonal.btn-light-theme {
 	background-color: var(--m3-sys-light-secondary-container);
+}
+
+.btn-tonal > .element-on-button-light-theme {
 	color: var(--m3-sys-light-on-secondary-container);
 }
 
 /* BUTTONS / TONAL / DARK */
 .btn-tonal.btn-dark-theme {
 	background-color: var(--m3-sys-dark-secondary-container);
+}
+
+.btn-tonal > .element-on-button-dark-theme {
 	color: var(--m3-sys-dark-on-secondary-container);
 }
 

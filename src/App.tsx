@@ -24,6 +24,7 @@ import FilterChipsFrame from "./Chips/FilterChip/Frame/FilterChipsFrame";
 import SuggestionChipsFrame from "./Chips/SuggestionChip/Frame/SuggestionChipsFrame";
 import StackedCardsFrame from "./Cards/StackedCard/Frame/StackedCardsFrame";
 import Typography from "./Typography/Typography";
+import { StringBuilder } from "./Gizmos/StringBuilder";
 
 function App() {
 	console.log(`	👋 Welcome to TRMD3! 👋	`);
@@ -49,6 +50,11 @@ function App() {
 		hljs.highlightAll();
 	}, []);
 
+	let _computedTrmd3SectionTitlesClassName = new StringBuilder()
+		.add("section-title-trmd3")
+		.add("section-title-" + theme + "-trmd3")
+		.toString();
+
 	return (
 		<div className={"App"}>
 			<Hero hasLogo={true} />
@@ -62,37 +68,33 @@ function App() {
 			<Typography
 				id="cards-section"
 				variant="text-title-large"
-				className={"section-title-trmd3 section-title-" + theme + "-trmd3"}
+				className={_computedTrmd3SectionTitlesClassName}
 			>
 				💳 Cards 💳
 			</Typography>
 			<StackedCardsFrame />
 
-			<div
+			<Typography
 				id="chips-section"
-				className={
-					"text text-title text-title-large section-title-trmd3 section-title-" +
-					theme +
-					"-trmd3"
-				}
+				variant="text-title-large"
+				className={_computedTrmd3SectionTitlesClassName}
 			>
 				🍪 Chips 🍪
-			</div>
+			</Typography>
+
 			<InputChipsFrame />
 			<AssistChipsFrame />
 			<FilterChipsFrame />
 			<SuggestionChipsFrame />
 
-			<div
+			<Typography
 				id="horizontal-dividers-section"
-				className={
-					"text text-title text-title-large section-title-trmd3 section-title-" +
-					theme +
-					"-trmd3"
-				}
+				variant="text-title-large"
+				className={_computedTrmd3SectionTitlesClassName}
 			>
 				👉 Dividers 👆
-			</div>
+			</Typography>
+
 			<HorizontalDividersFrame />
 			<VerticalDividersFrame />
 

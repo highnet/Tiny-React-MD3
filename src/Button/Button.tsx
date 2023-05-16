@@ -4,6 +4,7 @@ import { IButtonProps } from "./IButtonProps";
 import { StringBuilder } from "../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../Gizmos/Themeing";
 import Icon from "../Icon/Icon";
+import Typography from "../Typography/Typography";
 
 /*
 	1
@@ -75,8 +76,17 @@ const Button: React.FC<IButtonProps> = ({
 				click();
 			}}
 		>
-			{_icon ? <Icon>{_iconName}</Icon> : ""}
-			<div className="text text-label text-label-large">{_children}</div>
+			{_icon ? (
+				<Icon className={"element-on-button-" + _theme}>{_iconName}</Icon>
+			) : (
+				""
+			)}
+			<Typography
+				variant="text-label-large"
+				className={"element-on-button-" + _theme}
+			>
+				{_children}
+			</Typography>
 		</button>
 	);
 };
