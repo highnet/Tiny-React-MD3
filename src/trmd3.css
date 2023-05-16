@@ -3,6 +3,12 @@
 	outline: none;
 }
 
+/* HTML */
+
+html {
+	font-size: 16px;
+}
+
 /* ROOT */
 :root {
 	/* MD3 */
