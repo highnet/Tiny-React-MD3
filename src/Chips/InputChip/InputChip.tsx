@@ -4,6 +4,7 @@ import { IChipProps as IInputChipProps } from "./IInputChipProps";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import Icon from "../../Icon/Icon";
+import Typography from "../../Typography/Typography";
 
 function computeNumberOfItems(
 	leadingIcon: boolean,
@@ -99,9 +100,9 @@ const InputChip: React.FC<IInputChipProps> = ({
 			) : (
 				""
 			)}
-			<div className="text text-label text-label-large label-on-inputchip">
+			<Typography className="label-on-inputchip" variant="text-label-large">
 				{_children}
-			</div>
+			</Typography>
 			{_trailingIcon ? (
 				<Icon className="inputchip-icon-trailing">{_trailingIconName}</Icon>
 			) : (
