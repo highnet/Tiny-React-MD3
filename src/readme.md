@@ -271,7 +271,7 @@ The supported options of <code>{configuration}</code> are the following:
 Place a default icon like this:
 
 ```JSX
-<span className="material-symbols-outlined">{name}</span>
+[COMPONENT_JSX_PLACEHOLDER]
 ```
 
 where <code>{name}</code> is the set of all accepted icon names by [Material Symbols](https://fonts.google.com/icons)
@@ -287,7 +287,7 @@ where <code>{name}</code> is the set of all accepted icon names by [Material Sym
 Place div text components by combining class names like this:
 
 ```JSX
-<div className="text text-{type} text-{type}-{size}">Hello World!</div>
+[COMPONENT_JSX_PLACEHOLDER]
 ```
 
 The possible different options of <code>{type}</code> are the following:
@@ -323,7 +323,7 @@ and the possible different of <code>{size}</code> are the following:
 Create a default button component like this:
 
 ```JSX
-<Button onClick={undefined}> <div className="text text-label text-label-large">Click Me</div></Button>
+<Button onClick={undefined}>Click Me/Button>
 ```
 
 You may supplement the following optional properties to a button:
