@@ -29,9 +29,23 @@ const HorizontalDividersFrame: React.FC = () => {
 		.add("horizontaldividers-frame-" + _theme + "-trmd3")
 		.toString();
 
+	let _computedTrmd3SectionTitlesClassName = new StringBuilder()
+		.add("section-title-trmd3")
+		.add("section-title-" + _theme + "-trmd3")
+		.toString();
+
 	return (
 		<div className={_computedFrameClassName}>
 			{/* HORIZONTAL DIVIDERS */}
+			<div className="section-title-container-trmd3">
+				<Typography
+					id="horizontal-dividers-section"
+					variant="text-title-large"
+					className={_computedTrmd3SectionTitlesClassName}
+				>
+					👉 Dividers 👆
+				</Typography>
+			</div>
 			<Typography variant={"text-title-large"}>Horizontal Dividers</Typography>
 			<Typography variant={"text-label-small"}>Inset None</Typography>
 			<HorizontalDivider inset={"none"} />

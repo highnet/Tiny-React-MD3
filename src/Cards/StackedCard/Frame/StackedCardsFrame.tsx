@@ -6,6 +6,7 @@ import { getPreferredScheme } from "../../../Gizmos/Themeing";
 import { StringBuilder } from "../../../Gizmos/StringBuilder";
 import StackedCard from "../StackedCard";
 import CodeSnippet from "../../../TRMD3/CodeSnippet";
+import Typography from "../../../Typography/Typography";
 
 const StackedCardsFrame: React.FC = () => {
 	const _theme =
@@ -20,9 +21,23 @@ const StackedCardsFrame: React.FC = () => {
 		.add("stacked-cards-frame-" + _theme + "-trmd3")
 		.toString();
 
+	let _computedTrmd3SectionTitlesClassName = new StringBuilder()
+		.add("section-title-trmd3")
+		.add("section-title-" + _theme + "-trmd3")
+		.toString();
+
 	return (
 		<div className={_computedFrameClassName}>
 			{/* STACKED CARDS */}
+			<div className="section-title-container-trmd3">
+				<Typography
+					id="cards-section"
+					variant="text-title-large"
+					className={_computedTrmd3SectionTitlesClassName}
+				>
+					💳 Cards 💳
+				</Typography>
+			</div>
 			<StackedCard></StackedCard>
 			<CodeSnippet>{"<StackedCard></StackedCard>"}</CodeSnippet>
 		</div>

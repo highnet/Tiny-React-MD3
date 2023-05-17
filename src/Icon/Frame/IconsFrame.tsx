@@ -12,6 +12,7 @@
 
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
+import Typography from "../../Typography/Typography";
 import Icon from "../Icon";
 
 const IconsFrame: React.FC = () => {
@@ -27,9 +28,37 @@ const IconsFrame: React.FC = () => {
 		.add("icons-frame-" + _theme + "-trmd3")
 		.toString();
 
+	let _computedTrmd3SectionTitlesClassName = new StringBuilder()
+		.add("section-title-trmd3")
+		.add("section-title-" + _theme + "-trmd3")
+		.toString();
+
 	return (
 		<div className={_computedFrameClassName}>
 			{/* ICONS */}
+			<div className="section-title-container-trmd3">
+				<Typography
+					id="icons-section"
+					variant="text-title-large"
+					className={_computedTrmd3SectionTitlesClassName}
+				>
+					💟 Icons 💟
+				</Typography>
+			</div>
+			<Typography
+				variant="text-title-medium"
+				className={
+					"section-subtitle-trmd3 section-subtitle-" + _theme + "-trmd3"
+				}
+			>
+				For a full list of all accepted icon strings, visit:{" "}
+				<a
+					className="subsection-link-trmd3"
+					href="https://fonts.google.com/icons"
+				>
+					Material Symbols and Icons
+				</a>
+			</Typography>
 			<Icon>hive</Icon>
 			<pre>
 				<code className="language-html"> {"<Icon>hive</Icon>"} </code>

@@ -3,10 +3,6 @@ import { getPreferredScheme } from "../../../Gizmos/Themeing";
 import Typography from "../../../Typography/Typography";
 import InputChip from "../InputChip";
 
-/*
-TODO: NEEDS DOCUMENTATION
-*/
-
 const InputChipsFrame: React.FC = () => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
@@ -20,8 +16,22 @@ const InputChipsFrame: React.FC = () => {
 		.add("chips-frame-" + _theme + "-trmd3")
 		.toString();
 
+	let _computedTrmd3SectionTitlesClassName = new StringBuilder()
+		.add("section-title-trmd3")
+		.add("section-title-" + _theme + "-trmd3")
+		.toString();
+
 	return (
 		<div className={_computedFrameClassName}>
+			<div className="section-title-container-trmd3">
+				<Typography
+					id="chips-section"
+					variant="text-title-large"
+					className={_computedTrmd3SectionTitlesClassName}
+				>
+					🍪 Chips 🍪
+				</Typography>
+			</div>
 			<Typography variant={"text-title-large"}>Input Chips</Typography>
 			<Typography variant={"text-label-small"}>Label Only</Typography>
 			<InputChip onClick={undefined}></InputChip>

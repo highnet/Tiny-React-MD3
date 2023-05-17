@@ -21,9 +21,23 @@ const TypographiesFrame: React.FC = () => {
 		.add("typographies-frame-" + _theme + "-trmd3")
 		.toString();
 
+	let _computedTrmd3SectionTitlesClassName = new StringBuilder()
+		.add("section-title-trmd3")
+		.add("section-title-" + _theme + "-trmd3")
+		.toString();
+
 	return (
 		<div className={_computedFrameClassName}>
 			{/* TYPOGRAPHY */}
+			<div className="section-title-container-trmd3">
+				<Typography
+					id="typography-section"
+					variant="text-title-large"
+					className={_computedTrmd3SectionTitlesClassName}
+				>
+					🔤 Typography 🔤
+				</Typography>
+			</div>
 			<div className="typographies-subframe-trmd3">
 				<Typography variant="text-display-large">
 					Display Large - Roboto 57/54 . 0

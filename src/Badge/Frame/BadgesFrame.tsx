@@ -1,5 +1,6 @@
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
+import CodeSnippet from "../../TRMD3/CodeSnippet";
 import Typography from "../../Typography/Typography";
 import Badge from "../Badge";
 
@@ -35,9 +36,23 @@ const BadgesFrame: React.FC = () => {
 		.add("badges-frame-" + _theme + "-trmd3")
 		.toString();
 
+	let _computedTrmd3SectionTitlesClassName = new StringBuilder()
+		.add("section-title-trmd3")
+		.add("section-title-" + _theme + "-trmd3")
+		.toString();
+
 	return (
 		<div className={_computedFrameClassName}>
 			{/* BADGES */}
+			<div className="section-title-container-trmd3">
+				<Typography
+					id="badges-section"
+					variant="text-title-large"
+					className={_computedTrmd3SectionTitlesClassName}
+				>
+					📛 Badges 📛
+				</Typography>
+			</div>
 			<div>
 				<div>
 					<Typography variant={"text-label-small"}>Small</Typography>
@@ -45,12 +60,10 @@ const BadgesFrame: React.FC = () => {
 						<Badge configuration={"small"} xOffset={95} yOffset={-2} />
 					</div>
 				</div>
-				<pre>
-					<code className="language-html">
-						{" "}
-						{'<Badge configuration={"small"} xOffset={95} yOffset={-2} />'}{" "}
-					</code>
-				</pre>
+				<CodeSnippet>
+					{'<Badge configuration={"small"} xOffset={95} yOffset={-2} />'}
+				</CodeSnippet>
+
 				<div>
 					<Typography variant={"text-label-small"}>Single Digit</Typography>
 					<div className="badge-box-trmd3">
@@ -59,14 +72,11 @@ const BadgesFrame: React.FC = () => {
 						</Badge>
 					</div>
 				</div>
-				<pre>
-					<code className="language-html">
-						{" "}
-						{
-							'<Badge configuration={"single-digit"} xOffset={93} yOffset={-4}>3</Badge>'
-						}{" "}
-					</code>
-				</pre>
+				<CodeSnippet>
+					{
+						'<Badge configuration={"single-digit"} xOffset={93} yOffset={-4}>3</Badge>'
+					}
+				</CodeSnippet>
 				<div>
 					<Typography variant={"text-label-small"}>Multiple Digits</Typography>
 					<div className="badge-box-trmd3">
@@ -75,14 +85,11 @@ const BadgesFrame: React.FC = () => {
 						</Badge>
 					</div>
 				</div>
-				<pre>
-					<code className="language-html">
-						{" "}
-						{
-							'<Badge configuration={"multiple-digits"} xOffset={93} yOffset={-4}>123</Badge>'
-						}{" "}
-					</code>
-				</pre>
+				<CodeSnippet>
+					{
+						'<Badge configuration={"multiple-digits"} xOffset={93} yOffset={-4}>123</Badge>'
+					}
+				</CodeSnippet>
 			</div>
 		</div>
 	);

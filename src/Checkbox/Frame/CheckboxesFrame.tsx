@@ -32,9 +32,23 @@ const CheckboxesFrame: React.FC = () => {
 		.add("checkboxes-frame-" + _theme + "-trmd3")
 		.toString();
 
+	let _computedTrmd3SectionTitlesClassName = new StringBuilder()
+		.add("section-title-trmd3")
+		.add("section-title-" + _theme + "-trmd3")
+		.toString();
+
 	return (
 		<div className={_computedFrameClassName}>
 			{/* CHECKBOXES */}
+			<div className="section-title-container-trmd3">
+				<Typography
+					id="checkboxes-section"
+					variant="text-title-large"
+					className={_computedTrmd3SectionTitlesClassName}
+				>
+					☑️ Checkboxes ☑️
+				</Typography>
+			</div>
 			<Typography variant={"text-title-large"}>Default</Typography>
 
 			<Checkbox selected={true} onChange={undefined} />

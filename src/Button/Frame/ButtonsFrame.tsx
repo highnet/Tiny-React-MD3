@@ -46,9 +46,23 @@ const ButtonsFrame: React.FC = () => {
 		.add("buttons-frame-" + _theme + "-trmd3")
 		.toString();
 
+	let _computedTrmd3SectionTitlesClassName = new StringBuilder()
+		.add("section-title-trmd3")
+		.add("section-title-" + _theme + "-trmd3")
+		.toString();
+
 	return (
 		<div className={_computedFrameClassName}>
 			{/* BUTTONS */}
+			<div className="section-title-container-trmd3">
+				<Typography
+					id="buttons-section"
+					variant="text-title-large"
+					className={_computedTrmd3SectionTitlesClassName}
+				>
+					🕹️ Buttons 🕹️
+				</Typography>
+			</div>
 			<Typography variant={"text-title-large"}>Filled Buttons</Typography>
 			<Typography variant={"text-label-small"}>No Icon</Typography>
 			<Button configuration="filled" onClick={undefined}></Button>
