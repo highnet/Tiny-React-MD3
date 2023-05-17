@@ -4,9 +4,7 @@ import Typography from "../../../Typography/Typography";
 import InputChip from "../InputChip";
 
 /*
-
 TODO: NEEDS DOCUMENTATION
-
 */
 
 const InputChipsFrame: React.FC = () => {
@@ -45,10 +43,9 @@ const InputChipsFrame: React.FC = () => {
 					}{" "}
 				</code>
 			</pre>
-
-			<div className="text text-label text-label-small">
+			<Typography variant={"text-label-small"} className={"text-label-small"}>
 				Leading icon & label
-			</div>
+			</Typography>
 			<InputChip leadingIcon={true} onClick={undefined}></InputChip>
 			<pre>
 				<code className="language-html">
@@ -58,10 +55,9 @@ const InputChipsFrame: React.FC = () => {
 					}{" "}
 				</code>
 			</pre>
-
-			<div className="text text-label text-label-small">
+			<Typography variant={"text-label-small"} className={"text-label-small"}>
 				Leading icon, label & trailing icon
-			</div>
+			</Typography>
 			<InputChip
 				leadingIcon={true}
 				trailingIcon={true}
@@ -75,24 +71,24 @@ const InputChipsFrame: React.FC = () => {
 					}{" "}
 				</code>
 			</pre>
-			<div className="text text-label text-label-small">Label & avatar</div>
+			<Typography variant={"text-label-small"} className={"text-label-small"}>
+				Label & avatar
+			</Typography>
 			<InputChip avatar={true} onClick={undefined}></InputChip>
-
 			<pre>
 				<code className="language-html">
 					{" "}
 					{"<InputChip avatar={true} onClick={undefined}></InputChip>"}{" "}
 				</code>
 			</pre>
-			<div className="text text-label text-label-small">
+			<Typography variant={"text-label-small"} className={"text-label-small"}>
 				Label, avatar & trailing icon
-			</div>
+			</Typography>
 			<InputChip
 				avatar={true}
 				trailingIcon={true}
 				onClick={undefined}
 			></InputChip>
-
 			<pre>
 				<code className="language-html">
 					{" "}

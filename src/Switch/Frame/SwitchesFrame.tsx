@@ -17,6 +17,7 @@
 
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
+import Typography from "../../Typography/Typography";
 import Switch from "../Switch";
 
 const SwitchesFrame: React.FC = () => {
@@ -35,9 +36,7 @@ const SwitchesFrame: React.FC = () => {
 	return (
 		<div className={_computedFrameClassName}>
 			{/* SWITCHES */}
-			<div className="text text-label text-label-small frame-label-trmd3">
-				No Icon
-			</div>
+			<Typography variant="text-label-small">No Icon</Typography>
 			<Switch selected={true} onChange={undefined} />
 			<pre>
 				<code className="language-html">
@@ -45,7 +44,7 @@ const SwitchesFrame: React.FC = () => {
 					{"<Switch selected={true} onChange={undefined} />"}{" "}
 				</code>
 			</pre>
-			<div className="text text-label text-label-small">With Icon</div>
+			<Typography variant="text-label-small">With Icon</Typography>
 			<Switch
 				selected={true}
 				onChange={undefined}

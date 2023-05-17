@@ -1,5 +1,6 @@
 import { StringBuilder } from "../../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../../Gizmos/Themeing";
+import Typography from "../../../Typography/Typography";
 import HorizontalDivider from "../HorizontalDivider";
 
 /* 
@@ -31,12 +32,8 @@ const HorizontalDividersFrame: React.FC = () => {
 	return (
 		<div className={_computedFrameClassName}>
 			{/* HORIZONTAL DIVIDERS */}
-			<div className="text text-title text-title-large">
-				Horizontal Dividers
-			</div>
-			<div className="text text-label text-label-small frame-label-trmd3">
-				Inset None
-			</div>
+			<Typography variant={"text-title-large"}>Horizontal Dividers</Typography>
+			<Typography variant={"text-label-small"}>Inset None</Typography>
 			<HorizontalDivider inset={"none"} />
 			<pre>
 				<code className="language-html">
@@ -44,9 +41,7 @@ const HorizontalDividersFrame: React.FC = () => {
 					{'<HorizontalDivider inset={"none"} />'}{" "}
 				</code>
 			</pre>
-			<div className="text text-label text-label-small frame-label-trmd3">
-				Inset Right
-			</div>
+			<Typography variant={"text-label-small"}>Inset Right</Typography>
 			<HorizontalDivider inset={"right"} showInsets={true} />
 			<pre>
 				<code className="language-html">
@@ -54,9 +49,7 @@ const HorizontalDividersFrame: React.FC = () => {
 					{'<HorizontalDivider inset={"right"} showInsets={true} />'}{" "}
 				</code>
 			</pre>
-			<div className="text text-label text-label-small frame-label-trmd3">
-				Inset Left
-			</div>
+			<Typography variant={"text-label-small"}>Inset Left</Typography>
 			<HorizontalDivider inset={"left"} showInsets={true} />
 			<pre>
 				<code className="language-html">
@@ -64,9 +57,7 @@ const HorizontalDividersFrame: React.FC = () => {
 					{'<HorizontalDivider inset={"left"} showInsets={true} />'}{" "}
 				</code>
 			</pre>
-			<div className="text text-label text-label-small frame-label-trmd3">
-				Inset Center
-			</div>
+			<Typography variant={"text-label-small"}>Inset Center</Typography>
 			<HorizontalDivider inset={"center"} showInsets={true} />
 			<pre>
 				<code className="language-html">

@@ -42,12 +42,7 @@ const BadgesFrame: React.FC = () => {
 			{/* BADGES */}
 			<div>
 				<div>
-					<Typography
-						variant={"text-label-small"}
-						className={"frame-label-trmd3"}
-					>
-						Small
-					</Typography>
+					<Typography variant={"text-label-small"}>Small</Typography>
 					<div className="badge-box-trmd3">
 						<Badge configuration={"small"} xOffset={95} yOffset={-2} />
 					</div>
@@ -59,12 +54,7 @@ const BadgesFrame: React.FC = () => {
 					</code>
 				</pre>
 				<div>
-					<Typography
-						variant={"text-label-small"}
-						className={"frame-label-trmd3"}
-					>
-						Single Digit
-					</Typography>
+					<Typography variant={"text-label-small"}>Single Digit</Typography>
 					<div className="badge-box-trmd3">
 						<Badge configuration={"single-digit"} xOffset={93} yOffset={-4}>
 							3
@@ -80,12 +70,7 @@ const BadgesFrame: React.FC = () => {
 					</code>
 				</pre>
 				<div>
-					<Typography
-						variant={"text-label-small"}
-						className={"frame-label-trmd3"}
-					>
-						Multiple Digits
-					</Typography>
+					<Typography variant={"text-label-small"}>Multiple Digits</Typography>
 					<div className="badge-box-trmd3">
 						<Badge configuration={"multiple-digits"} xOffset={93} yOffset={-4}>
 							123

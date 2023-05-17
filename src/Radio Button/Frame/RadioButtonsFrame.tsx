@@ -1,5 +1,6 @@
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
+import Typography from "../../Typography/Typography";
 import RadioButton from "../RadioButton";
 
 /*
@@ -33,9 +34,7 @@ const RadioButtonsFrame: React.FC = () => {
 		<div className={_computedFrameClassName}>
 			{/* RADIO BUTTONS */}
 			<RadioButton name={"trmd3"} value={"option-1"} />
-			<div className="text text-label text-label-small frame-label-trmd3">
-				Option 1
-			</div>
+			<Typography variant="text-label-small">Option 1</Typography>
 			<pre>
 				<code className="language-html">
 					{" "}
@@ -43,9 +42,7 @@ const RadioButtonsFrame: React.FC = () => {
 				</code>
 			</pre>
 			<RadioButton name={"trmd3"} value={"option-2"} defaultChecked={true} />
-			<div className="text text-label text-label-small frame-label-trmd3">
-				Option 2
-			</div>
+			<Typography variant="text-label-small">Option 2</Typography>
 			<pre>
 				<code className="language-html">
 					{" "}

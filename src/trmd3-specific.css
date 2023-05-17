@@ -85,6 +85,7 @@ html {
 	border-radius: 0.3rem;
 	overflow-y: hidden;
 	font-size: 1.4rem;
+	font-family: "Comic Mono", monospace;
 }
 
 @media screen and (max-width: 600px) {
@@ -265,10 +266,6 @@ html {
 	color: var(--m3-sys-dark-on-surface);
 	background-color: var(--m3-sys-dark-surface);
 	box-shadow: var(--m3-elevation-dark-1);
-}
-
-.frame-label-trmd3 {
-	text-align: center;
 }
 
 /* HORIZONTAL DIVIDERS FRAME SECTION */

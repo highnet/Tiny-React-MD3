@@ -35,9 +35,7 @@ const CheckboxesFrame: React.FC = () => {
 	return (
 		<div className={_computedFrameClassName}>
 			{/* CHECKBOXES */}
-			<Typography variant={"text-title-large"} className="frame-label-trmd3">
-				Default
-			</Typography>
+			<Typography variant={"text-title-large"}>Default</Typography>
 
 			<Checkbox selected={true} onChange={undefined} />
 			<pre>
@@ -46,9 +44,7 @@ const CheckboxesFrame: React.FC = () => {
 					{"<Checkbox selected={true} onChange={undefined} />"}{" "}
 				</code>
 			</pre>
-			<Typography variant={"text-label-small"} className="frame-label-trmd3">
-				Error
-			</Typography>
+			<Typography variant={"text-label-small"}>Error</Typography>
 			<Checkbox selected={true} onChange={undefined} configuration={"error"} />
 			<pre>
 				<code className="language-html">
