@@ -32,6 +32,7 @@ import { getPreferredScheme } from "../../Gizmos/Themeing";
 import React from "react";
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import Typography from "../../Typography/Typography";
+import CodeSnippet from "../../TRMD3/CodeSnippet";
 
 const ButtonsFrame: React.FC = () => {
 	const _theme =
@@ -66,12 +67,9 @@ const ButtonsFrame: React.FC = () => {
 			<Typography variant={"text-title-large"}>Filled Buttons</Typography>
 			<Typography variant={"text-label-small"}>No Icon</Typography>
 			<Button configuration="filled" onClick={undefined}></Button>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{'<Button configuration="filled" onClick={undefined}></Button>'}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>
+				{`<Button configuration="filled" onClick={undefined}></Button>`}
+			</CodeSnippet>
 			<Typography variant={"text-label-small"}>With Icon</Typography>
 			<Button
 				configuration="filled"
