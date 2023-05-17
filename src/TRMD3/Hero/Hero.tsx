@@ -1,5 +1,3 @@
-// TODO: Needs documentation
-
 import React, { useState, useEffect } from "react";
 import { initializeApp } from "firebase/app";
 import { getDownloadURL, getStorage, ref } from "firebase/storage";

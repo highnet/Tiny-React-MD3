@@ -26,7 +26,6 @@ const StackedCard: React.FC<IStackedCardsProps> = ({
 		.add(_className)
 		.toString();
 
-	// Return the JSX element for the button
 	return (
 		<div id={_id} className={_computedComponentClassName}>
 			<div className="stacked-card-header">
@@ -68,5 +67,4 @@ const StackedCard: React.FC<IStackedCardsProps> = ({
 	);
 };
 
-// Export the button component as default
 export default StackedCard;

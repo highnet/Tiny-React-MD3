@@ -22,8 +22,6 @@ import Badge from "../Badge";
 	and "code" elements with the "language-html" class.
 */
 
-// TODO: use stringbuilder for classnames
-
 const BadgesFrame: React.FC = () => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";

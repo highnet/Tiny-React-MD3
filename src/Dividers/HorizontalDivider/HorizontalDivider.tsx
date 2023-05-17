@@ -1,9 +1,3 @@
-// Import React and some hooks from React library
-import React, { useState } from "react";
-import { IHorizontalDividerProps } from "./IHorizontalDividerProps";
-import { getPreferredScheme } from "../../Gizmos/Themeing";
-import { StringBuilder } from "../../Gizmos/StringBuilder";
-
 /*
 	1
 	1682423199
@@ -18,7 +12,11 @@ import { StringBuilder } from "../../Gizmos/StringBuilder";
 	The inset divs, if present, have their width, height, and color based on the props and state variables
 */
 
-// Define a functional component for the horizontal divider
+import React, { useState } from "react";
+import { IHorizontalDividerProps } from "./IHorizontalDividerProps";
+import { getPreferredScheme } from "../../Gizmos/Themeing";
+import { StringBuilder } from "../../Gizmos/StringBuilder";
+
 const HorizontalDivider: React.FC<IHorizontalDividerProps> = ({
 	id,
 	className,
@@ -29,7 +27,6 @@ const HorizontalDivider: React.FC<IHorizontalDividerProps> = ({
 	insetLeftWidth,
 	showInsets,
 }) => {
-	// Initialize state variables
 	const [_id] = useState(id || undefined);
 	const [_className] = useState(className || "");
 	const [_height] = useState(height || 1);
@@ -42,11 +39,11 @@ const HorizontalDivider: React.FC<IHorizontalDividerProps> = ({
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
-	let _computedHeight: string = _height.toString() + "px"; // Final height value
-	let _computedWidth: string = _width.toString() + "px"; // Final width value
-	let _computedInsetRightWidth: string = _insetRightWidth + "px"; // Final inset right width value
-	let _computedInsetLeftWidth: string = _insetLeftWidth + "px"; // Final inset left width value
-	let _computedInsetColor: string = _showInsets ? "red" : "transparent"; // Final inset color
+	let _computedHeight: string = _height.toString() + "px";
+	let _computedWidth: string = _width.toString() + "px";
+	let _computedInsetRightWidth: string = _insetRightWidth + "px";
+	let _computedInsetLeftWidth: string = _insetLeftWidth + "px";
+	let _computedInsetColor: string = _showInsets ? "red" : "transparent";
 
 	let _computedComponentClassName = new StringBuilder()
 		.add("horizontaldivider")
@@ -69,7 +66,6 @@ const HorizontalDivider: React.FC<IHorizontalDividerProps> = ({
 		.add("horizontaldivider-inset-left-" + _theme)
 		.toString();
 
-	// Return the JSX element for the horizontal divider
 	return (
 		<div id={_id} className={_computedComponentClassName}>
 			{_inset == "right" || _inset == "center" ? (
@@ -109,5 +105,4 @@ const HorizontalDivider: React.FC<IHorizontalDividerProps> = ({
 	);
 };
 
-// Export the horizontal divider component as default
 export default HorizontalDivider;

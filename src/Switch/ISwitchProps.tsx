@@ -1,6 +1,3 @@
-import { IComponentProps } from "../Component/IComponentProps";
-import { MouseEvent } from "react";
-
 /*
   1
   1682360238 
@@ -21,12 +18,13 @@ import { MouseEvent } from "react";
   Together, these properties define the behavior and appearance of a switch component, and
   can be used to customize its functionality in an application.
 */
+import { IComponentProps } from "../Component/IComponentProps";
+import { MouseEvent } from "react";
 
-// Define an interface for the switch props
 export interface ISwitchProps extends IComponentProps {
-	selected?: boolean; // Whether or not the switch is selected
-	onChange?: (event: MouseEvent<HTMLDivElement>) => void; // Function to handle change event of the switch
-	icon?: boolean; // Whether or not to display an icon in the switch
-	iconNameSelected?: string; // Name of the icon to display when the switch is selected
-	iconNameDeselected?: string; // Name of the icon to display when the switch is deselected
+	selected?: boolean;
+	onChange?: (event: MouseEvent<HTMLDivElement>) => void;
+	icon?: boolean;
+	iconNameSelected?: string;
+	iconNameDeselected?: string;
 }

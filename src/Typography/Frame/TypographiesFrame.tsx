@@ -74,7 +74,7 @@ const TypographiesFrame: React.FC = () => {
 				<code className="language-html">
 					{" "}
 					{
-						'x<Typography variant="text-headline-large">Headline Large - Roboto 32/40 . 0</Typography>'
+						'<Typography variant="text-headline-large">Headline Large - Roboto 32/40 . 0</Typography>'
 					}{" "}
 				</code>
 			</pre>

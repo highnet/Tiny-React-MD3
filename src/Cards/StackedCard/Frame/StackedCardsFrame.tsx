@@ -5,6 +5,7 @@ import React from "react";
 import { getPreferredScheme } from "../../../Gizmos/Themeing";
 import { StringBuilder } from "../../../Gizmos/StringBuilder";
 import StackedCard from "../StackedCard";
+import CodeSnippet from "../../../TRMD3/CodeSnippet";
 
 const StackedCardsFrame: React.FC = () => {
 	const _theme =
@@ -23,9 +24,7 @@ const StackedCardsFrame: React.FC = () => {
 		<div className={_computedFrameClassName}>
 			{/* STACKED CARDS */}
 			<StackedCard></StackedCard>
-			<pre>
-				<code className="language-html"> {"<StackedCard></StackedCard>"} </code>
-			</pre>
+			<CodeSnippet>{"<StackedCard></StackedCard>"}</CodeSnippet>
 		</div>
 	);
 };

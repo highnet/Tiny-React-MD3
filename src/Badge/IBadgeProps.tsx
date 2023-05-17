@@ -17,9 +17,8 @@ import { IComponentProps } from "../Component/IComponentProps";
     positioning of the badge element.
 */
 
-// Define an interface for the badge props
 export interface IBadgeProps extends IComponentProps {
-	configuration?: string; // Configuration of the badge
-	xOffset?: number; // X offset of the badge
-	yOffset?: number; // Y offset of the badge
+	configuration?: string;
+	xOffset?: number;
+	yOffset?: number;
 }

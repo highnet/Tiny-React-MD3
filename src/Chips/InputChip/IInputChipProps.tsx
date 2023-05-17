@@ -1,15 +1,8 @@
 import { MouseEvent } from "react";
 import { IComponentProps } from "../../Component/IComponentProps";
 
-/* 
-
-  TODO: NEEDS DOCUMENTATION
-
-*/
-
-// Define an interface for the button props
 export interface IChipProps extends IComponentProps {
-	onClick?: (event: MouseEvent<HTMLButtonElement>) => void; // Function to execute when button is clicked
+	onClick?: (event: MouseEvent<HTMLButtonElement>) => void;
 	selected?: boolean;
 
 	avatar?: boolean;

@@ -1,10 +1,3 @@
-// Import React and some hooks from React library
-import React, { useState, useEffect } from "react";
-import { ICheckboxProps } from "./ICheckboxProps";
-import { StringBuilder } from "../Gizmos/StringBuilder";
-import { getPreferredScheme } from "../Gizmos/Themeing";
-import Icon from "../Icon/Icon";
-
 /* 
 	1
 	1682423199
@@ -27,6 +20,12 @@ import Icon from "../Icon/Icon";
 	The onChange prop is called when the checkbox is clicked, and the handleClick
 	function updates the selected state and triggers the click function.
 */
+
+import React, { useState, useEffect } from "react";
+import { ICheckboxProps } from "./ICheckboxProps";
+import { StringBuilder } from "../Gizmos/StringBuilder";
+import { getPreferredScheme } from "../Gizmos/Themeing";
+import Icon from "../Icon/Icon";
 
 const Checkbox: React.FC<ICheckboxProps> = ({
 	disabled,

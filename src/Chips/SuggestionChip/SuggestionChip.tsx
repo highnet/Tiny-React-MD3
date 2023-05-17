@@ -1,4 +1,3 @@
-// Import React and some hooks from React library
 import React, { useState } from "react";
 import { ISuggestionChipProps } from "./ISuggestionChipProps";
 import { getPreferredScheme } from "../../Gizmos/Themeing";

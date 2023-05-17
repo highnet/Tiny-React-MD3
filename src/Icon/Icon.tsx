@@ -4,8 +4,8 @@ import { getPreferredScheme } from "../Gizmos/Themeing";
 import { IIconProps } from "./IIconProps";
 
 const Icon: React.FC<IIconProps> = ({ children, id, className }) => {
-	const [_id] = useState(id || undefined); // State for the ID of the badge
-	const [_className] = useState(className || ""); // State for the class name of the badge
+	const [_id] = useState(id || undefined);
+	const [_className] = useState(className || "");
 
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";

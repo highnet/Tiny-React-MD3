@@ -1,6 +1,3 @@
-import { IComponentProps } from "../Component/IComponentProps";
-import { MouseEvent } from "react";
-
 /* 
   1
   1682423199
@@ -13,9 +10,11 @@ import { MouseEvent } from "react";
   selected: a boolean that represents whether or not the checkbox is selected 
 */
 
-// Define an interface for the checkbox props
+import { MouseEvent } from "react";
+import { IComponentProps } from "../Component/IComponentProps";
+
 export interface ICheckboxProps extends IComponentProps {
-	onChange?: (event: MouseEvent<HTMLDivElement>) => void; // Function to handle change event of the checkbox
-	configuration?: string; // Configuration of the checkbox
-	selected?: boolean; // Whether or not the checkbox is selected
+	onChange?: (event: MouseEvent<HTMLDivElement>) => void;
+	configuration?: string;
+	selected?: boolean;
 }

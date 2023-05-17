@@ -10,8 +10,8 @@ className: a string that represents the class name of the component.
 */
 
 export interface IComponentProps {
-	disabled?: boolean; // Whether or not the component is disabled
-	children?: React.ReactNode; // Child elements of the component
-	id?: string; // ID of the component
-	className?: string; // Class name of the component
+	disabled?: boolean;
+	children?: React.ReactNode;
+	id?: string;
+	className?: string;
 }
