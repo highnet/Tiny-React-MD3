@@ -1,9 +1,3 @@
-// Import React and some hooks from React library
-import React, { useState } from "react";
-import { ISwitchProps } from "./ISwitchProps";
-import { StringBuilder } from "../Gizmos/StringBuilder";
-import { getPreferredScheme } from "../Gizmos/Themeing";
-
 /* 
 	1
 	1682360238
@@ -25,7 +19,11 @@ import { getPreferredScheme } from "../Gizmos/Themeing";
 	switch, including its track, handle, and optional icon.
 */
 
-// Define a functional component for the switch
+import React, { useState } from "react";
+import { ISwitchProps } from "./ISwitchProps";
+import { StringBuilder } from "../Gizmos/StringBuilder";
+import { getPreferredScheme } from "../Gizmos/Themeing";
+
 const Switch: React.FC<ISwitchProps> = ({
 	disabled,
 	children,
@@ -97,7 +95,6 @@ const Switch: React.FC<ISwitchProps> = ({
 		.add("switch-icon-" + _theme)
 		.toString();
 
-	// Return the JSX element for the switch
 	return (
 		<div
 			onClick={(e) => {
@@ -126,5 +123,4 @@ const Switch: React.FC<ISwitchProps> = ({
 	);
 };
 
-// Export the switch component as default
 export default Switch;

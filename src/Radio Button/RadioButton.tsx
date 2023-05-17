@@ -1,9 +1,3 @@
-// Import React and some hooks from React library
-import React, { useState } from "react";
-import { IRadioButtonProps } from "./IRadioButtonProps";
-import { getPreferredScheme } from "../Gizmos/Themeing";
-import { StringBuilder } from "../Gizmos/StringBuilder";
-
 /* 
 	1
 	1682423199
@@ -21,7 +15,11 @@ import { StringBuilder } from "../Gizmos/StringBuilder";
 	button is clicked, followed by the click function defined in the component.
 */
 
-// Define a functional component for the radio button
+import React, { useState } from "react";
+import { IRadioButtonProps } from "./IRadioButtonProps";
+import { getPreferredScheme } from "../Gizmos/Themeing";
+import { StringBuilder } from "../Gizmos/StringBuilder";
+
 const RadioButton: React.FC<IRadioButtonProps> = ({
 	disabled,
 	children,
@@ -32,12 +30,12 @@ const RadioButton: React.FC<IRadioButtonProps> = ({
 	value,
 	defaultChecked,
 }) => {
-	const [_disabled] = useState(disabled || false); // State for whether or not the button is disabled
-	const [_id] = useState(id || undefined); // State for the ID of the button
-	const [_className] = useState(className || ""); // State for the class name of the button
-	const [_name] = useState(name || "radio"); // State for the name of the radio button
-	const [_value] = useState(value || "radio"); // State for the value of the radio button
-	const [_defaultChecked] = useState(defaultChecked || false); // State for whether or not the radio button is checked by default
+	const [_disabled] = useState(disabled || false);
+	const [_id] = useState(id || undefined);
+	const [_className] = useState(className || "");
+	const [_name] = useState(name || "radio");
+	const [_value] = useState(value || "radio");
+	const [_defaultChecked] = useState(defaultChecked || false);
 
 	const click = () => {
 		console.log("Thank you for using Tiny React MD3!");
@@ -59,7 +57,6 @@ const RadioButton: React.FC<IRadioButtonProps> = ({
 		.add("radio-button-input-" + _theme)
 		.toString();
 
-	// Return the JSX element for the radio button
 	return (
 		<div
 			className={_computedComponentClassName}
@@ -82,5 +79,4 @@ const RadioButton: React.FC<IRadioButtonProps> = ({
 	);
 };
 
-// Export the radio button component as default
 export default RadioButton;

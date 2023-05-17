@@ -30,7 +30,6 @@ import Typography from "../Typography/Typography";
 	<div> element.
 */
 
-// Define a functional component for the badge
 const Badge: React.FC<IBadgeProps> = ({
 	children,
 	id,
@@ -48,8 +47,8 @@ const Badge: React.FC<IBadgeProps> = ({
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
-	let _computedXOffset: string = _xOffset.toString() + "%"; // Final x offset value
-	let _computedYOffset: string = _yOffset.toString() + "%"; // Final y offset value
+	let _computedXOffset: string = _xOffset.toString() + "%";
+	let _computedYOffset: string = _yOffset.toString() + "%";
 
 	let _computedComponentClassName = new StringBuilder()
 		.add("badge")
@@ -64,7 +63,6 @@ const Badge: React.FC<IBadgeProps> = ({
 		.add("badge-label-text-" + _theme)
 		.toString();
 
-	// Return the JSX element for the badge
 	return (
 		<div
 			id={_id}
@@ -81,5 +79,4 @@ const Badge: React.FC<IBadgeProps> = ({
 	);
 };
 
-// Export the badge component as default
 export default Badge;

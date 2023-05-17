@@ -1,9 +1,3 @@
-// Import React and some hooks from React library
-import React, { useState } from "react";
-import { IVerticalDividerProps } from "./IVerticalDividerProps";
-import { getPreferredScheme } from "../../Gizmos/Themeing";
-import { StringBuilder } from "../../Gizmos/StringBuilder";
-
 /* 
   This code defines a React component for a vertical divider that can be used to separate two sections of content vertically. 
   The component takes some props that customize its appearance and behavior, such as:
@@ -23,7 +17,11 @@ import { StringBuilder } from "../../Gizmos/StringBuilder";
   The component is exported as default so it can be imported and used in other files.
 */
 
-// Define a functional component for the vertical divider
+import React, { useState } from "react";
+import { IVerticalDividerProps } from "./IVerticalDividerProps";
+import { getPreferredScheme } from "../../Gizmos/Themeing";
+import { StringBuilder } from "../../Gizmos/StringBuilder";
+
 const VerticalDivider: React.FC<IVerticalDividerProps> = ({
 	id,
 	className,
@@ -34,7 +32,6 @@ const VerticalDivider: React.FC<IVerticalDividerProps> = ({
 	insetBottomHeight,
 	showInsets,
 }) => {
-	// Initialize state variables
 	const [_id] = useState(id || undefined);
 	const [_className] = useState(className || "");
 	const [_width] = useState(width || 1);
@@ -44,11 +41,11 @@ const VerticalDivider: React.FC<IVerticalDividerProps> = ({
 	const [_insetBottomHeight] = useState(insetBottomHeight || 16);
 	const [_showInsets] = useState(showInsets || false);
 
-	let _finalWidth: string = _width.toString() + "px"; // Final width value
-	let _finalHeight: string = _height.toString() + "px"; // Final height value
+	let _finalWidth: string = _width.toString() + "px";
+	let _finalHeight: string = _height.toString() + "px";
 	let _finalInsetTopHeight = _insetTopHeight + "px";
 	let _finalInsetBottomHeight = _insetBottomHeight + "px";
-	let _finalInsetColor: string = _showInsets ? "red" : "transparent"; // Final inset color
+	let _finalInsetColor: string = _showInsets ? "red" : "transparent";
 
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
@@ -74,7 +71,6 @@ const VerticalDivider: React.FC<IVerticalDividerProps> = ({
 		.add("verticaldivider-inset-bottom-" + _theme)
 		.toString();
 
-	// Return the JSX element for the vertical divider
 	return (
 		<div id={_id} className={_computedComponentClassName}>
 			{_inset == "top" || _inset == "center" ? (
@@ -114,5 +110,4 @@ const VerticalDivider: React.FC<IVerticalDividerProps> = ({
 	);
 };
 
-// Export the vertical divider component as default
 export default VerticalDivider;
