@@ -1,15 +1,15 @@
-/* EVERYTHING */
+/* ==========EVERYTHING========== */
 *:focus {
 	outline: none;
 }
 
-/* HTML */
+/* ==========HTML========== */
 
 html {
 	font-size: 62.5%;
 }
 
-/* ROOT */
+/* ==========ROOT========== */
 :root {
 	/* MD3 */
 	--m3-white: #ffffff;
@@ -987,15 +987,23 @@ html {
 	--m3-composite-dark-surface-container-low-passthrough-on-surface-variant-opacity-12: #322f35;
 }
 
-/* TYPOGRAPHY */
-/* TEXT */
-.text {
+/* ==========TYPOGRAPHY========== /
+/ TEXT */
+.text,
+.text-display,
+.text-headline,
+.text-title-large,
+.text-label,
+.text-body {
 	font-family: "Roboto", sans-serif;
+	font-weight: 400;
 }
 
 /* TEXT / DISPLAY */
 .text-display {
-	font-weight: 400;
+	font-size: 5.7rem;
+	line-height: 6.4rem;
+	letter-spacing: -0.025rem;
 }
 
 /* TEXT / DISPLAY / LARGE */
@@ -1040,10 +1048,9 @@ html {
 	line-height: 3.2rem;
 }
 
-/* TEXT / TITLE */
-/* TEXT / TITLE / LARGE */
+/* TEXT / TITLE /
+/ TEXT / TITLE / LARGE */
 .text-title-large {
-	font-weight: 400;
 	font-size: 2.2rem;
 	line-height: 2.8rem;
 }
@@ -1065,10 +1072,13 @@ html {
 }
 
 /* TEXT / LABEL */
-.text-label {
+.text-label,
+.text-label-large,
+.text-label-medium,
+.text-label-small {
 	font-weight: 500;
-	letter-spacing: 0.05rem;
 }
+
 /* TEXT / LABEL / LARGE */
 .text-label-large {
 	font-size: 1.4rem;
@@ -1089,7 +1099,10 @@ html {
 }
 
 /* TEXT / BODY */
-.text-body {
+.text-body,
+.text-body-large,
+.text-body-medium,
+.text-body-small {
 	font-weight: 400;
 }
 
@@ -1114,15 +1127,18 @@ html {
 	letter-spacing: 0.04rem;
 }
 
+/* TEXT / LIGHT */
 .typography-light-theme {
 	color: var(--m3-sys-light-on-surface);
 }
 
+/* TEXT / DARK */
 .typography-dark-theme {
 	color: var(--m3-sys-dark-on-surface);
 }
 
-/* BUTTONS */
+/* ==========BUTTONS==========*/
+
 .btn {
 	box-sizing: border-box;
 	display: flex;
@@ -1164,10 +1180,12 @@ html {
 	background-color: var(--m3-sys-dark-primary);
 }
 
+/* BUTTONS / FILLED / ELEMENT / LIGHT */
 .btn-filled > .element-on-button-light-theme {
 	color: var(--m3-sys-light-on-primary);
 }
 
+/* BUTTONS / FILLED / ELEMENT / DARK */
 .btn-filled > .element-on-button-dark-theme {
 	color: var(--m3-sys-dark-on-primary);
 }
@@ -1254,10 +1272,12 @@ html {
 	border: 0.1rem solid var(--m3-sys-dark-outline);
 }
 
+/* BUTTONS / OUTLINED / ELEMENT / LIGHT */
 .btn-outlined > .element-on-button-light-theme {
 	color: var(--m3-sys-light-primary);
 }
 
+/* BUTTONS / OUTLINED / ELEMENT / DARK */
 .btn-outlined > .element-on-button-dark-theme {
 	color: var(--m3-sys-dark-primary);
 }
@@ -1318,10 +1338,12 @@ html {
 	padding: 1rem 1.2rem;
 }
 
+/* BUTTONS / TEXT / LIGHT */
 .btn-text > .element-on-button-light-theme {
 	color: var(--m3-sys-light-primary);
 }
 
+/* BUTTONS / TEXT / DARK */
 .btn-text > .element-on-button-dark-theme {
 	color: var(--m3-sys-dark-primary);
 }
@@ -1373,16 +1395,18 @@ html {
 	box-shadow: var(--m3-elevation-light-1);
 }
 
-.btn-elevated > .element-on-button-light-theme {
-	color: var(--m3-sys-light-primary);
-}
-
 /* BUTTONS / ELEVATED / DARK */
 .btn-elevated.btn-dark-theme {
 	background-color: var(--m3-sys-dark-surface-container-low);
 	box-shadow: var(--m3-elevation-dark-1);
 }
 
+/* BUTTONS / ELEVATED / ELEMENT / LIGHT */
+.btn-elevated > .element-on-button-light-theme {
+	color: var(--m3-sys-light-primary);
+}
+
+/* BUTTONS / ELEVATED / ELEMENT / DARK */
 .btn-elevated > .element-on-button-dark-theme {
 	color: var(--m3-sys-dark-primary);
 }
@@ -1449,15 +1473,17 @@ html {
 	background-color: var(--m3-sys-light-secondary-container);
 }
 
-.btn-tonal > .element-on-button-light-theme {
-	color: var(--m3-sys-light-on-secondary-container);
-}
-
 /* BUTTONS / TONAL / DARK */
 .btn-tonal.btn-dark-theme {
 	background-color: var(--m3-sys-dark-secondary-container);
 }
 
+/* BUTTONS / TONAL / ELEMENT / LIGHT */
+.btn-tonal > .element-on-button-light-theme {
+	color: var(--m3-sys-light-on-secondary-container);
+}
+
+/* BUTTONS / TONAL / ELEMENT / DARK */
 .btn-tonal > .element-on-button-dark-theme {
 	color: var(--m3-sys-dark-on-secondary-container);
 }
@@ -1539,13 +1565,13 @@ html {
 	box-shadow: none;
 }
 
-/* ICONS */
+/* ==========ICONS========== */
 .material-symbols-outlined {
 	pointer-events: none;
 	font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 20;
 }
 
-/* SWITCHES */
+/* ==========SWITCHES========== */
 .switch {
 	display: flex;
 	min-width: 5.2rem;
@@ -1743,7 +1769,7 @@ html {
 	display: none;
 }
 
-/* CHECKBOXES */
+/* ==========CHECKBOXES========== */
 .checkbox {
 	width: 1.8rem;
 	height: 1.8rem;
@@ -1912,7 +1938,7 @@ html {
 	background-color: var(--m3-state-layers-dark-error-opacity-16);
 }
 
-/* BADGES */
+/* ==========BADGES========== */
 .badge {
 	border-radius: 10rem;
 	display: flex;
@@ -1972,7 +1998,7 @@ html {
 	font-weight: normal;
 }
 
-/* RADIO BUTTONS */
+/* ==========RADIO BUTTONS========== */
 input[type="radio"] {
 	cursor: pointer;
 	appearance: none;
@@ -2002,6 +2028,8 @@ input[type="radio"]::before {
 	transition: 120ms transform ease-in-out;
 	margin: 0 auto;
 }
+
+/* RADIO BUTTON / DOT / CHECKED */
 
 input[type="radio"]:checked::before {
 	transform: scale(1);
@@ -2159,7 +2187,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-/* INPUT-CHIPS */
+/* ==========INPUT-CHIPS========== */
 
 /* INPUT-CHIPS / LIGHT */
 .inputchip.inputchip-light-theme {
@@ -2361,7 +2389,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	padding: 0rem 0.4rem;
 }
 
-/* ASSIST-CHIPS */
+/* ==========ASSIST-CHIPS========== */
 
 .assistchip {
 	padding: 0rem 1.6rem;
@@ -2553,9 +2581,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	height: 1.4rem;
 }
 
-/* CARDS */
-
-/* STACKED CARDS */
+/* ==========STACKED CARDS========== */
 
 .stacked-card {
 	max-width: 100%;
