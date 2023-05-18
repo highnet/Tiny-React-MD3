@@ -1,6 +1,3 @@
-/*
- */
-
 import React from "react";
 import { getPreferredScheme } from "../../../Gizmos/Themeing";
 import { StringBuilder } from "../../../Gizmos/StringBuilder";
@@ -38,7 +35,11 @@ const StackedCardsFrame: React.FC = () => {
 					💳 Cards 💳
 				</Typography>
 			</div>
-			<StackedCard></StackedCard>
+			<StackedCard
+				text={
+					"iuhjfds fiuhfdshiu fdshiu weknj siuojh dsakdsakm sdadadsad11111111111111111111111111111112222222222222222222"
+				}
+			/>
 			<CodeSnippet>{"<StackedCard></StackedCard>"}</CodeSnippet>
 		</div>
 	);
