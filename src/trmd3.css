@@ -2558,8 +2558,8 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 /* STACKED CARDS */
 
 .stacked-card {
-	max-width: 36rem;
-	height: 48rem;
+	max-width: 100%;
+	height: auto;
 }
 
 .stacked-card-outlined {
@@ -2570,26 +2570,19 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 
 .stacked-card-header {
 	box-sizing: border-box;
-	max-width: 36rem;
 	height: 7.2rem;
 	display: flex;
-	flex-direction: row;
 	align-items: center;
-	padding-left: 1.6rem;
-	padding-right: 0.4rem;
-	padding-top: 1.2rem;
-	padding-bottom: 1.2rem;
+	padding: 1.2rem 0.4rem;
 }
 
 .stacked-card-media {
 	box-sizing: border-box;
-	max-width: 36rem;
 	height: 18.8rem;
 }
 
 .stacked-card-text-content {
 	box-sizing: border-box;
-	max-width: 36rem;
 	height: 22rem;
 }
 
@@ -2644,6 +2637,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 
 .stacked-card-text-content-headline {
 	width: 100%;
+	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	padding: 0rem;
@@ -2665,22 +2659,11 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	gap: 0.8rem;
 }
 
-.stacked-card-header-content-text-header {
-	overflow: clip;
-	text-overflow: ellipsis;
-}
-
-.stacked-card-header-content-text-subheader {
-	overflow: clip;
-	text-overflow: ellipsis;
-}
-
-.stacked-card-text-content-headline-title {
-	overflow: clip;
-	text-overflow: ellipsis;
-}
-
-.stacked-card-text-content-headline-subhead {
+.stacked-card-header-content-text-header,
+.stacked-card-header-content-text-subheader,
+.stacked-card-text-content-headline-title,
+.stacked-card-text-content-headline-subhead,
+.stacked-card-text-content-supporting-text-text {
 	overflow: clip;
 	text-overflow: ellipsis;
 }
@@ -2691,7 +2674,15 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	max-height: 4rem;
 }
 
-.stacked-card-text-content-supporting-text-text {
-	overflow: clip;
-	text-overflow: ellipsis;
+.stacked-card-media {
+	box-sizing: border-box;
+	max-width: 36rem;
+	height: 18.8rem;
+	overflow: hidden;
+}
+
+.stacked-card-media img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
