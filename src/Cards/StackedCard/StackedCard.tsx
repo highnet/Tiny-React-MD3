@@ -10,10 +10,33 @@ const StackedCard: React.FC<IStackedCardsProps> = ({
 	id,
 	className,
 	configuration,
+	initial,
+	header,
+	subheader,
+	iconButtonIconName,
+	title,
+	subhead,
+	text,
+	onPrimaryButtonClick,
+	primaryButtonLabel,
+	onSecondaryButtonClick,
+	secondaryButtonLabel,
 }) => {
 	const [_id] = useState(id || undefined);
 	const [_className] = useState(className || "");
 	const [_config] = useState(configuration || "outlined");
+	const [_initial] = useState(initial?.charAt(0) || "A");
+	const [_header] = useState(header || "Header");
+	const [_subheader] = useState(subheader || "Subheader");
+	const [_iconButtonIconName] = useState(iconButtonIconName || "more_vert");
+	const [_title] = useState(title || "Title");
+	const [_subhead] = useState(subhead || "Subhead");
+	const [_text] = useState(
+		text ||
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+	);
+	const [_primaryButtonLabel] = useState(primaryButtonLabel || "");
+	const [_secondaryButtonLabel] = useState(secondaryButtonLabel || "");
 
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
@@ -26,13 +49,27 @@ const StackedCard: React.FC<IStackedCardsProps> = ({
 		.add(_className)
 		.toString();
 
+	const handlePrimaryButtonClick = () => {
+		if (onPrimaryButtonClick) {
+			onPrimaryButtonClick();
+			console.log("Stacked Card Primary button clicked");
+		}
+	};
+
+	const handleSecondaryButtonClick = () => {
+		if (onSecondaryButtonClick) {
+			onSecondaryButtonClick();
+			console.log("Stacked Card Secondary button clicked");
+		}
+	};
+
 	return (
 		<div id={_id} className={_computedComponentClassName}>
 			<div className="stacked-card-header">
 				<div className="stacked-card-header-content">
 					<div className="stacked-card-header-content-monogram">
 						<div className="stacked-card-header-content-monogram-initial">
-							<Typography variant="text-title-medium">A</Typography>
+							<Typography variant="text-title-medium">{_initial}</Typography>
 						</div>
 					</div>
 
@@ -41,27 +78,54 @@ const StackedCard: React.FC<IStackedCardsProps> = ({
 							className="stacked-card-header-content-text-header"
 							variant="text-title-medium"
 						>
-							Header
+							{_header}
 						</Typography>
-						<Typography variant="text-body-medium">Subheader</Typography>
+						<Typography
+							className="stacked-card-header-content-text-subheader"
+							variant="text-body-medium"
+						>
+							{_subheader}
+						</Typography>
 					</div>
 				</div>
 				<div className="stacked-card-header-icon-button">
-					<Icon>more_vert</Icon>
+					<Icon>{_iconButtonIconName}</Icon>
 				</div>
 			</div>
 			<div className="stacked-card-media">
 				<img src="default-media.png"></img>
 			</div>
 			<div className="stacked-card-text-content">
-				<Typography variant="text-body-large">Title</Typography>
-				<Typography variant="text-body-medium">Subhead</Typography>
-				<Typography variant="text-body-medium">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod tempor
-				</Typography>
-				<Button configuration="outlined"></Button>
-				<Button></Button>
+				<div className="stacked-card-text-content-headline">
+					<Typography
+						variant="text-body-large"
+						className="stacked-card-text-content-headline-title"
+					>
+						{_title}
+					</Typography>
+					<Typography
+						variant="text-body-medium"
+						className="stacked-card-text-content-headline-subhead"
+					>
+						{_subhead}
+					</Typography>
+				</div>
+				<div className="stacked-card-text-content-supporting-text">
+					<Typography
+						className="stacked-card-text-content-supporting-text-text"
+						variant="text-body-medium"
+					>
+						{_text}
+					</Typography>
+				</div>
+				<div className="stacked-card-text-content-actions">
+					<Button onClick={handleSecondaryButtonClick} configuration="outlined">
+						{_secondaryButtonLabel}
+					</Button>
+					<Button onClick={handlePrimaryButtonClick}>
+						{_primaryButtonLabel}
+					</Button>
+				</div>
 			</div>
 		</div>
 	);

@@ -2558,8 +2558,8 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 /* STACKED CARDS */
 
 .stacked-card {
-	width: 36rem;
-	height: 48rem;
+	max-width: 100%;
+	height: auto;
 }
 
 .stacked-card-outlined {
@@ -2570,26 +2570,19 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 
 .stacked-card-header {
 	box-sizing: border-box;
-	width: 36rem;
 	height: 7.2rem;
 	display: flex;
-	flex-direction: row;
 	align-items: center;
-	padding-left: 1.6rem;
-	padding-right: 0.4rem;
-	padding-top: 1.2rem;
-	padding-bottom: 1.2rem;
+	padding: 1.2rem 0.4rem;
 }
 
 .stacked-card-media {
 	box-sizing: border-box;
-	width: 36rem;
 	height: 18.8rem;
 }
 
 .stacked-card-text-content {
 	box-sizing: border-box;
-	width: 36rem;
 	height: 22rem;
 }
 
@@ -2606,12 +2599,14 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .stacked-card-header-content-text {
 	display: flex;
 	flex-direction: column;
+	max-width: 23.6rem;
 }
 
 .stacked-card-header-content {
 	display: flex;
 	gap: 1.6rem;
-	width: 29.2rem;
+	max-width: 29.2rem;
+	width: 100%;
 }
 
 .stacked-card-header-content-text-header {
@@ -2628,4 +2623,66 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.stacked-card-text-content {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 1.6rem;
+	gap: 3.2rem;
+	overflow: clip;
+}
+
+.stacked-card-text-content-headline {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0rem;
+	max-width: 32.8rem;
+	text-align: left;
+}
+
+.stacked-card-text-content-supporting-text > .text {
+	text-align: left;
+}
+
+.stacked-card-text-content-actions {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: flex-start;
+	padding: 0rem;
+	gap: 0.8rem;
+}
+
+.stacked-card-header-content-text-header,
+.stacked-card-header-content-text-subheader,
+.stacked-card-text-content-headline-title,
+.stacked-card-text-content-headline-subhead,
+.stacked-card-text-content-supporting-text-text {
+	overflow: clip;
+	text-overflow: ellipsis;
+}
+
+.stacked-card-text-content-supporting-text {
+	width: 100%;
+	max-width: 32.8rem;
+	max-height: 4rem;
+}
+
+.stacked-card-media {
+	box-sizing: border-box;
+	max-width: 36rem;
+	height: 18.8rem;
+	overflow: hidden;
+}
+
+.stacked-card-media img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
