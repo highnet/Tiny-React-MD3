@@ -1,5 +1,6 @@
 import { StringBuilder } from "../../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../../Gizmos/Themeing";
+import CodeSnippet from "../../../TRMD3/CodeSnippet";
 import Typography from "../../../Typography/Typography";
 import VerticalDivider from "../VerticalDivider";
 
@@ -28,36 +29,25 @@ const VerticalDividersFrame: React.FC = () => {
 			<Typography variant="text-title-large">Vertical Dividers</Typography>
 			<Typography variant="text-label-small">Inset None</Typography>
 			<VerticalDivider inset={"none"} />
-			<pre>
-				<code className="language-html">
-					{" "}
-					{'<VerticalDivider inset={"none"} />'}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>{"<VerticalDivider inset={'none'} />"}</CodeSnippet>
 			<Typography variant="text-label-small">Inset Top</Typography>
 			<VerticalDivider inset={"top"} showInsets={true} insetTopHeight={50} />
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						'<VerticalDivider inset={"top"} showInsets={true} insetTopHeight={50} />'
-					}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>
+				{
+					"<VerticalDivider inset={'top'} showInsets={true} insetTopHeight={50} />"
+				}
+			</CodeSnippet>
 			<Typography variant="text-label-small">Inset Bottom</Typography>
 			<VerticalDivider
 				inset={"bottom"}
 				insetBottomHeight={50}
 				showInsets={true}
 			/>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						'<VerticalDivider inset={"bottom"} insetBottomHeight={50} showInsets={true} />'
-					}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>
+				{
+					'<VerticalDivider inset={"bottom"} insetBottomHeight={50} showInsets={true} />'
+				}
+			</CodeSnippet>
 			<Typography variant="text-label-small">Inset Center</Typography>
 			<VerticalDivider
 				inset={"center"}
@@ -65,14 +55,11 @@ const VerticalDividersFrame: React.FC = () => {
 				insetTopHeight={50}
 				showInsets={true}
 			/>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						'<VerticalDivider inset={"center"} insetBottomHeight={50} insetTopHeight={50} showInsets={true} />'
-					}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>
+				{
+					'<VerticalDivider inset={"center"} insetBottomHeight={50} insetTopHeight={50} showInsets={true} />'
+				}
+			</CodeSnippet>
 		</div>
 	);
 };

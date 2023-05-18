@@ -1,5 +1,6 @@
 import { StringBuilder } from "../../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../../Gizmos/Themeing";
+import CodeSnippet from "../../../TRMD3/CodeSnippet";
 import Typography from "../../../Typography/Typography";
 import InputChip from "../InputChip";
 
@@ -35,36 +36,21 @@ const InputChipsFrame: React.FC = () => {
 			<Typography variant={"text-title-large"}>Input Chips</Typography>
 			<Typography variant={"text-label-small"}>Label Only</Typography>
 			<InputChip onClick={undefined}></InputChip>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{"<InputChip onClick={undefined}></InputChip>"}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>{"<InputChip onClick={undefined}></InputChip>"}</CodeSnippet>
 			<Typography variant={"text-label-small"}>
 				Label & trailing icon
 			</Typography>
 			<InputChip trailingIcon={true} onClick={undefined}></InputChip>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						"<InputChip trailingIcon={true} onClick={undefined}></InputChip>"
-					}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>
+				{"<InputChip trailingIcon={true} onClick={undefined}></InputChip>"}
+			</CodeSnippet>
 			<Typography variant={"text-label-small"} className={"text-label-small"}>
 				Leading icon & label
 			</Typography>
 			<InputChip leadingIcon={true} onClick={undefined}></InputChip>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						"<InputChip leadingIcon={true} onClick={undefined}></InputChip>"
-					}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>
+				{"<InputChip leadingIcon={true} onClick={undefined}></InputChip>"}
+			</CodeSnippet>
 			<Typography variant={"text-label-small"} className={"text-label-small"}>
 				Leading icon, label & trailing icon
 			</Typography>
@@ -73,24 +59,18 @@ const InputChipsFrame: React.FC = () => {
 				trailingIcon={true}
 				onClick={undefined}
 			></InputChip>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						"<InputChip leadingIcon={true} trailingIcon={true} onClick={undefined}></InputChip>"
-					}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>
+				{
+					"<InputChip leadingIcon={true} trailingIcon={true} onClick={undefined}></InputChip>"
+				}
+			</CodeSnippet>
 			<Typography variant={"text-label-small"} className={"text-label-small"}>
 				Label & avatar
 			</Typography>
 			<InputChip avatar={true} onClick={undefined}></InputChip>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{"<InputChip avatar={true} onClick={undefined}></InputChip>"}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>
+				{"<InputChip avatar={true} onClick={undefined}></InputChip>"}
+			</CodeSnippet>
 			<Typography variant={"text-label-small"} className={"text-label-small"}>
 				Label, avatar & trailing icon
 			</Typography>
@@ -99,14 +79,11 @@ const InputChipsFrame: React.FC = () => {
 				trailingIcon={true}
 				onClick={undefined}
 			></InputChip>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						"<InputChip avatar={true} trailingIcon={true} onClick={undefined}></InputChip>"
-					}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>
+				{
+					"<InputChip avatar={true} trailingIcon={true} onClick={undefined}></InputChip>"
+				}
+			</CodeSnippet>
 		</div>
 	);
 };

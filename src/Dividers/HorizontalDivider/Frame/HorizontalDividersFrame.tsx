@@ -1,5 +1,6 @@
 import { StringBuilder } from "../../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../../Gizmos/Themeing";
+import CodeSnippet from "../../../TRMD3/CodeSnippet";
 import Typography from "../../../Typography/Typography";
 import HorizontalDivider from "../HorizontalDivider";
 
@@ -43,42 +44,29 @@ const HorizontalDividersFrame: React.FC = () => {
 					variant="text-title-large"
 					className={_computedTrmd3SectionTitlesClassName}
 				>
-					👉 Dividers 👆
+					➕ Dividers ➕
 				</Typography>
 			</div>
 			<Typography variant={"text-title-large"}>Horizontal Dividers</Typography>
 			<Typography variant={"text-label-small"}>Inset None</Typography>
 			<HorizontalDivider inset={"none"} />
-			<pre>
-				<code className="language-html">
-					{" "}
-					{'<HorizontalDivider inset={"none"} />'}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>{"<HorizontalDivider inset={'none'} />"}</CodeSnippet>
+
 			<Typography variant={"text-label-small"}>Inset Right</Typography>
 			<HorizontalDivider inset={"right"} showInsets={true} />
-			<pre>
-				<code className="language-html">
-					{" "}
-					{'<HorizontalDivider inset={"right"} showInsets={true} />'}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>
+				{"<HorizontalDivider inset={'right'} showInsets={true} />"}
+			</CodeSnippet>
 			<Typography variant={"text-label-small"}>Inset Left</Typography>
 			<HorizontalDivider inset={"left"} showInsets={true} />
-			<pre>
-				<code className="language-html">
-					{" "}
-					{'<HorizontalDivider inset={"left"} showInsets={true} />'}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>
+				{"<HorizontalDivider inset={'left'} showInsets={true} />"}
+			</CodeSnippet>
 			<Typography variant={"text-label-small"}>Inset Center</Typography>
 			<HorizontalDivider inset={"center"} showInsets={true} />
-			<pre>
-				<code className="language-html">
-					{" "}
-					{'<HorizontalDivider inset={"center"} showInsets={true} />'}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>
+				{"<HorizontalDivider inset={'center'} showInsets={true} />"}
+			</CodeSnippet>
 		</div>
 	);
 };
