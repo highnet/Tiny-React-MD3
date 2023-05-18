@@ -6,6 +6,7 @@ TODO: NEEDS DOCUMENTATION
 
 import { StringBuilder } from "../../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../../Gizmos/Themeing";
+import CodeSnippet from "../../../TRMD3/CodeSnippet";
 import Typography from "../../../Typography/Typography";
 import AssistChip from "../AssistChip";
 
@@ -27,33 +28,22 @@ const AssistChipsFrame: React.FC = () => {
 			<Typography variant={"text-title-large"}>Assist Chips</Typography>
 			<Typography variant={"text-label-small"}>Label Only</Typography>
 			<AssistChip onClick={undefined}></AssistChip>
+			<CodeSnippet>
+				{"<AssistChip onClick={undefined}></AssistChip>"}
+			</CodeSnippet>
 
-			<pre>
-				<code className="language-html">
-					{" "}
-					{"<AssistChip onClick={undefined}></AssistChip>"}{" "}
-				</code>
-			</pre>
 			<Typography variant={"text-label-small"}>
 				Label only - elevated
 			</Typography>
 			<AssistChip elevated={true} onClick={undefined}></AssistChip>
-
-			<pre>
-				<code className="language-html">
-					{" "}
-					{"<AssistChip elevated={true} onClick={undefined}></AssistChip>"}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>
+				{"<AssistChip elevated={true} onClick={undefined}></AssistChip>"}
+			</CodeSnippet>
 			<Typography variant={"text-label-small"}>Label & icon</Typography>
 			<AssistChip iconType="icon" onClick={undefined}></AssistChip>
-
-			<pre>
-				<code className="language-html">
-					{" "}
-					{'<AssistChip iconType="icon" onClick={undefined}></AssistChip>'}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>
+				{'<AssistChip iconType="icon" onClick={undefined}></AssistChip>'}
+			</CodeSnippet>
 			<Typography variant={"text-label-small"}>
 				Label & icon - elevated
 			</Typography>

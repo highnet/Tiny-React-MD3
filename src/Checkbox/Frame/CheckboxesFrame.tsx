@@ -1,5 +1,6 @@
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
+import CodeSnippet from "../../TRMD3/CodeSnippet";
 import Typography from "../../Typography/Typography";
 import Checkbox from "../Checkbox";
 
@@ -50,24 +51,15 @@ const CheckboxesFrame: React.FC = () => {
 				</Typography>
 			</div>
 			<Typography variant={"text-title-large"}>Default</Typography>
-
 			<Checkbox selected={true} onChange={undefined} />
-			<pre>
-				<code className="language-html">
-					{" "}
-					{"<Checkbox selected={true} onChange={undefined} />"}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>
+				{`<Checkbox selected={true} onChange={undefined} />`}
+			</CodeSnippet>
 			<Typography variant={"text-label-small"}>Error</Typography>
 			<Checkbox selected={true} onChange={undefined} configuration={"error"} />
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						'<Checkbox selected={true} onChange={undefined} configuration={"error"} />'
-					}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>
+				{`<Checkbox selected={true} onChange={undefined} configuration={"error"} />`}
+			</CodeSnippet>
 		</div>
 	);
 };
