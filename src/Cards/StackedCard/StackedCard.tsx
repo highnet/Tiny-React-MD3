@@ -54,14 +54,20 @@ const StackedCard: React.FC<IStackedCardsProps> = ({
 				<img src="default-media.png"></img>
 			</div>
 			<div className="stacked-card-text-content">
-				<Typography variant="text-body-large">Title</Typography>
-				<Typography variant="text-body-medium">Subhead</Typography>
-				<Typography variant="text-body-medium">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod tempor
-				</Typography>
-				<Button configuration="outlined"></Button>
-				<Button></Button>
+				<div className="stacked-card-text-content-headline">
+					<Typography variant="text-body-large">Title</Typography>
+					<Typography variant="text-body-medium">Subhead</Typography>
+				</div>
+				<div className="stacked-card-text-content-supporting-text">
+					<Typography variant="text-body-medium">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor
+					</Typography>
+				</div>
+				<div className="stacked-card-text-content-actions">
+					<Button configuration="outlined"></Button>
+					<Button></Button>
+				</div>
 			</div>
 		</div>
 	);

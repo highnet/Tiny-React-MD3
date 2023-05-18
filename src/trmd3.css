@@ -2629,3 +2629,35 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	justify-content: center;
 	align-items: center;
 }
+
+.stacked-card-text-content {
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 16px;
+	gap: 32px;
+}
+
+.stacked-card-text-content-headline {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+}
+
+.stacked-card-text-content-supporting-text > .text {
+	text-align: left;
+}
+
+.stacked-card-text-content-actions {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 8px;
+}
