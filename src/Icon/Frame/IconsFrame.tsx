@@ -14,6 +14,7 @@ import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 import Typography from "../../Typography/Typography";
 import Icon from "../Icon";
+import CodeSnippet from "../../TRMD3/CodeSnippet";
 
 const IconsFrame: React.FC = () => {
 	const _theme =
@@ -60,21 +61,13 @@ const IconsFrame: React.FC = () => {
 				</a>
 			</Typography>
 			<Icon>hive</Icon>
-			<pre>
-				<code className="language-html"> {"<Icon>hive</Icon>"} </code>
-			</pre>
+			<CodeSnippet>{"<Icon>hive</Icon>"}</CodeSnippet>
 			<Icon>spa</Icon>
-			<pre>
-				<code className="language-html"> {"<Icon>spa</Icon>"} </code>
-			</pre>
-			<Icon>air</Icon>{" "}
-			<pre>
-				<code className="language-html"> {"<Icon>air</Icon>"} </code>
-			</pre>
+			<CodeSnippet>{"<Icon>spa</Icon>"}</CodeSnippet>
+			<Icon>air</Icon>
+			<CodeSnippet>{"<Icon>air</Icon>"}</CodeSnippet>
 			<Icon>water</Icon>
-			<pre>
-				<code className="language-html"> {"<Icon>water</Icon>"} </code>
-			</pre>
+			<CodeSnippet>{"<Icon>water</Icon>"}</CodeSnippet>
 		</div>
 	);
 };

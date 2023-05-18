@@ -52,24 +52,16 @@ const AssistChipsFrame: React.FC = () => {
 				elevated={true}
 				onClick={undefined}
 			></AssistChip>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						'<AssistChip iconType="icon" elevated={true} onClick={undefined}></AssistChip>'
-					}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>
+				{
+					'<AssistChip iconType="icon" elevated={true} onClick={undefined}></AssistChip>'
+				}
+			</CodeSnippet>
 			<Typography variant={"text-label-small"}>Label & favicon</Typography>
 			<AssistChip iconType="favicon" onClick={undefined}></AssistChip>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						'<AssistChip iconType="favicon" onClick={undefined}></AssistChip>'
-					}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>
+				{'<AssistChip iconType="favicon" onClick={undefined}></AssistChip>'}
+			</CodeSnippet>
 			<Typography variant={"text-label-small"}>
 				Label & favicon - elevated
 			</Typography>
@@ -78,24 +70,16 @@ const AssistChipsFrame: React.FC = () => {
 				elevated={true}
 				onClick={undefined}
 			></AssistChip>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						'<AssistChip iconType="favicon" elevated={true} onClick={undefined} ></AssistChip>'
-					}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>
+				{
+					'<AssistChip iconType="favicon" elevated={true} onClick={undefined} ></AssistChip>'
+				}
+			</CodeSnippet>
 			<Typography variant={"text-label-small"}>Label & branded icon</Typography>
 			<AssistChip iconType="branded" onClick={undefined}></AssistChip>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						'<AssistChip iconType="branded" onClick={undefined}></AssistChip>'
-					}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>
+				{'<AssistChip iconType="branded" onClick={undefined}></AssistChip>'}
+			</CodeSnippet>
 			<Typography variant={"text-label-small"}>
 				Label & branded icon - elevated
 			</Typography>
@@ -104,14 +88,11 @@ const AssistChipsFrame: React.FC = () => {
 				elevated={true}
 				onClick={undefined}
 			></AssistChip>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						'<AssistChip iconType="branded" elevated={true} onClick={undefined}></AssistChip>'
-					}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>
+				{
+					'<AssistChip iconType="branded" elevated={true} onClick={undefined}></AssistChip>'
+				}
+			</CodeSnippet>
 		</div>
 	);
 };

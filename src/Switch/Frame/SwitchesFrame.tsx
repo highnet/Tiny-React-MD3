@@ -17,6 +17,7 @@
 
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
+import CodeSnippet from "../../TRMD3/CodeSnippet";
 import Typography from "../../Typography/Typography";
 import Switch from "../Switch";
 
@@ -52,12 +53,9 @@ const SwitchesFrame: React.FC = () => {
 			</div>
 			<Typography variant="text-label-small">No Icon</Typography>
 			<Switch selected={true} onChange={undefined} />
-			<pre>
-				<code className="language-html">
-					{" "}
-					{"<Switch selected={true} onChange={undefined} />"}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>
+				{"<Switch selected={true} onChange={undefined} />"}
+			</CodeSnippet>
 			<Typography variant="text-label-small">With Icon</Typography>
 			<Switch
 				selected={true}
@@ -66,14 +64,11 @@ const SwitchesFrame: React.FC = () => {
 				iconNameSelected={"warning"}
 				iconNameDeselected={"house"}
 			/>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						'<Switch selected={true} onChange={undefined} icon={true} iconNameSelected={"warning"} iconNameDeselected={"house"} />'
-					}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>
+				{
+					'<Switch selected={true} onChange={undefined} icon={true} iconNameSelected={"warning"} iconNameDeselected={"house"} />'
+				}
+			</CodeSnippet>
 		</div>
 	);
 };

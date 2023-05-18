@@ -6,6 +6,7 @@ TODO: NEEDS DOCUMENTATION
 
 import { StringBuilder } from "../../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../../Gizmos/Themeing";
+import CodeSnippet from "../../../TRMD3/CodeSnippet";
 import Typography from "../../../Typography/Typography";
 import SuggestionChip from "../SuggestionChip";
 
@@ -28,9 +29,7 @@ const SuggestionChipsFrame: React.FC = () => {
 
 			<Typography variant={"text-label-small"}>Outlined</Typography>
 			<SuggestionChip></SuggestionChip>
-			<pre>
-				<code className="language-html"> {"<Chip></Chip>"} </code>
-			</pre>
+			<CodeSnippet>{"<SuggestionChip></SuggestionChip>"}</CodeSnippet>
 		</div>
 	);
 };
