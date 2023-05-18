@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { initializeApp } from "firebase/app";
 import { getDownloadURL, getStorage, ref } from "firebase/storage";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
+import Typography from "../../Typography/Typography";
 
 const firebaseConfig = {
 	storageBucket: "gs://tiny-react-md3.appspot.com",
@@ -37,15 +38,18 @@ const Hero: React.FC<IHeroProps> = ({ hasLogo }) => {
 					""
 				)}
 			</div>
-
-			<div className="text text-headline text-headline-large main-title-trmd3">
+			<Typography
+				className={"main-title-trmd3 main-title-" + _theme + "-trmd3"}
+				variant="text-display-large"
+			>
 				TRMD3
-			</div>
-
-			<div className="text text-headline text-headline-small ">
+			</Typography>
+			<Typography
+				variant="text-headline-large"
+				className={"main-subtitle-trmd3 main-subtitle-" + _theme + "-trmd3"}
+			>
 				Tiny React Material Design 3
-			</div>
-
+			</Typography>
 			<ul
 				className=" 
 			text text-title text-title-large hero-features-trmd3"

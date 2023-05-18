@@ -24,7 +24,6 @@ import FilterChipsFrame from "./Chips/FilterChip/Frame/FilterChipsFrame";
 import SuggestionChipsFrame from "./Chips/SuggestionChip/Frame/SuggestionChipsFrame";
 import StackedCardsFrame from "./Cards/StackedCard/Frame/StackedCardsFrame";
 import Typography from "./Typography/Typography";
-import { StringBuilder } from "./Gizmos/StringBuilder";
 
 function App() {
 	console.log(`	👋 Welcome to TRMD3! 👋	`);
@@ -52,16 +51,22 @@ function App() {
 
 	return (
 		<div className={"App"}>
-			<Hero hasLogo={true} />
-			<Cookietrail />
-			<TourGuide />
 			<StickyToolbar
 				toggleTheme={handleToggleTheme}
 				scrollToTop={handleScrollToTop}
 			/>
-			<StackedCardsFrame />
-			<InputChipsFrame />
+			<div id="section-0">
+				<Hero hasLogo={false} />
+				<Cookietrail />
+				<TourGuide />
+			</div>
+			<div id="section-1">
+				<StackedCardsFrame />
+				<InputChipsFrame />
+			</div>
+
 			<AssistChipsFrame />
+
 			<FilterChipsFrame />
 			<SuggestionChipsFrame />
 			<HorizontalDividersFrame />
@@ -73,6 +78,14 @@ function App() {
 			<ButtonsFrame />
 			<TypographiesFrame />
 			<IconsFrame />
+			<div onClick={handleScrollToTop} className="black-bottom-bar-trmd3">
+				<Typography
+					variant="text-display-medium"
+					className="black-bottom-bar-text-trmd3"
+				>
+					TRMD3
+				</Typography>
+			</div>
 		</div>
 	);
 }
