@@ -68,7 +68,7 @@ const ButtonsFrame: React.FC = () => {
 			<Typography variant={"text-label-small"}>No Icon</Typography>
 			<Button configuration="filled" onClick={undefined}></Button>
 			<CodeSnippet>
-				{`Button configuration="filled" onClick={undefined}></Button>`}
+				{`<Button configuration="filled" onClick={undefined}></Button>`}
 			</CodeSnippet>
 			<Typography variant={"text-label-small"}>With Icon</Typography>
 			<Button
