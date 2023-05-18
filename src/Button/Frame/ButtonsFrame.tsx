@@ -68,7 +68,7 @@ const ButtonsFrame: React.FC = () => {
 			<Typography variant={"text-label-small"}>No Icon</Typography>
 			<Button configuration="filled" onClick={undefined}></Button>
 			<CodeSnippet>
-				{`<Button configuration="filled" onClick={undefined}></Button>`}
+				{`Button configuration="filled" onClick={undefined}></Button>`}
 			</CodeSnippet>
 			<Typography variant={"text-label-small"}>With Icon</Typography>
 			<Button
@@ -77,25 +77,15 @@ const ButtonsFrame: React.FC = () => {
 				iconName={"search"}
 				onClick={undefined}
 			></Button>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						'<Button configuration="filled" icon={true} iconName={"search"} onClick={undefined}></Button>'
-					}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>
+				{`<Button configuration="filled" icon={true} iconName={"search"} onClick={undefined}></Button>`}
+			</CodeSnippet>
 			<Typography variant={"text-title-large"}>Outlined Buttons</Typography>
 			<Typography variant={"text-label-small"}>No Icon</Typography>
 			<Button configuration="outlined" onClick={undefined}></Button>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						'<Button configuration="outlined" onClick={undefined}></Button>'
-					}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>
+				{`<Button configuration="outlined" onClick={undefined}></Button>`}
+			</CodeSnippet>
 			<Typography variant={"text-label-small"}>With Icon</Typography>
 			<Button
 				configuration="outlined"
@@ -103,23 +93,15 @@ const ButtonsFrame: React.FC = () => {
 				icon={true}
 				iconName={"search"}
 			></Button>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						'<Button configuration="outlined" onClick={undefined} icon={true} iconName={"search"}></Button>'
-					}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>
+				{`<Button configuration="outlined" onClick={undefined} icon={true} iconName={"search"}></Button>`}
+			</CodeSnippet>
 			<Typography variant={"text-title-large"}>Text Buttons</Typography>
 			<Typography variant={"text-label-small"}>No Icon</Typography>
 			<Button configuration="text" onClick={undefined}></Button>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{'<Button configuration="text" onClick={undefined}></Button>'}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>
+				{`<Button configuration="text" onClick={undefined}></Button>`}
+			</CodeSnippet>
 			<Typography variant={"text-label-small"}>With Icon</Typography>
 			<Button
 				configuration="text"
@@ -127,25 +109,15 @@ const ButtonsFrame: React.FC = () => {
 				icon={true}
 				iconName={"search"}
 			></Button>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						'<Button configuration="text" onClick={undefined} icon={true} iconName={"search"}></Button>'
-					}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>
+				{`<Button configuration="text" onClick={undefined} icon={true} iconName={"search"}></Button>`}
+			</CodeSnippet>
 			<Typography variant={"text-title-large"}>Elevated Buttons</Typography>
 			<Typography variant={"text-label-small"}>No Icon</Typography>
 			<Button configuration="elevated" onClick={undefined}></Button>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						'<Button configuration="elevated" onClick={undefined}></Button>'
-					}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>
+				{`<Button configuration="elevated" onClick={undefined}></Button>`}
+			</CodeSnippet>
 			<Typography variant={"text-label-small"}>With Icon</Typography>
 			<Button
 				configuration="elevated"
@@ -153,23 +125,15 @@ const ButtonsFrame: React.FC = () => {
 				icon={true}
 				iconName={"search"}
 			></Button>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						'<Button configuration="elevated" onClick={undefined} icon={true} iconName={"search"}></Button>'
-					}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>
+				{`<Button configuration="elevated" onClick={undefined} icon={true} iconName={"search"}></Button>`}
+			</CodeSnippet>
 			<Typography variant={"text-title-large"}>Tonal Buttons</Typography>
 			<Typography variant={"text-label-small"}>No Icon</Typography>
 			<Button configuration="tonal" onClick={undefined}></Button>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{'<Button configuration="tonal" onClick={undefined}></Button>'}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>
+				{`<Button configuration="tonal" onClick={undefined}></Button>`}
+			</CodeSnippet>
 			<Typography variant={"text-label-small"}>With Icon</Typography>
 			<Button
 				configuration="tonal"
@@ -177,14 +141,9 @@ const ButtonsFrame: React.FC = () => {
 				icon={true}
 				iconName={"search"}
 			></Button>
-			<pre>
-				<code className="language-html">
-					{" "}
-					{
-						'<Button configuration="tonal" onClick={undefined} icon={true} iconName={"search"}></Button>'
-					}{" "}
-				</code>
-			</pre>
+			<CodeSnippet>
+				{`<Button configuration="tonal" onClick={undefined} icon={true} iconName={"search"}></Button>`}
+			</CodeSnippet>
 		</div>
 	);
 };
