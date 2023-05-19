@@ -103,12 +103,14 @@ html {
 
 .sticky-toolbar-trmd3 {
 	display: flex;
-	position: sticky;
-	top: 0;
+	position: fixed;
 	transform: translateY(1rem);
 	padding: 0rem 3rem 3rem 3rem;
 	gap: 1rem;
 	z-index: 999;
+	top: 0;
+	left: 0;
+	right: 0;
 }
 
 /* THEME TOGGLING */

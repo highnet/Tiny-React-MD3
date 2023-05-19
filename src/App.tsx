@@ -20,8 +20,6 @@ import { getPreferredScheme, toggleTheme } from "./Gizmos/Themeing";
 import { scrollToSection } from "./Gizmos/Scrolling";
 import InputChipsFrame from "./Chips/InputChip/Frame/InputChipsFrame";
 import AssistChipsFrame from "./Chips/AssistChip/Frame/AssistChipsFrame";
-import FilterChipsFrame from "./Chips/FilterChip/Frame/FilterChipsFrame";
-import SuggestionChipsFrame from "./Chips/SuggestionChip/Frame/SuggestionChipsFrame";
 import StackedCardsFrame from "./Cards/StackedCard/Frame/StackedCardsFrame";
 import Typography from "./Typography/Typography";
 
