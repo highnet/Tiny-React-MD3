@@ -29,8 +29,8 @@ html {
 .section-trmd3 {
 	background-position: center center;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
 	background-size: cover;
+	background-color: var(--m3-sys-light-primary);
 }
 
 #section-0-trmd3 {
