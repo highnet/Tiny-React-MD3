@@ -26,7 +26,7 @@ html {
 }
 
 #section-0 {
-	background-image: url("/section-0-bg.svg");
+	background-image: url("/bg-0.svg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -34,7 +34,7 @@ html {
 }
 
 #section-1 {
-	background-image: url("/section-1-bg.svg");
+	background-image: url("/bg-1.svg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
