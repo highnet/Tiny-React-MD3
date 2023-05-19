@@ -55,22 +55,22 @@ function App() {
 				toggleTheme={handleToggleTheme}
 				scrollToTop={handleScrollToTop}
 			/>
-			<div id="section-0">
+			<div id="section-0-trmd3" className="section-trmd3">
 				<Hero hasLogo={false} />
 				<Cookietrail />
 				<TourGuide />
 			</div>
-			<div id="section-1">
+			<div id="section-1-trmd3" className="section-trmd3">
 				<StackedCardsFrame />
 				<InputChipsFrame />
 			</div>
-
-			<AssistChipsFrame />
-
-			<FilterChipsFrame />
-			<SuggestionChipsFrame />
-			<HorizontalDividersFrame />
-			<VerticalDividersFrame />
+			<div id="section-2-trmd3" className="section-trmd3">
+				<AssistChipsFrame />
+			</div>
+			<div id="section-3-trmd3" className="section-trmd3">
+				<HorizontalDividersFrame />
+				<VerticalDividersFrame />
+			</div>
 			<RadioButtonsFrame />
 			<BadgesFrame />
 			<CheckboxesFrame />

@@ -1127,16 +1127,6 @@ html {
 	letter-spacing: 0.04rem;
 }
 
-/* TEXT / LIGHT */
-.typography-light-theme {
-	color: var(--m3-sys-light-on-surface);
-}
-
-/* TEXT / DARK */
-.typography-dark-theme {
-	color: var(--m3-sys-dark-on-surface);
-}
-
 /* ==========BUTTONS==========*/
 
 .btn {
@@ -2586,6 +2576,10 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .stacked-card {
 	max-width: 100%;
 	height: auto;
+}
+
+.stacked-card-light-theme {
+	color: var(--m3-sys-light-on-surface);
 }
 
 .stacked-card-outlined {
