@@ -34,7 +34,7 @@ html {
 }
 
 #section-1 {
-	background-image: url("section-1-bg.svg");
+	background-image: url("/section-1-bg.svg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -186,14 +186,6 @@ html {
 	text-align: center;
 	overflow: hidden;
 	padding: 3rem;
-}
-
-.tourguide-section-light-theme-trmd3 {
-	color: #533566;
-}
-
-.tourguide-section-dark-theme-trmd3 {
-	color: #ffffff;
 }
 
 .tourguide-button {
