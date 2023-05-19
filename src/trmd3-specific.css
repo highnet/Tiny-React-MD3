@@ -266,11 +266,12 @@ html {
 	padding-top: 0.5rem;
 	padding-bottom: 3.5rem;
 	text-align: center;
+	display: flex;
 }
 
 .frame-light-theme {
-	color: var(--m3-sys-light-on-primary);
-	background-color: rgba(243, 236, 244, 0.5);
+	color: var(--m3-sys-light-on-surface);
+	background-color: rgba(243, 236, 244, 0.9);
 	box-shadow: var(--m3-elevation-light-1);
 }
 
@@ -363,6 +364,10 @@ html {
 	scale: 1.1;
 }
 
+.code-snippet-copy-icon-light-theme-trmd3 {
+	color: var(--m3-sys-light-on-surface);
+}
+
 .code-snippet-trmd3:active .code-snippet-copy-icon-light-theme-trmd3 {
 	color: var(--m3-sys-light-primary);
 }
@@ -382,6 +387,7 @@ html {
 	overflow-y: hidden;
 	font-size: 1.4rem;
 	font-family: "Comic Mono", monospace;
+	background-color: rgba(236, 230, 240, 0.9);
 }
 
 @media screen and (max-width: 600px) {
