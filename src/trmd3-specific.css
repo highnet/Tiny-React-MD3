@@ -49,6 +49,18 @@ html {
 	background-image: url("/bg-3.svg");
 }
 
+#section-4-trmd3 {
+	background-image: url("/bg-4.svg");
+}
+
+#section-5-trmd3 {
+	background-image: url("/bg-5.svg");
+}
+
+#section-6-trmd3 {
+	background-image: url("/bg-6.svg");
+}
+
 /* TRMD3 */
 .logo-trmd3 {
 	max-width: 30rem;

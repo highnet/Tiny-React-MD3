@@ -71,13 +71,19 @@ function App() {
 				<HorizontalDividersFrame />
 				<VerticalDividersFrame />
 			</div>
-			<RadioButtonsFrame />
-			<BadgesFrame />
-			<CheckboxesFrame />
-			<SwitchesFrame />
-			<ButtonsFrame />
-			<TypographiesFrame />
-			<IconsFrame />
+			<div id="section-4-trmd3" className="section-trmd3">
+				<RadioButtonsFrame />
+				<BadgesFrame />
+				<CheckboxesFrame />
+			</div>
+			<div id="section-5-trmd3" className="section-trmd3">
+				<SwitchesFrame />
+				<ButtonsFrame />
+			</div>
+			<div id="section-6-trmd3" className="section-trmd3">
+				<TypographiesFrame />
+				<IconsFrame />
+			</div>
 			<div onClick={handleScrollToTop} className="black-bottom-bar-trmd3">
 				<Typography
 					variant="text-display-medium"
