@@ -282,13 +282,13 @@ html {
 	display: flex;
 }
 
-.frame-light-theme {
+.frame-light-theme-trmd3 {
 	color: var(--m3-sys-light-on-surface);
 	background-color: rgba(243, 236, 244, 0.9);
 	box-shadow: var(--m3-elevation-light-1);
 }
 
-.frame-dark-theme {
+.frame-dark-theme-trmd3 {
 	color: var(--m3-sys-dark-on-surface);
 	background-color: rgba(20, 18, 24, 0.9);
 	box-shadow: var(--m3-elevation-dark-1);
@@ -424,9 +424,10 @@ html {
 	white-space: pre-wrap;
 }
 
-/* BLACK BOTTOM BAR */
+/* BOTTOM NAV BAR */
 
-.black-bottom-bar-trmd3 {
+.bottom-nav-bar-trmd3 {
+	display: flex;
 	bottom: 0;
 	left: 0;
 	width: 100%;
@@ -436,11 +437,19 @@ html {
 	z-index: 100;
 }
 
-.black-bottom-bar-text-trmd3 {
+.bottom-nav-bar-trmd3-text-trmd3 {
+	margin-left: 1rem;
+}
+
+.bottom-nav-bar-up-text-trmd3 {
+	cursor: pointer;
+	width: 100%;
+	position: absolute;
+}
+
+.bottom-nav-bar-text-trmd3 {
 	color: white;
 	font-weight: bold;
-	height: 100%;
 	text-align: center;
 	line-height: 8rem;
-	cursor: pointer;
 }

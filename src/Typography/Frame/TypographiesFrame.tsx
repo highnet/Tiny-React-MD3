@@ -17,7 +17,7 @@ const TypographiesFrame: React.FC = () => {
 		.add("flex-trmd3")
 		.add("flex-column-trmd3")
 		.add("frame-trmd3")
-		.add("frame-" + _theme)
+		.add("frame-" + _theme + "-trmd3")
 		.add("typographies-frame-trmd3")
 		.add("typographies-frame-" + _theme + "-trmd3")
 		.toString();

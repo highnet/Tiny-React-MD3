@@ -21,7 +21,7 @@ import { scrollToSection } from "./Gizmos/Scrolling";
 import InputChipsFrame from "./Chips/InputChip/Frame/InputChipsFrame";
 import AssistChipsFrame from "./Chips/AssistChip/Frame/AssistChipsFrame";
 import StackedCardsFrame from "./Cards/StackedCard/Frame/StackedCardsFrame";
-import Typography from "./Typography/Typography";
+import BottomNavBar from "./TRMD3/BottomNavBar/BottomNavBar";
 
 function App() {
 	console.log(`	👋 Welcome to TRMD3! 👋	`);
@@ -82,14 +82,7 @@ function App() {
 				<TypographiesFrame />
 				<IconsFrame />
 			</div>
-			<div onClick={handleScrollToTop} className="black-bottom-bar-trmd3">
-				<Typography
-					variant="text-display-medium"
-					className="black-bottom-bar-text-trmd3"
-				>
-					TRMD3
-				</Typography>
-			</div>
+			<BottomNavBar scrollToTop={handleScrollToTop} />
 		</div>
 	);
 }

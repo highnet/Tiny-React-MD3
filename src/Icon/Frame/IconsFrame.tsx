@@ -24,7 +24,7 @@ const IconsFrame: React.FC = () => {
 		.add("flex-trmd3")
 		.add("flex-column-trmd3")
 		.add("frame-trmd3")
-		.add("frame-" + _theme)
+		.add("frame-" + _theme + "-trmd3")
 		.add("icons-frame-trmd3")
 		.add("icons-frame-" + _theme + "-trmd3")
 		.toString();
