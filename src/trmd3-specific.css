@@ -273,7 +273,6 @@ html {
 .frame-trmd3 {
 	width: 70%;
 	margin: 0 auto;
-	overflow: clip;
 	border-radius: 0.3rem;
 	align-items: center;
 	justify-content: center;
@@ -290,8 +289,8 @@ html {
 }
 
 .frame-dark-theme {
-	color: var(--m3-sys-dark-on-primary);
-	background-color: var(--m3-sys-dark-surface);
+	color: var(--m3-sys-dark-on-surface);
+	background-color: rgba(20, 18, 24, 0.9);
 	box-shadow: var(--m3-elevation-dark-1);
 }
 
@@ -390,6 +389,14 @@ html {
 	color: var(--m3-sys-dark-primary);
 }
 
+.code-snippet-code-light-theme-trmd3 {
+	background-color: var(--m3-sys-light-surface-container-high) !important;
+}
+
+.code-snippet-code-dark-theme-trmd3 {
+	background-color: var(--m3-sys-dark-surface-container-high) !important;
+}
+
 /* HIGHLIGHT.JS */
 .hljs {
 	box-shadow: var(--m3-elevation-light-2);
@@ -401,7 +408,6 @@ html {
 	overflow-y: hidden;
 	font-size: 1.4rem;
 	font-family: "Comic Mono", monospace;
-	background-color: rgba(236, 230, 240, 0.9);
 }
 
 @media screen and (max-width: 600px) {

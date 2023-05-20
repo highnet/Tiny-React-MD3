@@ -35,11 +35,7 @@ const StackedCardsFrame: React.FC = () => {
 					💳 Cards 💳
 				</Typography>
 			</div>
-			<StackedCard
-				text={
-					"iuhjfds fiuhfdshiu fdshiu weknj siuojh dsakdsakm sdadadsad11111111111111111111111111111112222222222222222222"
-				}
-			/>
+			<StackedCard />
 			<CodeSnippet>{"<StackedCard></StackedCard>"}</CodeSnippet>
 		</div>
 	);
