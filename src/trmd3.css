@@ -1143,31 +1143,88 @@ html {
 	border: 0;
 	width: fit-content;
 	height: 4rem;
-}
-
-/* BUTTONS / TEXT (LABEL) */
-.btn text {
+  }
+  
+  /* BUTTONS / TEXT (LABEL) */
+  .btn text {
 	display: flex;
 	align-items: center;
 	text-align: center;
 	letter-spacing: 0.01rem;
-}
-
-/* BUTTONS / WITH ICON */
-.btn-with-icon {
+  }
+  
+  /* BUTTONS / WITH ICON */
+  .btn-with-icon {
 	flex-direction: row;
 	padding: 0rem 0.9rem;
 	gap: 0.8rem;
+  }
+  
+  /* BUTTONS / TONAL / DISABLED / HOVER, BUTTONS / FILLED / DISABLED / HOVER */
+  .btn-tonal:disabled.btn-tonal:hover,
+  .btn-filled:disabled.btn-filled:hover {
+	box-shadow: none;
+  }
+  
+  /* BUTTONS / OUTLINED / DISABLED */
+  .btn-outlined:disabled {
+	opacity: 38%;
+	background-color: transparent;
+  }
+
+/* BUTTONS / TEXT */
+.btn-text {
+	background-color: transparent;
+	padding: 1rem 1.2rem;
 }
 
+/* BUTTONS / FILLED / DISABLED */
+.btn-filled:disabled {
+	opacity: 38%;
+}
+
+/* BUTTONS / TEXT / DISABLED */
+.btn-text:disabled {
+	opacity: 38%;
+	pointer-events: none;
+}
+
+/* BUTTONS / ELEVATED / HOVER / LIGHT */
+.btn-elevated:hover.btn-light-theme {
+	background-color: var(
+		--m3-composite-light-surface-container-low-passthrough-primary-opacity-08
+	);
+
+	box-shadow: var(--m3-elevation-light-2);
+}
+
+/* BUTTONS / ELEVATED / DISABLED */
+.btn-elevated:disabled {
+	box-shadow: none;
+	pointer-events: none;
+	opacity: 38%;
+}
+
+/* BUTTONS / TONAL / FOCUS */
+.btn-tonal:focus {
+	box-shadow: none;
+}
+
+/* BUTTONS / TONAL / ACTIVE */
+.btn-tonal:active {
+	box-shadow: none;
+}
+
+/* BUTTONS / TONAL / DISABLED */
+.btn-tonal:disabled {
+	opacity: 38%;
+	pointer-events: none;
+}
+
+/* BUTTONS / LIGHT */
 /* BUTTONS / FILLED / LIGHT */
 .btn-filled.btn-light-theme {
 	background-color: var(--m3-sys-light-primary);
-}
-
-/* BUTTONS / FILLED / DARK */
-.btn-filled.btn-dark-theme {
-	background-color: var(--m3-sys-dark-primary);
 }
 
 /* BUTTONS / FILLED / ELEMENT / LIGHT */
@@ -1175,24 +1232,11 @@ html {
 	color: var(--m3-sys-light-on-primary);
 }
 
-/* BUTTONS / FILLED / ELEMENT / DARK */
-.btn-filled > .element-on-button-dark-theme {
-	color: var(--m3-sys-dark-on-primary);
-}
-
 /* BUTTONS / FILLED / HOVER / LIGHT */
 .btn-filled:hover.btn-light-theme {
 	box-shadow: var(--m3-elevation-light-1);
 	background-color: var(
 		--m3-composite-light-primary-passthrough-on-primary-opacity-08
-	);
-}
-
-/* BUTTONS / FILLED / HOVER / DARK */
-.btn-filled:hover.btn-dark-theme {
-	box-shadow: var(--m3-elevation-dark-1);
-	background-color: var(
-		--m3-composite-dark-primary-passthrough-on-primary-opacity-08
 	);
 }
 
@@ -1204,14 +1248,6 @@ html {
 	);
 }
 
-/* BUTTONS / FILLED / FOCUS / DARK */
-.btn-filled:focus.btn-dark-theme {
-	box-shadow: none;
-	background-color: var(
-		--m3-composite-dark-primary-passthrough-on-primary-opacity-12
-	);
-}
-
 /* BUTTONS / FILLED / ACTIVE / LIGHT */
 .btn-filled:active.btn-light-theme {
 	box-shadow: none;
@@ -1220,34 +1256,10 @@ html {
 	);
 }
 
-/* BUTTONS / FILLED / ACTIVE / DARK */
-.btn-filled:active.btn-dark-theme {
-	box-shadow: none;
-	background-color: var(
-		--m3-composite-dark-primary-passthrough-on-primary-opacity-12
-	);
-}
-
-/* BUTTONS / FILLED / DISABLED */
-.btn-filled:disabled {
-	opacity: 38%;
-}
-
 /* BUTTONS / FILLED / DISABLED / LIGHT */
 .btn-filled:disabled.btn-light-theme {
 	background-color: var(--m3-state-layers-light-on-surface-opacity-12);
 	color: var(--m3-sys-light-on-surface);
-}
-
-/* BUTTONS / FILLED / DISABLED / DARK */
-.btn-filled:disabled.btn-dark-theme {
-	background-color: var(--m3-state-layers-dark-on-surface-opacity-12);
-	color: var(--m3-sys-dark-on-surface);
-}
-
-/* BUTTONS / FILLED / DISABLED / HOVER */
-.btn-filled:disabled.btn-filled:hover {
-	box-shadow: none;
 }
 
 /* BUTTONS / OUTLINED / LIGHT */
@@ -1256,20 +1268,9 @@ html {
 	border: 0.1rem solid var(--m3-sys-light-outline);
 }
 
-/* BUTTONS / OUTLINED / DARK */
-.btn-outlined.btn-dark-theme {
-	background-color: var(--m3-sys-dark-surface);
-	border: 0.1rem solid var(--m3-sys-dark-outline);
-}
-
 /* BUTTONS / OUTLINED / ELEMENT / LIGHT */
 .btn-outlined > .element-on-button-light-theme {
 	color: var(--m3-sys-light-primary);
-}
-
-/* BUTTONS / OUTLINED / ELEMENT / DARK */
-.btn-outlined > .element-on-button-dark-theme {
-	color: var(--m3-sys-dark-primary);
 }
 
 /* BUTTONS / OUTLINED / HOVER / LIGHT */
@@ -1277,9 +1278,9 @@ html {
 	background-color: var(--m3-state-layers-light-primary-opacity-08);
 }
 
-/* BUTTONS / OUTLINED / HOVER / DARK */
-.btn-outlined:hover.btn-dark-theme {
-	background-color: var(--m3-state-layers-dark-primary-opacity-08);
+/* BUTTONS / OUTLINED / ACTIVE / LIGHT */
+.btn-outlined:active.btn-light-theme {
+	background-color: var(--m3-state-layers-light-primary-opacity-12);
 }
 
 /* BUTTONS / OUTLINED / FOCUS / LIGHT */
@@ -1288,54 +1289,15 @@ html {
 	border: 0.1rem solid var(--m3-sys-light-primary);
 }
 
-/* BUTTONS / OUTLINED / FOCUS / DARK */
-.btn-outlined:focus.btn-dark-theme {
-	background-color: var(--m3-state-layers-dark-primary-opacity-12);
-	border: 0.1rem solid var(--m3-sys-dark-primary);
-}
-
-/* BUTTONS / OUTLINED / ACTIVE / LIGHT */
-.btn-outlined:active.btn-light-theme {
-	background-color: var(--m3-state-layers-light-primary-opacity-12);
-}
-
-/* BUTTONS / OUTLINED / ACTIVE / DARK */
-.btn-outlined:active.btn-dark-theme {
-	background-color: var(--m3-state-layers-dark-primary-opacity-12);
-}
-
-/* BUTTONS / OUTLINED / DISABLED */
-.btn-outlined:disabled {
-	opacity: 38%;
-	background-color: transparent;
-}
-
 /* BUTTONS / OUTLINED / DISABLED / LIGHT */
 .btn-outlined:disabled.btn-light-theme {
 	color: var(--m3-sys-light-on-surface);
 	border: 0.1rem solid var(--m3-state-layers-light-on-surface-opacity-12);
 }
 
-/* BUTTONS / OUTLINED / DISABLED / DARK */
-.btn-outlined:disabled.btn-dark-theme {
-	color: var(--m3-sys-dark-on-surface);
-	border: 0.1rem solid var(--m3-state-layers-dark-on-surface-opacity-12);
-}
-
-/* BUTTONS / TEXT */
-.btn-text {
-	background-color: transparent;
-	padding: 1rem 1.2rem;
-}
-
 /* BUTTONS / TEXT / LIGHT */
 .btn-text > .element-on-button-light-theme {
 	color: var(--m3-sys-light-primary);
-}
-
-/* BUTTONS / TEXT / DARK */
-.btn-text > .element-on-button-dark-theme {
-	color: var(--m3-sys-dark-primary);
 }
 
 /* BUTTONS / TEXT / WITH ICON */
@@ -1348,35 +1310,14 @@ html {
 	background-color: var(--m3-state-layers-light-primary-opacity-08);
 }
 
-/* BUTTONS / TEXT / HOVER / DARK */
-.btn-text:hover.btn-dark-theme {
-	background-color: var(--m3-state-layers-dark-primary-opacity-08);
-}
-
 /* BUTTONS / TEXT / FOCUS / LIGHT */
 .btn-text:focus.btn-light-theme {
 	background-color: var(--m3-state-layers-light-primary-opacity-12);
 }
 
-/* BUTTONS / TEXT / FOCUS / DARK */
-.btn-text:focus.btn-dark-theme {
-	background-color: var(--m3-state-layers-dark-primary-opacity-12);
-}
-
 /* BUTTONS / TEXT / ACTIVE / LIGHT */
 .btn-text:active.btn-light-theme {
 	background-color: var(--m3-state-layers-light-primary-opacity-12);
-}
-
-/* BUTTONS / TEXT / ACTIVE / DARK */
-.btn-text:active.btn-dark-theme {
-	background-color: var(--m3-state-layers-dark-primary-opacity-12);
-}
-
-/* BUTTONS / TEXT / DISABLED */
-.btn-text:disabled {
-	opacity: 38%;
-	pointer-events: none;
 }
 
 /* BUTTONS / ELEVATED / LIGHT */
@@ -1385,29 +1326,167 @@ html {
 	box-shadow: var(--m3-elevation-light-1);
 }
 
+/* BUTTONS / ELEVATED / ELEMENT / LIGHT */
+.btn-elevated > .element-on-button-light-theme {
+	color: var(--m3-sys-light-primary);
+}
+
+/* BUTTONS / ELEVATED / FOCUS / LIGHT */
+.btn-elevated:focus.btn-light-theme {
+	background-color: var(
+		--m3-composite-light-surface-container-low-passthrough-primary-opacity-08
+	);
+	box-shadow: var(--m3-elevation-light-1);
+}
+
+/* BUTTONS / ELEVATED / ACTIVE / LIGHT */
+.btn-elevated:active.btn-light-theme {
+	background-color: var(
+		--m3-composite-light-surface-container-low-passthrough-primary-opacity-12
+	);
+	box-shadow: var(--m3-elevation-light-1);
+}
+
+/* BUTTONS / TONAL / LIGHT */
+.btn-tonal.btn-light-theme {
+	background-color: var(--m3-sys-light-secondary-container);
+}
+
+/* BUTTONS / TONAL / ELEMENT / LIGHT */
+.btn-tonal > .element-on-button-light-theme {
+	color: var(--m3-sys-light-on-secondary-container);
+}
+
+/* BUTTONS / TONAL / HOVER / LIGHT */
+.btn-tonal:hover.btn-light-theme {
+	background-color: var(
+		--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-08
+	);
+	box-shadow: var(--m3-elevation-light-1);
+}
+
+/* BUTTONS / TONAL / FOCUS / LIGHT */
+.btn-tonal:focus.btn-light-theme {
+	background-color: var(
+		--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-12
+	);
+}
+
+/* BUTTONS / TONAL / ACTIVE / LIGHT */
+.btn-tonal:active.btn-light-theme {
+	background-color: var(
+		--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-12
+	);
+}
+
+/* BUTTONS / TONAL / DISABLED / LIGHT */
+.btn-tonal:disabled.btn-light-theme {
+	background-color: var(--m3-state-layers-light-on-surface-opacity-12);
+	color: var(--m3-sys-light-on-surface);
+}
+
+/* BUTTONS / DARK */
+/* BUTTONS / FILLED / DARK */
+.btn-filled.btn-dark-theme {
+	background-color: var(--m3-sys-dark-primary);
+}
+
+/* BUTTONS / FILLED / ELEMENT / DARK */
+.btn-filled > .element-on-button-dark-theme {
+	color: var(--m3-sys-dark-on-primary);
+}
+
+/* BUTTONS / FILLED / HOVER / DARK */
+.btn-filled:hover.btn-dark-theme {
+	box-shadow: var(--m3-elevation-dark-1);
+	background-color: var(
+		--m3-composite-dark-primary-passthrough-on-primary-opacity-08
+	);
+}
+
+/* BUTTONS / FILLED / FOCUS / DARK */
+.btn-filled:focus.btn-dark-theme {
+	box-shadow: none;
+	background-color: var(
+		--m3-composite-dark-primary-passthrough-on-primary-opacity-12
+	);
+}
+/* BUTTONS / FILLED / ACTIVE / DARK */
+.btn-filled:active.btn-dark-theme {
+	box-shadow: none;
+	background-color: var(
+		--m3-composite-dark-primary-passthrough-on-primary-opacity-12
+	);
+}
+
+/* BUTTONS / FILLED / DISABLED / DARK */
+.btn-filled:disabled.btn-dark-theme {
+	background-color: var(--m3-state-layers-dark-on-surface-opacity-12);
+	color: var(--m3-sys-dark-on-surface);
+}
+
+/* BUTTONS / OUTLINED / DARK */
+.btn-outlined.btn-dark-theme {
+	background-color: var(--m3-sys-dark-surface);
+	border: 0.1rem solid var(--m3-sys-dark-outline);
+}
+
+/* BUTTONS / OUTLINED / ELEMENT / DARK */
+.btn-outlined > .element-on-button-dark-theme {
+	color: var(--m3-sys-dark-primary);
+}
+
+/* BUTTONS / OUTLINED / HOVER / DARK */
+.btn-outlined:hover.btn-dark-theme {
+	background-color: var(--m3-state-layers-dark-primary-opacity-08);
+}
+
+/* BUTTONS / OUTLINED / FOCUS / DARK */
+.btn-outlined:focus.btn-dark-theme {
+	background-color: var(--m3-state-layers-dark-primary-opacity-12);
+	border: 0.1rem solid var(--m3-sys-dark-primary);
+}
+
+/* BUTTONS / OUTLINED / ACTIVE / DARK */
+.btn-outlined:active.btn-dark-theme {
+	background-color: var(--m3-state-layers-dark-primary-opacity-12);
+}
+
+/* BUTTONS / OUTLINED / DISABLED / DARK */
+.btn-outlined:disabled.btn-dark-theme {
+	color: var(--m3-sys-dark-on-surface);
+	border: 0.1rem solid var(--m3-state-layers-dark-on-surface-opacity-12);
+}
+
+/* BUTTONS / TEXT / DARK */
+.btn-text > .element-on-button-dark-theme {
+	color: var(--m3-sys-dark-primary);
+}
+
+/* BUTTONS / TEXT / HOVER / DARK */
+.btn-text:hover.btn-dark-theme {
+	background-color: var(--m3-state-layers-dark-primary-opacity-08);
+}
+
+/* BUTTONS / TEXT / FOCUS / DARK */
+.btn-text:focus.btn-dark-theme {
+	background-color: var(--m3-state-layers-dark-primary-opacity-12);
+}
+
+/* BUTTONS / TEXT / ACTIVE / DARK */
+.btn-text:active.btn-dark-theme {
+	background-color: var(--m3-state-layers-dark-primary-opacity-12);
+}
+
 /* BUTTONS / ELEVATED / DARK */
 .btn-elevated.btn-dark-theme {
 	background-color: var(--m3-sys-dark-surface-container-low);
 	box-shadow: var(--m3-elevation-dark-1);
 }
 
-/* BUTTONS / ELEVATED / ELEMENT / LIGHT */
-.btn-elevated > .element-on-button-light-theme {
-	color: var(--m3-sys-light-primary);
-}
-
 /* BUTTONS / ELEVATED / ELEMENT / DARK */
 .btn-elevated > .element-on-button-dark-theme {
 	color: var(--m3-sys-dark-primary);
-}
-
-/* BUTTONS / ELEVATED / HOVER / LIGHT */
-.btn-elevated:hover.btn-light-theme {
-	background-color: var(
-		--m3-composite-light-surface-container-low-passthrough-primary-opacity-08
-	);
-
-	box-shadow: var(--m3-elevation-light-2);
 }
 
 /* BUTTONS / ELEVATED / HOVER / DARK */
@@ -1419,28 +1498,12 @@ html {
 	box-shadow: var(--m3-elevation-dark-2);
 }
 
-/* BUTTONS / ELEVATED / FOCUS / LIGHT */
-.btn-elevated:focus.btn-light-theme {
-	background-color: var(
-		--m3-composite-light-surface-container-low-passthrough-primary-opacity-08
-	);
-	box-shadow: var(--m3-elevation-light-1);
-}
-
 /* BUTTONS / ELEVATED / FOCUS / DARK */
 .btn-elevated:focus.btn-dark-theme {
 	background-color: var(
 		--m3-composite-dark-surface-container-low-passthrough-primary-opacity-12
 	);
 	box-shadow: var(--m3-elevation-dark-1);
-}
-
-/* BUTTONS / ELEVATED / ACTIVE / LIGHT */
-.btn-elevated:active.btn-light-theme {
-	background-color: var(
-		--m3-composite-light-surface-container-low-passthrough-primary-opacity-12
-	);
-	box-shadow: var(--m3-elevation-light-1);
 }
 
 /* BUTTONS / ELEVATED / ACTIVE / DARK */
@@ -1451,39 +1514,14 @@ html {
 	box-shadow: var(--m3-elevation-dark-1);
 }
 
-/* BUTTONS / ELEVATED / DISABLED */
-.btn-elevated:disabled {
-	box-shadow: none;
-	pointer-events: none;
-	opacity: 38%;
-}
-
-/* BUTTONS / TONAL / LIGHT */
-.btn-tonal.btn-light-theme {
-	background-color: var(--m3-sys-light-secondary-container);
-}
-
 /* BUTTONS / TONAL / DARK */
 .btn-tonal.btn-dark-theme {
 	background-color: var(--m3-sys-dark-secondary-container);
 }
 
-/* BUTTONS / TONAL / ELEMENT / LIGHT */
-.btn-tonal > .element-on-button-light-theme {
-	color: var(--m3-sys-light-on-secondary-container);
-}
-
 /* BUTTONS / TONAL / ELEMENT / DARK */
 .btn-tonal > .element-on-button-dark-theme {
 	color: var(--m3-sys-dark-on-secondary-container);
-}
-
-/* BUTTONS / TONAL / HOVER / LIGHT */
-.btn-tonal:hover.btn-light-theme {
-	background-color: var(
-		--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-08
-	);
-	box-shadow: var(--m3-elevation-light-1);
 }
 
 /* BUTTONS / TONAL / HOVER / DARK */
@@ -1494,34 +1532,10 @@ html {
 	box-shadow: var(--m3-elevation-dark-1);
 }
 
-/* BUTTONS / TONAL / FOCUS */
-.btn-tonal:focus {
-	box-shadow: none;
-}
-
-/* BUTTONS / TONAL / FOCUS / LIGHT */
-.btn-tonal:focus.btn-light-theme {
-	background-color: var(
-		--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-12
-	);
-}
-
 /* BUTTONS / TONAL / FOCUS / DARK */
 .btn-tonal:focus.btn-dark-theme {
 	background-color: var(
 		--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12
-	);
-}
-
-/* BUTTONS / TONAL / ACTIVE */
-.btn-tonal:active {
-	box-shadow: none;
-}
-
-/* BUTTONS / TONAL / ACTIVE / LIGHT */
-.btn-tonal:active.btn-light-theme {
-	background-color: var(
-		--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-12
 	);
 }
 
@@ -1532,27 +1546,10 @@ html {
 	);
 }
 
-/* BUTTONS / TONAL / DISABLED */
-.btn-tonal:disabled {
-	opacity: 38%;
-	pointer-events: none;
-}
-
-/* BUTTONS / TONAL / DISABLED / LIGHT */
-.btn-tonal:disabled.btn-light-theme {
-	background-color: var(--m3-state-layers-light-on-surface-opacity-12);
-	color: var(--m3-sys-light-on-surface);
-}
-
 /* BUTTONS / TONAL / DISABLED / DARK */
 .btn-tonal:disabled.btn-dark-theme {
 	background-color: var(--m3-state-layers-dark-on-surface-opacity-12);
 	color: var(--m3-sys-dark-on-surface);
-}
-
-/* BUTTONS / TONAL / DISABLED / HOVER */
-.btn-tonal:disabled.btn-tonal:hover {
-	box-shadow: none;
 }
 
 /* ==========ICONS========== */
