@@ -36,7 +36,7 @@ const StackedCardsFrame: React.FC = () => {
 				</Typography>
 			</div>
 			<StackedCard />
-			<CodeSnippet>{"<StackedCard></StackedCard>"}</CodeSnippet>
+			<CodeSnippet>{"<StackedCard />"}</CodeSnippet>
 		</div>
 	);
 };

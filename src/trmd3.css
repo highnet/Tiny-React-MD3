@@ -2576,6 +2576,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .stacked-card {
 	max-width: 100%;
 	height: auto;
+	overflow: clip;
 }
 
 .stacked-card-light-theme {
@@ -2598,12 +2599,19 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 
 .stacked-card-media {
 	box-sizing: border-box;
-	height: 18.8rem;
+	max-width: 36rem;
+	overflow: hidden;
 }
 
 .stacked-card-text-content {
 	box-sizing: border-box;
-	height: 22rem;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 1.6rem;
+	gap: 3.2rem;
+	overflow: clip;
 }
 
 .stacked-card-header-content-monogram-initial {
@@ -2691,7 +2699,11 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .stacked-card-text-content-supporting-text {
 	width: 100%;
 	max-width: 32.8rem;
-	max-height: 4rem;
+	overflow: auto;
+}
+.stacked-card-text-content-supporting-text-text {
+	width: 100%;
+	max-width: 32.8rem;
 }
 
 .stacked-card-media {
