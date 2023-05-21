@@ -284,13 +284,13 @@ html {
 
 .frame-light-theme-trmd3 {
 	color: var(--m3-sys-light-on-surface);
-	background-color: rgba(243, 236, 244, 0.9);
+	background-color: rgba(243, 236, 244, 0.7);
 	box-shadow: var(--m3-elevation-light-1);
 }
 
 .frame-dark-theme-trmd3 {
 	color: var(--m3-sys-dark-on-surface);
-	background-color: rgba(20, 18, 24, 0.9);
+	background-color: rgba(20, 18, 24, 0.7);
 	box-shadow: var(--m3-elevation-dark-1);
 }
 

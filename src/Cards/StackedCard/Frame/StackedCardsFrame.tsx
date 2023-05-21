@@ -36,7 +36,11 @@ const StackedCardsFrame: React.FC = () => {
 				</Typography>
 			</div>
 			<StackedCard />
-			<CodeSnippet>{"<StackedCard />"}</CodeSnippet>
+			<CodeSnippet>{'<StackedCard configuration="outlined"/>'}</CodeSnippet>
+			<StackedCard configuration="elevated" />
+			<CodeSnippet>{'<StackedCard configuration="elevated" />'}</CodeSnippet>
+			<StackedCard configuration="filled" />
+			<CodeSnippet>{'<StackedCard configuration="filled" />'}</CodeSnippet>
 		</div>
 	);
 };
