@@ -2584,18 +2584,36 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	color: var(--m3-sys-light-on-surface);
 }
 
-.stacked-card-outlined {
+.stacked-card-dark-theme {
+	color: var(--m3-sys-dark-on-surface);
+}
+
+.stacked-card-outlined.stacked-card-dark-theme {
+	border: 0.1rem solid var(--m3-sys-dark-outline-variant);
+	background-color: var(--m3-sys-dark-surface);
+}
+
+.stacked-card-outlined.stacked-card-light-theme {
 	border: 0.1rem solid var(--m3-sys-light-outline-variant);
 	background-color: var(--m3-sys-light-surface);
 }
 
-.stacked-card-elevated {
+.stacked-card-elevated.stacked-card-light-theme {
 	background-color: var(--m3-sys-light-surface-container-low);
 	box-shadow: var(--m3-elevation-light-1);
 }
 
-.stacked-card-filled {
+.stacked-card-elevated.stacked-card-dark-theme {
+	background-color: var(--m3-sys-dark-surface-container-low);
+	box-shadow: var(--m3-elevation-dark-1);
+}
+
+.stacked-card-filled.stacked-card-light-theme {
 	background-color: var(--m3-sys-light-surface-container-highest)
+}
+
+.stacked-card-filled.stacked-card-dark-theme {
+	background-color: var(--m3-sys-dark-surface-container-highest)
 }
 
 .stacked-card-header {
@@ -2627,10 +2645,25 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	width: 4rem;
 	height: 4rem;
 	border-radius: 50%;
-	background-color: var(--m3-sys-light-primary);
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.stacked-card-header-content-monogram-initial-light-theme {
+	background-color: var(--m3-sys-light-primary);
+}
+
+.stacked-card-header-content-monogram-initial-light-theme > .text {
+	color: var(--m3-sys-light-surface);
+}
+
+.stacked-card-header-content-monogram-initial-dark-theme {
+	background-color: var(--m3-sys-dark-primary);
+}
+
+.stacked-card-header-content-monogram-initial-dark-theme > .text {
+	color: var(--m3-sys-dark-surface);
 }
 
 .stacked-card-header-content-text {
@@ -2648,10 +2681,6 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 
 .stacked-card-header-content-text-header {
 	text-align: left;
-}
-
-.stacked-card-header-content-monogram-initial > .text {
-	color: var(--m3-sys-light-surface);
 }
 
 .stacked-card-header-icon-button {
@@ -2705,8 +2734,12 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	text-overflow: ellipsis;
 }
 
-.stacked-card-text-content-headline-subhead {
+.stacked-card-text-content-headline-subhead.stacked-card-light-theme{
 	color: var(--m3-sys-light-on-surface-variant);
+}
+
+.stacked-card-text-content-headline-subhead.stacked-card-dark-theme{
+	color: var(--m3-sys-dark-on-surface-variant);
 }
 
 .stacked-card-text-content-supporting-text {
@@ -2717,7 +2750,14 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .stacked-card-text-content-supporting-text-text {
 	width: 100%;
 	max-width: 32.8rem;
+}
+
+.stacked-card-text-content-supporting-text-text-light-theme{
 	color: var(--m3-sys-light-on-surface-variant);
+}
+
+.stacked-card-text-content-supporting-text-text-dark-theme {
+	color: var(--m3-sys-dark-on-surface-variant);
 }
 
 .stacked-card-media {

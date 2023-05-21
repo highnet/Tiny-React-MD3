@@ -46,7 +46,7 @@ You may supplement the following optional properties to a assist chip:
 
 ## ℹ️ Assist Chip
 
-<i>Chips help people enter information, make selections, filter content, or trigger actions.  </i>
+<i>Chips help people enter information, make selections, filter content, or trigger actions.</i>
 
 [FRAME_TEXT_PLACEHOLDER]
 

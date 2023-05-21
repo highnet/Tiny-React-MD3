@@ -67,8 +67,8 @@ const StackedCard: React.FC<IStackedCardsProps> = ({
 		<div id={_id} className={_computedComponentClassName}>
 			<div className="stacked-card-header">
 				<div className="stacked-card-header-content">
-					<div className="stacked-card-header-content-monogram">
-						<div className="stacked-card-header-content-monogram-initial">
+					<div className="stacked-card-header-content-monogram ">
+						<div className={"stacked-card-header-content-monogram-initial stacked-card-header-content-monogram-initial-" + _theme }>
 							<Typography variant="text-title-medium">{_initial}</Typography>
 						</div>
 					</div>
@@ -112,7 +112,7 @@ const StackedCard: React.FC<IStackedCardsProps> = ({
 				</div>
 				<div className="stacked-card-text-content-supporting-text">
 					<Typography
-						className="stacked-card-text-content-supporting-text-text"
+						className={"stacked-card-text-content-supporting-text-text stacked-card-text-content-supporting-text-text-" + _theme }
 						variant="text-body-medium"
 					>
 						{_text}
