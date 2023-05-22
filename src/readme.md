@@ -26,18 +26,18 @@ You may supplement the following optional properties to a assist chip:
 | -------- | ---- | -------- | ----------- | --------- |
 | <code>id</code> | <code>string</code> | <code>undefined</code> | <code>supplementary component id</code>| [IComponentProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Component/IComponentProps.tsx) |
 | <code>className</code> | <code>string</code> | <code>""</code> | <code>supplementary class names</code>| [IComponentProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Component/IComponentProps.tsx) | 
-| <code>configuration</code> | <code>string</code> | <code>"the style configuration of the component"</code> | <code>x</code>| [x](y) |
-| <code>initial</code> | <code>string</code> | <code>"the character of the card initial"</code> | <code>x</code>| [x](y) |
-| <code>header</code> | <code>string</code> | <code>"header text"</code> | <code>x</code>| [x](y) |
-| <code>subheader</code> | <code>string</code> | <code>"subheader text"</code> | <code>x</code>| [x](y) |    
-| <code>iconButtonIconName</code> | <code>string</code> | <code>"icon button icon name"</code> | <code>x</code>| [x](y) |
-| <code>title</code> | <code>string</code> | <code>"subheader text"</code> | <code>x</code>| [x](y) |    
-| <code>subhead</code> | <code>string</code> | <code>"subhead text"</code> | <code>x</code>| [x](y) |    
-| <code>text</code> | <code>string</code> | <code>"primary description text"</code> | <code>x</code>| [x](y) |    
-| <code>onPrimaryButtonClick</code> | <code>() => void</code> | <code>"function to run when primary button is clicked"</code> | <code>x</code>| [x](y) |    
-| <code>primaryButtonLabel</code> | <code>string</code> | <code>"primary button label text"</code> | <code>x</code>| [x](y) |    
-| <code>onSecondaryButtonClick</code> | <code>() => void</code> | <code>"function to run when secondary button is clicked"</code> | <code>x</code>| [x](y) |    
-| <code>secondaryButtonLabel</code> | <code>string</code> | <code>"secondary button label text"</code> | <code>x</code>| [x](y) |    
+| <code>configuration</code> | <code>string</code> | <code>"outlined"</code> | <code>the style configuration of the component</code>| [IStackedCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/IStackedCardsProps.tsx) |
+| <code>initial</code> | <code>string</code> | <code>"A"</code> | <code>the character of the card initial</code>| [IStackedCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/IStackedCardsProps.tsx) |
+| <code>header</code> | <code>string</code> | <code>"Header"</code> | <code>header text</code>| [IStackedCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/IStackedCardsProps.tsx) |
+| <code>subheader</code> | <code>string</code> | <code>"Subheader"</code> | <code>subheader text</code>| [IStackedCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/IStackedCardsProps.tsx) |    
+| <code>iconButtonIconName</code> | <code>string</code> | <code>"more_vert"</code> | <code>icon button icon name</code>| [IStackedCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/IStackedCardsProps.tsx) |
+| <code>title</code> | <code>string</code> | <code>"Title"</code> | <code>subheader text</code>| [IStackedCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/IStackedCardsProps.tsx) |    
+| <code>subhead</code> | <code>string</code> | <code>"Subhead"</code> | <code>subhead text</code>| [IStackedCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/IStackedCardsProps.tsx) |    
+| <code>text</code> | <code>string</code> | <code>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"</code> | <code>primary description text</code>| [IStackedCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/IStackedCardsProps.tsx) |    
+| <code>onPrimaryButtonClick</code> | <code>() => void</code> | <code>undefined</code> | <code>function to run when primary button is clicked</code>| [IStackedCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/IStackedCardsProps.tsx) |    
+| <code>primaryButtonLabel</code> | <code>string</code> | <code>""</code> | <code>primary button label text</code>| [IStackedCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/IStackedCardsProps.tsx) |    
+| <code>onSecondaryButtonClick</code> | <code>() => void</code> | <code>undefined</code> | <code>function to run when secondary button is clicked</code>| [IStackedCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/IStackedCardsProps.tsx) |    
+| <code>secondaryButtonLabel</code> | <code>string</code> | <code>""</code> | <code>secondary button label text</code>| [IStackedCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/IStackedCardsProps.tsx) |    
     
 ## ℹ️ Assist Chip
 
