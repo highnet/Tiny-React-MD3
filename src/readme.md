@@ -38,6 +38,8 @@ You may supplement the following optional properties to a stacked card:
 | <code>primaryButtonLabel</code> | <code>string</code> | <code>""</code> | <code>primary button label text</code>| [IStackedCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/IStackedCardsProps.tsx) |    
 | <code>onSecondaryButtonClick</code> | <code>() => void</code> | <code>undefined</code> | <code>function to run when secondary button is clicked</code>| [IStackedCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/IStackedCardsProps.tsx) |    
 | <code>secondaryButtonLabel</code> | <code>string</code> | <code>""</code> | <code>secondary button label text</code>| [IStackedCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/IStackedCardsProps.tsx) |
+| <code>imageSrc</code> | <code>string</code> | <code>"default-media.png"</code> | <code>source path of the image</code>| [IStackedCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/IStackedCardsProps.tsx) |
+| <code>onHeaderIconButtonClick</code> | <code>() => void</code> | <code>undefined</code> | <code>function to run when header icon button is licked</code>| [IStackedCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/IStackedCardsProps.tsx) |
     
 The supported options of <code>{configuration}</code> are the following:
 
