@@ -65,7 +65,7 @@ const Checkbox: React.FC<ICheckboxProps> = ({
 		.toString();
 
 	let _computedComponentIconClassName = new StringBuilder()
-		.add("checkbox-icon")
+		.add("icon-on-checkbox")
 		.toString();
 
 	let _computedComponentOverlayClassName = new StringBuilder()
@@ -88,9 +88,7 @@ const Checkbox: React.FC<ICheckboxProps> = ({
 			) : (
 				""
 			)}
-
 			<div className={_computedComponentOverlayClassName}></div>
-
 			{children}
 		</div>
 	);
