@@ -23,6 +23,7 @@ import React, { useState } from "react";
 import { ISwitchProps } from "./ISwitchProps";
 import { StringBuilder } from "../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../Gizmos/Themeing";
+import Icon from "../Icon/Icon";
 
 const Switch: React.FC<ISwitchProps> = ({
 	disabled,
@@ -107,14 +108,17 @@ const Switch: React.FC<ISwitchProps> = ({
 			<div className={_computedComponentTrackClassName}>
 				<div className={_computedComponentHandleClassName}>
 					<div className={_computedComponentHandleOverlayClassName}>
-						{_icon ? (
-							<span className={_computedComponentIconClassName}>
-								{" "}
-								{_selected ? _iconNameSelected : _iconNameDeselected}{" "}
-							</span>
-						) : (
-							""
+						{_icon && _selected ? (
+							<Icon className={_computedComponentIconClassName}>{_iconNameSelected}</Icon>
+							) : (
+								""
 						)}
+						{_icon && !_selected ? (
+							<Icon className={_computedComponentIconClassName}>{_iconNameDeselected}</Icon>
+							) : (
+								""
+						)}
+
 					</div>
 				</div>
 			</div>
