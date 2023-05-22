@@ -21,7 +21,7 @@ Place a default stacked card like this:
 <StackedCard />
 ```
 
-You may supplement the following optional properties to a assist chip:
+You may supplement the following optional properties to a stacked card:
 | Property | Type | Default | Description | Interface |
 | -------- | ---- | -------- | ----------- | --------- |
 | <code>id</code> | <code>string</code> | <code>undefined</code> | <code>supplementary component id</code>| [IComponentProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Component/IComponentProps.tsx) |
@@ -37,7 +37,13 @@ You may supplement the following optional properties to a assist chip:
 | <code>onPrimaryButtonClick</code> | <code>() => void</code> | <code>undefined</code> | <code>function to run when primary button is clicked</code>| [IStackedCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/IStackedCardsProps.tsx) |    
 | <code>primaryButtonLabel</code> | <code>string</code> | <code>""</code> | <code>primary button label text</code>| [IStackedCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/IStackedCardsProps.tsx) |    
 | <code>onSecondaryButtonClick</code> | <code>() => void</code> | <code>undefined</code> | <code>function to run when secondary button is clicked</code>| [IStackedCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/IStackedCardsProps.tsx) |    
-| <code>secondaryButtonLabel</code> | <code>string</code> | <code>""</code> | <code>secondary button label text</code>| [IStackedCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/IStackedCardsProps.tsx) |    
+| <code>secondaryButtonLabel</code> | <code>string</code> | <code>""</code> | <code>secondary button label text</code>| [IStackedCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/IStackedCardsProps.tsx) |
+    
+The supported options of <code>{configuration}</code> are the following:
+
+1. <code>"outlined"</code>
+2. <code>"elevated"</code>
+3. <code>"filled"</code>
     
 ## ℹ️ Assist Chip
 
@@ -48,7 +54,7 @@ You may supplement the following optional properties to a assist chip:
 Place a default assist chip like this:
 
 ```JSX
-[SUBCOMPONENT_JSX_PLACEHOLDER]
+<AssistChip onClick={undefined}></AssistChip>
 ```
 
 You may supplement the following optional properties to a assist chip:
@@ -56,6 +62,19 @@ You may supplement the following optional properties to a assist chip:
 | -------- | ---- | -------- | ----------- | --------- |
 | <code>id</code> | <code>string</code> | <code>undefined</code> | <code>supplementary component id</code>| [IComponentProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Component/IComponentProps.tsx) |
 | <code>className</code> | <code>string</code> | <code>""</code> | <code>supplementary class names</code>| [IComponentProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Component/IComponentProps.tsx) |
+| <code>onClick</code> | <code>(event: MouseEvent<HTMLButtonElement>) => void</code> | <code>c</code> | <code>d</code>| [IAssistChipProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Chips/AssistChip/IAssistChipProps.tsx) |
+| <code>disabled</code> | <code>boolean</code> | <code>false</code> | <code>the toggleable state of the component</code>| [IAssistChipProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Chips/AssistChip/IAssistChipProps.tsx) |
+| <code>children</code> | <code>React.ReactNode	</code> | <code>Label</code> | <code>the label of the component</code>| [IAssistChipProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Chips/AssistChip/IAssistChipProps.tsx) |
+| <code>iconType</code> | <code>string</code> | <code>undefined</code> | <code>the icontype of the component</code>| [IAssistChipProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Chips/AssistChip/IAssistChipProps.tsx) |
+| <code>iconName</code> | <code>string</code> | <code>local_taxi</code> | <code>the icon name of the component</code>| [IAssistChipProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Chips/AssistChip/IAssistChipProps.tsx) |
+| <code>elevated</code> | <code>boolean</code> | <code>false</code> | <code>the elevation state of the component</code>| [IAssistChipProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Chips/AssistChip/IAssistChipProps.tsx) |
+| <code>iconSrc</code> | <code>string</code> | <code> iconSrc ? iconSrc : _iconType === "favicon" ? "../../Netflix_Symbol_RGB.png" : "../../Colourful_Logo.png";</code> | <code>the path source of the component icon</code>| [IAssistChipProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Chips/AssistChip/IAssistChipProps.tsx) |
+    
+The supported options of <code>{iconType}</code> are the following:
+
+1. <code>"icon"</code>
+2. <code>"favicon"</code>
+3. <code>"branded"</code>
     
 ## 🥅 Filter Chip
 
@@ -170,7 +189,7 @@ You may supplement the following optional properties to a radio button:
 Place a default badge component like this:
 
 ```JSX
-<Badge configuration={"single-digit"} xOffset={93} yOffset={-4} label={"3"}></Badge>
+<Badge configuration={"small"} xOffset={95} yOffset={-2} /></Badge>
 ```
 
 You may supplement the following optional properties to a badge:
@@ -182,7 +201,6 @@ You may supplement the following optional properties to a badge:
 | <code>configuration</code> | <code>`string`</code> | <code>"small"</code> | <code>configuration of the component</code>| [IBadgeProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Badge/IBadgeProps.tsx) |
 | <code>xOffset</code> | <code>`number`</code> | <code>0</code> | <code>x axis offset percentage</code>| [IBadgeProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Badge/IBadgeProps.tsx) |
 | <code>yOffset</code> | <code>`number`</code> | <code>0</code> | <code>y axis offset percentage</code>| [IBadgeProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Badge/IBadgeProps.tsx) |
-| <code>label</code> | <code>`string`</code> | <code>""</code> | <code>label inside the badge</code>| [IBadgeProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Badge/IBadgeProps.tsx) |
 
 The supported options of <code>{configuration}</code> are the following:
 
