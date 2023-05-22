@@ -42,6 +42,42 @@ https://trmd3.com/
 - [Running your first development environment](https://github.com/highnet/Tiny-React-MD3/tree/master#-running-your-first-development-environment)
 - [Documentation](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md)
 
+## 📚 Resources
+
+- https://m3.material.io/
+- https://materialpalettes.com/
+- https://www.figma.com/community/file/1035203688168086460
+- https://www.figma.com/file/new/Material-Symbols?node-id=0%3A1&t=RzoSzcWGopbfCZRs-0
+- https://fonts.google.com/icons
+- https://www.figma.com/community/plugin/1034969338659738588
+- https://developer.okta.com/blog/2022/03/14/react-vite-number-converter
+- https://colornamer.robertcooper.me/
+
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" width="52" alt="typescript logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" width="52" alt="react logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" width="52" alt="html5 logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" width="52" alt="css3 logo"  />
+</div>
+
+# 🤓👆 Running your first development environment:
+
+1. Clone the repository and navigate to it
+2. Type `npm install` into the terminal, this will download all required dependencies
+3. Type `npm run dev` (or, if you want to expose the website to your local network, use `npm run dev -- --host` instead) into the terminal, this will create a localhost development environment
+4. That's it! Get to building and have fun!
+
+# 🔥 Deploying with [Firebase](https://firebase.google.com/)
+
+1. Go to https://firebase.google.com/ and start a Firebase project.
+2. Navigate to the Tiny-React-MD3 root folder and type `npm install -g firebase-tools` into the terminal.
+3. Type `firebase login` and follow the instructions to log in using the google account that created the Firebase project.
+4. Type `firebase init hosting` into the terminal. Select `Use an existing project` and choose the Firebase project from the list.
+5. Use `dist` as your public directory
+6. Configure the project as a single-page app by typing `y` when prompted.
+7. Type `npm run deploy` into the console to build and deploy the app using Firebase.
+8. (Optional) Configure "Firebase Storage" inside your Firebase project to host and serve any static assets.
+
 ## 🚧 Progress In Development
 
 | Component | Light Theme | Dark Theme | Frame | Component |
@@ -82,42 +118,6 @@ https://trmd3.com/
 
 ✅ Finished
 🚧 Under Construction
-
-## 📚 Resources
-
-- https://m3.material.io/
-- https://materialpalettes.com/
-- https://www.figma.com/community/file/1035203688168086460
-- https://www.figma.com/file/new/Material-Symbols?node-id=0%3A1&t=RzoSzcWGopbfCZRs-0
-- https://fonts.google.com/icons
-- https://www.figma.com/community/plugin/1034969338659738588
-- https://developer.okta.com/blog/2022/03/14/react-vite-number-converter
-- https://colornamer.robertcooper.me/
-
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" width="52" alt="typescript logo"  />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" width="52" alt="react logo"  />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" width="52" alt="html5 logo"  />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" width="52" alt="css3 logo"  />
-</div>
-
-# 🤓👆 Running your first development environment:
-
-1. Clone the repository and navigate to it
-2. Type `npm install` into the terminal, this will download all required dependencies
-3. Type `npm run dev` (or, if you want to expose the website to your local network, use `npm run dev -- --host` instead) into the terminal, this will create a localhost development environment
-4. That's it! Get to building and have fun!
-
-# 🔥 Deploying with [Firebase](https://firebase.google.com/)
-
-1. Go to https://firebase.google.com/ and start a Firebase project.
-2. Navigate to the Tiny-React-MD3 root folder and type `npm install -g firebase-tools` into the terminal.
-3. Type `firebase login` and follow the instructions to log in using the google account that created the Firebase project.
-4. Type `firebase init hosting` into the terminal. Select `Use an existing project` and choose the Firebase project from the list.
-5. Use `dist` as your public directory
-6. Configure the project as a single-page app by typing `y` when prompted.
-7. Type `npm run deploy` into the console to build and deploy the app using Firebase.
-8. (Optional) Configure "Firebase Storage" inside your Firebase project to host and serve any static assets.
 
 ## 👥 Collaborators:
 
