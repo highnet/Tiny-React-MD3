@@ -304,7 +304,7 @@ and the possible different of <code>{size}</code> are the following:
 Create a default button component like this:
 
 ```JSX
-<Button onClick={undefined}>Click Me/Button>
+<Button onClick={undefined}>Click Me</Button>
 ```
 
 You may supplement the following optional properties to a button:
