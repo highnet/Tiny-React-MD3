@@ -22,7 +22,6 @@ import { StringBuilder } from "../Gizmos/StringBuilder";
 
 const RadioButton: React.FC<IRadioButtonProps> = ({
 	disabled,
-	children,
 	id,
 	className,
 	onClick,
@@ -74,7 +73,6 @@ const RadioButton: React.FC<IRadioButtonProps> = ({
 				defaultChecked={_defaultChecked}
 			/>
 
-			{children}
 		</div>
 	);
 };

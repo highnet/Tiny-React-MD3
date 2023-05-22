@@ -29,7 +29,6 @@ import Icon from "../Icon/Icon";
 
 const Checkbox: React.FC<ICheckboxProps> = ({
 	disabled,
-	children,
 	id,
 	className,
 	configuration,
@@ -89,7 +88,6 @@ const Checkbox: React.FC<ICheckboxProps> = ({
 				""
 			)}
 			<div className={_computedComponentOverlayClassName}></div>
-			{children}
 		</div>
 	);
 };
