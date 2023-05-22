@@ -2,7 +2,7 @@ import React from "react";
 import { getPreferredScheme } from "../../../Gizmos/Themeing";
 import { StringBuilder } from "../../../Gizmos/StringBuilder";
 import StackedCard from "../StackedCard";
-import CodeSnippet from "../../../TRMD3/CodeSnippet";
+import CodeSnippet from "../../../TRMD3/CodeSnippet/CodeSnippet";
 import Typography from "../../../Typography/Typography";
 
 const StackedCardsFrame: React.FC = () => {

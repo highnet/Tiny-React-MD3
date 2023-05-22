@@ -90,10 +90,10 @@ const Switch: React.FC<ISwitchProps> = ({
 
 	let _computedComponentIconClassName = new StringBuilder()
 		.add("material-symbols-outlined")
-		.add("switch-icon")
-		.add("switch-icon-" + (_selected ? "selected" : "deselected"))
-		.add("switch-icon-" + (_disabled ? "disabled" : "enabled"))
-		.add("switch-icon-" + _theme)
+		.add("icon-on-switch")
+		.add("icon-on-switch-" + (_selected ? "selected" : "deselected"))
+		.add("icon-on-switch-" + (_disabled ? "disabled" : "enabled"))
+		.add("icon-on-switch-" + _theme)
 		.toString();
 
 	return (
@@ -118,7 +118,6 @@ const Switch: React.FC<ISwitchProps> = ({
 							) : (
 								""
 						)}
-
 					</div>
 				</div>
 			</div>

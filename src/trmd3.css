@@ -1642,7 +1642,7 @@ html {
 }
 
 /* SWITCH / ICON */
-.switch-icon {
+.icon-on-switch {
 	display: flex;
 	margin: 0 auto;
 	align-items: center;
@@ -1698,27 +1698,27 @@ html {
 	background-color: var(--m3-state-layers-dark-surface-variant-opacity-12);
 }
 
-.switch-icon-selected.switch-icon-light-theme {
+.icon-on-switch-selected.icon-on-switch-light-theme {
 	color: var(--m3-sys-light-on-primary-container);
 }
 
-.switch-icon-selected.switch-icon-dark-theme {
+.icon-on-switch-selected.icon-on-switch-dark-theme {
 	color: var(--m3-sys-dark-on-primary-container);
 }
 
-.switch-icon-deselected.switch-icon-light-theme {
+.icon-on-switch-deselected.icon-on-switch-light-theme {
 	color: var(--m3-sys-light-on-primary);
 }
 
-.switch-icon-deselected.switch-icon-dark-theme {
+.icon-on-switch-deselected.icon-on-switch-dark-theme {
 	color: var(--m3-sys-dark-surface-container-highest);
 }
 
-.switch-icon-deselected.switch-icon-disabled {
+.icon-on-switch-deselected.icon-on-switch-disabled {
 	display: flex;
 }
 
-.switch-icon-disabled {
+.icon-on-switch-disabled {
 	display: none;
 }
 

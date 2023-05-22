@@ -32,7 +32,7 @@ import { getPreferredScheme } from "../../Gizmos/Themeing";
 import React from "react";
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import Typography from "../../Typography/Typography";
-import CodeSnippet from "../../TRMD3/CodeSnippet";
+import CodeSnippet from "../../TRMD3/CodeSnippet/CodeSnippet";
 
 const ButtonsFrame: React.FC = () => {
 	const _theme =

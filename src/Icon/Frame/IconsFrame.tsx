@@ -14,7 +14,7 @@ import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 import Typography from "../../Typography/Typography";
 import Icon from "../Icon";
-import CodeSnippet from "../../TRMD3/CodeSnippet";
+import CodeSnippet from "../../TRMD3/CodeSnippet/CodeSnippet";
 
 const IconsFrame: React.FC = () => {
 	const _theme =

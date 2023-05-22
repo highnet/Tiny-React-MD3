@@ -17,7 +17,7 @@
 
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
-import CodeSnippet from "../../TRMD3/CodeSnippet";
+import CodeSnippet from "../../TRMD3/CodeSnippet/CodeSnippet";
 import Typography from "../../Typography/Typography";
 import Switch from "../Switch";
 
