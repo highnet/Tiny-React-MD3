@@ -13,4 +13,6 @@ export interface IStackedCardsProps extends IComponentProps {
 	primaryButtonLabel?: string;
 	onSecondaryButtonClick?: () => void;
 	secondaryButtonLabel?: string;
+	imageSrc?: string;
+	onHeaderIconButtonClick?: () => void;
 }

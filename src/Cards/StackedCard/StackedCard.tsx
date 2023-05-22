@@ -21,6 +21,8 @@ const StackedCard: React.FC<IStackedCardsProps> = ({
 	primaryButtonLabel,
 	onSecondaryButtonClick,
 	secondaryButtonLabel,
+	imageSrc,
+	onHeaderIconButtonClick,
 }) => {
 	const [_id] = useState(id || undefined);
 	const [_className] = useState(className || "");
@@ -37,6 +39,7 @@ const StackedCard: React.FC<IStackedCardsProps> = ({
 	);
 	const [_primaryButtonLabel] = useState(primaryButtonLabel || "");
 	const [_secondaryButtonLabel] = useState(secondaryButtonLabel || "");
+	const [_imageSrc] = useState(imageSrc || "default-media.png");
 
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
@@ -60,6 +63,13 @@ const StackedCard: React.FC<IStackedCardsProps> = ({
 		if (onSecondaryButtonClick) {
 			onSecondaryButtonClick();
 			console.log("Stacked Card Secondary button clicked");
+		}
+	};
+
+	const handleHeaderIconButtonClick = () => {
+		if (onHeaderIconButtonClick) {
+			onHeaderIconButtonClick();
+			console.log("Stacked Card Header Icon Button clicked");
 		}
 	};
 
@@ -88,12 +98,12 @@ const StackedCard: React.FC<IStackedCardsProps> = ({
 						</Typography>
 					</div>
 				</div>
-				<div className="stacked-card-header-icon-button">
+				<div onClick={handleHeaderIconButtonClick} className="stacked-card-header-icon-button">
 					<Icon>{_iconButtonIconName}</Icon>
 				</div>
 			</div>
 			<div className="stacked-card-media">
-				<img src="default-media.png"></img>
+				<img src={_imageSrc}></img>
 			</div>
 			<div className="stacked-card-text-content">
 				<div className="stacked-card-text-content-headline">

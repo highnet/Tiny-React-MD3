@@ -2601,6 +2601,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	cursor: pointer;
 }
 
 /* STACKED CARDS / TEXT CONTENT */
