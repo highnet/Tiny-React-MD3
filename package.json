@@ -17,14 +17,15 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@types/html-minifier-terser": "^7.0.0",
     "@types/react": "^18.0.27",
     "@types/react-copy-to-clipboard": "^5.0.4",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
     "prettier": "2.8.7",
+    "rollup-plugin-terser": "^7.0.2",
+    "terser": "^5.17.5",
     "typescript": "^4.9.3",
-    "vite": "^4.3.8",
-    "vite-plugin-compression": "^0.5.1",
-    "vite-plugin-minify": "^1.5.2"
+    "vite": "^4.3.8"
   }
 }
