@@ -41,10 +41,12 @@ const VerticalDivider: React.FC<IVerticalDividerProps> = ({
 	const [_insetBottomHeight] = useState(insetBottomHeight || 16);
 	const [_showInsets] = useState(showInsets || false);
 
-	let _finalWidth: string = _width.toString() + "px";
-	let _finalHeight: string = _height.toString() + "px";
-	let _finalInsetTopHeight = _insetTopHeight + "px";
-	let _finalInsetBottomHeight = _insetBottomHeight + "px";
+	const REM_BASE = 10; // 1 rem = 10px
+
+	let _finalWidth: string = `${_width / REM_BASE}rem`;
+	let _finalHeight: string = `${_height / REM_BASE}rem`;
+	let _finalInsetTopHeight = `${_insetTopHeight / REM_BASE}rem`;
+	let _finalInsetBottomHeight = `${_insetBottomHeight / REM_BASE}rem`;
 	let _finalInsetColor: string = _showInsets ? "red" : "transparent";
 
 	const _theme =

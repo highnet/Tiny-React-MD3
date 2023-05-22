@@ -39,10 +39,11 @@ const HorizontalDivider: React.FC<IHorizontalDividerProps> = ({
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
-	let _computedHeight: string = _height.toString() + "px";
-	let _computedWidth: string = _width.toString() + "px";
-	let _computedInsetRightWidth: string = _insetRightWidth + "px";
-	let _computedInsetLeftWidth: string = _insetLeftWidth + "px";
+	const REM_BASE = 10; // 1 rem = 10px
+	let _computedHeight: string = `${_height / REM_BASE}rem`;
+	let _computedWidth: string = `${_width / REM_BASE}rem`;
+	let _computedInsetRightWidth: string = `${_insetRightWidth / REM_BASE}rem`;
+	let _computedInsetLeftWidth: string = `${_insetLeftWidth / REM_BASE}rem`;
 	let _computedInsetColor: string = _showInsets ? "red" : "transparent";
 
 	let _computedComponentClassName = new StringBuilder()
