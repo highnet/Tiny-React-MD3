@@ -237,7 +237,7 @@ The supported options of <code>{configuration}</code> are the following:
 2. <code>"single-digit"</code>
 3. <code>"multiple-digits"</code>
 
-## ☑️ [Checkbox](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Checkbox/Frame/checkbox.tsx)
+## ☑️ Checkbox
 
 <i>Checkboxes allow users to select one or more items from a set and can be used to turn an option on or off. They’re a kind of selection control that helps users make a choice from a set of options.</i>
 
@@ -355,7 +355,7 @@ The supported options of <code>{configuration}</code> are the following:
 4. <code>"elevated"</code>
 5. <code>"tonal"</code>
 
-## 🔦 [Switch](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Switch/Frame/switch.tsx)
+## 🔦 Switch
 
 <i>Switches toggle the state of a single item on or off.</i>
 
