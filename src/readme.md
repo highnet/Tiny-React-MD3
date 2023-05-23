@@ -27,11 +27,11 @@ You may supplement the following optional properties to a stacked card:
 | -------- | ---- | -------- | ----------- | --------- |
 | <code>id</code> | <code>string</code> | <code>undefined</code> | <code>supplementary component id</code>| [IComponentProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Component/IComponentProps.tsx) |
 | <code>className</code> | <code>string</code> | <code>""</code> | <code>supplementary class names</code>| [IComponentProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Component/IComponentProps.tsx) | 
-| <code>configuration</code> | <code>string</code> | <code>"outlined"</code> | <code>the style configuration of the component</code>| [IStackedCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/IStackedCardsProps.tsx) |
-| <code>initial</code> | <code>string</code> | <code>"A"</code> | <code>the character of the card initial</code>| [IStackedCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/IStackedCardsProps.tsx) |
-| <code>header</code> | <code>string</code> | <code>"Header"</code> | <code>header text</code>| [IStackedCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/IStackedCardsProps.tsx) |
-| <code>subhead</code> | <code>string</code> | <code>"Subhead"</code> | <code>subhead text</code>| [IStackedCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/IStackedCardsProps.tsx) |    
-| <code>imageSrc</code> | <code>string</code> | <code>"default-media-small.png"</code> | <code>source path of the image</code>| [IStackedCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/IStackedCardsProps.tsx) |
+| <code>configuration</code> | <code>string</code> | <code>"outlined"</code> | <code>the style configuration of the component</code>| [IHorizontalCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/HorizontalCard/IHorizontalCardProps.tsx) |
+| <code>initial</code> | <code>string</code> | <code>"A"</code> | <code>the character of the card initial</code>| [IHorizontalCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/HorizontalCard/IHorizontalCardProps.tsx) |
+| <code>header</code> | <code>string</code> | <code>"Header"</code> | <code>header text</code>| [IHorizontalCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/HorizontalCard/IHorizontalCardProps.tsx) |
+| <code>subhead</code> | <code>string</code> | <code>"Subhead"</code> | <code>subhead text</code>| [IHorizontalCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/HorizontalCard/IHorizontalCardProps.tsx) |    
+| <code>imageSrc</code> | <code>string</code> | <code>"default-media-small.png"</code> | <code>source path of the image</code>| [IHorizontalCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/HorizontalCard/IHorizontalCardProps.tsx) |
     
 The supported options of <code>{configuration}</code> are the following:
 
