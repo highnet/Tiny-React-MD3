@@ -57,13 +57,15 @@ const FabsFrame: React.FC = () => {
 		<div className={_computedFrameClassName}>
 			{/* BUTTONS */}
 			<Typography
-					id="fabs-section"
-					variant="text-title-large"
-					className={_computedTrmd3SectionTitlesClassName}
-				>
-					☁️
+				id="fabs-section"
+				variant="text-title-large"
+				className={_computedTrmd3SectionTitlesClassName}
+			>
+				☁️
 			</Typography>
-			<ComponentFrameTitle link="">FABs</ComponentFrameTitle>
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#%EF%B8%8F-fabs">
+				FABs (Floating Action Buttons)
+			</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>Surface</Typography>
 			<Fab onClick={undefined}></Fab>
 			<CodeSnippet>

@@ -95,6 +95,15 @@ const TourGuide: React.FC = () => {
 				>
 					💟 Icons 💟
 				</Button>
+				<Button
+					className="tourguide-button"
+					configuration="elevated"
+					disabled={false}
+					onClick={() => scrollToSection("fabs-section", -60)}
+				>
+					☁️ FABs ☁️
+				</Button>
+				
 			</div>
 		</div>
 	);

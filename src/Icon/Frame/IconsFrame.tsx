@@ -15,6 +15,7 @@ import { getPreferredScheme } from "../../Gizmos/Themeing";
 import Typography from "../../Typography/Typography";
 import Icon from "../Icon";
 import CodeSnippet from "../../TRMD3/CodeSnippet/CodeSnippet";
+import ComponentFrameTitle from "../../TRMD3/ComponentFrameTitle/ComponentFrameTitle";
 
 const IconsFrame: React.FC = () => {
 	const _theme =
@@ -41,9 +42,12 @@ const IconsFrame: React.FC = () => {
 				id="icons-section"
 				variant="text-title-large"
 				className={_computedTrmd3SectionTitlesClassName}
-				>
+			>
 				💟
 			</Typography>
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-icons">
+				Icons
+			</ComponentFrameTitle>
 			<Typography
 				variant="text-title-medium"
 				className={
