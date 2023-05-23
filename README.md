@@ -114,6 +114,7 @@ https://trmd3.com/
 | ⌛ Time pickers | 🚧 | 🚧 | | |
 | ⏫ Top app bar | 🚧 | 🚧 | | |
 | 🔤 [Typography](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-typography) | ✅ | ✅ | [TypographiesFrame.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Typography/Frame/TypographiesFrame.tsx) | [Typography.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Typography/Typography.tsx) |
+| ☁️ [FABs (Floating Action Buttons)](https://github.com/highnet/Tiny-React-MD3/tree/master/src#%EF%B8%8F-fabs) | ✅ | ✅ | [FabsFrame.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/FAB/Frame/FabsFrame.tsx) | [Fab.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/FAB/Fab.tsx) |
 
 ✅ Finished
 🚧 Under Construction
