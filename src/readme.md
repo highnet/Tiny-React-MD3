@@ -14,8 +14,6 @@ The Tiny React MD-3 Documentation helps you on your journey to learn how to use 
 
 [FRAME_TEXT_PLACEHOLDER]
 
-    
- 
 Place a default horizontal card like this:
     
  ```JSX
@@ -270,7 +268,7 @@ The supported options of <code>{configuration}</code> are the following:
 1. <code>"default"</code>
 2. <code>"error"</code>
 
-## 💟 [Icons](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Icon/Frame/icon.tsx)
+## 💟 Icons
 
 <i>Use icons to symbolize common actions, files, devices, and directories.</i>
 
@@ -315,7 +313,7 @@ and the possible different of <code>{size}</code> are the following:
 2. <code>medium</code>
 3. <code>small</code>
 
-## 🕹️ [Buttons](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Button/Frame/button.tsx)
+## 🕹️ Buttons
 
 <i>Use buttons to help people take actions, such as sending an email, sharing a document, or liking a comment.</i>
 
