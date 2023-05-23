@@ -22,6 +22,8 @@ import AssistChipsFrame from "./Chips/AssistChip/Frame/AssistChipsFrame";
 import StackedCardsFrame from "./Cards/StackedCard/Frame/StackedCardsFrame";
 import BottomNavBar from "./TRMD3/BottomNavBar/BottomNavBar";
 import HorizontalCardsFrame from "./Cards/HorizontalCard/Frame/HorizontalCardsFrame";
+import FabsFrame from "./FAB/Frame/FabsFrame";
+import Fab from "./FAB/Fab";
 
 function App() {
 	console.log(`	👋 Welcome to TRMD3! 👋	`);
@@ -104,9 +106,6 @@ useEffect(() => {
 				<TourGuide />
 			</div>
 			<div id="section-1-trmd3" className="section-trmd3">
-			<div className="box" ref={boxRef}>
-     		 <span className="inner-circle" ref={innerCircleRef}></span>
-   				 </div>  
 				<StackedCardsFrame />
 				<HorizontalCardsFrame />
 			</div>
@@ -131,8 +130,13 @@ useEffect(() => {
 				<TypographiesFrame />
 				<IconsFrame />
 			</div>
-
-
+			<div id="section-7-trmd3" className="section-trmd3">
+			<div className="box" ref={boxRef}>
+     		 <span className="inner-circle" ref={innerCircleRef}></span>
+   			</div>  
+			<Fab></Fab>
+			<FabsFrame />
+			</div>
 			<BottomNavBar scrollToTop={handleScrollToTop} />
 		</div>
 	);
