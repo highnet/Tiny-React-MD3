@@ -1,6 +1,7 @@
 import { StringBuilder } from "../../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../../Gizmos/Themeing";
 import CodeSnippet from "../../../TRMD3/CodeSnippet/CodeSnippet";
+import ComponentFrameTitle from "../../../TRMD3/ComponentFrameTitle/ComponentFrameTitle";
 import Typography from "../../../Typography/Typography";
 import HorizontalDivider from "../HorizontalDivider";
 
@@ -38,16 +39,14 @@ const HorizontalDividersFrame: React.FC = () => {
 	return (
 		<div className={_computedFrameClassName}>
 			{/* HORIZONTAL DIVIDERS */}
-			<div className="section-title-container-trmd3">
-				<Typography
-					id="horizontal-dividers-section"
-					variant="text-title-large"
-					className={_computedTrmd3SectionTitlesClassName}
+			<Typography
+				id="horizontal-dividers-section"
+				variant="text-title-large"
+				className={_computedTrmd3SectionTitlesClassName}
 				>
-					➕ Dividers ➕
-				</Typography>
-			</div>
-			<Typography variant={"text-title-large"}>Horizontal Dividers</Typography>
+				➕
+			</Typography>
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-horizontal-divider">Horizontal Dividers</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>Inset None</Typography>
 			<HorizontalDivider inset={"none"} />
 			<CodeSnippet>{"<HorizontalDivider inset={'none'} />"}</CodeSnippet>

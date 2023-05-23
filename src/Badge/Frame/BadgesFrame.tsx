@@ -1,6 +1,7 @@
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 import CodeSnippet from "../../TRMD3/CodeSnippet/CodeSnippet";
+import ComponentFrameTitle from "../../TRMD3/ComponentFrameTitle/ComponentFrameTitle";
 import Typography from "../../Typography/Typography";
 import Badge from "../Badge";
 
@@ -44,15 +45,15 @@ const BadgesFrame: React.FC = () => {
 	return (
 		<div className={_computedFrameClassName}>
 			{/* BADGES */}
-			<div className="section-title-container-trmd3">
-				<Typography
+			<Typography
 					id="badges-section"
 					variant="text-title-large"
 					className={_computedTrmd3SectionTitlesClassName}
 				>
-					📛 Badges 📛
+					📛
 				</Typography>
-			</div>
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-badge">Badges</ComponentFrameTitle>
+
 			<div>
 				<div>
 					<Typography variant={"text-label-small"}>Small</Typography>

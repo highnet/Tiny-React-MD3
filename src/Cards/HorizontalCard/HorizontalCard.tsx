@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
-import Icon from "../../Icon/Icon";
 import Typography from "../../Typography/Typography";
 import { IHorizontalCardProps } from "./IHorizontalCardProps";
 

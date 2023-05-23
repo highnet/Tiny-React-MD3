@@ -1,6 +1,7 @@
 import { StringBuilder } from "../../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../../Gizmos/Themeing";
 import CodeSnippet from "../../../TRMD3/CodeSnippet/CodeSnippet";
+import ComponentFrameTitle from "../../../TRMD3/ComponentFrameTitle/ComponentFrameTitle";
 import Typography from "../../../Typography/Typography";
 import VerticalDivider from "../VerticalDivider";
 
@@ -26,7 +27,7 @@ const VerticalDividersFrame: React.FC = () => {
 	return (
 		<div className={_computedFrameClassName}>
 			{/* VERTICAL DIVIDERS */}
-			<Typography variant="text-title-large">Vertical Dividers</Typography>
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-vertical-divider">Vertical Dividers</ComponentFrameTitle>
 			<Typography variant="text-label-small">Inset None</Typography>
 			<VerticalDivider inset={"none"} />
 			<CodeSnippet>{"<VerticalDivider inset={'none'} />"}</CodeSnippet>

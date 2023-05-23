@@ -7,6 +7,7 @@ TODO: NEEDS DOCUMENTATION
 import { StringBuilder } from "../../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../../Gizmos/Themeing";
 import CodeSnippet from "../../../TRMD3/CodeSnippet/CodeSnippet";
+import ComponentFrameTitle from "../../../TRMD3/ComponentFrameTitle/ComponentFrameTitle";
 import Typography from "../../../Typography/Typography";
 import AssistChip from "../AssistChip";
 
@@ -25,7 +26,7 @@ const AssistChipsFrame: React.FC = () => {
 
 	return (
 		<div className={_computedFrameClassName}>
-			<Typography variant={"text-title-large"}>Assist Chips</Typography>
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#%E2%84%B9%EF%B8%8F-assist-chip">Assist Chips</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>Label Only</Typography>
 			<AssistChip onClick={undefined}></AssistChip>
 			<CodeSnippet>

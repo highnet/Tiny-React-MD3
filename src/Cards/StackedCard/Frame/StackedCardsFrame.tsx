@@ -4,6 +4,7 @@ import { StringBuilder } from "../../../Gizmos/StringBuilder";
 import StackedCard from "../StackedCard";
 import CodeSnippet from "../../../TRMD3/CodeSnippet/CodeSnippet";
 import Typography from "../../../Typography/Typography";
+import ComponentFrameTitle from "../../../TRMD3/ComponentFrameTitle/ComponentFrameTitle";
 
 const StackedCardsFrame: React.FC = () => {
 	const _theme =
@@ -26,17 +27,14 @@ const StackedCardsFrame: React.FC = () => {
 	return (
 		<div className={_computedFrameClassName}>
 			{/* STACKED CARDS */}
-			<div className="section-title-container-trmd3">
-				<Typography
+			<Typography
 					id="cards-section"
 					variant="text-title-large"
 					className={_computedTrmd3SectionTitlesClassName}
 				>
-					💳 Cards 💳
-				</Typography>
-
-			</div>
-			<Typography variant={"text-title-large"}>Stacked Cards</Typography>
+					💳
+			</Typography>
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-stacked-card">Stacked Cards</ComponentFrameTitle>
 			<StackedCard imageSrc="chilly-bit.png" />
 			<CodeSnippet>{'<StackedCard imageSrc="chilly-bit.png"/>'}</CodeSnippet>
 			<StackedCard configuration="elevated" />

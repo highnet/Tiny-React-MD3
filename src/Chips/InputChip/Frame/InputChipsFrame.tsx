@@ -1,6 +1,7 @@
 import { StringBuilder } from "../../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../../Gizmos/Themeing";
 import CodeSnippet from "../../../TRMD3/CodeSnippet/CodeSnippet";
+import ComponentFrameTitle from "../../../TRMD3/ComponentFrameTitle/ComponentFrameTitle";
 import Typography from "../../../Typography/Typography";
 import InputChip from "../InputChip";
 
@@ -24,16 +25,14 @@ const InputChipsFrame: React.FC = () => {
 
 	return (
 		<div className={_computedFrameClassName}>
-			<div className="section-title-container-trmd3">
-				<Typography
-					id="chips-section"
-					variant="text-title-large"
-					className={_computedTrmd3SectionTitlesClassName}
-				>
-					🍪 Chips 🍪
-				</Typography>
-			</div>
-			<Typography variant={"text-title-large"}>Input Chips</Typography>
+			<Typography
+				id="chips-section"
+				variant="text-title-large"
+				className={_computedTrmd3SectionTitlesClassName}
+			>
+				🍪
+			</Typography>
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-input-chip">Input Chips</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>Label Only</Typography>
 			<InputChip onClick={undefined}></InputChip>
 			<CodeSnippet>{"<InputChip onClick={undefined}></InputChip>"}</CodeSnippet>

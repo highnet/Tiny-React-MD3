@@ -37,15 +37,13 @@ const IconsFrame: React.FC = () => {
 	return (
 		<div className={_computedFrameClassName}>
 			{/* ICONS */}
-			<div className="section-title-container-trmd3">
-				<Typography
-					id="icons-section"
-					variant="text-title-large"
-					className={_computedTrmd3SectionTitlesClassName}
+			<Typography
+				id="icons-section"
+				variant="text-title-large"
+				className={_computedTrmd3SectionTitlesClassName}
 				>
-					💟 Icons 💟
-				</Typography>
-			</div>
+				💟
+			</Typography>
 			<Typography
 				variant="text-title-medium"
 				className={

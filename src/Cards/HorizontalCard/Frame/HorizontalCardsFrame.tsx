@@ -2,8 +2,8 @@ import React from "react";
 import { getPreferredScheme } from "../../../Gizmos/Themeing";
 import { StringBuilder } from "../../../Gizmos/StringBuilder";
 import CodeSnippet from "../../../TRMD3/CodeSnippet/CodeSnippet";
-import Typography from "../../../Typography/Typography";
 import HorizontalCard from "../HorizontalCard";
+import ComponentFrameTitle from "../../../TRMD3/ComponentFrameTitle/ComponentFrameTitle";
 
 const HorizontalCardsFrame: React.FC = () => {
 	const _theme =
@@ -26,10 +26,8 @@ const HorizontalCardsFrame: React.FC = () => {
 	return (
 		<div className={_computedFrameClassName}>
 			{/* HORIZONTAL CARDS */}
-			<div className="section-title-container-trmd3">
-				<Typography variant={"text-title-large"}>Horizontal Cards</Typography>
-			</div>
-			<HorizontalCard initial={"X"} imageSrc="chilly-bit.png" />
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-horizontal-card">Horizontal Cards</ComponentFrameTitle>
+			<HorizontalCard imageSrc="chilly-bit.png" />
 			<CodeSnippet>{'<HorizontalCard imageSrc="chilly-bit.png"/>'}</CodeSnippet>
 			<HorizontalCard configuration="elevated" />
 			<CodeSnippet>{'<HorizontalCard configuration="elevated" />'}</CodeSnippet>

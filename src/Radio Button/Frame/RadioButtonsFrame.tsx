@@ -1,6 +1,7 @@
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 import CodeSnippet from "../../TRMD3/CodeSnippet/CodeSnippet";
+import ComponentFrameTitle from "../../TRMD3/ComponentFrameTitle/ComponentFrameTitle";
 import Typography from "../../Typography/Typography";
 import RadioButton from "../RadioButton";
 
@@ -39,15 +40,14 @@ const RadioButtonsFrame: React.FC = () => {
 	return (
 		<div className={_computedFrameClassName}>
 			{/* RADIO BUTTONS */}
-			<div className="section-title-container-trmd3">
-				<Typography
-					id="radio-buttons-section"
-					variant="text-title-large"
-					className={_computedTrmd3SectionTitlesClassName}
+			<Typography
+				id="radio-buttons-section"
+				variant="text-title-large"
+				className={_computedTrmd3SectionTitlesClassName}
 				>
-					🔘 Radio Buttons 🔘
-				</Typography>
-			</div>
+				🔘
+			</Typography>
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-radio-button">Radio Buttons</ComponentFrameTitle>
 			<RadioButton name={"trmd3"} value={"option-1"} />
 			<Typography variant="text-label-small">Option 1</Typography>
 			<CodeSnippet>

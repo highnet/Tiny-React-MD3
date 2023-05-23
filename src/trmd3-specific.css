@@ -217,20 +217,9 @@ html {
 }
 
 /* SECTION TITLES */
-.section-title-container-trmd3 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 1rem;
-	margin-bottom: 1.5rem;
-}
-
 .section-title-trmd3 {
-	text-align: center;
-	display: inline-block;
 	border-radius: 0.6rem;
-	margin-bottom: 0.1rem;
-	padding: 0.6rem 1.8rem 0.6rem 1.8rem;
+	padding: 0.5rem;
 	font-weight: bold;
 }
 
@@ -364,7 +353,7 @@ html {
 
 .code-snippet-copy-icon-trmd3 {
 	position: absolute;
-	right: -0.2rem;
+	right: 0;
 	top: 0.9rem;
 	border-radius: 0.5rem;
 	opacity: 0;
@@ -454,4 +443,46 @@ html {
 	font-weight: bold;
 	text-align: center;
 	line-height: 8rem;
+}
+
+/* COMPONENT FRAME TITLES */
+.component-frame-title-trmd3 {
+	position: relative;
+	padding: 1rem 2rem 1rem 2rem;
+	border-radius: 0.6rem;
+	cursor: pointer;
+}
+
+.component-frame-title-trmd3 > .text {
+	font-weight: bold;
+}
+
+.icon-on-component-frame-title-trmd3 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-radius: 0.5rem;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out, scale 0.15s ease-in-out;
+	z-index: 100;
+}
+
+.component-frame-title-trmd3:hover .icon-on-component-frame-title-trmd3 {
+	opacity: 1;
+}
+
+.component-frame-title-trmd3:active .icon-on-component-frame-title-trmd3 {
+	scale: 1.1;
+}
+
+.component-frame-title-trmd3.component-frame-title-light-theme-trmd3{
+	color: var(--m3-sys-light-primary);
+	background-color: var(--m3-sys-light-surface);
+	box-shadow: var(--m3-elevation-light-2);
+}
+
+.component-frame-title-trmd3.component-frame-title-dark-theme-trmd3{
+	color: var(--m3-sys-dark-primary);
+	background-color: var(--m3-sys-dark-surface);
+	box-shadow: var(--m3-elevation-dark-2);
 }

@@ -18,6 +18,7 @@
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 import CodeSnippet from "../../TRMD3/CodeSnippet/CodeSnippet";
+import ComponentFrameTitle from "../../TRMD3/ComponentFrameTitle/ComponentFrameTitle";
 import Typography from "../../Typography/Typography";
 import Switch from "../Switch";
 
@@ -42,15 +43,14 @@ const SwitchesFrame: React.FC = () => {
 	return (
 		<div className={_computedFrameClassName}>
 			{/* SWITCHES */}
-			<div className="section-title-container-trmd3">
-				<Typography
-					id="switches-section"
-					variant="text-title-large"
-					className={_computedTrmd3SectionTitlesClassName}
+			<Typography
+				id="switches-section"
+				variant="text-title-large"
+				className={_computedTrmd3SectionTitlesClassName}
 				>
-					🔦 Switches 🔦
-				</Typography>
-			</div>
+				🔦
+			</Typography>
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-switch">Switches</ComponentFrameTitle>
 			<Typography variant="text-label-small">No Icon</Typography>
 			<Switch selected={true} onChange={undefined} />
 			<CodeSnippet>

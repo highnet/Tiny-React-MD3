@@ -19,6 +19,7 @@ import { getPreferredScheme } from "../../Gizmos/Themeing";
 interface ICookietrailProps {}
 
 function openLinkInNewTab(url: string) {
+	if (url == undefined || url == "") return;
 	window.open(url, "_blank");
 }
 

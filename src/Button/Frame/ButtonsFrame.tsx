@@ -33,6 +33,7 @@ import React from "react";
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import Typography from "../../Typography/Typography";
 import CodeSnippet from "../../TRMD3/CodeSnippet/CodeSnippet";
+import ComponentFrameTitle from "../../TRMD3/ComponentFrameTitle/ComponentFrameTitle";
 
 const ButtonsFrame: React.FC = () => {
 	const _theme =
@@ -55,16 +56,14 @@ const ButtonsFrame: React.FC = () => {
 	return (
 		<div className={_computedFrameClassName}>
 			{/* BUTTONS */}
-			<div className="section-title-container-trmd3">
-				<Typography
+			<Typography
 					id="buttons-section"
 					variant="text-title-large"
 					className={_computedTrmd3SectionTitlesClassName}
 				>
-					🕹️ Buttons 🕹️
-				</Typography>
-			</div>
-			<Typography variant={"text-title-large"}>Filled Buttons</Typography>
+					🕹️
+			</Typography>
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#%EF%B8%8F-buttons">Filled Buttons</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>No Icon</Typography>
 			<Button configuration="filled" onClick={undefined}></Button>
 			<CodeSnippet>
@@ -80,7 +79,7 @@ const ButtonsFrame: React.FC = () => {
 			<CodeSnippet>
 				{`<Button configuration="filled" icon={true} iconName={"search"} onClick={undefined}></Button>`}
 			</CodeSnippet>
-			<Typography variant={"text-title-large"}>Outlined Buttons</Typography>
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#%EF%B8%8F-buttons">Outlined Buttons</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>No Icon</Typography>
 			<Button configuration="outlined" onClick={undefined}></Button>
 			<CodeSnippet>
@@ -96,7 +95,7 @@ const ButtonsFrame: React.FC = () => {
 			<CodeSnippet>
 				{`<Button configuration="outlined" onClick={undefined} icon={true} iconName={"search"}></Button>`}
 			</CodeSnippet>
-			<Typography variant={"text-title-large"}>Text Buttons</Typography>
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#%EF%B8%8F-buttons">Text Buttons</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>No Icon</Typography>
 			<Button configuration="text" onClick={undefined}></Button>
 			<CodeSnippet>
@@ -112,7 +111,7 @@ const ButtonsFrame: React.FC = () => {
 			<CodeSnippet>
 				{`<Button configuration="text" onClick={undefined} icon={true} iconName={"search"}></Button>`}
 			</CodeSnippet>
-			<Typography variant={"text-title-large"}>Elevated Buttons</Typography>
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#%EF%B8%8F-buttons">Elevated Buttons</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>No Icon</Typography>
 			<Button configuration="elevated" onClick={undefined}></Button>
 			<CodeSnippet>
@@ -128,7 +127,7 @@ const ButtonsFrame: React.FC = () => {
 			<CodeSnippet>
 				{`<Button configuration="elevated" onClick={undefined} icon={true} iconName={"search"}></Button>`}
 			</CodeSnippet>
-			<Typography variant={"text-title-large"}>Tonal Buttons</Typography>
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#%EF%B8%8F-buttons">Tonal Buttons</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>No Icon</Typography>
 			<Button configuration="tonal" onClick={undefined}></Button>
 			<CodeSnippet>
