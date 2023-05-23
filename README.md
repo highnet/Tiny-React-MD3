@@ -13,7 +13,6 @@ Tiny React Material Design 3
 <img alt="npm" src="https://img.shields.io/npm/v/vite?style=for-the-badge">
 <img alt="node-current" src="https://img.shields.io/node/v/vite?style=for-the-badge">
 <img alt="GitHub issues" src="https://img.shields.io/github/issues/highnet/Tiny-React-MD3?style=for-the-badge">
-<img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/highnet/Tiny-React-MD3?style=for-the-badge">
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/highnet/Tiny-React-MD3?style=for-the-badge">
 </div>
 
@@ -21,14 +20,14 @@ Tiny React Material Design 3
 ❤️ You like Figma? ❤️ </br>
 ❤️ You Like Material Design 3? ❤️</br>
 ❤️ You like React? ❤️ </br>
-🐝 Then you love Tiny React MD3! 🐝 </br>
+ Then you love Tiny React MD3!  </br>
 
 [Figma Material Design 3 Kit](https://www.figma.com/community/file/1035203688168086460) 🤝 [React.ts](https://developer.okta.com/blog/2022/03/14/react-vite-number-converter) = [Tiny React MD3](https://github.com/highnet/Tiny-React-MD3/) </br>
 
 </div>
 
 - Quickly transform your design kit prototypes into stunning and modern web applications
-- A set of easy-to-use, high-peformance and customizable components that follow the Material Design 3 principles and aesthetics
+- A set of easy-to-use, high-performance and customizable components that follow the Material Design 3 principles and aesthetics
 - Developer handoffs made easy with ensured parity between the Figma material Design 3 Kit and React
 
 ## 🌐 Home Page
@@ -87,7 +86,7 @@ https://trmd3.com/
 | 🔽 Bottom sheets | 🚧 | 🚧 | | |
 | 🕹️ [Buttons](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#%EF%B8%8F-buttons) | ✅ | ✅ | [ButtonsFrame.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Button/Frame/ButtonsFrame.tsx) | [Button.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Button/Button.tsx) |
 | 🃏[Stacked Cards](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-stacked-card) | ✅ | ✅ | [StackedCardsFrame.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/Frame/StackedCardsFrame.tsx) | [StackedCard.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/StackedCard.tsx) |
-| 🪪 [Horizontal Cards](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-horizontal-card) | 🚧 | 🚧 | | |
+| 🪪 [Horizontal Cards](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-horizontal-card) | ✅ | ✅ | | |
 | ☑️ [Checkbox](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#%EF%B8%8F-checkbox) | ✅ | ✅ | [CheckBoxesFrame.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Checkbox/Frame/CheckboxesFrame.tsx) | [Checkbox.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Checkbox/Checkbox.tsx) |
 | ℹ️ [Assist Chips](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#%E2%84%B9%EF%B8%8F-assist-chip) | ✅ | ✅ | [AssistChipsFrame.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Chips/AssistChip/Frame/AssistChipsFrame.tsx) | [AssistChip.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Chips/AssistChip/AssistChip.tsx) |
 | 🥅 [Filter Chips](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-filter-chip) | 🚧 | 🚧 | | |
