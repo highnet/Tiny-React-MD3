@@ -387,3 +387,4 @@ You may supplement the following optional properties to a switch:
 | <code>iconNameDeselected</code> | <code>string</code> | <code>"close"</code> | <code>the name of the icon on display when deselected</code>| [ISwitchProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Switch/Switch.tsx) |
     
 ## ☁️ FABs
+## ⛈️ Extended FABs
