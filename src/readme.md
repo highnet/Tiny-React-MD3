@@ -9,6 +9,36 @@ Use Tiny React MD-3 to create web apps, and experiences.
 The Tiny React MD-3 Documentation helps you on your journey to learn how to use Tiny React MD-3 and its associated services. You can read it from start to finish, or use it as a reference.
     
 ## 🪪 Horizontal Card
+    
+<i>Cards are versatile containers, holding anything from images to headlines, supporting text, buttons, lists, and other components.</i>
+
+[FRAME_TEXT_PLACEHOLDER]
+
+    
+ 
+Place a default horizontal card like this:
+    
+ ```JSX
+<HorizontalCard />
+```
+    
+You may supplement the following optional properties to a stacked card:
+| Property | Type | Default | Description | Interface |
+| -------- | ---- | -------- | ----------- | --------- |
+| <code>id</code> | <code>string</code> | <code>undefined</code> | <code>supplementary component id</code>| [IComponentProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Component/IComponentProps.tsx) |
+| <code>className</code> | <code>string</code> | <code>""</code> | <code>supplementary class names</code>| [IComponentProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Component/IComponentProps.tsx) | 
+| <code>configuration</code> | <code>string</code> | <code>"outlined"</code> | <code>the style configuration of the component</code>| [IStackedCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/IStackedCardsProps.tsx) |
+| <code>initial</code> | <code>string</code> | <code>"A"</code> | <code>the character of the card initial</code>| [IStackedCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/IStackedCardsProps.tsx) |
+| <code>header</code> | <code>string</code> | <code>"Header"</code> | <code>header text</code>| [IStackedCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/IStackedCardsProps.tsx) |
+| <code>subhead</code> | <code>string</code> | <code>"Subhead"</code> | <code>subhead text</code>| [IStackedCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/IStackedCardsProps.tsx) |    
+| <code>imageSrc</code> | <code>string</code> | <code>"default-media-small.png"</code> | <code>source path of the image</code>| [IStackedCardProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/IStackedCardsProps.tsx) |
+    
+The supported options of <code>{configuration}</code> are the following:
+
+1. <code>"outlined"</code>
+2. <code>"elevated"</code>
+3. <code>"filled"</code>
+    
 ## 🃏 Stacked Card
 
 <i>Cards are versatile containers, holding anything from images to headlines, supporting text, buttons, lists, and other components.</i>
