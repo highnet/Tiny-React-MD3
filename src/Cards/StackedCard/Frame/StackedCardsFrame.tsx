@@ -34,7 +34,9 @@ const StackedCardsFrame: React.FC = () => {
 				>
 					💳 Cards 💳
 				</Typography>
+
 			</div>
+			<Typography variant={"text-title-large"}>Stacked Cards</Typography>
 			<StackedCard imageSrc="chilly-bit.png" />
 			<CodeSnippet>{'<StackedCard imageSrc="chilly-bit.png"/>'}</CodeSnippet>
 			<StackedCard configuration="elevated" />

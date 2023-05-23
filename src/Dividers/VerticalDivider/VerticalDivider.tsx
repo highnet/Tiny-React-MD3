@@ -53,6 +53,7 @@ const VerticalDivider: React.FC<IVerticalDividerProps> = ({
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
 	let _computedComponentClassName = new StringBuilder()
+		.add("divider")
 		.add("verticaldivider")
 		.add("verticaldivider-" + _theme)
 		.add(_className)

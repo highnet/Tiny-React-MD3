@@ -76,6 +76,7 @@ html {
 	text-overflow: ellipsis;
 	margin-bottom: 6rem;
 	padding-top: 30rem;
+	font-weight: bold;
 }
 
 .main-title-light-theme-trmd3 {
@@ -271,7 +272,7 @@ html {
 
 /* FRAMES */
 .frame-trmd3 {
-	width: 70%;
+	width: 90%;
 	margin: 0 auto;
 	border-radius: 0.3rem;
 	align-items: center;
@@ -280,6 +281,7 @@ html {
 	padding-bottom: 3.5rem;
 	text-align: center;
 	display: flex;
+	overflow: clip;
 }
 
 .frame-light-theme-trmd3 {

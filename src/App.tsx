@@ -22,6 +22,7 @@ import InputChipsFrame from "./Chips/InputChip/Frame/InputChipsFrame";
 import AssistChipsFrame from "./Chips/AssistChip/Frame/AssistChipsFrame";
 import StackedCardsFrame from "./Cards/StackedCard/Frame/StackedCardsFrame";
 import BottomNavBar from "./TRMD3/BottomNavBar/BottomNavBar";
+import HorizontalCardsFrame from "./Cards/HorizontalCard/Frame/HorizontalCardsFrame";
 
 function App() {
 	console.log(`	👋 Welcome to TRMD3! 👋	`);
@@ -53,6 +54,7 @@ function App() {
 				toggleTheme={handleToggleTheme}
 				scrollToTop={handleScrollToTop}
 			/>
+				
 			<div id="section-0-trmd3" className="section-trmd3">
 				<Hero hasLogo={false} />
 				<Cookietrail />
@@ -60,9 +62,10 @@ function App() {
 			</div>
 			<div id="section-1-trmd3" className="section-trmd3">
 				<StackedCardsFrame />
-				<InputChipsFrame />
+				<HorizontalCardsFrame />
 			</div>
 			<div id="section-2-trmd3" className="section-trmd3">
+				<InputChipsFrame />
 				<AssistChipsFrame />
 			</div>
 			<div id="section-3-trmd3" className="section-trmd3">
@@ -82,6 +85,8 @@ function App() {
 				<TypographiesFrame />
 				<IconsFrame />
 			</div>
+
+
 			<BottomNavBar scrollToTop={handleScrollToTop} />
 		</div>
 	);

@@ -47,6 +47,7 @@ const HorizontalDivider: React.FC<IHorizontalDividerProps> = ({
 	let _computedInsetColor: string = _showInsets ? "red" : "transparent";
 
 	let _computedComponentClassName = new StringBuilder()
+		.add("divider")
 		.add("horizontaldivider")
 		.add("horizontaldivider-" + _theme)
 		.add(_className)
