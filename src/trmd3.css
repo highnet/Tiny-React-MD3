@@ -970,9 +970,8 @@ html {
 	--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-16: #c8bfd7;
 	--m3-composite-light-surface-passthrough-on-surface-variant-opacity-12: #e8e2ea;
 	--m3-composite-light-surface-passthrough-on-surface-variant-opacity-08: #f0e9f1;
-	--m3-composite-light-surface-container-high-passthrough-primary-opacity-08: #E1DAEA;
-	--m3-composite-light-surface-container-high-passthrough-primary-opacity-12: #DCD4E7;
-
+	--m3-composite-light-surface-container-high-passthrough-primary-opacity-08: #e1daea;
+	--m3-composite-light-surface-container-high-passthrough-primary-opacity-12: #dcd4e7;
 
 	/* M3 / COMPOSITES / DARK */
 	--m3-composite-dark-surface-container-low-passthrough-on-primary-opacity-08: #2b2832;
@@ -1146,34 +1145,34 @@ html {
 	border: 0;
 	width: fit-content;
 	height: 4rem;
-  }
-  
-  /* BUTTONS / TEXT (LABEL) */
-  .btn text {
+}
+
+/* BUTTONS / TEXT (LABEL) */
+.btn text {
 	display: flex;
 	align-items: center;
 	text-align: center;
 	letter-spacing: 0.01rem;
-  }
-  
-  /* BUTTONS / WITH ICON */
-  .btn-with-icon {
+}
+
+/* BUTTONS / WITH ICON */
+.btn-with-icon {
 	flex-direction: row;
 	padding: 0rem 0.9rem;
 	gap: 0.8rem;
-  }
-  
-  /* BUTTONS / TONAL / DISABLED / HOVER, BUTTONS / FILLED / DISABLED / HOVER */
-  .btn-tonal:disabled.btn-tonal:hover,
-  .btn-filled:disabled.btn-filled:hover {
+}
+
+/* BUTTONS / TONAL / DISABLED / HOVER, BUTTONS / FILLED / DISABLED / HOVER */
+.btn-tonal:disabled.btn-tonal:hover,
+.btn-filled:disabled.btn-filled:hover {
 	box-shadow: none;
-  }
-  
-  /* BUTTONS / OUTLINED / DISABLED */
-  .btn-outlined:disabled {
+}
+
+/* BUTTONS / OUTLINED / DISABLED */
+.btn-outlined:disabled {
 	opacity: 38%;
 	background-color: transparent;
-  }
+}
 
 /* BUTTONS / TEXT */
 .btn-text {
@@ -1219,305 +1218,341 @@ html {
 
 /* BUTTONS / FILLED */
 .btn-filled.btn-light-theme {
-    background-color: var(--m3-sys-light-primary);
+	background-color: var(--m3-sys-light-primary);
 }
 
 /* BUTTONS / FILLED / ELEMENT */
 .btn-filled > .element-on-button-light-theme {
-    color: var(--m3-sys-light-on-primary);
+	color: var(--m3-sys-light-on-primary);
 }
 
 /* BUTTONS / FILLED / HOVER */
 .btn-filled:hover.btn-light-theme {
-    box-shadow: var(--m3-elevation-light-1);
-    background-color: var(--m3-composite-light-primary-passthrough-on-primary-opacity-08);
+	box-shadow: var(--m3-elevation-light-1);
+	background-color: var(
+		--m3-composite-light-primary-passthrough-on-primary-opacity-08
+	);
 }
 
 /* BUTTONS / FILLED / FOCUS */
 .btn-filled:focus.btn-light-theme {
-    box-shadow: none;
-    background-color: var(--m3-composite-light-primary-passthrough-on-primary-opacity-12);
+	box-shadow: none;
+	background-color: var(
+		--m3-composite-light-primary-passthrough-on-primary-opacity-12
+	);
 }
 
 /* BUTTONS / FILLED / ACTIVE */
 .btn-filled:active.btn-light-theme {
-    box-shadow: none;
-    background-color: var(--m3-composite-light-primary-passthrough-on-primary-opacity-12);
+	box-shadow: none;
+	background-color: var(
+		--m3-composite-light-primary-passthrough-on-primary-opacity-12
+	);
 }
 
 /* BUTTONS / FILLED / DISABLED */
 .btn-filled:disabled.btn-light-theme {
-    background-color: var(--m3-state-layers-light-on-surface-opacity-12);
-    color: var(--m3-sys-light-on-surface);
+	background-color: var(--m3-state-layers-light-on-surface-opacity-12);
+	color: var(--m3-sys-light-on-surface);
 }
 
 /* BUTTONS / OUTLINED */
 .btn-outlined.btn-light-theme {
-    background-color: var(--m3-sys-light-surface);
-    border: 0.1rem solid var(--m3-sys-light-outline);
+	background-color: var(--m3-sys-light-surface);
+	border: 0.1rem solid var(--m3-sys-light-outline);
 }
 
 /* BUTTONS / OUTLINED / ELEMENT */
 .btn-outlined > .element-on-button-light-theme {
-    color: var(--m3-sys-light-primary);
+	color: var(--m3-sys-light-primary);
 }
 
 /* BUTTONS / OUTLINED / HOVER */
 .btn-outlined:hover.btn-light-theme {
-    background-color: var(--m3-state-layers-light-primary-opacity-08);
+	background-color: var(--m3-state-layers-light-primary-opacity-08);
 }
 
 /* BUTTONS / OUTLINED / ACTIVE */
 .btn-outlined:active.btn-light-theme {
-    background-color: var(--m3-state-layers-light-primary-opacity-12);
+	background-color: var(--m3-state-layers-light-primary-opacity-12);
 }
 
 /* BUTTONS / OUTLINED / FOCUS */
 .btn-outlined:focus.btn-light-theme {
-    background-color: var(--m3-state-layers-light-primary-opacity-12);
-    border: 0.1rem solid var(--m3-sys-light-primary);
+	background-color: var(--m3-state-layers-light-primary-opacity-12);
+	border: 0.1rem solid var(--m3-sys-light-primary);
 }
 
 /* BUTTONS / OUTLINED / DISABLED */
 .btn-outlined:disabled.btn-light-theme {
-    color: var(--m3-sys-light-on-surface);
-    border: 0.1rem solid var(--m3-state-layers-light-on-surface-opacity-12);
+	color: var(--m3-sys-light-on-surface);
+	border: 0.1rem solid var(--m3-state-layers-light-on-surface-opacity-12);
 }
 
 /* BUTTONS / TEXT */
 .btn-text > .element-on-button-light-theme {
-    color: var(--m3-sys-light-primary);
+	color: var(--m3-sys-light-primary);
 }
 
 /* BUTTONS / TEXT / WITH ICON */
 .btn-text.btn-with-icon {
-    padding: 1rem 1.6rem 1rem 1.2rem;
+	padding: 1rem 1.6rem 1rem 1.2rem;
 }
 
 /* BUTTONS / TEXT / HOVER */
 .btn-text:hover.btn-light-theme {
-    background-color: var(--m3-state-layers-light-primary-opacity-08);
+	background-color: var(--m3-state-layers-light-primary-opacity-08);
 }
 
 /* BUTTONS / TEXT / FOCUS */
 .btn-text:focus.btn-light-theme {
-    background-color: var(--m3-state-layers-light-primary-opacity-12);
+	background-color: var(--m3-state-layers-light-primary-opacity-12);
 }
 
 /* BUTTONS / TEXT / ACTIVE */
 .btn-text:active.btn-light-theme {
-    background-color: var(--m3-state-layers-light-primary-opacity-12);
+	background-color: var(--m3-state-layers-light-primary-opacity-12);
 }
 
 /* BUTTONS / ELEVATED */
 .btn-elevated.btn-light-theme {
-    background-color: var(--m3-sys-light-surface-container-low);
-    box-shadow: var(--m3-elevation-light-1);
+	background-color: var(--m3-sys-light-surface-container-low);
+	box-shadow: var(--m3-elevation-light-1);
 }
 
 /* BUTTONS / ELEVATED / ELEMENT */
 .btn-elevated > .element-on-button-light-theme {
-    color: var(--m3-sys-light-primary);
+	color: var(--m3-sys-light-primary);
 }
 
 /* BUTTONS / ELEVATED / HOVER */
 .btn-elevated:hover.btn-light-theme {
-    background-color: var(--m3-composite-light-surface-container-low-passthrough-primary-opacity-08);
-    box-shadow: var(--m3-elevation-light-2);
+	background-color: var(
+		--m3-composite-light-surface-container-low-passthrough-primary-opacity-08
+	);
+	box-shadow: var(--m3-elevation-light-2);
 }
 
 /* BUTTONS / ELEVATED / FOCUS */
 .btn-elevated:focus.btn-light-theme {
-    background-color: var(--m3-composite-light-surface-container-low-passthrough-primary-opacity-08);
-    box-shadow: var(--m3-elevation-light-1);
+	background-color: var(
+		--m3-composite-light-surface-container-low-passthrough-primary-opacity-08
+	);
+	box-shadow: var(--m3-elevation-light-1);
 }
 
 /* BUTTONS / ELEVATED / ACTIVE */
 .btn-elevated:active.btn-light-theme {
-    background-color: var(--m3-composite-light-surface-container-low-passthrough-primary-opacity-12);
-    box-shadow: var(--m3-elevation-light-1);
+	background-color: var(
+		--m3-composite-light-surface-container-low-passthrough-primary-opacity-12
+	);
+	box-shadow: var(--m3-elevation-light-1);
 }
 
 /* BUTTONS / TONAL */
 .btn-tonal.btn-light-theme {
-    background-color: var(--m3-sys-light-secondary-container);
+	background-color: var(--m3-sys-light-secondary-container);
 }
 
 /* BUTTONS / TONAL / ELEMENT */
 .btn-tonal > .element-on-button-light-theme {
-    color: var(--m3-sys-light-on-secondary-container);
+	color: var(--m3-sys-light-on-secondary-container);
 }
 
 /* BUTTONS / TONAL / HOVER */
 .btn-tonal:hover.btn-light-theme {
-    background-color: var(--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-08);
-    box-shadow: var(--m3-elevation-light-1);
+	background-color: var(
+		--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-08
+	);
+	box-shadow: var(--m3-elevation-light-1);
 }
 
 /* BUTTONS / TONAL / FOCUS */
 .btn-tonal:focus.btn-light-theme {
-    background-color: var(--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-12);
+	background-color: var(
+		--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-12
+	);
 }
 
 /* BUTTONS / TONAL / ACTIVE */
 .btn-tonal:active.btn-light-theme {
-    background-color: var(--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-12);
+	background-color: var(
+		--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-12
+	);
 }
 
 /* BUTTONS / TONAL / DISABLED */
 .btn-tonal:disabled.btn-light-theme {
-    background-color: var(--m3-state-layers-light-on-surface-opacity-12);
-    color: var(--m3-sys-light-on-surface);
+	background-color: var(--m3-state-layers-light-on-surface-opacity-12);
+	color: var(--m3-sys-light-on-surface);
 }
 
 /* ==========BUTTONS / DARK THEME==========*/
 
 /* BUTTONS / FILLED */
 .btn-filled.btn-dark-theme {
-    background-color: var(--m3-sys-dark-primary);
+	background-color: var(--m3-sys-dark-primary);
 }
 
 /* BUTTONS / FILLED / ELEMENT */
 .btn-filled > .element-on-button-dark-theme {
-    color: var(--m3-sys-dark-on-primary);
+	color: var(--m3-sys-dark-on-primary);
 }
 
 /* BUTTONS / FILLED / HOVER */
 .btn-filled:hover.btn-dark-theme {
-    box-shadow: var(--m3-elevation-dark-1);
-    background-color: var(--m3-composite-dark-primary-passthrough-on-primary-opacity-08);
+	box-shadow: var(--m3-elevation-dark-1);
+	background-color: var(
+		--m3-composite-dark-primary-passthrough-on-primary-opacity-08
+	);
 }
 
 /* BUTTONS / FILLED / FOCUS */
 .btn-filled:focus.btn-dark-theme {
-    box-shadow: none;
-    background-color: var(--m3-composite-dark-primary-passthrough-on-primary-opacity-12);
+	box-shadow: none;
+	background-color: var(
+		--m3-composite-dark-primary-passthrough-on-primary-opacity-12
+	);
 }
 
 /* BUTTONS / FILLED / ACTIVE */
 .btn-filled:active.btn-dark-theme {
-    box-shadow: none;
-    background-color: var(--m3-composite-dark-primary-passthrough-on-primary-opacity-12);
+	box-shadow: none;
+	background-color: var(
+		--m3-composite-dark-primary-passthrough-on-primary-opacity-12
+	);
 }
 
 /* BUTTONS / FILLED / DISABLED */
 .btn-filled:disabled.btn-dark-theme {
-    background-color: var(--m3-state-layers-dark-on-surface-opacity-12);
-    color: var(--m3-sys-dark-on-surface);
+	background-color: var(--m3-state-layers-dark-on-surface-opacity-12);
+	color: var(--m3-sys-dark-on-surface);
 }
 
 /* BUTTONS / OUTLINED */
 .btn-outlined.btn-dark-theme {
-    background-color: var(--m3-sys-dark-surface);
-    border: 0.1rem solid var(--m3-sys-dark-outline);
+	background-color: var(--m3-sys-dark-surface);
+	border: 0.1rem solid var(--m3-sys-dark-outline);
 }
 
 /* BUTTONS / OUTLINED / ELEMENT */
 .btn-outlined > .element-on-button-dark-theme {
-    color: var(--m3-sys-dark-primary);
+	color: var(--m3-sys-dark-primary);
 }
 
 /* BUTTONS / OUTLINED / HOVER */
 .btn-outlined:hover.btn-dark-theme {
-    background-color: var(--m3-state-layers-dark-primary-opacity-08);
+	background-color: var(--m3-state-layers-dark-primary-opacity-08);
 }
 
 /* BUTTONS / OUTLINED / FOCUS */
 .btn-outlined:focus.btn-dark-theme {
-    background-color: var(--m3-state-layers-dark-primary-opacity-12);
-    border: 0.1rem solid var(--m3-sys-dark-primary);
+	background-color: var(--m3-state-layers-dark-primary-opacity-12);
+	border: 0.1rem solid var(--m3-sys-dark-primary);
 }
 
 /* BUTTONS / OUTLINED / ACTIVE */
 .btn-outlined:active.btn-dark-theme {
-    background-color: var(--m3-state-layers-dark-primary-opacity-12);
+	background-color: var(--m3-state-layers-dark-primary-opacity-12);
 }
 
 /* BUTTONS / OUTLINED / DISABLED */
 .btn-outlined:disabled.btn-dark-theme {
-    color: var(--m3-sys-dark-on-surface);
-    border: 0.1rem solid var(--m3-state-layers-dark-on-surface-opacity-12);
+	color: var(--m3-sys-dark-on-surface);
+	border: 0.1rem solid var(--m3-state-layers-dark-on-surface-opacity-12);
 }
 
 /* BUTTONS / TEXT */
 .btn-text > .element-on-button-dark-theme {
-    color: var(--m3-sys-dark-primary);
+	color: var(--m3-sys-dark-primary);
 }
 
 /* BUTTONS / TEXT / HOVER */
 .btn-text:hover.btn-dark-theme {
-    background-color: var(--m3-state-layers-dark-primary-opacity-08);
+	background-color: var(--m3-state-layers-dark-primary-opacity-08);
 }
 
 /* BUTTONS / TEXT / FOCUS */
 .btn-text:focus.btn-dark-theme {
-    background-color: var(--m3-state-layers-dark-primary-opacity-12);
+	background-color: var(--m3-state-layers-dark-primary-opacity-12);
 }
 
 /* BUTTONS / TEXT / ACTIVE */
 .btn-text:active.btn-dark-theme {
-    background-color: var(--m3-state-layers-dark-primary-opacity-12);
+	background-color: var(--m3-state-layers-dark-primary-opacity-12);
 }
 
 /* BUTTONS / ELEVATED */
 .btn-elevated.btn-dark-theme {
-    background-color: var(--m3-sys-dark-surface-container-low);
-    box-shadow: var(--m3-elevation-dark-1);
+	background-color: var(--m3-sys-dark-surface-container-low);
+	box-shadow: var(--m3-elevation-dark-1);
 }
 
 /* BUTTONS / ELEVATED / ELEMENT */
 .btn-elevated > .element-on-button-dark-theme {
-    color: var(--m3-sys-dark-primary);
+	color: var(--m3-sys-dark-primary);
 }
 
 /* BUTTONS / ELEVATED / HOVER */
 .btn-elevated:hover.btn-dark-theme {
-    background-color: var(--m3-composite-dark-surface-container-low-passthrough-on-primary-opacity-08);
-    box-shadow: var(--m3-elevation-dark-2);
+	background-color: var(
+		--m3-composite-dark-surface-container-low-passthrough-on-primary-opacity-08
+	);
+	box-shadow: var(--m3-elevation-dark-2);
 }
 
 /* BUTTONS / ELEVATED / FOCUS */
 .btn-elevated:focus.btn-dark-theme {
-    background-color: var(--m3-composite-dark-surface-container-low-passthrough-primary-opacity-12);
-    box-shadow: var(--m3-elevation-dark-1);
+	background-color: var(
+		--m3-composite-dark-surface-container-low-passthrough-primary-opacity-12
+	);
+	box-shadow: var(--m3-elevation-dark-1);
 }
 
 /* BUTTONS / ELEVATED / ACTIVE */
 .btn-elevated:active.btn-dark-theme {
-    background-color: var(--m3-composite-dark-surface-container-low-passthrough-on-primary-opacity-12);
-    box-shadow: var(--m3-elevation-dark-1);
+	background-color: var(
+		--m3-composite-dark-surface-container-low-passthrough-on-primary-opacity-12
+	);
+	box-shadow: var(--m3-elevation-dark-1);
 }
 
 /* BUTTONS / TONAL */
 .btn-tonal.btn-dark-theme {
-    background-color: var(--m3-sys-dark-secondary-container);
+	background-color: var(--m3-sys-dark-secondary-container);
 }
 
 /* BUTTONS / TONAL / ELEMENT */
 .btn-tonal > .element-on-button-dark-theme {
-    color: var(--m3-sys-dark-on-secondary-container);
+	color: var(--m3-sys-dark-on-secondary-container);
 }
 
 /* BUTTONS / TONAL / HOVER */
 .btn-tonal:hover.btn-dark-theme {
-    background-color: var(--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-08);
-    box-shadow: var(--m3-elevation-dark-1);
+	background-color: var(
+		--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-08
+	);
+	box-shadow: var(--m3-elevation-dark-1);
 }
 
 /* BUTTONS / TONAL / FOCUS */
 .btn-tonal:focus.btn-dark-theme {
-    background-color: var(--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12);
+	background-color: var(
+		--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12
+	);
 }
 
 /* BUTTONS / TONAL / ACTIVE */
 .btn-tonal:active.btn-dark-theme {
-    background-color: var(--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12);
+	background-color: var(
+		--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12
+	);
 }
 
 /* BUTTONS / TONAL / DISABLED */
 .btn-tonal:disabled.btn-dark-theme {
-    background-color: var(--m3-state-layers-dark-on-surface-opacity-12);
-    color: var(--m3-sys-dark-on-surface);
+	background-color: var(--m3-state-layers-dark-on-surface-opacity-12);
+	color: var(--m3-sys-dark-on-surface);
 }
 
 /* ==========ICONS========== */
@@ -2693,7 +2728,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 
 /* STACKED CARDS / FILLED / LIGHT */
 .stacked-card-filled.stacked-card-light-theme {
-	background-color: var(--m3-sys-light-surface-container-highest)
+	background-color: var(--m3-sys-light-surface-container-highest);
 }
 
 /* STACKED CARDS / OUTLINED / LIGHT */
@@ -2719,12 +2754,12 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 }
 
 /* STACKED CARDS / HEADER / CONTENT / TEXT / LIGHT */
-.stacked-card-text-content-headline-subhead.stacked-card-light-theme{
+.stacked-card-text-content-headline-subhead.stacked-card-light-theme {
 	color: var(--m3-sys-light-on-surface-variant);
 }
 
 /* STACKED CARDS / TEXT CONTENT / SUPPORTING TEXT / LIGHT THEME */
-.stacked-card-text-content-supporting-text-text-light-theme{
+.stacked-card-text-content-supporting-text-text-light-theme {
 	color: var(--m3-sys-light-on-surface-variant);
 }
 
@@ -2752,7 +2787,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 
 /* STACKED CARDS / ELEVATED / DARK */
 .stacked-card-filled.stacked-card-dark-theme {
-	background-color: var(--m3-sys-dark-surface-container-highest)
+	background-color: var(--m3-sys-dark-surface-container-highest);
 }
 
 /* STACKED CARDS / HEADER / CONTENT / MONOGRAM INITIAL / DARK */
@@ -2766,7 +2801,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 }
 
 /* STACKED CARDS / HEADER / CONTENT / TEXT / DARK */
-.stacked-card-text-content-headline-subhead.stacked-card-dark-theme{
+.stacked-card-text-content-headline-subhead.stacked-card-dark-theme {
 	color: var(--m3-sys-dark-on-surface-variant);
 }
 
@@ -2792,7 +2827,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	flex-direction: row;
 }
 
-.horizontal-card-header-content{
+.horizontal-card-header-content {
 	display: flex;
 	align-items: center;
 	max-width: 28rem;
@@ -2801,7 +2836,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	overflow: auto;
 }
 
-.horizontal-card-header-media{
+.horizontal-card-header-media {
 	box-sizing: border-box;
 	max-width: 8rem;
 	overflow: hidden;
@@ -2816,7 +2851,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	justify-content: center;
 }
 
-.horizontal-card-header-media{
+.horizontal-card-header-media {
 	max-width: 8rem;
 	height: 8rem;
 }
@@ -2835,7 +2870,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	height: auto;
 }
 
-.horizontal-card-header-content-text-header{
+.horizontal-card-header-content-text-header {
 	max-width: 19.2rem;
 	height: 2.4rem;
 	text-align: left;
@@ -2843,7 +2878,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	text-overflow: ellipsis;
 }
 
-.horizontal-card-header-content-text-subhead{
+.horizontal-card-header-content-text-subhead {
 	max-width: 19.2rem;
 	height: 2rem;
 	text-align: left;
@@ -2854,7 +2889,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 /* HORIZONTAL CARDS / LIGHT */
 
 .horizontal-card-outlined.horizontal-card-light-theme {
-	border: .1rem solid var(--m3-sys-light-outline-variant);
+	border: 0.1rem solid var(--m3-sys-light-outline-variant);
 	background-color: var(--m3-sys-light-surface);
 }
 
@@ -2872,11 +2907,10 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	background-color: var(--m3-sys-light-surface-container-highest);
 }
 
-
 /* HORIZONTAL CARDS / DARK */
 
 .horizontal-card-outlined.horizontal-card-dark-theme {
-	border: .1rem solid var(--m3-sys-dark-outline-variant);
+	border: 0.1rem solid var(--m3-sys-dark-outline-variant);
 	background-color: var(--m3-sys-dark-surface);
 }
 
@@ -2895,31 +2929,31 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 }
 
 /* FABs */
-.fab{
-    width: 4rem;
-    height: 4rem;
-    border-radius: 1.2rem;
-    border: none;
-    transition: background-color .2s ease-in-out, box-shadow .2s ease-in-out;
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
+.fab {
+	width: 4rem;
+	height: 4rem;
+	border-radius: 1.2rem;
+	border: none;
+	transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
 }
 
 .fab-inner-circle {
-    position: absolute;
-    top: 0;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 0.15s ease-in-out;
-    opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(.1);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 0;
 }
 
-.fab-inner-circle {
-    transform: translate(-50%, -50%) scale(2);
-    opacity: 1;
+.fab-surface:hover .fab-inner-circle {
+  transform: translate(-50%, -50%) scale(2);
+  opacity: 1;
 }
 
 /* FABS / LIGHT */
@@ -2931,23 +2965,26 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	background-color: var(--m3-state-layers-light-primary-opacity-12);
 }
 
-
-.icon-on-fab.icon-on-fab-light-theme{
-    color: var(--m3-sys-light-primary);
+.icon-on-fab.icon-on-fab-light-theme {
+	color: var(--m3-sys-light-primary);
 }
 
-.fab-surface.fab-light-theme{
-    background-color: var(--m3-sys-light-surface-container-highest);
-    box-shadow: var(--m3-elevation-light-3);
+.fab-surface.fab-light-theme {
+	background-color: var(--m3-sys-light-surface-container-highest);
+	box-shadow: var(--m3-elevation-light-3);
 }
 
 .fab-surface:hover.fab-light-theme {
-    background-color: var(--m3-composite-light-surface-container-high-passthrough-primary-opacity-08);
-    box-shadow: var(--m3-elevation-light-4);
+	background-color: var(
+		--m3-composite-light-surface-container-high-passthrough-primary-opacity-08
+	);
+	box-shadow: var(--m3-elevation-light-4);
 }
 
 .fab-surface:focus.fab-light-theme {
-    background-color: var(--m3-composite-light-surface-container-high-passthrough-primary-opacity-12);
+	background-color: var(
+		--m3-composite-light-surface-container-high-passthrough-primary-opacity-12
+	);
 	box-shadow: var(--m3-elevation-light-3);
 }
 
