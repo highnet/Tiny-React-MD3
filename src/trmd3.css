@@ -971,6 +971,7 @@ html {
 	--m3-composite-light-surface-passthrough-on-surface-variant-opacity-12: #e8e2ea;
 	--m3-composite-light-surface-passthrough-on-surface-variant-opacity-08: #f0e9f1;
 	--m3-composite-light-surface-container-high-passthrough-primary-opacity-08: #E1DAEA;
+	--m3-composite-light-surface-container-high-passthrough-primary-opacity-12: #DCD4E7;
 
 
 	/* M3 / COMPOSITES / DARK */
@@ -2911,16 +2912,25 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
-    background-color: var(--m3-state-layers-light-primary-opacity-12);
     transform: translate(-50%, -50%) scale(1);
     transition: transform 0.15s ease-in-out;
     opacity: 0;
 }
-  
-.fab:active .fab-inner-circle {
+
+.fab-inner-circle {
     transform: translate(-50%, -50%) scale(2);
     opacity: 1;
 }
+
+/* FABS / LIGHT */
+.fab-surface:active.fab-light-theme {
+	background-color: var(--m3-sys-light-surface-container-high) !important;
+}
+
+.fab-surface:active.fab-light-theme .fab-inner-circle {
+	background-color: var(--m3-state-layers-light-primary-opacity-12);
+}
+
 
 .icon-on-fab.icon-on-fab-light-theme{
     color: var(--m3-sys-light-primary);
@@ -2931,7 +2941,14 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
     box-shadow: var(--m3-elevation-light-3);
 }
 
-.fab-surface:hover{
+.fab-surface:hover.fab-light-theme {
     background-color: var(--m3-composite-light-surface-container-high-passthrough-primary-opacity-08);
     box-shadow: var(--m3-elevation-light-4);
 }
+
+.fab-surface:focus.fab-light-theme {
+    background-color: var(--m3-composite-light-surface-container-high-passthrough-primary-opacity-12);
+	box-shadow: var(--m3-elevation-light-3);
+}
+
+/* FABS / DARK */
