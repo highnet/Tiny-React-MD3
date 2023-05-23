@@ -11,7 +11,6 @@ import SwitchesFrame from "./Switch/Frame/SwitchesFrame";
 import TypographiesFrame from "./Typography/Frame/TypographiesFrame";
 import IconsFrame from "./Icon/Frame/IconsFrame";
 import StickyToolbar from "./TRMD3/StickyToolbar/StickyToolbar";
-
 import hljs from "highlight.js";
 import "highlight.js/styles/base16/material-lighter.css";
 import Cookietrail from "./TRMD3/Cookietrail/Cookietrail";

@@ -488,8 +488,8 @@ html {
 }
 
 .box {
-	width: 800px;
-	height: 800px;
+	width: 400px;
+	height: 400px;
 	position: relative;
 	display: inline-block;
 	padding: 10px 20px;
@@ -504,8 +504,8 @@ html {
   .inner-circle {
 	position: absolute;
 	top: 0;
-	width: 600px;
-	height: 600px;
+	width: 300px;
+	height: 300px;
 	border-radius: 50%;
 	background-color: rgba(111, 0, 0, 0.8);
 	transform: translate(-50%, -50%) scale(1);
