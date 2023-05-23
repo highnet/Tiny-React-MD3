@@ -13,7 +13,6 @@ Tiny React Material Design 3
 <img alt="npm" src="https://img.shields.io/npm/v/vite?style=for-the-badge">
 <img alt="node-current" src="https://img.shields.io/node/v/vite?style=for-the-badge">
 <img alt="GitHub issues" src="https://img.shields.io/github/issues/highnet/Tiny-React-MD3?style=for-the-badge">
-<img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/highnet/Tiny-React-MD3?style=for-the-badge">
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/highnet/Tiny-React-MD3?style=for-the-badge">
 </div>
 
