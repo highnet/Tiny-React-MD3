@@ -117,7 +117,7 @@ The supported options of <code>{iconType}</code> are the following:
 Place a default input chip like this:
 
 ```JSX
-[SUBCOMPONENT_JSX_PLACEHOLDER]
+<InputChip></InputChip>
 ```
 
 You may supplement the following optional properties to an input chip:
@@ -237,7 +237,7 @@ The supported options of <code>{configuration}</code> are the following:
 2. <code>"single-digit"</code>
 3. <code>"multiple-digits"</code>
 
-## ☑️ [Checkbox](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Checkbox/Frame/checkbox.tsx)
+## ☑️ Checkbox
 
 <i>Checkboxes allow users to select one or more items from a set and can be used to turn an option on or off. They’re a kind of selection control that helps users make a choice from a set of options.</i>
 
@@ -280,7 +280,7 @@ The supported options of <code>{configuration}</code> are the following:
 Place a default icon like this:
 
 ```JSX
-[COMPONENT_JSX_PLACEHOLDER]
+<Icon>hive</Icon>
 ```
 
 where <code>{name}</code> is the set of all accepted icon names by [Material Symbols](https://fonts.google.com/icons)
@@ -296,10 +296,10 @@ where <code>{name}</code> is the set of all accepted icon names by [Material Sym
 Place div text components by combining class names like this:
 
 ```JSX
-[COMPONENT_JSX_PLACEHOLDER]
+<Typography variant="text-{textType}-{textSize}">Display Large - Roboto 57/54 . 0</Typography>
 ```
 
-The possible different options of <code>{type}</code> are the following:
+The possible different options of <code>{textType}</code> are the following:
 
 1. <code>display</code>
 2. <code>headline</code>
@@ -307,7 +307,7 @@ The possible different options of <code>{type}</code> are the following:
 4. <code>label</code>
 5. <code>body</code>
 
-and the possible different of <code>{size}</code> are the following:
+and the possible different of <code>{textSize}</code> are the following:
 
 1. <code>large</code>
 2. <code>medium</code>
@@ -355,7 +355,7 @@ The supported options of <code>{configuration}</code> are the following:
 4. <code>"elevated"</code>
 5. <code>"tonal"</code>
 
-## 🔦 [Switch](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Switch/Frame/switch.tsx)
+## 🔦 Switch
 
 <i>Switches toggle the state of a single item on or off.</i>
 
@@ -385,3 +385,5 @@ You may supplement the following optional properties to a switch:
 | <code>icon</code> | <code>boolean</code> | <code>false</code> | <code>flag to indicate if the component has an icon on display</code>| [ISwitchProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Switch/Switch.tsx) |
 | <code>iconNameSelected</code> | <code>string</code> | <code>"check"</code> | <code>the name of the icon on display when selected</code>| [ISwitchProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Switch/Switch.tsx) |
 | <code>iconNameDeselected</code> | <code>string</code> | <code>"close"</code> | <code>the name of the icon on display when deselected</code>| [ISwitchProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Switch/Switch.tsx) |
+    
+## ☁️ FABs
