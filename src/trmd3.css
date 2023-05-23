@@ -2895,44 +2895,43 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 
 /* FABs */
 .fab{
-	width: 40rem;
-	height: 40rem;
-	border-radius: 1.2rem;
-	border: none;
-	transition: background-color .2s ease-in-out, box-shadow .2s ease-in-out;
-	position: relative;
-	cursor: pointer;
-}
-
-.icon-on-fab.icon-on-fab-light-theme{
-	color: var(--m3-sys-light-primary);
-}
-
-.fab-surface.fab-light-theme{
-	background-color: var(--m3-sys-light-surface-container-highest);
-	box-shadow: var(--m3-elevation-light-3);
-}
-
-.fab-surface:hover{
-	background-color: var(--m3-composite-light-surface-container-high-passthrough-primary-opacity-08);
-	box-shadow: var(--m3-elevation-light-4);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1.2rem;
+    border: none;
+    transition: background-color .2s ease-in-out, box-shadow .2s ease-in-out;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
 }
 
 .fab-inner-circle {
-	position: absolute;
-	top: 0;
-	width: 30rem;
-	height: 30rem;
-	border-radius: 50%;
-	background-color: rgba(111, 0, 0, 0.8);
-	transform: translate(-50%, -50%) scale(1);
-	transition: transform 0.3s ease-in-out;
-	display: none;
-  }
+    position: absolute;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: var(--m3-state-layers-light-primary-opacity-12);
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.15s ease-in-out;
+    opacity: 0;
+}
   
-  .fab:hover .fab-inner-circle {
-	transform: translate(-50%, -50%) scale(2);
-	display: block;
-  }
+.fab:active .fab-inner-circle {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 1;
+}
 
+.icon-on-fab.icon-on-fab-light-theme{
+    color: var(--m3-sys-light-primary);
+}
 
+.fab-surface.fab-light-theme{
+    background-color: var(--m3-sys-light-surface-container-highest);
+    box-shadow: var(--m3-elevation-light-3);
+}
+
+.fab-surface:hover{
+    background-color: var(--m3-composite-light-surface-container-high-passthrough-primary-opacity-08);
+    box-shadow: var(--m3-elevation-light-4);
+}

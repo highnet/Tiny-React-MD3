@@ -23,7 +23,6 @@ import StackedCardsFrame from "./Cards/StackedCard/Frame/StackedCardsFrame";
 import BottomNavBar from "./TRMD3/BottomNavBar/BottomNavBar";
 import HorizontalCardsFrame from "./Cards/HorizontalCard/Frame/HorizontalCardsFrame";
 import FabsFrame from "./FAB/Frame/FabsFrame";
-import Fab from "./FAB/Fab";
 
 function App() {
 	console.log(`	👋 Welcome to TRMD3! 👋	`);
@@ -49,48 +48,6 @@ function App() {
 		hljs.highlightAll();
 	}, []);
 
-	const boxRef = useRef<HTMLDivElement>(null);
-  	const innerCircleRef = useRef<HTMLSpanElement>(null);
-
-	  const DEFAULT_OFFSET_SIZE = 6;
-
-	  function calculateOffset(mousePos: number, boxSize: number, circleSize: number, offsetSize = DEFAULT_OFFSET_SIZE): number {
-		const maxOffset = (boxSize - circleSize) / 2;
-		const offsetRatio = mousePos / boxSize;
-		const offset = offsetRatio * maxOffset * offsetSize;
-		return offset;
-	  }
-	  
-
-useEffect(() => {
-  const box = boxRef.current;
-  const innerCircle = innerCircleRef.current;
-
-  if (box && innerCircle) {
-    const circleSize = innerCircle.offsetWidth;
-
-    box.addEventListener('mousemove', (e) => {
-      const boxRect = box.getBoundingClientRect();
-      const boxCenterX = boxRect.left + (boxRect.width / 2);
-      const boxCenterY = boxRect.top + (boxRect.height / 2);
-      const mouseX = e.clientX - boxCenterX;
-      const mouseY = e.clientY - boxCenterY;
-
-      const offsetX = calculateOffset(mouseX, boxRect.width, circleSize);
-      const offsetY = calculateOffset(mouseY, boxRect.height, circleSize);
-
-      innerCircle.style.left = `${boxCenterX + mouseX + offsetX}px`;
-      innerCircle.style.top = `${boxCenterY + mouseY + offsetY}px`;
-    });
-  }
-
-  return () => {
-    if (box && innerCircle) {
-      box.removeEventListener('mousemove', (e) => {
-      });
-    }
-  };
-}, [boxRef, innerCircleRef]);
 	
 
 	return (
@@ -131,10 +88,7 @@ useEffect(() => {
 				<IconsFrame />
 			</div>
 			<div id="section-7-trmd3" className="section-trmd3">
-			<div className="box" ref={boxRef}>
-     		 <span className="inner-circle" ref={innerCircleRef}></span>
-   			</div>  
-			<Fab></Fab>
+
 			<FabsFrame />
 			</div>
 			<BottomNavBar scrollToTop={handleScrollToTop} />
