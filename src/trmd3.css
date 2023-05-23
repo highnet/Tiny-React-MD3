@@ -2139,7 +2139,6 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 }
 
 /* ==========CHIPS========== */
-
 .chip {
 	box-sizing: border-box;
 	display: flex;
@@ -2156,7 +2155,6 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 }
 
 /* ==========INPUT-CHIPS========== */
-
 /* INPUT-CHIPS / SELECTED */
 .inputchip.inputchip-selected {
 	border: none;
