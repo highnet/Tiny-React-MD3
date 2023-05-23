@@ -280,7 +280,7 @@ The supported options of <code>{configuration}</code> are the following:
 Place a default icon like this:
 
 ```JSX
-[COMPONENT_JSX_PLACEHOLDER]
+<Icon>hive</Icon>
 ```
 
 where <code>{name}</code> is the set of all accepted icon names by [Material Symbols](https://fonts.google.com/icons)
@@ -296,10 +296,10 @@ where <code>{name}</code> is the set of all accepted icon names by [Material Sym
 Place div text components by combining class names like this:
 
 ```JSX
-[COMPONENT_JSX_PLACEHOLDER]
+<Typography variant="text-{textType}-{textSize}">Display Large - Roboto 57/54 . 0</Typography>
 ```
 
-The possible different options of <code>{type}</code> are the following:
+The possible different options of <code>{textType}</code> are the following:
 
 1. <code>display</code>
 2. <code>headline</code>
@@ -307,7 +307,7 @@ The possible different options of <code>{type}</code> are the following:
 4. <code>label</code>
 5. <code>body</code>
 
-and the possible different of <code>{size}</code> are the following:
+and the possible different of <code>{textSize}</code> are the following:
 
 1. <code>large</code>
 2. <code>medium</code>
