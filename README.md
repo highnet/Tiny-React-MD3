@@ -21,14 +21,14 @@ Tiny React Material Design 3
 ❤️ You like Figma? ❤️ </br>
 ❤️ You Like Material Design 3? ❤️</br>
 ❤️ You like React? ❤️ </br>
-🐝 Then you love Tiny React MD3! 🐝 </br>
+ Then you love Tiny React MD3!  </br>
 
 [Figma Material Design 3 Kit](https://www.figma.com/community/file/1035203688168086460) 🤝 [React.ts](https://developer.okta.com/blog/2022/03/14/react-vite-number-converter) = [Tiny React MD3](https://github.com/highnet/Tiny-React-MD3/) </br>
 
 </div>
 
 - Quickly transform your design kit prototypes into stunning and modern web applications
-- A set of easy-to-use, high-peformance and customizable components that follow the Material Design 3 principles and aesthetics
+- A set of easy-to-use, high-performance and customizable components that follow the Material Design 3 principles and aesthetics
 - Developer handoffs made easy with ensured parity between the Figma material Design 3 Kit and React
 
 ## 🌐 Home Page
