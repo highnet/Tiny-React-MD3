@@ -117,7 +117,7 @@ The supported options of <code>{iconType}</code> are the following:
 Place a default input chip like this:
 
 ```JSX
-[SUBCOMPONENT_JSX_PLACEHOLDER]
+<InputChip></InputChip>
 ```
 
 You may supplement the following optional properties to an input chip:
