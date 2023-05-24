@@ -22,7 +22,8 @@ import AssistChipsFrame from "./Chips/AssistChip/Frame/AssistChipsFrame";
 import StackedCardsFrame from "./Cards/StackedCard/Frame/StackedCardsFrame";
 import BottomNavBar from "./TRMD3/BottomNavBar/BottomNavBar";
 import HorizontalCardsFrame from "./Cards/HorizontalCard/Frame/HorizontalCardsFrame";
-import FabsFrame from "./FAB/Frame/FabsFrame";
+import FabsFrame from "./FABs/FAB/Frame/FabsFrame";
+import ExtendedFabsFrame from "./FABs/Extended FAB/Frame/ExtendedFabsFrame";
 
 function App() {
 	console.log(`	👋 Welcome to TRMD3! 👋	`);
@@ -56,9 +57,8 @@ function App() {
 				toggleTheme={handleToggleTheme}
 				scrollToTop={handleScrollToTop}
 			/>
-				
 			<div id="section-0-trmd3" className="section-trmd3">
-				<Hero hasLogo={false} />
+				<Hero hasLogo={true} />
 				<Cookietrail />
 				<TourGuide />
 			</div>
@@ -88,8 +88,8 @@ function App() {
 				<IconsFrame />
 			</div>
 			<div id="section-7-trmd3" className="section-trmd3">
-
 			<FabsFrame />
+			<ExtendedFabsFrame />
 			</div>
 			<BottomNavBar scrollToTop={handleScrollToTop} />
 		</div>
