@@ -28,27 +28,27 @@ const ExtendedFabsFrame: React.FC = () => {
 		<div className={_computedFrameClassName}>
 			<Typography variant={"text-label-large"}>Large FABs [Light🚧-Dark🚧]</Typography>
 			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#%EF%B8%8F-extended-fabs">
-				Extended FABs (Floating Action Buttons) [Light🚧-Dark🚧]
+				Extended FABs (Floating Action Buttons) [Light✅-Dark🚧]
 			</ComponentFrameTitle>
-			<Typography variant={"text-label-small"}>Surface [Light🚧-Dark🚧]</Typography>
-			<ExtendedFab onClick={undefined} > TEST</ExtendedFab>
+			<Typography variant={"text-label-small"}>Surface [Light✅-Dark🚧]</Typography>
+			<ExtendedFab onClick={undefined}></ExtendedFab>
 			<CodeSnippet>
 				{`<ExtendedFab size="large" onClick={undefined} />`}
 			</CodeSnippet>
-			<Typography variant={"text-label-small"}>Primary [Light🚧-Dark🚧]</Typography>
+			<Typography variant={"text-label-small"}>Primary [Light✅-Dark🚧]</Typography>
 			<ExtendedFab configuration="primary" onClick={undefined} />
 			<CodeSnippet>
-				{`<ExtendedFab size="large" configuration="primary" onClick={undefined} />`}
+				{`<ExtendedFab size="large" configuration="primary" onClick={undefined}></ExtendedFab>`}
 			</CodeSnippet>
-			<Typography variant={"text-label-small"}>Secondary [Light🚧-Dark🚧]</Typography>
+			<Typography variant={"text-label-small"}>Secondary [Light✅-Dark🚧]</Typography>
 			<ExtendedFab configuration="secondary" onClick={undefined} />
 			<CodeSnippet>
-				{`<ExtendedFab size="large" configuration="secondary" onClick={undefined} />`}
+				{`<ExtendedFab size="large" configuration="secondary" onClick={undefined}></ExtendedFab>`}
 			</CodeSnippet>
-			<Typography variant={"text-label-small"}>Tertiary [Light🚧-Dark🚧]</Typography>
+			<Typography variant={"text-label-small"}>Tertiary [Light✅-Dark🚧]</Typography>
 			<ExtendedFab configuration="tertiary" onClick={undefined} />
 			<CodeSnippet>
-				{`<ExtendedFab size="large" configuration="tertiary" onClick={undefined} />`}
+				{`<ExtendedFab size="large" configuration="tertiary" onClick={undefined}></ExtendedFab>`}
 			</CodeSnippet>
 		</div>
 	);
