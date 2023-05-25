@@ -1,9 +1,10 @@
 <h1 align="center">
+  <img src="/src/assets/tiny-react-md3-logo.png" width="250px"/>  
+
   TRMD3 </br></br>
 Tiny React Material Design 3
 <div align="center""> 
 <br/>
-<img src="/src/assets/tiny-react-md3-logo.png" width="250px"/>  
 </div>
 <h1>
 
@@ -115,6 +116,7 @@ https://trmd3.com/
 | ⏫ Top app bar | 🚧 | 🚧 | | |
 | 🔤 [Typography](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-typography) | ✅ | ✅ | [TypographiesFrame.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Typography/Frame/TypographiesFrame.tsx) | [Typography.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Typography/Typography.tsx) |
 | ☁️ [FABs (Floating Action Buttons)](https://github.com/highnet/Tiny-React-MD3/tree/master/src#%EF%B8%8F-fabs) | ✅ | ✅ | [FabsFrame.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/FAB/Frame/FabsFrame.tsx) | [Fab.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/FAB/Fab.tsx) |
+| ⛈️ [Extended FABs (Extended Floating Action Buttons)](https://github.com/highnet/Tiny-React-MD3/tree/master/src#%EF%B8%8F-extended-fabs) | ✅ | ✅ | [ExtendedFabsFrame.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/FABs/Extended%20FAB/Frame/ExtendedFabsFrame.tsx) | [ExtendedFab.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/FABs/Extended%20FAB/ExtendedFab.tsx) |
 
 ✅ Finished
 🚧 Under Construction
