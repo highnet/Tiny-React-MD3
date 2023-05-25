@@ -972,11 +972,11 @@ html {
 	--m3-composite-light-surface-passthrough-on-surface-variant-opacity-08: #f0e9f1;
 	--m3-composite-light-surface-container-high-passthrough-primary-opacity-08: #e1daea;
 	--m3-composite-light-surface-container-high-passthrough-primary-opacity-12: #dcd4e7;
-	--m3-composite-light-primary-container-passthrough-on-primary-container-opacity-08: #DACBF2;
-	--m3-composite-light-primary-container-passthrough-on-primary-container-opacity-12: #D2C2EC;
-	--m3-composite-light-tertiary-container-passthrough-on-tertiary-container-opacity-08: #EFC8D4;
-	--m3-composite-light-tertiary-container-passthrough-on-tertiary-container-opacity-12: #E6C0CC;
-	
+	--m3-composite-light-primary-container-passthrough-on-primary-container-opacity-08: #dacbf2;
+	--m3-composite-light-primary-container-passthrough-on-primary-container-opacity-12: #d2c2ec;
+	--m3-composite-light-tertiary-container-passthrough-on-tertiary-container-opacity-08: #efc8d4;
+	--m3-composite-light-tertiary-container-passthrough-on-tertiary-container-opacity-12: #e6c0cc;
+
 	/* M3 / COMPOSITES / DARK */
 	--m3-composite-dark-surface-container-low-passthrough-on-primary-opacity-08: #2b2832;
 	--m3-composite-dark-surface-container-low-passthrough-on-primary-opacity-12: #322e3b;
@@ -992,15 +992,14 @@ html {
 	--m3-composite-dark-surface-container-low-passthrough-on-surface-variant-opacity-08: #2b292e;
 	--m3-composite-dark-surface-container-low-passthrough-on-surface-variant-opacity-12: #322f35;
 	--m3-composite-dark-surface-container-high-passthrough-primary-opacity-08: #383541;
-	--m3-composite-dark-primary-container-passthrough-on-primary-container-opacity-08: #5B4494;
+	--m3-composite-dark-primary-container-passthrough-on-primary-container-opacity-08: #5b4494;
 	--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-08: #575065;
-	--m3-composite-dark-tertiary-container-passthrough-on-tertiary-container-opacity-08: #6F4854;
-	--m3-composite-dark-surface-container-high-passthrough-primary-opacity-12: #3F3B49;
-	--m3-composite-dark-primary-container-passthrough-on-primary-container-opacity-12: #624B99;
-	--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12: #5D566B;
-	--m3-composite-dark-tertiary-container-passthrough-on-tertiary-container-opacity-12: #764E5B;
-
-}	
+	--m3-composite-dark-tertiary-container-passthrough-on-tertiary-container-opacity-08: #6f4854;
+	--m3-composite-dark-surface-container-high-passthrough-primary-opacity-12: #3f3b49;
+	--m3-composite-dark-primary-container-passthrough-on-primary-container-opacity-12: #624b99;
+	--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12: #5d566b;
+	--m3-composite-dark-tertiary-container-passthrough-on-tertiary-container-opacity-12: #764e5b;
+}
 
 /* ==========TYPOGRAPHY========== /
 / TEXT */
@@ -1231,242 +1230,278 @@ html {
 
 /* BUTTONS / FILLED */
 .btn-filled.btn-light-theme {
-    background-color: var(--m3-sys-light-primary);
+	background-color: var(--m3-sys-light-primary);
 }
 .btn-filled > .element-on-button-light-theme {
-    color: var(--m3-sys-light-on-primary);
+	color: var(--m3-sys-light-on-primary);
 }
 .btn-filled:hover.btn-light-theme,
 .btn-filled:focus.btn-light-theme,
 .btn-filled:active.btn-light-theme {
-    box-shadow: none;
+	box-shadow: none;
 }
 .btn-filled:hover.btn-light-theme {
-    background-color: var(--m3-composite-light-primary-passthrough-on-primary-opacity-08);
-    box-shadow: var(--m3-elevation-light-1);
+	background-color: var(
+		--m3-composite-light-primary-passthrough-on-primary-opacity-08
+	);
+	box-shadow: var(--m3-elevation-light-1);
 }
 .btn-filled:focus.btn-light-theme {
-    background-color: var(--m3-composite-light-primary-passthrough-on-primary-opacity-12);
+	background-color: var(
+		--m3-composite-light-primary-passthrough-on-primary-opacity-12
+	);
 }
 .btn-filled:active.btn-light-theme {
-    background-color: var(--m3-composite-light-primary-passthrough-on-primary-opacity-12);
+	background-color: var(
+		--m3-composite-light-primary-passthrough-on-primary-opacity-12
+	);
 }
 
 .btn-filled:disabled.btn-light-theme {
-    background-color: var(--m3-state-layers-light-on-surface-opacity-12);
-    color: var(--m3-sys-light-on-surface);
+	background-color: var(--m3-state-layers-light-on-surface-opacity-12);
+	color: var(--m3-sys-light-on-surface);
 }
 
 /* BUTTONS / OUTLINED */
 .btn-outlined.btn-light-theme {
-    background-color: var(--m3-sys-light-surface);
-    border: 0.1rem solid var(--m3-sys-light-outline);
+	background-color: var(--m3-sys-light-surface);
+	border: 0.1rem solid var(--m3-sys-light-outline);
 }
 .btn-outlined > .element-on-button-light-theme {
-    color: var(--m3-sys-light-primary);
+	color: var(--m3-sys-light-primary);
 }
 .btn-outlined:hover.btn-light-theme {
-    background-color: var(--m3-state-layers-light-primary-opacity-08);
+	background-color: var(--m3-state-layers-light-primary-opacity-08);
 }
 .btn-outlined:active.btn-light-theme {
-    background-color: var(--m3-state-layers-light-primary-opacity-12);
+	background-color: var(--m3-state-layers-light-primary-opacity-12);
 }
 .btn-outlined:focus.btn-light-theme {
-    background-color: var(--m3-state-layers-light-primary-opacity-12);
-    border: 0.1rem solid var(--m3-sys-light-primary);
+	background-color: var(--m3-state-layers-light-primary-opacity-12);
+	border: 0.1rem solid var(--m3-sys-light-primary);
 }
 .btn-outlined:disabled.btn-light-theme {
-    color: var(--m3-sys-light-on-surface);
-    border: 0.1rem solid var(--m3-state-layers-light-on-surface-opacity-12);
+	color: var(--m3-sys-light-on-surface);
+	border: 0.1rem solid var(--m3-state-layers-light-on-surface-opacity-12);
 }
 
 /* BUTTONS / TEXT */
 .btn-text > .element-on-button-light-theme {
-    color: var(--m3-sys-light-primary);
+	color: var(--m3-sys-light-primary);
 }
 .btn-text.btn-with-icon {
-    padding: 1rem 1.6rem 1rem 1.2rem;
+	padding: 1rem 1.6rem 1rem 1.2rem;
 }
 .btn-text:hover.btn-light-theme,
 .btn-text:focus.btn-light-theme,
 .btn-text:active.btn-light-theme {
-    background-color: none;
+	background-color: none;
 }
 .btn-text:hover.btn-light-theme {
-    background-color: var(--m3-state-layers-light-primary-opacity-08);
+	background-color: var(--m3-state-layers-light-primary-opacity-08);
 }
 .btn-text:focus.btn-light-theme {
-    background-color: var(--m3-state-layers-light-primary-opacity-12);
+	background-color: var(--m3-state-layers-light-primary-opacity-12);
 }
 .btn-text:active.btn-light-theme {
-    background-color: var(--m3-state-layers-light-primary-opacity-12);
+	background-color: var(--m3-state-layers-light-primary-opacity-12);
 }
 
 /* BUTTONS / ELEVATED */
 .btn-elevated.btn-light-theme {
-    background-color: var(--m3-sys-light-surface-container-low);
-    box-shadow: var(--m3-elevation-light-1);
+	background-color: var(--m3-sys-light-surface-container-low);
+	box-shadow: var(--m3-elevation-light-1);
 }
 .btn-elevated > .element-on-button-light-theme {
-    color: var(--m3-sys-light-primary);
+	color: var(--m3-sys-light-primary);
 }
 .btn-elevated:hover.btn-light-theme {
-    background-color: var(--m3-composite-light-surface-container-low-passthrough-primary-opacity-08);
-    box-shadow: var(--m3-elevation-light-2);
+	background-color: var(
+		--m3-composite-light-surface-container-low-passthrough-primary-opacity-08
+	);
+	box-shadow: var(--m3-elevation-light-2);
 }
 .btn-elevated:focus.btn-light-theme {
-    background-color: var(--m3-composite-light-surface-container-low-passthrough-primary-opacity-08);
-    box-shadow: var(--m3-elevation-light-1);
+	background-color: var(
+		--m3-composite-light-surface-container-low-passthrough-primary-opacity-08
+	);
+	box-shadow: var(--m3-elevation-light-1);
 }
 .btn-elevated:active.btn-light-theme {
-    background-color: var(--m3-composite-light-surface-container-low-passthrough-primary-opacity-12);
-    box-shadow: var(--m3-elevation-light-1);
+	background-color: var(
+		--m3-composite-light-surface-container-low-passthrough-primary-opacity-12
+	);
+	box-shadow: var(--m3-elevation-light-1);
 }
 
 /* BUTTONS / TONAL */
 .btn-tonal.btn-light-theme {
-    background-color: var(--m3-sys-light-secondary-container);
+	background-color: var(--m3-sys-light-secondary-container);
 }
 .btn-tonal > .element-on-button-light-theme {
-    color: var(--m3-sys-light-on-secondary-container);
+	color: var(--m3-sys-light-on-secondary-container);
 }
 .btn-tonal:hover.btn-light-theme {
-    background-color: var(--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-08);
-    box-shadow: var(--m3-elevation-light-1);
+	background-color: var(
+		--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-08
+	);
+	box-shadow: var(--m3-elevation-light-1);
 }
 .btn-tonal:focus.btn-light-theme {
-    background-color: var(--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-12);
+	background-color: var(
+		--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-12
+	);
 }
 .btn-tonal:active.btn-light-theme {
-    background-color: var(--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-12);
+	background-color: var(
+		--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-12
+	);
 }
 .btn-tonal:disabled.btn-light-theme {
-    background-color: var(--m3-state-layers-light-on-surface-opacity-12);
-    color: var(--m3-sys-light-on-surface);
+	background-color: var(--m3-state-layers-light-on-surface-opacity-12);
+	color: var(--m3-sys-light-on-surface);
 }
 
 /* ==========BUTTONS / DARK THEME==========*/
 
 /* BUTTONS / FILLED */
 .btn-filled.btn-dark-theme {
-    background-color: var(--m3-sys-dark-primary);
+	background-color: var(--m3-sys-dark-primary);
 }
 .btn-filled > .element-on-button-dark-theme {
-    color: var(--m3-sys-dark-on-primary);
+	color: var(--m3-sys-dark-on-primary);
 }
 .btn-filled:hover.btn-dark-theme,
 .btn-filled:focus.btn-dark-theme,
 .btn-filled:active.btn-dark-theme {
-    box-shadow: none;
+	box-shadow: none;
 }
 .btn-filled:hover.btn-dark-theme {
-    background-color: var(--m3-composite-dark-primary-passthrough-on-primary-opacity-08);
-    box-shadow: var(--m3-elevation-dark-1);
+	background-color: var(
+		--m3-composite-dark-primary-passthrough-on-primary-opacity-08
+	);
+	box-shadow: var(--m3-elevation-dark-1);
 }
 .btn-filled:focus.btn-dark-theme {
-    background-color: var(--m3-composite-dark-primary-passthrough-on-primary-opacity-12);
+	background-color: var(
+		--m3-composite-dark-primary-passthrough-on-primary-opacity-12
+	);
 }
 .btn-filled:active.btn-dark-theme {
-    background-color: var(--m3-composite-dark-primary-passthrough-on-primary-opacity-12);
+	background-color: var(
+		--m3-composite-dark-primary-passthrough-on-primary-opacity-12
+	);
 }
 
 /* BUTTONS / FILLED / DISABLED */
 .btn-filled:disabled.btn-dark-theme {
-    background-color: var(--m3-state-layers-dark-on-surface-opacity-12);
-    color: var(--m3-sys-dark-on-surface);
+	background-color: var(--m3-state-layers-dark-on-surface-opacity-12);
+	color: var(--m3-sys-dark-on-surface);
 }
 
 /* BUTTONS / OUTLINED */
 .btn-outlined.btn-dark-theme {
-    background-color: var(--m3-sys-dark-surface);
-    border: 0.1rem solid var(--m3-sys-dark-outline);
+	background-color: var(--m3-sys-dark-surface);
+	border: 0.1rem solid var(--m3-sys-dark-outline);
 }
 .btn-outlined > .element-on-button-dark-theme {
-    color: var(--m3-sys-dark-primary);
+	color: var(--m3-sys-dark-primary);
 }
 .btn-outlined:hover.btn-dark-theme {
-    background-color: var(--m3-state-layers-dark-primary-opacity-08);
+	background-color: var(--m3-state-layers-dark-primary-opacity-08);
 }
 .btn-outlined:focus.btn-dark-theme {
-    background-color: var(--m3-state-layers-dark-primary-opacity-12);
-    border: 0.1rem solid var(--m3-sys-dark-primary);
+	background-color: var(--m3-state-layers-dark-primary-opacity-12);
+	border: 0.1rem solid var(--m3-sys-dark-primary);
 }
 .btn-outlined:active.btn-dark-theme {
-    background-color: var(--m3-state-layers-dark-primary-opacity-12);
+	background-color: var(--m3-state-layers-dark-primary-opacity-12);
 }
 .btn-outlined:disabled.btn-dark-theme {
-    color: var(--m3-sys-dark-on-surface);
-    border: 0.1rem solid var(--m3-state-layers-dark-on-surface-opacity-12);
+	color: var(--m3-sys-dark-on-surface);
+	border: 0.1rem solid var(--m3-state-layers-dark-on-surface-opacity-12);
 }
 
 /* BUTTONS / TEXT */
 .btn-text > .element-on-button-dark-theme {
-    color: var(--m3-sys-dark-primary);
+	color: var(--m3-sys-dark-primary);
 }
 .btn-text:hover.btn-dark-theme,
 .btn-text:focus.btn-dark-theme,
 .btn-text:active.btn-dark-theme {
-    background-color: none;
+	background-color: none;
 }
 .btn-text:hover.btn-dark-theme {
-    background-color: var(--m3-state-layers-dark-primary-opacity-08);
+	background-color: var(--m3-state-layers-dark-primary-opacity-08);
 }
 .btn-text:focus.btn-dark-theme {
-    background-color: var(--m3-state-layers-dark-primary-opacity-12);
+	background-color: var(--m3-state-layers-dark-primary-opacity-12);
 }
 .btn-text:active.btn-dark-theme {
-    background-color: var(--m3-state-layers-dark-primary-opacity-12);
+	background-color: var(--m3-state-layers-dark-primary-opacity-12);
 }
 
 /* BUTTONS / ELEVATED */
 .btn-elevated.btn-dark-theme {
-    background-color: var(--m3-sys-dark-surface-container-low);
-    box-shadow: var(--m3-elevation-dark-1);
+	background-color: var(--m3-sys-dark-surface-container-low);
+	box-shadow: var(--m3-elevation-dark-1);
 }
 .btn-elevated > .element-on-button-dark-theme {
-    color: var(--m3-sys-dark-primary);
+	color: var(--m3-sys-dark-primary);
 }
 .btn-elevated:hover.btn-dark-theme,
 .btn-elevated:focus.btn-dark-theme,
 .btn-elevated:active.btn-dark-theme {
-    background-color: none;
+	background-color: none;
 }
 .btn-elevated:hover.btn-dark-theme {
-    background-color: var(--m3-composite-dark-surface-container-low-passthrough-on-primary-opacity-08);
-    box-shadow: var(--m3-elevation-dark-2);
+	background-color: var(
+		--m3-composite-dark-surface-container-low-passthrough-on-primary-opacity-08
+	);
+	box-shadow: var(--m3-elevation-dark-2);
 }
 .btn-elevated:focus.btn-dark-theme {
-    background-color: var(--m3-composite-dark-surface-container-low-passthrough-primary-opacity-12);
+	background-color: var(
+		--m3-composite-dark-surface-container-low-passthrough-primary-opacity-12
+	);
 }
 .btn-elevated:active.btn-dark-theme {
-    background-color: var(--m3-composite-dark-surface-container-low-passthrough-on-primary-opacity-12);
+	background-color: var(
+		--m3-composite-dark-surface-container-low-passthrough-on-primary-opacity-12
+	);
 }
 
 /* BUTTONS / TONAL */
 .btn-tonal.btn-dark-theme {
-    background-color: var(--m3-sys-dark-secondary-container);
+	background-color: var(--m3-sys-dark-secondary-container);
 }
 .btn-tonal > .element-on-button-dark-theme {
-    color: var(--m3-sys-dark-on-secondary-container);
+	color: var(--m3-sys-dark-on-secondary-container);
 }
 .btn-tonal:hover.btn-dark-theme,
 .btn-tonal:focus.btn-dark-theme,
 .btn-tonal:active.btn-dark-theme {
-    background-color: none;
+	background-color: none;
 }
 .btn-tonal:hover.btn-dark-theme {
-    background-color: var(--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-08);
-    box-shadow: var(--m3-elevation-dark-1);
+	background-color: var(
+		--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-08
+	);
+	box-shadow: var(--m3-elevation-dark-1);
 }
 .btn-tonal:focus.btn-dark-theme {
-    background-color: var(--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12);
+	background-color: var(
+		--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12
+	);
 }
 .btn-tonal:active.btn-dark-theme {
-    background-color: var(--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12);
+	background-color: var(
+		--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12
+	);
 }
 .btn-tonal:disabled.btn-dark-theme {
-    background-color: var(--m3-state-layers-dark-on-surface-opacity-12);
-    color: var(--m3-sys-dark-on-surface);
+	background-color: var(--m3-state-layers-dark-on-surface-opacity-12);
+	color: var(--m3-sys-dark-on-surface);
 }
 
 /* ==========ICONS========== */
@@ -2855,12 +2890,12 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	position: absolute;
 	top: 0;
 	border-radius: 50%;
-	transform: translate(-50%, -50%) scale(.1);
+	transform: translate(-50%, -50%) scale(0.1);
 	transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 	opacity: 0;
-  }
+}
 
-  .fab:hover > .fab-inner-circle {
+.fab:hover > .fab-inner-circle {
 	transform: translate(-50%, -50%) scale(2);
 	opacity: 1;
 }
@@ -2872,8 +2907,8 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 }
 
 .fab-small > .fab-inner-circle {
-  width: 2rem;
-  height: 2rem;
+	width: 2rem;
+	height: 2rem;
 }
 
 .fab-medium {
@@ -2883,8 +2918,8 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 }
 
 .fab-medium > .fab-inner-circle {
-  width: 3.3rem;
-  height: 3.3rem;
+	width: 3.3rem;
+	height: 3.3rem;
 }
 
 .fab-large {
@@ -2894,8 +2929,8 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 }
 
 .fab-large > .fab-inner-circle {
-  width: 4.8rem;
-  height: 4.8rem;
+	width: 4.8rem;
+	height: 4.8rem;
 }
 
 /* FABS / LIGHT */
@@ -2903,41 +2938,41 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .fab-primary.fab-light-theme,
 .fab-secondary.fab-light-theme,
 .fab-tertiary.fab-light-theme {
-  box-shadow: var(--m3-elevation-light-3);
+	box-shadow: var(--m3-elevation-light-3);
 }
 
 .fab-surface:hover.fab-light-theme,
 .fab-primary:hover.fab-light-theme,
 .fab-secondary:hover.fab-light-theme,
 .fab-tertiary:hover.fab-light-theme {
-  box-shadow: var(--m3-elevation-light-4);
+	box-shadow: var(--m3-elevation-light-4);
 }
 
 .fab-surface:focus.fab-light-theme,
 .fab-primary:focus.fab-light-theme,
 .fab-secondary:focus.fab-light-theme,
 .fab-tertiary:focus.fab-light-theme {
-  box-shadow: var(--m3-elevation-light-3);
+	box-shadow: var(--m3-elevation-light-3);
 }
 
 .fab-surface > .label-on-fab.label-on-fab-light-theme,
 .fab-surface > .icon-on-fab.icon-on-fab-light-theme {
-  color: var(--m3-sys-light-primary);
+	color: var(--m3-sys-light-primary);
 }
 
 .fab-primary > .label-on-fab.label-on-fab-light-theme,
 .fab-primary > .icon-on-fab.icon-on-fab-light-theme {
-  color: var(--m3-sys-light-on-primary-container);
+	color: var(--m3-sys-light-on-primary-container);
 }
 
 .fab-secondary > .label-on-fab.label-on-fab-light-theme,
 .fab-secondary > .icon-on-fab.icon-on-fab-light-theme {
-  color: var(--m3-sys-light-on-secondary-container);
+	color: var(--m3-sys-light-on-secondary-container);
 }
 
 .fab-tertiary > .label-on-fab.label-on-fab-light-theme,
 .fab-tertiary > .icon-on-fab.icon-on-fab-light-theme {
-  color: var(--m3-sys-light-on-tertiary-container);
+	color: var(--m3-sys-light-on-tertiary-container);
 }
 
 .fab-surface.fab-light-theme,
@@ -2945,7 +2980,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .fab-surface:focus.fab-light-theme,
 .fab-surface:not(.extended-fab):active.fab-light-theme,
 .fab-surface:active.fab-light-theme > .fab-inner-circle {
-  background-color: var(--m3-sys-light-surface-container-high);
+	background-color: var(--m3-sys-light-surface-container-high);
 }
 
 .fab-primary.fab-light-theme,
@@ -2953,7 +2988,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .fab-primary:focus.fab-light-theme,
 .fab-primary:not(.extended-fab):active.fab-light-theme,
 .fab-primary:active.fab-light-theme > .fab-inner-circle {
-  background-color: var(--m3-sys-light-primary-container);
+	background-color: var(--m3-sys-light-primary-container);
 }
 
 .fab-secondary.fab-light-theme,
@@ -2961,7 +2996,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .fab-secondary:focus.fab-light-theme,
 .fab-secondary:not(.extended-fab):active.fab-light-theme,
 .fab-secondary:active.fab-light-theme > .fab-inner-circle {
-  background-color: var(--m3-sys-light-secondary-container);
+	background-color: var(--m3-sys-light-secondary-container);
 }
 
 .fab-tertiary.fab-light-theme,
@@ -2969,55 +3004,77 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .fab-tertiary:focus.fab-light-theme,
 .fab-tertiary:not(.extended-fab):active.fab-light-theme,
 .fab-tertiary:active.fab-light-theme > .fab-inner-circle {
-  background-color: var(--m3-sys-light-tertiary-container);
+	background-color: var(--m3-sys-light-tertiary-container);
 }
 
 .fab-surface:hover.fab-light-theme {
-  background-color: var(--m3-composite-light-surface-container-high-passthrough-primary-opacity-08);
+	background-color: var(
+		--m3-composite-light-surface-container-high-passthrough-primary-opacity-08
+	);
 }
 
 .fab-primary:hover.fab-light-theme {
-  background-color: var(--m3-composite-light-primary-container-passthrough-on-primary-container-opacity-08);
+	background-color: var(
+		--m3-composite-light-primary-container-passthrough-on-primary-container-opacity-08
+	);
 }
 
 .fab-secondary:hover.fab-light-theme {
-  background-color: var(--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-08);
+	background-color: var(
+		--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-08
+	);
 }
 
 .fab-tertiary:hover.fab-light-theme {
-  background-color: var(--m3-composite-light-tertiary-container-passthrough-on-tertiary-container-opacity-08);
+	background-color: var(
+		--m3-composite-light-tertiary-container-passthrough-on-tertiary-container-opacity-08
+	);
 }
 
 .fab-surface:focus.fab-light-theme {
-  background-color: var(--m3-composite-light-surface-container-high-passthrough-primary-opacity-12);
+	background-color: var(
+		--m3-composite-light-surface-container-high-passthrough-primary-opacity-12
+	);
 }
 
 .fab-primary:focus.fab-light-theme {
-  background-color: var(--m3-composite-light-primary-container-passthrough-on-primary-container-opacity-12);
+	background-color: var(
+		--m3-composite-light-primary-container-passthrough-on-primary-container-opacity-12
+	);
 }
 
 .fab-secondary:focus.fab-light-theme {
-  background-color: var(--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-12);
+	background-color: var(
+		--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-12
+	);
 }
 
 .fab-tertiary:focus.fab-light-theme {
-  background-color: var(--m3-composite-light-tertiary-container-passthrough-on-tertiary-container-opacity-12);
+	background-color: var(
+		--m3-composite-light-tertiary-container-passthrough-on-tertiary-container-opacity-12
+	);
 }
 
 .fab-surface:active.fab-light-theme > .fab-inner-circle {
-  background-color: var(--m3-state-layers-light-primary-opacity-12);
+	background-color: var(--m3-state-layers-light-primary-opacity-12);
 }
 
 .fab-primary:active.fab-light-theme > .fab-inner-circle {
-  background-color: var(--m3-state-layers-light-on-primary-container-opacity-12);
+	background-color: var(
+		--m3-state-layers-light-on-primary-container-opacity-12
+	);
 }
 
 .fab-secondary:active.fab-light-theme > .fab-inner-circle {
-  background-color: var(--m3-state-layers-light-on-secondary-container-opacity-12);
+	background-color: var(
+		--m3-state-layers-light-on-secondary-container-opacity-12
+	);
 }
 
 .fab-tertiary:active.fab-light-theme > .fab-inner-circle {
-  background-color: var(--m3-state-layers-light-on-tertiary-container-opacity-12);
+	background-color: var(
+		--m3-state-layers-light-on-tertiary-container-opacity-12
+	);
 }
 
 /* FABS / DARK */
@@ -3026,41 +3083,41 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .fab-primary.fab-dark-theme,
 .fab-secondary.fab-dark-theme,
 .fab-tertiary.fab-dark-theme {
-  box-shadow: var(--m3-elevation-dark-3);
+	box-shadow: var(--m3-elevation-dark-3);
 }
 
 .fab-surface:hover.fab-dark-theme,
 .fab-primary:hover.fab-dark-theme,
 .fab-secondary:hover.fab-dark-theme,
 .fab-tertiary:hover.fab-dark-theme {
-  box-shadow: var(--m3-elevation-dark-4);
+	box-shadow: var(--m3-elevation-dark-4);
 }
 
 .fab-surface:focus.fab-dark-theme,
 .fab-primary:focus.fab-dark-theme,
 .fab-secondary:focus.fab-dark-theme,
 .fab-tertiary:focus.fab-dark-theme {
-  box-shadow: var(--m3-elevation-dark-3);
+	box-shadow: var(--m3-elevation-dark-3);
 }
 
 .fab-surface > .label-on-fab.label-on-fab-dark-theme,
 .fab-surface > .icon-on-fab.icon-on-fab-dark-theme {
-  color: var(--m3-sys-dark-primary);
+	color: var(--m3-sys-dark-primary);
 }
 
 .fab-primary > .label-on-fab.label-on-fab-dark-theme,
 .fab-primary > .icon-on-fab.icon-on-fab-dark-theme {
-  color: var(--m3-sys-dark-on-primary-container);
+	color: var(--m3-sys-dark-on-primary-container);
 }
 
 .fab-secondary > .label-on-fab.label-on-fab-dark-theme,
 .fab-secondary > .icon-on-fab.icon-on-fab-dark-theme {
-  color: var(--m3-sys-dark-on-secondary-container);
+	color: var(--m3-sys-dark-on-secondary-container);
 }
 
 .fab-tertiary > .label-on-fab.label-on-fab-dark-theme,
 .fab-tertiary > .icon-on-fab.icon-on-fab-dark-theme {
-  color: var(--m3-sys-dark-on-tertiary-container);
+	color: var(--m3-sys-dark-on-tertiary-container);
 }
 
 .fab-surface.fab-dark-theme,
@@ -3068,7 +3125,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .fab-surface:focus.fab-dark-theme,
 .fab-surface:not(.extended-fab):active.fab-dark-theme,
 .fab-surface:active.fab-dark-theme > .fab-inner-circle {
-  background-color: var(--m3-sys-dark-surface-container-high);
+	background-color: var(--m3-sys-dark-surface-container-high);
 }
 
 .fab-primary.fab-dark-theme,
@@ -3076,7 +3133,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .fab-primary:focus.fab-dark-theme,
 .fab-primary:not(.extended-fab):active.fab-dark-theme,
 .fab-primary:active.fab-dark-theme > .fab-inner-circle {
-  background-color: var(--m3-sys-dark-primary-container);
+	background-color: var(--m3-sys-dark-primary-container);
 }
 
 .fab-secondary.fab-dark-theme,
@@ -3084,7 +3141,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .fab-secondary:focus.fab-dark-theme,
 .fab-secondary:not(.extended-fab):active.fab-dark-theme,
 .fab-secondary:active.fab-dark-theme > .fab-inner-circle {
-  background-color: var(--m3-sys-dark-secondary-container);
+	background-color: var(--m3-sys-dark-secondary-container);
 }
 
 .fab-tertiary.fab-dark-theme,
@@ -3092,56 +3149,76 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .fab-tertiary:focus.fab-dark-theme,
 .fab-tertiary:not(.extended-fab):active.fab-dark-theme,
 .fab-tertiary:active.fab-dark-theme > .fab-inner-circle {
-  background-color: var(--m3-sys-dark-tertiary-container);
+	background-color: var(--m3-sys-dark-tertiary-container);
 }
 
 .fab-surface:hover.fab-dark-theme {
-	background-color: var(--m3-composite-dark-surface-container-high-passthrough-primary-opacity-08);
-  }
-  
-  .fab-primary:hover.fab-dark-theme {
-	background-color: var(--m3-composite-dark-primary-container-passthrough-on-primary-container-opacity-08);
-  }
-  
-  .fab-secondary:hover.fab-dark-theme {
-	background-color: var(--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-08);
-  }
-  
-  .fab-tertiary:hover.fab-dark-theme {
-	background-color: var(--m3-composite-dark-tertiary-container-passthrough-on-tertiary-container-opacity-08);
-  }
-  
-  .fab-surface:focus.fab-dark-theme {
-	background-color: var(--m3-composite-dark-surface-container-high-passthrough-primary-opacity-12);
-  }
-  
-  .fab-primary:focus.fab-dark-theme {
-	background-color: var(--m3-composite-dark-primary-container-passthrough-on-primary-container-opacity-12);
-  }
-  
-  .fab-secondary:focus.fab-dark-theme {
-	background-color: var(--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12);
-  }
-  
-  .fab-tertiary:focus.fab-dark-theme {
-	background-color: var(--m3-composite-dark-tertiary-container-passthrough-on-tertiary-container-opacity-12);
-  }
+	background-color: var(
+		--m3-composite-dark-surface-container-high-passthrough-primary-opacity-08
+	);
+}
+
+.fab-primary:hover.fab-dark-theme {
+	background-color: var(
+		--m3-composite-dark-primary-container-passthrough-on-primary-container-opacity-08
+	);
+}
+
+.fab-secondary:hover.fab-dark-theme {
+	background-color: var(
+		--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-08
+	);
+}
+
+.fab-tertiary:hover.fab-dark-theme {
+	background-color: var(
+		--m3-composite-dark-tertiary-container-passthrough-on-tertiary-container-opacity-08
+	);
+}
+
+.fab-surface:focus.fab-dark-theme {
+	background-color: var(
+		--m3-composite-dark-surface-container-high-passthrough-primary-opacity-12
+	);
+}
+
+.fab-primary:focus.fab-dark-theme {
+	background-color: var(
+		--m3-composite-dark-primary-container-passthrough-on-primary-container-opacity-12
+	);
+}
+
+.fab-secondary:focus.fab-dark-theme {
+	background-color: var(
+		--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12
+	);
+}
+
+.fab-tertiary:focus.fab-dark-theme {
+	background-color: var(
+		--m3-composite-dark-tertiary-container-passthrough-on-tertiary-container-opacity-12
+	);
+}
 
 .fab-surface:active.fab-dark-theme > .fab-inner-circle {
 	background-color: var(--m3-state-layers-dark-primary-opacity-12);
-  }
-  
-  .fab-primary:active.fab-dark-theme > .fab-inner-circle {
+}
+
+.fab-primary:active.fab-dark-theme > .fab-inner-circle {
 	background-color: var(--m3-state-layers-dark-on-primary-container-opacity-12);
-  }
-  
-  .fab-secondary:active.fab-dark-theme > .fab-inner-circle {
-	background-color: var(--m3-state-layers-dark-on-secondary-container-opacity-12);
-  }
-  
-  .fab-tertiary:active.fab-dark-theme > .fab-inner-circle {
-	background-color: var(--m3-state-layers-dark-on-tertiary-container-opacity-12);
-  }
+}
+
+.fab-secondary:active.fab-dark-theme > .fab-inner-circle {
+	background-color: var(
+		--m3-state-layers-dark-on-secondary-container-opacity-12
+	);
+}
+
+.fab-tertiary:active.fab-dark-theme > .fab-inner-circle {
+	background-color: var(
+		--m3-state-layers-dark-on-tertiary-container-opacity-12
+	);
+}
 
 /* ==========EXTENDED FABS========== */
 .extended-fab {
@@ -3161,7 +3238,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 
 .bottom-app-bar {
 	display: flex;
-	width: 50%;
+	width: 100%;
 	height: 8rem;
 	align-items: center;
 	padding: 0rem 1.6rem 0rem 0.4rem;
@@ -3176,7 +3253,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	color: var(--m3-sys-light-on-surface-variant);
 }
 
-.container-on-icon-on-bottom-app-bar{
+.container-on-icon-on-bottom-app-bar {
 	cursor: pointer;
 	display: flex;
 	align-items: center;
