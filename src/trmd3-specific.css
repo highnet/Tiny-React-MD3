@@ -414,36 +414,6 @@ html {
 	white-space: pre-wrap;
 }
 
-/* BOTTOM NAV BAR */
-
-.bottom-nav-bar-trmd3 {
-	display: flex;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 8rem;
-	background-color: var(--m3-sys-dark-surface);
-	box-shadow: var(--m3-elevation-dark-2);
-	z-index: 100;
-}
-
-.bottom-nav-bar-trmd3-text-trmd3 {
-	margin-left: 1rem;
-}
-
-.bottom-nav-bar-up-text-trmd3 {
-	cursor: pointer;
-	width: 100%;
-	position: absolute;
-}
-
-.bottom-nav-bar-text-trmd3 {
-	color: white;
-	font-weight: bold;
-	text-align: center;
-	line-height: 8rem;
-}
-
 /* COMPONENT FRAME TITLES */
 .component-frame-title-trmd3 {
 	position: relative;
@@ -474,13 +444,13 @@ html {
 	scale: 1.1;
 }
 
-.component-frame-title-trmd3.component-frame-title-light-theme-trmd3{
+.component-frame-title-trmd3.component-frame-title-light-theme-trmd3 {
 	color: var(--m3-sys-light-primary);
 	background-color: var(--m3-sys-light-surface);
 	box-shadow: var(--m3-elevation-light-2);
 }
 
-.component-frame-title-trmd3.component-frame-title-dark-theme-trmd3{
+.component-frame-title-trmd3.component-frame-title-dark-theme-trmd3 {
 	color: var(--m3-sys-dark-primary);
 	background-color: var(--m3-sys-dark-surface);
 	box-shadow: var(--m3-elevation-dark-2);
@@ -494,9 +464,9 @@ html {
 	background-color: red;
 	cursor: pointer;
 	overflow: hidden;
-  }
-  
-  .inner-circle {
+}
+
+.inner-circle {
 	position: absolute;
 	top: 0;
 	width: 300px;
@@ -506,9 +476,9 @@ html {
 	transform: translate(-50%, -50%) scale(1);
 	transition: transform 0.3s ease-in-out;
 	display: none;
-  }
-  
-  .box:hover .inner-circle {
+}
+
+.box:hover .inner-circle {
 	transform: translate(-50%, -50%) scale(2);
 	display: block;
-  }
+}

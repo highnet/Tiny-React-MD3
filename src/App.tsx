@@ -94,7 +94,6 @@ function App() {
 			<div id="section-8-trmd3" className="section-trmd3">
 				<BottomAppBarsFrame />
 			</div>
-			<BottomNavBar scrollToTop={handleScrollToTop} />
 		</div>
 	);
 }
