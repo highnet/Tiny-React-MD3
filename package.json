@@ -1,7 +1,7 @@
 {
-  "name": "vite-react-ts-md3-components",
+  "name": "tiny-react-material-design-3",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",

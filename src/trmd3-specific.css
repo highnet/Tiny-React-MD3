@@ -65,7 +65,7 @@ html {
 .logo-trmd3 {
 	max-width: 30rem;
 	margin: 0 auto;
-	padding-top: 8rem;
+	padding-top: 15rem;
 	padding-bottom: 2rem;
 	width: 50vw;
 }
@@ -75,7 +75,6 @@ html {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	margin-bottom: 6rem;
-	padding-top: 30rem;
 	font-weight: bold;
 }
 

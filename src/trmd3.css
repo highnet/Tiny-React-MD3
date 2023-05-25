@@ -974,7 +974,9 @@ html {
 	--m3-composite-light-surface-container-high-passthrough-primary-opacity-12: #dcd4e7;
 	--m3-composite-light-primary-container-passthrough-on-primary-container-opacity-08: #DACBF2;
 	--m3-composite-light-primary-container-passthrough-on-primary-container-opacity-12: #D2C2EC;
-
+	--m3-composite-light-tertiary-container-passthrough-on-tertiary-container-opacity-08: #EFC8D4;
+	--m3-composite-light-tertiary-container-passthrough-on-tertiary-container-opacity-12: #E6C0CC;
+	
 	/* M3 / COMPOSITES / DARK */
 	--m3-composite-dark-surface-container-low-passthrough-on-primary-opacity-08: #2b2832;
 	--m3-composite-dark-surface-container-low-passthrough-on-primary-opacity-12: #322e3b;
@@ -2988,91 +2990,129 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 
 /* FABS / LIGHT */
 
+
+/* Common styles */
+.fab-surface.fab-light-theme,
+.fab-primary.fab-light-theme,
+.fab-secondary.fab-light-theme,
+.fab-tertiary.fab-light-theme {
+  box-shadow: var(--m3-elevation-light-3);
+}
+
+.fab-surface:hover.fab-light-theme,
+.fab-primary:hover.fab-light-theme,
+.fab-secondary:hover.fab-light-theme,
+.fab-tertiary:hover.fab-light-theme {
+  box-shadow: var(--m3-elevation-light-4);
+}
+
+.fab-surface:focus.fab-light-theme,
+.fab-primary:focus.fab-light-theme,
+.fab-secondary:focus.fab-light-theme,
+.fab-tertiary:focus.fab-light-theme {
+  box-shadow: var(--m3-elevation-light-3);
+}
+
+/* Unique styles using CSS variables */
 .fab-surface > .label-on-fab.label-on-fab-light-theme,
 .fab-surface > .icon-on-fab.icon-on-fab-light-theme {
-	color: var(--m3-sys-light-primary);
+  color: var(--m3-sys-light-primary);
 }
 
 .fab-primary > .label-on-fab.label-on-fab-light-theme,
 .fab-primary > .icon-on-fab.icon-on-fab-light-theme {
-	color: var(--m3-sys-light-on-primary-container);
+  color: var(--m3-sys-light-on-primary-container);
 }
 
 .fab-secondary > .label-on-fab.label-on-fab-light-theme,
 .fab-secondary > .icon-on-fab.icon-on-fab-light-theme {
-	color: var(--m3-sys-light-on-secondary-container);
+  color: var(--m3-sys-light-on-secondary-container);
 }
 
 .fab-tertiary > .label-on-fab.label-on-fab-light-theme,
 .fab-tertiary > .icon-on-fab.icon-on-fab-light-theme {
-	color: var(--m3-sys-light-on-tertiary-container);
+  color: var(--m3-sys-light-on-tertiary-container);
 }
 
-.fab-surface.fab-light-theme {
-	background-color: var(--m3-sys-light-surface-container-high);
-	box-shadow: var(--m3-elevation-light-3);
+.fab-surface.fab-light-theme,
+.fab-surface:hover.fab-light-theme,
+.fab-surface:focus.fab-light-theme,
+.fab-surface:not(.extended-fab):active.fab-light-theme,
+.fab-surface:active.fab-light-theme > .fab-inner-circle {
+  background-color: var(--m3-sys-light-surface-container-high);
 }
 
-.fab-primary.fab-light-theme {
-	background-color: var(--m3-sys-light-primary-container);
-	box-shadow: var(--m3-elevation-light-3);
+.fab-primary.fab-light-theme,
+.fab-primary:hover.fab-light-theme,
+.fab-primary:focus.fab-light-theme,
+.fab-primary:not(.extended-fab):active.fab-light-theme,
+.fab-primary:active.fab-light-theme > .fab-inner-circle {
+  background-color: var(--m3-sys-light-primary-container);
 }
 
-.fab-secondary.fab-light-theme {
-	background-color: var(--m3-sys-light-secondary-container);
-	box-shadow: var(--m3-elevation-light-3);
+.fab-secondary.fab-light-theme,
+.fab-secondary:hover.fab-light-theme,
+.fab-secondary:focus.fab-light-theme,
+.fab-secondary:not(.extended-fab):active.fab-light-theme,
+.fab-secondary:active.fab-light-theme > .fab-inner-circle {
+  background-color: var(--m3-sys-light-secondary-container);
 }
 
-.fab-tertiary.fab-light-theme {
-	background-color: var(--m3-sys-light-tertiary-container);
-	box-shadow: var(--m3-elevation-light-3);
+.fab-tertiary.fab-light-theme,
+.fab-tertiary:hover.fab-light-theme,
+.fab-tertiary:focus.fab-light-theme,
+.fab-tertiary:not(.extended-fab):active.fab-light-theme,
+.fab-tertiary:active.fab-light-theme > .fab-inner-circle {
+  background-color: var(--m3-sys-light-tertiary-container);
 }
 
 .fab-surface:hover.fab-light-theme {
-	background-color: var(
-		--m3-composite-light-surface-container-high-passthrough-primary-opacity-08
-	);
-	box-shadow: var(--m3-elevation-light-4);
+  background-color: var(--m3-composite-light-surface-container-high-passthrough-primary-opacity-08);
 }
 
 .fab-primary:hover.fab-light-theme {
-	background-color: var(
-		--m3-composite-light-primary-container-passthrough-on-primary-container-opacity-08
-	);
-	box-shadow: var(--m3-elevation-light-4);
+  background-color: var(--m3-composite-light-primary-container-passthrough-on-primary-container-opacity-08);
+}
+
+.fab-secondary:hover.fab-light-theme {
+  background-color: var(--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-08);
+}
+
+.fab-tertiary:hover.fab-light-theme {
+  background-color: var(--m3-composite-light-tertiary-container-passthrough-on-tertiary-container-opacity-08);
 }
 
 .fab-surface:focus.fab-light-theme {
-	background-color: var(
-		--m3-composite-light-surface-container-high-passthrough-primary-opacity-12
-	);
-	box-shadow: var(--m3-elevation-light-3);
+  background-color: var(--m3-composite-light-surface-container-high-passthrough-primary-opacity-12);
 }
 
 .fab-primary:focus.fab-light-theme {
-	background-color: var(
-		--m3-composite-light-primary-container-passthrough-on-primary-container-opacity-12
-	);
-	box-shadow: var(--m3-elevation-light-3);
+  background-color: var(--m3-composite-light-primary-container-passthrough-on-primary-container-opacity-12);
 }
 
-.fab-surface:active.fab-light-theme {
-	background-color: var(--m3-sys-light-surface-container-high) !important;
+.fab-secondary:focus.fab-light-theme {
+  background-color: var(--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-12);
 }
 
-.fab-primary:active.fab-light-theme {
-	background-color: var(--m3-sys-light-primary-container) !important;
+.fab-tertiary:focus.fab-light-theme {
+  background-color: var(--m3-composite-light-tertiary-container-passthrough-on-tertiary-container-opacity-12);
 }
 
 .fab-surface:active.fab-light-theme > .fab-inner-circle {
-	background-color: var(--m3-state-layers-light-primary-opacity-12);
+  background-color: var(--m3-state-layers-light-primary-opacity-12);
 }
 
 .fab-primary:active.fab-light-theme > .fab-inner-circle {
-	background-color: var(--m3-state-layers-light-on-primary-container-opacity-12);
+  background-color: var(--m3-state-layers-light-on-primary-container-opacity-12);
 }
 
+.fab-secondary:active.fab-light-theme > .fab-inner-circle {
+  background-color: var(--m3-state-layers-light-on-secondary-container-opacity-12);
+}
 
+.fab-tertiary:active.fab-light-theme > .fab-inner-circle {
+  background-color: var(--m3-state-layers-light-on-tertiary-container-opacity-12);
+}
 
 /* FABS / DARK */
 
@@ -3085,8 +3125,9 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	padding: 1.6rem 2rem 1.6rem 1.6rem;
 	gap: 1.2rem;
 	border-radius: 1.6rem;
-	width: 10.7rem;
+	min-width: 10.7rem;
 	height: 5.6rem;
+	width: fit-content;
 }
 /* EXTENDED FABS / LIGHT */
 /* EXTENDED FABS / DARK */
