@@ -20,7 +20,6 @@ import { scrollToSection } from "./Gizmos/Scrolling";
 import InputChipsFrame from "./Chips/InputChip/Frame/InputChipsFrame";
 import AssistChipsFrame from "./Chips/AssistChip/Frame/AssistChipsFrame";
 import StackedCardsFrame from "./Cards/StackedCard/Frame/StackedCardsFrame";
-import BottomNavBar from "./TRMD3/BottomNavBar/BottomNavBar";
 import HorizontalCardsFrame from "./Cards/HorizontalCard/Frame/HorizontalCardsFrame";
 import FabsFrame from "./FABs/FAB/Frame/FabsFrame";
 import ExtendedFabsFrame from "./FABs/Extended FAB/Frame/ExtendedFabsFrame";
@@ -94,6 +93,7 @@ function App() {
 			<div id="section-8-trmd3" className="section-trmd3">
 				<BottomAppBarsFrame />
 			</div>
+			<BottomAppBar></BottomAppBar>
 		</div>
 	);
 }

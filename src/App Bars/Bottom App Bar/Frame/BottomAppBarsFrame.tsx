@@ -4,7 +4,6 @@ import { StringBuilder } from "../../../Gizmos/StringBuilder";
 import Typography from "../../../Typography/Typography";
 import ComponentFrameTitle from "../../../TRMD3/ComponentFrameTitle/ComponentFrameTitle";
 import CodeSnippet from "../../../TRMD3/CodeSnippet/CodeSnippet";
-import Icon from "../../../Icon/Icon";
 import BottomAppBar from "../BottomAppBar";
 
 const BottomAppBarsFrame: React.FC = () => {
@@ -59,7 +58,15 @@ const BottomAppBarsFrame: React.FC = () => {
 					{ name: "water", onClick: handleClick3 },
 				]}
 			/>
-
+			<CodeSnippet>{`<BottomAppBar />`}</CodeSnippet>
+			<BottomAppBar
+				icons={[
+					{ name: "search", onClick: handleClick1 },
+					{ name: "hive", onClick: handleClick2 },
+					{ name: "water", onClick: handleClick3 },
+				]}
+				fab={true}
+			/>
 			<CodeSnippet>{`<BottomAppBar />`}</CodeSnippet>
 		</div>
 	);

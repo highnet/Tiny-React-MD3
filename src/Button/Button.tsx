@@ -1,10 +1,3 @@
-import React, { useState } from "react";
-import { IButtonProps } from "./IButtonProps";
-import { StringBuilder } from "../Gizmos/StringBuilder";
-import { getPreferredScheme } from "../Gizmos/Themeing";
-import Icon from "../Icon/Icon";
-import Typography from "../Typography/Typography";
-
 /*
 	1
 	1682423199
@@ -22,6 +15,13 @@ import Typography from "../Typography/Typography";
 	names, including a span element with the icon's name if the button has an icon.
 	The onClick function is set to execute the prop function and the click function.
 */
+
+import React, { useState } from "react";
+import { IButtonProps } from "./IButtonProps";
+import { StringBuilder } from "../Gizmos/StringBuilder";
+import { getPreferredScheme } from "../Gizmos/Themeing";
+import Icon from "../Icon/Icon";
+import Typography from "../Typography/Typography";
 
 const Button: React.FC<IButtonProps> = ({
 	disabled,
@@ -74,12 +74,7 @@ const Button: React.FC<IButtonProps> = ({
 			) : (
 				""
 			)}
-			<Typography
-				variant="text-label-large"
-				className={"element-on-button-" + _theme}
-			>
-				{_children}
-			</Typography>
+			<Typography variant="text-label-large">{_children}</Typography>
 		</button>
 	);
 };

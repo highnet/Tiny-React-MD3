@@ -3,15 +3,18 @@ import { IBottomAppBarProps } from "./IBottomAppBarProps";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import Icon from "../../Icon/Icon";
+import Fab from "../../FABs/FAB/Fab";
 
 const BottomAppBar: React.FC<IBottomAppBarProps> = ({
 	className,
 	id,
 	icons = [{ name: "search", onClick: () => {} }],
+	fab,
 }) => {
 	const [_id] = useState(id || undefined);
 	const [_className] = useState(className || "");
 	const [_icons] = useState(icons);
+	const [_fab] = useState(fab || false);
 
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
@@ -35,7 +38,12 @@ const BottomAppBar: React.FC<IBottomAppBarProps> = ({
 
 	return (
 		<div id={_id} className={_computedComponentClassName}>
-			{iconElements}
+			<div className="icons-on-bottom-app-bar">{iconElements}</div>
+			{_fab ? (
+				<Fab configuration="secondary" size="medium" iconName="add"></Fab>
+			) : (
+				""
+			)}
 		</div>
 	);
 };

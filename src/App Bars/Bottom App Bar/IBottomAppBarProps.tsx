@@ -6,4 +6,5 @@ export interface IBottomAppBarProps extends IComponentProps {
 		name: string;
 		onClick: () => void;
 	}[];
+	fab?: boolean;
 }
