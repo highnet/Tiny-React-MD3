@@ -27,9 +27,9 @@
 	pasted to use in other parts of the application.
 */
 
+import React from "react";
 import Button from "../Button";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
-import React from "react";
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import Typography from "../../Typography/Typography";
 import CodeSnippet from "../../TRMD3/CodeSnippet/CodeSnippet";

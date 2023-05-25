@@ -3,7 +3,12 @@ import { StringBuilder } from "../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../Gizmos/Themeing";
 import { IIconProps } from "./IIconProps";
 
-const Icon: React.FC<IIconProps> = ({ children, id, className }) => {
+const Icon: React.FC<IIconProps> = ({
+	children = "search",
+	id,
+	className,
+	onClick,
+}) => {
 	const [_id] = useState(id || undefined);
 	const [_className] = useState(className || "");
 
@@ -17,10 +22,21 @@ const Icon: React.FC<IIconProps> = ({ children, id, className }) => {
 		.add(_className)
 		.toString();
 
+	const click = () => {
+		console.log("Thanks for Using Tiny React MD3!");
+	};
+
 	return (
-		<span id={_id} className={_computedComponentClassName}>
-			{children}
-		</span>
+		<div
+			onClick={(e) => {
+				onClick?.(e);
+				click();
+			}}
+		>
+			<span id={_id} className={_computedComponentClassName}>
+				{children}
+			</span>
+		</div>
 	);
 };
 

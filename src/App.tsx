@@ -24,6 +24,8 @@ import BottomNavBar from "./TRMD3/BottomNavBar/BottomNavBar";
 import HorizontalCardsFrame from "./Cards/HorizontalCard/Frame/HorizontalCardsFrame";
 import FabsFrame from "./FABs/FAB/Frame/FabsFrame";
 import ExtendedFabsFrame from "./FABs/Extended FAB/Frame/ExtendedFabsFrame";
+import BottomAppBar from "./App Bars/Bottom App Bar/BottomAppBar";
+import BottomAppBarsFrame from "./App Bars/Bottom App Bar/Frame/BottomAppBarsFrame";
 
 function App() {
 	console.log(`	👋 Welcome to TRMD3! 👋	`);
@@ -48,8 +50,6 @@ function App() {
 	useEffect(() => {
 		hljs.highlightAll();
 	}, []);
-
-	
 
 	return (
 		<div className={"App"}>
@@ -88,8 +88,11 @@ function App() {
 				<IconsFrame />
 			</div>
 			<div id="section-7-trmd3" className="section-trmd3">
-			<FabsFrame />
-			<ExtendedFabsFrame />
+				<FabsFrame />
+				<ExtendedFabsFrame />
+			</div>
+			<div id="section-8-trmd3" className="section-trmd3">
+				<BottomAppBarsFrame />
 			</div>
 			<BottomNavBar scrollToTop={handleScrollToTop} />
 		</div>
