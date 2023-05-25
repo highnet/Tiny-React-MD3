@@ -1222,341 +1222,242 @@ html {
 
 /* BUTTONS / FILLED */
 .btn-filled.btn-light-theme {
-	background-color: var(--m3-sys-light-primary);
+    background-color: var(--m3-sys-light-primary);
 }
-
-/* BUTTONS / FILLED / ELEMENT */
 .btn-filled > .element-on-button-light-theme {
-	color: var(--m3-sys-light-on-primary);
+    color: var(--m3-sys-light-on-primary);
 }
-
-/* BUTTONS / FILLED / HOVER */
-.btn-filled:hover.btn-light-theme {
-	box-shadow: var(--m3-elevation-light-1);
-	background-color: var(
-		--m3-composite-light-primary-passthrough-on-primary-opacity-08
-	);
-}
-
-/* BUTTONS / FILLED / FOCUS */
-.btn-filled:focus.btn-light-theme {
-	box-shadow: none;
-	background-color: var(
-		--m3-composite-light-primary-passthrough-on-primary-opacity-12
-	);
-}
-
-/* BUTTONS / FILLED / ACTIVE */
+.btn-filled:hover.btn-light-theme,
+.btn-filled:focus.btn-light-theme,
 .btn-filled:active.btn-light-theme {
-	box-shadow: none;
-	background-color: var(
-		--m3-composite-light-primary-passthrough-on-primary-opacity-12
-	);
+    box-shadow: none;
+}
+.btn-filled:hover.btn-light-theme {
+    background-color: var(--m3-composite-light-primary-passthrough-on-primary-opacity-08);
+    box-shadow: var(--m3-elevation-light-1);
+}
+.btn-filled:focus.btn-light-theme {
+    background-color: var(--m3-composite-light-primary-passthrough-on-primary-opacity-12);
+}
+.btn-filled:active.btn-light-theme {
+    background-color: var(--m3-composite-light-primary-passthrough-on-primary-opacity-12);
 }
 
-/* BUTTONS / FILLED / DISABLED */
 .btn-filled:disabled.btn-light-theme {
-	background-color: var(--m3-state-layers-light-on-surface-opacity-12);
-	color: var(--m3-sys-light-on-surface);
+    background-color: var(--m3-state-layers-light-on-surface-opacity-12);
+    color: var(--m3-sys-light-on-surface);
 }
 
 /* BUTTONS / OUTLINED */
 .btn-outlined.btn-light-theme {
-	background-color: var(--m3-sys-light-surface);
-	border: 0.1rem solid var(--m3-sys-light-outline);
+    background-color: var(--m3-sys-light-surface);
+    border: 0.1rem solid var(--m3-sys-light-outline);
 }
-
-/* BUTTONS / OUTLINED / ELEMENT */
 .btn-outlined > .element-on-button-light-theme {
-	color: var(--m3-sys-light-primary);
+    color: var(--m3-sys-light-primary);
 }
-
-/* BUTTONS / OUTLINED / HOVER */
 .btn-outlined:hover.btn-light-theme {
-	background-color: var(--m3-state-layers-light-primary-opacity-08);
+    background-color: var(--m3-state-layers-light-primary-opacity-08);
 }
-
-/* BUTTONS / OUTLINED / ACTIVE */
 .btn-outlined:active.btn-light-theme {
-	background-color: var(--m3-state-layers-light-primary-opacity-12);
+    background-color: var(--m3-state-layers-light-primary-opacity-12);
 }
-
-/* BUTTONS / OUTLINED / FOCUS */
 .btn-outlined:focus.btn-light-theme {
-	background-color: var(--m3-state-layers-light-primary-opacity-12);
-	border: 0.1rem solid var(--m3-sys-light-primary);
+    background-color: var(--m3-state-layers-light-primary-opacity-12);
+    border: 0.1rem solid var(--m3-sys-light-primary);
 }
-
-/* BUTTONS / OUTLINED / DISABLED */
 .btn-outlined:disabled.btn-light-theme {
-	color: var(--m3-sys-light-on-surface);
-	border: 0.1rem solid var(--m3-state-layers-light-on-surface-opacity-12);
+    color: var(--m3-sys-light-on-surface);
+    border: 0.1rem solid var(--m3-state-layers-light-on-surface-opacity-12);
 }
 
 /* BUTTONS / TEXT */
 .btn-text > .element-on-button-light-theme {
-	color: var(--m3-sys-light-primary);
+    color: var(--m3-sys-light-primary);
 }
-
-/* BUTTONS / TEXT / WITH ICON */
 .btn-text.btn-with-icon {
-	padding: 1rem 1.6rem 1rem 1.2rem;
+    padding: 1rem 1.6rem 1rem 1.2rem;
 }
-
-/* BUTTONS / TEXT / HOVER */
-.btn-text:hover.btn-light-theme {
-	background-color: var(--m3-state-layers-light-primary-opacity-08);
-}
-
-/* BUTTONS / TEXT / FOCUS */
-.btn-text:focus.btn-light-theme {
-	background-color: var(--m3-state-layers-light-primary-opacity-12);
-}
-
-/* BUTTONS / TEXT / ACTIVE */
+.btn-text:hover.btn-light-theme,
+.btn-text:focus.btn-light-theme,
 .btn-text:active.btn-light-theme {
-	background-color: var(--m3-state-layers-light-primary-opacity-12);
+    background-color: none;
+}
+.btn-text:hover.btn-light-theme {
+    background-color: var(--m3-state-layers-light-primary-opacity-08);
+}
+.btn-text:focus.btn-light-theme {
+    background-color: var(--m3-state-layers-light-primary-opacity-12);
+}
+.btn-text:active.btn-light-theme {
+    background-color: var(--m3-state-layers-light-primary-opacity-12);
 }
 
 /* BUTTONS / ELEVATED */
 .btn-elevated.btn-light-theme {
-	background-color: var(--m3-sys-light-surface-container-low);
-	box-shadow: var(--m3-elevation-light-1);
+    background-color: var(--m3-sys-light-surface-container-low);
+    box-shadow: var(--m3-elevation-light-1);
 }
-
-/* BUTTONS / ELEVATED / ELEMENT */
 .btn-elevated > .element-on-button-light-theme {
-	color: var(--m3-sys-light-primary);
+    color: var(--m3-sys-light-primary);
 }
-
-/* BUTTONS / ELEVATED / HOVER */
 .btn-elevated:hover.btn-light-theme {
-	background-color: var(
-		--m3-composite-light-surface-container-low-passthrough-primary-opacity-08
-	);
-	box-shadow: var(--m3-elevation-light-2);
+    background-color: var(--m3-composite-light-surface-container-low-passthrough-primary-opacity-08);
+    box-shadow: var(--m3-elevation-light-2);
 }
-
-/* BUTTONS / ELEVATED / FOCUS */
 .btn-elevated:focus.btn-light-theme {
-	background-color: var(
-		--m3-composite-light-surface-container-low-passthrough-primary-opacity-08
-	);
-	box-shadow: var(--m3-elevation-light-1);
+    background-color: var(--m3-composite-light-surface-container-low-passthrough-primary-opacity-08);
+    box-shadow: var(--m3-elevation-light-1);
 }
-
-/* BUTTONS / ELEVATED / ACTIVE */
 .btn-elevated:active.btn-light-theme {
-	background-color: var(
-		--m3-composite-light-surface-container-low-passthrough-primary-opacity-12
-	);
-	box-shadow: var(--m3-elevation-light-1);
+    background-color: var(--m3-composite-light-surface-container-low-passthrough-primary-opacity-12);
+    box-shadow: var(--m3-elevation-light-1);
 }
 
 /* BUTTONS / TONAL */
 .btn-tonal.btn-light-theme {
-	background-color: var(--m3-sys-light-secondary-container);
+    background-color: var(--m3-sys-light-secondary-container);
 }
-
-/* BUTTONS / TONAL / ELEMENT */
 .btn-tonal > .element-on-button-light-theme {
-	color: var(--m3-sys-light-on-secondary-container);
+    color: var(--m3-sys-light-on-secondary-container);
 }
-
-/* BUTTONS / TONAL / HOVER */
 .btn-tonal:hover.btn-light-theme {
-	background-color: var(
-		--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-08
-	);
-	box-shadow: var(--m3-elevation-light-1);
+    background-color: var(--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-08);
+    box-shadow: var(--m3-elevation-light-1);
 }
-
-/* BUTTONS / TONAL / FOCUS */
 .btn-tonal:focus.btn-light-theme {
-	background-color: var(
-		--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-12
-	);
+    background-color: var(--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-12);
 }
-
-/* BUTTONS / TONAL / ACTIVE */
 .btn-tonal:active.btn-light-theme {
-	background-color: var(
-		--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-12
-	);
+    background-color: var(--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-12);
 }
-
-/* BUTTONS / TONAL / DISABLED */
 .btn-tonal:disabled.btn-light-theme {
-	background-color: var(--m3-state-layers-light-on-surface-opacity-12);
-	color: var(--m3-sys-light-on-surface);
+    background-color: var(--m3-state-layers-light-on-surface-opacity-12);
+    color: var(--m3-sys-light-on-surface);
 }
 
 /* ==========BUTTONS / DARK THEME==========*/
 
 /* BUTTONS / FILLED */
 .btn-filled.btn-dark-theme {
-	background-color: var(--m3-sys-dark-primary);
+    background-color: var(--m3-sys-dark-primary);
 }
-
-/* BUTTONS / FILLED / ELEMENT */
 .btn-filled > .element-on-button-dark-theme {
-	color: var(--m3-sys-dark-on-primary);
+    color: var(--m3-sys-dark-on-primary);
 }
-
-/* BUTTONS / FILLED / HOVER */
-.btn-filled:hover.btn-dark-theme {
-	box-shadow: var(--m3-elevation-dark-1);
-	background-color: var(
-		--m3-composite-dark-primary-passthrough-on-primary-opacity-08
-	);
-}
-
-/* BUTTONS / FILLED / FOCUS */
-.btn-filled:focus.btn-dark-theme {
-	box-shadow: none;
-	background-color: var(
-		--m3-composite-dark-primary-passthrough-on-primary-opacity-12
-	);
-}
-
-/* BUTTONS / FILLED / ACTIVE */
+.btn-filled:hover.btn-dark-theme,
+.btn-filled:focus.btn-dark-theme,
 .btn-filled:active.btn-dark-theme {
-	box-shadow: none;
-	background-color: var(
-		--m3-composite-dark-primary-passthrough-on-primary-opacity-12
-	);
+    box-shadow: none;
+}
+.btn-filled:hover.btn-dark-theme {
+    background-color: var(--m3-composite-dark-primary-passthrough-on-primary-opacity-08);
+    box-shadow: var(--m3-elevation-dark-1);
+}
+.btn-filled:focus.btn-dark-theme {
+    background-color: var(--m3-composite-dark-primary-passthrough-on-primary-opacity-12);
+}
+.btn-filled:active.btn-dark-theme {
+    background-color: var(--m3-composite-dark-primary-passthrough-on-primary-opacity-12);
 }
 
 /* BUTTONS / FILLED / DISABLED */
 .btn-filled:disabled.btn-dark-theme {
-	background-color: var(--m3-state-layers-dark-on-surface-opacity-12);
-	color: var(--m3-sys-dark-on-surface);
+    background-color: var(--m3-state-layers-dark-on-surface-opacity-12);
+    color: var(--m3-sys-dark-on-surface);
 }
 
 /* BUTTONS / OUTLINED */
 .btn-outlined.btn-dark-theme {
-	background-color: var(--m3-sys-dark-surface);
-	border: 0.1rem solid var(--m3-sys-dark-outline);
+    background-color: var(--m3-sys-dark-surface);
+    border: 0.1rem solid var(--m3-sys-dark-outline);
 }
-
-/* BUTTONS / OUTLINED / ELEMENT */
 .btn-outlined > .element-on-button-dark-theme {
-	color: var(--m3-sys-dark-primary);
+    color: var(--m3-sys-dark-primary);
 }
-
-/* BUTTONS / OUTLINED / HOVER */
 .btn-outlined:hover.btn-dark-theme {
-	background-color: var(--m3-state-layers-dark-primary-opacity-08);
+    background-color: var(--m3-state-layers-dark-primary-opacity-08);
 }
-
-/* BUTTONS / OUTLINED / FOCUS */
 .btn-outlined:focus.btn-dark-theme {
-	background-color: var(--m3-state-layers-dark-primary-opacity-12);
-	border: 0.1rem solid var(--m3-sys-dark-primary);
+    background-color: var(--m3-state-layers-dark-primary-opacity-12);
+    border: 0.1rem solid var(--m3-sys-dark-primary);
 }
-
-/* BUTTONS / OUTLINED / ACTIVE */
 .btn-outlined:active.btn-dark-theme {
-	background-color: var(--m3-state-layers-dark-primary-opacity-12);
+    background-color: var(--m3-state-layers-dark-primary-opacity-12);
 }
-
-/* BUTTONS / OUTLINED / DISABLED */
 .btn-outlined:disabled.btn-dark-theme {
-	color: var(--m3-sys-dark-on-surface);
-	border: 0.1rem solid var(--m3-state-layers-dark-on-surface-opacity-12);
+    color: var(--m3-sys-dark-on-surface);
+    border: 0.1rem solid var(--m3-state-layers-dark-on-surface-opacity-12);
 }
 
 /* BUTTONS / TEXT */
 .btn-text > .element-on-button-dark-theme {
-	color: var(--m3-sys-dark-primary);
+    color: var(--m3-sys-dark-primary);
 }
-
-/* BUTTONS / TEXT / HOVER */
-.btn-text:hover.btn-dark-theme {
-	background-color: var(--m3-state-layers-dark-primary-opacity-08);
-}
-
-/* BUTTONS / TEXT / FOCUS */
-.btn-text:focus.btn-dark-theme {
-	background-color: var(--m3-state-layers-dark-primary-opacity-12);
-}
-
-/* BUTTONS / TEXT / ACTIVE */
+.btn-text:hover.btn-dark-theme,
+.btn-text:focus.btn-dark-theme,
 .btn-text:active.btn-dark-theme {
-	background-color: var(--m3-state-layers-dark-primary-opacity-12);
+    background-color: none;
+}
+.btn-text:hover.btn-dark-theme {
+    background-color: var(--m3-state-layers-dark-primary-opacity-08);
+}
+.btn-text:focus.btn-dark-theme {
+    background-color: var(--m3-state-layers-dark-primary-opacity-12);
+}
+.btn-text:active.btn-dark-theme {
+    background-color: var(--m3-state-layers-dark-primary-opacity-12);
 }
 
 /* BUTTONS / ELEVATED */
 .btn-elevated.btn-dark-theme {
-	background-color: var(--m3-sys-dark-surface-container-low);
-	box-shadow: var(--m3-elevation-dark-1);
+    background-color: var(--m3-sys-dark-surface-container-low);
+    box-shadow: var(--m3-elevation-dark-1);
 }
-
-/* BUTTONS / ELEVATED / ELEMENT */
 .btn-elevated > .element-on-button-dark-theme {
-	color: var(--m3-sys-dark-primary);
+    color: var(--m3-sys-dark-primary);
 }
-
-/* BUTTONS / ELEVATED / HOVER */
-.btn-elevated:hover.btn-dark-theme {
-	background-color: var(
-		--m3-composite-dark-surface-container-low-passthrough-on-primary-opacity-08
-	);
-	box-shadow: var(--m3-elevation-dark-2);
-}
-
-/* BUTTONS / ELEVATED / FOCUS */
-.btn-elevated:focus.btn-dark-theme {
-	background-color: var(
-		--m3-composite-dark-surface-container-low-passthrough-primary-opacity-12
-	);
-	box-shadow: var(--m3-elevation-dark-1);
-}
-
-/* BUTTONS / ELEVATED / ACTIVE */
+.btn-elevated:hover.btn-dark-theme,
+.btn-elevated:focus.btn-dark-theme,
 .btn-elevated:active.btn-dark-theme {
-	background-color: var(
-		--m3-composite-dark-surface-container-low-passthrough-on-primary-opacity-12
-	);
-	box-shadow: var(--m3-elevation-dark-1);
+    background-color: none;
+}
+.btn-elevated:hover.btn-dark-theme {
+    background-color: var(--m3-composite-dark-surface-container-low-passthrough-on-primary-opacity-08);
+    box-shadow: var(--m3-elevation-dark-2);
+}
+.btn-elevated:focus.btn-dark-theme {
+    background-color: var(--m3-composite-dark-surface-container-low-passthrough-primary-opacity-12);
+}
+.btn-elevated:active.btn-dark-theme {
+    background-color: var(--m3-composite-dark-surface-container-low-passthrough-on-primary-opacity-12);
 }
 
 /* BUTTONS / TONAL */
 .btn-tonal.btn-dark-theme {
-	background-color: var(--m3-sys-dark-secondary-container);
+    background-color: var(--m3-sys-dark-secondary-container);
 }
-
-/* BUTTONS / TONAL / ELEMENT */
 .btn-tonal > .element-on-button-dark-theme {
-	color: var(--m3-sys-dark-on-secondary-container);
+    color: var(--m3-sys-dark-on-secondary-container);
 }
-
-/* BUTTONS / TONAL / HOVER */
-.btn-tonal:hover.btn-dark-theme {
-	background-color: var(
-		--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-08
-	);
-	box-shadow: var(--m3-elevation-dark-1);
-}
-
-/* BUTTONS / TONAL / FOCUS */
-.btn-tonal:focus.btn-dark-theme {
-	background-color: var(
-		--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12
-	);
-}
-
-/* BUTTONS / TONAL / ACTIVE */
+.btn-tonal:hover.btn-dark-theme,
+.btn-tonal:focus.btn-dark-theme,
 .btn-tonal:active.btn-dark-theme {
-	background-color: var(
-		--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12
-	);
+    background-color: none;
 }
-
-/* BUTTONS / TONAL / DISABLED */
+.btn-tonal:hover.btn-dark-theme {
+    background-color: var(--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-08);
+    box-shadow: var(--m3-elevation-dark-1);
+}
+.btn-tonal:focus.btn-dark-theme {
+    background-color: var(--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12);
+}
+.btn-tonal:active.btn-dark-theme {
+    background-color: var(--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12);
+}
 .btn-tonal:disabled.btn-dark-theme {
-	background-color: var(--m3-state-layers-dark-on-surface-opacity-12);
-	color: var(--m3-sys-dark-on-surface);
+    background-color: var(--m3-state-layers-dark-on-surface-opacity-12);
+    color: var(--m3-sys-dark-on-surface);
 }
 
 /* ==========ICONS========== */
