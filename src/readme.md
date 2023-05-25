@@ -7,6 +7,8 @@ Use Tiny React MD-3 to create web apps, and experiences.
 <li>Visit the trmd3 web page here: https://tiny-react-dev.web.app/</li>
 
 The Tiny React MD-3 Documentation helps you on your journey to learn how to use Tiny React MD-3 and its associated services. You can read it from start to finish, or use it as a reference.
+
+## ⏬ Bottom app bar
     
 ## 🪪 Horizontal Card
     
