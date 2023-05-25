@@ -991,7 +991,16 @@ html {
 	--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-16: #635d72;
 	--m3-composite-dark-surface-container-low-passthrough-on-surface-variant-opacity-08: #2b292e;
 	--m3-composite-dark-surface-container-low-passthrough-on-surface-variant-opacity-12: #322f35;
-}
+	--m3-composite-dark-surface-container-high-passthrough-primary-opacity-08: #383541;
+	--m3-composite-dark-primary-container-passthrough-on-primary-container-opacity-08: #5B4494;
+	--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-08: #575065;
+	--m3-composite-dark-tertiary-container-passthrough-on-tertiary-container-opacity-08: #6F4854;
+	--m3-composite-dark-surface-container-high-passthrough-primary-opacity-12: #3F3B49;
+	--m3-composite-dark-primary-container-passthrough-on-primary-container-opacity-12: #624B99;
+	--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12: #5D566B;
+	--m3-composite-dark-tertiary-container-passthrough-on-tertiary-container-opacity-12: #764E5B;
+
+}	
 
 /* ==========TYPOGRAPHY========== /
 / TEXT */
@@ -2890,9 +2899,6 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 }
 
 /* FABS / LIGHT */
-
-
-/* Common styles */
 .fab-surface.fab-light-theme,
 .fab-primary.fab-light-theme,
 .fab-secondary.fab-light-theme,
@@ -2914,7 +2920,6 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
   box-shadow: var(--m3-elevation-light-3);
 }
 
-/* Unique styles using CSS variables */
 .fab-surface > .label-on-fab.label-on-fab-light-theme,
 .fab-surface > .icon-on-fab.icon-on-fab-light-theme {
   color: var(--m3-sys-light-primary);
@@ -3017,6 +3022,127 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 
 /* FABS / DARK */
 
+.fab-surface.fab-dark-theme,
+.fab-primary.fab-dark-theme,
+.fab-secondary.fab-dark-theme,
+.fab-tertiary.fab-dark-theme {
+  box-shadow: var(--m3-elevation-dark-3);
+}
+
+.fab-surface:hover.fab-dark-theme,
+.fab-primary:hover.fab-dark-theme,
+.fab-secondary:hover.fab-dark-theme,
+.fab-tertiary:hover.fab-dark-theme {
+  box-shadow: var(--m3-elevation-dark-4);
+}
+
+.fab-surface:focus.fab-dark-theme,
+.fab-primary:focus.fab-dark-theme,
+.fab-secondary:focus.fab-dark-theme,
+.fab-tertiary:focus.fab-dark-theme {
+  box-shadow: var(--m3-elevation-dark-3);
+}
+
+.fab-surface > .label-on-fab.label-on-fab-dark-theme,
+.fab-surface > .icon-on-fab.icon-on-fab-dark-theme {
+  color: var(--m3-sys-dark-primary);
+}
+
+.fab-primary > .label-on-fab.label-on-fab-dark-theme,
+.fab-primary > .icon-on-fab.icon-on-fab-dark-theme {
+  color: var(--m3-sys-dark-on-primary-container);
+}
+
+.fab-secondary > .label-on-fab.label-on-fab-dark-theme,
+.fab-secondary > .icon-on-fab.icon-on-fab-dark-theme {
+  color: var(--m3-sys-dark-on-secondary-container);
+}
+
+.fab-tertiary > .label-on-fab.label-on-fab-dark-theme,
+.fab-tertiary > .icon-on-fab.icon-on-fab-dark-theme {
+  color: var(--m3-sys-dark-on-tertiary-container);
+}
+
+.fab-surface.fab-dark-theme,
+.fab-surface:hover.fab-dark-theme,
+.fab-surface:focus.fab-dark-theme,
+.fab-surface:not(.extended-fab):active.fab-dark-theme,
+.fab-surface:active.fab-dark-theme > .fab-inner-circle {
+  background-color: var(--m3-sys-dark-surface-container-high);
+}
+
+.fab-primary.fab-dark-theme,
+.fab-primary:hover.fab-dark-theme,
+.fab-primary:focus.fab-dark-theme,
+.fab-primary:not(.extended-fab):active.fab-dark-theme,
+.fab-primary:active.fab-dark-theme > .fab-inner-circle {
+  background-color: var(--m3-sys-dark-primary-container);
+}
+
+.fab-secondary.fab-dark-theme,
+.fab-secondary:hover.fab-dark-theme,
+.fab-secondary:focus.fab-dark-theme,
+.fab-secondary:not(.extended-fab):active.fab-dark-theme,
+.fab-secondary:active.fab-dark-theme > .fab-inner-circle {
+  background-color: var(--m3-sys-dark-secondary-container);
+}
+
+.fab-tertiary.fab-dark-theme,
+.fab-tertiary:hover.fab-dark-theme,
+.fab-tertiary:focus.fab-dark-theme,
+.fab-tertiary:not(.extended-fab):active.fab-dark-theme,
+.fab-tertiary:active.fab-dark-theme > .fab-inner-circle {
+  background-color: var(--m3-sys-dark-tertiary-container);
+}
+
+.fab-surface:hover.fab-dark-theme {
+	background-color: var(--m3-composite-dark-surface-container-high-passthrough-primary-opacity-08);
+  }
+  
+  .fab-primary:hover.fab-dark-theme {
+	background-color: var(--m3-composite-dark-primary-container-passthrough-on-primary-container-opacity-08);
+  }
+  
+  .fab-secondary:hover.fab-dark-theme {
+	background-color: var(--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-08);
+  }
+  
+  .fab-tertiary:hover.fab-dark-theme {
+	background-color: var(--m3-composite-dark-tertiary-container-passthrough-on-tertiary-container-opacity-08);
+  }
+  
+  .fab-surface:focus.fab-dark-theme {
+	background-color: var(--m3-composite-dark-surface-container-high-passthrough-primary-opacity-12);
+  }
+  
+  .fab-primary:focus.fab-dark-theme {
+	background-color: var(--m3-composite-dark-primary-container-passthrough-on-primary-container-opacity-12);
+  }
+  
+  .fab-secondary:focus.fab-dark-theme {
+	background-color: var(--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12);
+  }
+  
+  .fab-tertiary:focus.fab-dark-theme {
+	background-color: var(--m3-composite-dark-tertiary-container-passthrough-on-tertiary-container-opacity-12);
+  }
+
+.fab-surface:active.fab-dark-theme > .fab-inner-circle {
+	background-color: var(--m3-state-layers-dark-primary-opacity-12);
+  }
+  
+  .fab-primary:active.fab-dark-theme > .fab-inner-circle {
+	background-color: var(--m3-state-layers-dark-on-primary-container-opacity-12);
+  }
+  
+  .fab-secondary:active.fab-dark-theme > .fab-inner-circle {
+	background-color: var(--m3-state-layers-dark-on-secondary-container-opacity-12);
+  }
+  
+  .fab-tertiary:active.fab-dark-theme > .fab-inner-circle {
+	background-color: var(--m3-state-layers-dark-on-tertiary-container-opacity-12);
+  }
+
 /* ==========EXTENDED FABS========== */
 .extended-fab {
 	display: flex;
@@ -3030,5 +3156,3 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	height: 5.6rem;
 	width: fit-content;
 }
-/* EXTENDED FABS / LIGHT */
-/* EXTENDED FABS / DARK */
