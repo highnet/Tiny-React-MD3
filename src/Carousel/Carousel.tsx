@@ -80,6 +80,32 @@ export const Carousel: React.FC<ICarouselProps> = ({
 		}
 	};
 
+	const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+		setIsDragging(true);
+		setStartX(e.touches[0].clientX);
+		setScrollLeft(ref.current?.scrollLeft || 0);
+	};
+
+	const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
+		if (!isDragging) return;
+		e.preventDefault();
+		const x = e.touches[0].clientX - ref.current!.offsetLeft;
+		const walk = (x - startX) * 0.5; // scroll-fast
+		ref.current!.scrollLeft = scrollLeft - walk;
+		const itemWidth = ref.current!.children[0].clientWidth;
+		const currentIndex = Math.round(ref.current!.scrollLeft / itemWidth);
+		setCurrentIndex(currentIndex);
+	};
+
+	const handleTouchEnd = () => {
+		setIsDragging(false);
+		if (!isDragging) {
+			ref.current?.children[currentIndex].scrollIntoView({
+				behavior: "smooth",
+			});
+		}
+	};
+
 	window.addEventListener("load", () => {
 		const carousel = document.querySelector(".carousel");
 		if (carousel) {
@@ -104,6 +130,9 @@ export const Carousel: React.FC<ICarouselProps> = ({
 				onMouseMove={handleMouseMove}
 				onMouseUp={handleMouseUp}
 				onMouseLeave={handleMouseUp}
+				onTouchStart={handleTouchStart}
+				onTouchMove={handleTouchMove}
+				onTouchEnd={handleTouchEnd}
 				style={{ width: `${width}rem` }}
 			>
 				{imgSrcs.map((item, index) => {
