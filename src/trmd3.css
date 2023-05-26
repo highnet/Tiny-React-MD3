@@ -3336,5 +3336,59 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	background-color: var(--m3-state-layers-dark-on-surface-variant-opacity-12);
 }
 
+/* CAROUSEL */
+
+.carousel {
+	display: flex;
+	flex-direction: row;
+	overflow-x: hidden;
+	position: relative;
+	scroll-behavior: smooth;
+}
+
+.carousel-item {
+	position: relative;
+	border-radius: 2.8rem;
+	width: 18.8rem;
+	height: 20.5rem;
+	scroll-snap-align: center;
+	user-select: none;
+	transition: width 0.2s ease-in-out;
+}
+
+.carousel-item img {
+	object-fit: cover;
+}
+
+.carousel-item.active {
+	border: 2px solid red;
+}
+
+.carousel-container {
+	display: flex;
+	align-items: center;
+}
+
+.carousel-buttons {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 1rem;
+}
+
+.carousel-buttons button {
+	margin: 0.5rem 0;
+}
+
+.carousel-item-small {
+	width: 12rem;
+}
+
+.carousel {
+	padding: 8px 16px;
+	gap: 8px;
+}
+
+
 
 

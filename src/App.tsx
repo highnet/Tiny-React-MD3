@@ -26,6 +26,7 @@ import ExtendedFabsFrame from "./FABs/Extended FAB/Frame/ExtendedFabsFrame";
 import BottomAppBar from "./App Bars/Bottom App Bar/BottomAppBar";
 import BottomAppBarsFrame from "./App Bars/Bottom App Bar/Frame/BottomAppBarsFrame";
 import { openLinkInNewTab } from "./Gizmos/Redirection";
+import { Carousel } from "./Carousel/Carousel";
 
 function App() {
 	console.log(`	👋 Welcome to TRMD3! 👋	`);
@@ -93,6 +94,9 @@ function App() {
 			</div>
 			<div id="section-8-trmd3" className="section-trmd3">
 				<BottomAppBarsFrame />
+			</div>
+			<div id="section-9-trmd3" className="section-trmd3">
+				<Carousel />
 			</div>
 			<BottomAppBar
 				icons={[
