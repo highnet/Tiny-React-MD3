@@ -58,7 +58,7 @@ const BottomAppBarsFrame: React.FC = () => {
         { name: "hive", label: "Hive", onClick: undefined },
         { name: "water", label: "Water", onClick: undefined },
       	]}
-    	fab={{ hasFab: true, onClick: () => { alert("FAB"); ] }}
+    	fab={{ onClick: () => { alert("FAB"); ] }}
     />`}</CodeSnippet>
 		</div>
 	);
