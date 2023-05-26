@@ -398,4 +398,64 @@ You may supplement the following optional properties to a switch:
 | <code>iconNameDeselected</code> | <code>string</code> | <code>"close"</code> | <code>the name of the icon on display when deselected</code>| [ISwitchProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Switch/Switch.tsx) |
     
 ## ☁️ FABs
+    
+<i>FABs help people take primary actions. They’re used to represent the most important action on a screen.</i>
+
+[FRAME_TEXT_PLACEHOLDER]
+
+Place a default FAB like this:
+    
+ ```JSX
+<Fab />  
+```
+    
+You may supplement the following optional properties to a FAB:
+| Property      | Type                                           | Default   | Description                        | Interface                                                                                                                 |
+|---------------|------------------------------------------------|-----------|------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| id            | string                                         | undefined | supplementary component id         | [IComponentProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Component/IComponentProps.tsx) |
+| className     | string                                         | ""        | supplementary component class name |                                                                                                                           |
+| onClick       | (event: MouseEvent<HTMLButtonElement>) => void | undefined | function to run on component click |                                                                                                                           |
+| configuration | string                                         | "surface" | component configuration            |                                                                                                                           |
+| size          | string                                         | "small"   | component size                     |                                                                                                                           |
+| iconName      | string                                         | "edit"    | icon name                          |                                                                                                                           |
+
+ bThe supported options of <code>{configuration}</code> are the following:
+
+1. <code>"surface"</code>
+2. <code>"primary"</code>
+3. <code>"secondary"</code>
+4. <code>"tertiary"</code>
+
+The supported options of <code>{size}</code> are the following:
+
+1. <code>"small"</code>
+2. <code>"medium"</code>
+3. <code>"large"</code>
+    
 ## ⛈️ Extended FABs
+
+<i>FABs help people take primary actions. They’re used to represent the most important action on a screen.</i>
+
+[FRAME_TEXT_PLACEHOLDER]
+
+Place a default Extended FAB like this:
+    
+ ```JSX
+<ExtendedFab />  
+```
+You may supplement the following optional properties to an Extended FAB:    
+| Property      | Type                                           | Default   | Description                        | Interface                                                                                |
+|---------------|------------------------------------------------|-----------|------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| id            | string                                         | undefined | supplementary component id         | [IComponentProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Component/IComponentProps.tsx)                                     |
+| children      | string                                         | "         | component label                    | [IExtendedFabProps](https://github.com/highnet/Tiny-React-MD3/blob/ac72452e8a9a1b8945f382b4489f1b52a12c4fbf/src/FABs/Extended%20FAB/IExtendedFabProps.tsx#L8) |
+| className     | string                                         | ""        | supplementary component class name | [IExtendedFabProps](https://github.com/highnet/Tiny-React-MD3/blob/ac72452e8a9a1b8945f382b4489f1b52a12c4fbf/src/FABs/Extended%20FAB/IExtendedFabProps.tsx#L8) |
+| onClick       | (event: MouseEvent<HTMLButtonElement>) => void | undefined | function to run when clicked       | [IExtendedFabProps](https://github.com/highnet/Tiny-React-MD3/blob/ac72452e8a9a1b8945f382b4489f1b52a12c4fbf/src/FABs/Extended%20FAB/IExtendedFabProps.tsx#L8) |
+| configuration | string                                         | "surface" | component configuration            | [IExtendedFabProps](https://github.com/highnet/Tiny-React-MD3/blob/ac72452e8a9a1b8945f382b4489f1b52a12c4fbf/src/FABs/Extended%20FAB/IExtendedFabProps.tsx#L8) |
+| iconName      | string                                         | "edit     | name of the icon                   | [IExtendedFabProps](https://github.com/highnet/Tiny-React-MD3/blob/ac72452e8a9a1b8945f382b4489f1b52a12c4fbf/src/FABs/Extended%20FAB/IExtendedFabProps.tsx#L8) |
+
+The supported options of <code>{configuration}</code> are the following:
+
+1. <code>"surface"</code>
+2. <code>"primary"</code>
+3. <code>"secondary"</code>
+4. <code>"tertiary"</code>
