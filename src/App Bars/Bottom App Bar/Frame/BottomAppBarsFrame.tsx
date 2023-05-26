@@ -54,9 +54,9 @@ const BottomAppBarsFrame: React.FC = () => {
 			/>
 			<CodeSnippet>{`<BottomAppBar
 	icons={[
-        { name: "search", onClick: undefined },
-        { name: "hive", onClick: undefined },
-        { name: "water", onClick: undefined },
+        { name: "search", label: "Search", onClick: undefined },
+        { name: "hive", label: "Hive", onClick: undefined },
+        { name: "water", label: "Water", onClick: undefined },
       	]}
     	fab={{ hasFab: true, onClick: () => { alert("FAB"); ] }}
     />`}</CodeSnippet>

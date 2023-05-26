@@ -9,8 +9,8 @@ const Fab: React.FC<IFabProps> = ({
 	className,
 	onClick,
 	configuration,
-	iconName,
 	size,
+	iconName,
 }) => {
 	const [_id] = useState(id || undefined);
 	const [_className] = useState(className || "");
