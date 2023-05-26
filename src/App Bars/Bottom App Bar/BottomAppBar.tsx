@@ -4,6 +4,7 @@ import { getPreferredScheme } from "../../Gizmos/Themeing";
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import Icon from "../../Icon/Icon";
 import Fab from "../../FABs/FAB/Fab";
+import Typography from "../../Typography/Typography";
 
 const BottomAppBar: React.FC<IBottomAppBarProps> = ({
 	className,
@@ -14,8 +15,10 @@ const BottomAppBar: React.FC<IBottomAppBarProps> = ({
 	const [_id] = useState(id || undefined);
 	const [_className] = useState(className || "");
 	const [_icons] = useState(icons);
-	const [_fab] = useState(fab || false);
-
+	const [_fab] = useState({
+		hasFab: fab?.hasFab ?? true,
+		onClick: fab?.onClick ?? (() => {}),
+	});
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
@@ -26,13 +29,23 @@ const BottomAppBar: React.FC<IBottomAppBarProps> = ({
 		.toString();
 
 	const iconElements = _icons.map((icon, index) => (
-		<div className="container-on-icon-on-bottom-app-bar" key={index}>
+		<div
+			className="container-on-icon-on-bottom-app-bar"
+			key={index}
+			tabIndex={0}
+		>
 			<Icon
 				className={"icon-on-bottom-app-bar icon-on-bottom-app-bar-" + _theme}
 				onClick={icon.onClick}
 			>
 				{icon.name}
 			</Icon>
+			<Typography
+				variant="text-label-small"
+				className="label-on-bottom-app-bar"
+			>
+				{icon.label}
+			</Typography>
 		</div>
 	));
 
@@ -40,7 +53,12 @@ const BottomAppBar: React.FC<IBottomAppBarProps> = ({
 		<div id={_id} className={_computedComponentClassName}>
 			<div className="icons-on-bottom-app-bar">{iconElements}</div>
 			{_fab ? (
-				<Fab configuration="secondary" size="medium" iconName="add"></Fab>
+				<Fab
+					configuration="secondary"
+					size="medium"
+					iconName="add"
+					onClick={_fab.onClick}
+				></Fab>
 			) : (
 				""
 			)}

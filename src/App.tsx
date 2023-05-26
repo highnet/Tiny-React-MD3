@@ -93,7 +93,14 @@ function App() {
 			<div id="section-8-trmd3" className="section-trmd3">
 				<BottomAppBarsFrame />
 			</div>
-			<BottomAppBar></BottomAppBar>
+			<BottomAppBar
+				icons={[
+					{ name: "home", label: "Home", onClick: undefined },
+					{ name: "bookmark", label: "Readme", onClick: undefined },
+					{ name: "menu_book", label: "Docs", onClick: undefined },
+				]}
+				fab={{ hasFab: true, onClick: undefined }}
+			/>
 		</div>
 	);
 }

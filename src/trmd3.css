@@ -1534,6 +1534,7 @@ html {
 
 /* ==========ICONS========== */
 .material-symbols-outlined {
+	user-select: none;
 	pointer-events: none;
 	font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 20;
 }
@@ -3282,6 +3283,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 }
 
 .container-on-icon-on-bottom-app-bar {
+	position: relative;
 	cursor: pointer;
 	display: flex;
 	align-items: center;
@@ -3290,4 +3292,24 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	width: 4.8rem;
 	height: 4.8rem;
 	flex-shrink: 0;
+	border-radius: 50%;
+}
+
+.container-on-icon-on-bottom-app-bar:hover{
+	background-color: var(--m3-state-layers-light-on-surface-variant-opacity-08);
+}
+
+.container-on-icon-on-bottom-app-bar:focus {
+	background-color: var(--m3-state-layers-light-on-surface-variant-opacity-12);
+}
+
+.container-on-icon-on-bottom-app-bar:active {
+	background-color: var(--m3-state-layers-light-on-surface-variant-opacity-12);
+}
+
+.label-on-bottom-app-bar {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
 }

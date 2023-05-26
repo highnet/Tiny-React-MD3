@@ -36,6 +36,10 @@ const BottomAppBarsFrame: React.FC = () => {
 		console.log("water");
 	};
 
+	const handleClick4 = () => {
+		console.log("fab");
+	};
+
 	return (
 		<div className={_computedFrameClassName}>
 			<Typography
@@ -51,23 +55,24 @@ const BottomAppBarsFrame: React.FC = () => {
 			<Typography variant={"text-label-small"}>
 				1 Icon - no FAB [light🚧 dark🚧]
 			</Typography>
-			<BottomAppBar
-				icons={[
-					{ name: "search", onClick: handleClick1 },
-					{ name: "hive", onClick: handleClick2 },
-					{ name: "water", onClick: handleClick3 },
-				]}
-			/>
+			<BottomAppBar />
 			<CodeSnippet>{`<BottomAppBar />`}</CodeSnippet>
 			<BottomAppBar
 				icons={[
-					{ name: "search", onClick: handleClick1 },
-					{ name: "hive", onClick: handleClick2 },
-					{ name: "water", onClick: handleClick3 },
+					{ name: "search", label: "Search", onClick: undefined },
+					{ name: "hive", label: "Hive", onClick: undefined },
+					{ name: "water", label: "Water", onClick: undefined },
 				]}
-				fab={true}
+				fab={{ hasFab: true, onClick: undefined }}
 			/>
-			<CodeSnippet>{`<BottomAppBar />`}</CodeSnippet>
+			<CodeSnippet>{`<BottomAppBar
+	icons={[
+        { name: "search", onClick: undefined },
+        { name: "hive", onClick: undefined },
+        { name: "water", onClick: undefined },
+      	]}
+    	fab={{ hasFab: true, onClick: undefined }}
+    />`}</CodeSnippet>
 		</div>
 	);
 };

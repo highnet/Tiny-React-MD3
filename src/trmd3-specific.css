@@ -398,6 +398,7 @@ html {
 	overflow-y: hidden;
 	font-size: 1.4rem;
 	font-family: "Comic Mono", monospace;
+	text-align: left;
 }
 
 @media screen and (max-width: 600px) {

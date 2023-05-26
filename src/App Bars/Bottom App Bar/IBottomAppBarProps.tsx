@@ -4,7 +4,11 @@ export interface IBottomAppBarProps extends IComponentProps {
 	iconNames?: string[];
 	icons?: {
 		name: string;
-		onClick: () => void;
+		label?: string;
+		onClick?: () => void;
 	}[];
-	fab?: boolean;
+	fab?: {
+		hasFab: boolean;
+		onClick?: () => void;
+	};
 }
