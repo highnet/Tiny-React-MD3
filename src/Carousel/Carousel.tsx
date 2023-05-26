@@ -41,33 +41,34 @@ export const Carousel: React.FC<ICarouselProps> = ({
 		});
 	};
 
-	const handleMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
-		setIsDragging(true);
-	};
-
-	const handleItemClick = (index: number) => {
-		if (!isDragging) {
-			const distance = index - currentIndex;
-			if (distance >= 1) {
-				handleIncrementIndex();
-			} else if (distance <= -1) {
+	const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
+		const carouselRect = ref.current?.getBoundingClientRect();
+		if (carouselRect) {
+			const clickX = e.clientX - carouselRect.left;
+			const carouselWidth = carouselRect.width;
+			const isLeftHalf = clickX < carouselWidth / 2;
+			const clickedSide = isLeftHalf ? "left" : "right";
+			if (clickedSide === "left") {
 				handleDecrementIndex();
+			} else {
+				handleIncrementIndex();
 			}
 		}
 	};
 
-	const handleMouseUp = () => {
-		setIsDragging(false);
-	};
-
-	const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
-		setIsDragging(true);
-	};
-
-	const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {};
-
-	const handleTouchEnd = () => {
-		setIsDragging(false);
+	const handleTouch = (e: React.TouchEvent<HTMLDivElement>) => {
+		const carouselRect = ref.current?.getBoundingClientRect();
+		if (carouselRect) {
+			const touchX = e.touches[0].clientX - carouselRect.left;
+			const carouselWidth = carouselRect.width;
+			const isLeftHalf = touchX < carouselWidth / 2;
+			const clickedSide = isLeftHalf ? "left" : "right";
+			if (clickedSide === "left") {
+				handleDecrementIndex();
+			} else {
+				handleIncrementIndex();
+			}
+		}
 	};
 
 	window.addEventListener("load", () => {
@@ -88,13 +89,9 @@ export const Carousel: React.FC<ICarouselProps> = ({
 				id={_id}
 				className={_computedComponentClassName}
 				ref={ref}
-				onMouseDown={handleMouseDown}
-				onMouseUp={handleMouseUp}
-				onMouseLeave={handleMouseUp}
-				onTouchStart={handleTouchStart}
-				onTouchMove={handleTouchMove}
-				onTouchEnd={handleTouchEnd}
-				style={{ width: `${width}rem` }}
+				style={{ width: `${width}rem`, position: "relative" }}
+				onClick={handleClick}
+				onTouchEnd={handleTouch}
 			>
 				{imgSrcs.map((item, index) => {
 					const distance = Math.abs(currentIndex - index);
@@ -114,7 +111,6 @@ export const Carousel: React.FC<ICarouselProps> = ({
 							className={className}
 							draggable={false}
 							style={style}
-							onClick={() => handleItemClick(index)}
 						/>
 					);
 				})}

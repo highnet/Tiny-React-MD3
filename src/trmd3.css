@@ -3344,6 +3344,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	overflow-x: hidden;
 	position: relative;
 	scroll-behavior: smooth;
+	scroll-snap-type: x mandatory;
 }
 
 .carousel-item {
@@ -3353,14 +3354,11 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	height: 20.5rem;
 	scroll-snap-align: center;
 	user-select: none;
+	transition: width 0.3s ease-in-out;
 }
 
 .carousel-item img {
 	object-fit: cover;
-}
-
-.carousel-item.active {
-	border: 2px solid red;
 }
 
 .carousel-container {
