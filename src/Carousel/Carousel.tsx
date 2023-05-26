@@ -2,7 +2,6 @@ import React, { useState, useRef } from "react";
 import { getPreferredScheme } from "../Gizmos/Themeing";
 import { ICarouselProps } from "./ICarouselProps";
 import { StringBuilder } from "../Gizmos/StringBuilder";
-import Button from "../Button/Button";
 
 export const Carousel: React.FC<ICarouselProps> = ({
 	id,
@@ -120,8 +119,6 @@ export const Carousel: React.FC<ICarouselProps> = ({
 
 	return (
 		<div className="carousel-container">
-			<Button onClick={handleDecrementIndex}>Prev</Button>
-
 			<div
 				id={_id}
 				className={_computedComponentClassName}
@@ -158,8 +155,6 @@ export const Carousel: React.FC<ICarouselProps> = ({
 					);
 				})}
 			</div>
-
-			<Button onClick={handleIncrementIndex}>Next</Button>
 		</div>
 	);
 };
