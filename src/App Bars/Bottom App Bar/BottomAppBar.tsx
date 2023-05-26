@@ -9,7 +9,7 @@ import Typography from "../../Typography/Typography";
 const BottomAppBar: React.FC<IBottomAppBarProps> = ({
 	className,
 	id,
-	icons = [{ name: "search", onClick: () => {} }],
+	icons = [{ name: "search", label: "", onClick: () => {} }],
 	fab,
 }) => {
 	const [_id] = useState(id || undefined);
