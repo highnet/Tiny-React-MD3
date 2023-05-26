@@ -9,7 +9,23 @@ Use Tiny React MD-3 to create web apps, and experiences.
 The Tiny React MD-3 Documentation helps you on your journey to learn how to use Tiny React MD-3 and its associated services. You can read it from start to finish, or use it as a reference.
 
 ## ⏬ Bottom app bar
+
+<i>Bottom app bars display navigation and key actions at the bottom of a screen.</i>
     
+[FRAME_TEXT_PLACEHOLDER]
+    
+ ```JSX
+<BottomAppBar />
+```
+    
+You may supplement the following optional properties to a bottom app bar:
+| Property  | Type                                                 | Default                                         | Description                             | Interface                                                                                                                                                              |
+|-----------|------------------------------------------------------|-------------------------------------------------|-----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| id        | string                                               | undefined                                       | supplementary component id              | [IComponentProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Component/IComponentProps.tsx)                                              |
+| className | string                                               | ""                                              | supplementary component class           | [IComponentProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Component/IComponentProps.tsx)                                              |
+| icons     | {name: string, label: string, onClick: () => void}[] | [name: "search", label: "", onClick: () => {}}] | configuration of component icon buttons | [IBottomAppBarProps](https://github.com/highnet/Tiny-React-MD3/blob/e80e0c3f5def54c3aa5bcec473ddd5186c4534bf/src/App%20Bars/Bottom%20App%20Bar/IBottomAppBarProps.tsx) |
+| fab       | onClick?: () => void                                 | () => {}                                        | configuration component fab             | [IBottomAppBarProps](https://github.com/highnet/Tiny-React-MD3/blob/e80e0c3f5def54c3aa5bcec473ddd5186c4534bf/src/App%20Bars/Bottom%20App%20Bar/IBottomAppBarProps.tsx) |
+   
 ## 🪪 Horizontal Card
     
 <i>Cards are versatile containers, holding anything from images to headlines, supporting text, buttons, lists, and other components.</i>
