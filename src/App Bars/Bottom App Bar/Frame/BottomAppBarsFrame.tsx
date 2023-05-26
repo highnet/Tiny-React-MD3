@@ -24,22 +24,6 @@ const BottomAppBarsFrame: React.FC = () => {
 		.add("section-title-" + _theme + "-trmd3")
 		.toString();
 
-	const handleClick1 = () => {
-		console.log("search");
-	};
-
-	const handleClick2 = () => {
-		console.log("hive");
-	};
-
-	const handleClick3 = () => {
-		console.log("water");
-	};
-
-	const handleClick4 = () => {
-		console.log("fab");
-	};
-
 	return (
 		<div className={_computedFrameClassName}>
 			<Typography
@@ -50,20 +34,23 @@ const BottomAppBarsFrame: React.FC = () => {
 				⏬
 			</Typography>
 			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-bottom-app-bar">
-				Bottom App Bars [light🚧 dark🚧]
+				Bottom App Bars
 			</ComponentFrameTitle>
-			<Typography variant={"text-label-small"}>
-				1 Icon - no FAB [light🚧 dark🚧]
-			</Typography>
+			<Typography variant={"text-label-small"}>1 Icon - no FAB</Typography>
 			<BottomAppBar />
 			<CodeSnippet>{`<BottomAppBar />`}</CodeSnippet>
+			<Typography variant={"text-label-small"}>N Icons - FAB</Typography>
 			<BottomAppBar
 				icons={[
 					{ name: "search", label: "Search", onClick: undefined },
 					{ name: "hive", label: "Hive", onClick: undefined },
 					{ name: "water", label: "Water", onClick: undefined },
 				]}
-				fab={{ hasFab: true, onClick: undefined }}
+				fab={{
+					onClick: () => {
+						alert("FAB");
+					},
+				}}
 			/>
 			<CodeSnippet>{`<BottomAppBar
 	icons={[
@@ -71,7 +58,7 @@ const BottomAppBarsFrame: React.FC = () => {
         { name: "hive", onClick: undefined },
         { name: "water", onClick: undefined },
       	]}
-    	fab={{ hasFab: true, onClick: undefined }}
+    	fab={{ hasFab: true, onClick: () => { alert("FAB"); ] }}
     />`}</CodeSnippet>
 		</div>
 	);

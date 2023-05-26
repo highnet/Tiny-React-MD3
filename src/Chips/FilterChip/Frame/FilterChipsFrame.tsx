@@ -4,12 +4,6 @@ import CodeSnippet from "../../../TRMD3/CodeSnippet/CodeSnippet";
 import Typography from "../../../Typography/Typography";
 import FilterChip from "../FilterChip";
 
-/*
-
-TODO: NEEDS DOCUMENTATION
-
-*/
-
 const FilterChipsFrame: React.FC = () => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";

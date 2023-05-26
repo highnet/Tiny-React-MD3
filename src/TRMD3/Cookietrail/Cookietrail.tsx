@@ -14,16 +14,10 @@
 */
 
 import Button from "../../Button/Button";
+import { openLinkInNewTab } from "../../Gizmos/Redirection";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 
-interface ICookietrailProps {}
-
-function openLinkInNewTab(url: string) {
-	if (url == undefined || url == "") return;
-	window.open(url, "_blank");
-}
-
-const Cookietrail: React.FC<ICookietrailProps> = () => {
+const Cookietrail: React.FC = () => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
@@ -41,7 +35,7 @@ const Cookietrail: React.FC<ICookietrailProps> = () => {
 					iconName={"bookmark"}
 					onClick={() =>
 						openLinkInNewTab(
-							"https://github.com/highnet/Tiny-React-MD3#-tiny-react-md3----"
+							"https://github.com/highnet/Tiny-React-MD3#----trmd3-tiny-react-material-design-3-"
 						)
 					}
 					className="cookietrail-button-trmd3"

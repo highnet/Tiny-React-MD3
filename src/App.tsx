@@ -25,6 +25,7 @@ import FabsFrame from "./FABs/FAB/Frame/FabsFrame";
 import ExtendedFabsFrame from "./FABs/Extended FAB/Frame/ExtendedFabsFrame";
 import BottomAppBar from "./App Bars/Bottom App Bar/BottomAppBar";
 import BottomAppBarsFrame from "./App Bars/Bottom App Bar/Frame/BottomAppBarsFrame";
+import { openLinkInNewTab } from "./Gizmos/Redirection";
 
 function App() {
 	console.log(`	👋 Welcome to TRMD3! 👋	`);
@@ -95,11 +96,25 @@ function App() {
 			</div>
 			<BottomAppBar
 				icons={[
-					{ name: "home", label: "Home", onClick: undefined },
-					{ name: "bookmark", label: "Readme", onClick: undefined },
-					{ name: "menu_book", label: "Docs", onClick: undefined },
+					{ name: "home", label: "Home", onClick: handleScrollToTop },
+					{
+						name: "bookmark",
+						label: "Readme",
+						onClick: () =>
+							openLinkInNewTab(
+								"https://github.com/highnet/Tiny-React-MD3#----trmd3-tiny-react-material-design-3-"
+							),
+					},
+					{
+						name: "menu_book",
+						label: "Docs",
+						onClick: () =>
+							openLinkInNewTab(
+								"https://github.com/highnet/Tiny-React-MD3/tree/master/src#-tiny-react-md-3-documentation"
+							),
+					},
 				]}
-				fab={{ hasFab: true, onClick: undefined }}
+				fab={{ onClick: undefined }}
 			/>
 		</div>
 	);

@@ -16,7 +16,6 @@ const BottomAppBar: React.FC<IBottomAppBarProps> = ({
 	const [_className] = useState(className || "");
 	const [_icons] = useState(icons);
 	const [_fab] = useState({
-		hasFab: fab?.hasFab ?? true,
 		onClick: fab?.onClick ?? (() => {}),
 	});
 	const _theme =
@@ -30,7 +29,10 @@ const BottomAppBar: React.FC<IBottomAppBarProps> = ({
 
 	const iconElements = _icons.map((icon, index) => (
 		<div
-			className="container-on-icon-on-bottom-app-bar"
+			className={
+				"container-on-icon-on-bottom-app-bar container-on-icon-on-bottom-app-bar-" +
+				_theme
+			}
 			key={index}
 			tabIndex={0}
 		>
@@ -42,7 +44,7 @@ const BottomAppBar: React.FC<IBottomAppBarProps> = ({
 			</Icon>
 			<Typography
 				variant="text-label-small"
-				className="label-on-bottom-app-bar"
+				className={"label-on-bottom-app-bar label-on-bottom-app-bar-" + _theme}
 			>
 				{icon.label}
 			</Typography>
@@ -52,17 +54,16 @@ const BottomAppBar: React.FC<IBottomAppBarProps> = ({
 	return (
 		<div id={_id} className={_computedComponentClassName}>
 			<div className="icons-on-bottom-app-bar">{iconElements}</div>
-			{_fab ? (
+			{fab && fab.onClick ? (
 				<Fab
 					configuration="secondary"
 					size="medium"
 					iconName="add"
 					onClick={_fab.onClick}
 				></Fab>
-			) : (
-				""
-			)}
+			) : null}
 		</div>
 	);
 };
+
 export default BottomAppBar;

@@ -1,9 +1,3 @@
-/*
-
-TODO: NEEDS DOCUMENTATION
-
-*/
-
 import { StringBuilder } from "../../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../../Gizmos/Themeing";
 import CodeSnippet from "../../../TRMD3/CodeSnippet/CodeSnippet";
@@ -26,7 +20,9 @@ const AssistChipsFrame: React.FC = () => {
 
 	return (
 		<div className={_computedFrameClassName}>
-			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#%E2%84%B9%EF%B8%8F-assist-chip">Assist Chips</ComponentFrameTitle>
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#%E2%84%B9%EF%B8%8F-assist-chip">
+				Assist Chips
+			</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>Label Only</Typography>
 			<AssistChip onClick={undefined}></AssistChip>
 			<CodeSnippet>
