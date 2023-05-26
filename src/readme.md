@@ -4,7 +4,7 @@ Use Tiny React MD-3 to create web apps, and experiences.
 
 <ul>
 <li>Download Tiny React MD-3 here https://github.com/highnet/Tiny-React-MD3.git</li>
-<li>Visit the trmd3 web page here: https://tiny-react-dev.web.app/</li>
+<li>Visit the trmd3 web page here: https://trmd3.com/</li>
 
 The Tiny React MD-3 Documentation helps you on your journey to learn how to use Tiny React MD-3 and its associated services. You can read it from start to finish, or use it as a reference.
 
@@ -123,10 +123,19 @@ Place a default input chip like this:
 ```
 
 You may supplement the following optional properties to an input chip:
-| Property | Type | Default | Description | Interface |
-| -------- | ---- | -------- | ----------- | --------- |
-| <code>id</code> | <code>string</code> | <code>undefined</code> | <code>supplementary component id</code>| [IComponentProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Component/IComponentProps.tsx) |
-| <code>className</code> | <code>string</code> | <code>""</code> | <code>supplementary class names</code>| [IComponentProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Component/IComponentProps.tsx) |
+| Property                 | Type    | Default      | Description                        | Interface                                                                                                                 |
+|--------------------------|---------|--------------|------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| id                       | string  | undefined    | supplementary component id         | [IComponentProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Component/IComponentProps.tsx) |
+| className                | string  | ""           | supplementary class names          | [IComponentProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Component/IComponentProps.tsx) |
+| children                 | string  | "Label"      | label to be displayed on component | [IComponentProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Component/IComponentProps.tsx) |
+| selected                 | boolean | false        | toggleable status of component     | [IInputChipProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Chips/InputChip/IInputChipProps.tsx)      |
+| trailingIcon             | boolean | false        | set to true for a trailing icon    | [IInputChipProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Chips/InputChip/IInputChipProps.tsx)      |
+| trailingIconName         | string  | "close"      | trailing icon name                 | [IInputChipProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Chips/InputChip/IInputChipProps.tsx)      |
+| leadingIcon              | boolean | false        | set to true for a leading icon     | [IInputChipProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Chips/InputChip/IInputChipProps.tsx)      |
+| leadingIconName          | string  | "local_taxi" | leading icon name                  | [IInputChipProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Chips/InputChip/IInputChipProps.tsx)      |
+| avatar                   | boolean | false        | set to true for an avatar          | [IInputChipProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Chips/InputChip/IInputChipProps.tsx)      |
+| avatarIconNameDeselected | string  | "person"     | avatar icon name when deselected   | [IInputChipProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Chips/InputChip/IInputChipProps.tsx)      |
+| avatarIconNameSelected   | string  | "check"      | avatar icon name when selected     | [IInputChipProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Chips/InputChip/IInputChipProps.tsx)      |
  
 ## 😉 Suggestion Chip
 
