@@ -22,8 +22,7 @@ export const Carousel: React.FC<ICarouselProps> = ({
 	const [_className] = useState(className || "");
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const [isDragging, setIsDragging] = useState(false);
-	const [startX, setStartX] = useState(0);
-	const [scrollLeft, setScrollLeft] = useState(0);
+
 	const ref = useRef<HTMLDivElement>(null);
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
@@ -44,19 +43,6 @@ export const Carousel: React.FC<ICarouselProps> = ({
 
 	const handleMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
 		setIsDragging(true);
-		setStartX(e.clientX);
-		setScrollLeft(ref.current?.scrollLeft || 0);
-	};
-
-	const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-		if (!isDragging) return;
-		e.preventDefault();
-		const x = e.clientX - ref.current!.offsetLeft;
-		const walk = (x - startX) * 0.5; // scroll-fast
-		ref.current!.scrollLeft = scrollLeft - walk;
-		const itemWidth = ref.current!.children[0].clientWidth;
-		const currentIndex = Math.round(ref.current!.scrollLeft / itemWidth);
-		setCurrentIndex(currentIndex);
 	};
 
 	const handleItemClick = (index: number) => {
@@ -72,37 +58,16 @@ export const Carousel: React.FC<ICarouselProps> = ({
 
 	const handleMouseUp = () => {
 		setIsDragging(false);
-		if (!isDragging) {
-			ref.current?.children[currentIndex].scrollIntoView({
-				behavior: "smooth",
-			});
-		}
 	};
 
 	const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
 		setIsDragging(true);
-		setStartX(e.touches[0].clientX);
-		setScrollLeft(ref.current?.scrollLeft || 0);
 	};
 
-	const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
-		if (!isDragging) return;
-		e.preventDefault();
-		const x = e.touches[0].clientX - ref.current!.offsetLeft;
-		const walk = (x - startX) * 0.5; // scroll-fast
-		ref.current!.scrollLeft = scrollLeft - walk;
-		const itemWidth = ref.current!.children[0].clientWidth;
-		const currentIndex = Math.round(ref.current!.scrollLeft / itemWidth);
-		setCurrentIndex(currentIndex);
-	};
+	const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {};
 
 	const handleTouchEnd = () => {
 		setIsDragging(false);
-		if (!isDragging) {
-			ref.current?.children[currentIndex].scrollIntoView({
-				behavior: "smooth",
-			});
-		}
 	};
 
 	window.addEventListener("load", () => {
@@ -124,7 +89,6 @@ export const Carousel: React.FC<ICarouselProps> = ({
 				className={_computedComponentClassName}
 				ref={ref}
 				onMouseDown={handleMouseDown}
-				onMouseMove={handleMouseMove}
 				onMouseUp={handleMouseUp}
 				onMouseLeave={handleMouseUp}
 				onTouchStart={handleTouchStart}

@@ -3353,7 +3353,6 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	height: 20.5rem;
 	scroll-snap-align: center;
 	user-select: none;
-	transition: width 0.2s ease-in-out;
 }
 
 .carousel-item img {
