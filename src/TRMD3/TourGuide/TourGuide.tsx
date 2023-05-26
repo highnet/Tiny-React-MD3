@@ -17,7 +17,6 @@ const TourGuide: React.FC = () => {
 				<Button
 					className="tourguide-button"
 					configuration="elevated"
-					disabled={false}
 					onClick={() => scrollToSection("cards-section", -60)}
 				>
 					💳 Cards 💳
@@ -26,7 +25,6 @@ const TourGuide: React.FC = () => {
 				<Button
 					className="tourguide-button"
 					configuration="elevated"
-					disabled={false}
 					onClick={() => scrollToSection("chips-section", -60)}
 				>
 					🍪 Chips 🍪
@@ -34,7 +32,6 @@ const TourGuide: React.FC = () => {
 				<Button
 					className="tourguide-button"
 					configuration="elevated"
-					disabled={false}
 					onClick={() => scrollToSection("horizontal-dividers-section", -60)}
 				>
 					➕ Dividers ➕
@@ -42,7 +39,6 @@ const TourGuide: React.FC = () => {
 				<Button
 					className="tourguide-button"
 					configuration="elevated"
-					disabled={false}
 					onClick={() => scrollToSection("radio-buttons-section", -60)}
 				>
 					🔘 Radio Buttons 🔘
@@ -50,7 +46,6 @@ const TourGuide: React.FC = () => {
 				<Button
 					className="tourguide-button"
 					configuration="elevated"
-					disabled={false}
 					onClick={() => scrollToSection("badges-section", -60)}
 				>
 					📛 Badges 📛
@@ -58,7 +53,6 @@ const TourGuide: React.FC = () => {
 				<Button
 					className="tourguide-button"
 					configuration="elevated"
-					disabled={false}
 					onClick={() => scrollToSection("checkboxes-section", -60)}
 				>
 					☑️ Checkboxes ☑️
@@ -66,7 +60,6 @@ const TourGuide: React.FC = () => {
 				<Button
 					className="tourguide-button"
 					configuration="elevated"
-					disabled={false}
 					onClick={() => scrollToSection("switches-section", -60)}
 				>
 					🔦 Switches 🔦
@@ -74,7 +67,6 @@ const TourGuide: React.FC = () => {
 				<Button
 					className="tourguide-button"
 					configuration="elevated"
-					disabled={false}
 					onClick={() => scrollToSection("buttons-section", -60)}
 				>
 					🕹️ Buttons 🕹️
@@ -82,7 +74,6 @@ const TourGuide: React.FC = () => {
 				<Button
 					className="tourguide-button"
 					configuration="elevated"
-					disabled={false}
 					onClick={() => scrollToSection("typography-section", -60)}
 				>
 					🔤 Typography 🔤
@@ -90,7 +81,6 @@ const TourGuide: React.FC = () => {
 				<Button
 					className="tourguide-button"
 					configuration="elevated"
-					disabled={false}
 					onClick={() => scrollToSection("icons-section", -60)}
 				>
 					💟 Icons 💟
@@ -98,12 +88,17 @@ const TourGuide: React.FC = () => {
 				<Button
 					className="tourguide-button"
 					configuration="elevated"
-					disabled={false}
 					onClick={() => scrollToSection("fabs-section", -60)}
 				>
 					☁️ FABs ☁️
 				</Button>
-				
+				<Button
+					className="tourguide-button"
+					configuration="elevated"
+					onClick={() => scrollToSection("bottom-app-bars-section", -60)}
+				>
+					⏬ Bottom App Bars ⏬
+				</Button>
 			</div>
 		</div>
 	);
