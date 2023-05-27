@@ -27,6 +27,7 @@ import BottomAppBar from "./App Bars/Bottom App Bar/BottomAppBar";
 import BottomAppBarsFrame from "./App Bars/Bottom App Bar/Frame/BottomAppBarsFrame";
 import { openLinkInNewTab } from "./Gizmos/Redirection";
 import CarouselsFrame from "./Carousel/Frame/CarouselsFrame";
+import NavigationRail from "./Navigation Rail/NavigationRail";
 
 function App() {
 	console.log(`	👋 Welcome to TRMD3! 👋	`);
@@ -58,6 +59,7 @@ function App() {
 				toggleTheme={handleToggleTheme}
 				scrollToTop={handleScrollToTop}
 			/>
+			<NavigationRail />
 			<div id="section-0-trmd3" className="section-trmd3">
 				<Hero hasLogo={true} />
 				<Cookietrail />

@@ -119,7 +119,7 @@ const Carousel: React.FC<ICarouselProps> = ({
 						);
 					}
 					return (
-						<div className={className}>
+						<div className={className} key={index}>
 							<img key={index} src={image.imageSource} draggable={false} />
 							{className === "carousel-item carousel-item-regular" ? (
 								<>
