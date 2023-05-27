@@ -2,19 +2,52 @@ import React, { useState, useRef, useEffect } from "react";
 import { getPreferredScheme } from "../Gizmos/Themeing";
 import { ICarouselProps } from "./ICarouselProps";
 import { StringBuilder } from "../Gizmos/StringBuilder";
+import Typography from "../Typography/Typography";
 
 export const Carousel: React.FC<ICarouselProps> = ({
 	id,
 	className,
-	imgSrcs = [
-		"1.png",
-		"2.png",
-		"3.png",
-		"4.png",
-		"5.png",
-		"6.png",
-		"7.png",
-		"8.png",
+	images = [
+		{
+			imageSource: "1.png",
+			label: "test1",
+			supportingText: "test2",
+		},
+		{
+			imageSource: "2.png",
+			label: "test3",
+			supportingText: "test4",
+		},
+		{
+			imageSource: "3.png",
+			label: "test5",
+			supportingText: "test6",
+		},
+		{
+			imageSource: "4.png",
+			label: "test7",
+			supportingText: "test8",
+		},
+		{
+			imageSource: "5.png",
+			label: "test9",
+			supportingText: "test10",
+		},
+		{
+			imageSource: "6.png",
+			label: "test11",
+			supportingText: "test12",
+		},
+		{
+			imageSource: "7.png",
+			label: "test13",
+			supportingText: "test14",
+		},
+		{
+			imageSource: "8.png",
+			label: "test15",
+			supportingText: "test16",
+		},
 	],
 	width = 41.2,
 	uniformWidths = false,
@@ -29,18 +62,20 @@ export const Carousel: React.FC<ICarouselProps> = ({
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
 	const handleDecrementIndex = () => {
-		const newIndex = (currentIndex - 1 + imgSrcs.length) % imgSrcs.length;
+		const newIndex = (currentIndex - 1 + images.length) % images.length;
 		setCurrentIndex(newIndex);
 		ref.current?.children[newIndex].scrollIntoView({
 			behavior: "smooth",
+			block: "nearest",
 		});
 	};
 
 	const handleIncrementIndex = () => {
-		const newIndex = (currentIndex + 1) % imgSrcs.length;
+		const newIndex = (currentIndex + 1) % images.length;
 		setCurrentIndex(newIndex);
 		ref.current?.children[newIndex].scrollIntoView({
 			behavior: "smooth",
+			block: "nearest",
 		});
 	};
 
@@ -97,7 +132,7 @@ export const Carousel: React.FC<ICarouselProps> = ({
 				onClick={handleClick}
 				onTouchEnd={handleTouch}
 			>
-				{imgSrcs.map((item, index) => {
+				{images.map((image, index) => {
 					const distance = Math.abs(currentIndex - index);
 					const isExtraSmall = distance >= 2;
 					let className = "carousel-item";
@@ -113,12 +148,25 @@ export const Carousel: React.FC<ICarouselProps> = ({
 						}
 					}
 					return (
-						<img
-							key={index}
-							src={item}
-							className={className}
-							draggable={false}
-						/>
+						<div className={className}>
+							<img key={index} src={image.imageSource} draggable={false} />
+							{className === "carousel-item carousel-item-regular" ? (
+								<>
+									<Typography
+										variant="text-title-large"
+										className="element-on-carousel-item upper-label-on-carousel-item"
+									>
+										{image.label}
+									</Typography>
+									<Typography
+										variant="text-label-small"
+										className="element-on-carousel-item lower-label-on-carousel-item"
+									>
+										{image.supportingText}
+									</Typography>
+								</>
+							) : null}
+						</div>
 					);
 				})}
 			</div>
