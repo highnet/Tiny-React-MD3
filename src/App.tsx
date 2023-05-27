@@ -26,7 +26,6 @@ import ExtendedFabsFrame from "./FABs/Extended FAB/Frame/ExtendedFabsFrame";
 import BottomAppBar from "./App Bars/Bottom App Bar/BottomAppBar";
 import BottomAppBarsFrame from "./App Bars/Bottom App Bar/Frame/BottomAppBarsFrame";
 import { openLinkInNewTab } from "./Gizmos/Redirection";
-import { Carousel } from "./Carousel/Carousel";
 import CarouselsFrame from "./Carousel/Frame/CarouselsFrame";
 
 function App() {

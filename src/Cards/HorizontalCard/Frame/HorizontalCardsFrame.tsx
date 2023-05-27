@@ -26,13 +26,19 @@ const HorizontalCardsFrame: React.FC = () => {
 	return (
 		<div className={_computedFrameClassName}>
 			{/* HORIZONTAL CARDS */}
-			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-horizontal-card">Horizontal Cards</ComponentFrameTitle>
-			<HorizontalCard imageSrc="chilly-bit.png" />
-			<CodeSnippet>{'<HorizontalCard imageSrc="chilly-bit.png"/>'}</CodeSnippet>
-			<HorizontalCard configuration="elevated" />
-			<CodeSnippet>{'<HorizontalCard configuration="elevated" />'}</CodeSnippet>
-			<HorizontalCard configuration="filled" />
-			<CodeSnippet>{'<HorizontalCard configuration="filled" />'}</CodeSnippet>
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-horizontal-card">
+				Horizontal Cards
+			</ComponentFrameTitle>
+			<HorizontalCard imageSrc="4.png" />
+			<CodeSnippet>{'<HorizontalCard imageSrc="4.png"/>'}</CodeSnippet>
+			<HorizontalCard imageSrc="5.png" configuration="elevated" />
+			<CodeSnippet>
+				{'<HorizontalCard imageSrc="5.png" configuration="elevated" />'}
+			</CodeSnippet>
+			<HorizontalCard imageSrc="6.png" configuration="filled" />
+			<CodeSnippet>
+				{'<HorizontalCard imageSrc="6.png" configuration="filled" />'}
+			</CodeSnippet>
 		</div>
 	);
 };

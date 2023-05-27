@@ -3355,6 +3355,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	box-sizing: border-box;
 	padding: 0;
 	flex-shrink: 0;
+	overflow: hidden;
 }
 .carousel-item img {
 	object-fit: cover;
@@ -3395,8 +3396,6 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .element-on-carousel-item{
 	position: absolute;
 	color: var(--m3-ref-neutral-neutral100);
+		white-space: nowrap;
+
 }
-
-
-
-

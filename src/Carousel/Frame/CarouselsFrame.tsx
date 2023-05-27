@@ -3,7 +3,7 @@ import { getPreferredScheme } from "../../Gizmos/Themeing";
 import CodeSnippet from "../../TRMD3/CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../../TRMD3/ComponentFrameTitle/ComponentFrameTitle";
 import Typography from "../../Typography/Typography";
-import { Carousel } from "../Carousel";
+import Carousel from "../Carousel";
 
 const CarouselsFrame: React.FC = () => {
 	const _theme =

@@ -28,19 +28,25 @@ const StackedCardsFrame: React.FC = () => {
 		<div className={_computedFrameClassName}>
 			{/* STACKED CARDS */}
 			<Typography
-					id="cards-section"
-					variant="text-title-large"
-					className={_computedTrmd3SectionTitlesClassName}
-				>
-					💳
+				id="cards-section"
+				variant="text-title-large"
+				className={_computedTrmd3SectionTitlesClassName}
+			>
+				💳
 			</Typography>
-			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-stacked-card">Stacked Cards</ComponentFrameTitle>
-			<StackedCard imageSrc="chilly-bit.png" />
-			<CodeSnippet>{'<StackedCard imageSrc="chilly-bit.png"/>'}</CodeSnippet>
-			<StackedCard configuration="elevated" />
-			<CodeSnippet>{'<StackedCard configuration="elevated" />'}</CodeSnippet>
-			<StackedCard configuration="filled" />
-			<CodeSnippet>{'<StackedCard configuration="filled" />'}</CodeSnippet>
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-stacked-card">
+				Stacked Cards
+			</ComponentFrameTitle>
+			<StackedCard imageSrc="1.png" />
+			<CodeSnippet>{'<StackedCard imageSrc="1.png"/>'}</CodeSnippet>
+			<StackedCard imageSrc="2.png" configuration="elevated" />
+			<CodeSnippet>
+				{'<StackedCard imageSrc="2.png" configuration="elevated" />'}
+			</CodeSnippet>
+			<StackedCard configuration="filled" imageSrc="3.png" />
+			<CodeSnippet>
+				{'<StackedCard imageSrc="3.png" configuration="filled" />'}
+			</CodeSnippet>
 		</div>
 	);
 };

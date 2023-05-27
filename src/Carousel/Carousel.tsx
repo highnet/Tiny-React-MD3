@@ -1,65 +1,65 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import { getPreferredScheme } from "../Gizmos/Themeing";
 import { ICarouselProps } from "./ICarouselProps";
 import { StringBuilder } from "../Gizmos/StringBuilder";
 import Typography from "../Typography/Typography";
 
-export const Carousel: React.FC<ICarouselProps> = ({
+const Carousel: React.FC<ICarouselProps> = ({
 	id,
-	className,
+	className = "",
 	images = [
 		{
 			imageSource: "1.png",
-			label: "test1",
-			supportingText: "test2",
+			label: "Lorem Ipsum",
+			supportingText: "Lorem ipsum dolor sit amet",
 		},
 		{
 			imageSource: "2.png",
-			label: "test3",
-			supportingText: "test4",
+			label: "Lorem Ipsum",
+			supportingText: "Lorem ipsum dolor sit amet",
 		},
 		{
 			imageSource: "3.png",
-			label: "test5",
-			supportingText: "test6",
+			label: "Lorem Ipsum",
+			supportingText: "Lorem ipsum dolor sit amet",
 		},
 		{
 			imageSource: "4.png",
-			label: "test7",
-			supportingText: "test8",
+			label: "Lorem Ipsum",
+			supportingText: "Lorem ipsum dolor sit amet",
 		},
 		{
 			imageSource: "5.png",
-			label: "test9",
-			supportingText: "test10",
+			label: "Lorem Ipsum",
+			supportingText: "Lorem ipsum dolor sit amet",
 		},
 		{
 			imageSource: "6.png",
-			label: "test11",
-			supportingText: "test12",
+			label: "Lorem Ipsum",
+			supportingText: "Lorem ipsum dolor sit amet",
 		},
 		{
 			imageSource: "7.png",
-			label: "test13",
-			supportingText: "test14",
+			label: "Lorem Ipsum",
+			supportingText: "Lorem ipsum dolor sit amet",
 		},
 		{
 			imageSource: "8.png",
-			label: "test15",
-			supportingText: "test16",
+			label: "Lorem Ipsum",
+			supportingText: "Lorem ipsum dolor sit amet",
 		},
 	],
 	width = 41.2,
 	uniformWidths = false,
 }) => {
-	const [_id] = useState(id || undefined);
-	const [_className] = useState(className || "");
+	const [_id] = useState(id);
+	const [_className] = useState(className);
 
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const ref = useRef<HTMLDivElement>(null);
 
 	const _theme =
-		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
+		localStorage.getItem("theme") || `${getPreferredScheme()}-theme`;
 
 	const handleDecrementIndex = () => {
 		const newIndex = (currentIndex - 1 + images.length) % images.length;
@@ -116,9 +116,9 @@ export const Carousel: React.FC<ICarouselProps> = ({
 		}
 	});
 
-	let _computedComponentClassName = new StringBuilder()
+	const computedComponentClassName = new StringBuilder()
 		.add("carousel")
-		.add("btn-" + _theme)
+		.add(`btn-${_theme}`)
 		.add(_className)
 		.toString();
 
@@ -126,7 +126,7 @@ export const Carousel: React.FC<ICarouselProps> = ({
 		<div className="carousel-container">
 			<div
 				id={_id}
-				className={_computedComponentClassName}
+				className={computedComponentClassName}
 				ref={ref}
 				style={{ width: `${width}rem`, position: "relative" }}
 				onClick={handleClick}
@@ -147,6 +147,12 @@ export const Carousel: React.FC<ICarouselProps> = ({
 								: " carousel-item-small";
 						}
 					}
+					if (image.label && !image.supportingText) {
+						className = className.replace(
+							"upper-label-on-carousel-item",
+							"lower-label-on-carousel-item"
+						);
+					}
 					return (
 						<div className={className}>
 							<img key={index} src={image.imageSource} draggable={false} />
@@ -154,16 +160,22 @@ export const Carousel: React.FC<ICarouselProps> = ({
 								<>
 									<Typography
 										variant="text-title-large"
-										className="element-on-carousel-item upper-label-on-carousel-item"
+										className={
+											image.label && image.supportingText
+												? "element-on-carousel-item upper-label-on-carousel-item"
+												: "element-on-carousel-item lower-label-on-carousel-item"
+										}
 									>
 										{image.label}
 									</Typography>
-									<Typography
-										variant="text-label-small"
-										className="element-on-carousel-item lower-label-on-carousel-item"
-									>
-										{image.supportingText}
-									</Typography>
+									{image.supportingText && (
+										<Typography
+											variant="text-label-small"
+											className="element-on-carousel-item lower-label-on-carousel-item"
+										>
+											{image.supportingText}
+										</Typography>
+									)}
 								</>
 							) : null}
 						</div>
@@ -173,3 +185,5 @@ export const Carousel: React.FC<ICarouselProps> = ({
 		</div>
 	);
 };
+
+export default Carousel;
