@@ -108,7 +108,7 @@ const Carousel: React.FC<ICarouselProps> = ({
 
 	const computedComponentClassName = new StringBuilder()
 		.add("carousel")
-		.add(`btn-${_theme}`)
+		.add(`carousel-${_theme}`)
 		.add(_className)
 		.toString();
 
