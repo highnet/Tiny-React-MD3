@@ -61,17 +61,7 @@ const Carousel: React.FC<ICarouselProps> = ({
 	const _theme =
 		localStorage.getItem("theme") || `${getPreferredScheme()}-theme`;
 
-	const handleDecrementIndex = () => {
-		const newIndex = (currentIndex - 1 + images.length) % images.length;
-		setCurrentIndex(newIndex);
-		ref.current?.children[newIndex].scrollIntoView({
-			behavior: "smooth",
-			block: "nearest",
-		});
-	};
-
-	const handleIncrementIndex = () => {
-		const newIndex = (currentIndex + 1) % images.length;
+	const handleIndexChange = (newIndex: number) => {
 		setCurrentIndex(newIndex);
 		ref.current?.children[newIndex].scrollIntoView({
 			behavior: "smooth",
@@ -87,9 +77,9 @@ const Carousel: React.FC<ICarouselProps> = ({
 			const isLeftHalf = clickX < carouselWidth / 2;
 			const clickedSide = isLeftHalf ? "left" : "right";
 			if (clickedSide === "left") {
-				handleDecrementIndex();
+				handleIndexChange((currentIndex - 1 + images.length) % images.length);
 			} else {
-				handleIncrementIndex();
+				handleIndexChange((currentIndex + 1) % images.length);
 			}
 		}
 	};
@@ -102,9 +92,9 @@ const Carousel: React.FC<ICarouselProps> = ({
 			const isLeftHalf = touchX < carouselWidth / 2;
 			const clickedSide = isLeftHalf ? "left" : "right";
 			if (clickedSide === "left") {
-				handleDecrementIndex();
+				handleIndexChange((currentIndex - 1 + images.length) % images.length);
 			} else {
-				handleIncrementIndex();
+				handleIndexChange((currentIndex + 1) % images.length);
 			}
 		}
 	};
