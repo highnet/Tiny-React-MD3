@@ -475,3 +475,5 @@ The supported options of <code>{configuration}</code> are the following:
 2. <code>"primary"</code>
 3. <code>"secondary"</code>
 4. <code>"tertiary"</code>
+    
+## 🎠 Carousel
