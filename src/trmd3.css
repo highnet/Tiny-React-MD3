@@ -3380,6 +3380,9 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .carousel-item-small {
 	width: 12rem;
 }
+.carousel-item-extra-small {
+	width: 5.6rem;
+}
 
 .carousel {
 	padding: 8px 16px;

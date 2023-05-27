@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { getPreferredScheme } from "../Gizmos/Themeing";
 import { ICarouselProps } from "./ICarouselProps";
 import { StringBuilder } from "../Gizmos/StringBuilder";
@@ -21,7 +21,7 @@ export const Carousel: React.FC<ICarouselProps> = ({
 	const [_id] = useState(id || undefined);
 	const [_className] = useState(className || "");
 	const [currentIndex, setCurrentIndex] = useState(0);
-	const [isDragging, setIsDragging] = useState(false);
+	const [isMouseInside, setIsMouseInside] = useState(false);
 
 	const ref = useRef<HTMLDivElement>(null);
 	const _theme =
@@ -77,6 +77,7 @@ export const Carousel: React.FC<ICarouselProps> = ({
 			carousel.scrollLeft = 0;
 		}
 	});
+
 	let _computedComponentClassName = new StringBuilder()
 		.add("carousel")
 		.add("btn-" + _theme)
@@ -96,21 +97,22 @@ export const Carousel: React.FC<ICarouselProps> = ({
 				{imgSrcs.map((item, index) => {
 					const distance = Math.abs(currentIndex - index);
 					const isExtraSmall = distance >= 2;
-					const className = `carousel-item ${
-						index === currentIndex
-							? "active"
-							: isExtraSmall
-							? "carousel-item-extra-small"
-							: "carousel-item-small"
-					}`;
-					const style = isExtraSmall ? { width: "5.6rem" } : {};
+					let className = "carousel-item";
+					if (index === currentIndex) {
+						className += " active";
+					} else {
+						if (isExtraSmall) {
+							className += " carousel-item-extra-small";
+						} else {
+							className += " carousel-item-small";
+						}
+					}
 					return (
 						<img
 							key={index}
 							src={item}
 							className={className}
 							draggable={false}
-							style={style}
 						/>
 					);
 				})}
