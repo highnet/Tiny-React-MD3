@@ -59,7 +59,14 @@ function App() {
 				toggleTheme={handleToggleTheme}
 				scrollToTop={handleScrollToTop}
 			/>
-			<NavigationRail />
+			<NavigationRail
+				className={"nav-open"}
+				fab={{
+					onClick: () => {
+						alert("FAB");
+					},
+				}}
+			/>
 			<div id="section-0-trmd3" className="section-trmd3">
 				<Hero hasLogo={true} />
 				<Cookietrail />
@@ -125,5 +132,4 @@ function App() {
 		</div>
 	);
 }
-
 export default App;

@@ -3,9 +3,7 @@ html {
 	scroll-behavior: smooth;
 }
 
-.App {
-	margin-top: -70px;
-}
+
 
 /* BODY */
 
@@ -24,6 +22,7 @@ html {
 		rgba(6, 29, 45, 0.9) 74%
 	);
 }
+
 /* SECTIONS */
 
 .section-trmd3 {
@@ -107,7 +106,7 @@ html {
 	transform: translateY(1rem);
 	padding: 0rem 3rem 3rem 3rem;
 	gap: 1rem;
-	z-index: 999;
+	z-index: 997;
 	top: 0;
 	left: 0;
 	right: 0;
