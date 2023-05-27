@@ -21,7 +21,6 @@ const TourGuide: React.FC = () => {
 				>
 					💳 Cards 💳
 				</Button>
-
 				<Button
 					className="tourguide-button"
 					configuration="elevated"
@@ -98,6 +97,13 @@ const TourGuide: React.FC = () => {
 					onClick={() => scrollToSection("bottom-app-bars-section", -60)}
 				>
 					⏬ Bottom App Bars ⏬
+				</Button>
+				<Button
+					className="tourguide-button"
+					configuration="elevated"
+					onClick={() => scrollToSection("carousels-section", -60)}
+				>
+					🎠 Carousels 🎠
 				</Button>
 			</div>
 		</div>

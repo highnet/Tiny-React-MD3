@@ -3344,17 +3344,13 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	overflow-x: hidden;
 	position: relative;
 	scroll-behavior: smooth;
-	scroll-snap-type: x mandatory;
 }
 
 .carousel-item {
 	position: relative;
 	border-radius: 2.8rem;
-	width: 18.8rem;
-	height: 20.5rem;
-	scroll-snap-align: center;
 	user-select: none;
-	transition: width 0.3s ease-in-out;
+	transition: width 0.5s ease-in-out;
 }
 
 .carousel-item img {
@@ -3375,6 +3371,11 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 
 .carousel-buttons button {
 	margin: 0.5rem 0;
+}
+
+.carousel-item-regular {
+	width: 18.8rem;
+	height: 20.5rem;
 }
 
 .carousel-item-small {

@@ -17,20 +17,23 @@ export const Carousel: React.FC<ICarouselProps> = ({
 		"8.png",
 	],
 	width = 41.2,
+	uniformWidths = false,
 }) => {
 	const [_id] = useState(id || undefined);
 	const [_className] = useState(className || "");
-	const [currentIndex, setCurrentIndex] = useState(0);
-	const [isMouseInside, setIsMouseInside] = useState(false);
 
+	const [currentIndex, setCurrentIndex] = useState(0);
 	const ref = useRef<HTMLDivElement>(null);
+
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
 	const handleDecrementIndex = () => {
 		const newIndex = (currentIndex - 1 + imgSrcs.length) % imgSrcs.length;
 		setCurrentIndex(newIndex);
-		ref.current?.children[newIndex].scrollIntoView({ behavior: "smooth" });
+		ref.current?.children[newIndex].scrollIntoView({
+			behavior: "smooth",
+		});
 	};
 
 	const handleIncrementIndex = () => {
@@ -99,12 +102,14 @@ export const Carousel: React.FC<ICarouselProps> = ({
 					const isExtraSmall = distance >= 2;
 					let className = "carousel-item";
 					if (index === currentIndex) {
-						className += " active";
+						className += " carousel-item-regular";
 					} else {
 						if (isExtraSmall) {
 							className += " carousel-item-extra-small";
 						} else {
-							className += " carousel-item-small";
+							className += uniformWidths
+								? " carousel-item-regular"
+								: " carousel-item-small";
 						}
 					}
 					return (
