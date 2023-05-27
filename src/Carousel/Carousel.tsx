@@ -9,42 +9,17 @@ const Carousel: React.FC<ICarouselProps> = ({
 	className = "",
 	images = [
 		{
-			imageSource: "1.png",
+			imageSource: "default-media.png",
 			label: "Lorem Ipsum",
 			supportingText: "Lorem ipsum dolor sit amet",
 		},
 		{
-			imageSource: "2.png",
+			imageSource: "default-media.png",
 			label: "Lorem Ipsum",
 			supportingText: "Lorem ipsum dolor sit amet",
 		},
 		{
-			imageSource: "3.png",
-			label: "Lorem Ipsum",
-			supportingText: "Lorem ipsum dolor sit amet",
-		},
-		{
-			imageSource: "4.png",
-			label: "Lorem Ipsum",
-			supportingText: "Lorem ipsum dolor sit amet",
-		},
-		{
-			imageSource: "5.png",
-			label: "Lorem Ipsum",
-			supportingText: "Lorem ipsum dolor sit amet",
-		},
-		{
-			imageSource: "6.png",
-			label: "Lorem Ipsum",
-			supportingText: "Lorem ipsum dolor sit amet",
-		},
-		{
-			imageSource: "7.png",
-			label: "Lorem Ipsum",
-			supportingText: "Lorem ipsum dolor sit amet",
-		},
-		{
-			imageSource: "8.png",
+			imageSource: "default-media.png",
 			label: "Lorem Ipsum",
 			supportingText: "Lorem ipsum dolor sit amet",
 		},

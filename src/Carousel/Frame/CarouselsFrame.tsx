@@ -41,6 +41,40 @@ const CarouselsFrame: React.FC = () => {
 			<Typography variant={"text-label-small"}>Uniform Layout</Typography>
 			<Carousel uniformWidths={true} />
 			<CodeSnippet>{"<Carousel uniformWidths={true} />"}</CodeSnippet>
+			<Carousel
+				images={[
+					{
+						imageSource: "1.png",
+						label: "Chilly Bits",
+						supportingText: "www.chillybitsnft.com",
+					},
+					{
+						imageSource: "2.png",
+					},
+					{
+						imageSource: "3.png",
+					},
+					{
+						imageSource: "4.png",
+					},
+					{
+						imageSource: "5.png",
+					},
+				]}
+			/>
+			<CodeSnippet>
+				{`<Carousel
+	images={[
+		{imageSource: "1.png", 
+		label: "Chilly Bits", 
+		supportingText: "www.chillybitsnft.com"},
+		{imageSource: "2.png"},
+		{imageSource: "3.png"},
+		{imageSource: "4.png"},
+		{imageSource: "5.png"},
+		]}
+	/>`}
+			</CodeSnippet>
 		</div>
 	);
 };
