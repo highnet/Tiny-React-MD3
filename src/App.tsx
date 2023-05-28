@@ -60,7 +60,7 @@ function App() {
 				scrollToTop={handleScrollToTop}
 			/>
 			<NavigationRail
-				className={"nav-open"}
+				className={"main-navigation-rail-trmd3"}
 				fab={{
 					onClick: () => {
 						alert("FAB");

@@ -37,7 +37,7 @@ const BottomAppBarsFrame: React.FC = () => {
 				Bottom App Bars
 			</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>1 Icon - no FAB</Typography>
-			<BottomAppBar />
+			<BottomAppBar className="bottom-app-bar-on-frame-trmd3"/>
 			<CodeSnippet>{`<BottomAppBar />`}</CodeSnippet>
 			<Typography variant={"text-label-small"}>N Icons - FAB</Typography>
 			<BottomAppBar
@@ -51,6 +51,7 @@ const BottomAppBarsFrame: React.FC = () => {
 						alert("FAB");
 					},
 				}}
+				className="bottom-app-bar-on-frame-trmd3"
 			/>
 			<CodeSnippet>{`<BottomAppBar
 	icons={[

@@ -3,7 +3,13 @@ html {
 	scroll-behavior: smooth;
 }
 
+/* APP */
 
+@media screen and (min-width: 768px) {
+	.App {
+	  margin-left: 8rem;
+	}
+  }
 
 /* BODY */
 
@@ -482,3 +488,17 @@ html {
 	transform: translate(-50%, -50%) scale(2);
 	display: block;
 }
+
+
+/* NAVIGATION RAILS */
+@media screen and (max-width: 767px) {
+	.main-navigation-rail-trmd3 {
+	  display: none;
+	}
+  }
+
+
+  /* BOTTOM APP BARS */
+  .bottom-app-bar-on-frame-trmd3 { 
+	z-index: 1;
+  }
