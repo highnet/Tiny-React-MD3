@@ -112,23 +112,6 @@ const NavigationRail: React.FC<INavigationRailProps> = ({
 		onClick: fab?.onClick ?? (() => {}),
 	});
 
-	const handleNavClick = (e: { clientX: number }) => {
-		if (e.clientX > 80) {
-			const navElement = document.querySelector(".navigation-rail");
-			if (navElement) {
-				navElement.classList.toggle("nav-open");
-			}
-		}
-	};
-
-	useEffect(() => {
-		document.addEventListener("click", handleNavClick);
-
-		return () => {
-			document.removeEventListener("click", handleNavClick);
-		};
-	}, []);
-
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 

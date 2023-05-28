@@ -3277,12 +3277,9 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	padding-bottom: 5.6rem;
 	gap: 4rem;
 	transition: left 0.3s ease-in-out;
-	left: -300px;
+	left: 0px;
 }
 
-.navigation-rail.nav-open {
-	left: 0;
-}
 
 .icons-on-navigation-rail {
 	display: flex;
