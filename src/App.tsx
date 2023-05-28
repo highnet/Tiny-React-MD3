@@ -67,6 +67,99 @@ function App() {
 					},
 					fabIconName: "home",
 				}}
+				icons={[
+					{
+						name: "credit_card",
+						label: "Cards",
+						onClick: () => {
+							scrollToSection("cards-section", -60);
+						},
+					},
+					{
+						name: "cookie",
+						label: "Chips",
+						onClick: () => {
+							scrollToSection("chips-section", -60);
+						},
+					},
+					{
+						name: "add",
+						label: "Dividers",
+						onClick: () => {
+							scrollToSection("horizontal-dividers-section", -60);
+						},
+					},
+					{
+						name: "radio_button_checked",
+						label: "Radio Buttons",
+						onClick: () => {
+							scrollToSection("radio-buttons-section", -60);
+						},
+					},
+					{
+						name: "verified",
+						label: "Badges",
+						onClick: () => {
+							scrollToSection("badges-section", -60);
+						},
+					},
+					{
+						name: "check_box",
+						label: "Checkboxes",
+						onClick: () => {
+							scrollToSection("checkboxes-section", -60);
+						},
+					},
+					{
+						name: "toggle_on",
+						label: "Switches",
+						onClick: () => {
+							scrollToSection("switches-section", -60);
+						},
+					},
+					{
+						name: "joystick",
+						label: "Buttons",
+						onClick: () => {
+							scrollToSection("buttons-section", -60);
+						},
+					},
+					{
+						name: "abc",
+						label: "Typography",
+						onClick: () => {
+							scrollToSection("typography-section", -60);
+						},
+					},
+					{
+						name: "favorite",
+						label: "Icons",
+						onClick: () => {
+							scrollToSection("icons-section", -60);
+						},
+					},
+					{
+						name: "cloud",
+						label: "FABs",
+						onClick: () => {
+							scrollToSection("fabs-section", -60);
+						},
+					},
+					{
+						name: "dock_to_bottom",
+						label: "Bottom App Bars",
+						onClick: () => {
+							scrollToSection("bottom-app-bars-section", -60);
+						},
+					},
+					{
+						name: "view_carousel",
+						label: "Carousels",
+						onClick: () => {
+							scrollToSection("carousels-section", -60);
+						},
+					},
+				]}
 			/>
 			<div id="section-0-trmd3" className="section-trmd3">
 				<Hero hasLogo={true} />

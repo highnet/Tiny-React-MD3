@@ -3272,7 +3272,6 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	padding: 1rem;
 	height: 100vh;
 	flex-direction: column;
-	background-color: var(--m3-sys-light-secondary-container);
 	padding-top: 4.4rem;
 	padding-bottom: 5.6rem;
 	gap: 4rem;
@@ -3280,6 +3279,21 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	left: 0px;
 }
 
+
+.navigation-rail-top {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: .4rem;
+	height: 4.8rem;
+	overflow: clip;
+	transition: height 0.125s ease-in-out;
+}
+
+.navigation-rail-top.active {
+	height: 10.8rem;
+	overflow: visible;
+}
 
 .icons-on-navigation-rail {
 	display: flex;
@@ -3291,8 +3305,6 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	justify-content: flex-start;
 	transition: height 0.3s ease-in-out;
 }
-
-
 
 .container-on-icon-on-navigation-rail {
 	cursor: pointer;
@@ -3314,6 +3326,108 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .hidden-on-navigation-rail{
 	height: 0;
 }
+
+.navigation-rail-hamburger-menu-container {
+	width: 4.8rem;
+	height: 4.8rem;
+	position: relative;
+	cursor: pointer;
+	flex-shrink: 0;
+}
+
+.navigation-rail-hamburger-menu-element {
+	width: 1.4rem;
+	height: .4rem;
+	background-color: black;
+	transition: transform .2s ease-in-out;
+	position: absolute;
+}
+
+.navigation-rail-hamburger-menu-element:nth-child(1) {
+	transform: translate(1rem, 1.6rem);
+}
+
+.navigation-rail-hamburger-menu-element:nth-child(2) {
+	transform: translate(2.4rem, 1.6rem);
+}
+
+.navigation-rail-hamburger-menu-element:nth-child(3) {
+	transform: translate(1rem, 2.4rem);
+}
+
+.navigation-rail-hamburger-menu-element:nth-child(4) {
+	transform: translate(2.4em, 2.4rem);
+}
+
+.navigation-rail-hamburger-menu-element:nth-child(5) {
+	transform: translate(1rem, 3.2rem);
+}
+
+.navigation-rail-hamburger-menu-element:nth-child(6) {
+	transform: translate(2.4rem, 3.2rem);
+}
+
+.navigation-rail-hamburger-menu-element.active:nth-child(1) {
+	transform: translate(1.3rem, 2rem) rotate(225deg);
+	transition-delay: .125s;
+}
+
+.navigation-rail-hamburger-menu-element.active:nth-child(2) {
+	transform: translate(2.1rem, 2rem) rotate(-225deg);
+	transition-delay: .2s;
+}
+
+.navigation-rail-hamburger-menu-element.active:nth-child(3) {
+	transform: translate(1.3rem, 2rem) rotate(225deg);
+	transition-delay: .125s;
+}
+
+.navigation-rail-hamburger-menu-element.active:nth-child(4) {
+	transform: translate(2.1rem, 2rem) rotate(-225deg);
+	transition-delay: .2s;
+}
+
+.navigation-rail-hamburger-menu-element.active:nth-child(5) {
+	transform: translate(2.1rem, 2.7rem) rotate(225deg);
+	transition-delay: .125s;
+}
+
+.navigation-rail-hamburger-menu-element.active:nth-child(6) {
+	transform: translate(1.4rem, 2.7rem) rotate(-225deg);
+	transition-delay: .2s;
+}
+
+
+/* NAVIGATION RAILS / LIGHT */
+.navigation-rail-light-theme {
+	background-color: var(--m3-sys-light-secondary-container);
+}
+
+.navigation-rail-hamburger-menu-element-light-theme {
+	background-color: var(--m3-sys-light-on-surface-variant);
+}
+
+.label-on-navigation-rail-light-theme,
+.icon-on-navigation-rail-light-theme {
+	color: var(--m3-sys-light-on-secondary-container);
+}
+
+/* NAVIGATION RAILS / DARK */
+
+.navgiation-rail-dark-theme {
+	background-color: var(--m3-sys-dark-secondary-container);
+}
+
+.navigation-rail-hamburger-menu-element-dark-theme {
+	background-color: var(--m3-sys-dark-on-surface-variant);
+}
+
+
+.label-on-navigation-rail-dark-theme,
+.icon-on-navigation-rail-dark-theme {
+	color: var(--m3-sys-dark-on-secondary-container);
+}
+
 
 /* ==========BOTTOM APP BARS========== */
 .bottom-app-bar {
@@ -3456,44 +3570,5 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	position: absolute;
 	color: var(--m3-ref-neutral-neutral100);
 	white-space: nowrap;
-}
-
-.hamburger-menu {
-	width: 4.8rem;
-	height: 4.8rem;
-	position: relative;
-	cursor: pointer;
-	flex-shrink: 0;
-}
-		
-.hamburger-menu:before,
-.hamburger-menu:after {
-	content: "";
-	position: absolute;
-	left: 0;
-	width: 100%;
-	height: 3px;
-	background-color: black;
-	transition: transform 0.3s ease;
-}
-		
-.hamburger-menu:before {
-	top: 0;
-}
-		
-.hamburger-menu:after {
-	bottom: 0;
-}
-		
-.hamburger-menu.active:before {
-	transform: translateY(8px) rotate(45deg);
-}
-		
-.hamburger-menu.active:after {
-	transform: translateY(-8px) rotate(-45deg);
-}
-		
-.hamburger-menu.active {
-	transform: rotate(45deg);
 }
 
