@@ -50,6 +50,7 @@ const BottomAppBarsFrame: React.FC = () => {
 					onClick: () => {
 						alert("FAB");
 					},
+					fabIconName: "hive"
 				}}
 				className="bottom-app-bar-on-frame-trmd3"
 			/>

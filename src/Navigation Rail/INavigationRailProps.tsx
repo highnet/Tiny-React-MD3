@@ -12,5 +12,6 @@ export interface INavigationRailProps extends IComponentProps {
 	}[];
 	fab?: {
 		onClick?: () => void;
+		fabIconName?: string;
 	};
 }

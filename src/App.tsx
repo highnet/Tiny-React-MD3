@@ -63,8 +63,9 @@ function App() {
 				className={"main-navigation-rail-trmd3"}
 				fab={{
 					onClick: () => {
-						alert("FAB");
+						handleScrollToTop();
 					},
+					fabIconName: "home",
 				}}
 			/>
 			<div id="section-0-trmd3" className="section-trmd3">

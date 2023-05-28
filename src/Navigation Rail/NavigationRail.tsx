@@ -111,6 +111,7 @@ const NavigationRail: React.FC<INavigationRailProps> = ({
 	const [_fab] = useState({
 		onClick: fab?.onClick ?? (() => {}),
 	});
+	const [_fabIconName] = useState(fab?.fabIconName ?? "add");
 
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
@@ -164,7 +165,7 @@ const NavigationRail: React.FC<INavigationRailProps> = ({
 				<Fab
 					configuration="secondary"
 					size="medium"
-					iconName="add"
+					iconName={_fabIconName}
 					onClick={_fab.onClick}
 				></Fab>
 			) : null}
