@@ -30,7 +30,6 @@ const Cookietrail: React.FC = () => {
 			<div className={"flex-trmd3 flex-row-trmd3 cookietrail-buttons-trmd3"}>
 				<Button
 					configuration="tonal"
-					disabled={false}
 					icon={true}
 					iconName={"bookmark"}
 					onClick={() =>
@@ -44,7 +43,6 @@ const Cookietrail: React.FC = () => {
 				</Button>
 				<Button
 					configuration="tonal"
-					disabled={false}
 					icon={true}
 					iconName={"menu_book"}
 					onClick={() =>
@@ -55,6 +53,19 @@ const Cookietrail: React.FC = () => {
 					className="cookietrail-button-trmd3"
 				>
 					Documentation
+				</Button>
+				<Button
+					configuration="tonal"
+					icon={true}
+					iconName={"code"}
+					onClick={() =>
+						openLinkInNewTab(
+							"https://github.com/highnet/Tiny-React-MD3/tree/master/src"
+						)
+					}
+					className="cookietrail-button-trmd3"
+				>
+					Source Code
 				</Button>
 			</div>
 		</div>

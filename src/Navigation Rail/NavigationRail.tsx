@@ -51,39 +51,64 @@ const NavigationRail: React.FC<INavigationRailProps> = ({
 		.add(_className)
 		.toString();
 
-	const iconElements = _icons.map((icon, index) => (
-		<div
-			className={`
-                container-on-icon-on-navigation-rail
-                container-on-icon-on-navigation-rail-${_theme}
-                ${
-									index === currentIndex
-										? "active-icon-on-navigation-rail"
-										: "inactive-icon-on-navigation-rail"
-								}
-            `}
-			key={index}
-			tabIndex={0}
-			onClick={() => {
-				setCurrentIndex(index);
-				if (icon && icon.onClick) {
-					icon.onClick();
+	const iconElements = _icons.map((icon, index) => {
+		let size = icon.label ? "small" : "big";
+		if (size === "big" && icon.label) {
+			size = "small";
+		}
+		return (
+			<div
+				className={`
+        icon-container-on-navigation-rail
+        icon-container-on-navigation-rail-${_theme}
+        ${
+					index === currentIndex
+						? "active-icon-container-on-navigation-rail"
+						: "inactive-icon-container-on-navigation-rail"
 				}
-			}}
-		>
-			<Icon
-				className={`icon-on-navigation-rail icon-on-navigation-rail-${_theme}`}
+        ${
+					size === "big"
+						? "big-icon-container-on-navigation-rail"
+						: "small-icon-container-on-navigation-rail"
+				}
+      `}
+				key={index}
+				tabIndex={0}
+				onClick={() => {
+					setCurrentIndex(index);
+					if (icon && icon.onClick) {
+						icon.onClick();
+					}
+				}}
 			>
-				{icon.name}
-			</Icon>
-			<Typography
-				variant="text-label-small"
-				className={`label-on-navigation-rail label-on-navigation-rail-${_theme}`}
-			>
-				{icon.label}
-			</Typography>
-		</div>
-	));
+				<Icon
+					className={`
+          icon-on-navigation-rail
+          icon-on-navigation-rail-${_theme}
+
+${
+	size === "big"
+		? "big-icon-on-navigation-rail"
+		: "small-icon-on-navigation-rail"
+}
+        `}
+				>
+					{icon.name}
+				</Icon>
+				{icon.label && (
+					<Typography
+						variant="text-label-medium"
+						className={`
+            label-on-navigation-rail
+            label-on-navigation-rail-${_theme}
+          `}
+					>
+						{icon.label}
+					</Typography>
+				)}
+			</div>
+		);
+	});
 
 	return (
 		<div id={_id} className={_computedComponentClassName}>

@@ -5,7 +5,6 @@ export interface INavigationRailProps extends IComponentProps {
 		name: string;
 		label?: string;
 		configuration?: string;
-		size?: string;
 		badge?: {
 			badgeType: string;
 			badgeValue: number;

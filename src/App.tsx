@@ -69,6 +69,30 @@ function App() {
 				}}
 				icons={[
 					{
+						name: "bookmark",
+						onClick: () => {
+							openLinkInNewTab(
+								"https://github.com/highnet/Tiny-React-MD3#----trmd3-tiny-react-material-design-3-"
+							);
+						},
+					},
+					{
+						name: "menu_book",
+						onClick: () => {
+							openLinkInNewTab(
+								"https://github.com/highnet/Tiny-React-MD3/tree/master/src#-tiny-react-md-3-documentation"
+							);
+						},
+					},
+					{
+						name: "code",
+						onClick: () => {
+							openLinkInNewTab(
+								"https://github.com/highnet/Tiny-React-MD3/tree/master/src"
+							);
+						},
+					},
+					{
 						name: "credit_card",
 						label: "Cards",
 						onClick: () => {
