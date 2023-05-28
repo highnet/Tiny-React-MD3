@@ -3313,7 +3313,6 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	align-items: center;
 	justify-content: center;
 	flex-shrink: 0;
-	border-radius: 50%;
 	width: 7rem;
 	height: 5.6rem;
 	scroll-behavior: smooth;
@@ -3395,6 +3394,14 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .navigation-rail-hamburger-menu-element.active:nth-child(6) {
 	transform: translate(1.4rem, 2.7rem) rotate(-225deg);
 	transition-delay: .2s;
+}
+
+.active-icon-on-navigation-rail {
+	border: 1px solid red;
+}
+
+.inactive-icon-on-navigation-rail{
+	border: 1px solid black;
 }
 
 

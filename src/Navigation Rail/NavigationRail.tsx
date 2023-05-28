@@ -19,6 +19,7 @@ const NavigationRail: React.FC<INavigationRailProps> = ({
 		onClick: fab?.onClick ?? (() => {}),
 	});
 	const [_fabIconName] = useState(fab?.fabIconName ?? "edit");
+	const [currentIndex, setCurrentIndex] = useState(-1);
 
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
@@ -52,24 +53,32 @@ const NavigationRail: React.FC<INavigationRailProps> = ({
 
 	const iconElements = _icons.map((icon, index) => (
 		<div
-			className={
-				"container-on-icon-on-navigation-rail container-on-icon-on-navigation-rail-" +
-				_theme
-			}
+			className={`
+                container-on-icon-on-navigation-rail
+                container-on-icon-on-navigation-rail-${_theme}
+                ${
+									index === currentIndex
+										? "active-icon-on-navigation-rail"
+										: "inactive-icon-on-navigation-rail"
+								}
+            `}
 			key={index}
 			tabIndex={0}
+			onClick={() => {
+				setCurrentIndex(index);
+				if (icon && icon.onClick) {
+					icon.onClick();
+				}
+			}}
 		>
 			<Icon
-				className={"icon-on-navigation-rail icon-on-navigation-rail-" + _theme}
-				onClick={icon.onClick}
+				className={`icon-on-navigation-rail icon-on-navigation-rail-${_theme}`}
 			>
 				{icon.name}
 			</Icon>
 			<Typography
 				variant="text-label-small"
-				className={
-					"label-on-navigation-rail label-on-navigation-rail-" + _theme
-				}
+				className={`label-on-navigation-rail label-on-navigation-rail-${_theme}`}
 			>
 				{icon.label}
 			</Typography>
@@ -84,40 +93,22 @@ const NavigationRail: React.FC<INavigationRailProps> = ({
 					onClick={() => toggleMenu()}
 				>
 					<div
-						className={
-							"navigation-rail-hamburger-menu-element navigation-rail-hamburger-menu-element-" +
-							_theme
-						}
+						className={`navigation-rail-hamburger-menu-element navigation-rail-hamburger-menu-element-${_theme}`}
 					></div>
 					<div
-						className={
-							"navigation-rail-hamburger-menu-element navigation-rail-hamburger-menu-element-" +
-							_theme
-						}
+						className={`navigation-rail-hamburger-menu-element navigation-rail-hamburger-menu-element-${_theme}`}
 					></div>
 					<div
-						className={
-							"navigation-rail-hamburger-menu-element navigation-rail-hamburger-menu-element-" +
-							_theme
-						}
+						className={`navigation-rail-hamburger-menu-element navigation-rail-hamburger-menu-element-${_theme}`}
 					></div>
 					<div
-						className={
-							"navigation-rail-hamburger-menu-element navigation-rail-hamburger-menu-element-" +
-							_theme
-						}
+						className={`navigation-rail-hamburger-menu-element navigation-rail-hamburger-menu-element-${_theme}`}
 					></div>
 					<div
-						className={
-							"navigation-rail-hamburger-menu-element navigation-rail-hamburger-menu-element-" +
-							_theme
-						}
+						className={`navigation-rail-hamburger-menu-element navigation-rail-hamburger-menu-element-${_theme}`}
 					></div>
 					<div
-						className={
-							"navigation-rail-hamburger-menu-element navigation-rail-hamburger-menu-element-" +
-							_theme
-						}
+						className={`navigation-rail-hamburger-menu-element navigation-rail-hamburger-menu-element-${_theme}`}
 					></div>
 				</div>
 				{fab && fab.onClick ? (
