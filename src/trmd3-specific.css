@@ -522,3 +522,9 @@ html {
   .bottom-app-bar-on-frame-trmd3 { 
 	z-index: 1;
   }
+
+  /* NAVIGATION RAILS */
+
+.navigation-rail-on-frame-trmd3{ 
+	position: relative;
+}

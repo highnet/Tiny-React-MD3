@@ -28,6 +28,7 @@ import BottomAppBarsFrame from "./App Bars/Bottom App Bar/Frame/BottomAppBarsFra
 import { openLinkInNewTab } from "./Gizmos/Redirection";
 import CarouselsFrame from "./Carousel/Frame/CarouselsFrame";
 import NavigationRail from "./Navigation Rail/NavigationRail";
+import NavigationRailsFrame from "./Navigation Rail/Frame/NavigationRailsFrame";
 
 function App() {
 	console.log(`	👋 Welcome to TRMD3! 👋	`);
@@ -224,6 +225,9 @@ function App() {
 			</div>
 			<div id="section-9-trmd3" className="section-trmd3">
 				<CarouselsFrame />
+			</div>
+			<div id="section-10-trmd3" className="section-trmd3">
+				<NavigationRailsFrame />
 			</div>
 			<BottomAppBar
 				icons={[
