@@ -42,7 +42,9 @@ const NavigationRailsFrame: React.FC = () => {
 			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-bottom-app-bar">
 				Navigation Rails
 			</ComponentFrameTitle>
+
 			<Typography variant={"text-label-small"}>1 Icon - no FAB</Typography>
+
 			<NavigationRail
 				className={"navigation-rail-on-frame-trmd3"}
 				icons={[
@@ -65,24 +67,25 @@ const NavigationRailsFrame: React.FC = () => {
 			/>
 			<CodeSnippet>
 				{`
-<NavigationRail 
-    icons={[
-	    {
+<NavigationRail
+	icons={[
+	{
 		name: "hive",
 		onClick: undefined,
 		label: "Hive",
-		},
-		{
+	},
+	{
 		name: "water",
 		onClick: undefined,
-		},
+	},
 		]}
 	fab={{
-        fabIconName: "warning",
-		onClick: () => {
+		fabIconName: "warning",
+        onClick: () => {
 			alert("FAB clicked!");
-		},
-	    }}/>`}
+			}
+		}}
+			/>`}
 			</CodeSnippet>
 		</div>
 	);
