@@ -33,7 +33,7 @@ const NavigationRailsFrame: React.FC = () => {
 	return (
 		<div className={_computedFrameClassName}>
 			<Typography
-				id="bottom-app-bars-section"
+				id="navigation-rails-section"
 				variant="text-title-large"
 				className={_computedTrmd3SectionTitlesClassName}
 			>
@@ -45,131 +45,45 @@ const NavigationRailsFrame: React.FC = () => {
 			<Typography variant={"text-label-small"}>1 Icon - no FAB</Typography>
 			<NavigationRail
 				className={"navigation-rail-on-frame-trmd3"}
-				fab={{
-					onClick: () => {
-						handleScrollToTop();
-					},
-					fabIconName: "home",
-				}}
 				icons={[
 					{
-						name: "bookmark",
-						onClick: () => {
-							openLinkInNewTab(
-								"https://github.com/highnet/Tiny-React-MD3#----trmd3-tiny-react-material-design-3-"
-							);
-						},
+						name: "hive",
+						onClick: undefined,
+						label: "Hive",
 					},
 					{
-						name: "menu_book",
-						onClick: () => {
-							openLinkInNewTab(
-								"https://github.com/highnet/Tiny-React-MD3/tree/master/src#-tiny-react-md-3-documentation"
-							);
-						},
-					},
-					{
-						name: "code",
-						onClick: () => {
-							openLinkInNewTab(
-								"https://github.com/highnet/Tiny-React-MD3/tree/master/src"
-							);
-						},
-					},
-					{
-						name: "credit_card",
-						label: "Cards",
-						onClick: () => {
-							scrollToSection("cards-section", -60);
-						},
-					},
-					{
-						name: "cookie",
-						label: "Chips",
-						onClick: () => {
-							scrollToSection("chips-section", -60);
-						},
-					},
-					{
-						name: "add",
-						label: "Dividers",
-						onClick: () => {
-							scrollToSection("horizontal-dividers-section", -60);
-						},
-					},
-					{
-						name: "radio_button_checked",
-						label: "Radio Buttons",
-						onClick: () => {
-							scrollToSection("radio-buttons-section", -60);
-						},
-					},
-					{
-						name: "verified",
-						label: "Badges",
-						onClick: () => {
-							scrollToSection("badges-section", -60);
-						},
-					},
-					{
-						name: "check_box",
-						label: "Checkboxes",
-						onClick: () => {
-							scrollToSection("checkboxes-section", -60);
-						},
-					},
-					{
-						name: "toggle_on",
-						label: "Switches",
-						onClick: () => {
-							scrollToSection("switches-section", -60);
-						},
-					},
-					{
-						name: "joystick",
-						label: "Buttons",
-						onClick: () => {
-							scrollToSection("buttons-section", -60);
-						},
-					},
-					{
-						name: "abc",
-						label: "Typography",
-						onClick: () => {
-							scrollToSection("typography-section", -60);
-						},
-					},
-					{
-						name: "favorite",
-						label: "Icons",
-						onClick: () => {
-							scrollToSection("icons-section", -60);
-						},
-					},
-					{
-						name: "cloud",
-						label: "FABs",
-						onClick: () => {
-							scrollToSection("fabs-section", -60);
-						},
-					},
-					{
-						name: "dock_to_bottom",
-						label: "Bottom App Bars",
-						onClick: () => {
-							scrollToSection("bottom-app-bars-section", -60);
-						},
-					},
-					{
-						name: "view_carousel",
-						label: "Carousels",
-						onClick: () => {
-							scrollToSection("carousels-section", -60);
-						},
+						name: "water",
+						onClick: undefined,
 					},
 				]}
-			/>{" "}
-			<CodeSnippet>{`<NavigationRail />`}</CodeSnippet>
+				fab={{
+					onClick: () => {
+						alert("FAB clicked!");
+					},
+					fabIconName: "warning",
+				}}
+			/>
+			<CodeSnippet>
+				{`
+<NavigationRail 
+    icons={[
+	    {
+		name: "hive",
+		onClick: undefined,
+		label: "Hive",
+		},
+		{
+		name: "water",
+		onClick: undefined,
+		},
+		]}
+	fab={{
+        fabIconName: "warning",
+		onClick: () => {
+			alert("FAB clicked!");
+		},
+	    }}/>`}
+			</CodeSnippet>
 		</div>
 	);
 };

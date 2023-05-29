@@ -25,20 +25,28 @@ const NavigationRail: React.FC<INavigationRailProps> = ({
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
 	function toggleMenu() {
-		const menu = document.querySelector(
+		const menu = document.querySelectorAll(
 			".navigation-rail-hamburger-menu-container"
 		);
-		const icons = document.querySelector(
+		const icons = document.querySelectorAll(
 			".navigation-rail .icons-on-navigation-rail"
 		);
 		const hamburgerElements = document.querySelectorAll(
 			".navigation-rail-hamburger-menu-element"
 		);
-		const navigationRailTop = document.querySelector(".navigation-rail-top");
-		navigationRailTop?.classList.toggle("active");
+		const navigationRailTop = document.querySelectorAll(".navigation-rail-top");
 
-		menu?.classList.toggle("active");
-		icons?.classList.toggle("hidden-on-navigation-rail");
+		navigationRailTop.forEach((rail) => {
+			rail.classList.toggle("active");
+		});
+
+		menu.forEach((menu) => {
+			menu.classList.toggle("active");
+		});
+
+		icons.forEach((icon) => {
+			icon.classList.toggle("hidden-on-navigation-rail");
+		});
 
 		hamburgerElements.forEach((element) => {
 			element.classList.toggle("active");

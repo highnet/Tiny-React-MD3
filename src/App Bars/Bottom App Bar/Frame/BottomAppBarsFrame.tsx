@@ -37,30 +37,28 @@ const BottomAppBarsFrame: React.FC = () => {
 				Bottom App Bars
 			</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>1 Icon - no FAB</Typography>
-			<BottomAppBar className="bottom-app-bar-on-frame-trmd3"/>
+			<BottomAppBar className="bottom-app-bar-on-frame-trmd3" />
 			<CodeSnippet>{`<BottomAppBar />`}</CodeSnippet>
 			<Typography variant={"text-label-small"}>N Icons - FAB</Typography>
 			<BottomAppBar
 				icons={[
-					{ name: "search", label: "Search", onClick: undefined },
 					{ name: "hive", label: "Hive", onClick: undefined },
-					{ name: "water", label: "Water", onClick: undefined },
+					{ name: "water", onClick: undefined },
 				]}
 				fab={{
 					onClick: () => {
-						alert("FAB");
+						alert("FAB Clicked!");
 					},
-					fabIconName: "hive"
+					fabIconName: "hive",
 				}}
 				className="bottom-app-bar-on-frame-trmd3"
 			/>
 			<CodeSnippet>{`<BottomAppBar
 	icons={[
         { name: "search", label: "Search", onClick: undefined },
-        { name: "hive", label: "Hive", onClick: undefined },
-        { name: "water", label: "Water", onClick: undefined },
+        { name: "water", onClick: undefined },
       	]}
-    	fab={{ onClick: () => { alert("FAB"); ] }}
+    	fab={{ onClick: () => { alert("FAB Clicked!"); ] }}
     />`}</CodeSnippet>
 		</div>
 	);

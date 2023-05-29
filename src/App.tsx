@@ -172,7 +172,7 @@ function App() {
 					},
 					{
 						name: "dock_to_bottom",
-						label: "Bottom App Bars",
+						label: "Bottom Bars",
 						onClick: () => {
 							scrollToSection("bottom-app-bars-section", -60);
 						},

@@ -96,7 +96,7 @@ const TourGuide: React.FC = () => {
 					configuration="elevated"
 					onClick={() => scrollToSection("bottom-app-bars-section", -60)}
 				>
-					⏬ Bottom App Bars ⏬
+					⏬ Bottom Bars ⏬
 				</Button>
 				<Button
 					className="tourguide-button"
@@ -104,6 +104,13 @@ const TourGuide: React.FC = () => {
 					onClick={() => scrollToSection("carousels-section", -60)}
 				>
 					🎠 Carousels 🎠
+				</Button>
+				<Button
+					className="tourguide-button"
+					configuration="elevated"
+					onClick={() => scrollToSection("navigation-rails-section", -60)}
+				>
+					🚈 Navigation Rails 🚈
 				</Button>
 			</div>
 		</div>
