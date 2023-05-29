@@ -477,3 +477,5 @@ The supported options of <code>{configuration}</code> are the following:
 4. <code>"tertiary"</code>
     
 ## 🎠 Carousel
+    
+## 🚈 Navigation Rail

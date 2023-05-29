@@ -84,7 +84,7 @@ https://trmd3.com/
 | :-------: | :--------: | :---------: | :-------: | 
 | 📛 [Badges](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-badge) | ✅ | ✅ | [Badge.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Badge/Badge.tsx) |
 | ⏬ [Bottom app bar](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-bottom-app-bar) | ✅ | ✅ | [BottomAppBar.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/App%20Bars/Bottom%20App%20Bar/BottomAppBar.tsx) | |
-| 🔽 Bottom sheets | 🚧 | 🚧 | | |
+| 🔽 Bottom sheets | 🚧 | 🚧 | | 
 | 🕹️ [Buttons](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#%EF%B8%8F-buttons) | ✅ | ✅ |  [Button.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Button/Button.tsx) |
 | 🃏[Stacked Cards](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-stacked-card) | ✅ | ✅ | [StackedCard.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Cards/StackedCard/StackedCard.tsx) |
 | 🪪 [Horizontal Cards](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-horizontal-card) | ✅ | ✅ | | |
@@ -93,27 +93,27 @@ https://trmd3.com/
 | 🥅 [Filter Chips](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-filter-chip) | 🚧 | 🚧 | | |
 | 🔌 [Input Chips](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-input-chip) | ✅ | ✅ | [InputChip.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Chips/InputChip/InputChip.tsx) |
 | 😉 [Suggestion Chips](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-suggestion-chip) | 🚧 | 🚧 | | |
-| 📅 Date Pickers | 🚧 | 🚧 | | |
-| 💬 Dialogs | 🚧 | 🚧 | | |
+| 📅 Date Pickers | 🚧 | 🚧 | | 
+| 💬 Dialogs | 🚧 | 🚧 | | 
 | 👉 [Horizontal Divider](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-horizontal-divider) | ✅ | ✅ | [HorizontalDivider.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Dividers/HorizontalDivider/HorizontalDivider.tsx) |
 | 👆 [Vertical Divider](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-vertical-divider) | ✅ | ✅ | [VerticalDivider.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Dividers/VerticalDivider/VerticalDivider.tsx) |
 | 💟 [Icons](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-icons) | ✅ | ✅ | [Icons.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Icon/Icon.tsx) |
-| 📝 Lists | 🚧 | 🚧 | | |
-| 📚 Menus | 🚧 | 🚧 | | |
-| 🧭 Navigation bar | 🚧 | 🚧 | | |
-| 🗄️ Navigation drawer | 🚧 | 🚧 | | |
-| 🚈 Navigation rail | 🚧 | 🚧 | | |
-| 🔄 Progress indicators | 🚧 | 🚧 | | |
+| 📝 Lists | 🚧 | 🚧 | | 
+| 📚 Menus | 🚧 | 🚧 | | 
+| 🧭 Navigation bar | 🚧 | 🚧 | | 
+| 🗄️ Navigation drawer | 🚧 | 🚧 | | 
+| 🚈 [Navigation rail](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-navigation-rail) | ✅ | ✅ | [NavigationRail.tsx](https://github.com/highnet/Tiny-React-MD3/blob/7d4bb945f4da53f6e788568e9798d95de868c384/src/Navigation%20Rail/NavigationRail.tsx) | 
+| 🔄 Progress indicators | 🚧 | 🚧 | | 
 | 🔘 [Radio Button](https://github.com/highnet/Tiny-React-MD3/tree/master/src#-radio-button) | ✅ | ✅ | [RadioButton.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Radio%20Button/RadioButton.tsx) |
-| 🔍 Search | 🚧 | 🚧 | | |
-| 📑 Side sheets | 🚧 | 🚧 | | |
-| 🎚️ Sliders | 🚧 | 🚧 | | |
-| 🥨 Snackbar | 🚧 | 🚧 | | |
+| 🔍 Search | 🚧 | 🚧 | | 
+| 📑 Side sheets | 🚧 | 🚧 | | 
+| 🎚️ Sliders | 🚧 | 🚧 | | 
+| 🥨 Snackbar | 🚧 | 🚧 | | 
 | 🔦 [Switch](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-switch) | ✅ | ✅ | [Switch.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Switch/Switch.tsx) |
-| 📑 Tabs | 🚧 | 🚧 | | |
-| 📜 Text fields | 🚧 | 🚧 | | |
-| ⌛ Time pickers | 🚧 | 🚧 | | |
-| ⏫ Top app bar | 🚧 | 🚧 | | |
+| 📑 Tabs | 🚧 | 🚧 | | 
+| 📜 Text fields | 🚧 | 🚧 | | 
+| ⌛ Time pickers | 🚧 | 🚧 | | 
+| ⏫ Top app bar | 🚧 | 🚧 | | 
 | 🔤 [Typography](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-typography) | ✅ | ✅ | [Typography.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Typography/Typography.tsx) |
 | ☁️ [FABs (Floating Action Buttons)](https://github.com/highnet/Tiny-React-MD3/tree/master/src#%EF%B8%8F-fabs) | ✅ | ✅ | [Fab.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/FAB/Fab.tsx) |
 | ⛈️ [Extended FABs (Extended Floating Action Buttons)](https://github.com/highnet/Tiny-React-MD3/tree/master/src#%EF%B8%8F-extended-fabs) | ✅ | ✅ | [ExtendedFab.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/FABs/Extended%20FAB/ExtendedFab.tsx) |
