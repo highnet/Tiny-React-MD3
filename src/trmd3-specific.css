@@ -193,10 +193,26 @@ html {
 	margin-bottom: 0.3rem;
 	margin-right: 5%;
 	margin-left: 5%;
+
 }
 
 .cookietrail-buttons-trmd3 {
 	gap: 1rem;
+	display: flex;
+	flex-direction: row;
+	}
+
+.cookietrail-button-trmd3 {
+	width: 100%;
+
+}
+
+@media (max-width: 768px) {
+	.cookietrail-buttons-trmd3 {
+		flex-direction: column;
+		width: 80%;
+		margin: 0 auto;
+	}
 }
 
 .cookietrail-section-light-theme-trmd3 {
@@ -207,9 +223,7 @@ html {
 	color: #ffffff;
 }
 
-.cookietrail-button-trmd3 {
-	flex-basis: 100%;
-}
+
 
 /* TOURGUIDE SECTION */
 .tourguide-section-trmd3 {
