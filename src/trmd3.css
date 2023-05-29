@@ -1533,10 +1533,17 @@ html {
 }
 
 /* ==========ICONS========== */
-.material-symbols-outlined {
+
+.material-symbols {
 	user-select: none;
 	pointer-events: none;
+}
+.material-symbols-outlined {
 	font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 20;
+}
+
+.material-symbols-filled {
+	font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 20;
 }
 
 /* ==========SWITCHES========== */
@@ -1923,6 +1930,7 @@ html {
 	border-radius: 10rem;
 	display: flex;
 	align-items: center;
+	flex-shrink: 0;
 }
 
 /* BADGES / SMALL */

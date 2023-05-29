@@ -5,6 +5,7 @@ import { StringBuilder } from "../Gizmos/StringBuilder";
 import Fab from "../FABs/FAB/Fab";
 import Icon from "../Icon/Icon";
 import Typography from "../Typography/Typography";
+import Badge from "../Badge/Badge";
 
 const NavigationRail: React.FC<INavigationRailProps> = ({
 	className,
@@ -59,11 +60,42 @@ const NavigationRail: React.FC<INavigationRailProps> = ({
 		.add(_className)
 		.toString();
 
+	interface BadgeOffsets {
+		[key: string]: {
+			[key: string]: { xOffset: number; yOffset: number };
+		};
+	}
+
+	const badgeOffsets: BadgeOffsets = {
+		big: {
+			small: { xOffset: 1, yOffset: -4 },
+			singledigit: { xOffset: 1, yOffset: -4 },
+			multipledigits: { xOffset: 1.5, yOffset: -4 },
+		},
+		small: {
+			small: { xOffset: 1, yOffset: -4.5 },
+			singledigit: { xOffset: 1, yOffset: -4.5 },
+			multipledigits: { xOffset: 1.5, yOffset: -4.5 },
+		},
+	};
+
 	const iconElements = _icons.map((icon, index) => {
-		let size = icon.label ? "small" : "big";
-		if (size === "big" && icon.label) {
-			size = "small";
+		let iconSize = icon.label ? "small" : "big";
+		if (iconSize === "big" && icon.label) {
+			iconSize = "small";
 		}
+		const badgeConfigurationMap: { [key: string]: string } = {
+			small: "small",
+			"single-digit": "singledigit",
+			"multiple-digits": "multipledigits",
+		};
+
+		const badgeConfiguration =
+			badgeConfigurationMap[icon.badge?.configuration ?? "small"];
+
+		const { xOffset: badgeXOffset, yOffset: badgeYOffset } =
+			badgeOffsets[iconSize][badgeConfiguration];
+
 		return (
 			<div
 				className={`
@@ -75,7 +107,7 @@ const NavigationRail: React.FC<INavigationRailProps> = ({
 						: "inactive-icon-container-on-navigation-rail"
 				}
         ${
-					size === "big"
+					iconSize === "big"
 						? "big-icon-container-on-navigation-rail"
 						: "small-icon-container-on-navigation-rail"
 				}
@@ -95,7 +127,7 @@ const NavigationRail: React.FC<INavigationRailProps> = ({
           icon-on-navigation-rail-${_theme}
 
 ${
-	size === "big"
+	iconSize === "big"
 		? "big-icon-on-navigation-rail"
 		: "small-icon-on-navigation-rail"
 }
@@ -103,6 +135,7 @@ ${
 				>
 					{icon.name}
 				</Icon>
+
 				{icon.label && (
 					<Typography
 						variant="text-label-medium"
@@ -113,6 +146,15 @@ ${
 					>
 						{icon.label}
 					</Typography>
+				)}
+				{icon.badge?.configuration && (
+					<Badge
+						configuration={icon.badge.configuration}
+						xOffset={badgeXOffset}
+						yOffset={badgeYOffset}
+					>
+						{icon.badge.value}
+					</Badge>
 				)}
 			</div>
 		);

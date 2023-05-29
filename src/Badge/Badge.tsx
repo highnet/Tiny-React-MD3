@@ -47,8 +47,8 @@ const Badge: React.FC<IBadgeProps> = ({
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
-	let _computedXOffset: string = _xOffset.toString() + "%";
-	let _computedYOffset: string = _yOffset.toString() + "%";
+	let _computedXOffset: string = _xOffset.toString() + "rem";
+	let _computedYOffset: string = _yOffset.toString() + "rem";
 
 	let _computedComponentClassName = new StringBuilder()
 		.add("badge")
@@ -67,7 +67,9 @@ const Badge: React.FC<IBadgeProps> = ({
 		<div
 			id={_id}
 			className={_computedComponentClassName}
-			style={{ marginLeft: _computedXOffset, marginTop: _computedYOffset }}
+			style={{
+				transform: `translate(${_computedXOffset}, ${_computedYOffset})`,
+			}}
 		>
 			<Typography
 				variant="text-label-small"

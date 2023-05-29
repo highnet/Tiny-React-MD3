@@ -76,6 +76,7 @@ function App() {
 								"https://github.com/highnet/Tiny-React-MD3#----trmd3-tiny-react-material-design-3-"
 							);
 						},
+						badge: { configuration: "small" },
 					},
 					{
 						name: "menu_book",
@@ -182,6 +183,13 @@ function App() {
 						label: "Carousels",
 						onClick: () => {
 							scrollToSection("carousels-section", -60);
+						},
+					},
+					{
+						name: "train",
+						label: "Nav Rails",
+						onClick: () => {
+							scrollToSection("navigation-rails-section", -60);
 						},
 					},
 				]}

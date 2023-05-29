@@ -16,6 +16,7 @@ const Icon: React.FC<IIconProps> = ({
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
 	let _computedComponentClassName = new StringBuilder()
+		.add("material-symbols")
 		.add("material-symbols-outlined")
 		.add("icon")
 		.add("icon-" + _theme)

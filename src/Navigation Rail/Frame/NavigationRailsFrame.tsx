@@ -42,20 +42,50 @@ const NavigationRailsFrame: React.FC = () => {
 			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-bottom-app-bar">
 				Navigation Rails
 			</ComponentFrameTitle>
-
-			<Typography variant={"text-label-small"}>1 Icon - no FAB</Typography>
-
 			<NavigationRail
 				className={"navigation-rail-on-frame-trmd3"}
 				icons={[
 					{
 						name: "hive",
 						onClick: undefined,
-						label: "Hive",
+					},
+					{
+						name: "search",
+						onClick: undefined,
+						label: "Search",
+					},
+					{
+						name: "spa",
+						onClick: undefined,
+						badge: { configuration: "small" },
+					},
+					{
+						name: "air",
+						onClick: undefined,
+						badge: { configuration: "small" },
+						label: "Air",
 					},
 					{
 						name: "water",
 						onClick: undefined,
+						badge: { configuration: "single-digit", value: 3 },
+					},
+					{
+						name: "accessibility",
+						onClick: undefined,
+						badge: { configuration: "single-digit", value: 3 },
+						label: "Accessibility",
+					},
+					{
+						name: "favorite",
+						onClick: undefined,
+						badge: { configuration: "multiple-digits", value: 123 },
+					},
+					{
+						name: "language",
+						onClick: undefined,
+						badge: { configuration: "multiple-digits", value: 123 },
+						label: "Language",
 					},
 				]}
 				fab={{
@@ -65,27 +95,29 @@ const NavigationRailsFrame: React.FC = () => {
 					fabIconName: "warning",
 				}}
 			/>
+
 			<CodeSnippet>
 				{`
 <NavigationRail
-	icons={[
-	{
-		name: "hive",
-		onClick: undefined,
-		label: "Hive",
-	},
-	{
-		name: "water",
-		onClick: undefined,
-	},
+	className={"navigation-rail-on-frame-trmd3"}
+		icons={[
+		{ name: "hive", onClick: undefined },
+		{ name: "search", onClick: undefined, label: "Search" },
+		{ name: "spa", onClick: undefined, badge: { configuration: "small" } },
+		{ name: "air", onClick: undefined, badge: { configuration: "small" }, label: "Air" },
+		{ name: "water", onClick : undefined, badge: { configuration: "single-digit", value: 3 } },
+		{ name: "accessibility", onClick: undefined, badge: { configuration: "single-digit", value: 3 }, label: "Accessibility" },
+		{ name: "favorite", onClick: undefined, badge: { configuration: "multiple-digits", value: 123 } },
+		{ name: "language", onClick: undefined, badge: { configuration: "multiple-digits", value: 123 } label: "Language" },
 		]}
-	fab={{
-		fabIconName: "warning",
-        onClick: () => {
-			alert("FAB clicked!");
-			}
-		}}
-			/>`}
+		fab={{
+			onClick: () => {
+				alert("FAB clicked!");
+			},
+			fabIconName: "warning",
+			}}
+			/>
+			`}
 			</CodeSnippet>
 		</div>
 	);

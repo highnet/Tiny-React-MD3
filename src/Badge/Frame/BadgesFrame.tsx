@@ -46,49 +46,55 @@ const BadgesFrame: React.FC = () => {
 		<div className={_computedFrameClassName}>
 			{/* BADGES */}
 			<Typography
-					id="badges-section"
-					variant="text-title-large"
-					className={_computedTrmd3SectionTitlesClassName}
-				>
-					📛
-				</Typography>
-			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-badge">Badges</ComponentFrameTitle>
+				id="badges-section"
+				variant="text-title-large"
+				className={_computedTrmd3SectionTitlesClassName}
+			>
+				📛
+			</Typography>
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-badge">
+				Badges
+			</ComponentFrameTitle>
 
 			<div>
 				<div>
 					<Typography variant={"text-label-small"}>Small</Typography>
 					<div className="badge-box-trmd3">
-						<Badge configuration={"small"} xOffset={95} yOffset={-2} />
+						<Badge configuration={"small"} xOffset={4.7} yOffset={-0.2} />
 					</div>
 				</div>
 				<CodeSnippet>
-					{'<Badge configuration={"small"} xOffset={95} yOffset={-2} />'}
+					{'<Badge configuration={"small"} xOffset={4.7} yOffset={-0.2} />'}
 				</CodeSnippet>
 
 				<div>
 					<Typography variant={"text-label-small"}>Single Digit</Typography>
 					<div className="badge-box-trmd3">
-						<Badge configuration={"single-digit"} xOffset={93} yOffset={-4}>
+						<Badge configuration={"single-digit"} xOffset={2.6} yOffset={-0.6}>
 							3
 						</Badge>
 					</div>
 				</div>
 				<CodeSnippet>
 					{
-						'<Badge configuration={"single-digit"} xOffset={93} yOffset={-4}>3</Badge>'
+						'<Badge configuration={"single-digit"} xOffset={2.6} yOffset={-0.6}>3</Badge>'
 					}
 				</CodeSnippet>
 				<div>
 					<Typography variant={"text-label-small"}>Multiple Digits</Typography>
 					<div className="badge-box-trmd3">
-						<Badge configuration={"multiple-digits"} xOffset={93} yOffset={-4}>
+						<Badge
+							configuration={"multiple-digits"}
+							xOffset={2.5}
+							yOffset={-0.6}
+						>
 							123
 						</Badge>
 					</div>
 				</div>
 				<CodeSnippet>
 					{
-						'<Badge configuration={"multiple-digits"} xOffset={93} yOffset={-4}>123</Badge>'
+						'<Badge configuration={"multiple-digits"} xOffset={2.5} yOffset={-0.6}>123</Badge>'
 					}
 				</CodeSnippet>
 			</div>
