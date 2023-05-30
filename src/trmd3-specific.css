@@ -532,14 +532,7 @@ html {
 	height: 73rem;
 }
 
-/* TOP APP BARS */
 
-@media screen and (min-width: 768px) {
-	.top-app-bar {
-		margin-left: 8rem;
-		padding-right: 8rem;
-	}
-}
 
 /* TOP APP BARS */
 .top-app-bar-on-frame-trmd3 {
@@ -549,9 +542,9 @@ html {
 	width: 41.2rem;
 }
 
-@media screen and (min-width: 768px) {
-	.top-app-bar-on-frame-trmd3 {
-		margin-left: 0rem;
-		padding-right: 0rem;
-	}
+.top-app-bar-on-frame-trmd3 {
+	padding-left: .4rem;
 }
+
+
+

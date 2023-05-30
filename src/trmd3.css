@@ -3692,9 +3692,10 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	width: 100vw;
 	flex-direction: row;
 	align-items: baseline;
-	padding: 8px 4px;
-	gap: 6px;
+	padding: .8rem .4rem;
 	text-align: left;
+	flex-direction: column;
+	
 }
 
 .top-app-bar{
@@ -3744,15 +3745,22 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 
 .top-app-bar-medium{
 	height: 11.6rem;
-	gap: .4rem;
+		gap: .4rem;
 }
 
 .top-app-bar-large > .text,
 .top-app-bar-medium > .text {
-	margin-left: 1.6rem;
+	padding-left: 1.6rem;
 }
 
 .top-app-bar-large {
 	height: 16rem;
 	gap: 4rem;
 }
+
+@media screen and (min-width: 768px) {
+	.top-app-bar {
+		padding-left: 8.4rem;
+	}
+}
+
