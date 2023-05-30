@@ -3689,11 +3689,42 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	left: 0;
 	right: 0;
 	height: 6.4rem;
-	width: 100vw;
-	;
+	width: 100vw;;
+	flex-direction: row;
+	align-items: center;
+	padding: 8px 4px;
+	gap: 6px;
+
 	
 }
 
 .top-app-bar{
 	background-color: var(--m3-sys-light-surface);
+}
+
+
+.icon-on-top-app-bar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.icon-container-on-top-app-bar{
+	position: relative;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 4.8rem;
+	height: 4.8rem;
+	flex-shrink: 0;
+	border-radius: 50%;
+}
+
+.title-on-top-app-bar{
+	flex: 1;
+}
+
+.top-app-bar-small-centered {
+	text-align: center;
 }

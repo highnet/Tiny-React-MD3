@@ -57,7 +57,7 @@ function App() {
 
 	return (
 		<div className={"App"}>
-			<TopAppBar />
+			<TopAppBar configuration="small"/>
 			<NavigationRail
 				className={"main-navigation-rail-trmd3"}
 				fab={{
