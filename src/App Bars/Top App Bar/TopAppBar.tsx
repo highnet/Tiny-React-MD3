@@ -81,7 +81,7 @@ const TopAppBar: React.FC<ITopAppBarProps> = ({
     }
 
     return (
-        <div id={_id} className={_computedComponentClassName}>
+        <div id={_id} className={_computedComponentClassName} style={{display: "flex", flexDirection: (configuration === "medium" || configuration == "large" ? "column" : "row")}}>
 			<div className="left-container-on-top-app-bar">
             <div
                 className="icon-container-on-top-app-bar"
@@ -94,12 +94,14 @@ const TopAppBar: React.FC<ITopAppBarProps> = ({
         			{_title}
       			</Typography>
     		)}
-			</div>
+			
 
 			<div className="right-container-on-top-app-bar">
             	{iconElements}
 			</div>
-			{_configuration === "medium" && (
+            </div>
+
+            {(_configuration === "medium" || configuration === "large" ) && (
       			<Typography variant="text-title-large" className="title-on-top-app-bar">
         			{_title}
       			</Typography>

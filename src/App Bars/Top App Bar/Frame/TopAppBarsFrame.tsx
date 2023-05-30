@@ -45,6 +45,9 @@ const TopAppBarsFrame: React.FC = () => {
 			<Typography variant={"text-label-small"}>Medium</Typography>
 			<TopAppBar className="top-app-bar-on-frame-trmd3" configuration="medium" />
 			<CodeSnippet>{`<TopAppBar configuration="medium" />`}</CodeSnippet>
+			<Typography variant={"text-label-small"}>Large</Typography>
+			<TopAppBar className="top-app-bar-on-frame-trmd3" configuration="large" />
+			<CodeSnippet>{`<TopAppBar configuration="large" />`}</CodeSnippet>
 		</div>
 	);
 };

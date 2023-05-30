@@ -3691,9 +3691,10 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	height: 6.4rem;
 	width: 100vw;
 	flex-direction: row;
-	align-items: center;
+	align-items: baseline;
 	padding: 8px 4px;
 	gap: 6px;
+	text-align: left;
 }
 
 .top-app-bar{
@@ -3721,6 +3722,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 
 .title-on-top-app-bar{
 	flex: 1;
+	width: 100%;
 }
 
 .top-app-bar-small-centered {
@@ -3735,7 +3737,22 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .left-container-on-top-app-bar{
 	display: flex;
 	flex-direction: row;
-	line-height: 4.8rem;
 	align-items: center;
-	flex: 1;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.top-app-bar-medium{
+	height: 11.6rem;
+	gap: .4rem;
+}
+
+.top-app-bar-large > .text,
+.top-app-bar-medium > .text {
+	margin-left: 1.6rem;
+}
+
+.top-app-bar-large {
+	height: 16rem;
+	gap: 4rem;
 }
