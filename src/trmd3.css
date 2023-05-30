@@ -3684,18 +3684,16 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .top-app-bar {
 	display: flex;
 	position: fixed;
-	z-index: 990;
+	z-index: 888;
 	top: 0;
 	left: 0;
 	right: 0;
 	height: 6.4rem;
-	width: 100vw;;
+	width: 100vw;
 	flex-direction: row;
 	align-items: center;
 	padding: 8px 4px;
 	gap: 6px;
-
-	
 }
 
 .top-app-bar{

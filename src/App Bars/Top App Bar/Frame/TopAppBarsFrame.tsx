@@ -34,11 +34,14 @@ const TopAppBarsFrame: React.FC = () => {
 				⏫
 			</Typography>
 			<ComponentFrameTitle link="https://www.highnet.xyz">
-				Topp App Bars
+				Top App Bars
 			</ComponentFrameTitle>
-			<Typography variant={"text-label-small"}>Default</Typography>
+			<Typography variant={"text-label-small"}>Small</Typography>
 			<TopAppBar className="top-app-bar-on-frame-trmd3" configuration="small" />
 			<CodeSnippet>{`<TopAppBar configuration="small" />`}</CodeSnippet>
+			<Typography variant={"text-label-small"}>Small-Centered</Typography>
+			<TopAppBar className="top-app-bar-on-frame-trmd3" configuration="small-centered" />
+			<CodeSnippet>{`<TopAppBar configuration="small-centered" />`}</CodeSnippet>
 		</div>
 	);
 };

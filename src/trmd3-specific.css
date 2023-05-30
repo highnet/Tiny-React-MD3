@@ -536,7 +536,8 @@ html {
 
 @media screen and (min-width: 768px) {
 	.top-app-bar {
-		padding-left: 8rem;
+		margin-left: 8rem;
+		padding-right: 8rem;
 	}
 }
 
@@ -546,5 +547,11 @@ html {
 	z-index: 1;
 	border: 1px solid gray;
 	width: 41.2rem;
+}
 
+@media screen and (min-width: 768px) {
+	.top-app-bar-on-frame-trmd3 {
+		margin-left: 0rem;
+		padding-right: 0rem;
+	}
 }
