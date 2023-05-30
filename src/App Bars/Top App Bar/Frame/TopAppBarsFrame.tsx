@@ -4,6 +4,7 @@ import { getPreferredScheme } from "../../../Gizmos/Themeing";
 import CodeSnippet from "../../../TRMD3/CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../../../TRMD3/ComponentFrameTitle/ComponentFrameTitle";
 import Typography from "../../../Typography/Typography";
+import TopAppBar from "../TopAppBar";
 
 const TopAppBarsFrame: React.FC = () => {
 	const _theme =
@@ -30,15 +31,14 @@ const TopAppBarsFrame: React.FC = () => {
 				variant="text-title-large"
 				className={_computedTrmd3SectionTitlesClassName}
 			>
-				⏬
+				⏫
 			</Typography>
 			<ComponentFrameTitle link="https://www.highnet.xyz">
-				Components
+				Topp App Bars
 			</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>Default</Typography>
-			<Component>Component</Component>
-			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
-
+			<TopAppBar className="top-app-bar-on-frame-trmd3" configuration="small" />
+			<CodeSnippet>{`<TopAppBar configuration="small" />`}</CodeSnippet>
 		</div>
 	);
 };

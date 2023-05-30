@@ -30,6 +30,7 @@ import CarouselsFrame from "./Carousel/Frame/CarouselsFrame";
 import NavigationRail from "./Navigation Rail/NavigationRail";
 import NavigationRailsFrame from "./Navigation Rail/Frame/NavigationRailsFrame";
 import TopAppBar from "./App Bars/Top App Bar/TopAppBar";
+import TopAppBarsFrame from "./App Bars/Top App Bar/Frame/TopAppBarsFrame";
 
 function App() {
 	console.log(`	👋 Welcome to TRMD3! 👋	`);
@@ -234,6 +235,9 @@ function App() {
 			</div>
 			<div id="section-10-trmd3" className="section-trmd3">
 				<NavigationRailsFrame />
+			</div>
+			<div id="section-11-trmd3" className="section-trmd3">
+				<TopAppBarsFrame />
 			</div>
 			<BottomAppBar
 				icons={[
