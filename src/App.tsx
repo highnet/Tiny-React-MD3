@@ -29,6 +29,7 @@ import { openLinkInNewTab } from "./Gizmos/Redirection";
 import CarouselsFrame from "./Carousel/Frame/CarouselsFrame";
 import NavigationRail from "./Navigation Rail/NavigationRail";
 import NavigationRailsFrame from "./Navigation Rail/Frame/NavigationRailsFrame";
+import TopAppBar from "./App Bars/Top App Bar/TopAppBar";
 
 function App() {
 	console.log(`	👋 Welcome to TRMD3! 👋	`);
@@ -56,10 +57,7 @@ function App() {
 
 	return (
 		<div className={"App"}>
-			<StickyToolbar
-				toggleTheme={handleToggleTheme}
-				scrollToTop={handleScrollToTop}
-			/>
+			<TopAppBar />
 			<NavigationRail
 				className={"main-navigation-rail-trmd3"}
 				fab={{
