@@ -3760,7 +3760,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 
 @media screen and (min-width: 768px) {
 	.top-app-bar {
-		padding-left: 8.4rem;
+		margin-left: 8rem;
 	}
 }
 
