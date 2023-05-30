@@ -59,7 +59,8 @@ const TopAppBar: React.FC<ITopAppBarProps> = ({
                 </Icon>
             </div>
         );
-    } else {
+    } 
+	else {
         iconElements = _trailingIcons.map((icon, index) => (
             <div
                 className={
@@ -81,16 +82,28 @@ const TopAppBar: React.FC<ITopAppBarProps> = ({
 
     return (
         <div id={_id} className={_computedComponentClassName}>
+			<div className="left-container-on-top-app-bar">
             <div
                 className="icon-container-on-top-app-bar"
                 onClick={leadingIcon.onClick}
             >
                 <Icon className="icon-on-top-app-bar">{leadingIcon.name}</Icon>
             </div>
-            <Typography variant="text-title-large" className="title-on-top-app-bar">
-                {_title}
-            </Typography>
-            {iconElements}
+			{(_configuration === "small" || _configuration == "small-centered") && (
+      			<Typography variant="text-title-large" className="title-on-top-app-bar">
+        			{_title}
+      			</Typography>
+    		)}
+			</div>
+
+			<div className="right-container-on-top-app-bar">
+            	{iconElements}
+			</div>
+			{_configuration === "medium" && (
+      			<Typography variant="text-title-large" className="title-on-top-app-bar">
+        			{_title}
+      			</Typography>
+    		)}
         </div>
     );
 };

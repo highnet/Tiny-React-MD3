@@ -3726,3 +3726,16 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .top-app-bar-small-centered {
 	text-align: center;
 }
+
+.right-container-on-top-app-bar{
+	display: flex;
+	flex-direction: row;
+}
+
+.left-container-on-top-app-bar{
+	display: flex;
+	flex-direction: row;
+	line-height: 4.8rem;
+	align-items: center;
+	flex: 1;
+}
