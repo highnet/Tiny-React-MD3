@@ -58,7 +58,9 @@ function App() {
 	
 	return (
 		<div className={"App"}>
-			<TopAppBar configuration="small-centered" leadingIcon={{ name: 'dark_mode', onClick: handleToggleTheme }}/>
+			<TopAppBar configuration="small-centered" leadingIcon={{ name: 'dark_mode', onClick: handleToggleTheme }} trailingIcons={[
+            { name: "arrow_upward", onClick: () => handleScrollToTop() },
+        ]}/>
 			<NavigationRail
 				className={"main-navigation-rail-trmd3"}
 				fab={{
