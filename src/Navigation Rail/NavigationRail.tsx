@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { INavigationRailProps } from "./INavigationRailProps";
 import { getPreferredScheme } from "../Gizmos/Themeing";
 import { StringBuilder } from "../Gizmos/StringBuilder";
@@ -21,6 +21,7 @@ const NavigationRail: React.FC<INavigationRailProps> = ({
 	});
 	const [_fabIconName] = useState(fab?.fabIconName ?? "edit");
 	const [currentIndex, setCurrentIndex] = useState(-1);
+	const [isScrolling, setIsScrolling] = useState(false);
 
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
@@ -98,20 +99,15 @@ const NavigationRail: React.FC<INavigationRailProps> = ({
 
 		return (
 			<div
-				className={`
-        icon-container-on-navigation-rail
-        icon-container-on-navigation-rail-${_theme}
-        ${
+				className={`icon-container-on-navigation-rail icon-container-on-navigation-rail-${_theme} ${
 					index === currentIndex
 						? "active-icon-container-on-navigation-rail"
 						: "inactive-icon-container-on-navigation-rail"
-				}
-        ${
+				} ${
 					iconSize === "big"
 						? "big-icon-container-on-navigation-rail"
 						: "small-icon-container-on-navigation-rail"
-				}
-      `}
+				}`}
 				key={index}
 				tabIndex={0}
 				onClick={() => {
@@ -122,16 +118,11 @@ const NavigationRail: React.FC<INavigationRailProps> = ({
 				}}
 			>
 				<Icon
-					className={`
-          icon-on-navigation-rail
-          icon-on-navigation-rail-${_theme}
-
-${
-	iconSize === "big"
-		? "big-icon-on-navigation-rail"
-		: "small-icon-on-navigation-rail"
-}
-        `}
+					className={`icon-on-navigation-rail icon-on-navigation-rail-${_theme} ${
+						iconSize === "big"
+							? "big-icon-on-navigation-rail"
+							: "small-icon-on-navigation-rail"
+					}`}
 				>
 					{icon.name}
 				</Icon>
@@ -139,10 +130,7 @@ ${
 				{icon.label && (
 					<Typography
 						variant="text-label-medium"
-						className={`
-            label-on-navigation-rail
-            label-on-navigation-rail-${_theme}
-          `}
+						className={`label-on-navigation-rail label-on-navigation-rail-${_theme}`}
 					>
 						{icon.label}
 					</Typography>
@@ -159,6 +147,32 @@ ${
 			</div>
 		);
 	});
+
+	useEffect(() => {
+		function handleScroll() {
+			setIsScrolling(true);
+			const navigationRail = document.querySelector(".navigation-rail");
+			if (navigationRail) {
+				navigationRail.classList.add("navigation-rail-on-scroll");
+			}
+			clearTimeout(timeoutId);
+			timeoutId = setTimeout(() => {
+				setIsScrolling(false);
+				if (navigationRail) {
+					navigationRail.classList.remove("navigation-rail-on-scroll");
+				}
+			}, 1000);
+		}
+
+		let timeoutId: ReturnType<typeof setTimeout>;
+
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+			clearTimeout(timeoutId);
+		};
+	}, []);
 
 	return (
 		<div id={_id} className={_computedComponentClassName}>

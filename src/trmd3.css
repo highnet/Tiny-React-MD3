@@ -3303,6 +3303,10 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	overflow: visible;
 }
 
+.icons-on-navigation-rail::-webkit-scrollbar {
+	display: none; /* CHROME */
+}
+
 .icons-on-navigation-rail {
 	display: flex;
 	flex-direction: column;
@@ -3314,6 +3318,9 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	transition: height 0.3s ease-in-out;
 	overflow-y: auto;
 	scroll-behavior: smooth;
+	-ms-overflow-style: none;/* IE and Edge */
+	scrollbar-width: none;/* Firefox */
+
 }
 
 .icon-container-on-navigation-rail {
