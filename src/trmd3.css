@@ -3284,7 +3284,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	padding-bottom: 5.6rem;
 	gap: 4rem;
 	transition: left 0.3s ease-in-out;
-	left: 0px;
+	left: 0rem;
 }
 
 
@@ -3679,3 +3679,21 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	white-space: nowrap;
 }
 
+/* ==========TOP APP BARS ========== */
+
+.top-app-bar {
+	display: flex;
+	position: fixed;
+	z-index: 990;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 6.4rem;
+	width: 100vw;
+	;
+	
+}
+
+.top-app-bar{
+	background-color: var(--m3-sys-light-surface);
+}
