@@ -55,10 +55,10 @@ function App() {
 	useEffect(() => {
 		hljs.highlightAll();
 	}, []);
-
+	
 	return (
 		<div className={"App"}>
-			<TopAppBar configuration="small"/>
+			<TopAppBar configuration="small-centered" leadingIcon={{ name: 'dark_mode', onClick: handleToggleTheme }}/>
 			<NavigationRail
 				className={"main-navigation-rail-trmd3"}
 				fab={{
