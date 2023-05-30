@@ -540,8 +540,12 @@ html {
 	width: 41.2rem;
 }
 
-.top-app-bar-on-frame-trmd3 {
-	margin-left: 0;
+
+@media screen and (min-width: 768px) {
+	.top-app-bar-on-frame-trmd3 {
+		margin-left: 0rem;
+		padding-right: 0rem;
+	}
 }
 
 
