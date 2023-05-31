@@ -205,6 +205,13 @@ function App() {
 							scrollToSection("top-app-bars-section", -60);
 						},
 					},
+					{
+						name: "construction",
+						label: "Tooltips",
+						onClick: () => {
+							scrollToSection("tooltips-section", -60);
+						},
+					},
 				]}
 			/>
 			<div id="section-0-trmd3" className="section-trmd3">

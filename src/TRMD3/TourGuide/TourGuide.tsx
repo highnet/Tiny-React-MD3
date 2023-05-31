@@ -119,6 +119,13 @@ const TourGuide: React.FC = () => {
 				>
 					⏫ Top Bars ⏫
 				</Button>
+				<Button
+					className="tourguide-button"
+					configuration="elevated"
+					onClick={() => scrollToSection("tooltips-section", -60)}
+				>
+					🛠️ Tooltips 🛠️
+				</Button>
 			</div>
 		</div>
 	);
