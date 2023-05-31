@@ -117,7 +117,7 @@ https://trmd3.com/
 | 🔤 [Typography](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-typography) | ✅ | ✅ | [Typography.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Typography/Typography.tsx) |
 | ☁️ [FABs (Floating Action Buttons)](https://github.com/highnet/Tiny-React-MD3/tree/master/src#%EF%B8%8F-fabs) | ✅ | ✅ | [Fab.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/FAB/Fab.tsx) |
 | ⛈️ [Extended FABs (Extended Floating Action Buttons)](https://github.com/highnet/Tiny-React-MD3/tree/master/src#%EF%B8%8F-extended-fabs) | ✅ | ✅ | [ExtendedFab.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/FABs/Extended%20FAB/ExtendedFab.tsx) |
-| 🎠 [Carousel](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-carousel) | 🚧 | 🚧 | [Carousel.tsx](https://github.com/highnet/Tiny-React-MD3/blob/5584b776d1a07f09c8efd6f54d1fd70d13ee600a/src/Carousel/Carousel.tsx) |
+| 🎠 [Carousel](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-carousel) | ✅ | ✅ | [Carousel.tsx](https://github.com/highnet/Tiny-React-MD3/blob/5584b776d1a07f09c8efd6f54d1fd70d13ee600a/src/Carousel/Carousel.tsx) |
 
 
 ✅ Finished
