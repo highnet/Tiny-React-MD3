@@ -27,7 +27,7 @@ const TopAppBarsFrame: React.FC = () => {
 	return (
 		<div className={_computedFrameClassName}>
 			<Typography
-				id="components-section"
+				id="top-app-bars-section"
 				variant="text-title-large"
 				className={_computedTrmd3SectionTitlesClassName}
 			>
@@ -40,10 +40,16 @@ const TopAppBarsFrame: React.FC = () => {
 			<TopAppBar className="top-app-bar-on-frame-trmd3" configuration="small" />
 			<CodeSnippet>{`<TopAppBar configuration="small" />`}</CodeSnippet>
 			<Typography variant={"text-label-small"}>Small-Centered</Typography>
-			<TopAppBar className="top-app-bar-on-frame-trmd3" configuration="small-centered" />
+			<TopAppBar
+				className="top-app-bar-on-frame-trmd3"
+				configuration="small-centered"
+			/>
 			<CodeSnippet>{`<TopAppBar configuration="small-centered" />`}</CodeSnippet>
 			<Typography variant={"text-label-small"}>Medium</Typography>
-			<TopAppBar className="top-app-bar-on-frame-trmd3" configuration="medium" />
+			<TopAppBar
+				className="top-app-bar-on-frame-trmd3"
+				configuration="medium"
+			/>
 			<CodeSnippet>{`<TopAppBar configuration="medium" />`}</CodeSnippet>
 			<Typography variant={"text-label-small"}>Large</Typography>
 			<TopAppBar className="top-app-bar-on-frame-trmd3" configuration="large" />

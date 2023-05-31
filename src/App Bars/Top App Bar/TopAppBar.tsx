@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { ITopAppBarProps } from "./ITopAppBarProps";
@@ -47,6 +47,33 @@ const TopAppBar: React.FC<ITopAppBarProps> = ({
 			},
 		]
 	);
+	const [isScrolling, setIsScrolling] = useState(false);
+
+	useEffect(() => {
+		function handleScroll() {
+			setIsScrolling(true);
+			const navigationRails = document.querySelectorAll(".top-app-bar");
+			navigationRails.forEach((navigationRail) => {
+				navigationRail.classList.add("top-app-bar-on-scroll");
+			});
+			clearTimeout(timeoutId);
+			timeoutId = setTimeout(() => {
+				setIsScrolling(false);
+				navigationRails.forEach((navigationRail) => {
+					navigationRail.classList.remove("top-app-bar-on-scroll");
+				});
+			}, 1000);
+		}
+
+		let timeoutId: ReturnType<typeof setTimeout>;
+
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+			clearTimeout(timeoutId);
+		};
+	}, []);
 
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";

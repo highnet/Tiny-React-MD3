@@ -112,6 +112,13 @@ const TourGuide: React.FC = () => {
 				>
 					🚈 Navigation Rails 🚈
 				</Button>
+				<Button
+					className="tourguide-button"
+					configuration="elevated"
+					onClick={() => scrollToSection("top-app-bars-section", -60)}
+				>
+					⏫ Top Bars ⏫
+				</Button>
 			</div>
 		</div>
 	);

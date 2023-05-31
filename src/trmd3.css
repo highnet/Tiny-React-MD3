@@ -3278,7 +3278,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	display: flex;
 	align-items: center;
 	padding: 1rem;
-	height: 100vh;
+	height: 100%;
 	flex-direction: column;
 	padding-top: 4.4rem;
 	padding-bottom: 5.6rem;
@@ -3689,17 +3689,40 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	left: 0;
 	right: 0;
 	height: 6.4rem;
-	width: 100vw;
+	width: 100%;
 	flex-direction: row;
 	align-items: baseline;
 	padding: .8rem .4rem;
 	text-align: left;
 	flex-direction: column;
-	
+	transition: background-color .1s ease-out;
 }
 
-.top-app-bar{
+.top-app-bar.top-app-bar-light-theme {
 	background-color: var(--m3-sys-light-surface);
+	color: var(--m3-sys-light-on-surface-variant)
+}
+
+
+.top-app-bar-on-scroll.top-app-bar-light-theme {
+	background-color: var(--m3-sys-light-surface-container);
+}
+
+.title-on-top-app-bar.typography-light-theme {
+	color: var(--m3-sys-light-on-surface);
+}
+
+.top-app-bar.top-app-bar-dark-theme {
+	background-color: var(--m3-sys-dark-surface);
+	color: var(--m3-sys-dark-on-surface-variant)
+}
+
+.top-app-bar-on-scroll.top-app-bar-dark-theme {
+	background-color: var(--m3-sys-dark-surface-container);
+}
+
+.title-on-top-app-bar.typography-dark-theme {
+	color: var(--m3-sys-dark-on-surface);
 }
 
 
@@ -3725,6 +3748,8 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	flex: 1;
 	width: 100%;
 }
+
+
 
 .top-app-bar-small-centered {
 	text-align: center;

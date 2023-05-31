@@ -55,12 +55,16 @@ function App() {
 	useEffect(() => {
 		hljs.highlightAll();
 	}, []);
-	
+
 	return (
 		<div className={"App"}>
-			<TopAppBar configuration="small-centered" leadingIcon={{ name: 'dark_mode', onClick: handleToggleTheme }} trailingIcons={[
-            { name: "arrow_upward", onClick: () => handleScrollToTop() },
-        ]}/>
+			<TopAppBar
+				configuration="small-centered"
+				leadingIcon={{ name: "dark_mode", onClick: handleToggleTheme }}
+				trailingIcons={[
+					{ name: "arrow_upward", onClick: () => handleScrollToTop() },
+				]}
+			/>
 			<NavigationRail
 				className={"main-navigation-rail-trmd3"}
 				fab={{
@@ -77,7 +81,6 @@ function App() {
 								"https://github.com/highnet/Tiny-React-MD3#----trmd3-tiny-react-material-design-3-"
 							);
 						},
-						badge: { configuration: "small" },
 					},
 					{
 						name: "menu_book",
@@ -193,6 +196,13 @@ function App() {
 							scrollToSection("navigation-rails-section", -60);
 						},
 					},
+					{
+						name: "web_asset",
+						label: "Top Bars",
+						onClick: () => {
+							scrollToSection("top-app-bars-section", -60);
+						},
+					},
 				]}
 			/>
 			<div id="section-0-trmd3" className="section-trmd3">
@@ -243,13 +253,12 @@ function App() {
 			</div>
 			<BottomAppBar
 				icons={[
-					{ name: "home", label: "Home", onClick: handleScrollToTop },
 					{
-						name: "bookmark",
-						label: "Readme",
+						name: "code",
+						label: "Code",
 						onClick: () =>
 							openLinkInNewTab(
-								"https://github.com/highnet/Tiny-React-MD3#----trmd3-tiny-react-material-design-3-"
+								"https://github.com/highnet/Tiny-React-MD3/tree/master/src"
 							),
 					},
 					{
@@ -260,6 +269,15 @@ function App() {
 								"https://github.com/highnet/Tiny-React-MD3/tree/master/src#-tiny-react-md-3-documentation"
 							),
 					},
+					{
+						name: "bookmark",
+						label: "Readme",
+						onClick: () =>
+							openLinkInNewTab(
+								"https://github.com/highnet/Tiny-React-MD3#----trmd3-tiny-react-material-design-3-"
+							),
+					},
+					{ name: "home", label: "Home", onClick: handleScrollToTop },
 				]}
 				fab={{ onClick: undefined }}
 			/>

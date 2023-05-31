@@ -523,6 +523,10 @@ html {
 	z-index: 1;
   }
 
+  .bottom-app-bar{
+	justify-content: flex-end;
+  }
+
   /* NAVIGATION RAILS */
 .navigation-rail-on-frame-trmd3{ 
 	position: relative;
