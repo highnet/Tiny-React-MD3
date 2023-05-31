@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { getPreferredScheme } from "../Gizmos/Themeing";
 import { StringBuilder } from "../Gizmos/StringBuilder";
 import { ITooltipProps } from "./ITooltipProps";
@@ -85,6 +85,30 @@ const Tooltip: React.FC<ITooltipProps> = ({
 		}
 	};
 
+	const [isMobile, setIsMobile] = useState(false);
+
+	useEffect(() => {
+		const handleResize = () => {
+			setIsMobile(window.innerWidth <= 768);
+		};
+		handleResize();
+		window.addEventListener("resize", handleResize);
+		return () => window.removeEventListener("resize", handleResize);
+	}, []);
+
+	if (isMobile) {
+		return (
+			<div ref={triggerRef}>
+				{triggerComponent &&
+					React.cloneElement(triggerComponent, {
+						onMouseMove: handleMouseMove,
+						onMouseEnter: handleSetTooltipVisible,
+						onMouseLeave: handleSetTooltipVisible,
+					})}
+			</div>
+		);
+	}
+
 	return (
 		<div>
 			<div id={_id} className={_computedComponentClassName} ref={tooltipRef}>
@@ -105,7 +129,6 @@ const Tooltip: React.FC<ITooltipProps> = ({
 				{actionButtons}
 			</div>
 			<div ref={triggerRef}>
-				{" "}
 				{triggerComponent &&
 					React.cloneElement(triggerComponent, {
 						onMouseMove: handleMouseMove,
