@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Button from "../../Button/Button";
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
@@ -9,7 +10,18 @@ import Tooltip from "../Tooltip";
 const TooltipsFrame: React.FC = () => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
+	const [isDesktop, setIsDesktop] = useState(false);
 
+	useEffect(() => {
+		const handleResize = () => {
+			setIsDesktop(window.innerWidth >= 1024); // set isDesktop to true if viewport width is greater than or equal to 1024
+		};
+		handleResize(); // call handleResize initially to set isDesktop based on current viewport width
+		window.addEventListener("resize", handleResize); // add event listener to update isDesktop when viewport width changes
+		return () => {
+			window.removeEventListener("resize", handleResize); // remove event listener when component unmounts
+		};
+	}, []);
 	let _computedFrameClassName = new StringBuilder()
 		.add("flex-trmd3")
 		.add("flex-column-trmd3")
@@ -61,7 +73,6 @@ const TooltipsFrame: React.FC = () => {
 			<Typography variant={"text-label-small"}>Plain - Multi Line</Typography>
 			<Tooltip configuration="plain-multiline"></Tooltip>
 			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
-
 			<Tooltip
 				title="TRMD3"
 				buttons={[
@@ -79,9 +90,15 @@ const TooltipsFrame: React.FC = () => {
 				web applications
 			</Tooltip>
 			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
+			<Typography variant={"text-label-small"}>Plain - Single Line</Typography>
 			<Tooltip triggerComponent={<Button>Button</Button>}></Tooltip>
+			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
+			<Typography variant={"text-label-small"}>Plain - Single Line</Typography>
 			<Tooltip triggerComponent={<Button>Button</Button>}></Tooltip>
+			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
+			<Typography variant={"text-label-small"}>Plain - Single Line</Typography>
 			<Tooltip triggerComponent={<Button>Button</Button>}></Tooltip>
+			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
 		</div>
 	);
 };

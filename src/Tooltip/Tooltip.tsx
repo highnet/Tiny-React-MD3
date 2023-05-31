@@ -85,30 +85,6 @@ const Tooltip: React.FC<ITooltipProps> = ({
 		}
 	};
 
-	const [isMobile, setIsMobile] = useState(false);
-
-	useEffect(() => {
-		const handleResize = () => {
-			setIsMobile(window.innerWidth <= 768);
-		};
-		handleResize();
-		window.addEventListener("resize", handleResize);
-		return () => window.removeEventListener("resize", handleResize);
-	}, []);
-
-	if (isMobile) {
-		return (
-			<div ref={triggerRef}>
-				{triggerComponent &&
-					React.cloneElement(triggerComponent, {
-						onMouseMove: handleMouseMove,
-						onMouseEnter: handleSetTooltipVisible,
-						onMouseLeave: handleSetTooltipVisible,
-					})}
-			</div>
-		);
-	}
-
 	return (
 		<div>
 			<div id={_id} className={_computedComponentClassName} ref={tooltipRef}>
