@@ -31,6 +31,8 @@ import NavigationRail from "./Navigation Rail/NavigationRail";
 import NavigationRailsFrame from "./Navigation Rail/Frame/NavigationRailsFrame";
 import TopAppBar from "./App Bars/Top App Bar/TopAppBar";
 import TopAppBarsFrame from "./App Bars/Top App Bar/Frame/TopAppBarsFrame";
+import Tooltip from "./Tooltip/Tooltip";
+import TooltipsFrame from "./Tooltip/Frame/TooltipsFrame";
 
 function App() {
 	console.log(`	👋 Welcome to TRMD3! 👋	`);
@@ -250,6 +252,9 @@ function App() {
 			</div>
 			<div id="section-11-trmd3" className="section-trmd3">
 				<TopAppBarsFrame />
+			</div>
+			<div id="section-11-trmd3" className="section-trmd3">
+				<TooltipsFrame />
 			</div>
 			<BottomAppBar
 				icons={[

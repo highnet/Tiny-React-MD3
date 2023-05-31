@@ -54,6 +54,20 @@ const TopAppBarsFrame: React.FC = () => {
 			<Typography variant={"text-label-small"}>Large</Typography>
 			<TopAppBar className="top-app-bar-on-frame-trmd3" configuration="large" />
 			<CodeSnippet>{`<TopAppBar configuration="large" />`}</CodeSnippet>
+			<TopAppBar
+				className="top-app-bar-on-frame-trmd3"
+				configuration="small-centered"
+				leadingIcon={{ name: "dark_mode", onClick: undefined }}
+				trailingIcons={[{ name: "arrow_upward", onClick: undefined }]}
+			/>
+			<CodeSnippet>{`
+<TopAppBar
+	className="top-app-bar-on-frame-trmd3"
+	configuration="small-centered"
+	leadingIcon={{ name: "dark_mode", onClick: undefined }}
+	trailingIcons={[{ name: "arrow_upward", onClick: undefined }]}
+	/>
+			`}</CodeSnippet>
 		</div>
 	);
 };

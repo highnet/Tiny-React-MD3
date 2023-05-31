@@ -17,7 +17,7 @@ const Component: React.FC<IComponentProps> = ({ className, id, children }) => {
 		.toString();
 
 	return (
-		<div id={id} className={_computedComponentClassName}>
+		<div id={_id} className={_computedComponentClassName}>
 			{children}
 		</div>
 	);
