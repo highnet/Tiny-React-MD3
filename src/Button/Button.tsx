@@ -32,6 +32,9 @@ const Button: React.FC<IButtonProps> = ({
 	configuration,
 	icon,
 	iconName,
+	onMouseEnter,
+	onMouseLeave,
+	onMouseMove,
 }) => {
 	const [_disabled] = useState(disabled || false);
 	const [_id] = useState(id || undefined);
@@ -68,6 +71,9 @@ const Button: React.FC<IButtonProps> = ({
 				onClick?.(e);
 				click();
 			}}
+			onMouseEnter={onMouseEnter}
+			onMouseLeave={onMouseLeave}
+			onMouseMove={onMouseMove}
 		>
 			{_icon ? (
 				<Icon className={"element-on-button-" + _theme}>{_iconName}</Icon>

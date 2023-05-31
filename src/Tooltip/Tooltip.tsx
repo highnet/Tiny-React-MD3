@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { getPreferredScheme } from "../Gizmos/Themeing";
 import { StringBuilder } from "../Gizmos/StringBuilder";
 import { ITooltipProps } from "./ITooltipProps";
@@ -12,6 +12,7 @@ const Tooltip: React.FC<ITooltipProps> = ({
 	configuration,
 	title,
 	buttons,
+	triggerComponent,
 }) => {
 	const [_className] = useState(className || "");
 	const [_id] = useState(id || undefined);
@@ -38,6 +39,8 @@ const Tooltip: React.FC<ITooltipProps> = ({
 				? "tooltip-plain"
 				: ""
 		)
+		.add(triggerComponent ? "tooltip-with-trigger-component" : "")
+		.add(triggerComponent ? "invisible" : "")
 		.add(_className)
 		.toString();
 
@@ -56,24 +59,60 @@ const Tooltip: React.FC<ITooltipProps> = ({
 			{_title}
 		</Typography>
 	);
+	const tooltipRef = useRef<HTMLDivElement>(null);
+	const triggerRef = useRef<HTMLDivElement>(null);
+
+	const handleSetTooltipVisible = () => {
+		if (tooltipRef.current) {
+			tooltipRef.current.classList.toggle("invisible");
+			tooltipRef.current.classList.toggle("visible");
+		}
+	};
+	const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
+		if (tooltipRef.current && triggerRef.current) {
+			const tooltipWidth = tooltipRef.current.offsetWidth;
+			const tooltipHeight = tooltipRef.current.offsetHeight;
+			const triggerRect = triggerRef.current.getBoundingClientRect();
+			const x =
+				event.clientX - triggerRect.left + tooltipWidth > window.innerWidth
+					? triggerRect.right - tooltipWidth
+					: event.clientX - triggerRect.left;
+			const y =
+				event.clientY - triggerRect.top + tooltipHeight > window.innerHeight
+					? triggerRect.bottom - tooltipHeight
+					: event.clientY - triggerRect.top;
+			tooltipRef.current.style.transform = `translate(${x}px, ${y}px)`;
+		}
+	};
 
 	return (
-		<div id={_id} className={_computedComponentClassName}>
-			<div className="tooltip-content">
-				{titleComponent}
-				<Typography
-					className="supporting-text-on-tooltip"
-					variant={
-						_configuration === "plain-multiline" ||
-						_configuration === "plain-singleline"
-							? "text-body-small"
-							: "text-body-medium"
-					}
-				>
-					{_children}
-				</Typography>
+		<div>
+			<div id={_id} className={_computedComponentClassName} ref={tooltipRef}>
+				<div className="tooltip-content">
+					{titleComponent}
+					<Typography
+						className="supporting-text-on-tooltip"
+						variant={
+							_configuration === "plain-multiline" ||
+							_configuration === "plain-singleline"
+								? "text-body-small"
+								: "text-body-medium"
+						}
+					>
+						{_children}
+					</Typography>
+				</div>
+				{actionButtons}
 			</div>
-			{actionButtons}
+			<div ref={triggerRef}>
+				{" "}
+				{triggerComponent &&
+					React.cloneElement(triggerComponent, {
+						onMouseMove: handleMouseMove,
+						onMouseEnter: handleSetTooltipVisible,
+						onMouseLeave: handleSetTooltipVisible,
+					})}
+			</div>
 		</div>
 	);
 };

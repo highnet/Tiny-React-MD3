@@ -7,4 +7,5 @@ export interface ITooltipProps extends IComponentProps {
 		label?: string;
 		onClick?: () => void;
 	}[];
+	triggerComponent?: React.ReactElement;
 }

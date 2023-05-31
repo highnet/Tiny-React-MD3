@@ -1,3 +1,4 @@
+import Button from "../../Button/Button";
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 import CodeSnippet from "../../TRMD3/CodeSnippet/CodeSnippet";
@@ -78,6 +79,9 @@ const TooltipsFrame: React.FC = () => {
 				web applications
 			</Tooltip>
 			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
+			<Tooltip triggerComponent={<Button>Button</Button>}></Tooltip>
+			<Tooltip triggerComponent={<Button>Button</Button>}></Tooltip>
+			<Tooltip triggerComponent={<Button>Button</Button>}></Tooltip>
 		</div>
 	);
 };

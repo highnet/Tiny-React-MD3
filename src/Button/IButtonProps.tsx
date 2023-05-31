@@ -13,8 +13,11 @@ import { IComponentProps } from "../Component/IComponentProps";
 import { MouseEvent } from "react";
 
 export interface IButtonProps extends IComponentProps {
-	onClick?: (event: MouseEvent<HTMLButtonElement>) => void;
 	configuration?: string;
 	icon?: boolean;
 	iconName?: string;
+	onClick?: (event: MouseEvent<HTMLButtonElement>) => void;
+	onMouseEnter?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+	onMouseLeave?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+	onMouseMove?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }

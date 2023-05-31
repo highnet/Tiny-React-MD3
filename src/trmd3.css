@@ -1007,6 +1007,16 @@ html {
 	--m3-composite-dark-tertiary-container-passthrough-on-tertiary-container-opacity-12: #764e5b;
 }
 
+/* ==========COMPONENTS========== */
+.visible {
+	visibility: visible;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+
 /* ==========TYPOGRAPHY========== /
 / TEXT */
 .text,
@@ -3824,7 +3834,6 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	min-height: 13.6rem;
 }
 
-
 .tooltip-plain {
 	background-color: var(--m3-sys-light-inverse-surface);
 	color: var(--m3-sys-light-inverse-on-surface);
@@ -3840,4 +3849,9 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	white-space: nowrap;
 	width: fit-content;
 	max-width: 100%;
+}
+
+.tooltip-with-trigger-component {
+	position: absolute;
+	pointer-events: none;
 }
