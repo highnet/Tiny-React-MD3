@@ -1,5 +1,4 @@
 import { IComponentProps } from "../Component/IComponentProps";
-import { MouseEvent } from "react";
 
 /*
   1
@@ -17,7 +16,6 @@ import { MouseEvent } from "react";
 */
 
 export interface IRadioButtonProps extends IComponentProps {
-	onClick?: (event: MouseEvent<HTMLDivElement>) => void;
 	name?: string;
 	value?: string;
 	defaultChecked?: boolean;

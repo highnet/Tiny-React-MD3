@@ -14,7 +14,6 @@ import { MouseEvent } from "react";
 import { IComponentProps } from "../Component/IComponentProps";
 
 export interface ICheckboxProps extends IComponentProps {
-	onChange?: (event: MouseEvent<HTMLDivElement>) => void;
 	configuration?: string;
 	selected?: boolean;
 }
