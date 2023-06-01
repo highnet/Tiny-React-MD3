@@ -26,7 +26,7 @@ const AssistChipsFrame: React.FC = () => {
 			<Typography variant={"text-label-small"}>Label Only</Typography>
 			<AssistChip onClick={undefined}></AssistChip>
 			<CodeSnippet>
-				{"<AssistChip onClick={undefined}></AssistChip>"}
+				{`<AssistChip onClick={undefined}></AssistChip>`}
 			</CodeSnippet>
 
 			<Typography variant={"text-label-small"}>
@@ -34,12 +34,12 @@ const AssistChipsFrame: React.FC = () => {
 			</Typography>
 			<AssistChip elevated={true} onClick={undefined}></AssistChip>
 			<CodeSnippet>
-				{"<AssistChip elevated={true} onClick={undefined}></AssistChip>"}
+				{`<AssistChip elevated={true} onClick={undefined}></AssistChip>`}
 			</CodeSnippet>
 			<Typography variant={"text-label-small"}>Label & icon</Typography>
 			<AssistChip iconType="icon" onClick={undefined}></AssistChip>
 			<CodeSnippet>
-				{'<AssistChip iconType="icon" onClick={undefined}></AssistChip>'}
+				{`<AssistChip iconType="icon" onClick={undefined}></AssistChip>`}
 			</CodeSnippet>
 			<Typography variant={"text-label-small"}>
 				Label & icon - elevated
@@ -50,14 +50,16 @@ const AssistChipsFrame: React.FC = () => {
 				onClick={undefined}
 			></AssistChip>
 			<CodeSnippet>
-				{
-					'<AssistChip iconType="icon" elevated={true} onClick={undefined}></AssistChip>'
-				}
+				{`<AssistChip iconType="icon" elevated={true} onClick={undefined}></AssistChip>`}
 			</CodeSnippet>
 			<Typography variant={"text-label-small"}>Label & favicon</Typography>
 			<AssistChip iconType="favicon" onClick={undefined}></AssistChip>
 			<CodeSnippet>
-				{'<AssistChip iconType="favicon" onClick={undefined}></AssistChip>'}
+				{`
+<AssistChip 
+	iconType="favicon" 
+	onClick={undefined}>
+</AssistChip>`}
 			</CodeSnippet>
 			<Typography variant={"text-label-small"}>
 				Label & favicon - elevated
@@ -68,14 +70,21 @@ const AssistChipsFrame: React.FC = () => {
 				onClick={undefined}
 			></AssistChip>
 			<CodeSnippet>
-				{
-					'<AssistChip iconType="favicon" elevated={true} onClick={undefined} ></AssistChip>'
-				}
+				{`
+<AssistChip 
+	iconType="favicon" 
+	elevated={true} 
+	onClick={undefined}>
+</AssistChip>`}
 			</CodeSnippet>
 			<Typography variant={"text-label-small"}>Label & branded icon</Typography>
 			<AssistChip iconType="branded" onClick={undefined}></AssistChip>
 			<CodeSnippet>
-				{'<AssistChip iconType="branded" onClick={undefined}></AssistChip>'}
+				{`
+<AssistChip 
+	iconType="branded" 
+	onClick={undefined}>
+</AssistChip>`}
 			</CodeSnippet>
 			<Typography variant={"text-label-small"}>
 				Label & branded icon - elevated
@@ -86,9 +95,12 @@ const AssistChipsFrame: React.FC = () => {
 				onClick={undefined}
 			></AssistChip>
 			<CodeSnippet>
-				{
-					'<AssistChip iconType="branded" elevated={true} onClick={undefined}></AssistChip>'
-				}
+				{`
+<AssistChip 
+	iconType="branded" 
+	elevated={true} 
+	onClick={undefined}>
+</AssistChip>`}
 			</CodeSnippet>
 		</div>
 	);

@@ -10,6 +10,7 @@ const Component: React.FC<IComponentProps> = ({
 	onMouseEnter,
 	onMouseLeave,
 	onMouseMove,
+	onClick,
 }) => {
 	const [_className] = useState(className || "");
 	const [_id] = useState(id || undefined);
@@ -30,6 +31,7 @@ const Component: React.FC<IComponentProps> = ({
 			onMouseEnter={onMouseEnter}
 			onMouseLeave={onMouseLeave}
 			onMouseMove={onMouseMove}
+			onClick={onClick}
 		>
 			{children}
 		</div>

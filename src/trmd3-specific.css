@@ -320,7 +320,7 @@ html {
 
 /* BADGES FRAME SECTION */
 
-.badge-box-trmd3 {
+.component {
 	background-color: #f8af50;
 	width: 5rem;
 	height: 5rem;
@@ -373,6 +373,8 @@ html {
 .code-snippet-trmd3 {
 	cursor: pointer;
 	position: relative;
+	display: grid;
+	justify-content: center;
 }
 
 .code-snippet-copy-icon-trmd3 {
@@ -424,6 +426,7 @@ html {
 	font-size: 1.4rem;
 	font-family: "Comic Mono", monospace;
 	text-align: left;
+
 }
 
 @media screen and (max-width: 600px) {

@@ -38,14 +38,27 @@ const StackedCardsFrame: React.FC = () => {
 				Stacked Cards
 			</ComponentFrameTitle>
 			<StackedCard imageSrc="1.png" />
-			<CodeSnippet>{'<StackedCard imageSrc="1.png"/>'}</CodeSnippet>
+			<CodeSnippet>
+				{`
+<StackedCard 
+	imageSrc="1.png"
+/>`}
+			</CodeSnippet>
 			<StackedCard imageSrc="2.png" configuration="elevated" />
 			<CodeSnippet>
-				{'<StackedCard imageSrc="2.png" configuration="elevated" />'}
+				{`
+<StackedCard 
+	imageSrc="2.png" 
+	configuration="elevated" 
+/>`}
 			</CodeSnippet>
 			<StackedCard configuration="filled" imageSrc="3.png" />
 			<CodeSnippet>
-				{'<StackedCard imageSrc="3.png" configuration="filled" />'}
+				{`
+<StackedCard 
+	imageSrc="3.png" 
+	configuration="filled" 
+/>`}
 			</CodeSnippet>
 		</div>
 	);

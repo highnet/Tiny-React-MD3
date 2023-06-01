@@ -57,17 +57,24 @@ const ButtonsFrame: React.FC = () => {
 		<div className={_computedFrameClassName}>
 			{/* BUTTONS */}
 			<Typography
-					id="buttons-section"
-					variant="text-title-large"
-					className={_computedTrmd3SectionTitlesClassName}
-				>
-					🕹️
+				id="buttons-section"
+				variant="text-title-large"
+				className={_computedTrmd3SectionTitlesClassName}
+			>
+				🕹️
 			</Typography>
-			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#%EF%B8%8F-buttons">Filled Buttons</ComponentFrameTitle>
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#%EF%B8%8F-buttons">
+				Filled Buttons
+			</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>No Icon</Typography>
 			<Button configuration="filled" onClick={undefined}></Button>
 			<CodeSnippet>
-				{`<Button configuration="filled" onClick={undefined}></Button>`}
+				{`
+<Button 
+	configuration="filled" 
+	onClick={undefined}
+>
+</Button>`}
 			</CodeSnippet>
 			<Typography variant={"text-label-small"}>With Icon</Typography>
 			<Button
@@ -77,13 +84,27 @@ const ButtonsFrame: React.FC = () => {
 				onClick={undefined}
 			></Button>
 			<CodeSnippet>
-				{`<Button configuration="filled" icon={true} iconName={"search"} onClick={undefined}></Button>`}
+				{`
+<Button 
+	configuration="filled" 
+	icon={true} 
+	iconName={"search"} 
+	onClick={undefined}
+>
+</Button>`}
 			</CodeSnippet>
-			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#%EF%B8%8F-buttons">Outlined Buttons</ComponentFrameTitle>
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#%EF%B8%8F-buttons">
+				Outlined Buttons
+			</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>No Icon</Typography>
 			<Button configuration="outlined" onClick={undefined}></Button>
 			<CodeSnippet>
-				{`<Button configuration="outlined" onClick={undefined}></Button>`}
+				{`
+<Button 
+	configuration="outlined" 
+	onClick={undefined}
+>
+</Button>`}
 			</CodeSnippet>
 			<Typography variant={"text-label-small"}>With Icon</Typography>
 			<Button
@@ -93,13 +114,27 @@ const ButtonsFrame: React.FC = () => {
 				iconName={"search"}
 			></Button>
 			<CodeSnippet>
-				{`<Button configuration="outlined" onClick={undefined} icon={true} iconName={"search"}></Button>`}
+				{`
+<Button 
+	configuration="outlined"
+	onClick={undefined} 
+	icon={true} 
+	iconName={"search"}
+>
+</Button>`}
 			</CodeSnippet>
-			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#%EF%B8%8F-buttons">Text Buttons</ComponentFrameTitle>
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#%EF%B8%8F-buttons">
+				Text Buttons
+			</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>No Icon</Typography>
 			<Button configuration="text" onClick={undefined}></Button>
 			<CodeSnippet>
-				{`<Button configuration="text" onClick={undefined}></Button>`}
+				{`
+<Button 
+	configuration="text" 
+	onClick={undefined}
+>
+</Button>`}
 			</CodeSnippet>
 			<Typography variant={"text-label-small"}>With Icon</Typography>
 			<Button
@@ -109,13 +144,27 @@ const ButtonsFrame: React.FC = () => {
 				iconName={"search"}
 			></Button>
 			<CodeSnippet>
-				{`<Button configuration="text" onClick={undefined} icon={true} iconName={"search"}></Button>`}
+				{`
+<Button 
+	configuration="text" 
+	onClick={undefined} 
+	icon={true} 
+	iconName={"search"}
+>
+</Button>`}
 			</CodeSnippet>
-			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#%EF%B8%8F-buttons">Elevated Buttons</ComponentFrameTitle>
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#%EF%B8%8F-buttons">
+				Elevated Buttons
+			</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>No Icon</Typography>
 			<Button configuration="elevated" onClick={undefined}></Button>
 			<CodeSnippet>
-				{`<Button configuration="elevated" onClick={undefined}></Button>`}
+				{`
+<Button 
+	configuration="elevated" 
+	onClick={undefined}
+>
+</Button>`}
 			</CodeSnippet>
 			<Typography variant={"text-label-small"}>With Icon</Typography>
 			<Button
@@ -125,13 +174,27 @@ const ButtonsFrame: React.FC = () => {
 				iconName={"search"}
 			></Button>
 			<CodeSnippet>
-				{`<Button configuration="elevated" onClick={undefined} icon={true} iconName={"search"}></Button>`}
+				{`
+<Button
+	configuration="elevated" 
+	onClick={undefined} 
+	icon={true} 
+	iconName={"search"}
+>
+</Button>`}
 			</CodeSnippet>
-			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#%EF%B8%8F-buttons">Tonal Buttons</ComponentFrameTitle>
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#%EF%B8%8F-buttons">
+				Tonal Buttons
+			</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>No Icon</Typography>
 			<Button configuration="tonal" onClick={undefined}></Button>
 			<CodeSnippet>
-				{`<Button configuration="tonal" onClick={undefined}></Button>`}
+				{`
+<Button 
+	configuration="tonal" 
+	onClick={undefined}
+>
+</Button>`}
 			</CodeSnippet>
 			<Typography variant={"text-label-small"}>With Icon</Typography>
 			<Button
@@ -141,7 +204,14 @@ const ButtonsFrame: React.FC = () => {
 				iconName={"search"}
 			></Button>
 			<CodeSnippet>
-				{`<Button configuration="tonal" onClick={undefined} icon={true} iconName={"search"}></Button>`}
+				{`
+<Button
+	configuration="tonal" 
+	onClick={undefined} 
+	icon={true} 
+	iconName={"search"}
+>
+</Button>`}
 			</CodeSnippet>
 		</div>
 	);

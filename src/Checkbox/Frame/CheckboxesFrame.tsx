@@ -43,21 +43,33 @@ const CheckboxesFrame: React.FC = () => {
 		<div className={_computedFrameClassName}>
 			{/* CHECKBOXES */}
 			<Typography
-					id="checkboxes-section"
-					variant="text-title-large"
-					className={_computedTrmd3SectionTitlesClassName}
-				>
-					☑️
+				id="checkboxes-section"
+				variant="text-title-large"
+				className={_computedTrmd3SectionTitlesClassName}
+			>
+				☑️
 			</Typography>
-			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#%EF%B8%8F-checkbox">Checkboxes</ComponentFrameTitle>
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#%EF%B8%8F-checkbox">
+				Checkboxes
+			</ComponentFrameTitle>
 			<Checkbox selected={true} onChange={undefined} />
 			<CodeSnippet>
-				{`<Checkbox selected={true} onChange={undefined} />`}
+				{`
+<Checkbox 
+	selected={true} 
+	onChange={undefined} 
+/>
+				`}
 			</CodeSnippet>
 			<Typography variant={"text-label-small"}>Error</Typography>
 			<Checkbox selected={true} onChange={undefined} configuration={"error"} />
 			<CodeSnippet>
-				{`<Checkbox selected={true} onChange={undefined} configuration={"error"} />`}
+				{`
+<Checkbox 
+	selected={true} 
+	onChange={undefined} 
+	configuration={"error"}
+/>`}
 			</CodeSnippet>
 		</div>
 	);

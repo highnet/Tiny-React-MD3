@@ -1,20 +1,10 @@
-import { useEffect, useState } from "react";
-import Button from "../../Button/Button";
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 import CodeSnippet from "../../TRMD3/CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../../TRMD3/ComponentFrameTitle/ComponentFrameTitle";
 import Typography from "../../Typography/Typography";
 import Tooltip from "../Tooltip";
-import StackedCard from "../../Cards/StackedCard/StackedCard";
-import InputChip from "../../Chips/InputChip/InputChip";
-import AssistChip from "../../Chips/AssistChip/AssistChip";
-import RadioButton from "../../Radio Button/RadioButton";
-import Badge from "../../Badge/Badge";
-import Checkbox from "../../Checkbox/Checkbox";
-import Icon from "../../Icon/Icon";
-import Fab from "../../FABs/FAB/Fab";
-import Carousel from "../../Carousel/Carousel";
+import Component from "../../Component/Component";
 
 const TooltipsFrame: React.FC = () => {
 	const _theme =
@@ -48,44 +38,35 @@ const TooltipsFrame: React.FC = () => {
 			</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>Rich</Typography>
 			<Tooltip></Tooltip>
-			<CodeSnippet>{`<Tooltip></Tooltip>`}</CodeSnippet>
+			<CodeSnippet>{`
+<Tooltip></Tooltip>
+			`}</CodeSnippet>
 			<Typography variant={"text-label-small"}>Rich - With Actions</Typography>
 			<Tooltip
-				buttons={[
-					{
-						onClick: () => {
-							alert("TEST1");
-						},
-					},
-					{
-						onClick: () => {
-							alert("TEST2");
-						},
-					},
-				]}
+				buttons={[{ onClick: undefined }, { onClick: undefined }]}
 			></Tooltip>
-			<CodeSnippet>{`			
+			<CodeSnippet>{`
 <Tooltip
-	buttons={[
-		{
-			onClick: () => {
-				alert("TEST1");
-		},
-		},
-		{
-			onClick: () => {
-				alert("TEST2");
-		},
-			},
-	]}
-></Tooltip>
+	buttons={[{ onClick: undefined }, { onClick: undefined }]}
+>
+</Tooltip>
 			`}</CodeSnippet>
 			<Typography variant={"text-label-small"}>Plain - Single Line</Typography>
 			<Tooltip configuration="plain-singleline"></Tooltip>
-			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
+			<CodeSnippet>{`
+<Tooltip 
+	configuration="plain-singleline"
+>
+</Tooltip>
+			`}</CodeSnippet>
 			<Typography variant={"text-label-small"}>Plain - Multi Line</Typography>
 			<Tooltip configuration="plain-multiline"></Tooltip>
-			<CodeSnippet>{`<Tooltip configuration="plain-multiline"></Tooltip>`}</CodeSnippet>
+			<CodeSnippet>{`
+<Tooltip 
+	configuration="plain-multiline"
+>
+</Tooltip>
+			`}</CodeSnippet>
 			<Tooltip
 				title="TRMD3"
 				buttons={[
@@ -115,47 +96,39 @@ const TooltipsFrame: React.FC = () => {
 				onClick: undefined,
 			},
 			}
->
-Quickly transform your design kit...
+	>
+		Quickly transform your design kit...
 </Tooltip>
 			`}</CodeSnippet>
 			<Typography variant={"text-label-small"}>
-				🚧 Button With Tooltip (Desktop Only) 🚧
+				Component With Tooltip (Desktop Only)
 			</Typography>
 			<Tooltip
 				configuration="plain-singleline"
 				triggerComponent={
-					<Button
+					<Component
 						onClick={() => {
 							alert("Ouch!");
 						}}
-					>
-						Enabled
-					</Button>
+					/>
 				}
 			>
-				Click Me!
+				Tooltip!
 			</Tooltip>
 			<CodeSnippet>{`
 <Tooltip
 	configuration="plain-singleline"
 	triggerComponent={
-	<Button
-		onClick={() => {
-			alert("Ouch!");
-		}}
-	>
-			Enabled
-		</Button>
+		<Component
+			onClick={() => {
+				alert("Ouch!");
+			}}
+		/>
 	}
 >
-	Click Me!
+	Tooltip!
 </Tooltip>
 			`}</CodeSnippet>
-
-			<Tooltip configuration="plain-singleline" triggerComponent={<Carousel />}>
-				Click Me!
-			</Tooltip>
 		</div>
 	);
 };

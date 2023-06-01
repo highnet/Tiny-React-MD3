@@ -31,21 +31,39 @@ const ExtendedFabsFrame: React.FC = () => {
 			</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>Surface</Typography>
 			<ExtendedFab onClick={undefined}></ExtendedFab>
-			<CodeSnippet>{`<ExtendedFab onClick={undefined} />`}</CodeSnippet>
+			<CodeSnippet>{`
+<ExtendedFab 
+	onClick={undefined} 
+/>`}</CodeSnippet>
 			<Typography variant={"text-label-small"}>Primary</Typography>
 			<ExtendedFab configuration="primary" onClick={undefined} />
 			<CodeSnippet>
-				{`<ExtendedFab configuration="primary" onClick={undefined}></ExtendedFab>`}
+				{`
+<ExtendedFab 
+	configuration="primary" 
+	onClick={undefined}
+>
+</ExtendedFab>`}
 			</CodeSnippet>
 			<Typography variant={"text-label-small"}>Secondary</Typography>
 			<ExtendedFab configuration="secondary" onClick={undefined} />
 			<CodeSnippet>
-				{`<ExtendedFab configuration="secondary" onClick={undefined}></ExtendedFab>`}
+				{`
+<ExtendedFab 
+	configuration="secondary" 
+	onClick={undefined}
+>
+</ExtendedFab>`}
 			</CodeSnippet>
 			<Typography variant={"text-label-small"}>Tertiary</Typography>
 			<ExtendedFab configuration="tertiary" onClick={undefined} />
 			<CodeSnippet>
-				{`<ExtendedFab configuration="tertiary" onClick={undefined}></ExtendedFab>`}
+				{`
+<ExtendedFab 
+	configuration="tertiary"
+	onClick={undefined}
+>
+</ExtendedFab>`}
 			</CodeSnippet>
 		</div>
 	);

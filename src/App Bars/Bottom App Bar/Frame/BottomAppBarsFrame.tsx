@@ -53,11 +53,11 @@ const BottomAppBarsFrame: React.FC = () => {
 				}}
 				className="bottom-app-bar-on-frame-trmd3"
 			/>
-			<CodeSnippet>{`<BottomAppBar
+			<CodeSnippet>{`
+<BottomAppBar
 	icons={[
-        { name: "search", label: "Search", onClick: undefined },
-        { name: "water", onClick: undefined },
-      	]}
+        { name: "search", label: "Search", onClick: undefined }
+		{ name: "water", onClick: undefined },]}
     	fab={{ onClick: () => { alert("FAB Clicked!"); ] }}
     />`}</CodeSnippet>
 		</div>

@@ -47,14 +47,20 @@ const SwitchesFrame: React.FC = () => {
 				id="switches-section"
 				variant="text-title-large"
 				className={_computedTrmd3SectionTitlesClassName}
-				>
+			>
 				🔦
 			</Typography>
-			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-switch">Switches</ComponentFrameTitle>
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-switch">
+				Switches
+			</ComponentFrameTitle>
 			<Typography variant="text-label-small">No Icon</Typography>
 			<Switch selected={true} onChange={undefined} />
 			<CodeSnippet>
-				{"<Switch selected={true} onChange={undefined} />"}
+				{`
+<Switch 
+	selected={true} 
+	onChange={undefined} 
+/>`}
 			</CodeSnippet>
 			<Typography variant="text-label-small">With Icon</Typography>
 			<Switch
@@ -65,9 +71,14 @@ const SwitchesFrame: React.FC = () => {
 				iconNameDeselected={"house"}
 			/>
 			<CodeSnippet>
-				{
-					'<Switch selected={true} onChange={undefined} icon={true} iconNameSelected={"warning"} iconNameDeselected={"house"} />'
-				}
+				{`
+<Switch 
+	selected={true} 
+	onChange={undefined} 
+	icon={true} 
+	iconNameSelected={"warning"} 
+	iconNameDeselected={"house"} 
+/>`}
 			</CodeSnippet>
 		</div>
 	);

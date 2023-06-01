@@ -32,23 +32,37 @@ const InputChipsFrame: React.FC = () => {
 			>
 				🍪
 			</Typography>
-			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-input-chip">Input Chips</ComponentFrameTitle>
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-input-chip">
+				Input Chips
+			</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>Label Only</Typography>
 			<InputChip onClick={undefined}></InputChip>
-			<CodeSnippet>{"<InputChip onClick={undefined}></InputChip>"}</CodeSnippet>
+			<CodeSnippet>{`
+<InputChip 
+	onClick={undefined}>
+</InputChip>
+	`}</CodeSnippet>
 			<Typography variant={"text-label-small"}>
 				Label & trailing icon
 			</Typography>
 			<InputChip trailingIcon={true} onClick={undefined}></InputChip>
 			<CodeSnippet>
-				{"<InputChip trailingIcon={true} onClick={undefined}></InputChip>"}
+				{`
+<InputChip 
+	trailingIcon={true} 
+	onClick={undefined}>
+</InputChip>`}
 			</CodeSnippet>
 			<Typography variant={"text-label-small"} className={"text-label-small"}>
 				Leading icon & label
 			</Typography>
 			<InputChip leadingIcon={true} onClick={undefined}></InputChip>
 			<CodeSnippet>
-				{"<InputChip leadingIcon={true} onClick={undefined}></InputChip>"}
+				{`
+<InputChip 
+	leadingIcon={true} 
+	onClick={undefined}>
+</InputChip>`}
 			</CodeSnippet>
 			<Typography variant={"text-label-small"} className={"text-label-small"}>
 				Leading icon, label & trailing icon
@@ -59,16 +73,23 @@ const InputChipsFrame: React.FC = () => {
 				onClick={undefined}
 			></InputChip>
 			<CodeSnippet>
-				{
-					"<InputChip leadingIcon={true} trailingIcon={true} onClick={undefined}></InputChip>"
-				}
+				{`
+<InputChip 
+	leadingIcon={true} 
+	trailingIcon={true} 
+	onClick={undefined}>
+</InputChip>`}
 			</CodeSnippet>
 			<Typography variant={"text-label-small"} className={"text-label-small"}>
 				Label & avatar
 			</Typography>
 			<InputChip avatar={true} onClick={undefined}></InputChip>
 			<CodeSnippet>
-				{"<InputChip avatar={true} onClick={undefined}></InputChip>"}
+				{`
+<InputChip 
+	avatar={true} 
+	onClick={undefined}>
+</InputChip>`}
 			</CodeSnippet>
 			<Typography variant={"text-label-small"} className={"text-label-small"}>
 				Label, avatar & trailing icon
@@ -79,9 +100,12 @@ const InputChipsFrame: React.FC = () => {
 				onClick={undefined}
 			></InputChip>
 			<CodeSnippet>
-				{
-					"<InputChip avatar={true} trailingIcon={true} onClick={undefined}></InputChip>"
-				}
+				{`
+<InputChip 
+	avatar={true} 
+	trailingIcon={true} 
+	onClick={undefined}>
+</InputChip>`}
 			</CodeSnippet>
 		</div>
 	);

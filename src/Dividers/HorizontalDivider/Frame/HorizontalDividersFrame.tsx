@@ -43,28 +43,46 @@ const HorizontalDividersFrame: React.FC = () => {
 				id="horizontal-dividers-section"
 				variant="text-title-large"
 				className={_computedTrmd3SectionTitlesClassName}
-				>
+			>
 				➕
 			</Typography>
-			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-horizontal-divider">Horizontal Dividers</ComponentFrameTitle>
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-horizontal-divider">
+				Horizontal Dividers
+			</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>Inset None</Typography>
 			<HorizontalDivider inset={"none"} />
-			<CodeSnippet>{"<HorizontalDivider inset={'none'} />"}</CodeSnippet>
-
+			<CodeSnippet>
+				{`
+<HorizontalDivider 
+	inset={'none'} 
+/>`}
+			</CodeSnippet>
 			<Typography variant={"text-label-small"}>Inset Right</Typography>
 			<HorizontalDivider inset={"right"} showInsets={true} />
 			<CodeSnippet>
-				{"<HorizontalDivider inset={'right'} showInsets={true} />"}
+				{`
+<HorizontalDivider 
+	inset={'right'} 
+	showInsets={true} 
+/>`}
 			</CodeSnippet>
 			<Typography variant={"text-label-small"}>Inset Left</Typography>
 			<HorizontalDivider inset={"left"} showInsets={true} />
 			<CodeSnippet>
-				{"<HorizontalDivider inset={'left'} showInsets={true} />"}
+				{`
+<HorizontalDivider 
+	inset={'left'} 
+	showInsets={true} 
+/>`}
 			</CodeSnippet>
 			<Typography variant={"text-label-small"}>Inset Center</Typography>
 			<HorizontalDivider inset={"center"} showInsets={true} />
 			<CodeSnippet>
-				{"<HorizontalDivider inset={'center'} showInsets={true} />"}
+				{`
+<HorizontalDivider 
+	inset={'center'} 
+	showInsets={true} 
+/>`}
 			</CodeSnippet>
 		</div>
 	);

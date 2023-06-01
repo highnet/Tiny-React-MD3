@@ -27,16 +27,21 @@ const VerticalDividersFrame: React.FC = () => {
 	return (
 		<div className={_computedFrameClassName}>
 			{/* VERTICAL DIVIDERS */}
-			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-vertical-divider">Vertical Dividers</ComponentFrameTitle>
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-vertical-divider">
+				Vertical Dividers
+			</ComponentFrameTitle>
 			<Typography variant="text-label-small">Inset None</Typography>
 			<VerticalDivider inset={"none"} />
 			<CodeSnippet>{"<VerticalDivider inset={'none'} />"}</CodeSnippet>
 			<Typography variant="text-label-small">Inset Top</Typography>
 			<VerticalDivider inset={"top"} showInsets={true} insetTopHeight={50} />
 			<CodeSnippet>
-				{
-					"<VerticalDivider inset={'top'} showInsets={true} insetTopHeight={50} />"
-				}
+				{`
+<VerticalDivider 
+	inset={'top'}
+	showInsets={true} 
+	insetTopHeight={50} 
+/>`}
 			</CodeSnippet>
 			<Typography variant="text-label-small">Inset Bottom</Typography>
 			<VerticalDivider
@@ -45,9 +50,12 @@ const VerticalDividersFrame: React.FC = () => {
 				showInsets={true}
 			/>
 			<CodeSnippet>
-				{
-					'<VerticalDivider inset={"bottom"} insetBottomHeight={50} showInsets={true} />'
-				}
+				{`
+<VerticalDivider 
+	inset={"bottom"} 
+	insetBottomHeight={50} 
+	showInsets={true} 
+/>`}
 			</CodeSnippet>
 			<Typography variant="text-label-small">Inset Center</Typography>
 			<VerticalDivider
@@ -57,9 +65,13 @@ const VerticalDividersFrame: React.FC = () => {
 				showInsets={true}
 			/>
 			<CodeSnippet>
-				{
-					'<VerticalDivider inset={"center"} insetBottomHeight={50} insetTopHeight={50} showInsets={true} />'
-				}
+				{`
+<VerticalDivider 
+	inset={"center"} 
+	insetBottomHeight={50} 
+	insetTopHeight={50} 
+	showInsets={true} 
+/>`}
 			</CodeSnippet>
 		</div>
 	);

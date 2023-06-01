@@ -30,14 +30,25 @@ const HorizontalCardsFrame: React.FC = () => {
 				Horizontal Cards
 			</ComponentFrameTitle>
 			<HorizontalCard imageSrc="4.png" />
-			<CodeSnippet>{'<HorizontalCard imageSrc="4.png"/>'}</CodeSnippet>
+			<CodeSnippet>{`
+<HorizontalCard 
+	imageSrc="4.png"
+/>`}</CodeSnippet>
 			<HorizontalCard imageSrc="5.png" configuration="elevated" />
 			<CodeSnippet>
-				{'<HorizontalCard imageSrc="5.png" configuration="elevated" />'}
+				{`
+<HorizontalCard 
+	imageSrc="5.png" 
+	configuration="elevated" 
+/>`}
 			</CodeSnippet>
 			<HorizontalCard imageSrc="6.png" configuration="filled" />
 			<CodeSnippet>
-				{'<HorizontalCard imageSrc="6.png" configuration="filled" />'}
+				{`
+<HorizontalCard 
+	imageSrc="6.png"
+	configuration="filled" 
+/>`}
 			</CodeSnippet>
 		</div>
 	);

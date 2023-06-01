@@ -1,3 +1,4 @@
+import Component from "../../Component/Component";
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 import CodeSnippet from "../../TRMD3/CodeSnippet/CodeSnippet";
@@ -59,30 +60,42 @@ const BadgesFrame: React.FC = () => {
 			<div>
 				<div>
 					<Typography variant={"text-label-small"}>Small</Typography>
-					<div className="badge-box-trmd3">
+					<Component>
 						<Badge configuration={"small"} xOffset={4.7} yOffset={-0.2} />
-					</div>
+					</Component>
 				</div>
 				<CodeSnippet>
-					{'<Badge configuration={"small"} xOffset={4.7} yOffset={-0.2} />'}
+					{`
+<Component>
+	<Badge 
+		configuration={"small"} 
+		xOffset={4.7} 
+		yOffset={-0.2} />
+</Component>
+`}
 				</CodeSnippet>
-
 				<div>
-					<Typography variant={"text-label-small"}>Single Digit</Typography>
-					<div className="badge-box-trmd3">
+					<Component>
 						<Badge configuration={"single-digit"} xOffset={2.6} yOffset={-0.6}>
 							3
 						</Badge>
-					</div>
+					</Component>
 				</div>
 				<CodeSnippet>
-					{
-						'<Badge configuration={"single-digit"} xOffset={2.6} yOffset={-0.6}>3</Badge>'
-					}
+					{`
+<Component>
+	<Badge 
+		configuration={"single-digit"}
+		xOffset={2.6} 
+		yOffset={-0.6}>
+			3
+	</Badge>
+</Component>
+					`}
 				</CodeSnippet>
 				<div>
 					<Typography variant={"text-label-small"}>Multiple Digits</Typography>
-					<div className="badge-box-trmd3">
+					<Component>
 						<Badge
 							configuration={"multiple-digits"}
 							xOffset={2.5}
@@ -90,12 +103,20 @@ const BadgesFrame: React.FC = () => {
 						>
 							123
 						</Badge>
-					</div>
+					</Component>
 				</div>
 				<CodeSnippet>
-					{
-						'<Badge configuration={"multiple-digits"} xOffset={2.5} yOffset={-0.6}>123</Badge>'
-					}
+					{`
+<Component>
+	<Badge
+		configuration={"multiple-digits"}
+		xOffset={2.5}
+		yOffset={-0.6}
+	>
+		123
+	</Badge>
+</Component>	
+					`}
 				</CodeSnippet>
 			</div>
 		</div>

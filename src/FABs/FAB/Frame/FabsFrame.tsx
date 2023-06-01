@@ -41,64 +41,117 @@ const FabsFrame: React.FC = () => {
 			<Typography variant={"text-label-small"}>Surface</Typography>
 			<Fab onClick={undefined} />
 			<CodeSnippet>
-				{`<Fab onClick={undefined} />`}
+				{`
+<Fab 
+	onClick={undefined} 
+/>`}
 			</CodeSnippet>
 			<Typography variant={"text-label-small"}>Primary</Typography>
 			<Fab configuration="primary" onClick={undefined} />
 			<CodeSnippet>
-				{`<Fab configuration="primary" onClick={undefined} />`}
+				{`
+<Fab 
+	configuration="primary" 
+	onClick={undefined} 
+/>`}
 			</CodeSnippet>
 			<Typography variant={"text-label-small"}>Secondary</Typography>
 			<Fab configuration="secondary" onClick={undefined} />
 			<CodeSnippet>
-				{`<Fab configuration="secondary" onClick={undefined} />`}
+				{`
+<Fab 
+	configuration="secondary" 
+	onClick={undefined} 
+/>`}
 			</CodeSnippet>
 			<Typography variant={"text-label-small"}>Tertiary</Typography>
 			<Fab configuration="tertiary" onClick={undefined} />
 			<CodeSnippet>
-				{`<Fab configuration="tertiary" onClick={undefined} />`}
+				{`
+<Fab 
+	configuration="tertiary" 
+	onClick={undefined} 
+/>`}
 			</CodeSnippet>
 			<Typography variant={"text-label-large"}>FABs</Typography>
 			<Typography variant={"text-label-small"}>Surface</Typography>
 			<Fab size="medium" onClick={undefined} />
 			<CodeSnippet>
-				{`<Fab size="medium" onClick={undefined} />`}
+				{`
+<Fab 
+	size="medium" 
+	onClick={undefined} 
+/>`}
 			</CodeSnippet>
 			<Typography variant={"text-label-small"}>Primary</Typography>
 			<Fab size="medium" configuration="primary" onClick={undefined} />
 			<CodeSnippet>
-				{`<Fab size="medium" configuration="primary" onClick={undefined} />`}
+				{`
+<Fab 
+	size="medium"
+	configuration="primary" 
+	onClick={undefined} 
+/>`}
 			</CodeSnippet>
 			<Typography variant={"text-label-small"}>Secondary</Typography>
 			<Fab size="medium" configuration="secondary" onClick={undefined} />
 			<CodeSnippet>
-				{`<Fab size="medium" configuration="secondary" onClick={undefined} />`}
+				{`
+<Fab 
+	size="medium" 
+	configuration="secondary" 
+	onClick={undefined} 
+/>`}
 			</CodeSnippet>
 			<Typography variant={"text-label-small"}>Tertiary</Typography>
 			<Fab size="medium" configuration="tertiary" onClick={undefined} />
 			<CodeSnippet>
-				{`<Fab size="medium" configuration="tertiary" onClick={undefined} />`}
+				{`
+<Fab 
+	size="medium" 
+	configuration="tertiary" 
+	onClick={undefined} 
+/>`}
 			</CodeSnippet>
 			<Typography variant={"text-label-large"}>Large FABs</Typography>
 			<Typography variant={"text-label-small"}>Surface</Typography>
 			<Fab size="large" onClick={undefined} />
 			<CodeSnippet>
-				{`<Fab size="large" onClick={undefined} />`}
+				{`
+<Fab 
+	size="large" 
+	onClick={undefined} 
+/>`}
 			</CodeSnippet>
 			<Typography variant={"text-label-small"}>Primary</Typography>
 			<Fab size="large" configuration="primary" onClick={undefined} />
 			<CodeSnippet>
-				{`<Fab size="large" configuration="primary" onClick={undefined} />`}
+				{`
+<Fab 
+	size="large" 
+	configuration="primary" 
+	onClick={undefined} 
+/>`}
 			</CodeSnippet>
 			<Typography variant={"text-label-small"}>Secondary</Typography>
 			<Fab size="large" configuration="secondary" onClick={undefined} />
 			<CodeSnippet>
-				{`<Fab size="large" configuration="secondary" onClick={undefined} />`}
+				{`
+<Fab 
+	size="large" 
+	configuration="secondary" 
+	onClick={undefined} 
+/>`}
 			</CodeSnippet>
 			<Typography variant={"text-label-small"}>Tertiary</Typography>
 			<Fab size="large" configuration="tertiary" onClick={undefined} />
 			<CodeSnippet>
-				{`<Fab size="large" configuration="tertiary" onClick={undefined} />`}
+				{`
+<Fab 
+	size="large" 
+	configuration="tertiary" 
+	onClick={undefined} 
+/>`}
 			</CodeSnippet>
 		</div>
 	);
