@@ -55,6 +55,10 @@ function App() {
 	}, [_theme]);
 
 	useEffect(() => {
+		hljs.configure({
+			ignoreUnescapedHTML: true,
+		});
+
 		hljs.highlightAll();
 	}, []);
 

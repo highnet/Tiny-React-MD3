@@ -3802,22 +3802,22 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .tooltip {
 	display: flex;
 	flex-direction: column;
-	width: 31.2rem;
+	max-width: 31.2rem;
 	min-height: 8.8rem;
 	border-radius: 1.2rem;
 	gap: .8rem;
 	padding: 0rem 0rem .8rem;
-	max-width: 100%;
 	overflow: hidden;
 	z-index: 5;
+	text-align: left;
+	justify-content: space-around;
 }
 
 .tooltip {
 	background-color: var(--m3-sys-light-surface-container);
 	box-shadow: var(--m3-elevation-light-2);
 	color: var(--m3-sys-light-on-surface-variant);
-	text-align: left;
-	justify-content: space-around;
+
 }
 
 .tooltip-content {
@@ -3855,4 +3855,5 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .tooltip-with-trigger-component {
 	position: absolute;
 	pointer-events: none;
+	max-width: 10rem;
 }

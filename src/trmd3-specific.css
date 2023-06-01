@@ -440,6 +440,10 @@ html {
 	white-space: pre-wrap;
 }
 
+pre {
+	tab-size: 4rem;
+}
+
 /* COMPONENT FRAME TITLES */
 .component-frame-title-trmd3 {
 	position: relative;
@@ -541,7 +545,7 @@ html {
 	position: relative;
 	z-index: 1;
 	border: 1px solid gray;
-	width: 41.2rem;
+	max-width: 80%;
 }
 
 

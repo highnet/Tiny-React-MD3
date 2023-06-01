@@ -10,18 +10,7 @@ import Tooltip from "../Tooltip";
 const TooltipsFrame: React.FC = () => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
-	const [isDesktop, setIsDesktop] = useState(false);
 
-	useEffect(() => {
-		const handleResize = () => {
-			setIsDesktop(window.innerWidth >= 1024); // set isDesktop to true if viewport width is greater than or equal to 1024
-		};
-		handleResize(); // call handleResize initially to set isDesktop based on current viewport width
-		window.addEventListener("resize", handleResize); // add event listener to update isDesktop when viewport width changes
-		return () => {
-			window.removeEventListener("resize", handleResize); // remove event listener when component unmounts
-		};
-	}, []);
 	let _computedFrameClassName = new StringBuilder()
 		.add("flex-trmd3")
 		.add("flex-column-trmd3")
@@ -87,7 +76,7 @@ const TooltipsFrame: React.FC = () => {
 			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
 			<Typography variant={"text-label-small"}>Plain - Multi Line</Typography>
 			<Tooltip configuration="plain-multiline"></Tooltip>
-			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
+			<CodeSnippet>{`<Tooltip configuration="plain-multiline"></Tooltip>`}</CodeSnippet>
 			<Tooltip
 				title="TRMD3"
 				buttons={[
@@ -104,14 +93,30 @@ const TooltipsFrame: React.FC = () => {
 				Quickly transform your design kit prototypes into stunning and modern
 				web applications
 			</Tooltip>
-			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
-			<Typography variant={"text-label-small"}>Plain - Single Line</Typography>
+			<CodeSnippet>{`
+<Tooltip
+	title="TRMD3"
+	buttons={[
+			{
+				label: "Readme",
+				onClick: undefined,
+			},
+			{
+				label: "Docs",
+				onClick: undefined,
+			},
+			}
+>
+Quickly transform your design kit...
+</Tooltip>
+			`}</CodeSnippet>
+			<Typography variant={"text-label-small"}>x</Typography>
+			<Tooltip triggerComponent={<Button>Button</Button>}></Tooltip>
+			<CodeSnippet>{`<Tooltip triggerComponent={<Button>Button</Button>}></Tooltip>`}</CodeSnippet>
+			<Typography variant={"text-label-small"}>x</Typography>
 			<Tooltip triggerComponent={<Button>Button</Button>}></Tooltip>
 			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
-			<Typography variant={"text-label-small"}>Plain - Single Line</Typography>
-			<Tooltip triggerComponent={<Button>Button</Button>}></Tooltip>
-			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
-			<Typography variant={"text-label-small"}>Plain - Single Line</Typography>
+			<Typography variant={"text-label-small"}>x</Typography>
 			<Tooltip triggerComponent={<Button>Button</Button>}></Tooltip>
 			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
 		</div>
