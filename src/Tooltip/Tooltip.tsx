@@ -63,11 +63,12 @@ const Tooltip: React.FC<ITooltipProps> = ({
 	const triggerRef = useRef<HTMLDivElement>(null);
 
 	const handleSetTooltipVisible = () => {
-		if (tooltipRef.current) {
+		if (tooltipRef.current && window.innerWidth >= 768) {
 			tooltipRef.current.classList.toggle("invisible");
 			tooltipRef.current.classList.toggle("visible");
 		}
 	};
+
 	const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
 		if (tooltipRef.current && triggerRef.current) {
 			const tooltipWidth = tooltipRef.current.offsetWidth;

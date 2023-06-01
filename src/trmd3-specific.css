@@ -13,6 +13,11 @@ html {
 
 /* BODY */
 
+App {
+	overflow: hidden;
+	overflow-y: scroll;
+}
+
 .body-light-theme {
 	background-image: linear-gradient(
 		95deg,

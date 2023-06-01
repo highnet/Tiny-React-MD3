@@ -110,14 +110,21 @@ const TooltipsFrame: React.FC = () => {
 Quickly transform your design kit...
 </Tooltip>
 			`}</CodeSnippet>
-			<Typography variant={"text-label-small"}>x</Typography>
-			<Tooltip triggerComponent={<Button>Button</Button>}></Tooltip>
+			<Typography variant={"text-label-small"}>
+				Button With Tooltip (Desktop Only)
+			</Typography>
+			<Tooltip
+				configuration="plain-singleline"
+				triggerComponent={<Button>Button</Button>}
+			>
+				Click Me!
+			</Tooltip>
 			<CodeSnippet>{`<Tooltip triggerComponent={<Button>Button</Button>}></Tooltip>`}</CodeSnippet>
 			<Typography variant={"text-label-small"}>x</Typography>
-			<Tooltip triggerComponent={<Button>Button</Button>}></Tooltip>
+			<Tooltip triggerComponent={<Button>Button</Button>}>Tooltip</Tooltip>
 			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
 			<Typography variant={"text-label-small"}>x</Typography>
-			<Tooltip triggerComponent={<Button>Button</Button>}></Tooltip>
+			<Tooltip triggerComponent={<Button>Button</Button>}>Tooltip</Tooltip>
 			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
 		</div>
 	);
