@@ -3809,6 +3809,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	padding: 0rem 0rem .8rem;
 	max-width: 100%;
 	overflow: hidden;
+	z-index: 5;
 }
 
 .tooltip {

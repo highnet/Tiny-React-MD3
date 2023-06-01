@@ -50,7 +50,7 @@ const TooltipsFrame: React.FC = () => {
 			</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>Rich</Typography>
 			<Tooltip></Tooltip>
-			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
+			<CodeSnippet>{`<Tooltip></Tooltip>`}</CodeSnippet>
 			<Typography variant={"text-label-small"}>Rich - With Actions</Typography>
 			<Tooltip
 				buttons={[
@@ -66,7 +66,22 @@ const TooltipsFrame: React.FC = () => {
 					},
 				]}
 			></Tooltip>
-			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
+			<CodeSnippet>{`			
+<Tooltip
+	buttons={[
+		{
+			onClick: () => {
+				alert("TEST1");
+		},
+		},
+		{
+			onClick: () => {
+				alert("TEST2");
+		},
+			},
+	]}
+></Tooltip>
+			`}</CodeSnippet>
 			<Typography variant={"text-label-small"}>Plain - Single Line</Typography>
 			<Tooltip configuration="plain-singleline"></Tooltip>
 			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
