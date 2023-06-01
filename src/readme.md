@@ -481,3 +481,5 @@ The supported options of <code>{configuration}</code> are the following:
 ## 🚈 Navigation Rail
     
 ## ⏫ Top App Bars
+    
+## 🛠️ Tooltips
