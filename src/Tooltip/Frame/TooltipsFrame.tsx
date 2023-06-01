@@ -6,6 +6,15 @@ import CodeSnippet from "../../TRMD3/CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../../TRMD3/ComponentFrameTitle/ComponentFrameTitle";
 import Typography from "../../Typography/Typography";
 import Tooltip from "../Tooltip";
+import StackedCard from "../../Cards/StackedCard/StackedCard";
+import InputChip from "../../Chips/InputChip/InputChip";
+import AssistChip from "../../Chips/AssistChip/AssistChip";
+import RadioButton from "../../Radio Button/RadioButton";
+import Badge from "../../Badge/Badge";
+import Checkbox from "../../Checkbox/Checkbox";
+import Icon from "../../Icon/Icon";
+import Fab from "../../FABs/FAB/Fab";
+import Carousel from "../../Carousel/Carousel";
 
 const TooltipsFrame: React.FC = () => {
 	const _theme =
@@ -143,6 +152,10 @@ Quickly transform your design kit...
 	Click Me!
 </Tooltip>
 			`}</CodeSnippet>
+
+			<Tooltip configuration="plain-singleline" triggerComponent={<Carousel />}>
+				Click Me!
+			</Tooltip>
 		</div>
 	);
 };

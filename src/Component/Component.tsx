@@ -3,7 +3,14 @@ import { getPreferredScheme } from "../Gizmos/Themeing";
 import { StringBuilder } from "../Gizmos/StringBuilder";
 import { IComponentProps } from "./IComponentProps";
 
-const Component: React.FC<IComponentProps> = ({ className, id, children }) => {
+const Component: React.FC<IComponentProps> = ({
+	className,
+	id,
+	children,
+	onMouseEnter,
+	onMouseLeave,
+	onMouseMove,
+}) => {
 	const [_className] = useState(className || "");
 	const [_id] = useState(id || undefined);
 
@@ -17,7 +24,13 @@ const Component: React.FC<IComponentProps> = ({ className, id, children }) => {
 		.toString();
 
 	return (
-		<div id={_id} className={_computedComponentClassName}>
+		<div
+			id={_id}
+			className={_computedComponentClassName}
+			onMouseEnter={onMouseEnter}
+			onMouseLeave={onMouseLeave}
+			onMouseMove={onMouseMove}
+		>
 			{children}
 		</div>
 	);

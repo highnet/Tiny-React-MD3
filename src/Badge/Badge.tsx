@@ -37,6 +37,9 @@ const Badge: React.FC<IBadgeProps> = ({
 	configuration,
 	xOffset,
 	yOffset,
+	onMouseEnter,
+	onMouseLeave,
+	onMouseMove,
 }) => {
 	const [_id] = useState(id || undefined);
 	const [_className] = useState(className || "");
@@ -70,6 +73,9 @@ const Badge: React.FC<IBadgeProps> = ({
 			style={{
 				transform: `translate(${_computedXOffset}, ${_computedYOffset})`,
 			}}
+			onMouseEnter={onMouseEnter}
+			onMouseLeave={onMouseLeave}
+			onMouseMove={onMouseMove}
 		>
 			<Typography
 				variant="text-label-small"

@@ -23,6 +23,9 @@ const StackedCard: React.FC<IStackedCardsProps> = ({
 	secondaryButtonLabel,
 	imageSrc,
 	onHeaderIconButtonClick,
+	onMouseEnter,
+	onMouseLeave,
+	onMouseMove,
 }) => {
 	const [_id] = useState(id || undefined);
 	const [_className] = useState(className || "");
@@ -74,11 +77,22 @@ const StackedCard: React.FC<IStackedCardsProps> = ({
 	};
 
 	return (
-		<div id={_id} className={_computedComponentClassName}>
+		<div
+			id={_id}
+			className={_computedComponentClassName}
+			onMouseEnter={onMouseEnter}
+			onMouseLeave={onMouseLeave}
+			onMouseMove={onMouseMove}
+		>
 			<div className="stacked-card-header">
 				<div className="stacked-card-header-content">
 					<div className="stacked-card-header-content-monogram ">
-						<div className={"stacked-card-header-content-monogram-initial stacked-card-header-content-monogram-initial-" + _theme }>
+						<div
+							className={
+								"stacked-card-header-content-monogram-initial stacked-card-header-content-monogram-initial-" +
+								_theme
+							}
+						>
 							<Typography variant="text-title-medium">{_initial}</Typography>
 						</div>
 					</div>
@@ -98,7 +112,10 @@ const StackedCard: React.FC<IStackedCardsProps> = ({
 						</Typography>
 					</div>
 				</div>
-				<div onClick={handleHeaderIconButtonClick} className="stacked-card-header-icon-button">
+				<div
+					onClick={handleHeaderIconButtonClick}
+					className="stacked-card-header-icon-button"
+				>
 					<Icon>{_iconButtonIconName}</Icon>
 				</div>
 			</div>
@@ -122,7 +139,10 @@ const StackedCard: React.FC<IStackedCardsProps> = ({
 				</div>
 				<div className="stacked-card-text-content-supporting-text">
 					<Typography
-						className={"stacked-card-text-content-supporting-text-text stacked-card-text-content-supporting-text-text-" + _theme }
+						className={
+							"stacked-card-text-content-supporting-text-text stacked-card-text-content-supporting-text-text-" +
+							_theme
+						}
 						variant="text-body-medium"
 					>
 						{_text}

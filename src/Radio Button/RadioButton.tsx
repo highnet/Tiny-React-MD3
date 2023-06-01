@@ -28,6 +28,9 @@ const RadioButton: React.FC<IRadioButtonProps> = ({
 	name,
 	value,
 	defaultChecked,
+	onMouseEnter,
+	onMouseLeave,
+	onMouseMove,
 }) => {
 	const [_disabled] = useState(disabled || false);
 	const [_id] = useState(id || undefined);
@@ -64,6 +67,9 @@ const RadioButton: React.FC<IRadioButtonProps> = ({
 				onClick?.(e);
 				click();
 			}}
+			onMouseEnter={onMouseEnter}
+			onMouseLeave={onMouseLeave}
+			onMouseMove={onMouseMove}
 		>
 			<input
 				className={_computedComponentInputClassName}
@@ -72,7 +78,6 @@ const RadioButton: React.FC<IRadioButtonProps> = ({
 				value={_value}
 				defaultChecked={_defaultChecked}
 			/>
-
 		</div>
 	);
 };

@@ -8,6 +8,9 @@ const Icon: React.FC<IIconProps> = ({
 	id,
 	className,
 	onClick,
+	onMouseEnter,
+	onMouseLeave,
+	onMouseMove,
 }) => {
 	const [_id] = useState(id || undefined);
 	const [_className] = useState(className || "");
@@ -33,6 +36,9 @@ const Icon: React.FC<IIconProps> = ({
 				onClick?.(e);
 				click();
 			}}
+			onMouseEnter={onMouseEnter}
+			onMouseLeave={onMouseLeave}
+			onMouseMove={onMouseMove}
 		>
 			<span id={_id} className={_computedComponentClassName}>
 				{children}

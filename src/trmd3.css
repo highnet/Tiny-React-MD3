@@ -1962,6 +1962,7 @@ html {
 	padding-left: 0.6rem;
 	padding-right: 0.6rem;
 	margin: 0 auto;
+	user-select: none;
 }
 
 /* BADGES / LABEL TEXT / SINGLE DIGIT */
@@ -2009,6 +2010,10 @@ input[type="radio"] {
 	display: flex;
 	align-items: center;
 	transition: all 300ms;
+}
+
+.radio-button {
+	display: flex;
 }
 
 /* RADIO BUTTONS / DISABLED */

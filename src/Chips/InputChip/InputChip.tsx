@@ -37,6 +37,9 @@ const InputChip: React.FC<IInputChipProps> = ({
 	avatar,
 	avatarIconNameDeselected,
 	avatarIconNameSelected,
+	onMouseEnter,
+	onMouseLeave,
+	onMouseMove,
 }) => {
 	const [_id] = useState(id || undefined);
 	const [_className] = useState(className || "");
@@ -86,6 +89,9 @@ const InputChip: React.FC<IInputChipProps> = ({
 				onClick?.(e);
 				handleClick();
 			}}
+			onMouseEnter={onMouseEnter}
+			onMouseLeave={onMouseLeave}
+			onMouseMove={onMouseMove}
 		>
 			{_avatar ? (
 				<Icon className="avatar-on-inputchip">

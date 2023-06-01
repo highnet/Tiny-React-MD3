@@ -26,6 +26,9 @@ const Carousel: React.FC<ICarouselProps> = ({
 	],
 	width = 41.2,
 	uniformWidths = false,
+	onMouseEnter,
+	onMouseLeave,
+	onMouseMove,
 }) => {
 	const [_id] = useState(id);
 	const [_className] = useState(className);
@@ -88,7 +91,12 @@ const Carousel: React.FC<ICarouselProps> = ({
 		.toString();
 
 	return (
-		<div className="carousel-container">
+		<div
+			className="carousel-container"
+			onMouseEnter={onMouseEnter}
+			onMouseLeave={onMouseLeave}
+			onMouseMove={onMouseMove}
+		>
 			<div
 				id={_id}
 				className={computedComponentClassName}

@@ -34,6 +34,9 @@ const Checkbox: React.FC<ICheckboxProps> = ({
 	configuration,
 	onChange,
 	selected,
+	onMouseEnter,
+	onMouseLeave,
+	onMouseMove,
 }) => {
 	const [_disabled] = useState(disabled || false);
 	const [_id] = useState(id || undefined);
@@ -81,6 +84,9 @@ const Checkbox: React.FC<ICheckboxProps> = ({
 				handleClick();
 				onChange?.(e);
 			}}
+			onMouseEnter={onMouseEnter}
+			onMouseLeave={onMouseLeave}
+			onMouseMove={onMouseMove}
 		>
 			{_selected ? (
 				<Icon className={_computedComponentIconClassName}>check</Icon>

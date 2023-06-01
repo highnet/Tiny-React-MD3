@@ -11,6 +11,9 @@ const Fab: React.FC<IFabProps> = ({
 	configuration,
 	size,
 	iconName,
+	onMouseEnter,
+	onMouseLeave,
+	onMouseMove,
 }) => {
 	const [_id] = useState(id || undefined);
 	const [_className] = useState(className || "");
@@ -68,6 +71,9 @@ const Fab: React.FC<IFabProps> = ({
 				onClick?.(e);
 				click();
 			}}
+			onMouseEnter={onMouseEnter}
+			onMouseLeave={onMouseLeave}
+			onMouseMove={onMouseMove}
 			ref={boxRef}
 		>
 			<Icon className={"icon-on-fab icon-on-fab-" + _theme}>{_iconName}</Icon>

@@ -16,6 +16,9 @@ const AssistChip: React.FC<IAssistChipProps> = ({
 	iconName,
 	iconSrc,
 	elevated,
+	onMouseEnter,
+	onMouseLeave,
+	onMouseMove,
 }) => {
 	const [_id] = useState(id || undefined);
 	const [_className] = useState(className || "");
@@ -64,6 +67,9 @@ const AssistChip: React.FC<IAssistChipProps> = ({
 				onClick?.(e);
 				handleClick();
 			}}
+			onMouseEnter={onMouseEnter}
+			onMouseLeave={onMouseLeave}
+			onMouseMove={onMouseMove}
 		>
 			{_iconType === "icon" ? (
 				<Icon className="icon-on-assistchip">{_iconName}</Icon>

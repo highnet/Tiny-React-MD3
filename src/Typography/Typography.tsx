@@ -21,6 +21,9 @@ const Typography: React.FC<ITypographyProps> = ({
 	className,
 	variant,
 	children,
+	onMouseEnter,
+	onMouseLeave,
+	onMouseMove,
 }) => {
 	const [_id] = useState(id || undefined);
 	const [_className] = useState(className || "");
@@ -41,7 +44,13 @@ const Typography: React.FC<ITypographyProps> = ({
 		.toString();
 
 	return (
-		<div id={_id} className={_computedComponentClassName}>
+		<div
+			id={_id}
+			className={_computedComponentClassName}
+			onMouseEnter={onMouseEnter}
+			onMouseLeave={onMouseLeave}
+			onMouseMove={onMouseMove}
+		>
 			{children}
 		</div>
 	);

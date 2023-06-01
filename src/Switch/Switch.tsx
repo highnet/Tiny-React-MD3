@@ -35,6 +35,9 @@ const Switch: React.FC<ISwitchProps> = ({
 	icon,
 	iconNameSelected,
 	iconNameDeselected,
+	onMouseEnter,
+	onMouseLeave,
+	onMouseMove,
 }) => {
 	const [_disabled] = useState(disabled || false);
 	const [_id] = useState(id || undefined);
@@ -104,19 +107,26 @@ const Switch: React.FC<ISwitchProps> = ({
 			}}
 			id={_id}
 			className={_computedComponentClassName}
+			onMouseEnter={onMouseEnter}
+			onMouseLeave={onMouseLeave}
+			onMouseMove={onMouseMove}
 		>
 			<div className={_computedComponentTrackClassName}>
 				<div className={_computedComponentHandleClassName}>
 					<div className={_computedComponentHandleOverlayClassName}>
 						{_icon && _selected ? (
-							<Icon className={_computedComponentIconClassName}>{_iconNameSelected}</Icon>
-							) : (
-								""
+							<Icon className={_computedComponentIconClassName}>
+								{_iconNameSelected}
+							</Icon>
+						) : (
+							""
 						)}
 						{_icon && !_selected ? (
-							<Icon className={_computedComponentIconClassName}>{_iconNameDeselected}</Icon>
-							) : (
-								""
+							<Icon className={_computedComponentIconClassName}>
+								{_iconNameDeselected}
+							</Icon>
+						) : (
+							""
 						)}
 					</div>
 				</div>
