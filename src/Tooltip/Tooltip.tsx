@@ -20,13 +20,18 @@ const Tooltip: React.FC<ITooltipProps> = ({
 		children ||
 			"Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
 	);
-	const [_configuration] = useState(configuration || "rich");
+	const [_configuration] = useState(
+		triggerComponent ? "plain-multiline" : configuration || "rich"
+	);
 	const [_title] = useState(title || "Title");
 	const [_buttons] = useState(buttons || undefined);
 	const [_showActions] = useState(!!_buttons);
 
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
+
+	const tooltipRef = useRef<HTMLDivElement>(null);
+	const triggerRef = useRef<HTMLDivElement>(null);
 
 	let _computedComponentClassName = new StringBuilder()
 		.add("tooltip")
@@ -59,8 +64,6 @@ const Tooltip: React.FC<ITooltipProps> = ({
 			{_title}
 		</Typography>
 	);
-	const tooltipRef = useRef<HTMLDivElement>(null);
-	const triggerRef = useRef<HTMLDivElement>(null);
 
 	const handleSetTooltipVisible = () => {
 		if (tooltipRef.current && window.innerWidth >= 768) {
