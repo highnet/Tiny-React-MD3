@@ -33,6 +33,7 @@ import TopAppBar from "./App Bars/Top App Bar/TopAppBar";
 import TopAppBarsFrame from "./App Bars/Top App Bar/Frame/TopAppBarsFrame";
 import Tooltip from "./Tooltip/Tooltip";
 import TooltipsFrame from "./Tooltip/Frame/TooltipsFrame";
+import TextField from "./TextField/TextField";
 
 function App() {
 	console.log(`	👋 Welcome to TRMD3! 👋	`);
@@ -267,6 +268,7 @@ function App() {
 			<div id="section-11-trmd3" className="section-trmd3">
 				<TooltipsFrame />
 			</div>
+			<TextField></TextField>
 			<BottomAppBar
 				icons={[
 					{
