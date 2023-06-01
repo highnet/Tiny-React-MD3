@@ -3914,6 +3914,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	letter-spacing: 0.5px;
 	border: none;
 	background-color: transparent;
+	height: 100%;
 }
 
 .text-field-container{

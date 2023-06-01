@@ -29,7 +29,9 @@ const TextField: React.FC<ITextFieldProps> = ({
 	const [_trailingIcon] = useState(trailingIcon || true);
 	const [_label] = useState(label || "Label");
 	const [_placeholder] = useState(placeholder || undefined);
-	const [_input] = useState(input || "Input");
+	const [_input] = useState(
+		input || _textConfiguration === "label-input" ? "Input" : "Label"
+	);
 
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
@@ -40,11 +42,14 @@ const TextField: React.FC<ITextFieldProps> = ({
 		.add(_className)
 		.toString();
 
+	// <>&nbsp;</>
 	return (
 		<div className={_computedComponentClassName}>
 			<div className="text-field-container">
 				<div className="text-field-content">
-					<Typography variant="text-body-small">{_label}</Typography>
+					<Typography variant="text-body-small">
+						{_textConfiguration === "label-input" ? _label : ""}
+					</Typography>
 					<input
 						className="text-field-input"
 						id={_id}
@@ -61,7 +66,7 @@ const TextField: React.FC<ITextFieldProps> = ({
 					<Icon className="icon-on-text-field">cancel</Icon>
 				</div>
 			</div>
-			<div className="text-field-active-indicator"></div>
+			<div className="text-field-"></div>
 		</div>
 	);
 };
