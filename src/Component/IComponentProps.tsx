@@ -9,7 +9,7 @@ id: a string that represents the ID of the component.
 className: a string that represents the class name of the component.
 */
 
-export interface IComponentProps {
+export interface IComponentProps extends React.HTMLAttributes<HTMLElement> {
 	disabled?: boolean;
 	children?: React.ReactNode;
 	id?: string;
