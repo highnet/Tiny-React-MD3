@@ -3811,11 +3811,26 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	justify-content: space-around;
 }
 
-.tooltip {
+.tooltip.tooltip-light-theme {
 	background-color: var(--m3-sys-light-surface-container);
 	box-shadow: var(--m3-elevation-light-2);
 	color: var(--m3-sys-light-on-surface-variant);
+}
 
+.tooltip-plain.tooltip-light-theme {
+	background-color: var(--m3-sys-light-inverse-surface);
+	color: var(--m3-sys-light-inverse-on-surface);
+}
+
+.tooltip.tooltip-dark-theme {
+	background-color: var(--m3-sys-dark-surface-container);
+	box-shadow: var(--m3-elevation-dark-2);
+	color: var(--m3-sys-dark-on-surface-variant);
+}
+
+.tooltip-plain.tooltip-dark-theme {
+	background-color: var(--m3-sys-dark-inverse-surface);
+	color: var(--m3-sys-dark-inverse-on-surface);
 }
 
 .tooltip-content {
@@ -3834,8 +3849,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 }
 
 .tooltip-plain {
-	background-color: var(--m3-sys-light-inverse-surface);
-	color: var(--m3-sys-light-inverse-on-surface);
+
 	min-height: auto;
 	height: fit-content;
 	box-shadow: none;
