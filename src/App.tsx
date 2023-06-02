@@ -268,8 +268,6 @@ function App() {
 			<div id="section-11-trmd3" className="section-trmd3">
 				<TooltipsFrame />
 			</div>
-			<TextField textConfiguration="label-input"></TextField>
-			<TextField textConfiguration="label-text"></TextField>
 
 			<BottomAppBar
 				icons={[
@@ -305,3 +303,8 @@ function App() {
 	);
 }
 export default App;
+
+/*
+			<TextField textConfiguration="label-input"></TextField>
+			<TextField textConfiguration="label-text"></TextField>
+*/
