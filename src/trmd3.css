@@ -3886,7 +3886,6 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	flex-direction: column;
 	width: 21rem;
 	border-radius: .4rem .4rem 0rem 0rem;
-	margin: 20rem;
 }
 
 .icon-on-text-field {
@@ -3925,4 +3924,8 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	width: 100%;
 	height: .1rem;
 	background-color: var(--m3-sys-light-on-surface-variant);
+}
+
+.text-field > * {
+	text-align: left;
 }
