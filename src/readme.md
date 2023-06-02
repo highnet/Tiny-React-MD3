@@ -483,3 +483,5 @@ The supported options of <code>{configuration}</code> are the following:
 ## ⏫ Top App Bars
     
 ## 🛠️ Tooltips
+    
+## 📜 Text Fields
