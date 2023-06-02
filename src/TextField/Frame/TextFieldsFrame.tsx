@@ -36,15 +36,57 @@ const ComponentsFrame: React.FC = () => {
 			<ComponentFrameTitle link="https://www.highnet.xyz">
 				Components
 			</ComponentFrameTitle>
-			<Typography variant={"text-label-small"}>Default</Typography>
+            <Typography variant={"text-label-small"}>Input</Typography>
+            <TextField textConfiguration="input"></TextField>
+			<CodeSnippet>{`
+<TextField 
+    textConfiguration="input"
+>
+</TextField>
+            `}</CodeSnippet>
+			<Typography variant={"text-label-small"}>Label and Input</Typography>
             <TextField textConfiguration="label-input"></TextField>
-			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
-
-            <Typography variant={"text-label-small"}>Default</Typography>
-            <TextField textConfiguration="label-text"></TextField>
-			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
-
-
+			<CodeSnippet>{`
+<TextField 
+    textConfiguration="label-input"
+>
+</TextField>
+            `}</CodeSnippet>
+            <Typography variant={"text-label-small"}>Label and Placeholder</Typography>
+            <TextField textConfiguration="label-placeholder" ></TextField>
+			<CodeSnippet>{`
+<TextField
+    textConfiguration="label-placeholder"
+>
+</TextField>
+            `}</CodeSnippet>
+             <Typography variant={"text-label-small"}>Input - Leading Icon</Typography>
+            <TextField textConfiguration="input" leadingIconName="Search"></TextField>
+			<CodeSnippet>{`
+<TextField
+    textConfiguration="input" 
+    leadingIconName="Search
+>
+</TextField>
+            `}</CodeSnippet>
+			<Typography variant={"text-label-small"}>Label and Input - Leading Icon</Typography>
+            <TextField textConfiguration="label-input" leadingIconName="Search"></TextField>
+			<CodeSnippet>{`
+ <TextField
+    textConfiguration="label-input" 
+    leadingIconName="Search"
+>
+</TextField>
+            `}</CodeSnippet>
+            <Typography variant={"text-label-small"}>Label and Placeholder - Leading Icon</Typography>
+            <TextField textConfiguration="label-placeholder" leadingIconName="Search"></TextField>
+			<CodeSnippet>{`
+<TextField 
+    textConfiguration="label-placeholder
+    leadingIconName="Search"
+>
+</TextField>
+            `}</CodeSnippet>
 		</div>
 	);
 };

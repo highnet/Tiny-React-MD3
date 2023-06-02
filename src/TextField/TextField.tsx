@@ -17,8 +17,8 @@ const TextField: React.FC<ITextFieldProps> = ({
     leadingIconName,
     trailingIcon = true,
     label = "Label",
-    placeholder,
-    input = textConfiguration === "label-input" ? "Input" : "Label",
+    placeholder = textConfiguration === "label-placeholder" ? "Placeholder" : "",
+    input =  textConfiguration !== "label-placeholder" ? "Input" : "",
 }) => {
     const inputRef = useRef<HTMLInputElement>(null);
     const [_className] = useState(className || "");
@@ -27,8 +27,9 @@ const TextField: React.FC<ITextFieldProps> = ({
     const [_leadingIconName] = useState(leadingIconName || undefined);
     const [_trailingIcon] = useState(trailingIcon);
     const [_label] = useState(label);
-    const [_placeholder] = useState(placeholder || undefined);
+    const [_placeholder] = useState(placeholder);
     const [_input] = useState(input);
+	const [_defaultValueResetted, setDefaultValueReseted] = useState(false);
 
     const _theme =
         localStorage.getItem("theme") || getPreferredScheme() + "-theme";
@@ -36,21 +37,30 @@ const TextField: React.FC<ITextFieldProps> = ({
     let _computedComponentClassName = new StringBuilder()
         .add("text-field")
         .add("text-field-" + _theme)
+		.add("text-field-" + _configuration)
+		.add("text-field-with-" + _textConfiguration)
         .add(_className)
         .toString();
 
-    const handleIconClick = () => {
+    const handleResetTextFieldValue = () => {
         if (inputRef.current) {
             inputRef.current.value = "";
         }
     };
+
+	const handleFocus = (event: React.FocusEvent<HTMLInputElement>) => {
+  		if (!_defaultValueResetted) {
+    		handleResetTextFieldValue();
+			setDefaultValueReseted(true);
+ 		}
+	};
 
     return (
         <div className={_computedComponentClassName}>
             <div className="text-field-container">
                 <div className="text-field-content">
                     <Typography variant="text-body-small">
-                        {_textConfiguration === "label-input" ? _label : ""}
+                        {(_textConfiguration === "label-input" || _textConfiguration === "label-placeholder") ? _label : ""}
                     </Typography>
                     <input
                         className="text-field-input"
@@ -61,6 +71,7 @@ const TextField: React.FC<ITextFieldProps> = ({
                         onClick={onClick}
                         defaultValue={_input}
                         placeholder={_placeholder}
+						onFocus={handleFocus}
                     >
                         {children}
                     </input>
@@ -69,14 +80,14 @@ const TextField: React.FC<ITextFieldProps> = ({
                     <div>
                         <Icon
                             className="icon-on-text-field"
-                            onClick={handleIconClick}
+                            onClick={handleResetTextFieldValue}
                         >
                             cancel
                         </Icon>
                     </div>
                 )}
             </div>
-            <div className="text-field-"></div>
+            <div className="text-field-active-indicator"></div>
         </div>
     );
 };
