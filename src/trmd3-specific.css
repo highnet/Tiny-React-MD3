@@ -299,7 +299,7 @@ html {
 
 .frame-light-theme-trmd3 {
 	color: var(--m3-sys-light-on-surface);
-	background-color: rgba(243, 236, 244, 0.7);
+	background-color: var(--m3-sys-light-surface);
 	box-shadow: var(--m3-elevation-light-1);
 }
 
