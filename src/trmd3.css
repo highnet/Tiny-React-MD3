@@ -3934,12 +3934,16 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	background-color: var(--m3-sys-light-surface);
 }
 
-.text-field-outlined:hover.text-field-active.text-field-light-theme {
-	box-shadow: inset 0 0 0 .2rem var(--m3-sys-light-primary);
+.text-field-outlined.text-field-active.text-field-light-theme {
+	box-shadow: inset 0 0 0 .2rem var(--m3-sys-light-primary) !important;
 }
 
 .text-field-outlined:hover.text-field-light-theme {
 	box-shadow: inset 0 0 0 .2rem var(--m3-sys-light-on-surface);
+}
+
+.text-field-outlined.text-field-error.text-field-light-theme {
+	box-shadow: inset 0 0 0 .2rem var(--m3-sys-light-error) !important;
 }
 
 .label-on-text-field {
@@ -3980,4 +3984,12 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .text-field-disabled{
 	pointer-events: none;
 	opacity: 38%;
+}
+
+.text-field-error .label-on-text-field {
+  color: red;
+}
+
+.text-field-error .trailing-icon-on-text-field {
+	color: red;
 }

@@ -14,8 +14,8 @@ const ComponentsFrame: React.FC = () => {
 		.add("flex-column-trmd3")
 		.add("frame-trmd3")
 		.add("frame-" + _theme + "-trmd3")
-		.add("component-frame-trmd3")
-		.add("component-frame-" + _theme + "-trmd3")
+		.add("text-fields-frame-trmd3")
+		.add("text-fields-frame-" + _theme + "-trmd3")
 		.toString();
 
 	let _computedTrmd3SectionTitlesClassName = new StringBuilder()
@@ -36,41 +36,33 @@ const ComponentsFrame: React.FC = () => {
 				Text Fields
 			</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>Input, Filled</Typography>
-			<TextField configuration="filled" textConfiguration="input"></TextField>
-			<CodeSnippet>{`
-<TextField
-    configuration="filled"
-    textConfiguration="input"
->
-</TextField>
-            `}</CodeSnippet>
-			<Typography variant={"text-label-small"}>
-				Input, Filled, No Trailing Icon
-			</Typography>
 			<TextField
 				configuration="filled"
 				textConfiguration="input"
-				trailingIcon={false}
+				validRegex="^[0-9]+$"
 			></TextField>
 			<CodeSnippet>{`
 <TextField
     configuration="filled"
     textConfiguration="input"
-	trailingIcon={false}
+	validRegex="[0-9]+"
 >
 </TextField>
             `}</CodeSnippet>
+
 			<Typography variant={"text-label-small"}>
 				Label and Input, Filled
 			</Typography>
 			<TextField
 				configuration="filled"
 				textConfiguration="label-input"
+				validRegex="^[0-9]+$"
 			></TextField>
 			<CodeSnippet>{`
 <TextField
     configuration="filled"
     textConfiguration="label-input"
+	validRegex="^[0-9]+$"
 >
 </TextField>
             `}</CodeSnippet>
@@ -81,12 +73,14 @@ const ComponentsFrame: React.FC = () => {
 				configuration="filled"
 				textConfiguration="label-input"
 				trailingIcon={false}
+				validRegex="^[0-9]+$"
 			></TextField>
 			<CodeSnippet>{`
 <TextField
     configuration="filled"
     textConfiguration="label-input"
 	trailingIcon={false}
+	validRegex="^[0-9]+$"
 >
 </TextField>
             `}</CodeSnippet>
@@ -96,11 +90,13 @@ const ComponentsFrame: React.FC = () => {
 			<TextField
 				configuration="filled"
 				textConfiguration="label-placeholder"
+				validRegex="^[0-9]+$"
 			></TextField>
 			<CodeSnippet>{`
 <TextField
     configuration="filled"
     textConfiguration="label-placeholder"
+	validRegex="^[0-9]+$"
 >
 </TextField>
             `}</CodeSnippet>
@@ -111,12 +107,14 @@ const ComponentsFrame: React.FC = () => {
 				configuration="filled"
 				textConfiguration="label-placeholder"
 				trailingIcon={false}
+				validRegex="^[0-9]+$"
 			></TextField>
 			<CodeSnippet>{`
 <TextField
     configuration="filled"
     textConfiguration="label-placeholder"
 	trailingIcon={false}
+	validRegex="^[0-9]+$"
 >
 </TextField>
             `}</CodeSnippet>
@@ -127,33 +125,18 @@ const ComponentsFrame: React.FC = () => {
 				configuration="filled"
 				textConfiguration="input"
 				leadingIconName="search"
+				validRegex="^[0-9]+$"
 			></TextField>
 			<CodeSnippet>{`
 <TextField
     configuration="filled"
     textConfiguration="input" 
     leadingIconName="search"
+	validRegex="^[0-9]+$"
 >
 </TextField>
             `}</CodeSnippet>
-			<Typography variant={"text-label-small"}>
-				Input - Leading Icon, Filled, No Trailing Icon
-			</Typography>
-			<TextField
-				configuration="filled"
-				textConfiguration="input"
-				leadingIconName="search"
-				trailingIcon={false}
-			></TextField>
-			<CodeSnippet>{`
-<TextField
-    configuration="filled"
-    textConfiguration="input" 
-    leadingIconName="search"
-	trailingIcon={false}
->
-</TextField>
-            `}</CodeSnippet>
+
 			<Typography variant={"text-label-small"}>
 				Label and Input - Leading Icon, Filled
 			</Typography>
@@ -161,12 +144,14 @@ const ComponentsFrame: React.FC = () => {
 				configuration="filled"
 				textConfiguration="label-input"
 				leadingIconName="search"
+				validRegex="^[0-9]+$"
 			></TextField>
 			<CodeSnippet>{`
  <TextField
     configuration="filled"
     textConfiguration="label-input" 
     leadingIconName="search"
+	validRegex="^[0-9]+$"
 >
 </TextField>
             `}</CodeSnippet>
@@ -178,6 +163,7 @@ const ComponentsFrame: React.FC = () => {
 				textConfiguration="label-input"
 				leadingIconName="search"
 				trailingIcon={false}
+				validRegex="^[0-9]+$"
 			></TextField>
 			<CodeSnippet>{`
  <TextField
@@ -185,6 +171,7 @@ const ComponentsFrame: React.FC = () => {
     textConfiguration="label-input" 
     leadingIconName="search"
 	trailingIcon={false}
+	validRegex="^[0-9]+$"
 >
 </TextField>
             `}</CodeSnippet>
@@ -195,12 +182,14 @@ const ComponentsFrame: React.FC = () => {
 				configuration="filled"
 				textConfiguration="label-placeholder"
 				leadingIconName="search"
+				validRegex="^[0-9]+$"
 			></TextField>
 			<CodeSnippet>{`
 <TextField
     configuration="filled"
     textConfiguration="label-placeholder"
     leadingIconName="search"
+	validRegex="^[0-9]+$"
 >
 </TextField>
             `}</CodeSnippet>
@@ -212,6 +201,7 @@ const ComponentsFrame: React.FC = () => {
 				textConfiguration="label-placeholder"
 				leadingIconName="search"
 				trailingIcon={false}
+				validRegex="^[0-9]+$"
 			></TextField>
 			<CodeSnippet>{`
 <TextField
@@ -219,15 +209,21 @@ const ComponentsFrame: React.FC = () => {
     textConfiguration="label-placeholder"
     leadingIconName="search"
 	trailingIcon={false}
-	>
+	validRegex="^[0-9]+$"
+>
 </TextField>
             `}</CodeSnippet>
 			<Typography variant={"text-label-small"}>Input, Outlined</Typography>
-			<TextField configuration="outlined" textConfiguration="input"></TextField>
+			<TextField
+				configuration="outlined"
+				textConfiguration="input"
+				validRegex="^[0-9]+$"
+			></TextField>
 			<CodeSnippet>{`
 <TextField
     configuration="outlined"
     textConfiguration="input"
+	validRegex="^[0-9]+$"
 >
 </TextField>
             `}</CodeSnippet>
@@ -238,12 +234,14 @@ const ComponentsFrame: React.FC = () => {
 				configuration="outlined"
 				textConfiguration="input"
 				trailingIcon={false}
+				validRegex="^[0-9]+$"
 			></TextField>
 			<CodeSnippet>{`
 <TextField
     configuration="outlined"
     textConfiguration="input"
 	trailingIcon={false}
+	validRegex="^[0-9]+$"
 >
 </TextField>
             `}</CodeSnippet>
@@ -253,11 +251,13 @@ const ComponentsFrame: React.FC = () => {
 			<TextField
 				configuration="outlined"
 				textConfiguration="label-input"
+				validRegex="^[0-9]+$"
 			></TextField>
 			<CodeSnippet>{`
 <TextField
     configuration="outlined"
     textConfiguration="label-input"
+	validRegex="^[0-9]+$"
 >
 </TextField>
             `}</CodeSnippet>
@@ -268,12 +268,14 @@ const ComponentsFrame: React.FC = () => {
 				configuration="outlined"
 				textConfiguration="label-input"
 				trailingIcon={false}
+				validRegex="^[0-9]+$"
 			></TextField>
 			<CodeSnippet>{`
 <TextField
     configuration="outlined"
     textConfiguration="label-input"
 	trailingIcon={false}
+	validRegex="^[0-9]+$"
 >
 </TextField>
             `}</CodeSnippet>
@@ -283,11 +285,13 @@ const ComponentsFrame: React.FC = () => {
 			<TextField
 				configuration="outlined"
 				textConfiguration="label-placeholder"
+				validRegex="^[0-9]+$"
 			></TextField>
 			<CodeSnippet>{`
 <TextField
     configuration="outlined"
     textConfiguration="label-placeholder"
+	validRegex="^[0-9]+$"
 >
 </TextField>
             `}</CodeSnippet>
@@ -298,12 +302,14 @@ const ComponentsFrame: React.FC = () => {
 				configuration="outlined"
 				textConfiguration="label-placeholder"
 				trailingIcon={false}
+				validRegex="^[0-9]+$"
 			></TextField>
 			<CodeSnippet>{`
 <TextField
     configuration="outlined"
     textConfiguration="label-placeholder"
 	trailingIcon={false}
+	validRegex="^[0-9]+$"
 >
 </TextField>
             `}</CodeSnippet>
@@ -314,12 +320,14 @@ const ComponentsFrame: React.FC = () => {
 				configuration="outlined"
 				textConfiguration="input"
 				leadingIconName="search"
+				validRegex="^[0-9]+$"
 			></TextField>
 			<CodeSnippet>{`
 <TextField
     configuration="Outlined"
     textConfiguration="input" 
     leadingIconName="search"
+	validRegex="^[0-9]+$"
 >
 </TextField>
             `}</CodeSnippet>
@@ -331,6 +339,7 @@ const ComponentsFrame: React.FC = () => {
 				textConfiguration="input"
 				leadingIconName="search"
 				trailingIcon={false}
+				validRegex="^[0-9]+$"
 			></TextField>
 			<CodeSnippet>{`
 <TextField
@@ -338,6 +347,7 @@ const ComponentsFrame: React.FC = () => {
     textConfiguration="input" 
     leadingIconName="search"
 	trailingIcon={false}
+	validRegex="^[0-9]+$"
 >
 </TextField>
             `}</CodeSnippet>
@@ -348,12 +358,14 @@ const ComponentsFrame: React.FC = () => {
 				configuration="outlined"
 				textConfiguration="label-input"
 				leadingIconName="search"
+				validRegex="^[0-9]+$"
 			></TextField>
 			<CodeSnippet>{`
  <TextField
     configuration="outlined"
     textConfiguration="label-input" 
     leadingIconName="search"
+	validRegex="^[0-9]+$"
 >
 </TextField>
             `}</CodeSnippet>
@@ -365,6 +377,7 @@ const ComponentsFrame: React.FC = () => {
 				textConfiguration="label-input"
 				leadingIconName="search"
 				trailingIcon={false}
+				validRegex="^[0-9]+$"
 			></TextField>
 			<CodeSnippet>{`
  <TextField
@@ -372,6 +385,7 @@ const ComponentsFrame: React.FC = () => {
     textConfiguration="label-input" 
     leadingIconName="search"
 	trailingIcon={false}
+	validRegex="^[0-9]+$"
 >
 </TextField>
             `}</CodeSnippet>
@@ -382,12 +396,14 @@ const ComponentsFrame: React.FC = () => {
 				configuration="outlined"
 				textConfiguration="label-placeholder"
 				leadingIconName="search"
+				validRegex="^[0-9]+$"
 			></TextField>
 			<CodeSnippet>{`
 <TextField
     configuration="outlined"
     textConfiguration="label-placeholder"
     leadingIconName="search"
+	validRegex="^[0-9]+$"
 >
 </TextField>
             `}</CodeSnippet>
@@ -399,6 +415,7 @@ const ComponentsFrame: React.FC = () => {
 				textConfiguration="label-placeholder"
 				leadingIconName="search"
 				trailingIcon={false}
+				validRegex="^[0-9]+$"
 			></TextField>
 			<CodeSnippet>{`
 <TextField
@@ -406,6 +423,7 @@ const ComponentsFrame: React.FC = () => {
     textConfiguration="label-placeholder"
     leadingIconName="search"
 	trailingIcon={false}
+	validRegex="^[0-9]+$"
 >
 </TextField>
             `}</CodeSnippet>

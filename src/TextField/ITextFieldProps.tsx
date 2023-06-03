@@ -8,5 +8,5 @@ export interface ITextFieldProps extends IComponentProps {
 	label?: string;
 	placeholder?: string;
 	input?: string;
-	validRegex?: RegExp;
+	validRegex?: string;
 }

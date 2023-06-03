@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { getPreferredScheme } from "../Gizmos/Themeing";
 import { StringBuilder } from "../Gizmos/StringBuilder";
 import { ITextFieldProps } from "./ITextFieldProps";
@@ -20,9 +20,11 @@ const TextField: React.FC<ITextFieldProps> = ({
 	label = "Label",
 	placeholder = textConfiguration === "label-placeholder" ? "Placeholder" : "",
 	input = textConfiguration !== "label-placeholder" ? "Input" : "",
-	validRegex = "^abc$",
+	validRegex = "^*$",
 }) => {
 	const inputRef = useRef<HTMLInputElement>(null);
+	const divRef = useRef<HTMLDivElement>(null);
+
 	const [_disabled] = useState(disabled || false);
 	const [_className] = useState(className || "");
 	const [_configuration] = useState(configuration);
@@ -34,6 +36,7 @@ const TextField: React.FC<ITextFieldProps> = ({
 	const [_input] = useState(input);
 	const [_defaultValueResetted, setDefaultValueReseted] = useState(false);
 	const [isFocused, setIsFocused] = useState(false);
+	const [isValidInput, setIsValidInput] = useState(true);
 
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
@@ -66,29 +69,21 @@ const TextField: React.FC<ITextFieldProps> = ({
 	const handleBlur = (event: React.FocusEvent<HTMLInputElement>) => {
 		setIsFocused(false);
 		divRef.current?.classList.remove("text-field-active");
+		const isValidInput = validateInput(event.target.value, validRegex);
+		setIsValidInput(isValidInput);
+		divRef.current?.classList.toggle("text-field-error", !isValidInput);
 	};
 
 	const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
 		if (event.key === "Enter") {
 			inputRef.current?.blur();
 		}
-
-		console.log(validRegex);
-		const regexPattern = new RegExp(validRegex);
-		console.log(regexPattern);
-
-		if (inputRef.current) {
-			if (!regexPattern.test(inputRef.current.value)) {
-				console.log(inputRef.current.value);
-				console.log(!regexPattern.test(inputRef.current.value));
-				divRef.current?.classList.add("text-field-error");
-			} else {
-				divRef.current?.classList.remove("text-field-error");
-			}
-		}
 	};
 
-	const divRef = useRef<HTMLDivElement>(null);
+	const validateInput = (value: string, regex: string): boolean => {
+		const pattern = new RegExp(regex);
+		return pattern.test(value);
+	};
 
 	return (
 		<div>
@@ -153,10 +148,10 @@ const TextField: React.FC<ITextFieldProps> = ({
 					{trailingIcon && (
 						<div>
 							<Icon
-								className="icon-on-text-field"
+								className="icon-on-text-field trailing-icon-on-text-field"
 								onClick={handleResetTextFieldValue}
 							>
-								cancel
+								{!isValidInput ? "error" : "cancel"}
 							</Icon>
 						</div>
 					)}
