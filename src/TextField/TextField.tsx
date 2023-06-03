@@ -20,6 +20,7 @@ const TextField: React.FC<ITextFieldProps> = ({
 	label = "Label",
 	placeholder = textConfiguration === "label-placeholder" ? "Placeholder" : "",
 	input = textConfiguration !== "label-placeholder" ? "Input" : "",
+	validRegex = "^abc$",
 }) => {
 	const inputRef = useRef<HTMLInputElement>(null);
 	const [_disabled] = useState(disabled || false);
@@ -70,6 +71,20 @@ const TextField: React.FC<ITextFieldProps> = ({
 	const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
 		if (event.key === "Enter") {
 			inputRef.current?.blur();
+		}
+
+		console.log(validRegex);
+		const regexPattern = new RegExp(validRegex);
+		console.log(regexPattern);
+
+		if (inputRef.current) {
+			if (!regexPattern.test(inputRef.current.value)) {
+				console.log(inputRef.current.value);
+				console.log(!regexPattern.test(inputRef.current.value));
+				divRef.current?.classList.add("text-field-error");
+			} else {
+				divRef.current?.classList.remove("text-field-error");
+			}
 		}
 	};
 

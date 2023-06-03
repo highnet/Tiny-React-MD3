@@ -3909,7 +3909,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 }
 
 .text-field-active-indicator {
-	background-color: var(--m3-sys-light-on-surface-variant);
+	box-shadow: inset 0 0 0 .1rem var(--m3-sys-light-on-surface-variant);
 }
 
 .text-field > * {
@@ -3930,16 +3930,16 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 
 .text-field-outlined {
 	border-radius: .4rem;
-	border: .1rem solid var(--m3-sys-light-outline);
+	box-shadow: inset 0 0 0 .1rem var(--m3-sys-light-outline);
 	background-color: var(--m3-sys-light-surface);
 }
 
 .text-field-outlined:hover.text-field-active.text-field-light-theme {
-	border: .2rem solid var(--m3-sys-light-primary);
+	box-shadow: inset 0 0 0 .2rem var(--m3-sys-light-primary);
 }
 
 .text-field-outlined:hover.text-field-light-theme {
-	border: .2rem solid var(--m3-sys-light-on-surface);
+	box-shadow: inset 0 0 0 .2rem var(--m3-sys-light-on-surface);
 }
 
 .label-on-text-field {
@@ -3959,11 +3959,18 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 
 .text-field-active-indicator {
 	transition: all .2s ease-in-out;
+	height: .1rem;
+	border: none;
+	box-shadow: none;
+	background-color: var(--m3-sys-light-on-surface-variant);
+	transform: translateY(-.1rem);
 }
 
 .text-field-active-indicator-active {
 	background-color: var(--m3-sys-light-primary);
 	height: .2rem;
+	border: none;
+	transform: translateY(-.2rem)
 }
 
 .text-field-filled:hover.text-field-light-theme {
