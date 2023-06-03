@@ -3799,28 +3799,6 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	justify-content: space-around;
 }
 
-.tooltip.tooltip-light-theme {
-	background-color: var(--m3-sys-light-surface-container);
-	box-shadow: var(--m3-elevation-light-2);
-	color: var(--m3-sys-light-on-surface-variant);
-}
-
-.tooltip-plain.tooltip-light-theme {
-	background-color: var(--m3-sys-light-inverse-surface);
-	color: var(--m3-sys-light-inverse-on-surface);
-}
-
-.tooltip.tooltip-dark-theme {
-	background-color: var(--m3-sys-dark-surface-container);
-	box-shadow: var(--m3-elevation-dark-2);
-	color: var(--m3-sys-dark-on-surface-variant);
-}
-
-.tooltip-plain.tooltip-dark-theme {
-	background-color: var(--m3-sys-dark-inverse-surface);
-	color: var(--m3-sys-dark-inverse-on-surface);
-}
-
 .tooltip-content {
 	padding: 1.2rem 1.6rem .4rem;
 	gap: .4rem;
@@ -3858,8 +3836,32 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	max-width: 10rem;
 }
 
-/* ==========TEXT FIELDS ========== */
+/* TOOLTIPS / LIGHT */
+.tooltip.tooltip-light-theme {
+	background-color: var(--m3-sys-light-surface-container);
+	box-shadow: var(--m3-elevation-light-2);
+	color: var(--m3-sys-light-on-surface-variant);
+}
 
+.tooltip-plain.tooltip-light-theme {
+	background-color: var(--m3-sys-light-inverse-surface);
+	color: var(--m3-sys-light-inverse-on-surface);
+}
+
+/* TOOLTIPS / DARK */
+
+.tooltip.tooltip-dark-theme {
+	background-color: var(--m3-sys-dark-surface-container);
+	box-shadow: var(--m3-elevation-dark-2);
+	color: var(--m3-sys-dark-on-surface-variant);
+}
+
+.tooltip-plain.tooltip-dark-theme {
+	background-color: var(--m3-sys-dark-inverse-surface);
+	color: var(--m3-sys-dark-inverse-on-surface);
+}
+
+/* ==========TEXT FIELDS ========== */
 .text-field {
 	display: flex;
 	flex-direction: column;
@@ -3876,14 +3878,14 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	justify-content: center;
 }
 
-.text-field-content{
+.text-field-content {
 	display: flex;
 	flex-direction: column;
 	flex: 1;
 	width: 0rem;
 	padding: .4rem 0rem .4rem 1.6rem;
 }
-
+ 
 .text-field-input {
 	font-family: 'Roboto';
 	font-style: normal;
@@ -3895,10 +3897,9 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	background-color: transparent;
 	flex: 1;
 	padding: 0;
-	color: var(--m3-sys-light-on-surface);
 }
 
-.text-field-container{
+.text-field-container {
 	display: flex;
 	flex: 1;
 }
@@ -3908,15 +3909,11 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	height: .1rem;
 }
 
-.text-field-active-indicator {
-	box-shadow: inset 0 0 0 .1rem var(--m3-sys-light-on-surface-variant);
-}
-
 .text-field > * {
 	text-align: left;
 }
 
-.text-field-with-leading-icon  > div > .text-field-content{
+.text-field-with-leading-icon > div > .text-field-content {
 	padding-left: 0rem;
 }
 
@@ -3924,18 +3921,67 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	border-radius: .4rem .4rem 0rem 0rem;
 }
 
-.text-field-filled.text-field-light-theme {
-	background-color: var(--m3-sys-light-surface-container-highest);
+.text-field-disabled {
+	pointer-events: none;
+	opacity: 38%;
 }
 
 .text-field-outlined {
 	border-radius: .4rem;
-	box-shadow: inset 0 0 0 .1rem var(--m3-sys-light-outline);
+}
+
+.label-on-text-field-outlined {
+	position: absolute;
+	transform: translate(1.5rem, -.9rem);
+	padding: 0rem .5rem 0rem .5rem;
+}
+
+.text-field-active-indicator {
+	transition: all .2s ease-in-out;
+	height: .1rem;
+	border: none;
+	box-shadow: none;
+	transform: translateY(-.1rem);
+}
+
+.text-field-active-indicator-error,
+.text-field-active-indicator-active {
+	height: .2rem;
+	border: none;
+	transform: translateY(-.2rem)
+}
+
+.text-field-supporting-text {
+	text-align: left;
+}
+
+.text-field-supporting-text.text-field-supporting-text-light-theme {
+padding: .4rem 1.6rem 0rem 1.6rem;}
+
+/* TEXT FIELDS / LIGHT */
+
+.text-field-light-theme.text-field-error .label-on-text-field {
+	color: var(--m3-sys-light-error);
+}
+
+.text-field-light-theme.text-field-error .trailing-icon-on-text-field {
+	color: var(--m3-sys-light-error);
+}
+
+.text-field-light-theme .icon-on-text-field {
+	color: var(--m3-sys-light-on-surface-variant);
+}
+
+.text-field-light-theme .label-on-text-field-outlined {
 	background-color: var(--m3-sys-light-surface);
 }
 
-.text-field-outlined.text-field-active.text-field-light-theme {
-	box-shadow: inset 0 0 0 .2rem var(--m3-sys-light-primary) !important;
+.text-field-light-theme .text-field-input {
+	color: var(--m3-sys-light-on-surface);
+}
+
+.text-field-light-theme .label-on-text-field {
+	color: var(--m3-sys-light-on-surface);
 }
 
 .text-field-outlined:hover.text-field-light-theme {
@@ -3946,50 +3992,95 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	box-shadow: inset 0 0 0 .2rem var(--m3-sys-light-error) !important;
 }
 
-.label-on-text-field {
-	color: var(--m3-sys-light-on-surface);
+.text-field-outlined.text-field-active.text-field-light-theme {
+	box-shadow: inset 0 0 0 .2rem var(--m3-sys-light-primary) !important;
 }
 
-.label-on-text-field-outlined {
-	position: absolute;
-	transform: translate(1.5rem, -.9rem);
+.text-field-outlined.text-field-light-theme {
+	box-shadow: inset 0 0 0 .1rem var(--m3-sys-light-outline);
 	background-color: var(--m3-sys-light-surface);
-	padding: 0rem .5rem 0rem .5rem;
 }
 
-.icon-on-text-field {
-	color: var(--m3-sys-light-on-surface-variant);
-}
-
-.text-field-active-indicator {
-	transition: all .2s ease-in-out;
-	height: .1rem;
-	border: none;
-	box-shadow: none;
-	background-color: var(--m3-sys-light-on-surface-variant);
-	transform: translateY(-.1rem);
-}
-
-.text-field-active-indicator-active {
-	background-color: var(--m3-sys-light-primary);
-	height: .2rem;
-	border: none;
-	transform: translateY(-.2rem)
+.text-field-filled.text-field-light-theme {
+	background-color: var(--m3-sys-light-surface-container-highest);
 }
 
 .text-field-filled:hover.text-field-light-theme {
 	background-color: var(--m3-composite-light-surface-container-highest-passthrough-on-surface-opacity-08);
 }
 
-.text-field-disabled{
-	pointer-events: none;
-	opacity: 38%;
+.text-field-active-indicator.text-field-active-indicator-light-theme {
+	box-shadow: inset 0 0 0 .1rem var(--m3-sys-light-on-surface-variant);
+}
+.text-field-active-indicator-active.text-field-active-indicator-light-theme {
+	box-shadow: inset 0 0 0 .1rem var(--m3-sys-light-primary);
 }
 
-.text-field-error .label-on-text-field {
-  color: red;
+.text-field-active-indicator-error.text-field-active-indicator-light-theme {
+	box-shadow: inset 0 0 0 .1rem var(--m3-sys-light-error);
 }
 
-.text-field-error .trailing-icon-on-text-field {
-	color: red;
+/* TEXT FIELDS / DARK */
+
+.text-field-dark-theme.text-field-error .label-on-text-field {
+	color: var(--m3-sys-dark-error);
 }
+
+.text-field-dark-theme.text-field-error .trailing-icon-on-text-field {
+	color: var(--m3-sys-dark-error);
+}
+
+.text-field-dark-theme .icon-on-text-field {
+	color: var(--m3-sys-dark-on-surface-variant);
+}
+
+.text-field-dark-theme .label-on-text-field-outlined {
+	background-color: var(--m3-sys-dark-surface);
+}
+
+.text-field-dark-theme .text-field-input {
+	color: var(--m3-sys-dark-on-surface);
+}
+
+.text-field-dark-theme .label-on-text-field {
+	color: var(--m3-sys-dark-on-surface);
+}
+
+.text-field-outlined:hover.text-field-dark-theme {
+	box-shadow: inset 0 0 0 .2rem var(--m3-sys-dark-on-surface);
+}
+
+.text-field-outlined.text-field-error.text-field-dark-theme {
+	box-shadow: inset 0 0 0 .2rem var(--m3-sys-dark-error) !important;
+}
+
+.text-field-outlined.text-field-active.text-field-dark-theme {
+	box-shadow: inset 0 0 0 .2rem var(--m3-sys-dark-primary) !important;
+}
+
+.text-field-outlined.text-field-dark-theme {
+	box-shadow: inset 0 0 0 .1rem var(--m3-sys-light-outline);
+	background-color: var(--m3-sys-dark-surface);
+}
+
+.text-field-filled.text-field-dark-theme {
+	background-color: var(--m3-sys-dark-surface-container-highest);
+}
+
+.text-field-filled:hover.text-field-dark-theme {
+	background-color: var(--m3-composite-dark-surface-container-highest-passthrough-on-surface-opacity-08);
+}
+
+.text-field-active-indicator.text-field-active-indicator-dark-theme {
+	box-shadow: inset 0 0 0 .1rem var(--m3-sys-dark-on-surface-variant);
+}
+
+.text-field-active-indicator-active.text-field-active-indicator-dark-theme {
+	box-shadow: inset 0 0 0 .1rem var(--m3-sys-dark-primary);
+}
+
+.text-field-active-indicator-error.text-field-active-indicator-dark-theme {
+	box-shadow: inset 0 0 0 .1rem var(--m3-sys-dark-error);
+}
+
+

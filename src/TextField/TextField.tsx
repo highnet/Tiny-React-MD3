@@ -23,7 +23,7 @@ const TextField: React.FC<ITextFieldProps> = ({
 	validRegex = "^*$",
 }) => {
 	const inputRef = useRef<HTMLInputElement>(null);
-	const divRef = useRef<HTMLDivElement>(null);
+	const componentRef = useRef<HTMLDivElement>(null);
 
 	const [_disabled] = useState(disabled || false);
 	const [_className] = useState(className || "");
@@ -63,15 +63,15 @@ const TextField: React.FC<ITextFieldProps> = ({
 			setDefaultValueReseted(true);
 		}
 		setIsFocused(true);
-		divRef.current?.classList.add("text-field-active");
+		componentRef.current?.classList.add("text-field-active");
 	};
 
 	const handleBlur = (event: React.FocusEvent<HTMLInputElement>) => {
 		setIsFocused(false);
-		divRef.current?.classList.remove("text-field-active");
+		componentRef.current?.classList.remove("text-field-active");
 		const isValidInput = validateInput(event.target.value, validRegex);
 		setIsValidInput(isValidInput);
-		divRef.current?.classList.toggle("text-field-error", !isValidInput);
+		componentRef.current?.classList.toggle("text-field-error", !isValidInput);
 	};
 
 	const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
@@ -88,7 +88,7 @@ const TextField: React.FC<ITextFieldProps> = ({
 	return (
 		<div>
 			<div
-				ref={divRef}
+				ref={componentRef}
 				className={_computedComponentClassName}
 				onKeyDown={handleKeyDown}
 			>
@@ -159,11 +159,21 @@ const TextField: React.FC<ITextFieldProps> = ({
 				<div
 					className={
 						"text-field-active-indicator" +
-						(isFocused ? " text-field-active-indicator-active" : "")
+						(isFocused ? " text-field-active-indicator-active" : "") +
+						" " +
+						("text-field-active-indicator-" + _theme) +
+						(!isValidInput ? " " + "text-field-active-indicator-error" : "")
 					}
 				></div>
 			)}
-			{children}
+			<Typography
+				className={
+					"text-field-supporting-text text-field-supporting-text-" + _theme
+				}
+				variant="text-body-small"
+			>
+				{children}
+			</Typography>
 		</div>
 	);
 };

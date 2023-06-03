@@ -41,7 +41,7 @@ const ComponentsFrame: React.FC = () => {
 				textConfiguration="input"
 				validRegex="^[0-9]+$"
 			>
-				Enter a number...
+				Please Enter a Number.
 			</TextField>
 			<CodeSnippet>{`
 <TextField
