@@ -285,7 +285,7 @@ html {
 
 /* FRAMES */
 .frame-trmd3 {
-	width: 90%;
+	width: 80%;
 	margin: 0 auto;
 	border-radius: 0.3rem;
 	align-items: center;
@@ -305,8 +305,8 @@ html {
 
 .frame-dark-theme-trmd3 {
 	color: var(--m3-sys-dark-on-surface);
-	background-color: rgba(20, 18, 24, 0.7);
-	box-shadow: var(--m3-elevation-dark-1);
+	background-color: var(--m3-sys-dark-surface);
+		box-shadow: var(--m3-elevation-dark-1);
 }
 
 /* HORIZONTAL DIVIDERS FRAME SECTION */

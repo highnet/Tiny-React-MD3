@@ -218,6 +218,13 @@ function App() {
 							scrollToSection("tooltips-section", -60);
 						},
 					},
+					{
+						name: "text_fields",
+						label: "Text Fields",
+						onClick: () => {
+							scrollToSection("text-fields-section", -60);
+						},
+					},
 				]}
 			/>
 			<div id="section-0-trmd3" className="section-trmd3">
@@ -269,7 +276,7 @@ function App() {
 			<div id="section-11-trmd3" className="section-trmd3">
 				<TooltipsFrame />
 			</div>
-			<div className="section-12-trmd3" id="session-trmd3">
+			<div id="section-12-trmd3" className="section-trmd3">
 				<TextFieldsFrame />
 			</div>
 			<BottomAppBar

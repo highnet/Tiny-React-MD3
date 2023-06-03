@@ -141,9 +141,7 @@ const TextField: React.FC<ITextFieldProps> = ({
 							placeholder={_placeholder}
 							onFocus={handleFocus}
 							onBlur={handleBlur}
-						>
-							{children}
-						</input>
+						></input>
 					</div>
 					{trailingIcon && (
 						<div>
@@ -165,6 +163,7 @@ const TextField: React.FC<ITextFieldProps> = ({
 					}
 				></div>
 			)}
+			{children}
 		</div>
 	);
 };
