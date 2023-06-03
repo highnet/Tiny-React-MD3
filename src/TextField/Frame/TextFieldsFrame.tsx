@@ -27,61 +27,67 @@ const ComponentsFrame: React.FC = () => {
 	return (
 		<div className={_computedFrameClassName}>
 			<Typography
-				id="components-section"
+				id="text-fields-section"
 				variant="text-title-large"
 				className={_computedTrmd3SectionTitlesClassName}
 			>
-				⏬
+				📜
 			</Typography>
-			<ComponentFrameTitle link="https://www.highnet.xyz">
-				Components
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-text-fields">
+				Text Fields
 			</ComponentFrameTitle>
-            <Typography variant={"text-label-small"}>Input</Typography>
-            <TextField textConfiguration="input"></TextField>
+            <Typography variant={"text-label-small"}>Input, Filled</Typography>
+            <TextField configuration="filled" textConfiguration="input"></TextField>
 			<CodeSnippet>{`
-<TextField 
+<TextField
+    configuration="filled"
     textConfiguration="input"
 >
 </TextField>
             `}</CodeSnippet>
-			<Typography variant={"text-label-small"}>Label and Input</Typography>
-            <TextField textConfiguration="label-input"></TextField>
+			<Typography variant={"text-label-small"}>Label and Input, Filled</Typography>
+            <TextField configuration="filled" textConfiguration="label-input"></TextField>
 			<CodeSnippet>{`
-<TextField 
+<TextField
+    configuration="filled"
     textConfiguration="label-input"
 >
 </TextField>
             `}</CodeSnippet>
-            <Typography variant={"text-label-small"}>Label and Placeholder</Typography>
-            <TextField textConfiguration="label-placeholder" ></TextField>
+            <Typography variant={"text-label-small"}>Label and Placeholder, Filled</Typography>
+            <TextField configuration="filled" textConfiguration="label-placeholder" ></TextField>
 			<CodeSnippet>{`
 <TextField
+    configuration="filled"
     textConfiguration="label-placeholder"
 >
 </TextField>
             `}</CodeSnippet>
-             <Typography variant={"text-label-small"}>Input - Leading Icon</Typography>
-            <TextField textConfiguration="input" leadingIconName="Search"></TextField>
+             <Typography variant={"text-label-small"}>Input - Leading Icon, Filled</Typography>
+            <TextField configuration="filled" textConfiguration="input" leadingIconName="Search"></TextField>
 			<CodeSnippet>{`
 <TextField
+    configuration="filled"
     textConfiguration="input" 
     leadingIconName="Search
 >
 </TextField>
             `}</CodeSnippet>
-			<Typography variant={"text-label-small"}>Label and Input - Leading Icon</Typography>
-            <TextField textConfiguration="label-input" leadingIconName="Search"></TextField>
+			<Typography variant={"text-label-small"}>Label and Input - Leading Icon, Filled</Typography>
+            <TextField configuration="filled" textConfiguration="label-input" leadingIconName="Search"></TextField>
 			<CodeSnippet>{`
  <TextField
+    configuration="filled"
     textConfiguration="label-input" 
     leadingIconName="Search"
 >
 </TextField>
             `}</CodeSnippet>
-            <Typography variant={"text-label-small"}>Label and Placeholder - Leading Icon</Typography>
-            <TextField textConfiguration="label-placeholder" leadingIconName="Search"></TextField>
+            <Typography variant={"text-label-small"}>Label and Placeholder - Leading Icon, Filled</Typography>
+            <TextField configuration="filled" textConfiguration="label-placeholder" leadingIconName="Search"></TextField>
 			<CodeSnippet>{`
-<TextField 
+<TextField
+    configuration="filled"
     textConfiguration="label-placeholder
     leadingIconName="Search"
 >

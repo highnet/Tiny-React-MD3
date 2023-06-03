@@ -3900,7 +3900,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
-	width: 14.6rem;
+	width: 0rem;
 	padding: .4rem 0rem .4rem 1.6rem;
 }
 
@@ -3928,4 +3928,8 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 
 .text-field > * {
 	text-align: left;
+}
+
+.text-field-with-leading-icon  > div > .text-field-content{
+	padding-left: 0rem;
 }

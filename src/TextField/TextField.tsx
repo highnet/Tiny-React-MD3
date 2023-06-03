@@ -39,6 +39,7 @@ const TextField: React.FC<ITextFieldProps> = ({
         .add("text-field-" + _theme)
 		.add("text-field-" + _configuration)
 		.add("text-field-with-" + _textConfiguration)
+		.add((_leadingIconName ? "text-field-with-leading-icon" : ""))
         .add(_className)
         .toString();
 
@@ -58,6 +59,16 @@ const TextField: React.FC<ITextFieldProps> = ({
     return (
         <div className={_computedComponentClassName}>
             <div className="text-field-container">
+			{leadingIconName && (
+                    <div>
+                        <Icon
+                            className="icon-on-text-field"
+                            onClick={handleResetTextFieldValue}
+                        >
+                            {_leadingIconName}
+                        </Icon>
+                    </div>
+                )}
                 <div className="text-field-content">
                     <Typography variant="text-body-small">
                         {(_textConfiguration === "label-input" || _textConfiguration === "label-placeholder") ? _label : ""}
