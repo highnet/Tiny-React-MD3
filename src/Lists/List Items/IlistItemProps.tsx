@@ -1,7 +1,6 @@
 import { IComponentProps } from "../../Component/IComponentProps";
 
 export interface IListItemProps extends IComponentProps {
-	onLeadingElementChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 	title?: string;
 
 	size?: string;
@@ -11,19 +10,27 @@ export interface IListItemProps extends IComponentProps {
 	leadingElement?: string;
 	leadingElementId?: string;
 
-	leadingElementSelected?: boolean;
+	trailingElement?: string;
+	trailingElementId?: string;
 
 	leadingMonogramInitial?: string;
 
-	leadingIconName?: string;
+	iconName?: string;
 
-	leadingImageSrc?: string;
+	imageSrc?: string;
 
-	leadingRadioButtonGroupName?: string;
-	leadingRadioButtonValue?: string;
+	radioButtonGroupName?: string;
+	radioButtonValue?: string;
 
-	leadingCheckboxConfiguration?: string;
+	checkboxConfiguration?: string;
 
-	trailingElement?: string;
-	trailingElementId?: string;
+	onElementChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
+	onTrailingIconClick?: (
+		event: React.MouseEvent<HTMLDivElement, MouseEvent>
+	) => void;
+
+	elementSelected?: boolean;
+
+	switchIconNameSelected?: string;
+	switchIconNameDeselected?: string;
 }

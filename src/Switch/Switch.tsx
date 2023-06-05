@@ -32,7 +32,6 @@ const Switch: React.FC<ISwitchProps> = ({
 	className,
 	selected,
 	onChange,
-	icon,
 	iconNameSelected,
 	iconNameDeselected,
 	onMouseEnter,
@@ -43,7 +42,7 @@ const Switch: React.FC<ISwitchProps> = ({
 	const [_id] = useState(id || undefined);
 	const [_className] = useState(className || "");
 
-	const [_icon] = useState(icon || false);
+	const [_icon] = useState(iconNameSelected && iconNameDeselected);
 	const [_iconNameSelected] = useState(iconNameSelected || "check");
 	const [_iconNameDeselected] = useState(iconNameDeselected || "close");
 

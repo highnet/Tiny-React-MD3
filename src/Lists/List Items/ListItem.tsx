@@ -17,20 +17,23 @@ const ListItem: React.FC<IListItemProps> = ({
 	onMouseLeave,
 	onMouseMove,
 	onClick,
-	leadingElement,
-	trailingElement,
 	size,
+	leadingElement,
+	leadingElementId,
 	showDivider,
 	leadingMonogramInitial,
-	leadingIconName,
-	leadingImageSrc,
-	leadingElementId,
+	imageSrc,
+	radioButtonGroupName,
+	radioButtonValue,
 	trailingElementId,
-	onLeadingElementChange,
-	leadingRadioButtonGroupName,
-	leadingRadioButtonValue,
-	leadingCheckboxConfiguration,
-	leadingElementSelected,
+	trailingElement,
+	iconName,
+	elementSelected,
+	checkboxConfiguration,
+	onElementChange,
+	onTrailingIconClick,
+	switchIconNameSelected,
+	switchIconNameDeselected,
 }) => {
 	const [_className] = useState(className || "");
 	const [_id] = useState(id || undefined);
@@ -38,11 +41,13 @@ const ListItem: React.FC<IListItemProps> = ({
 	const [_title] = useState(title || "List Item");
 	const [_showDivider] = useState(showDivider || false);
 	const [_leadingElement] = useState(leadingElement || undefined);
+	const [_trailingElement] = useState(trailingElement || undefined);
 	const [_leadingMonogramInitial] = useState(
 		leadingMonogramInitial?.charAt(0) || "A"
 	);
-	const [_leadingIconName] = useState(leadingIconName || "account_circle");
-	const [_imageSrc] = useState(leadingImageSrc || "default-media-small.png");
+	const [_leadingIconName] = useState(iconName || "account_circle");
+	const [_trailingIconName] = useState(iconName || "chevron_right");
+	const [_imageSrc] = useState(imageSrc || "default-media-small.png");
 
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
@@ -51,10 +56,11 @@ const ListItem: React.FC<IListItemProps> = ({
 		.add("list-item")
 		.add("list-item-" + _theme)
 		.add("list-item-" + _size)
+		.add(_showDivider ? "list-item-with-divider" : "")
 		.add(_className)
 		.toString();
 
-	const leadingElementComponent = (
+	const _leadingElementComponent = (
 		<div className="list-item-leading-element-element">
 			{_leadingElement === "monogram" && (
 				<div className="list-item-leading-element-monogram">
@@ -82,9 +88,9 @@ const ListItem: React.FC<IListItemProps> = ({
 				<div className="list-item-leading-element-checkbox">
 					<Checkbox
 						id={leadingElementId}
-						onChange={onLeadingElementChange}
-						selected={leadingElementSelected}
-						configuration={leadingCheckboxConfiguration}
+						onChange={onElementChange}
+						selected={elementSelected}
+						configuration={checkboxConfiguration}
 					/>
 				</div>
 			)}
@@ -92,10 +98,10 @@ const ListItem: React.FC<IListItemProps> = ({
 				<div className="list-item-leading-element-radio">
 					<RadioButton
 						id={leadingElementId}
-						onChange={onLeadingElementChange}
-						name={leadingRadioButtonGroupName}
-						value={leadingRadioButtonValue}
-						defaultChecked={leadingElementSelected}
+						onChange={onElementChange}
+						name={radioButtonGroupName}
+						value={radioButtonValue}
+						defaultChecked={elementSelected}
 					></RadioButton>
 				</div>
 			)}
@@ -103,16 +109,53 @@ const ListItem: React.FC<IListItemProps> = ({
 				<div className="list-item-leading-element-switch">
 					<Switch
 						id={leadingElementId}
-						onChange={onLeadingElementChange}
-						selected={leadingElementSelected}
+						onChange={onElementChange}
+						selected={elementSelected}
+						icon={true}
+						iconNameSelected={switchIconNameSelected}
+						iconNameDeselected={switchIconNameDeselected}
 					></Switch>
 				</div>
 			)}
 		</div>
 	);
 
+	const _trailingElementComponent = (
+		<div className="list-item-trailing-element-element">
+			{_trailingElement === "icon" && (
+				<div
+					className={`list-item-trailing-element-icon ${
+						onTrailingIconClick
+							? "list-item-trailing-element-icon-interactable"
+							: ""
+					}`}
+					onClick={onTrailingIconClick}
+				>
+					<Icon id={trailingElementId}>{_trailingIconName}</Icon>
+				</div>
+			)}
+
+			{_trailingElement === "checkbox" &&
+				(_leadingElement === undefined ||
+					_leadingElement === "monogram" ||
+					_leadingElement === "icon" ||
+					_leadingElement === "image-small" ||
+					_leadingElement === "image-big") && (
+					<div className="list-item-trailing-element-checkbox">
+						<Checkbox
+							id={trailingElementId}
+							onChange={onElementChange}
+							selected={elementSelected}
+							configuration={checkboxConfiguration}
+						/>
+					</div>
+				)}
+		</div>
+	);
+
 	return (
 		<li
+			tabIndex={0}
 			id={_id}
 			className={_computedComponentClassName}
 			onMouseEnter={onMouseEnter}
@@ -122,7 +165,7 @@ const ListItem: React.FC<IListItemProps> = ({
 		>
 			<div className="list-item-state-layer">
 				<div className="list-item-leading-element">
-					{leadingElementComponent}
+					{_leadingElementComponent}
 				</div>
 				<div className="list-item-content">
 					<Typography variant="text-body-large">{_title}</Typography>
@@ -131,10 +174,9 @@ const ListItem: React.FC<IListItemProps> = ({
 					)}
 				</div>
 				<div className="list-item-trailing-element">
-					<div className="list-item-trailing-element-element"></div>
+					{_trailingElementComponent}
 				</div>
 			</div>
-			{_showDivider && <div className="list-item-divider"></div>}
 		</li>
 	);
 };

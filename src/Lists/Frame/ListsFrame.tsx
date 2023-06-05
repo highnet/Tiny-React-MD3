@@ -40,164 +40,465 @@ const ListsFrame: React.FC = () => {
 
 			<div className="lists-subframe-trmd3">
 				<List>
-					<ListItem size="3-line">
+					<ListItem size="3-line" showDivider={true}>
 						Supporting line text lorem ipsum dolor sit amet, consectetur.
 					</ListItem>
-					<ListItem size="2-line">
+					<CodeSnippet>{`
+<ListItem size="3-line" showDivider={true}>
+	Supporting line text lorem ipsum dolor sit amet, consectetur.
+</ListItem>`}</CodeSnippet>
+					<ListItem
+						size="3-line"
+						showDivider={true}
+						trailingElement="checkbox"
+						elementSelected={true}
+					>
 						Supporting line text lorem ipsum dolor sit amet, consectetur.
 					</ListItem>
-					<ListItem size="1-line">
+					<ListItem size="2-line" showDivider={true}>
+						Supporting line text lorem ipsum dolor sit amet, consectetur.
+					</ListItem>
+					<ListItem
+						size="2-line"
+						showDivider={true}
+						trailingElement="checkbox"
+						elementSelected={true}
+					>
+						Supporting line text lorem ipsum dolor sit amet, consectetur.
+					</ListItem>
+					<ListItem size="1-line" showDivider={true}>
+						Supporting line text lorem ipsum dolor sit amet, consectetur.
+					</ListItem>
+					<ListItem
+						size="1-line"
+						showDivider={true}
+						trailingElement="checkbox"
+						elementSelected={true}
+					>
 						Supporting line text lorem ipsum dolor sit amet, consectetur.
 					</ListItem>
 					<ListItem
 						size="3-line"
+						showDivider={true}
 						leadingElement="monogram"
 						leadingMonogramInitial="X"
 					>
 						Supporting line text lorem ipsum dolor sit amet, consectetur.
 					</ListItem>
 					<ListItem
+						size="3-line"
+						showDivider={true}
+						leadingElement="monogram"
+						leadingMonogramInitial="X"
+						trailingElement="checkbox"
+						elementSelected={true}
+					>
+						Supporting line text lorem ipsum dolor sit amet, consectetur.
+					</ListItem>
+					<ListItem
 						size="2-line"
+						showDivider={true}
 						leadingElement="monogram"
 						leadingMonogramInitial="Y"
 					>
 						Supporting line text lorem ipsum dolor sit amet, consectetur.
 					</ListItem>
 					<ListItem
+						size="2-line"
+						showDivider={true}
+						leadingElement="monogram"
+						leadingMonogramInitial="Y"
+						trailingElement="checkbox"
+						elementSelected={true}
+					>
+						Supporting line text lorem ipsum dolor sit amet, consectetur.
+					</ListItem>
+					<ListItem
 						size="1-line"
+						showDivider={true}
 						leadingElement="monogram"
 						leadingMonogramInitial="Z"
 					></ListItem>
 					<ListItem
+						size="1-line"
+						showDivider={true}
+						leadingElement="monogram"
+						leadingMonogramInitial="Z"
+						trailingElement="checkbox"
+						elementSelected={true}
+					></ListItem>
+					<ListItem
 						size="3-line"
+						showDivider={true}
 						leadingElement="icon"
-						leadingIconName="account_circle"
+						iconName="account_circle"
 					>
 						Supporting line text lorem ipsum dolor sit amet, consectetur.
 					</ListItem>
 					<ListItem
-						size="2-line"
+						size="3-line"
+						showDivider={true}
 						leadingElement="icon"
-						leadingIconName="account_circle"
+						iconName="account_circle"
+						trailingElement="checkbox"
+						elementSelected={true}
 					>
 						Supporting line text lorem ipsum dolor sit amet, consectetur.
 					</ListItem>
 					<ListItem
-						size="1-line"
+						size="2-line"
+						showDivider={true}
 						leadingElement="icon"
-						leadingIconName="account_circle"
+						iconName="account_circle"
+					>
+						Supporting line text lorem ipsum dolor sit amet, consectetur.
+					</ListItem>
+					<ListItem
+						size="2-line"
+						showDivider={true}
+						leadingElement="icon"
+						iconName="account_circle"
+						trailingElement="checkbox"
+						elementSelected={true}
+					>
+						Supporting line text lorem ipsum dolor sit amet, consectetur.
+					</ListItem>
+					<ListItem
+						size="1-line"
+						showDivider={true}
+						leadingElement="icon"
+						iconName="account_circle"
+					></ListItem>
+					<ListItem
+						size="1-line"
+						showDivider={true}
+						leadingElement="icon"
+						iconName="account_circle"
+						trailingElement="checkbox"
+						elementSelected={true}
 					></ListItem>
 					<ListItem
 						size="3-line"
+						showDivider={true}
 						leadingElement="image-small"
-						leadingImageSrc="1.png"
+						imageSrc="1.png"
 					>
 						Supporting line text lorem ipsum dolor sit amet, consectetur.
 					</ListItem>
 					<ListItem
-						size="2-line"
+						size="3-line"
+						showDivider={true}
 						leadingElement="image-small"
-						leadingImageSrc="2.png"
+						imageSrc="1.png"
+						trailingElement="checkbox"
+						elementSelected={true}
 					>
 						Supporting line text lorem ipsum dolor sit amet, consectetur.
 					</ListItem>
 					<ListItem
-						size="1-line"
+						size="2-line"
+						showDivider={true}
 						leadingElement="image-small"
-						leadingImageSrc="3.png"
-					></ListItem>
-					<ListItem
-						size="3-line"
-						leadingElement="image-big"
-						leadingImageSrc="4.png"
+						imageSrc="2.png"
 					>
 						Supporting line text lorem ipsum dolor sit amet, consectetur.
 					</ListItem>
 					<ListItem
 						size="2-line"
-						leadingElement="image-big"
-						leadingImageSrc="5.png"
+						showDivider={true}
+						leadingElement="image-small"
+						imageSrc="2.png"
+						trailingElement="checkbox"
+						elementSelected={true}
 					>
 						Supporting line text lorem ipsum dolor sit amet, consectetur.
 					</ListItem>
 					<ListItem
 						size="1-line"
-						leadingElement="image-big"
-						leadingImageSrc="6.png"
+						showDivider={true}
+						leadingElement="image-small"
+						imageSrc="3.png"
+					></ListItem>
+					<ListItem
+						size="1-line"
+						showDivider={true}
+						leadingElement="image-small"
+						imageSrc="3.png"
+						trailingElement="checkbox"
+						elementSelected={true}
 					></ListItem>
 					<ListItem
 						size="3-line"
-						leadingElement="checkbox"
-						onLeadingElementChange={() => {
-							alert("hi");
-						}}
-						leadingElementSelected={true}
-						leadingCheckboxConfiguration="error"
+						showDivider={true}
+						leadingElement="image-big"
+						imageSrc="4.png"
+					>
+						Supporting line text lorem ipsum dolor sit amet, consectetur.
+					</ListItem>
+					<ListItem
+						size="3-line"
+						showDivider={true}
+						leadingElement="image-big"
+						imageSrc="4.png"
+						trailingElement="checkbox"
+						elementSelected={true}
 					>
 						Supporting line text lorem ipsum dolor sit amet, consectetur.
 					</ListItem>
 					<ListItem
 						size="2-line"
-						leadingElement="checkbox"
-						onLeadingElementChange={() => {
-							alert("hi");
-						}}
-					>
-						Supporting line text lorem ipsum dolor sit amet, consectetur.
-					</ListItem>
-					<ListItem
-						size="1-line"
-						leadingElement="checkbox"
-						onLeadingElementChange={() => {
-							alert("hi");
-						}}
-					></ListItem>
-					<ListItem
-						size="3-line"
-						leadingElement="radio"
-						onLeadingElementChange={() => {
-							alert("hi");
-						}}
-						leadingRadioButtonGroupName="list-item-radio-group-1"
-						leadingElementSelected={true}
-						leadingRadioButtonValue="0"
+						showDivider={true}
+						leadingElement="image-big"
+						imageSrc="5.png"
 					>
 						Supporting line text lorem ipsum dolor sit amet, consectetur.
 					</ListItem>
 					<ListItem
 						size="2-line"
-						leadingElement="radio"
-						onLeadingElementChange={() => {
-							alert("hi");
-						}}
-						leadingRadioButtonGroupName="list-item-radio-group-1"
-						leadingRadioButtonValue="1"
+						showDivider={true}
+						leadingElement="image-big"
+						imageSrc="5.png"
+						trailingElement="checkbox"
+						elementSelected={true}
 					>
 						Supporting line text lorem ipsum dolor sit amet, consectetur.
 					</ListItem>
 					<ListItem
 						size="1-line"
-						leadingElement="radio"
-						onLeadingElementChange={() => {
-							alert("hi");
-						}}
-						leadingRadioButtonGroupName="list-item-radio-group-1"
-						leadingRadioButtonValue="2"
+						showDivider={true}
+						leadingElement="image-big"
+						imageSrc="6.png"
+					></ListItem>
+					<ListItem
+						size="1-line"
+						showDivider={true}
+						leadingElement="image-big"
+						imageSrc="6.png"
+						trailingElement="checkbox"
+						elementSelected={true}
 					></ListItem>
 					<ListItem
 						size="3-line"
+						showDivider={true}
+						leadingElement="checkbox"
+						onElementChange={() => {
+							alert("hi");
+						}}
+						elementSelected={true}
+						checkboxConfiguration="error"
+					>
+						Supporting line text lorem ipsum dolor sit amet, consectetur.
+					</ListItem>
+					<ListItem
+						size="3-line"
+						showDivider={true}
+						leadingElement="checkbox"
+						onElementChange={() => {
+							alert("hi");
+						}}
+						elementSelected={true}
+						checkboxConfiguration="error"
+						trailingElement="icon"
+						onTrailingIconClick={() => {
+							alert("hi");
+						}}
+					>
+						Supporting line text lorem ipsum dolor sit amet, consectetur.
+					</ListItem>
+					<ListItem
+						size="2-line"
+						showDivider={true}
+						leadingElement="checkbox"
+						elementSelected={true}
+						onElementChange={() => {
+							alert("hi");
+						}}
+					>
+						Supporting line text lorem ipsum dolor sit amet, consectetur.
+					</ListItem>
+					<ListItem
+						size="2-line"
+						showDivider={true}
+						leadingElement="checkbox"
+						elementSelected={true}
+						onElementChange={() => {
+							alert("hi");
+						}}
+						trailingElement="icon"
+						onTrailingIconClick={() => {
+							alert("hi");
+						}}
+					>
+						Supporting line text lorem ipsum dolor sit amet, consectetur.
+					</ListItem>
+					<ListItem
+						size="1-line"
+						showDivider={true}
+						leadingElement="checkbox"
+						elementSelected={true}
+						onElementChange={() => {
+							alert("hi");
+						}}
+					></ListItem>
+					<ListItem
+						size="1-line"
+						showDivider={true}
+						leadingElement="checkbox"
+						elementSelected={true}
+						onElementChange={() => {
+							alert("hi");
+						}}
+						trailingElement="icon"
+						onTrailingIconClick={() => {
+							alert("hi");
+						}}
+					></ListItem>
+					<ListItem
+						size="3-line"
+						showDivider={true}
+						leadingElement="radio"
+						onElementChange={() => {
+							alert("hi");
+						}}
+						radioButtonGroupName="list-item-radio-group-1"
+						elementSelected={true}
+						radioButtonValue="0"
+					>
+						Supporting line text lorem ipsum dolor sit amet, consectetur.
+					</ListItem>
+					<ListItem
+						size="3-line"
+						showDivider={true}
+						leadingElement="radio"
+						onElementChange={() => {
+							alert("hi");
+						}}
+						radioButtonGroupName="list-item-radio-group-1"
+						radioButtonValue="0"
+						trailingElement="icon"
+						onTrailingIconClick={() => {
+							alert("hi");
+						}}
+					>
+						Supporting line text lorem ipsum dolor sit amet, consectetur.
+					</ListItem>
+					<ListItem
+						size="2-line"
+						showDivider={true}
+						leadingElement="radio"
+						onElementChange={() => {
+							alert("hi");
+						}}
+						radioButtonGroupName="list-item-radio-group-1"
+						radioButtonValue="1"
+					>
+						Supporting line text lorem ipsum dolor sit amet, consectetur.
+					</ListItem>
+					<ListItem
+						size="2-line"
+						showDivider={true}
+						leadingElement="radio"
+						onElementChange={() => {
+							alert("hi");
+						}}
+						radioButtonGroupName="list-item-radio-group-1"
+						radioButtonValue="1"
+						trailingElement="icon"
+						onTrailingIconClick={() => {
+							alert("hi");
+						}}
+					>
+						Supporting line text lorem ipsum dolor sit amet, consectetur.
+					</ListItem>
+					<ListItem
+						size="1-line"
+						showDivider={true}
+						leadingElement="radio"
+						onElementChange={() => {
+							alert("hi");
+						}}
+						radioButtonGroupName="list-item-radio-group-1"
+						radioButtonValue="2"
+					></ListItem>
+					<ListItem
+						size="1-line"
+						showDivider={true}
+						leadingElement="radio"
+						onElementChange={() => {
+							alert("hi");
+						}}
+						radioButtonGroupName="list-item-radio-group-1"
+						radioButtonValue="2"
+						trailingElement="icon"
+						onTrailingIconClick={() => {
+							alert("hi");
+						}}
+					></ListItem>
+					<ListItem
+						size="3-line"
+						showDivider={true}
 						leadingElement="switch"
-						onLeadingElementChange={() => {
+						onElementChange={() => {
 							alert("hi");
 						}}
-						leadingElementSelected={true}
+						elementSelected={true}
+						switchIconNameDeselected="star"
+						switchIconNameSelected="flag"
 					>
 						Supporting line text lorem ipsum dolor sit amet, consectetur.
 					</ListItem>
-					<ListItem size="2-line" leadingElement="switch">
+					<ListItem
+						size="3-line"
+						showDivider={true}
+						leadingElement="switch"
+						onElementChange={() => {
+							alert("hi");
+						}}
+						trailingElement="icon"
+						onTrailingIconClick={() => {
+							alert("hi");
+						}}
+						switchIconNameDeselected="star"
+						switchIconNameSelected="flag"
+					>
 						Supporting line text lorem ipsum dolor sit amet, consectetur.
 					</ListItem>
-					<ListItem size="1-line" leadingElement="switch"></ListItem>
+					<ListItem
+						size="2-line"
+						showDivider={true}
+						leadingElement="switch"
+						elementSelected={true}
+					>
+						Supporting line text lorem ipsum dolor sit amet, consectetur.
+					</ListItem>
+					<ListItem
+						size="2-line"
+						showDivider={true}
+						leadingElement="switch"
+						trailingElement="icon"
+						onTrailingIconClick={() => {
+							alert("hi");
+						}}
+						elementSelected={true}
+					>
+						Supporting line text lorem ipsum dolor sit amet, consectetur.
+					</ListItem>
+					<ListItem
+						size="1-line"
+						showDivider={true}
+						leadingElement="switch"
+						elementSelected={true}
+					></ListItem>
+					<ListItem
+						size="1-line"
+						showDivider={true}
+						leadingElement="switch"
+						trailingElement="icon"
+						onTrailingIconClick={() => {
+							alert("hi");
+						}}
+						elementSelected={true}
+					></ListItem>
 				</List>
 			</div>
 		</div>
