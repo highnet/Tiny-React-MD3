@@ -245,17 +245,18 @@ html {
 	border-radius: 0.6rem;
 	padding: 0.5rem;
 	font-weight: bold;
+	margin: 1rem;
 }
 
 .section-title-light-theme-trmd3 {
 	color: var(--m3-sys-light-primary);
-	background-color: var(--m3-sys-light-surface);
+	background-color: var(--m3-sys-light-surface-container-high);
 	box-shadow: var(--m3-elevation-light-2);
 }
 
 .section-title-dark-theme-trmd3 {
 	color: var(--m3-sys-dark-primary);
-	background-color: var(--m3-sys-dark-surface);
+	background-color: var(--m3-sys-dark-surface-container-high);
 	box-shadow: var(--m3-elevation-dark-2);
 }
 
@@ -453,6 +454,7 @@ pre {
 	padding: 1rem 2rem 1rem 2rem;
 	border-radius: 0.6rem;
 	cursor: pointer;
+	margin: 1rem;
 }
 
 .component-frame-title-trmd3 > .text {
@@ -479,13 +481,13 @@ pre {
 
 .component-frame-title-trmd3.component-frame-title-light-theme-trmd3 {
 	color: var(--m3-sys-light-primary);
-	background-color: var(--m3-sys-light-surface);
+	background-color: var(--m3-sys-light-surface-container-high);
 	box-shadow: var(--m3-elevation-light-2);
 }
 
 .component-frame-title-trmd3.component-frame-title-dark-theme-trmd3 {
 	color: var(--m3-sys-dark-primary);
-	background-color: var(--m3-sys-dark-surface);
+	background-color: var(--m3-sys-dark-surface-container-high);
 	box-shadow: var(--m3-elevation-dark-2);
 }
 
