@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { IListItemProps } from "./IlistItemProps";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 import { StringBuilder } from "../../Gizmos/StringBuilder";
@@ -153,6 +153,34 @@ const ListItem: React.FC<IListItemProps> = ({
 		</div>
 	);
 
+	const boxRef = useRef<HTMLLIElement>(null);
+	const innerCircleRef = useRef<HTMLSpanElement>(null);
+
+	useEffect(() => {
+		const box = boxRef.current;
+		const innerCircle = innerCircleRef.current;
+
+		const handleMouseMove = (e: MouseEvent) => {
+			if (innerCircle && box) {
+				const boxRect = box.getBoundingClientRect();
+				const offsetX = e.clientX - boxRect.left;
+				const offsetY = e.clientY - boxRect.top;
+				innerCircle.style.left = `${offsetX / 10}rem`;
+				innerCircle.style.top = `${offsetY / 10}rem`;
+			}
+		};
+
+		if (box && innerCircle) {
+			box.addEventListener("mousemove", handleMouseMove);
+		}
+
+		return () => {
+			if (box && innerCircle) {
+				box.removeEventListener("mousemove", handleMouseMove);
+			}
+		};
+	}, [boxRef, innerCircleRef]);
+
 	return (
 		<li
 			tabIndex={0}
@@ -162,21 +190,30 @@ const ListItem: React.FC<IListItemProps> = ({
 			onMouseLeave={onMouseLeave}
 			onMouseMove={onMouseMove}
 			onClick={onClick}
+			ref={boxRef}
 		>
 			<div className="list-item-state-layer">
 				<div className="list-item-leading-element">
 					{_leadingElementComponent}
 				</div>
 				<div className="list-item-content">
-					<Typography variant="text-body-large">{_title}</Typography>
+					<Typography variant="text-body-large" className="title-on-list-item">
+						{_title}
+					</Typography>
 					{_size !== "1-line" && (
-						<Typography variant="text-body-medium">{children}</Typography>
+						<Typography
+							variant="text-body-medium"
+							className="supporting-text-on-list-item"
+						>
+							{children}
+						</Typography>
 					)}
 				</div>
 				<div className="list-item-trailing-element">
 					{_trailingElementComponent}
 				</div>
 			</div>
+			<span className="list-item-inner-circle" ref={innerCircleRef}></span>
 		</li>
 	);
 };
