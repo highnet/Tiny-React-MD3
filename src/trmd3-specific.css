@@ -223,8 +223,6 @@ html {
 	color: #ffffff;
 }
 
-
-
 /* TOURGUIDE SECTION */
 .tourguide-section-trmd3 {
 	display: flex;
@@ -314,10 +312,6 @@ html {
 .horizontaldividers-frame-trmd3 {
 	gap: 3rem;
 }
-
-/* VERTICAL DIVIDERS FRAME SECTION */
-
-/* RADIO BUTTONS FRAME SECTION */
 
 /* BADGES FRAME SECTION */
 
@@ -518,14 +512,12 @@ pre {
 	display: block;
 }
 
-
 /* NAVIGATION RAILS */
 @media screen and (max-width: 768px) {
 	.main-navigation-rail-trmd3 {
 	  display: none;
 	}
   }
-
 
   /* BOTTOM APP BARS */
   .bottom-app-bar-on-frame-trmd3 { 
@@ -544,7 +536,6 @@ pre {
 	height: 73rem;
 }
 
-
 /* TOP APP BARS */
 .top-app-bar-on-frame-trmd3 {
 	position: relative;
@@ -552,7 +543,6 @@ pre {
 	border: 1px solid gray;
 	max-width: 80%;
 }
-
 
 @media screen and (min-width: 768px) {
 	.top-app-bar-on-frame-trmd3 {
@@ -565,10 +555,8 @@ pre {
 	gap: 1rem;
 }
 
-
 /* LISTS SECTION*/
 .lists-subframe-trmd3{
-	background-color: var(--m3-sys-light-surface-container-low);
 	width: 80%;
 	display: flex;
 	align-items: center;
@@ -576,4 +564,11 @@ pre {
 	border-radius: 1.6rem;
 }
 
+.lists-subframe-light-theme-trmd3{
+	background-color: var(--m3-sys-light-surface-container-low);
+}
+
+.lists-subframe-dark-theme-trmd3 {
+	background-color: var(--m3-sys-dark-surface-container-low);
+}
 
