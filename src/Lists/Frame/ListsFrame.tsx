@@ -87,27 +87,43 @@ const ListsFrame: React.FC = () => {
 						leadingElement="icon"
 						leadingIconName="account_circle"
 					></ListItem>
-					<ListItem size="3-line" leadingElement="image-small" imageSrc="1.png">
+					<ListItem
+						size="3-line"
+						leadingElement="image-small"
+						leadingImageSrc="1.png"
+					>
 						Supporting line text lorem ipsum dolor sit amet, consectetur.
 					</ListItem>
-					<ListItem size="2-line" leadingElement="image-small" imageSrc="2.png">
+					<ListItem
+						size="2-line"
+						leadingElement="image-small"
+						leadingImageSrc="2.png"
+					>
 						Supporting line text lorem ipsum dolor sit amet, consectetur.
 					</ListItem>
 					<ListItem
 						size="1-line"
 						leadingElement="image-small"
-						imageSrc="3.png"
+						leadingImageSrc="3.png"
 					></ListItem>
-					<ListItem size="3-line" leadingElement="image-big" imageSrc="4.png">
+					<ListItem
+						size="3-line"
+						leadingElement="image-big"
+						leadingImageSrc="4.png"
+					>
 						Supporting line text lorem ipsum dolor sit amet, consectetur.
 					</ListItem>
-					<ListItem size="2-line" leadingElement="image-big" imageSrc="5.png">
+					<ListItem
+						size="2-line"
+						leadingElement="image-big"
+						leadingImageSrc="5.png"
+					>
 						Supporting line text lorem ipsum dolor sit amet, consectetur.
 					</ListItem>
 					<ListItem
 						size="1-line"
 						leadingElement="image-big"
-						imageSrc="6.png"
+						leadingImageSrc="6.png"
 					></ListItem>
 					<ListItem
 						size="3-line"
@@ -115,8 +131,8 @@ const ListsFrame: React.FC = () => {
 						onLeadingElementChange={() => {
 							alert("hi");
 						}}
-						checkboxSelected={true}
-						checkboxConfiguration="error"
+						leadingElementSelected={true}
+						leadingCheckboxConfiguration="error"
 					>
 						Supporting line text lorem ipsum dolor sit amet, consectetur.
 					</ListItem>
@@ -142,9 +158,9 @@ const ListsFrame: React.FC = () => {
 						onLeadingElementChange={() => {
 							alert("hi");
 						}}
-						radioButtonGroupName="list-item-radio-group-1"
-						radioButtonSelected={true}
-						radioButtonValue="0"
+						leadingRadioButtonGroupName="list-item-radio-group-1"
+						leadingElementSelected={true}
+						leadingRadioButtonValue="0"
 					>
 						Supporting line text lorem ipsum dolor sit amet, consectetur.
 					</ListItem>
@@ -154,8 +170,8 @@ const ListsFrame: React.FC = () => {
 						onLeadingElementChange={() => {
 							alert("hi");
 						}}
-						radioButtonGroupName="list-item-radio-group-1"
-						radioButtonValue="1"
+						leadingRadioButtonGroupName="list-item-radio-group-1"
+						leadingRadioButtonValue="1"
 					>
 						Supporting line text lorem ipsum dolor sit amet, consectetur.
 					</ListItem>
@@ -165,8 +181,8 @@ const ListsFrame: React.FC = () => {
 						onLeadingElementChange={() => {
 							alert("hi");
 						}}
-						radioButtonGroupName="list-item-radio-group-1"
-						radioButtonValue="2"
+						leadingRadioButtonGroupName="list-item-radio-group-1"
+						leadingRadioButtonValue="2"
 					></ListItem>
 					<ListItem
 						size="3-line"
@@ -174,6 +190,7 @@ const ListsFrame: React.FC = () => {
 						onLeadingElementChange={() => {
 							alert("hi");
 						}}
+						leadingElementSelected={true}
 					>
 						Supporting line text lorem ipsum dolor sit amet, consectetur.
 					</ListItem>

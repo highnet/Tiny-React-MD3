@@ -36,8 +36,8 @@ const RadioButton: React.FC<IRadioButtonProps> = ({
 	const [_disabled] = useState(disabled || false);
 	const [_id] = useState(id || undefined);
 	const [_className] = useState(className || "");
-	const [_name] = useState(name || "radio");
-	const [_value] = useState(value || "radio");
+	const [_name] = useState(name || undefined);
+	const [_value] = useState(value || undefined);
 	const [_defaultChecked] = useState(defaultChecked || false);
 
 	const click = () => {

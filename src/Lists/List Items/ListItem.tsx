@@ -23,15 +23,14 @@ const ListItem: React.FC<IListItemProps> = ({
 	showDivider,
 	leadingMonogramInitial,
 	leadingIconName,
-	imageSrc,
+	leadingImageSrc,
 	leadingElementId,
 	trailingElementId,
 	onLeadingElementChange,
-	radioButtonGroupName,
-	radioButtonValue,
-	checkboxSelected,
-	checkboxConfiguration,
-	radioButtonSelected,
+	leadingRadioButtonGroupName,
+	leadingRadioButtonValue,
+	leadingCheckboxConfiguration,
+	leadingElementSelected,
 }) => {
 	const [_className] = useState(className || "");
 	const [_id] = useState(id || undefined);
@@ -43,7 +42,7 @@ const ListItem: React.FC<IListItemProps> = ({
 		leadingMonogramInitial?.charAt(0) || "A"
 	);
 	const [_leadingIconName] = useState(leadingIconName || "account_circle");
-	const [_imageSrc] = useState(imageSrc || "default-media-small.png");
+	const [_imageSrc] = useState(leadingImageSrc || "default-media-small.png");
 
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
@@ -84,8 +83,8 @@ const ListItem: React.FC<IListItemProps> = ({
 					<Checkbox
 						id={leadingElementId}
 						onChange={onLeadingElementChange}
-						selected={checkboxSelected}
-						configuration={checkboxConfiguration}
+						selected={leadingElementSelected}
+						configuration={leadingCheckboxConfiguration}
 					/>
 				</div>
 			)}
@@ -94,9 +93,9 @@ const ListItem: React.FC<IListItemProps> = ({
 					<RadioButton
 						id={leadingElementId}
 						onChange={onLeadingElementChange}
-						name={radioButtonGroupName}
-						value={radioButtonValue}
-						defaultChecked={radioButtonSelected}
+						name={leadingRadioButtonGroupName}
+						value={leadingRadioButtonValue}
+						defaultChecked={leadingElementSelected}
 					></RadioButton>
 				</div>
 			)}
@@ -105,6 +104,7 @@ const ListItem: React.FC<IListItemProps> = ({
 					<Switch
 						id={leadingElementId}
 						onChange={onLeadingElementChange}
+						selected={leadingElementSelected}
 					></Switch>
 				</div>
 			)}

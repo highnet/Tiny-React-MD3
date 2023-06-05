@@ -3874,7 +3874,7 @@ li {
 
 .list-item-state-layer{
 	display: flex;
-	flex: 1;
+	flex-grow: 1;
 	gap: 1.6rem;
 }
 
@@ -3907,6 +3907,7 @@ li {
 	justify-content: center;
 	flex-direction: column;
 	text-align: left;
+	flex: 1;
 }
 
 .list-item-3-line .list-item-state-layer {
@@ -3963,9 +3964,8 @@ li {
 
 .list-item-leading-element {
 	display: flex;
-	flex: 1;
 	justify-content: center;
-	overflow: clip;
+	overflow: hidden;
 }
 
 .list-item-trailing-element-element {
@@ -3976,7 +3976,6 @@ li {
 
 .list-item-trailing-element {
 	display: flex;
-	flex: 1;
 	justify-content: center;
 	align-items: center;
 }
