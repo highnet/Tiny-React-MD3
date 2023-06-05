@@ -111,7 +111,7 @@ https://trmd3.com/
 | 🥨 Snackbar | 🚧 | 🚧 | | 
 | 🔦 [Switch](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-switch) | ✅ | ✅ | [Switch.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Switch/Switch.tsx) |
 | 📑 Tabs | 🚧 | 🚧 | | 
-| 📜 Text fields | 🚧 | 🚧 | | 
+| 📜  [Text Fields](https://github.com/highnet/Tiny-React-MD3/blob/3b34a5032de9b5efb023b78c383f199bfe36251c/src/TextField/TextField.tsx) | ✅ | ✅ | | 
 | ⌛ Time pickers | 🚧 | 🚧 | | 
 | ⏫ [Top app bar](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-top-app-bars) | ✅ | ✅ | [TopAppBar.tsx](https://github.com/highnet/Tiny-React-MD3/blob/826f9f5c779a272b9171c1f2f9b2967d20d6b5e8/src/App%20Bars/Top%20App%20Bar/TopAppBar.tsx) | 
 | 🔤 [Typography](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-typography) | ✅ | ✅ | [Typography.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Typography/Typography.tsx) |
