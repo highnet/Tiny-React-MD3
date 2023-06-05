@@ -566,4 +566,14 @@ pre {
 }
 
 
+/* LISTS SECTION*/
+.lists-subframe-trmd3{
+	background-color: var(--m3-sys-light-surface-container-low);
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1.6rem;
+}
+
 

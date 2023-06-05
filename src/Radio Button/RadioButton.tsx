@@ -25,6 +25,7 @@ const RadioButton: React.FC<IRadioButtonProps> = ({
 	id,
 	className,
 	onClick,
+	onChange,
 	name,
 	value,
 	defaultChecked,
@@ -65,6 +66,7 @@ const RadioButton: React.FC<IRadioButtonProps> = ({
 			id={_id}
 			onClick={(e) => {
 				onClick?.(e);
+				onChange?.(e);
 				click();
 			}}
 			onMouseEnter={onMouseEnter}

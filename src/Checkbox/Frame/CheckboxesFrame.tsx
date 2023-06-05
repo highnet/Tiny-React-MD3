@@ -52,12 +52,17 @@ const CheckboxesFrame: React.FC = () => {
 			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#%EF%B8%8F-checkbox">
 				Checkboxes
 			</ComponentFrameTitle>
-			<Checkbox selected={true} onChange={undefined} />
+			<Checkbox
+				selected={true}
+				onChange={undefined}
+				configuration={"default"}
+			/>
 			<CodeSnippet>
 				{`
 <Checkbox 
 	selected={true} 
-	onChange={undefined} 
+	onChange={undefined}
+	configuration={"default"}
 />
 				`}
 			</CodeSnippet>

@@ -35,6 +35,7 @@ import Tooltip from "./Tooltip/Tooltip";
 import TooltipsFrame from "./Tooltip/Frame/TooltipsFrame";
 import TextField from "./TextField/TextField";
 import TextFieldsFrame from "./TextField/Frame/TextFieldsFrame";
+import ListsFrame from "./Lists/Frame/ListsFrame";
 
 function App() {
 	console.log(`	👋 Welcome to TRMD3! 👋	`);
@@ -225,6 +226,13 @@ function App() {
 							scrollToSection("text-fields-section", -60);
 						},
 					},
+					{
+						name: "format_list_bulleted",
+						label: "Lists",
+						onClick: () => {
+							scrollToSection("lists-section", -60);
+						},
+					},
 				]}
 			/>
 			<div id="section-0-trmd3" className="section-trmd3">
@@ -278,6 +286,9 @@ function App() {
 			</div>
 			<div id="section-12-trmd3" className="section-trmd3">
 				<TextFieldsFrame />
+			</div>
+			<div id="section-13-trmd3" className="section-trmd3">
+				<ListsFrame />
 			</div>
 			<BottomAppBar
 				icons={[
