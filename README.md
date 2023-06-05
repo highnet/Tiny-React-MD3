@@ -98,7 +98,7 @@ https://trmd3.com/
 | 👉 [Horizontal Divider](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-horizontal-divider) | ✅ | ✅ | [HorizontalDivider.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Dividers/HorizontalDivider/HorizontalDivider.tsx) |
 | 👆 [Vertical Divider](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-vertical-divider) | ✅ | ✅ | [VerticalDivider.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Dividers/VerticalDivider/VerticalDivider.tsx) |
 | 💟 [Icons](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-icons) | ✅ | ✅ | [Icons.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Icon/Icon.tsx) |
-| 📝 [Lists](https://github.com/highnet/Tiny-React-MD3/edit/master/src/readme.md#-lists) | 🚧 | 🚧 | | 
+| 📝 [Lists](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-lists) | 🚧 | 🚧 | | 
 | 📚 Menus | 🚧 | 🚧 | | 
 | 🧭 Navigation bar | 🚧 | 🚧 | | 
 | 🗄️ Navigation drawer | 🚧 | 🚧 | | 
