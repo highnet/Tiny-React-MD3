@@ -42,7 +42,7 @@ const DialogsFrame: React.FC = () => {
 			</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>Default</Typography>
 			<Button onClick={() => openDialogId("dialog-1")}>Open Dialog</Button>{" "}
-			<Dialog configuration="basic" id="dialog-1" showDivider={false} showCloseButton={true} buttons={[{ onClick: () => alert("hi") },{  onClick: () => alert("hi") }]} >TEST</Dialog>			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
+			<Dialog iconName="hive" configuration="basic" id="dialog-1" showDivider={false} showCloseButton={true} buttons={[{ onClick: () => alert("hi") },{  onClick: () => alert("hi") }]} >TEST</Dialog>			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
 			<Button onClick={() => openDialogId("dialog-2")}>Open Dialog</Button>{" "}
 			<Dialog configuration="basic" id="dialog-2" showDivider={true} showCloseButton={true} buttons={[{ onClick: () => alert("hi") },{  onClick: () => alert("hi") }]} />			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
 			<Button onClick={() => openDialogId("dialog-3")}>Open Dialog</Button>{" "}
@@ -55,8 +55,7 @@ const DialogsFrame: React.FC = () => {
                 elementSelected={true}
             >
                 Supporting line text lorem ipsum dolor sit amet, consectetur.
-            </ListItem>
-            
+            </ListItem>     
             <ListItem
                 size="3-line"
                 showDivider={true}
@@ -72,8 +71,7 @@ const DialogsFrame: React.FC = () => {
                 switchIconNameSelected="flag"
             >
                 Supporting line text lorem ipsum dolor sit amet, consectetur.
-            </ListItem>
-            
+            </ListItem>    
             <ListItem
                 size="2-line"
                 showDivider={true}
@@ -90,7 +88,151 @@ const DialogsFrame: React.FC = () => {
             >
                 Supporting line text lorem ipsum dolor sit amet, consectetur.
             </ListItem>
-         </List>} configuration="list" id="dialog-3" showDivider={true} showCloseButton={true} buttons={[{ onClick: () => alert("hi") },{  onClick: () => alert("hi") }]} />			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
+			<ListItem
+                size="2-line"
+                showDivider={true}
+                leadingElement="radio"
+                onElementChange={() => {
+                    alert("hi");
+                }}
+                radioButtonGroupName="list-item-radio-group-1"
+                radioButtonValue="1"
+                trailingElement="icon"
+                onTrailingIconClick={() => {
+                    alert("hi");
+                }}
+            >
+                Supporting line text lorem ipsum dolor sit amet, consectetur.
+            </ListItem>
+			<ListItem
+                size="2-line"
+                showDivider={true}
+                leadingElement="radio"
+                onElementChange={() => {
+                    alert("hi");
+                }}
+                radioButtonGroupName="list-item-radio-group-1"
+                radioButtonValue="1"
+                trailingElement="icon"
+                onTrailingIconClick={() => {
+                    alert("hi");
+                }}
+            >
+                Supporting line text lorem ipsum dolor sit amet, consectetur.
+            </ListItem>
+			<ListItem
+                size="2-line"
+                showDivider={true}
+                leadingElement="radio"
+                onElementChange={() => {
+                    alert("hi");
+                }}
+                radioButtonGroupName="list-item-radio-group-1"
+                radioButtonValue="1"
+                trailingElement="icon"
+                onTrailingIconClick={() => {
+                    alert("hi");
+                }}
+            >
+                Supporting line text lorem ipsum dolor sit amet, consectetur.
+            </ListItem>
+			<ListItem
+                size="2-line"
+                showDivider={true}
+                leadingElement="radio"
+                onElementChange={() => {
+                    alert("hi");
+                }}
+                radioButtonGroupName="list-item-radio-group-1"
+                radioButtonValue="1"
+                trailingElement="icon"
+                onTrailingIconClick={() => {
+                    alert("hi");
+                }}
+            >
+                Supporting line text lorem ipsum dolor sit amet, consectetur.
+            </ListItem>
+			<ListItem
+                size="2-line"
+                showDivider={true}
+                leadingElement="radio"
+                onElementChange={() => {
+                    alert("hi");
+                }}
+                radioButtonGroupName="list-item-radio-group-1"
+                radioButtonValue="1"
+                trailingElement="icon"
+                onTrailingIconClick={() => {
+                    alert("hi");
+                }}
+            >
+                Supporting line text lorem ipsum dolor sit amet, consectetur.
+            </ListItem>
+			<ListItem
+                size="2-line"
+                showDivider={true}
+                leadingElement="radio"
+                onElementChange={() => {
+                    alert("hi");
+                }}
+                radioButtonGroupName="list-item-radio-group-1"
+                radioButtonValue="1"
+                trailingElement="icon"
+                onTrailingIconClick={() => {
+                    alert("hi");
+                }}
+            >
+                Supporting line text lorem ipsum dolor sit amet, consectetur.
+            </ListItem>
+			<ListItem
+                size="2-line"
+                showDivider={true}
+                leadingElement="radio"
+                onElementChange={() => {
+                    alert("hi");
+                }}
+                radioButtonGroupName="list-item-radio-group-1"
+                radioButtonValue="1"
+                trailingElement="icon"
+                onTrailingIconClick={() => {
+                    alert("hi");
+                }}
+            >
+                Supporting line text lorem ipsum dolor sit amet, consectetur.
+            </ListItem>
+			<ListItem
+                size="2-line"
+                showDivider={true}
+                leadingElement="radio"
+                onElementChange={() => {
+                    alert("hi");
+                }}
+                radioButtonGroupName="list-item-radio-group-1"
+                radioButtonValue="1"
+                trailingElement="icon"
+                onTrailingIconClick={() => {
+                    alert("hi");
+                }}
+            >
+                Supporting line text lorem ipsum dolor sit amet, consectetur.
+            </ListItem>
+			<ListItem
+                size="2-line"
+                showDivider={true}
+                leadingElement="radio"
+                onElementChange={() => {
+                    alert("hi");
+                }}
+                radioButtonGroupName="list-item-radio-group-1"
+                radioButtonValue="1"
+                trailingElement="icon"
+                onTrailingIconClick={() => {
+                    alert("hi");
+                }}
+            >
+                Supporting line text lorem ipsum dolor sit amet, consectetur.
+            </ListItem>
+         </List>} configuration="list" id="dialog-3" showDivider={true} showCloseButton={true} buttons={[{ onClick: () => alert("hi") },{  onClick: () => alert("hi") }]} />			
 		</div>
 	);
 };

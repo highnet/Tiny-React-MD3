@@ -12,5 +12,5 @@ export interface IDIalogProps extends IComponentProps {
 	showDivider?: boolean;	
 	configuration?: string;
 	listComponent?: React.ReactElement;
-
+	iconName?: string;
 }

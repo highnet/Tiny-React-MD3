@@ -8,6 +8,7 @@ import Typography from "../Typography/Typography";
 import HorizontalDivider from "../Dividers/HorizontalDivider/HorizontalDivider";
 import List from "../Lists/List";
 import ListItem from "../Lists/List Items/ListItem";
+import Icon from "../Icon/Icon";
 
 const Dialog: React.FC<IDIalogProps> = ({
     className,
@@ -22,7 +23,8 @@ const Dialog: React.FC<IDIalogProps> = ({
     showCloseButton,
     showDivider,
     configuration,
-    listComponent
+    listComponent,
+    iconName,
 }) => {
     const [_className] = useState(className || "");
     const [_id] = useState(id || undefined);
@@ -33,6 +35,7 @@ const Dialog: React.FC<IDIalogProps> = ({
     const [_showCloseButton] = useState(showCloseButton || false);
     const [_showDivider] = useState(showDivider || false);
     const [_configuration] = useState(configuration || "basic");
+    const [_iconName] = useState(iconName || undefined);
 
     const dialogRef = useRef<HTMLDialogElement>(null);
 
@@ -85,15 +88,16 @@ const Dialog: React.FC<IDIalogProps> = ({
                 onClick={onClick}
                 ref={dialogRef}
             >
-
                 <div className="dialog-text-content">
+                {_iconName && <Icon>{_iconName}</Icon>}
+
                     <Typography variant="text-headline-small">{_title}</Typography>
                     <Typography variant="text-body-medium">{_children}</Typography>
                 </div>
                 {_showDivider && <div className="dialog-divider"><HorizontalDivider></HorizontalDivider></div>}
-                {listComponent &&
-					React.cloneElement(listComponent, {})}
-                {actionButtons}
+                {_configuration === "list" && listComponent &&
+  React.cloneElement(listComponent, { className: "list-on-dialog" })}
+{actionButtons}
             </dialog>
         </div>
     );

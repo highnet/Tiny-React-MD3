@@ -4139,7 +4139,7 @@ li {
     border: none;
     background: var(--m3-sys-light-surface-container-high);
 	overflow: hidden;
-	min-height: auto;
+	max-width: 100vh;
 }
 
 .dialog .text {
@@ -4176,3 +4176,6 @@ li {
 .dialog-divider {
 	padding: 16px 0px 0px;
 }
+
+
+
