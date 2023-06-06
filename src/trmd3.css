@@ -3882,6 +3882,7 @@ li {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	width: 100%;
 }
 
 .list-item {
@@ -4136,12 +4137,10 @@ li {
     width: 31.2rem;
     border-radius: 2.8rem;
     border: none;
-	padding: 24px 24px 0px;
     background: var(--m3-sys-light-surface-container-high);
 	overflow: hidden;
+	min-height: auto;
 }
-
-
 
 .dialog .text {
 	text-align: left;
@@ -4156,6 +4155,8 @@ li {
 	flex-direction: column;
 	gap: 16px;
 	width: 100%;
+	padding: 24px 24px 0px;
+
 }
 
 .dialog-actions {

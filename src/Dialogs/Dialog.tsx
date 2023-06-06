@@ -6,6 +6,8 @@ import Button from "../Button/Button";
 import { closeDialogRef } from "../Gizmos/Modals";
 import Typography from "../Typography/Typography";
 import HorizontalDivider from "../Dividers/HorizontalDivider/HorizontalDivider";
+import List from "../Lists/List";
+import ListItem from "../Lists/List Items/ListItem";
 
 const Dialog: React.FC<IDIalogProps> = ({
     className,
@@ -59,6 +61,54 @@ const Dialog: React.FC<IDIalogProps> = ({
         </div>
     );
 
+    const list = _configuration === "list" && (
+        <List>
+            
+            <ListItem
+                size="2-line"
+                showDivider={true}
+                leadingElement="switch"
+                elementSelected={true}
+            >
+                Supporting line text lorem ipsum dolor sit amet, consectetur.
+            </ListItem>
+            
+            <ListItem
+                size="3-line"
+                showDivider={true}
+                leadingElement="switch"
+                onElementChange={() => {
+                    alert("hi");
+                }}
+                trailingElement="icon"
+                onTrailingIconClick={() => {
+                    alert("hi");
+                }}
+                switchIconNameDeselected="star"
+                switchIconNameSelected="flag"
+            >
+                Supporting line text lorem ipsum dolor sit amet, consectetur.
+            </ListItem>
+            
+            <ListItem
+                size="2-line"
+                showDivider={true}
+                leadingElement="radio"
+                onElementChange={() => {
+                    alert("hi");
+                }}
+                radioButtonGroupName="list-item-radio-group-1"
+                radioButtonValue="1"
+                trailingElement="icon"
+                onTrailingIconClick={() => {
+                    alert("hi");
+                }}
+            >
+                Supporting line text lorem ipsum dolor sit amet, consectetur.
+            </ListItem>
+         </List>
+    );
+
     useEffect(() => {
         const handleClose = () => {
             dialogRef.current?.classList.remove("dialog-visible");
@@ -87,7 +137,7 @@ const Dialog: React.FC<IDIalogProps> = ({
                     <Typography variant="text-body-medium">{_children}</Typography>
                 </div>
                 {_showDivider && <div className="dialog-divider"><HorizontalDivider></HorizontalDivider></div>}
-                
+                {list}
                 {actionButtons}
 
             </dialog>

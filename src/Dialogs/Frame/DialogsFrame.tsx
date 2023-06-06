@@ -43,6 +43,8 @@ const DialogsFrame: React.FC = () => {
 			<Dialog configuration="basic" id="dialog-1" showDivider={false} showCloseButton={true} buttons={[{ onClick: () => alert("hi") },{  onClick: () => alert("hi") }]} >TEST</Dialog>			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
 			<Button onClick={() => openDialogId("dialog-2")}>Open Dialog</Button>{" "}
 			<Dialog configuration="basic" id="dialog-2" showDivider={true} showCloseButton={true} buttons={[{ onClick: () => alert("hi") },{  onClick: () => alert("hi") }]} />			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
+			<Button onClick={() => openDialogId("dialog-3")}>Open Dialog</Button>{" "}
+			<Dialog configuration="list" id="dialog-3" showDivider={true} showCloseButton={true} buttons={[{ onClick: () => alert("hi") },{  onClick: () => alert("hi") }]} />			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
 		</div>
 	);
 };
