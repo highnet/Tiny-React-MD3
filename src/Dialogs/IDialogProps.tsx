@@ -8,4 +8,5 @@ export interface IDIalogProps extends IComponentProps {
 		onClick?: () => void;
 	}[];
 	showCloseButton?: boolean;
+	closeOnOutsideClick?: boolean;
 }

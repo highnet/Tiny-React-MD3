@@ -40,7 +40,7 @@ const DialogsFrame: React.FC = () => {
 			</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>Default</Typography>
 			<Button onClick={() => openDialogId("dialog-1")}>Open Dialog</Button>{" "}
-			<Dialog id="dialog-1" showCloseButton={true} buttons={[{ label: "hi", onClick: () => alert("hi") },{ label: "hi", onClick: () => alert("hi") }]} />			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
+			<Dialog id="dialog-1" closeOnOutsideClick={true} showCloseButton={true} buttons={[{ label: "hi", onClick: () => alert("hi") },{ label: "hi", onClick: () => alert("hi") }]} />			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
 		</div>
 	);
 };
