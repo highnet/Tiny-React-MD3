@@ -6,7 +6,8 @@ export interface IDIalogProps extends IComponentProps {
 	buttons?: {
 		label?: string;
 		onClick?: () => void;
+		configuration?: string;
 	}[];
 	showCloseButton?: boolean;
-	closeOnOutsideClick?: boolean;
+	showDivider?: boolean;	
 }

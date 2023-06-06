@@ -1156,6 +1156,8 @@ html {
 	border: 0;
 	width: fit-content;
 	height: 4rem;
+	white-space: nowrap;
+
 }
 
 .btn text {
@@ -4126,8 +4128,6 @@ li {
 
 /* DIALOGS */
 
-
-
 .dialog {
     display: none;
     flex-direction: column;
@@ -4138,8 +4138,11 @@ li {
     border-radius: 2.8rem;
     border: none;
 	padding: 24px 24px 0px;
-
     background: var(--m3-sys-light-surface-container-high);
+}
+
+.dialog .text {
+	text-align: left;
 }
 
 .dialog-visible {
@@ -4155,8 +4158,13 @@ li {
 .dialog-actions {
 	display: flex;
 	flex-direction: row;
+	width: 100%;
+	flex-direction: row-reverse;
+	padding: 24px 24px 24px 8px;
+	gap: 8px;
 }
 
 .dialog-actions .btn {
 	flex: 1;
+	max-width: 7.7rem;
 }

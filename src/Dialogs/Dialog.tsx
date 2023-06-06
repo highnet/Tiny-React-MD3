@@ -16,7 +16,8 @@ const Dialog: React.FC<IDIalogProps> = ({
     onClick,
     title,
     buttons,
-    showCloseButton
+    showCloseButton,
+    showDivider,
 }) => {
     const [_className] = useState(className || "");
     const [_id] = useState(id || undefined);
@@ -24,6 +25,8 @@ const Dialog: React.FC<IDIalogProps> = ({
     const [_title]	= useState(title || "Dialog Title");
     const [_buttons] = useState(buttons || undefined);
     const [_showActions] = useState(!!_buttons);
+    const [_showCloseButton] = useState(showCloseButton || false);
+    const [_showDivider] = useState(showDivider || false);
 
     const dialogRef = useRef<HTMLDialogElement>(null);
 
@@ -38,12 +41,13 @@ const Dialog: React.FC<IDIalogProps> = ({
 
     const actionButtons = _showActions && (
         <div className="dialog-actions">
-            {showCloseButton && 		<Button onClick={(event) => closeDialogRef(dialogRef)} configuration="filled">
-                    Close Dialog
-        </Button>}
+            {_showCloseButton && 
+                <Button onClick={(event) => closeDialogRef(dialogRef)} configuration="elevated">
+                    Close
+                </Button>}
 
             {_buttons?.map((button, index) => (
-                <Button key={index} onClick={button.onClick} configuration="filled">
+                <Button key={index} onClick={button.onClick} configuration={button.configuration || "text"}>
                     {button.label || "Action"}
                 </Button>
             ))}
@@ -53,7 +57,6 @@ const Dialog: React.FC<IDIalogProps> = ({
     useEffect(() => {
         const handleClose = () => {
             dialogRef.current?.classList.remove("dialog-visible");
-            // Perform any necessary actions when the dialog is closed
         };
 
         dialogRef.current?.addEventListener("close", handleClose);
@@ -78,8 +81,8 @@ const Dialog: React.FC<IDIalogProps> = ({
                     <Typography variant="text-headline-small">{_title}</Typography>
                     <Typography variant="text-body-medium">{_children}</Typography>
                 </div>
-                <div className="dialog-divider"></div>
-
+                {_showDivider && <div className="dialog-divider"></div>}
+                
                 {actionButtons}
 
             </dialog>
