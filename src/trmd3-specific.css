@@ -284,7 +284,7 @@ html {
 
 /* FRAMES */
 .frame-trmd3 {
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
 	border-radius: 0.3rem;
 	align-items: center;
@@ -298,14 +298,14 @@ html {
 
 .frame-light-theme-trmd3 {
 	color: var(--m3-sys-light-on-surface);
-	background-color: var(--m3-sys-light-surface);
+	background-color: rgba(254, 247, 255, 0.85);
 	box-shadow: var(--m3-elevation-light-1);
 }
 
 .frame-dark-theme-trmd3 {
 	color: var(--m3-sys-dark-on-surface);
-	background-color: var(--m3-sys-dark-surface);
-		box-shadow: var(--m3-elevation-dark-1);
+	background-color: rgba(20, 18, 24, 0.85);
+	box-shadow: var(--m3-elevation-dark-1);
 }
 
 /* HORIZONTAL DIVIDERS FRAME SECTION */
@@ -557,7 +557,6 @@ pre {
 
 /* LISTS SECTION*/
 .lists-subframe-trmd3{
-	width: 80%;
 	display: flex;
 	align-items: center;
 	justify-content: center;

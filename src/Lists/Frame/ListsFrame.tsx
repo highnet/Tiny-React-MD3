@@ -38,12 +38,42 @@ const ListsFrame: React.FC = () => {
 			</ComponentFrameTitle>
 
 			<List>
-				<ListItem>Item 1</ListItem>
-				<ListItem>Item 2</ListItem>
-				<ListItem>Item 3</ListItem>
-				<ListItem>Item :</ListItem>
+				<ListItem size="1-line" showDivider={true}>
+					Supporting line text lorem ipsum dolor sit amet, consectetur.
+				</ListItem>
+
+				<ListItem
+					size="3-line"
+					showDivider={true}
+					leadingElement="monogram"
+					leadingMonogramInitial="X"
+				>
+					Supporting line text lorem ipsum dolor sit amet, consectetur.
+				</ListItem>
+
+				<ListItem
+					size="3-line"
+					showDivider={true}
+					leadingElement="image-small"
+					imageSrc="1.png"
+					trailingElement="checkbox"
+					elementSelected={true}
+				>
+					Supporting line text lorem ipsum dolor sit amet, consectetur.
+				</ListItem>
+
+				<ListItem
+					size="1-line"
+					showDivider={true}
+					leadingElement="checkbox"
+					elementSelected={true}
+					onElementChange={() => {
+						alert("hi");
+					}}
+				></ListItem>
 				<ListItem>Item N</ListItem>
 			</List>
+
 			<CodeSnippet>{`
 <List>
 	<ListItem>Item 1</ListItem>
@@ -86,9 +116,11 @@ const ListsFrame: React.FC = () => {
 						Supporting line text lorem ipsum dolor sit amet, consectetur.
 					</ListItem>
 					<CodeSnippet>{`
-					<ListItem size="2-line" showDivider={true}>
-						Supporting line text lorem ipsum dolor sit amet, consectetur.
-					</ListItem>`}</CodeSnippet>
+<ListItem 
+	size="2-line" 
+	showDivider={true}
+>
+</ListItem>`}</CodeSnippet>
 					<ListItem
 						size="2-line"
 						showDivider={true}
@@ -98,7 +130,7 @@ const ListsFrame: React.FC = () => {
 						Supporting line text lorem ipsum dolor sit amet, consectetur.
 					</ListItem>
 					<CodeSnippet>{`
-<ListItem
+<ListItem 
 	size="2-line"
 	showDivider={true}
 	trailingElement="checkbox"
