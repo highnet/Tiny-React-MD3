@@ -1,5 +1,5 @@
 import Button from "../../Button/Button";
-import { openDialogId } from "../../Gizmos/Modals";
+import { closeDialogRef, openDialogId } from "../../Gizmos/Modals";
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 import CodeSnippet from "../../TRMD3/CodeSnippet/CodeSnippet";
@@ -25,6 +25,7 @@ const DialogsFrame: React.FC = () => {
 		.add("section-title-" + _theme + "-trmd3")
 		.toString();
 
+
 	return (
 		<div className={_computedFrameClassName}>
 			<Typography
@@ -39,8 +40,7 @@ const DialogsFrame: React.FC = () => {
 			</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>Default</Typography>
 			<Button onClick={() => openDialogId("dialog-1")}>Open Dialog</Button>{" "}
-			<Dialog id="dialog-1" />
-			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
+			<Dialog id="dialog-1" showCloseButton={true} buttons={[{ label: "hi", onClick: () => alert("hi") },{ label: "hi", onClick: () => alert("hi") }]} />			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
 		</div>
 	);
 };

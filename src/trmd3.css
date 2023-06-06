@@ -4126,18 +4126,37 @@ li {
 
 /* DIALOGS */
 
+
+
 .dialog {
-	display: none;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: 0px;
-	width: 312px;
-	height: 240px;
-	background: #ECE6F0;
-	border-radius: 28px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    width: 31.2rem;
+    height: 24rem;
+    border-radius: 2.8rem;
+    border: none;
+	padding: 24px 24px 0px;
+
+    background: var(--m3-sys-light-surface-container-high);
 }
 
 .dialog-visible {
 	display: flex;
+}
+
+.dialog-text-content {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.dialog-actions {
+	display: flex;
+	flex-direction: row;
+}
+
+.dialog-actions .btn {
+	flex: 1;
 }
