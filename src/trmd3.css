@@ -4178,4 +4178,10 @@ li {
 }
 
 
+.list-small{
+	height: 10rem;
+	overflow: clip;
+	overflow-y: scroll;
+}
+
 

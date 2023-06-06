@@ -25,6 +25,7 @@ const List: React.FC<IComponentProps> = ({
 		.toString();
 
 	return (
+		<div className="list-scroll list-small">
 		<ul
 			id={_id}
 			className={_computedComponentClassName}
@@ -35,6 +36,7 @@ const List: React.FC<IComponentProps> = ({
 		>
 			{children}
 		</ul>
+		</div>
 	);
 };
 
