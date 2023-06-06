@@ -2,6 +2,8 @@ import Button from "../../Button/Button";
 import { closeDialogRef, openDialogId } from "../../Gizmos/Modals";
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
+import List from "../../Lists/List";
+import ListItem from "../../Lists/List Items/ListItem";
 import CodeSnippet from "../../TRMD3/CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../../TRMD3/ComponentFrameTitle/ComponentFrameTitle";
 import Typography from "../../Typography/Typography";
@@ -44,7 +46,51 @@ const DialogsFrame: React.FC = () => {
 			<Button onClick={() => openDialogId("dialog-2")}>Open Dialog</Button>{" "}
 			<Dialog configuration="basic" id="dialog-2" showDivider={true} showCloseButton={true} buttons={[{ onClick: () => alert("hi") },{  onClick: () => alert("hi") }]} />			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
 			<Button onClick={() => openDialogId("dialog-3")}>Open Dialog</Button>{" "}
-			<Dialog configuration="list" id="dialog-3" showDivider={true} showCloseButton={true} buttons={[{ onClick: () => alert("hi") },{  onClick: () => alert("hi") }]} />			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
+			<Dialog listComponent={        <List>
+            
+            <ListItem
+                size="2-line"
+                showDivider={true}
+                leadingElement="switch"
+                elementSelected={true}
+            >
+                Supporting line text lorem ipsum dolor sit amet, consectetur.
+            </ListItem>
+            
+            <ListItem
+                size="3-line"
+                showDivider={true}
+                leadingElement="switch"
+                onElementChange={() => {
+                    alert("hi");
+                }}
+                trailingElement="icon"
+                onTrailingIconClick={() => {
+                    alert("hi");
+                }}
+                switchIconNameDeselected="star"
+                switchIconNameSelected="flag"
+            >
+                Supporting line text lorem ipsum dolor sit amet, consectetur.
+            </ListItem>
+            
+            <ListItem
+                size="2-line"
+                showDivider={true}
+                leadingElement="radio"
+                onElementChange={() => {
+                    alert("hi");
+                }}
+                radioButtonGroupName="list-item-radio-group-1"
+                radioButtonValue="1"
+                trailingElement="icon"
+                onTrailingIconClick={() => {
+                    alert("hi");
+                }}
+            >
+                Supporting line text lorem ipsum dolor sit amet, consectetur.
+            </ListItem>
+         </List>} configuration="list" id="dialog-3" showDivider={true} showCloseButton={true} buttons={[{ onClick: () => alert("hi") },{  onClick: () => alert("hi") }]} />			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
 		</div>
 	);
 };

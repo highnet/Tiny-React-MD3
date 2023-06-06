@@ -22,6 +22,7 @@ const Dialog: React.FC<IDIalogProps> = ({
     showCloseButton,
     showDivider,
     configuration,
+    listComponent
 }) => {
     const [_className] = useState(className || "");
     const [_id] = useState(id || undefined);
@@ -61,54 +62,6 @@ const Dialog: React.FC<IDIalogProps> = ({
         </div>
     );
 
-    const list = _configuration === "list" && (
-        <List>
-            
-            <ListItem
-                size="2-line"
-                showDivider={true}
-                leadingElement="switch"
-                elementSelected={true}
-            >
-                Supporting line text lorem ipsum dolor sit amet, consectetur.
-            </ListItem>
-            
-            <ListItem
-                size="3-line"
-                showDivider={true}
-                leadingElement="switch"
-                onElementChange={() => {
-                    alert("hi");
-                }}
-                trailingElement="icon"
-                onTrailingIconClick={() => {
-                    alert("hi");
-                }}
-                switchIconNameDeselected="star"
-                switchIconNameSelected="flag"
-            >
-                Supporting line text lorem ipsum dolor sit amet, consectetur.
-            </ListItem>
-            
-            <ListItem
-                size="2-line"
-                showDivider={true}
-                leadingElement="radio"
-                onElementChange={() => {
-                    alert("hi");
-                }}
-                radioButtonGroupName="list-item-radio-group-1"
-                radioButtonValue="1"
-                trailingElement="icon"
-                onTrailingIconClick={() => {
-                    alert("hi");
-                }}
-            >
-                Supporting line text lorem ipsum dolor sit amet, consectetur.
-            </ListItem>
-         </List>
-    );
-
     useEffect(() => {
         const handleClose = () => {
             dialogRef.current?.classList.remove("dialog-visible");
@@ -132,14 +85,15 @@ const Dialog: React.FC<IDIalogProps> = ({
                 onClick={onClick}
                 ref={dialogRef}
             >
+
                 <div className="dialog-text-content">
                     <Typography variant="text-headline-small">{_title}</Typography>
                     <Typography variant="text-body-medium">{_children}</Typography>
                 </div>
                 {_showDivider && <div className="dialog-divider"><HorizontalDivider></HorizontalDivider></div>}
-                {list}
+                {listComponent &&
+					React.cloneElement(listComponent, {})}
                 {actionButtons}
-
             </dialog>
         </div>
     );
