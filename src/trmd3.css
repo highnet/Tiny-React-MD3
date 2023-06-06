@@ -4123,3 +4123,21 @@ li {
 .list-item-dark-theme .list-item-inner-circle {
 	background-color: var(--m3-state-layers-dark-on-surface-opacity-08);
 }
+
+/* DIALOGS */
+
+.dialog {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0px;
+	width: 312px;
+	height: 240px;
+	background: #ECE6F0;
+	border-radius: 28px;
+}
+
+.dialog-visible {
+	display: flex;
+}

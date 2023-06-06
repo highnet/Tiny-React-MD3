@@ -36,6 +36,7 @@ import TooltipsFrame from "./Tooltip/Frame/TooltipsFrame";
 import TextField from "./TextField/TextField";
 import TextFieldsFrame from "./TextField/Frame/TextFieldsFrame";
 import ListsFrame from "./Lists/Frame/ListsFrame";
+import DialogsFrame from "./Dialogs/Frame/DialogsFrame";
 
 function App() {
 	console.log(`	👋 Welcome to TRMD3! 👋	`);
@@ -289,6 +290,9 @@ function App() {
 			</div>
 			<div id="section-13-trmd3" className="section-trmd3">
 				<ListsFrame />
+			</div>
+			<div id="section-14-trmd3" className="section-trmd3">
+				<DialogsFrame />
 			</div>
 			<BottomAppBar
 				icons={[
