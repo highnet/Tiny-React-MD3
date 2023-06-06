@@ -5,6 +5,7 @@ import { IDIalogProps } from "./IDialogProps";
 import Button from "../Button/Button";
 import { closeDialogRef } from "../Gizmos/Modals";
 import Typography from "../Typography/Typography";
+import HorizontalDivider from "../Dividers/HorizontalDivider/HorizontalDivider";
 
 const Dialog: React.FC<IDIalogProps> = ({
     className,
@@ -18,6 +19,7 @@ const Dialog: React.FC<IDIalogProps> = ({
     buttons,
     showCloseButton,
     showDivider,
+    configuration,
 }) => {
     const [_className] = useState(className || "");
     const [_id] = useState(id || undefined);
@@ -27,6 +29,7 @@ const Dialog: React.FC<IDIalogProps> = ({
     const [_showActions] = useState(!!_buttons);
     const [_showCloseButton] = useState(showCloseButton || false);
     const [_showDivider] = useState(showDivider || false);
+    const [_configuration] = useState(configuration || "basic");
 
     const dialogRef = useRef<HTMLDialogElement>(null);
 
@@ -36,6 +39,8 @@ const Dialog: React.FC<IDIalogProps> = ({
     let _computedComponentClassName = new StringBuilder()
         .add("dialog")
         .add("dialog-" + _theme)
+        .add("dialog-" + _configuration)
+        .add(_showDivider ? "dialog-with-divider" : "")
         .add(_className)
         .toString();
 
@@ -81,7 +86,7 @@ const Dialog: React.FC<IDIalogProps> = ({
                     <Typography variant="text-headline-small">{_title}</Typography>
                     <Typography variant="text-body-medium">{_children}</Typography>
                 </div>
-                {_showDivider && <div className="dialog-divider"></div>}
+                {_showDivider && <div className="dialog-divider"><HorizontalDivider></HorizontalDivider></div>}
                 
                 {actionButtons}
 

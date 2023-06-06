@@ -10,4 +10,5 @@ export interface IDIalogProps extends IComponentProps {
 	}[];
 	showCloseButton?: boolean;
 	showDivider?: boolean;	
+	configuration?: string;
 }

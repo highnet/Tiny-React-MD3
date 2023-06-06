@@ -4134,12 +4134,14 @@ li {
     align-items: center;
     padding: 0;
     width: 31.2rem;
-    height: 24rem;
     border-radius: 2.8rem;
     border: none;
 	padding: 24px 24px 0px;
     background: var(--m3-sys-light-surface-container-high);
+	overflow: hidden;
 }
+
+
 
 .dialog .text {
 	text-align: left;
@@ -4153,6 +4155,7 @@ li {
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
+	width: 100%;
 }
 
 .dialog-actions {
@@ -4167,4 +4170,8 @@ li {
 .dialog-actions .btn {
 	flex: 1;
 	max-width: 7.7rem;
+}
+
+.dialog-divider {
+	padding: 16px 0px 0px;
 }
