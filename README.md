@@ -97,8 +97,8 @@ https://trmd3.com/
 | 💬 Dialogs | 🚧 | 🚧 | | 
 | 👉 [Horizontal Divider](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-horizontal-divider) | ✅ | ✅ | [HorizontalDivider.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Dividers/HorizontalDivider/HorizontalDivider.tsx) |
 | 👆 [Vertical Divider](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-vertical-divider) | ✅ | ✅ | [VerticalDivider.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Dividers/VerticalDivider/VerticalDivider.tsx) |
-| 💟 [Icons](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-icons) | ✅ | ✅ | [Icons.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Icon/Icon.tsx) |
-| 📝 [Lists](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-lists) | 🚧 | 🚧 | | 
+| 💟 [Icons](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-icons) | ✅ | ✅ | [Icon.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Icon/Icon.tsx) |
+| 📝 [Lists](https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-lists) | ✅ | ✅ | [List.tsx](https://github.com/highnet/Tiny-React-MD3/blob/e453a9b7634ad93bb13d227227603f5148ed74b0/src/Lists/List.tsx) | 
 | 📚 Menus | 🚧 | 🚧 | | 
 | 🧭 Navigation bar | 🚧 | 🚧 | | 
 | 🗄️ Navigation drawer | 🚧 | 🚧 | | 
