@@ -52,6 +52,7 @@ const SideSheet: React.FC<ISideSheetProps> = ({
 			setisActive(!isActive);
 		}
 	};
+	console.log();
 
 	const actionButtons = _showActions && (
 		<div className="dialog-actions">
