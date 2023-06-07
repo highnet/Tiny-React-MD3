@@ -27,7 +27,6 @@ const DialogsFrame: React.FC = () => {
 		.add("section-title-" + _theme + "-trmd3")
 		.toString();
 
-
 	return (
 		<div className={_computedFrameClassName}>
 			<Typography
@@ -40,199 +39,165 @@ const DialogsFrame: React.FC = () => {
 			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-dialogs">
 				Dialogs
 			</ComponentFrameTitle>
-			<Typography variant={"text-label-small"}>Default</Typography>
-			<Button onClick={() => openDialogId("dialog-1")}>Open Dialog</Button>{" "}
-			<Dialog iconName="hive" configuration="basic" id="dialog-1" showDivider={false} showCloseButton={true} buttons={[{ onClick: () => alert("hi") },{  onClick: () => alert("hi") }]} >TEST</Dialog>			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
-			<Button onClick={() => openDialogId("dialog-2")}>Open Dialog</Button>{" "}
-			<Dialog configuration="basic" id="dialog-2" showDivider={true} showCloseButton={true} buttons={[{ onClick: () => alert("hi") },{  onClick: () => alert("hi") }]} />			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
-			<Button onClick={() => openDialogId("dialog-3")}>Open Dialog</Button>{" "}
-			<Dialog listComponent={        <List>
-            
-            <ListItem
-                size="2-line"
-                showDivider={true}
-                leadingElement="switch"
-                elementSelected={true}
-            >
-                Supporting line text lorem ipsum dolor sit amet, consectetur.
-            </ListItem>     
-            <ListItem
-                size="3-line"
-                showDivider={true}
-                leadingElement="switch"
-                onElementChange={() => {
-                    alert("hi");
-                }}
-                trailingElement="icon"
-                onTrailingIconClick={() => {
-                    alert("hi");
-                }}
-                switchIconNameDeselected="star"
-                switchIconNameSelected="flag"
-            >
-                Supporting line text lorem ipsum dolor sit amet, consectetur.
-            </ListItem>    
-            <ListItem
-                size="2-line"
-                showDivider={true}
-                leadingElement="radio"
-                onElementChange={() => {
-                    alert("hi");
-                }}
-                radioButtonGroupName="list-item-radio-group-1"
-                radioButtonValue="1"
-                trailingElement="icon"
-                onTrailingIconClick={() => {
-                    alert("hi");
-                }}
-            >
-                Supporting line text lorem ipsum dolor sit amet, consectetur.
-            </ListItem>
-			<ListItem
-                size="2-line"
-                showDivider={true}
-                leadingElement="radio"
-                onElementChange={() => {
-                    alert("hi");
-                }}
-                radioButtonGroupName="list-item-radio-group-1"
-                radioButtonValue="1"
-                trailingElement="icon"
-                onTrailingIconClick={() => {
-                    alert("hi");
-                }}
-            >
-                Supporting line text lorem ipsum dolor sit amet, consectetur.
-            </ListItem>
-			<ListItem
-                size="2-line"
-                showDivider={true}
-                leadingElement="radio"
-                onElementChange={() => {
-                    alert("hi");
-                }}
-                radioButtonGroupName="list-item-radio-group-1"
-                radioButtonValue="1"
-                trailingElement="icon"
-                onTrailingIconClick={() => {
-                    alert("hi");
-                }}
-            >
-                Supporting line text lorem ipsum dolor sit amet, consectetur.
-            </ListItem>
-			<ListItem
-                size="2-line"
-                showDivider={true}
-                leadingElement="radio"
-                onElementChange={() => {
-                    alert("hi");
-                }}
-                radioButtonGroupName="list-item-radio-group-1"
-                radioButtonValue="1"
-                trailingElement="icon"
-                onTrailingIconClick={() => {
-                    alert("hi");
-                }}
-            >
-                Supporting line text lorem ipsum dolor sit amet, consectetur.
-            </ListItem>
-			<ListItem
-                size="2-line"
-                showDivider={true}
-                leadingElement="radio"
-                onElementChange={() => {
-                    alert("hi");
-                }}
-                radioButtonGroupName="list-item-radio-group-1"
-                radioButtonValue="1"
-                trailingElement="icon"
-                onTrailingIconClick={() => {
-                    alert("hi");
-                }}
-            >
-                Supporting line text lorem ipsum dolor sit amet, consectetur.
-            </ListItem>
-			<ListItem
-                size="2-line"
-                showDivider={true}
-                leadingElement="radio"
-                onElementChange={() => {
-                    alert("hi");
-                }}
-                radioButtonGroupName="list-item-radio-group-1"
-                radioButtonValue="1"
-                trailingElement="icon"
-                onTrailingIconClick={() => {
-                    alert("hi");
-                }}
-            >
-                Supporting line text lorem ipsum dolor sit amet, consectetur.
-            </ListItem>
-			<ListItem
-                size="2-line"
-                showDivider={true}
-                leadingElement="radio"
-                onElementChange={() => {
-                    alert("hi");
-                }}
-                radioButtonGroupName="list-item-radio-group-1"
-                radioButtonValue="1"
-                trailingElement="icon"
-                onTrailingIconClick={() => {
-                    alert("hi");
-                }}
-            >
-                Supporting line text lorem ipsum dolor sit amet, consectetur.
-            </ListItem>
-			<ListItem
-                size="2-line"
-                showDivider={true}
-                leadingElement="radio"
-                onElementChange={() => {
-                    alert("hi");
-                }}
-                radioButtonGroupName="list-item-radio-group-1"
-                radioButtonValue="1"
-                trailingElement="icon"
-                onTrailingIconClick={() => {
-                    alert("hi");
-                }}
-            >
-                Supporting line text lorem ipsum dolor sit amet, consectetur.
-            </ListItem>
-			<ListItem
-                size="2-line"
-                showDivider={true}
-                leadingElement="radio"
-                onElementChange={() => {
-                    alert("hi");
-                }}
-                radioButtonGroupName="list-item-radio-group-1"
-                radioButtonValue="1"
-                trailingElement="icon"
-                onTrailingIconClick={() => {
-                    alert("hi");
-                }}
-            >
-                Supporting line text lorem ipsum dolor sit amet, consectetur.
-            </ListItem>
-			<ListItem
-                size="2-line"
-                showDivider={true}
-                leadingElement="radio"
-                onElementChange={() => {
-                    alert("hi");
-                }}
-                radioButtonGroupName="list-item-radio-group-1"
-                radioButtonValue="1"
-                trailingElement="icon"
-                onTrailingIconClick={() => {
-                    alert("hi");
-                }}
-            >
-                Supporting line text lorem ipsum dolor sit amet, consectetur.
-            </ListItem>
-         </List>} configuration="list" id="dialog-3" showDivider={true} showCloseButton={true} buttons={[{ onClick: () => alert("hi") },{  onClick: () => alert("hi") }]} />			
+			<Button onClick={() => openDialogId("dialog-1")}>Basic Dialog</Button>
+			<Dialog
+				configuration="basic"
+				id="dialog-1"
+				showDivider={true}
+				showCloseButton={true}
+				buttons={[
+					{ onClick: () => alert("hi") },
+					{ onClick: () => alert("hi") },
+				]}
+				title="Lorem Ipsum"
+			>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			</Dialog>
+			<CodeSnippet>{`<Button onClick={() => openDialogId("dialog-1")}>Basic Dialog</Button>
+			<Dialog
+				configuration="basic"
+				id="dialog-1"
+				showDivider={true}
+				showCloseButton={true}
+				buttons={[
+					{ onClick: () => alert("hi") },
+					{ onClick: () => alert("hi") },
+				]}
+				title="Lorem Ipsum"
+			>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			</Dialog>`}</CodeSnippet>
+			<Button onClick={() => openDialogId("dialog-2")}>
+				Dialog With Hero Icon
+			</Button>
+			<Dialog
+				configuration="basic"
+				id="dialog-2"
+				showDivider={true}
+				showCloseButton={true}
+				iconName="mobile_friendly"
+				buttons={[
+					{ onClick: () => alert("hi") },
+					{ onClick: () => alert("hi") },
+				]}
+				title="Lorem Ipsum"
+			>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			</Dialog>
+			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
+			<Button onClick={() => openDialogId("dialog-3")}>List Dialog</Button>
+			<Dialog
+				configuration="list"
+				id="dialog-3"
+				showDivider={true}
+				showCloseButton={true}
+				buttons={[
+					{ onClick: () => alert("hi") },
+					{ onClick: () => alert("hi") },
+				]}
+				title="Lorem Ipsum"
+				listComponent={
+					<List>
+						<ListItem size="1-line" showDivider={true}>
+							Supporting line text lorem ipsum dolor sit amet, consectetur.
+						</ListItem>
+						<ListItem size="1-line" showDivider={true}>
+							Supporting line text lorem ipsum dolor sit amet, consectetur.
+						</ListItem>
+					</List>
+				}
+			>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			</Dialog>
+			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
+			<Button onClick={() => openDialogId("dialog-4")}>
+				List Dialog With Hero Icon
+			</Button>
+			<Dialog
+				configuration="list"
+				id="dialog-4"
+				showDivider={true}
+				showCloseButton={true}
+				iconName="mobile_friendly"
+				buttons={[
+					{ onClick: () => alert("hi") },
+					{ onClick: () => alert("hi") },
+				]}
+				title="Lorem Ipsum"
+				listComponent={
+					<List>
+						<ListItem size="1-line" showDivider={true}>
+							Supporting line text lorem ipsum dolor sit amet, consectetur.
+						</ListItem>
+						<ListItem size="1-line" showDivider={true}>
+							Supporting line text lorem ipsum dolor sit amet, consectetur.
+						</ListItem>
+					</List>
+				}
+			>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			</Dialog>
+			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
+			<Button onClick={() => openDialogId("dialog-5")}>
+				Scrollable List Dialog
+			</Button>
+			<Dialog
+				configuration="list"
+				id="dialog-5"
+				showDivider={true}
+				showCloseButton={true}
+				buttons={[
+					{ onClick: () => alert("hi") },
+					{ onClick: () => alert("hi") },
+				]}
+				title="Lorem Ipsum"
+				listComponent={
+					<List height="10rem">
+						<ListItem size="3-line" showDivider={true}>
+							Supporting line text lorem ipsum dolor sit amet, consectetur.
+						</ListItem>
+						<ListItem size="3-line" showDivider={true}>
+							Supporting line text lorem ipsum dolor sit amet, consectetur.
+						</ListItem>
+						<ListItem size="3-line" showDivider={true}>
+							Supporting line text lorem ipsum dolor sit amet, consectetur.
+						</ListItem>
+					</List>
+				}
+			>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			</Dialog>
+			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
+			<Button onClick={() => openDialogId("dialog-6")}>
+				Scrollable List Dialog With Hero Icon
+			</Button>
+			<Dialog
+				configuration="list"
+				id="dialog-6"
+				showDivider={true}
+				showCloseButton={true}
+				buttons={[
+					{ onClick: () => alert("hi") },
+					{ onClick: () => alert("hi") },
+				]}
+				title="Lorem Ipsum"
+				listComponent={
+					<List height="10rem">
+						<ListItem size="3-line" showDivider={true}>
+							Supporting line text lorem ipsum dolor sit amet, consectetur.
+						</ListItem>
+						<ListItem size="3-line" showDivider={true}>
+							Supporting line text lorem ipsum dolor sit amet, consectetur.
+						</ListItem>
+						<ListItem size="3-line" showDivider={true}>
+							Supporting line text lorem ipsum dolor sit amet, consectetur.
+						</ListItem>
+					</List>
+				}
+			>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			</Dialog>
+			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
 		</div>
 	);
 };

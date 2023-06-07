@@ -4177,11 +4177,11 @@ li {
 	padding: 16px 0px 0px;
 }
 
-
-.list-small{
-	height: 10rem;
+.list-scroll {
+	height: auto;
 	overflow: clip;
 	overflow-y: scroll;
+	width: 100%;
 }
 
 

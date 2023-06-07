@@ -37,7 +37,7 @@ const ListsFrame: React.FC = () => {
 				Lists
 			</ComponentFrameTitle>
 
-			<List>
+			<List height="20rem">
 				<ListItem size="1-line" showDivider={true}>
 					Supporting line text lorem ipsum dolor sit amet, consectetur.
 				</ListItem>
@@ -75,15 +75,15 @@ const ListsFrame: React.FC = () => {
 			</List>
 
 			<CodeSnippet>{`
-<List>
+<List
+	height="20rem"
+>
 	<ListItem>Item 1</ListItem>
-    <ListItem>Item 2</ListItem>
+	<ListItem>Item 2</ListItem>
 	<ListItem>Item 3</ListItem>
 	<ListItem>Item :</ListItem>
 	<ListItem>Item N</ListItem>
  </List>`}</CodeSnippet>
-			<Typography variant={"text-label-small"}>Default</Typography>
-
 			<div
 				className={"lists-subframe-trmd3 lists-subframe-" + _theme + "-trmd3"}
 			>
