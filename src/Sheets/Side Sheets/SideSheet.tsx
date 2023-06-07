@@ -33,6 +33,7 @@ const SideSheet: React.FC<ISideSheetProps> = ({
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
 	const sideSheetRef = useRef<HTMLDivElement>(null);
+	console.log();
 
 	let _computedComponentClassName = new StringBuilder()
 		.add("side-sheet")
