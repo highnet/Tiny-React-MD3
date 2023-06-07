@@ -99,9 +99,16 @@ const Dialog: React.FC<IDIalogProps> = ({
 				ref={dialogRef}
 			>
 				<div className="dialog-text-content">
-					{_iconName && <Icon>{_iconName}</Icon>}
-					<Typography variant="text-headline-small">{_title}</Typography>
-					<Typography variant="text-body-medium">{_children}</Typography>
+					{_iconName && <Icon className="icon-on-dialog">{_iconName}</Icon>}
+					<Typography variant="text-headline-small" className="title-on-dialog">
+						{_title}
+					</Typography>
+					<Typography
+						variant="text-body-medium"
+						className="supporting-text-on-dialog"
+					>
+						{_children}
+					</Typography>
 				</div>
 				{_showDivider && (
 					<div className="dialog-divider">

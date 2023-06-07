@@ -234,6 +234,13 @@ function App() {
 							scrollToSection("lists-section", -60);
 						},
 					},
+					{
+						name: "chat_bubble",
+						label: "Dialogs",
+						onClick: () => {
+							scrollToSection("dialogs-section", -60);
+						},
+					},
 				]}
 			/>
 			<div id="section-0-trmd3" className="section-trmd3">

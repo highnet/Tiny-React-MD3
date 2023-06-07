@@ -3875,8 +3875,6 @@ li {
 	list-style-type: none;
 }
 
-
-
 .list {
 	display: flex;
 	flex-direction: column;
@@ -4127,8 +4125,7 @@ li {
 	background-color: var(--m3-state-layers-dark-on-surface-opacity-08);
 }
 
-/* DIALOGS */
-
+/* ==========DIALOGS========== */
 .dialog {
     display: none;
     flex-direction: column;
@@ -4137,9 +4134,8 @@ li {
     width: 31.2rem;
     border-radius: 2.8rem;
     border: none;
-    background: var(--m3-sys-light-surface-container-high);
 	overflow: hidden;
-	max-width: 100vh;
+	max-width: 100vw;
 }
 
 .dialog .text {
@@ -4156,7 +4152,6 @@ li {
 	gap: 16px;
 	width: 100%;
 	padding: 24px 24px 0px;
-
 }
 
 .dialog-actions {
@@ -4182,6 +4177,40 @@ li {
 	overflow: clip;
 	overflow-y: scroll;
 	width: 100%;
+}
+
+/* DIALOGS / LIGHT THEME */
+.dialog-light-theme {
+	background: var(--m3-sys-light-surface-container-high);
+}
+
+.dialog-light-theme .title-on-dialog {
+	color: var(--m3-sys-light-on-surface);
+}
+
+.dialog-light-theme .supporting-text-on-dialog {
+	color: var(--m3-sys-light-on-surface-variant);
+}
+
+.dialog-light-theme .icon-on-dialog {
+	color: var(--m3-sys-light-secondary);
+}
+
+/* DIALOGS / DARK THEME */
+.dialog-dark-theme {
+	background: var(--m3-sys-dark-surface-container-high);
+}
+
+.dialog-dark-theme .title-on-dialog {
+	color: var(--m3-sys-dark-on-surface);
+}
+
+.dialog-dark-theme .supporting-text-on-dialog {
+	color: var(--m3-sys-dark-on-surface-variant);
+}
+
+.dialog-dark-theme .icon-on-dialog {
+	color: var(--m3-sys-dark-secondary);
 }
 
 

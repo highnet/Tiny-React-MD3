@@ -140,6 +140,13 @@ const TourGuide: React.FC = () => {
 				>
 					📝 Lists 📝
 				</Button>
+				<Button
+					className="tourguide-button"
+					configuration="elevated"
+					onClick={() => scrollToSection("dialogs-section", -60)}
+				>
+					💬 Dialogs 💬
+				</Button>
 			</div>
 		</div>
 	);

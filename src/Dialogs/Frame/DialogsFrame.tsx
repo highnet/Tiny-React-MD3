@@ -30,7 +30,7 @@ const DialogsFrame: React.FC = () => {
 	return (
 		<div className={_computedFrameClassName}>
 			<Typography
-				id="components-section"
+				id="dialogs-section"
 				variant="text-title-large"
 				className={_computedTrmd3SectionTitlesClassName}
 			>
@@ -53,20 +53,21 @@ const DialogsFrame: React.FC = () => {
 			>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 			</Dialog>
-			<CodeSnippet>{`<Button onClick={() => openDialogId("dialog-1")}>Basic Dialog</Button>
-			<Dialog
-				configuration="basic"
-				id="dialog-1"
-				showDivider={true}
-				showCloseButton={true}
-				buttons={[
-					{ onClick: () => alert("hi") },
-					{ onClick: () => alert("hi") },
-				]}
-				title="Lorem Ipsum"
-			>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-			</Dialog>`}</CodeSnippet>
+			<CodeSnippet>{`
+<Button onClick={() => openDialogId("dialog-1")}>Basic Dialog</Button>
+	<Dialog
+	    configuration="basic"
+		id="dialog-1"
+		showDivider={true}
+		showCloseButton={true}
+		buttons={[
+			{ onClick: () => alert("hi") },
+			{ onClick: () => alert("hi") },
+		]}
+	title="Lorem Ipsum"
+>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</Dialog>`}</CodeSnippet>
 			<Button onClick={() => openDialogId("dialog-2")}>
 				Dialog With Hero Icon
 			</Button>
@@ -84,7 +85,25 @@ const DialogsFrame: React.FC = () => {
 			>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 			</Dialog>
-			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
+			<CodeSnippet>{`			
+<Button onClick={() => openDialogId("dialog-2")}>
+	Dialog With Hero Icon
+</Button>
+<Dialog
+	configuration="basic"
+	id="dialog-2"
+	showDivider={true}
+	showCloseButton={true}
+	iconName="mobile_friendly"
+	buttons={[
+		{ onClick: () => alert("hi") },
+		{ onClick: () => alert("hi") },
+		]}
+	title="Lorem Ipsum"
+>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</Dialog>
+`}</CodeSnippet>
 			<Button onClick={() => openDialogId("dialog-3")}>List Dialog</Button>
 			<Dialog
 				configuration="list"
@@ -109,7 +128,32 @@ const DialogsFrame: React.FC = () => {
 			>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 			</Dialog>
-			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
+			<CodeSnippet>{`			
+<Button onClick={() => openDialogId("dialog-3")}>List Dialog</Button>
+<Dialog
+	configuration="list"
+	id="dialog-3"
+	showDivider={true}
+	showCloseButton={true}
+	buttons={[
+		{ onClick: () => alert("hi") },
+		{ onClick: () => alert("hi") },
+	]}
+	title="Lorem Ipsum"
+	listComponent={
+		<List>
+			<ListItem size="1-line" showDivider={true}>
+				Supporting line text lorem ipsum dolor sit amet, consectetur.
+			</ListItem>
+			<ListItem size="1-line" showDivider={true}>
+				Supporting line text lorem ipsum dolor sit amet, consectetur.
+			</ListItem>
+		</List>
+				}
+>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</Dialog>
+            `}</CodeSnippet>
 			<Button onClick={() => openDialogId("dialog-4")}>
 				List Dialog With Hero Icon
 			</Button>
@@ -137,7 +181,35 @@ const DialogsFrame: React.FC = () => {
 			>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 			</Dialog>
-			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
+			<CodeSnippet>{`			
+<Button onClick={() => openDialogId("dialog-4")}>
+	List Dialog With Hero Icon
+</Button>
+<Dialog
+	configuration="list"
+	id="dialog-4"
+	showDivider={true}
+	showCloseButton={true}
+	iconName="mobile_friendly"
+	buttons={[
+	    { onClick: () => alert("hi") },
+		{ onClick: () => alert("hi") },
+    ]}
+	title="Lorem Ipsum"
+	listComponent={
+		<List>
+			<ListItem size="1-line" showDivider={true}>
+				Supporting line text lorem ipsum dolor sit amet, consectetur.
+			</ListItem>
+			<ListItem size="1-line" showDivider={true}>
+				Supporting line text lorem ipsum dolor sit amet, consectetur.
+			</ListItem>
+		</List>
+		}
+>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</Dialog>
+            `}</CodeSnippet>
 			<Button onClick={() => openDialogId("dialog-5")}>
 				Scrollable List Dialog
 			</Button>
@@ -167,7 +239,37 @@ const DialogsFrame: React.FC = () => {
 			>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 			</Dialog>
-			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
+			<CodeSnippet>{`
+<Button onClick={() => openDialogId("dialog-5")}>
+	Scrollable List Dialog
+</Button>
+<Dialog
+	configuration="list"
+	id="dialog-5"
+	showDivider={true}
+	showCloseButton={true}
+	buttons={[
+		{ onClick: () => alert("hi") },
+		{ onClick: () => alert("hi") },
+	]}
+	title="Lorem Ipsum"
+	listComponent={
+		<List height="10rem">
+			<ListItem size="3-line" showDivider={true}>
+				Supporting line text lorem ipsum dolor sit amet, consectetur.
+			</ListItem>
+			<ListItem size="3-line" showDivider={true}>
+				upporting line text lorem ipsum dolor sit amet, consectetur.
+			</ListItem>
+			<ListItem size="3-line" showDivider={true}>
+				Supporting line text lorem ipsum dolor sit amet, consectetur.
+			</ListItem>
+		</List>
+		}
+>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</Dialog>
+            `}</CodeSnippet>
 			<Button onClick={() => openDialogId("dialog-6")}>
 				Scrollable List Dialog With Hero Icon
 			</Button>
@@ -176,6 +278,7 @@ const DialogsFrame: React.FC = () => {
 				id="dialog-6"
 				showDivider={true}
 				showCloseButton={true}
+				iconName="mobile_friendly"
 				buttons={[
 					{ onClick: () => alert("hi") },
 					{ onClick: () => alert("hi") },
@@ -197,7 +300,37 @@ const DialogsFrame: React.FC = () => {
 			>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 			</Dialog>
-			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
+			<CodeSnippet>{`
+<Button onClick={() => openDialogId("dialog-6")}>
+	Scrollable List Dialog With Hero Icon
+</Button>
+<Dialog
+	configuration="list"
+	id="dialog-6"
+	showDivider={true}
+	showCloseButton={true}
+    iconName="mobile_friendly"
+	buttons={[
+	{ onClick: () => alert("hi") },
+	{ onClick: () => alert("hi") },
+]}
+	title="Lorem Ipsum"
+	listComponent={
+	<List height="10rem">
+		<ListItem size="3-line" showDivider={true}>
+			Supporting line text lorem ipsum dolor sit amet, consectetur.
+		</ListItem>
+		<ListItem size="3-line" showDivider={true}>
+			Supporting line text lorem ipsum dolor sit amet, consectetur.
+		</ListItem>
+		<ListItem size="3-line" showDivider={true}>
+			Supporting line text lorem ipsum dolor sit amet, consectetur.
+		</ListItem>
+		</List>
+	}
+>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</Dialog>`}</CodeSnippet>
 		</div>
 	);
 };
