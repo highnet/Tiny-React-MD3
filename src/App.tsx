@@ -37,6 +37,10 @@ import TextField from "./TextField/TextField";
 import TextFieldsFrame from "./TextField/Frame/TextFieldsFrame";
 import ListsFrame from "./Lists/Frame/ListsFrame";
 import DialogsFrame from "./Dialogs/Frame/DialogsFrame";
+import SideSheet from "./Sheets/Side Sheets/SideSheet";
+import List from "./Lists/List";
+import ListItem from "./Lists/List Items/ListItem";
+import Typography from "./Typography/Typography";
 
 function App() {
 	console.log(`	👋 Welcome to TRMD3! 👋	`);
@@ -243,6 +247,27 @@ function App() {
 					},
 				]}
 			/>
+			<SideSheet
+				title="Tiny React MD3"
+				content={
+					<>
+						<Typography variant="text-body-medium">
+							❤️ You like Figma? ❤️ ❤️ You Like Material Design 3? ❤️ ❤️ You
+							like React? ❤️ Then you love Tiny React MD3! Figma Material Design
+							3 Kit 🤝 React.ts = Tiny React MD3 Quickly transform your design
+							kit prototypes into stunning and modern web applications A set of
+							easy-to-use, high-performance and customizable components that
+							follow the Material Design 3 principles and aesthetics Developer
+							handoffs made easy with ensured parity between the Figma material
+							Design 3 Kit and React
+						</Typography>
+					</>
+				}
+				buttons={[
+					{ onClick: () => alert("hi") },
+					{ onClick: () => alert("hi") },
+				]}
+			></SideSheet>
 			<div id="section-0-trmd3" className="section-trmd3">
 				<Hero hasLogo={true} />
 				<Cookietrail />
