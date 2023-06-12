@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { getPreferredScheme } from "../Gizmos/Themeing";
 import { StringBuilder } from "../Gizmos/StringBuilder";
 import { ISliderProps } from "./ISliderProps";
@@ -51,6 +51,10 @@ const Slider: React.FC<ISliderProps> = ({
 	};
 
 	const gradient = `linear-gradient(to right, var(--m3-sys-light-primary) ${_value}%, var(--m3-sys-light-surface-container-highest) 0%)`;
+	const sliderContainerRef = useRef<HTMLDivElement>(null);
+
+	const thumbPosition = `${((_value - _min) / (_max - _min)) * 16}rem`;
+	console.log(`Thumb position: ${thumbPosition}`);
 
 	return (
 		<div
@@ -59,7 +63,22 @@ const Slider: React.FC<ISliderProps> = ({
 			onMouseMove={handleMouseMove}
 			onClick={onClick}
 			className="slider-container"
+			ref={sliderContainerRef}
 		>
+			<div
+				className="slider-thumb"
+				style={{
+					position: "relative",
+					width: "2em",
+					height: "2rem",
+					backgroundColor: "var(--m3-sys-light-primary)",
+					top: "1.7rem",
+					transform: `translateX(${thumbPosition})`,
+					borderRadius: "50%",
+					zIndex: 2,
+					pointerEvents: "none",
+				}}
+			></div>
 			<input
 				className={_computedComponentClassName}
 				id={_id}
@@ -71,6 +90,7 @@ const Slider: React.FC<ISliderProps> = ({
 				onChange={handleValueChange}
 				style={{ background: gradient }}
 			></input>
+
 			<p>Value: {_value}</p>
 		</div>
 	);

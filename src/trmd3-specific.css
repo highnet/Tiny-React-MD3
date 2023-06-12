@@ -581,7 +581,6 @@ pre {
 }
 
 /* SLIDERS */
-
 .sliders-subframe-trmd3{
 	display: flex;
 	flex-direction: column;
@@ -589,4 +588,6 @@ pre {
 	gap: 2.5rem;
 	border-radius: 1.6rem;
 	width: 80%;
+	align-items: center;
+	justify-content: center;
 }
