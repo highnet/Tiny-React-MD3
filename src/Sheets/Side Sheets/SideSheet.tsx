@@ -6,6 +6,7 @@ import Icon from "../../Icon/Icon";
 import Typography from "../../Typography/Typography";
 import { ISideSheetProps } from "./ISideSheetProps";
 import Button from "../../Button/Button";
+import { toggleSideSheet } from "../../Gizmos/Modals";
 
 const SideSheet: React.FC<ISideSheetProps> = ({
 	className,
@@ -40,19 +41,22 @@ const SideSheet: React.FC<ISideSheetProps> = ({
 		.add(_className)
 		.toString();
 
-	const handleClick = (event: React.MouseEvent<HTMLDivElement>) => {
-		const { clientX } = event;
-		const sideSheetRect = sideSheetRef.current?.getBoundingClientRect();
-		const sideSheetLeft = sideSheetRect?.left || 0;
-		const sideSheetWidth = sideSheetRect?.width || 0;
-		const horizontalPercentage =
-			((clientX - sideSheetLeft) / sideSheetWidth) * 100;
-		if (horizontalPercentage < 7) {
-			sideSheetRef.current?.classList.toggle("side-sheet-active");
-			setisActive(!isActive);
-		}
-	};
-	console.log();
+		const handleClick = (event: React.MouseEvent<HTMLDivElement>) => {
+			const { clientX } = event;
+			const sideSheetRect = sideSheetRef.current?.getBoundingClientRect();
+			const sideSheetLeft = sideSheetRect?.left || 0;
+			const sideSheetWidth = sideSheetRect?.width || 0;
+			const horizontalPercentage =
+			  ((clientX - sideSheetLeft) / sideSheetWidth) * 100;
+			if (horizontalPercentage < 7) {
+				toggleSideSheet(sideSheetRef, isActive, setisActive);
+			}
+		  };
+
+		const handleToggleSideSheet = () => {
+			toggleSideSheet(sideSheetRef, isActive, setisActive);
+		};
+		
 
 	const actionButtons = _showActions && (
 		<div className="dialog-actions">

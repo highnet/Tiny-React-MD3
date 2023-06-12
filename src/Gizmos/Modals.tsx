@@ -31,3 +31,8 @@ export const openDialogRef = (
 		dialogRef.current.classList.toggle("dialog-visible");
 	}
 };
+
+export const toggleSideSheet = (sideSheetRef: React.RefObject<HTMLDivElement>, isActive: boolean, setisActive: React.Dispatch<React.SetStateAction<boolean>>) => {
+	sideSheetRef.current?.classList.toggle("side-sheet-active");
+	setisActive(!isActive);
+  };
