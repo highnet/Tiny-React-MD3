@@ -273,7 +273,10 @@ function App() {
 				<Cookietrail />
 				<TourGuide />
 			</div>
-						<div id="section-15-trmd3" className="section-trmd3">
+			<div id="section-15-trmd3" className="section-trmd3">
+				<SideSheetsFrame />
+			</div>
+			<div id="section-15-trmd3" className="section-trmd3">
 				<SideSheetsFrame />
 			</div>
 			<div id="section-1-trmd3" className="section-trmd3">
