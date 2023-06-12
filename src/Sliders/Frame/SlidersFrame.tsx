@@ -3,6 +3,7 @@ import { getPreferredScheme } from "../../Gizmos/Themeing";
 import CodeSnippet from "../../TRMD3/CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../../TRMD3/ComponentFrameTitle/ComponentFrameTitle";
 import Typography from "../../Typography/Typography";
+import Slider from "../Slider";
 
 
 const SlidersFrame: React.FC = () => {
@@ -32,11 +33,20 @@ const SlidersFrame: React.FC = () => {
 			>
 				🎚️
 			</Typography>
-			<ComponentFrameTitle link="https://www.highnet.xyz">
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#%EF%B8%8F-sliders">
 				Sliders
 			</ComponentFrameTitle>
-			<Typography variant={"text-label-small"}>Default</Typography>
-			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
+			<div className="sliders-subframe-trmd3">
+				<Typography variant={"text-label-small"}>Default</Typography>
+				<Slider onValueChange={() => {alert("hi")}} step={10}></Slider>
+				<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
+				<Typography variant={"text-label-small"}>Default</Typography>
+				<Slider step={10}></Slider>
+				<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
+				<Typography variant={"text-label-small"}>Default</Typography>
+				<Slider step={10}></Slider>
+				<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
+			</div>
 
 		</div>
 	);

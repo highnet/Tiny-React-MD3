@@ -579,3 +579,14 @@ pre {
 	border: 1px solid gray;
 	padding-top: 0;
 }
+
+/* SLIDERS */
+
+.sliders-subframe-trmd3{
+	display: flex;
+	flex-direction: column;
+	background-color: var(--m3-sys-light-surface);
+	gap: 2.5rem;
+	border-radius: 1.6rem;
+	width: 80%;
+}

@@ -4294,3 +4294,63 @@ li {
 	padding-right: 3rem;
 	height: 100%;
 }
+
+
+/* SLIDERS */
+
+.slider-container {
+	width: 100%;
+}
+
+.slider {
+	-webkit-appearance: none;  /* Override default CSS styles */
+	appearance: none;
+	width: 100%;
+	max-width: 18rem;
+	height: .4rem; /* Specified height */
+	background: #d3d3d3; /* Grey background */
+	outline: none; /* Remove outline */
+	opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+	-webkit-transition: .2s; /* 0.2 seconds transition on hover */
+	transition: opacity .2s;
+	border-radius: .4rem;
+}
+
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+	-webkit-appearance: none; /* Override default look */
+	appearance: none;
+	width: 2rem;
+	height: 2rem;
+	background: #04AA6D; /* Green background */
+	cursor: pointer; /* Cursor on hover */
+	border-radius: 50%;
+	background-color: var(--m3-sys-light-primary);
+	transition: all 0.3s ease-in-out;
+
+}
+
+  .slider::-webkit-slider-thumb:hover {
+	width: 2.25rem;
+	height: 2.25rem;
+  }
+  
+  .slider::-moz-range-thumb {
+	width: 2rem;
+	height: 2rem;
+	cursor: pointer; /* Cursor on hover */
+	border-radius: 50%;
+	background-color: var(--m3-sys-light-primary);
+	transition: all 0.3s ease-in-out;
+}
+
+  .slider::-moz-range-thumb:hover {
+	width: 2.25rem;
+	height: 2.25rem;
+  }
+
+  .slider::-moz-range-progress {
+	background-color: var(--m3-sys-light-primary);
+  }
+  

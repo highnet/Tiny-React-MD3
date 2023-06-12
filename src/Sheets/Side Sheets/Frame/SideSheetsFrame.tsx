@@ -35,7 +35,7 @@ const SideSheetsFrame: React.FC = () => {
 			>
 				⬅️
 			</Typography>
-			<ComponentFrameTitle link="https://www.highnet.xyz">
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#%EF%B8%8F-side-sheets">
 				Side Sheets
 			</ComponentFrameTitle>
             <SideSheet 

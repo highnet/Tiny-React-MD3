@@ -42,6 +42,7 @@ import List from "./Lists/List";
 import ListItem from "./Lists/List Items/ListItem";
 import Typography from "./Typography/Typography";
 import SideSheetsFrame from "./Sheets/Side Sheets/Frame/SideSheetsFrame";
+import SlidersFrame from "./Sliders/Frame/SlidersFrame";
 
 function App() {
 	console.log(`	👋 Welcome to TRMD3! 👋	`);
@@ -273,8 +274,8 @@ function App() {
 				<Cookietrail />
 				<TourGuide />
 			</div>
-			<div id="section-15-trmd3" className="section-trmd3">
-				<SideSheetsFrame />
+			<div id="section-16-trmd3" className="section-trmd3">
+				<SlidersFrame />
 			</div>
 			<div id="section-15-trmd3" className="section-trmd3">
 				<SideSheetsFrame />
