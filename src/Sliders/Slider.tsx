@@ -21,6 +21,8 @@ const Slider: React.FC<ISliderProps> = ({
 	const [_min] = useState(min || 0);
 	const [_max] = useState(max || 100);
 	const [_value, setValue] = useState(value || 50);
+	const [isOverTrack, setIsOverTrack] = useState(false);
+	const [isOverKnob, setIsOverKnob] = useState<boolean>(false);
 
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
@@ -37,7 +39,15 @@ const Slider: React.FC<ISliderProps> = ({
 	};
 
 	const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
-		console.log("Mouse moved inside the slider div");
+		const sliderRect = event.currentTarget.getBoundingClientRect();
+
+		const isOverTrack =
+			event.clientY >= sliderRect.top && event.clientY <= sliderRect.bottom;
+
+		setIsOverTrack(isOverTrack);
+		console.log(
+			`Mouse moved inside the slider div. Over track: ${isOverTrack}. Over knob: ${isOverKnob}`
+		);
 	};
 
 	const gradient = `linear-gradient(to right, var(--m3-sys-light-primary) ${_value}%, var(--m3-sys-light-surface-container-highest) 0%)`;
