@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { getPreferredScheme } from "../Gizmos/Themeing";
 import { StringBuilder } from "../Gizmos/StringBuilder";
 import { ISliderProps } from "./ISliderProps";
+import Typography from "../Typography/Typography";
 
 const Slider: React.FC<ISliderProps> = ({
 	className,
@@ -45,19 +46,21 @@ const Slider: React.FC<ISliderProps> = ({
 
 	const thumbRef = useRef<HTMLDivElement>(null);
 	const thumbOverlayRef = useRef<HTMLDivElement>(null);
+	const thumbTooltipRef = useRef<HTMLDivElement>(null);
 
 	thumbRef.current?.addEventListener("mouseenter", (event) => {
 		console.log("mouse enter");
 		thumbRef.current?.classList.add("slider-thumb-active");
 		thumbOverlayRef.current?.classList.add("slider-thumb-overlay-active");
-		console.log(thumbRef);
+		thumbTooltipRef.current?.classList.add("slider-thumb-tooltip-active");
+		console.log(thumbTooltipRef);
 	});
 
 	thumbRef.current?.addEventListener("mouseleave", (event) => {
 		console.log("mouse exit");
 		thumbRef.current?.classList.remove("slider-thumb-active");
 		thumbOverlayRef.current?.classList.remove("slider-thumb-overlay-active");
-		console.log(thumbRef);
+		thumbTooltipRef.current?.classList.remove("slider-thumb-tooltip-active");
 	});
 
 	return (
@@ -82,6 +85,13 @@ const Slider: React.FC<ISliderProps> = ({
 					zIndex: 1,
 				}}
 			>
+				<div ref={thumbTooltipRef} className="slider-thumb-tooltip">
+					<div className="slider-teardrop"></div>
+					<Typography variant="text-label-medium" className="slider-value">
+						{_value}
+					</Typography>
+				</div>
+
 				<div ref={thumbOverlayRef} className="slider-thumb-overlay"></div>
 			</div>
 			<input
@@ -95,8 +105,6 @@ const Slider: React.FC<ISliderProps> = ({
 				onChange={handleValueChange}
 				style={{ background: gradient }}
 			></input>
-
-			<p>Value: {_value}</p>
 		</div>
 	);
 };
