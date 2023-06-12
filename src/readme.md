@@ -489,3 +489,7 @@ The supported options of <code>{configuration}</code> are the following:
 ## 📝 Lists
     
 ## 💬 Dialogs
+    
+## ⬅️ Side Sheets
+    
+## 🎚️ Sliders
