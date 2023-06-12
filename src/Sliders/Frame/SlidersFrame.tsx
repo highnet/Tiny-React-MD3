@@ -5,7 +5,6 @@ import ComponentFrameTitle from "../../TRMD3/ComponentFrameTitle/ComponentFrameT
 import Typography from "../../Typography/Typography";
 import Slider from "../Slider";
 
-
 const SlidersFrame: React.FC = () => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
@@ -15,8 +14,8 @@ const SlidersFrame: React.FC = () => {
 		.add("flex-column-trmd3")
 		.add("frame-trmd3")
 		.add("frame-" + _theme + "-trmd3")
-		.add("component-frame-trmd3")
-		.add("component-frame-" + _theme + "-trmd3")
+		.add("sliders-frame-trmd3")
+		.add("sliders-frame-" + _theme + "-trmd3")
 		.toString();
 
 	let _computedTrmd3SectionTitlesClassName = new StringBuilder()
@@ -27,7 +26,7 @@ const SlidersFrame: React.FC = () => {
 	return (
 		<div className={_computedFrameClassName}>
 			<Typography
-				id="components-section"
+				id="sliders-section"
 				variant="text-title-large"
 				className={_computedTrmd3SectionTitlesClassName}
 			>
@@ -38,7 +37,12 @@ const SlidersFrame: React.FC = () => {
 			</ComponentFrameTitle>
 			<div className="sliders-subframe-trmd3">
 				<Typography variant={"text-label-small"}>Default</Typography>
-				<Slider onValueChange={() => {alert("hi")}} step={10}></Slider>
+				<Slider
+					onValueChange={() => {
+						alert("hi");
+					}}
+					step={10}
+				></Slider>
 				<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
 				<Typography variant={"text-label-small"}>Default</Typography>
 				<Slider step={10}></Slider>
@@ -47,7 +51,6 @@ const SlidersFrame: React.FC = () => {
 				<Slider step={10}></Slider>
 				<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
 			</div>
-
 		</div>
 	);
 };
