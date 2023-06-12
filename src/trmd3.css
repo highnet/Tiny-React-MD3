@@ -4320,21 +4320,18 @@ li {
   .slider::-webkit-slider-thumb {
 	-webkit-appearance: none; /* Override default look */
 	appearance: none;
-	width: 2rem;
-	height: 2rem;
+	width: 4rem;
+	height: 4rem;
 	cursor: pointer; /* Cursor on hover */
-	border-radius: 50%;
 	background-color: transparent;
 	transition: all 0.3s ease-in-out;
 	border: none;
-
 }
 
   .slider::-moz-range-thumb {
-	width: 2rem;
-	height: 2rem;
+	width: 4rem;
+	height: 4rem;
 	cursor: pointer; /* Cursor on hover */
-	border-radius: 50%;
 	background-color: transparent;	
 	transition: all 0.3s ease-in-out;
 	border: none;
@@ -4343,4 +4340,26 @@ li {
   .slider::-moz-range-progress {
 	background-color: var(--m3-sys-light-primary);
   }
+
+  .slider-thumb::after{
+	content: "";
+  }
   
+.slider-thumb-overlay {
+	width: 4rem;
+	height: 4rem;
+	background-color: var(--m3-state-layers-light-primary-opacity-08);
+	border-radius: 50%;
+	opacity: 0;
+	pointer-events: none;
+	transform: translate(-25%, -25%);
+	transition: opacity 0.3s ease-in-out;
+}
+
+.slider-thumb-overlay-active {
+	opacity: 1;
+}
+
+.slider-thumb {
+	background-color: var(--m3-sys-light-primary);
+}

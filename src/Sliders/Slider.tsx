@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { getPreferredScheme } from "../Gizmos/Themeing";
 import { StringBuilder } from "../Gizmos/StringBuilder";
 import { ISliderProps } from "./ISliderProps";
@@ -34,51 +34,56 @@ const Slider: React.FC<ISliderProps> = ({
 		.toString();
 
 	const handleValueChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-		setValue(parseInt(event.target.value));
 		onValueChange && onValueChange(parseInt(event.target.value));
-	};
-
-	const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
-		const sliderRect = event.currentTarget.getBoundingClientRect();
-
-		const isOverTrack =
-			event.clientY >= sliderRect.top && event.clientY <= sliderRect.bottom;
-
-		setIsOverTrack(isOverTrack);
-		console.log(
-			`Mouse moved inside the slider div. Over track: ${isOverTrack}. Over knob: ${isOverKnob}`
-		);
+		setValue(parseInt(event.target.value));
 	};
 
 	const gradient = `linear-gradient(to right, var(--m3-sys-light-primary) ${_value}%, var(--m3-sys-light-surface-container-highest) 0%)`;
 	const sliderContainerRef = useRef<HTMLDivElement>(null);
 
 	const thumbPosition = `${((_value - _min) / (_max - _min)) * 16}rem`;
-	console.log(`Thumb position: ${thumbPosition}`);
+
+	const thumbRef = useRef<HTMLDivElement>(null);
+	const thumbOverlayRef = useRef<HTMLDivElement>(null);
+
+	thumbRef.current?.addEventListener("mouseenter", (event) => {
+		console.log("mouse enter");
+		thumbRef.current?.classList.add("slider-thumb-active");
+		thumbOverlayRef.current?.classList.add("slider-thumb-overlay-active");
+		console.log(thumbRef);
+	});
+
+	thumbRef.current?.addEventListener("mouseleave", (event) => {
+		console.log("mouse exit");
+		thumbRef.current?.classList.remove("slider-thumb-active");
+		thumbOverlayRef.current?.classList.remove("slider-thumb-overlay-active");
+		console.log(thumbRef);
+	});
 
 	return (
 		<div
 			onMouseEnter={onMouseEnter}
 			onMouseLeave={onMouseLeave}
-			onMouseMove={handleMouseMove}
+			onMouseMove={onMouseMove}
 			onClick={onClick}
 			className="slider-container"
 			ref={sliderContainerRef}
 		>
 			<div
 				className="slider-thumb"
+				ref={thumbRef}
 				style={{
 					position: "relative",
 					width: "2em",
 					height: "2rem",
-					backgroundColor: "var(--m3-sys-light-primary)",
 					top: "1.7rem",
 					transform: `translateX(${thumbPosition})`,
 					borderRadius: "50%",
-					zIndex: 2,
-					pointerEvents: "none",
+					zIndex: 1,
 				}}
-			></div>
+			>
+				<div ref={thumbOverlayRef} className="slider-thumb-overlay"></div>
+			</div>
 			<input
 				className={_computedComponentClassName}
 				id={_id}
