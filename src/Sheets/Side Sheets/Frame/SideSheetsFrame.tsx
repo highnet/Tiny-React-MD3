@@ -33,7 +33,7 @@ const SideSheetsFrame: React.FC = () => {
 				variant="text-title-large"
 				className={_computedTrmd3SectionTitlesClassName}
 			>
-				⏬
+				⬅️
 			</Typography>
 			<ComponentFrameTitle link="https://www.highnet.xyz">
 				Side Sheets
