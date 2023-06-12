@@ -39,7 +39,7 @@ const SlidersFrame: React.FC = () => {
 				<Typography variant={"text-label-small"}>Default</Typography>
 				<Slider
 					onValueChange={() => {
-						alert("hi");
+						console.log("slider value changed");
 					}}
 					step={10}
 				></Slider>
