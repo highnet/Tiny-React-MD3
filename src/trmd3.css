@@ -3318,7 +3318,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	padding: 0rem 1.6rem 0rem 0.4rem;
 	overflow: hidden;
 	justify-content: space-between;
-	z-index: 999;
+	z-index: 1000;
 	position: sticky;
 }
 

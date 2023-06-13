@@ -115,6 +115,20 @@ function App() {
 						},
 					},
 					{
+						name: "sliders",
+						label: "Sliders",
+						onClick: () => {
+							scrollToSection("sliders-section", -60);
+						},
+					},
+					{
+						name: "arrow_back",
+						label: "Side Sheets",
+						onClick: () => {
+							scrollToSection("side-sheets-section", -60);
+						},
+					},
+					{
 						name: "credit_card",
 						label: "Cards",
 						onClick: () => {
@@ -254,12 +268,11 @@ function App() {
 				content={
 					<>
 						<Typography variant="text-body-medium">
-							Quickly transform your design
-							kit prototypes into stunning and modern web applications A set of
-							easy-to-use, high-performance and customizable components that
-							follow the Material Design 3 principles and aesthetics Developer
-							handoffs made easy with ensured parity between the Figma material
-							Design 3 Kit and React
+							Quickly transform your design kit prototypes into stunning and
+							modern web applications A set of easy-to-use, high-performance and
+							customizable components that follow the Material Design 3
+							principles and aesthetics Developer handoffs made easy with
+							ensured parity between the Figma material Design 3 Kit and React
 						</Typography>
 					</>
 				}
