@@ -35,7 +35,11 @@ const SlidersFrame: React.FC = () => {
 			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#%EF%B8%8F-sliders">
 				Sliders
 			</ComponentFrameTitle>
-			<div className="sliders-subframe-trmd3">
+			<div
+				className={
+					"sliders-subframe-trmd3 sliders-subframe-" + _theme + "-trmd3"
+				}
+			>
 				<Slider
 					onValueChange={(e) => {
 						console.log(e);

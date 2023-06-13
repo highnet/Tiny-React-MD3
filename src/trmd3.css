@@ -4213,7 +4213,7 @@ li {
 	color: var(--m3-sys-dark-secondary);
 }
 
-/* SIDE SHEETS */
+/* ==========SIDE SHEETS========== */
 .side-sheet {
 	position: fixed;
 	top: 0;
@@ -4232,28 +4232,14 @@ li {
 	overflow: hidden;
 }
 
-.side-sheet-light-theme {
-	background-color: var(--m3-sys-light-surface-container);
-	border-left: 1px solid var(--m3-sys-light-outline-variant);
-	color: var(--m3-sys-light-on-surface-variant);
-
-}
-
-.side-sheet-dark-theme {
-	background-color: var(--m3-sys-dark-surface-container);
-	border-left: 1px solid var(--m3-sys-dark-outline-variant);
-	color: var(--m3-sys-dark-on-surface-variant);
-}
-
-
-.side-sheet-active{
+.side-sheet-active {
 	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 	transition-duration: .8s;
 	transform: translateX(0);
 }
 
-@media (max-width: 768px){
-	.side-sheet{
+@media (max-width: 768px) {
+	.side-sheet {
 		visibility: hidden;
 	}
 }
@@ -4285,7 +4271,7 @@ li {
 	flex: 1;
 }
 
-.side-sheet-icon-container{
+.side-sheet-icon-container {
 	cursor: pointer;
 }
 
@@ -4295,8 +4281,30 @@ li {
 	height: 100%;
 }
 
+/* SIDE SHEETS / LIGHT THEME */
 
-/* SLIDERS */
+.side-sheet-light-theme {
+	background-color: var(--m3-sys-light-surface-container);
+	border-left: 1px solid var(--m3-sys-light-outline-variant);
+	color: var(--m3-sys-light-on-surface-variant);
+
+}
+
+/* SIDE SHEETS / DARK THEME */
+
+.side-sheet-dark-theme {
+	background-color: var(--m3-sys-dark-surface-container);
+	border-left: 1px solid var(--m3-sys-dark-outline-variant);
+	color: var(--m3-sys-dark-on-surface-variant);
+}
+
+
+
+
+
+
+
+/* ==========SLIDERS========== */
 
 .slider-container {
 	min-width: 18rem;
@@ -4304,47 +4312,36 @@ li {
 }
 
 .slider {
-	-webkit-appearance: none;  /* Override default CSS styles */
+	-webkit-appearance: none;  
 	appearance: none;
 	width: 100%;
-	height: .4rem; /* Specified height */
-	background: #d3d3d3; /* Grey background */
-	outline: none; /* Remove outline */
-	opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-	-webkit-transition: .2s; /* 0.2 seconds transition on hover */
-	transition: opacity .2s;
+	height: .4rem; 
+	outline: none; 
+	opacity: 0.7; 
 	border-radius: .4rem;
 }
   
-  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
   .slider::-webkit-slider-thumb {
-	-webkit-appearance: none; /* Override default look */
+	-webkit-appearance: none; 
 	appearance: none;
 	width: 4rem;
 	height: 4rem;
-	cursor: pointer; /* Cursor on hover */
+	cursor: pointer; 
 	background-color: transparent;
-	transition: all 0.3s ease-in-out;
 	border: none;
 }
 
   .slider::-moz-range-thumb {
 	width: 4rem;
 	height: 4rem;
-	cursor: pointer; /* Cursor on hover */
+	cursor: pointer; 
 	background-color: transparent;	
-	transition: all 0.3s ease-in-out;
 	border: none;
 }
-
-  .slider::-moz-range-progress {
-	background-color: var(--m3-sys-light-primary);
-  }
   
 .slider-thumb-overlay {
 	width: 4rem;
 	height: 4rem;
-	background-color: var(--m3-state-layers-light-primary-opacity-08);
 	border-radius: 50%;
 	opacity: 0;
 	pointer-events: none;
@@ -4354,12 +4351,6 @@ li {
 
 .slider-thumb-overlay-active {
 	opacity: 1;
-}
-
-.slider-thumb {
-	cursor: pointer;
-	background-color: var(--m3-sys-light-primary);
-	user-select: none;
 }
 
 .slider-thumb-tooltip {
@@ -4374,12 +4365,10 @@ li {
 	height: 2.5rem;
 	border-radius: 0 50% 50% 50%;
 	transform:  rotate(225deg);
-	background-color: var(--m3-sys-light-primary);
 }
 
 .slider-value {
 	transform: translate(0%, -125%);
-	color: var(--m3-sys-light-on-primary);
 	user-select: none;
 }
 
@@ -4388,6 +4377,7 @@ li {
 }
 
 .slider-thumb {
+	user-select: none;
 	pointer-events: none;
 	position: relative;
 	width: 2rem;
@@ -4395,5 +4385,42 @@ li {
 	top: 1.7rem;
 	border-radius: 50%;
 	z-index: 1;
+}
+
+
+/* SLIDERS / LIGHT THEME */
+
+.slider-value-light-theme {
+	color: var(--m3-sys-light-on-primary);
+}
+
+.slider-thumb-overlay-light-theme {
+	background-color: var(--m3-state-layers-light-primary-opacity-08);
+}
+
+.slider-teardrop-light-theme {
+	background-color: var(--m3-sys-light-primary);
+}
+
+.slider-thumb-light-theme {
+	background-color: var(--m3-sys-light-primary);
+}
+
+/* SLIDERS / DARK THEME */
+
+.slider-value-dark-theme {
+	color: var(--m3-sys-dark-on-primary);
+}
+
+.slider-thumb-overlay-dark-theme {
+	background-color: var(--m3-state-layers-dark-primary-opacity-08);
+}
+
+.slider-teardrop-dark-theme {
+	background-color: var(--m3-sys-dark-primary);
+}
+
+.slider-thumb-dark-theme {
+	background-color: var(--m3-sys-dark-primary);
 }
 

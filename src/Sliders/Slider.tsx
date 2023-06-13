@@ -43,9 +43,17 @@ const Slider: React.FC<ISliderProps> = ({
 		setValue(parseInt(event.target.value));
 	};
 
-	const gradient = `linear-gradient(to right, var(--m3-sys-light-primary) ${
+	const isDarkTheme = _theme.includes("dark");
+	const primaryColor = isDarkTheme
+		? "var(--m3-sys-dark-primary)"
+		: "var(--m3-sys-light-primary)";
+	const surfaceColor = isDarkTheme
+		? "var(--m3-sys-dark-surface-container-highest)"
+		: "var(--m3-sys-light-surface-container-highest)";
+
+	const gradient = `linear-gradient(to right, ${primaryColor} ${
 		((_value - _min) / (_max - _min)) * 100
-	}%, var(--m3-sys-light-surface-container-highest) 0%)`;
+	}%, ${surfaceColor} 0%)`;
 
 	useLayoutEffect(() => {
 		const sliderContainerWidthRem =
@@ -107,20 +115,26 @@ const Slider: React.FC<ISliderProps> = ({
 			ref={sliderContainerRef}
 		>
 			<div
-				className="slider-thumb"
+				className={"slider-thumb slider-thumb-" + _theme + " slider-thumb-"}
 				ref={thumbRef}
 				style={{
 					transform: `translateX(${thumbPosition})`,
 				}}
 			>
 				<div ref={thumbTooltipRef} className="slider-thumb-tooltip">
-					<div className="slider-teardrop"></div>
-					<Typography variant="text-label-medium" className="slider-value">
+					<div className={"slider-teardrop slider-teardrop-" + _theme}></div>
+					<Typography
+						variant="text-label-medium"
+						className={"slider-value slider-value-" + _theme}
+					>
 						{_value}
 					</Typography>
 				</div>
 
-				<div ref={thumbOverlayRef} className="slider-thumb-overlay"></div>
+				<div
+					ref={thumbOverlayRef}
+					className={"slider-thumb-overlay slider-thumb-overlay-" + _theme}
+				></div>
 			</div>
 			<input
 				className={_computedComponentClassName}
