@@ -55,14 +55,8 @@ const Slider: React.FC<ISliderProps> = ({
 		((_value - _min) / (_max - _min)) * 100
 	}%, ${surfaceColor} 0%)`;
 
-	useLayoutEffect(() => {
-		const sliderContainerWidthRem =
-			(sliderContainerRef.current?.clientWidth || 0) / 10;
-		const sliderThumbWidthRem = (thumbRef.current?.clientWidth || 0) / 10;
-		const newThumbPosition = `${
-			((_value - _min) / (_max - _min)) *
-			(sliderContainerWidthRem - sliderThumbWidthRem)
-		}rem`;
+	useEffect(() => {
+		const newThumbPosition = `${((_value - _min) / (_max - _min)) * 16}rem`;
 		setThumbPosition(newThumbPosition);
 	}, [_value, _min, _max]);
 
