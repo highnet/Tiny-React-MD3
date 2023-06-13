@@ -48,20 +48,38 @@ const Slider: React.FC<ISliderProps> = ({
 	const thumbOverlayRef = useRef<HTMLDivElement>(null);
 	const thumbTooltipRef = useRef<HTMLDivElement>(null);
 
-	thumbRef.current?.addEventListener("mouseenter", (event) => {
-		console.log("mouse enter");
+	useEffect(() => {
+		sliderContainerRef.current?.addEventListener(
+			"mouseenter",
+			handleMouseEnter
+		);
+		sliderContainerRef.current?.addEventListener(
+			"mouseleave",
+			handleMouseLeave
+		);
+		return () => {
+			sliderContainerRef.current?.removeEventListener(
+				"mouseenter",
+				handleMouseEnter
+			);
+			sliderContainerRef.current?.removeEventListener(
+				"mouseleave",
+				handleMouseLeave
+			);
+		};
+	}, []);
+
+	const handleMouseEnter = (event: MouseEvent) => {
 		thumbRef.current?.classList.add("slider-thumb-active");
 		thumbOverlayRef.current?.classList.add("slider-thumb-overlay-active");
 		thumbTooltipRef.current?.classList.add("slider-thumb-tooltip-active");
-		console.log(thumbTooltipRef);
-	});
+	};
 
-	thumbRef.current?.addEventListener("mouseleave", (event) => {
-		console.log("mouse exit");
+	const handleMouseLeave = (event: MouseEvent) => {
 		thumbRef.current?.classList.remove("slider-thumb-active");
 		thumbOverlayRef.current?.classList.remove("slider-thumb-overlay-active");
 		thumbTooltipRef.current?.classList.remove("slider-thumb-tooltip-active");
-	});
+	};
 
 	return (
 		<div

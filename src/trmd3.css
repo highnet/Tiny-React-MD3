@@ -4389,3 +4389,8 @@ li {
 .slider-thumb-tooltip-active{
 	opacity: 1;
 }
+
+.slider-thumb {
+	pointer-events: none;
+}
+
