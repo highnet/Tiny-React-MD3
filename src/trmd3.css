@@ -4337,8 +4337,6 @@ li {
 	border: none;
 }
 
-
-
   .slider::-moz-range-progress {
 	background-color: var(--m3-sys-light-primary);
   }
@@ -4383,7 +4381,6 @@ li {
 	transform: translate(0%, -125%);
 	color: var(--m3-sys-light-on-primary);
 	user-select: none;
-	
 }
 
 .slider-thumb-tooltip-active{
@@ -4392,5 +4389,11 @@ li {
 
 .slider-thumb {
 	pointer-events: none;
+	position: relative;
+	width: 2rem;
+	height: 2rem;
+	top: 1.7rem;
+	border-radius: 50%;
+	z-index: 1;
 }
 

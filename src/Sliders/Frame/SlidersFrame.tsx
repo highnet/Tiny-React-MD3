@@ -36,20 +36,25 @@ const SlidersFrame: React.FC = () => {
 				Sliders
 			</ComponentFrameTitle>
 			<div className="sliders-subframe-trmd3">
-				<Typography variant={"text-label-small"}>Default</Typography>
 				<Slider
-					onValueChange={() => {
-						console.log("slider value changed");
+					onValueChange={(e) => {
+						console.log(e);
 					}}
-					step={10}
-				></Slider>
-				<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
-				<Typography variant={"text-label-small"}>Default</Typography>
-				<Slider step={10}></Slider>
-				<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
-				<Typography variant={"text-label-small"}>Default</Typography>
-				<Slider step={10}></Slider>
-				<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
+					value={80}
+				/>
+				<CodeSnippet>
+					{`
+<Slider
+	value={80}
+	onValueChange={(e) => {
+		console.log(e);
+		}}
+/>`}
+				</CodeSnippet>
+				<Slider step={5} min={50} max={150} value={100} />
+				<CodeSnippet>{`<Slider step={5} min={50} max={150} value={100} />`}</CodeSnippet>
+				<Slider min={-100} max={100} value={-60} />
+				<CodeSnippet>{`<Slider min={-100} max={100} value={-60} />`}</CodeSnippet>
 			</div>
 		</div>
 	);

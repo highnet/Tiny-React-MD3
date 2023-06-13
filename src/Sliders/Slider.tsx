@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { getPreferredScheme } from "../Gizmos/Themeing";
 import { StringBuilder } from "../Gizmos/StringBuilder";
 import { ISliderProps } from "./ISliderProps";
@@ -22,8 +22,12 @@ const Slider: React.FC<ISliderProps> = ({
 	const [_min] = useState(min || 0);
 	const [_max] = useState(max || 100);
 	const [_value, setValue] = useState(value || 50);
-	const [isOverTrack, setIsOverTrack] = useState(false);
-	const [isOverKnob, setIsOverKnob] = useState<boolean>(false);
+
+	const sliderContainerRef = useRef<HTMLDivElement>(null);
+	const thumbRef = useRef<HTMLDivElement>(null);
+	const thumbOverlayRef = useRef<HTMLDivElement>(null);
+	const thumbTooltipRef = useRef<HTMLDivElement>(null);
+	const [thumbPosition, setThumbPosition] = useState("0rem");
 
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
@@ -39,14 +43,26 @@ const Slider: React.FC<ISliderProps> = ({
 		setValue(parseInt(event.target.value));
 	};
 
-	const gradient = `linear-gradient(to right, var(--m3-sys-light-primary) ${_value}%, var(--m3-sys-light-surface-container-highest) 0%)`;
-	const sliderContainerRef = useRef<HTMLDivElement>(null);
+	const gradient = `linear-gradient(to right, var(--m3-sys-light-primary) ${
+		((_value - _min) / (_max - _min)) * 100
+	}%, var(--m3-sys-light-surface-container-highest) 0%)`;
 
-	const thumbPosition = `${((_value - _min) / (_max - _min)) * 16}rem`;
+	useLayoutEffect(() => {
+		const sliderContainerWidthRem =
+			(sliderContainerRef.current?.clientWidth || 0) / 10;
+		const sliderThumbWidthRem = (thumbRef.current?.clientWidth || 0) / 10;
+		const newThumbPosition = `${
+			((_value - _min) / (_max - _min)) *
+			(sliderContainerWidthRem - sliderThumbWidthRem)
+		}rem`;
+		setThumbPosition(newThumbPosition);
+	}, [_value, _min, _max]);
 
-	const thumbRef = useRef<HTMLDivElement>(null);
-	const thumbOverlayRef = useRef<HTMLDivElement>(null);
-	const thumbTooltipRef = useRef<HTMLDivElement>(null);
+	useEffect(() => {
+		if (thumbRef.current) {
+			thumbRef.current.style.transform = `translateX(${thumbPosition})`;
+		}
+	}, [thumbPosition]);
 
 	useEffect(() => {
 		sliderContainerRef.current?.addEventListener(
@@ -94,13 +110,7 @@ const Slider: React.FC<ISliderProps> = ({
 				className="slider-thumb"
 				ref={thumbRef}
 				style={{
-					position: "relative",
-					width: "2em",
-					height: "2rem",
-					top: "1.7rem",
 					transform: `translateX(${thumbPosition})`,
-					borderRadius: "50%",
-					zIndex: 1,
 				}}
 			>
 				<div ref={thumbTooltipRef} className="slider-thumb-tooltip">
