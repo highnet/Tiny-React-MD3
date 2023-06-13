@@ -4298,12 +4298,6 @@ li {
 	color: var(--m3-sys-dark-on-surface-variant);
 }
 
-
-
-
-
-
-
 /* ==========SLIDERS========== */
 
 .slider-container {
@@ -4387,7 +4381,6 @@ li {
 	z-index: 1;
 }
 
-
 /* SLIDERS / LIGHT THEME */
 
 .slider-value-light-theme {
@@ -4424,3 +4417,24 @@ li {
 	background-color: var(--m3-sys-dark-primary);
 }
 
+
+/* ==========SNACKBARS========== */
+
+.snackbar {
+	width: 34.4rem;
+	height: 4.8rem;
+	border-radius: .4rem;
+	background-color: #322F35;
+	position: fixed;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 5000;
+	color: white;
+	opacity: 0;
+}
+
+
+.snackbar-active{
+	opacity: 1;
+}

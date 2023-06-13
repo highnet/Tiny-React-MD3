@@ -43,6 +43,8 @@ import ListItem from "./Lists/List Items/ListItem";
 import Typography from "./Typography/Typography";
 import SideSheetsFrame from "./Sheets/Side Sheets/Frame/SideSheetsFrame";
 import SlidersFrame from "./Sliders/Frame/SlidersFrame";
+import SnackBar from "./SnackBars/SnackBar";
+import SnackBarsFrame from "./SnackBars/Frame/SnackBarsFrame";
 
 function App() {
 	console.log(`	👋 Welcome to TRMD3! 👋	`);
@@ -286,6 +288,9 @@ function App() {
 				<Hero hasLogo={true} />
 				<Cookietrail />
 				<TourGuide />
+			</div>
+			<div id="section-17-trmd3" className="section-trmd3">
+				<SnackBarsFrame />
 			</div>
 			<div id="section-16-trmd3" className="section-trmd3">
 				<SlidersFrame />

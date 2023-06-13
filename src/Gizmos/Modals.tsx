@@ -32,7 +32,34 @@ export const openDialogRef = (
 	}
 };
 
-export const toggleSideSheet = (sideSheetRef: React.RefObject<HTMLDivElement>, isActive: boolean, setisActive: React.Dispatch<React.SetStateAction<boolean>>) => {
+export const toggleSideSheet = (
+	sideSheetRef: React.RefObject<HTMLDivElement>,
+	isActive: boolean,
+	setisActive: React.Dispatch<React.SetStateAction<boolean>>
+) => {
 	sideSheetRef.current?.classList.toggle("side-sheet-active");
 	setisActive(!isActive);
-  };
+};
+
+export const activateSnackBarIdSeconds = (id: string, seconds: number) => {
+	const snackBar = document.getElementById(id);
+	snackBar?.classList.add("snackbar-active");
+	setTimeout(() => {
+		snackBar?.classList.remove("snackbar-active");
+	}, seconds * 1000);
+};
+
+export const activateSnackBarIdSecondsMessage = (
+	id: string,
+	seconds: number,
+	message: string
+) => {
+	const snackBar = document.getElementById(id);
+	snackBar?.classList.add("snackbar-active");
+	if (snackBar) {
+		snackBar.innerHTML = message;
+	}
+	setTimeout(() => {
+		snackBar?.classList.remove("snackbar-active");
+	}, seconds * 1000);
+};
