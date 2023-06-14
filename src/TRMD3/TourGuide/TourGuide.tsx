@@ -17,6 +17,13 @@ const TourGuide: React.FC = () => {
 				<Button
 					className="tourguide-button"
 					configuration="elevated"
+					onClick={() => scrollToSection("snackbars-section", -60)}
+				>
+					🍦 Snackbars 🍦
+				</Button>
+				<Button
+					className="tourguide-button"
+					configuration="elevated"
 					onClick={() => scrollToSection("sliders-section", -60)}
 				>
 					🎚️ Sliders 🎚️

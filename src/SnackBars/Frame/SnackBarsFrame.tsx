@@ -29,13 +29,13 @@ const SnackBarsFrame: React.FC = () => {
 	return (
 		<div className={_computedFrameClassName}>
 			<Typography
-				id="components-section"
+				id="snackbars-section"
 				variant="text-title-large"
 				className={_computedTrmd3SectionTitlesClassName}
 			>
-				🥨
+				🍦
 			</Typography>
-			<ComponentFrameTitle link="https://www.highnet.xyz">
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-snackbars">
 				SnackBars
 			</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>One Line</Typography>

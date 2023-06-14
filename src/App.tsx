@@ -117,6 +117,13 @@ function App() {
 						},
 					},
 					{
+						name: "icecream",
+						label: "Snackbars",
+						onClick: () => {
+							scrollToSection("snackbars-section", -60);
+						},
+					},
+					{
 						name: "sliders",
 						label: "Sliders",
 						onClick: () => {
