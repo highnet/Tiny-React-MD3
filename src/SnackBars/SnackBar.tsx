@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { getPreferredScheme } from "../Gizmos/Themeing";
 import { StringBuilder } from "../Gizmos/StringBuilder";
 import { ISnackBarProps } from "./ISnackBarProps";
@@ -6,15 +6,15 @@ import { ISnackBarProps } from "./ISnackBarProps";
 const SnackBar: React.FC<ISnackBarProps> = ({
 	className,
 	id,
-	children,
 	onMouseEnter,
 	onMouseLeave,
 	onMouseMove,
 	onClick,
+	configuration,
 }) => {
 	const [_className] = useState(className || "");
 	const [_id] = useState(id || undefined);
-	const snackBarRef = useRef<HTMLDivElement>(null);
+	const [_configuration] = useState(configuration || "one-line");
 
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
@@ -22,6 +22,7 @@ const SnackBar: React.FC<ISnackBarProps> = ({
 	let _computedComponentClassName = new StringBuilder()
 		.add("snackbar")
 		.add("snackbar-" + _theme)
+		.add("snackbar-" + _configuration)
 		.add(_className)
 		.toString();
 
@@ -33,10 +34,7 @@ const SnackBar: React.FC<ISnackBarProps> = ({
 			onMouseLeave={onMouseLeave}
 			onMouseMove={onMouseMove}
 			onClick={onClick}
-			ref={snackBarRef}
-		>
-			{children}
-		</div>
+		></div>
 	);
 };
 

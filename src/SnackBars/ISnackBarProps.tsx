@@ -1,7 +1,7 @@
 import { IComponentProps } from "../Component/IComponentProps";
 
 export interface ISnackBarProps extends IComponentProps {
-	size?: string;
+	configuration?: string;
 	buttonOnClick?: () => void;
 	buttonLabel?: string;
 	closeIcon?: boolean;

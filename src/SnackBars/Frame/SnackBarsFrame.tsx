@@ -6,10 +6,7 @@ import CodeSnippet from "../../TRMD3/CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../../TRMD3/ComponentFrameTitle/ComponentFrameTitle";
 import Typography from "../../Typography/Typography";
 import SnackBar from "../SnackBar";
-import {
-	activateSnackBarIdSeconds,
-	activateSnackBarIdSecondsMessage,
-} from "../../Gizmos/Modals";
+import { activateSnackBarId } from "../../Gizmos/Modals";
 
 const SnackBarsFrame: React.FC = () => {
 	const _theme =
@@ -39,18 +36,58 @@ const SnackBarsFrame: React.FC = () => {
 				⏬
 			</Typography>
 			<ComponentFrameTitle link="https://www.highnet.xyz">
-				Components
+				SnackBars
 			</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>Default</Typography>
 			<Button
 				onClick={() =>
-					activateSnackBarIdSecondsMessage("snackbar-0", 3, "TEST MESSAGE")
+					activateSnackBarId(
+						"snackbar-0",
+						3,
+						"This Is A Test Message This Is A Test Message This Is A Test Message",
+						() => {
+							console.log("HI");
+						},
+						true
+					)
 				}
 			>
-				Open SnackBar
+				Open SnackBar 1
 			</Button>
-			<SnackBar id={"snackbar-0"}>Snackbar 0...</SnackBar>
-			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
+			<Button
+				onClick={() =>
+					activateSnackBarId(
+						"snackbar-1",
+						3,
+						"This Is A Test Message With More Text To Fill Space This Is A Test Message With More Text To Fill Space",
+						() => {
+							console.log("HI");
+						},
+						true
+					)
+				}
+			>
+				Open SnackBar 2
+			</Button>
+			<Button
+				onClick={() =>
+					activateSnackBarId(
+						"snackbar-2",
+						3,
+						"This Is A Test Message With Even More Text To Fill Space And Make It Three Lines Long To Test The Three Line Configuration This Is A Test Message With Even More Text To Fill Space And Make It Three Lines Long To Test The Three Line Configuration",
+						() => {
+							console.log("HI");
+						},
+						true
+					)
+				}
+			>
+				Open SnackBar 3
+			</Button>
+			<SnackBar id={"snackbar-0"} configuration={"one-line"} />
+			<SnackBar id={"snackbar-1"} configuration={"two-line"} />
+			<SnackBar id={"snackbar-2"} configuration={"three-line"} />
+			<CodeSnippet>{`<Snackbar />`}</CodeSnippet>
 		</div>
 	);
 };
