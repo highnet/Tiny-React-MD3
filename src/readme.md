@@ -493,3 +493,5 @@ The supported options of <code>{configuration}</code> are the following:
 ## ⬅️ Side Sheets
     
 ## 🎚️ Sliders
+    
+## 🥨 Snackbars
