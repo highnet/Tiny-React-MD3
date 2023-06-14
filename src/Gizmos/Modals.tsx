@@ -1,4 +1,5 @@
 import Button from "../Button/Button";
+import Icon from "../Icon/Icon";
 import Typography from "../Typography/Typography";
 import ReactDOMServer from "react-dom/server";
 
@@ -50,6 +51,7 @@ export const activateSnackBarId = (
 	seconds: number,
 	message?: string,
 	action?: () => void,
+	actionLabel?: string,
 	dismissable?: boolean
 ) => {
 	const snackBar = document.getElementById(id);
@@ -70,13 +72,17 @@ export const activateSnackBarId = (
 		let actionString = "";
 		if (action) {
 			actionString = ReactDOMServer.renderToString(
-				<Button configuration="text">Action</Button>
+				<Button className="button-on-snackbar" configuration="text">
+					{actionLabel || "Action"}
+				</Button>
 			);
 		}
 		let dismissString = "";
 		if (dismissable) {
 			dismissString = ReactDOMServer.renderToString(
-				<Button configuration="text">Dismiss</Button>
+				<div className="icon-container-on-snackbar">
+					<Icon className="icon-on-snackbar">close</Icon>{" "}
+				</div>
 			);
 		}
 		snackBar.innerHTML =
@@ -86,12 +92,13 @@ export const activateSnackBarId = (
 			dismissString +
 			"</div>";
 		if (action) {
-			const actionButton = snackBar.querySelector("button:nth-of-type(1)");
+			const actionButton = snackBar.querySelector(".button-on-snackbar");
 			actionButton?.addEventListener("click", action);
 		}
 		if (dismissable) {
-			const dismissButton = snackBar.querySelector("button:nth-of-type(2)");
-			dismissButton?.addEventListener("click", () => {
+			const dismissDiv = snackBar.querySelector(".icon-container-on-snackbar");
+			console.log(dismissDiv);
+			dismissDiv?.addEventListener("click", () => {
 				snackBar.classList.remove("snackbar-active");
 				if (timerId) {
 					clearTimeout(timerId);

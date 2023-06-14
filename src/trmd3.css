@@ -4417,21 +4417,17 @@ li {
 	background-color: var(--m3-sys-dark-primary);
 }
 
-
 /* ==========SNACKBARS========== */
-
 .snackbar {
 	width: 34.4rem;
-	height: 4.8rem;
+	height: fit-content;
 	border-radius: .4rem;
-	background-color: #322F35;
 	position: fixed;
 	top: 90%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 5000;
-	color: #F5EFF7;
-	opacity: 0.9   ;
+	opacity: 0;
 	transition: opacity 0.3s ease-in-out;
 	padding: 14px 16px;
 	gap: 4px;
@@ -4440,10 +4436,17 @@ li {
 	align-items: center;
 	white-space: nowrap;
 	overflow: hidden;
-
+	pointer-events: none;
 }
 
-.snackbar-active{
+@media only screen and (max-width: 768px) {
+	.snackbar {
+		width: 80%;
+	}
+}
+
+.snackbar-active {
+	pointer-events: all;
 	opacity: 1;
 	transition: opacity 0.15s ease-in-out;
 }
@@ -4465,22 +4468,70 @@ li {
 }
 
 .snackbar-two-line {
-	height: 6.8rem;
-	transform: translate(-50%, -200%);
 	white-space: normal;
 	padding: 14px 8px 14px 16px;
 }
 
 .snackbar-three-line {
-	height: 11.2rem;
-	transform: translate(-50%, -300%);
 	white-space: normal;
 	flex-direction: column;
 	padding: 14px 8px 0px 16px;
 	align-items: end;
+	transform: translate(-50%, -80%);
 }
 
 .actions-on-snackbar{
 	display: flex;
 	flex-direction: row;
+}
+
+.icon-container-on-snackbar{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	width: 4rem;
+	height: 4rem;
+}
+
+.snackbar-light-theme {
+	background-color: var(--m3-sys-light-inverse-surface);
+	color: var(--m3-sys-light-inverse-on-surface);
+}
+
+.snackbar-light-theme .btn .text {
+	color: var(--m3-sys-light-inverse-primary);
+}
+
+.snackbar-light-theme .btn:hover {
+	background-color: var(--m3-state-layers-light-inverse-primary-opacity-08);
+}
+
+.snackbar-light-theme .btn:focus {
+	background-color: var(--m3-state-layers-light-inverse-primary-opacity-12);
+}
+
+.snackbar-light-theme .btn:active {
+	background-color: var(--m3-state-layers-light-inverse-primary-opacity-12);
+}
+
+.snackbar-dark-theme {
+	background-color: var(--m3-sys-dark-inverse-surface);
+	color: var(--m3-sys-dark-inverse-on-surface);
+}
+
+.snackbar-dark-theme .btn .text {
+	color: var(--m3-sys-dark-inverse-primary);
+}
+
+.snackbar-dark-theme .btn:hover {
+	background-color: var(--m3-state-layers-dark-inverse-primary-opacity-08);
+}
+
+.snackbar-dark-theme .btn:focus {
+	background-color: var(--m3-state-layers-dark-inverse-primary-opacity-12);
+}
+
+.snackbar-dark-theme .btn:active {
+	background-color: var(--m3-state-layers-dark-inverse-primary-opacity-12);
 }

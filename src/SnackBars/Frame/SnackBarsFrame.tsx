@@ -17,8 +17,8 @@ const SnackBarsFrame: React.FC = () => {
 		.add("flex-column-trmd3")
 		.add("frame-trmd3")
 		.add("frame-" + _theme + "-trmd3")
-		.add("component-frame-trmd3")
-		.add("component-frame-" + _theme + "-trmd3")
+		.add("snackbars-frame-trmd3")
+		.add("snackbars-frame-" + _theme + "-trmd3")
 		.toString();
 
 	let _computedTrmd3SectionTitlesClassName = new StringBuilder()
@@ -38,51 +38,80 @@ const SnackBarsFrame: React.FC = () => {
 			<ComponentFrameTitle link="https://www.highnet.xyz">
 				SnackBars
 			</ComponentFrameTitle>
-			<Typography variant={"text-label-small"}>Default</Typography>
+			<Typography variant={"text-label-small"}>One Line</Typography>
+			<SnackBar
+				className="snackbar-on-frame-trmd3"
+				configuration={"one-line"}
+				action={() => {
+					console.log("HI");
+				}}
+				message="Lorem ipsum dolor sit amet."
+			/>
+			<Typography variant={"text-label-small"}>Two Line</Typography>
+			<SnackBar
+				className="snackbar-on-frame-trmd3"
+				configuration={"two-line"}
+				action={() => {
+					console.log("HI");
+				}}
+				message="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+			/>
+			<Typography variant={"text-label-small"}>Three Line</Typography>
+			<SnackBar
+				className="snackbar-on-frame-trmd3"
+				configuration={"three-line"}
+				action={() => {
+					console.log("HI");
+				}}
+				message="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sem nisl, vestibulum ultricies faucibus laoreet, hendrerit quis ligula."
+			/>
 			<Button
 				onClick={() =>
 					activateSnackBarId(
 						"snackbar-0",
 						3,
-						"This Is A Test Message This Is A Test Message This Is A Test Message",
+						"Lorem ipsum dolor sit amet.",
 						() => {
 							console.log("HI");
 						},
+						"Action",
 						true
 					)
 				}
 			>
-				Open SnackBar 1
+				One Line
 			</Button>
 			<Button
 				onClick={() =>
 					activateSnackBarId(
 						"snackbar-1",
 						3,
-						"This Is A Test Message With More Text To Fill Space This Is A Test Message With More Text To Fill Space",
+						"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 						() => {
 							console.log("HI");
 						},
+						"Action",
 						true
 					)
 				}
 			>
-				Open SnackBar 2
+				Two Line
 			</Button>
 			<Button
 				onClick={() =>
 					activateSnackBarId(
 						"snackbar-2",
 						3,
-						"This Is A Test Message With Even More Text To Fill Space And Make It Three Lines Long To Test The Three Line Configuration This Is A Test Message With Even More Text To Fill Space And Make It Three Lines Long To Test The Three Line Configuration",
+						"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sem nisl, vestibulum ultricies faucibus laoreet, hendrerit quis ligula.",
 						() => {
 							console.log("HI");
 						},
+						"Action",
 						true
 					)
 				}
 			>
-				Open SnackBar 3
+				Three Line
 			</Button>
 			<SnackBar id={"snackbar-0"} configuration={"one-line"} />
 			<SnackBar id={"snackbar-1"} configuration={"two-line"} />

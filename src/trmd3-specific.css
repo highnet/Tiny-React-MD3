@@ -598,3 +598,19 @@ pre {
 .sliders-subframe-dark-theme-trmd3 {
 	background-color: var(--m3-sys-dark-surface);
 }
+
+/* SNACKBARS SECTION */
+.snackbars-frame-trmd3 {
+	gap: 1rem;
+}
+
+/* SNACKBARS */
+.snackbar-on-frame-trmd3{
+	position: relative;
+	z-index: 1;
+	opacity: 1;
+	pointer-events: all;
+	transform: none;
+	top: 0;
+	left: 0;
+}
