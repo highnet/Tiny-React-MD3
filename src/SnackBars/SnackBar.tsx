@@ -47,16 +47,21 @@ const SnackBar: React.FC<ISnackBarProps> = ({
 		>
 			<Typography className="message-on-snackbar">{_message}</Typography>
 			<div className="actions-on-snackbar">
-				<Button
-					onClick={action}
-					className="button-on-snackbar"
-					configuration="text"
-				>
-					{_actionLabel || "Action"}
-				</Button>
-				<div className="icon-container-on-snackbar">
-					<Icon className="icon-on-snackbar">close</Icon>{" "}
-				</div>
+				{action && (
+					<Button
+						onClick={action}
+						className="button-on-snackbar"
+						configuration="text"
+					>
+						{_actionLabel}
+					</Button>
+				)}
+
+				{_dismissable && (
+					<div className="icon-container-on-snackbar">
+						<Icon className="icon-on-snackbar">close</Icon>{" "}
+					</div>
+				)}
 			</div>
 		</div>
 	);

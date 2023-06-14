@@ -46,6 +46,7 @@ const SnackBarsFrame: React.FC = () => {
 					console.log("HI");
 				}}
 				message="Lorem ipsum dolor sit amet."
+				dismissable={true}
 			/>
 			<Typography variant={"text-label-small"}>Two Line</Typography>
 			<SnackBar
@@ -55,6 +56,7 @@ const SnackBarsFrame: React.FC = () => {
 					console.log("HI");
 				}}
 				message="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+				dismissable={true}
 			/>
 			<Typography variant={"text-label-small"}>Three Line</Typography>
 			<SnackBar
@@ -64,6 +66,7 @@ const SnackBarsFrame: React.FC = () => {
 					console.log("HI");
 				}}
 				message="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sem nisl, vestibulum ultricies faucibus laoreet, hendrerit quis ligula."
+				dismissable={true}
 			/>
 			<Button
 				onClick={() =>
