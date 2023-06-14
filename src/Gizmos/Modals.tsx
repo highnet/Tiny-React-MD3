@@ -1,5 +1,6 @@
 import Button from "../Button/Button";
 import Icon from "../Icon/Icon";
+import SnackBar from "../SnackBars/SnackBar";
 import Typography from "../Typography/Typography";
 import ReactDOMServer from "react-dom/server";
 
@@ -63,6 +64,7 @@ export const activateSnackBarId = (
 			return;
 		}
 		snackBar.classList.add("snackbar-active");
+
 		let messageString = "";
 		if (message) {
 			messageString = ReactDOMServer.renderToString(

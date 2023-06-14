@@ -33,7 +33,7 @@ const SnackBarsFrame: React.FC = () => {
 				variant="text-title-large"
 				className={_computedTrmd3SectionTitlesClassName}
 			>
-				⏬
+				🥨
 			</Typography>
 			<ComponentFrameTitle link="https://www.highnet.xyz">
 				SnackBars
@@ -48,26 +48,8 @@ const SnackBarsFrame: React.FC = () => {
 				message="Lorem ipsum dolor sit amet."
 				dismissable={true}
 			/>
-			<Typography variant={"text-label-small"}>Two Line</Typography>
-			<SnackBar
-				className="snackbar-on-frame-trmd3"
-				configuration={"two-line"}
-				action={() => {
-					console.log("HI");
-				}}
-				message="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-				dismissable={true}
-			/>
-			<Typography variant={"text-label-small"}>Three Line</Typography>
-			<SnackBar
-				className="snackbar-on-frame-trmd3"
-				configuration={"three-line"}
-				action={() => {
-					console.log("HI");
-				}}
-				message="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sem nisl, vestibulum ultricies faucibus laoreet, hendrerit quis ligula."
-				dismissable={true}
-			/>
+
+			<SnackBar id={"snackbar-0"} configuration={"one-line"} />
 			<Button
 				onClick={() =>
 					activateSnackBarId(
@@ -84,6 +66,38 @@ const SnackBarsFrame: React.FC = () => {
 			>
 				One Line
 			</Button>
+			<CodeSnippet>{`
+<SnackBar 
+	id={"snackbar-0"} 
+	configuration={"one-line"}
+/>
+<Button
+	onClick={() =>
+		activateSnackBarId(
+			"snackbar-0",
+			3,
+			"Lorem ipsum dolor sit amet.",
+			() => {
+				console.log("HI");
+			},
+			"Action",
+			true
+			)
+		}
+>
+	One Line
+</Button>`}</CodeSnippet>
+			<SnackBar id={"snackbar-1"} configuration={"two-line"} />
+			<Typography variant={"text-label-small"}>Two Line</Typography>
+			<SnackBar
+				className="snackbar-on-frame-trmd3"
+				configuration={"two-line"}
+				action={() => {
+					console.log("HI");
+				}}
+				message="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+				dismissable={true}
+			/>
 			<Button
 				onClick={() =>
 					activateSnackBarId(
@@ -100,6 +114,38 @@ const SnackBarsFrame: React.FC = () => {
 			>
 				Two Line
 			</Button>
+			<CodeSnippet>{`
+<SnackBar 
+		id={"snackbar-1"} 
+		configuration={"two-line"} 
+/>
+<Button
+	onClick={() =>
+	activateSnackBarId(
+		"snackbar-1",
+		3,
+		"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		() => {
+			console.log("HI");
+		},
+		"Action",
+		true
+		)
+	}
+>
+	Two Line
+</Button>`}</CodeSnippet>
+			<SnackBar id={"snackbar-2"} configuration={"three-line"} />
+			<Typography variant={"text-label-small"}>Three Line</Typography>
+			<SnackBar
+				className="snackbar-on-frame-trmd3"
+				configuration={"three-line"}
+				action={() => {
+					console.log("HI");
+				}}
+				message="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sem nisl, vestibulum ultricies faucibus laoreet, hendrerit quis ligula."
+				dismissable={true}
+			/>
 			<Button
 				onClick={() =>
 					activateSnackBarId(
@@ -116,10 +162,29 @@ const SnackBarsFrame: React.FC = () => {
 			>
 				Three Line
 			</Button>
-			<SnackBar id={"snackbar-0"} configuration={"one-line"} />
-			<SnackBar id={"snackbar-1"} configuration={"two-line"} />
-			<SnackBar id={"snackbar-2"} configuration={"three-line"} />
-			<CodeSnippet>{`<Snackbar />`}</CodeSnippet>
+			<CodeSnippet>{`
+<SnackBar 
+	id={"snackbar-2"} 
+	configuration={"three-line"} 
+/>
+<Button
+	onClick={() =>
+		activateSnackBarId(
+			"snackbar-2",
+			3,
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			Praesent sem nisl, vestibulum ultricies faucibus laoreet,
+			hendrerit quis ligula.",
+			() => {
+				console.log("HI");
+			},
+			"Action",
+			true
+			)
+		}
+>
+	Three Line
+</Button>`}</CodeSnippet>
 		</div>
 	);
 };
