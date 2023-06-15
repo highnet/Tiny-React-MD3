@@ -4539,3 +4539,85 @@ li {
 .snackbar-dark-theme .btn:active {
 	background-color: var(--m3-state-layers-dark-inverse-primary-opacity-12);
 }
+
+/* ==========ICON BUTTONS========== */
+
+.icon-button {
+	width: 4.8rem;
+	height: 4.8rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: background-color 0.15s ease-in-out;
+}
+
+.icon-button.icon-button-light-theme.icon-button-standard {
+	color: var(--m3-sys-light-on-surface-variant);
+	background-color: transparent;
+}
+
+.icon-button.icon-button-light-theme.icon-button-standard:hover {
+	background-color: var(--m3-state-layers-dark-on-surface-variant-opacity-08);
+}
+
+.icon-button.icon-button-light-theme.icon-button-standard:focus {
+	background-color: var(--m3-state-layers-dark-on-surface-variant-opacity-12);
+}
+.icon-button.icon-button-light-theme.icon-button-standard:active {
+	background-color: var(--m3-state-layers-dark-on-surface-variant-opacity-12);
+}
+
+.icon-button.icon-button-light-theme.icon-button-filled {
+	color: var(--m3-sys-light-on-primary);
+	background-color: var(--m3-sys-light-primary);
+}
+
+.icon-button.icon-button-light-theme.icon-button-filled:hover {
+	background-color: var(--m3-composite-light-primary-passthrough-on-primary-opacity-08);
+}
+
+.icon-button.icon-button-light-theme.icon-button-filled:focus {
+	background-color: var(--m3-composite-light-primary-passthrough-on-primary-opacity-12);
+}
+
+.icon-button.icon-button-light-theme.icon-button-filled:active {
+	background-color: var(--m3-composite-light-primary-passthrough-on-primary-opacity-12);
+}
+
+.icon-button.icon-button-light-theme.icon-button-tonal {
+	color: var(--m3-sys-light-on-secondary-container);
+	background-color: var(--m3-sys-light-secondary-container);
+}
+
+.icon-button.icon-button-light-theme.icon-button-tonal:hover {
+	background-color: var(--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-08);
+}
+
+.icon-button.icon-button-light-theme.icon-button-tonal:focus {
+	background-color: var(--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-12);
+}
+
+.icon-button.icon-button-light-theme.icon-button-tonal:active {
+	background-color: var(--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-12);
+}
+
+.icon-button.icon-button-light-theme.icon-button-outlined {
+	background-color: transparent;
+	color: var(--m3-sys-light-on-surface-variant);
+	border: .1rem solid var(--m3-sys-light-outline);
+}
+
+.icon-button.icon-button-light-theme.icon-button-outlined:hover {
+	background-color: var(--m3-state-layers-on-surface-variant-opacity-08);
+}
+
+.icon-button.icon-button-light-theme.icon-button-outlined:focus {
+	border-radius: none;
+	background-color: var(--m3-state-layers-on-surface-variant-opacity-12);
+}
+
+.icon-button.icon-button-light-theme.icon-button-outlined:active {
+	background-color: var(--m3-state-layers-on-surface-variant-opacity-12);
+}

@@ -45,6 +45,7 @@ import SideSheetsFrame from "./Sheets/Side Sheets/Frame/SideSheetsFrame";
 import SlidersFrame from "./Sliders/Frame/SlidersFrame";
 import SnackBar from "./SnackBars/SnackBar";
 import SnackBarsFrame from "./SnackBars/Frame/SnackBarsFrame";
+import IconButtonsFrame from "./IconButton/Frame/IconButtonsFrame";
 
 function App() {
 	console.log(`	👋 Welcome to TRMD3! 👋	`);
@@ -295,6 +296,9 @@ function App() {
 				<Hero hasLogo={true} />
 				<Cookietrail />
 				<TourGuide />
+			</div>
+			<div id="section-18-trmd3" className="section-trmd3">
+				<IconButtonsFrame />
 			</div>
 			<div id="section-17-trmd3" className="section-trmd3">
 				<SnackBarsFrame />

@@ -614,3 +614,26 @@ pre {
 	top: 0;
 	left: 0;
 }
+
+/* ICON BUTTONS SECTION */
+.icon-buttons-subframe-trmd3{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 1.6rem;
+	padding: 1rem;
+}
+
+.icon-button-disabled{
+	opacity: 38%;
+	pointer-events: none;
+}
+
+.icon-buttons-subframe-light-theme-trmd3{
+	background-color: var(--m3-sys-light-surface-container);
+}
+
+.icon-buttons-subframe-dark-theme-trmd3{
+	background-color: var(--m3-sys-light-surface-container);
+}
