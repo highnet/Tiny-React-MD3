@@ -4425,7 +4425,7 @@ li {
 	position: fixed;
 	top: 90%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-40%, -50%);
 	z-index: 5000;
 	opacity: 0;
 	transition: opacity 0.3s ease-in-out;
@@ -4442,6 +4442,10 @@ li {
 @media only screen and (max-width: 768px) {
 	.snackbar {
 		width: 80%;
+		transform: translate(-50%, -50%);
+	}
+	.snackbar-three-line {
+		transform: translate(-50%, -80%);
 	}
 }
 
@@ -4477,7 +4481,7 @@ li {
 	flex-direction: column;
 	padding: 14px 8px 0px 16px;
 	align-items: end;
-	transform: translate(-50%, -80%);
+	transform: translate(-40%, -80%);
 }
 
 .actions-on-snackbar{
