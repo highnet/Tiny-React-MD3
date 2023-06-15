@@ -495,3 +495,5 @@ The supported options of <code>{configuration}</code> are the following:
 ## 🎚️ Sliders
     
 ## 🍦 Snackbars
+
+## 🪙 Icon Buttons
