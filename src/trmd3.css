@@ -1486,6 +1486,7 @@ html {
 	user-select: none;
 	pointer-events: none;
 }
+
 .material-symbols-outlined {
 	font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 20;
 }
@@ -4620,4 +4621,46 @@ li {
 
 .icon-button.icon-button-light-theme.icon-button-outlined:active {
 	background-color: var(--m3-state-layers-on-surface-variant-opacity-12);
+}
+
+
+.icon-button.icon-button-light-theme.icon-button-standard.icon-button-deselected {
+	color: var(--m3-sys-light-on-surface-variant);
+	background-color: transparent;
+}
+
+.icon-button.icon-button-light-theme.icon-button-standard.icon-button-selected {
+	color: var(--m3-sys-light-primary);
+	background-color: transparent;
+}
+
+.icon-button.icon-button-light-theme.icon-button-filled.icon-button-deselected {
+	color: var(--m3-sys-light-primary);
+	background-color: var(--m3-sys-light-surface-container-highest);
+
+}
+
+.icon-button.icon-button-light-theme.icon-button-filled.icon-button-selected {
+	color: var(--m3-sys-light-on-primary);
+	background-color: var(--m3-sys-light-primary);
+}
+
+.icon-button.icon-button-light-theme.icon-button-tonal.icon-button-deselected {
+	color: var(--m3-sys-light-on-secondary-container);
+	background-color: var(--m3-sys-light-surface-container-highest); 
+}
+
+.icon-button.icon-button-light-theme.icon-button-tonal.icon-button-selected {
+	color: var(--m3-sys-light-on-secondary-container); 
+	background-color: var(--m3-sys-light-secondary-container);
+}
+
+.icon-button.icon-button-light-theme.icon-button-outlined.icon-button-deselected {
+	color: var(--m3-sys-light-on-surface-variant);
+	background-color: var(--m3-sys-light-inverse-on-surface);
+}
+
+.icon-button.icon-button-light-theme.icon-button-outlined.icon-button-selected {
+	color: var(--m3-sys-light-inverse-on-surface);
+	background-color: var(--m3-sys-light-inverse-surface);
 }

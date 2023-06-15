@@ -82,6 +82,11 @@ const IconButtonsFrame: React.FC = () => {
 </IconButton>
 `}
 				</CodeSnippet>
+				<IconButton configuration="standard" onClick={undefined} toggleAble={true}>hive</IconButton>
+				<IconButton configuration="filled" onClick={undefined} toggleAble={true}>hive</IconButton>
+				<IconButton configuration="tonal" onClick={undefined} toggleAble={true}>hive</IconButton>
+				<IconButton configuration="outlined" onClick={undefined} toggleAble={true}>hive</IconButton>
+
         	</div>
 		</div>
 	);
