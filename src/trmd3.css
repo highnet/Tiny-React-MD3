@@ -989,7 +989,7 @@ html {
 	--m3-composite-inverse-on-surface-passthrough-on-surface-variant-opacity-08: #F0EAF1;
 	--m3-composite-inverse-on-surface-passthrough-on-surface-variant-opacity-12: #E8E1E9;
 	--m3-composite-light-on-surface-variant-passthrough-on-surface-variant-opacity-08: #423E45;
-		--m3-composite-light-on-surface-variant-passthrough-on-surface-variant-opacity-12: #49464C;
+	--m3-composite-light-on-surface-variant-passthrough-on-surface-variant-opacity-12: #49464C;
 
 	/* M3 / COMPOSITES / DARK */
 	--m3-composite-dark-surface-container-low-passthrough-on-primary-opacity-08: #2b2832;
@@ -4566,6 +4566,8 @@ li {
 	cursor: pointer;
 	transition: background-color 0.15s ease-in-out;
 }
+
+/* ICON BUTTONS / LIGHT THEME */
 
 .icon-button.icon-button-light-theme.icon-button-standard {
 	color: var(--m3-sys-light-on-surface-variant);
