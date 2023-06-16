@@ -99,13 +99,9 @@ const IconButtonsFrame: React.FC = () => {
 </IconButton>
 `}
 				</CodeSnippet>
-				<IconButton
-					configuration="standard"
-					onClick={undefined}
-					toggleAble={true}
-				>
-					hive
-				</IconButton>
+				<Typography variant={"text-label-small"}>
+					Standard, Toggleable
+				</Typography>
 				<IconButton
 					configuration="standard"
 					onClick={undefined}
@@ -114,13 +110,19 @@ const IconButtonsFrame: React.FC = () => {
 				>
 					hive
 				</IconButton>
-				<IconButton
-					configuration="filled"
-					onClick={undefined}
-					toggleAble={true}
-				>
-					hive
-				</IconButton>
+				<CodeSnippet>
+					{`
+<IconButton 
+    configuration="standard"
+	onClick={undefined}
+	toggleAble={true}
+	selected={true}
+>
+    hive
+</IconButton>
+`}
+				</CodeSnippet>
+				<Typography variant={"text-label-small"}>Filled, Toggleable</Typography>
 				<IconButton
 					configuration="filled"
 					onClick={undefined}
@@ -129,9 +131,19 @@ const IconButtonsFrame: React.FC = () => {
 				>
 					hive
 				</IconButton>
-				<IconButton configuration="tonal" onClick={undefined} toggleAble={true}>
-					hive
-				</IconButton>
+				<CodeSnippet>
+					{`
+<IconButton 
+    configuration="filled"
+	onClick={undefined}
+	toggleAble={true}
+	selected={true}
+>
+    hive
+</IconButton>
+`}
+				</CodeSnippet>
+				<Typography variant={"text-label-small"}>Tonal, Toggleable</Typography>
 				<IconButton
 					configuration="tonal"
 					onClick={undefined}
@@ -140,13 +152,21 @@ const IconButtonsFrame: React.FC = () => {
 				>
 					hive
 				</IconButton>
-				<IconButton
-					configuration="outlined"
-					onClick={undefined}
-					toggleAble={true}
-				>
-					hive
-				</IconButton>
+				<CodeSnippet>
+					{`
+<IconButton 
+    configuration="tonal"
+	onClick={undefined}
+	toggleAble={true}
+	selected={true}
+>
+    hive
+</IconButton>
+`}
+				</CodeSnippet>
+				<Typography variant={"text-label-small"}>
+					Outlined, Toggleable
+				</Typography>
 				<IconButton
 					configuration="outlined"
 					onClick={undefined}
@@ -155,6 +175,18 @@ const IconButtonsFrame: React.FC = () => {
 				>
 					hive
 				</IconButton>
+				<CodeSnippet>
+					{`
+<IconButton 
+    configuration="outlined"
+	onClick={undefined}
+	toggleAble={true}
+	selected={true}
+>
+    hive
+</IconButton>
+`}
+				</CodeSnippet>
 			</div>
 		</div>
 	);
