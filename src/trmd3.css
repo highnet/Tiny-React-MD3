@@ -4515,14 +4515,12 @@ li {
 	flex-direction: row;
 }
 
-.icon-container-on-snackbar{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-	width: 4rem;
-	height: 4rem;
+.icon-button-on-snackbar {
+	width: 4rem !important;
+	height: 4rem !important;
 }
+
+/* SNACKBARS / LIGHT THEME */
 
 .snackbar-light-theme {
 	background-color: var(--m3-sys-light-inverse-surface);
@@ -4545,6 +4543,12 @@ li {
 	background-color: var(--m3-state-layers-light-inverse-primary-opacity-12);
 }
 
+.snackbar-light-theme .icon-button-on-snackbar {
+	color: var(--m3-sys-light-inverse-on-surface) !important;
+}
+
+/* SNACKBARS / DARK THEME */
+
 .snackbar-dark-theme {
 	background-color: var(--m3-sys-dark-inverse-surface);
 	color: var(--m3-sys-dark-inverse-on-surface);
@@ -4564,6 +4568,10 @@ li {
 
 .snackbar-dark-theme .btn:active {
 	background-color: var(--m3-state-layers-dark-inverse-primary-opacity-12);
+}
+
+.snackbar-dark-theme .icon-button-on-snackbar {
+	color: var(--m3-sys-dark-inverse-on-surface) !important;
 }
 
 /* ==========ICON BUTTONS========== */

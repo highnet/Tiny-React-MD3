@@ -5,6 +5,7 @@ import { ISnackBarProps } from "./ISnackBarProps";
 import Typography from "../Typography/Typography";
 import Button from "../Button/Button";
 import Icon from "../Icon/Icon";
+import IconButton from "../IconButton/IconButton";
 
 const SnackBar: React.FC<ISnackBarProps> = ({
 	className,
@@ -58,9 +59,7 @@ const SnackBar: React.FC<ISnackBarProps> = ({
 				)}
 
 				{_dismissable && (
-					<div className="icon-container-on-snackbar">
-						<Icon className="icon-on-snackbar">close</Icon>{" "}
-					</div>
+					<IconButton className="icon-button-on-snackbar">close</IconButton>
 				)}
 			</div>
 		</div>
