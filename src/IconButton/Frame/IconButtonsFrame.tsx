@@ -35,10 +35,19 @@ const IconButtonsFrame: React.FC = () => {
 			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-icon-buttons">
 				Icon Buttons
 			</ComponentFrameTitle>
-            <div className={"icon-buttons-subframe-trmd3 icon-buttons-subframe-" + _theme + "-trmd3"}>
+			<div
+				className={
+					"icon-buttons-subframe-trmd3 icon-buttons-subframe-" +
+					_theme +
+					"-trmd3"
+				}
+			>
 				<Typography variant={"text-label-small"}>Standard</Typography>
-				<IconButton configuration="standard" onClick={undefined}>hive</IconButton>
-				<CodeSnippet>{`
+				<IconButton configuration="standard" onClick={undefined}>
+					hive
+				</IconButton>
+				<CodeSnippet>
+					{`
 <IconButton
     configuration="standard"
     onClick={undefined}
@@ -48,7 +57,9 @@ const IconButtonsFrame: React.FC = () => {
 `}
 				</CodeSnippet>
 				<Typography variant={"text-label-small"}>Filled</Typography>
-				<IconButton configuration="filled" onClick={undefined}>hive</IconButton>
+				<IconButton configuration="filled" onClick={undefined}>
+					hive
+				</IconButton>
 				<CodeSnippet>{`
 <IconButton 
     configuration="filled"
@@ -59,8 +70,11 @@ const IconButtonsFrame: React.FC = () => {
 </IconButton>
 `}</CodeSnippet>
 				<Typography variant={"text-label-small"}>Tonal</Typography>
-				<IconButton configuration="tonal" onClick={undefined}>hive</IconButton>
-				<CodeSnippet>{`
+				<IconButton configuration="tonal" onClick={undefined}>
+					hive
+				</IconButton>
+				<CodeSnippet>
+					{`
 <IconButton 
     configuration="tonal"
 
@@ -71,8 +85,11 @@ const IconButtonsFrame: React.FC = () => {
 `}
 				</CodeSnippet>
 				<Typography variant={"text-label-small"}>Outlined</Typography>
-				<IconButton configuration="outlined" onClick={undefined}>hive</IconButton>
-				<CodeSnippet>{`
+				<IconButton configuration="outlined" onClick={undefined}>
+					hive
+				</IconButton>
+				<CodeSnippet>
+					{`
 <IconButton 
     configuration="outlined"
 
@@ -82,12 +99,63 @@ const IconButtonsFrame: React.FC = () => {
 </IconButton>
 `}
 				</CodeSnippet>
-				<IconButton configuration="standard" onClick={undefined} toggleAble={true}>hive</IconButton>
-				<IconButton configuration="filled" onClick={undefined} toggleAble={true}>hive</IconButton>
-				<IconButton configuration="tonal" onClick={undefined} toggleAble={true}>hive</IconButton>
-				<IconButton configuration="outlined" onClick={undefined} toggleAble={true}>hive</IconButton>
-
-        	</div>
+				<IconButton
+					configuration="standard"
+					onClick={undefined}
+					toggleAble={true}
+				>
+					hive
+				</IconButton>
+				<IconButton
+					configuration="standard"
+					onClick={undefined}
+					toggleAble={true}
+					selected={true}
+				>
+					hive
+				</IconButton>
+				<IconButton
+					configuration="filled"
+					onClick={undefined}
+					toggleAble={true}
+				>
+					hive
+				</IconButton>
+				<IconButton
+					configuration="filled"
+					onClick={undefined}
+					toggleAble={true}
+					selected={true}
+				>
+					hive
+				</IconButton>
+				<IconButton configuration="tonal" onClick={undefined} toggleAble={true}>
+					hive
+				</IconButton>
+				<IconButton
+					configuration="tonal"
+					onClick={undefined}
+					toggleAble={true}
+					selected={true}
+				>
+					hive
+				</IconButton>
+				<IconButton
+					configuration="outlined"
+					onClick={undefined}
+					toggleAble={true}
+				>
+					hive
+				</IconButton>
+				<IconButton
+					configuration="outlined"
+					onClick={undefined}
+					toggleAble={true}
+					selected={true}
+				>
+					hive
+				</IconButton>
+			</div>
 		</div>
 	);
 };

@@ -635,5 +635,5 @@ pre {
 }
 
 .icon-buttons-subframe-dark-theme-trmd3{
-	background-color: var(--m3-sys-light-surface-container);
+	background-color: var(--m3-sys-dark-surface-container);
 }

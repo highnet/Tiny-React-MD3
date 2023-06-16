@@ -39,6 +39,7 @@ const Icon: React.FC<IIconProps> = ({
 			onMouseEnter={onMouseEnter}
 			onMouseLeave={onMouseLeave}
 			onMouseMove={onMouseMove}
+			className="icon-wrapper"
 		>
 			<span id={_id} className={_computedComponentClassName}>
 				{children}
