@@ -90,7 +90,7 @@ function App() {
 					onClick: () => {
 						handleScrollToTop();
 					},
-					fabIconName: "home",
+					fabIconName: "arrow_upward",
 				}}
 				icons={[
 					{
@@ -115,6 +115,13 @@ function App() {
 							openLinkInNewTab(
 								"https://github.com/highnet/Tiny-React-MD3/tree/master/src"
 							);
+						},
+					},
+					{
+						name: "monetization_on",
+						label: "Icon Buttons",
+						onClick: () => {
+							scrollToSection("icon-buttons-section", -60);
 						},
 					},
 					{

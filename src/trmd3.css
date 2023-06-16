@@ -985,9 +985,10 @@ html {
 	--m3-composite-light-surface-passthrough-on-surface-opacity-12: #DDD8E0;
 	--m3-composite-light-surface-container-highest-passthrough-on-primary-opacity-08: #DCD4E4;
 	--m3-composite-light-surface-container-highest-passthrough-on-primary-opacity-12: #D7CFE1;
+	--m3-composite-light-surface-container-highest-passthrough-on-surface-variant-opacity-08: #D9D4DD;
 	--m3-composite-light-surface-container-highest-passthrough-on-surface-variant-opacity-12: #D3CDD7;
-	--m3-composite-inverse-on-surface-passthrough-on-surface-variant-opacity-08: #F0EAF1;
-	--m3-composite-inverse-on-surface-passthrough-on-surface-variant-opacity-12: #E8E1E9;
+	--m3-composite-light-inverse-on-surface-passthrough-on-surface-variant-opacity-08: #F0EAF1;
+	--m3-composite-light-inverse-on-surface-passthrough-on-surface-variant-opacity-12: #E8E1E9;
 	--m3-composite-light-on-surface-variant-passthrough-on-surface-variant-opacity-08: #423E45;
 	--m3-composite-light-on-surface-variant-passthrough-on-surface-variant-opacity-12: #49464C;
 
@@ -1016,6 +1017,15 @@ html {
 	--m3-composite-dark-surface-container-highest-passthrough-on-surface-opacity-08: #444249;
 	--m3-composite-dark-surface-passthrough-on-surface-opacity-08: #2D2B30;
 	--m3-composite-dark-surface-passthrough-on-surface-opacity-12: #353338;
+	--m3-composite-dark-on-surface-variant-passthrough-on-surface-variant-opacity-12: #D0CBD3;
+	--m3-composite-dark-on-surface-variant-passthrough-on-surface-variant-opacity-08: #D8D2DB;
+	--m3-composite-dark-inverse-on-surface-passthrough-on-surface-variant-opacity-12: #2A282E;
+	--m3-composite-dark-inverse-on-surface-passthrough-on-surface-variant-opacity-08: #222127;
+	--m3-composite-dark-surface-container-highest-passthrough-on-primary-opacity-12: #484453;
+	--m3-composite-dark-surface-container-highest-passthrough-on-primary-opacity-08: #423F4B;
+	--m3-composite-dark-surface-container-highest-passthrough-on-surface-variant-opacity-08: #424047;
+	--m3-composite-dark-surface-container-highest-passthrough-on-surface-variant-opacity-12: #48454D;
+
 }
 
 /* ==========COMPONENTS========== */
@@ -1504,6 +1514,8 @@ html {
 
 .icon-wrapper {
 	display: flex;
+	justify-content: center;
+		align-items: center;
 }
 
 
@@ -4567,7 +4579,7 @@ li {
 	transition: background-color 0.15s ease-in-out;
 }
 
-/* ICON BUTTONS / LIGHT THEME */
+/* ICON BUTTONS / LIGHT THEME */  
 
 .icon-button.icon-button-light-theme.icon-button-standard {
 	color: var(--m3-sys-light-on-surface-variant);
@@ -4579,10 +4591,10 @@ li {
 }
 
 .icon-button.icon-button-light-theme.icon-button-standard:focus {
-	background-color: var(--m3-state-layers-dark-on-surface-variant-opacity-12);
+	background-color: var(--m3-state-layers-light-on-surface-variant-opacity-12);
 }
 .icon-button.icon-button-light-theme.icon-button-standard:active {
-	background-color: var(--m3-state-layers-dark-on-surface-variant-opacity-12);
+	background-color: var(--m3-state-layers-light-on-surface-variant-opacity-12);
 }
 
 .icon-button.icon-button-light-theme.icon-button-filled {
@@ -4626,16 +4638,16 @@ li {
 }
 
 .icon-button.icon-button-light-theme.icon-button-outlined:hover {
-	background-color: var(--m3-state-layers-on-surface-variant-opacity-08);
+	background-color: var(--m3-state-layers-light-on-surface-variant-opacity-08);
 }
 
 .icon-button.icon-button-light-theme.icon-button-outlined:focus {
 	border-radius: none;
-	background-color: var(--m3-state-layers-on-surface-variant-opacity-12);
+	background-color: var(--m3-state-layers-light-on-surface-variant-opacity-12);
 }
 
 .icon-button.icon-button-light-theme.icon-button-outlined:active {
-	background-color: var(--m3-state-layers-on-surface-variant-opacity-12);
+	background-color: var(--m3-state-layers-light-on-surface-variant-opacity-12);
 }
 
 .icon-button.icon-button-light-theme.icon-button-standard.icon-button-deselected {
@@ -4712,7 +4724,7 @@ li {
 }
 
 .icon-button.icon-button-light-theme.icon-button-tonal.icon-button-deselected:hover {
-	background-color: var(--m3-sys-light-surface-container-highest);
+	background-color: var(--m3-composite-light-surface-container-highest-passthrough-on-surface-variant-opacity-08);
 }
 
 .icon-button.icon-button-light-theme.icon-button-tonal.icon-button-deselected:focus {
@@ -4746,15 +4758,15 @@ li {
 }
 
 .icon-button.icon-button-light-theme.icon-button-outlined.icon-button-deselected:hover {
-		background-color: var(--m3-composite-inverse-on-surface-passthrough-on-surface-variant-opacity-08);
+		background-color: var(--m3-composite-light-inverse-on-surface-passthrough-on-surface-variant-opacity-08);
 }
 
 .icon-button.icon-button-light-theme.icon-button-outlined.icon-button-deselected:focus {
-		background-color: var(--m3-composite-inverse-on-surface-passthrough-on-surface-variant-opacity-12);
+		background-color: var(--m3-composite-light-inverse-on-surface-passthrough-on-surface-variant-opacity-12);
 	}
 
 .icon-button.icon-button-light-theme.icon-button-outlined.icon-button-deselected:active {
-		background-color: var(--m3-composite-inverse-on-surface-passthrough-on-surface-variant-opacity-12);
+		background-color: var(--m3-composite-light-inverse-on-surface-passthrough-on-surface-variant-opacity-12);
 	}
 
 .icon-button.icon-button-light-theme.icon-button-outlined.icon-button-selected {
@@ -4766,10 +4778,218 @@ li {
 	background-color: var(--m3-composite-light-on-surface-variant-passthrough-on-surface-variant-opacity-08);
 }
 
-.icon-button.icon-button-light-theme.n-button-outlined.icon-button-selected:focus {
+.icon-button.icon-button-light-theme.icon-button-outlined.icon-button-selected:focus {
 	background-color: var(--m3-composite-light-on-surface-variant-passthrough-on-surface-variant-opacity-12);
 }
 
 .icon-button.icon-button-light-theme.icon-button-outlined.icon-button-selected:active {
 	background-color: var(--m3-composite-light-on-surface-variant-passthrough-on-surface-variant-opacity-12);
+}
+
+/* ICON BUTTONS / DARK THEME */
+
+.icon-button.icon-button-dark-theme.icon-button-standard {
+	color: var(--m3-sys-dark-on-surface-variant);
+	background-color: transparent;
+}
+
+.icon-button.icon-button-dark-theme.icon-button-standard:hover {
+	background-color: var(--m3-state-layers-dark-on-surface-variant-opacity-08);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-standard:focus {
+	background-color: var(--m3-state-layers-dark-on-surface-variant-opacity-12);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-standard:active {
+	background-color: var(--m3-state-layers-dark-on-surface-variant-opacity-12);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-filled {
+	color: var(--m3-sys-dark-on-primary);
+	background-color: var(--m3-sys-dark-primary);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-filled:hover {
+	background-color: var(--m3-composite-dark-primary-passthrough-on-primary-opacity-08);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-filled:focus {
+	background-color: var(--m3-composite-dark-primary-passthrough-on-primary-opacity-12);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-filled:active {
+	background-color: var(--m3-composite-dark-primary-passthrough-on-primary-opacity-12);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-tonal {
+	color: var(--m3-sys-dark-on-secondary-container);
+	background-color: var(--m3-sys-dark-secondary-container);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-tonal:hover {
+	background-color: var(--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-08);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-tonal:focus {
+	background-color: var(--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-tonal:active {
+	background-color: var(--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-outlined {
+	background-color: transparent;
+	color: var(--m3-sys-dark-on-surface-variant);
+	border: .1rem solid var(--m3-sys-dark-outline);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-outlined:hover {
+	background-color: var(--m3-state-layers-dark-on-surface-variant-opacity-08);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-outlined:focus {
+	border-radius: none;
+	background-color: var(--m3-state-layers-dark-on-surface-variant-opacity-12);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-outlined:active {
+	background-color: var(--m3-state-layers-dark-on-surface-variant-opacity-12);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-standard.icon-button-deselected {
+	color: var(--m3-sys-dark-on-surface-variant);
+	background-color: transparent;
+}
+
+.icon-button.icon-button-dark-theme.icon-button-standard.icon-button-deselected:hover {
+	background-color: var(--m3-state-layers-dark-on-surface-variant-opacity-08);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-standard.icon-button-deselected:focus {
+	background-color: var(--m3-state-layers-dark-on-surface-variant-opacity-12);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-standard.icon-button-deselected:active {
+	background-color: var(--m3-state-layers-dark-on-surface-variant-opacity-12);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-standard.icon-button-selected {
+	color: var(--m3-sys-dark-primary);
+	background-color: transparent;
+}
+
+.icon-button.icon-button-dark-theme.icon-button-standard.icon-button-selected:hover {
+	background-color: var(--m3-state-layers-dark-primary-opacity-08);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-standard.icon-button-selected:focus {
+	background-color: var(--m3-state-layers-dark-primary-opacity-12);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-standard.icon-button-selected:active {
+	background-color: var(--m3-state-layers-dark-primary-opacity-12)
+}
+
+.icon-button.icon-button-dark-theme.icon-button-filled.icon-button-deselected {
+	color: var(--m3-sys-dark-primary);
+	background-color: var(--m3-sys-dark-surface-container-highest);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-filled.icon-button-deselected:hover {
+	background-color: var(--m3-composite-dark-surface-container-highest-passthrough-on-primary-opacity-08);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-filled.icon-button-deselected:focus {
+	background-color: var(--m3-composite-dark-surface-container-highest-passthrough-on-primary-opacity-12);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-filled.icon-button-deselected:active {
+	background-color: var(--m3-composite-dark-surface-container-highest-passthrough-on-primary-opacity-12);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-filled.icon-button-selected {
+	color: var(--m3-sys-dark-on-primary);
+	background-color: var(--m3-sys-dark-primary);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-filled.icon-button-selected:hover {
+	background-color: var(--m3-composite-dark-primary-passthrough-on-primary-opacity-08);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-filled.icon-button-selected:focus {
+	background-color: var(--m3-composite-dark-primary-passthrough-on-primary-opacity-12);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-filled.icon-button-selected:active {
+	background-color: var(--m3-composite-dark-primary-passthrough-on-primary-opacity-12);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-tonal.icon-button-deselected {
+	color: var(--m3-sys-dark-on-secondary-container);
+	background-color: var(--m3-sys-dark-surface-container-highest);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-tonal.icon-button-deselected:hover {
+	background-color: var(--m3-composite-dark-surface-container-highest-passthrough-on-surface-variant-opacity-08);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-tonal.icon-button-deselected:focus {
+	background-color: var(--m3-composite-dark-surface-container-highest-passthrough-on-surface-variant-opacity-12);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-tonal.icon-button-deselected:active {
+	background-color: var(--m3-composite-dark-surface-container-highest-passthrough-on-surface-variant-opacity-12);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-tonal.icon-button-selected {
+	color: var(--m3-sys-dark-on-secondary-container);
+	background-color: var(--m3-sys-dark-secondary-container);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-tonal.icon-button-selected:hover {
+	background-color: var(--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-08);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-tonal.icon-button-selected:focus {
+	background-color: var(--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-tonal.icon-button-selected:active {
+	background-color: var(--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-outlined.icon-button-deselected {
+	color: var(--m3-sys-dark-on-surface-variant);
+	background-color: var(--m3-sys-dark-inverse-on-surface);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-outlined.icon-button-deselected:hover {
+	background-color: var(--m3-composite-dark-inverse-on-surface-passthrough-on-surface-variant-opacity-08);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-outlined.icon-button-deselected:focus {
+	background-color: var(--m3-composite-dark-inverse-on-surface-passthrough-on-surface-variant-opacity-12);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-outlined.icon-button-deselected:active {
+	background-color: var(--m3-composite-dark-inverse-on-surface-passthrough-on-surface-variant-opacity-12);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-outlined.icon-button-selected {
+	color: var(--m3-sys-dark-inverse-on-surface);
+	background-color: var(--m3-sys-dark-inverse-surface);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-outlined.icon-button-selected:hover {
+	background-color: var(--m3-composite-dark-on-surface-variant-passthrough-on-surface-variant-opacity-08);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-outlined.icon-button-selected:focus {
+	background-color: var(--m3-composite-dark-on-surface-variant-passthrough-on-surface-variant-opacity-12);
+}
+
+.icon-button.icon-button-dark-theme.icon-button-outlined.icon-button-selected:active {
+	background-color: var(--m3-composite-dark-on-surface-variant-passthrough-on-surface-variant-opacity-12);
 }
