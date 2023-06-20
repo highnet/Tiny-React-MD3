@@ -1515,7 +1515,7 @@ html {
 .icon-wrapper {
 	display: flex;
 	justify-content: center;
-		align-items: center;
+	align-items: center;
 }
 
 
@@ -3763,7 +3763,12 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 }
 
 .text-field-supporting-text.text-field-supporting-text-light-theme {
-padding: .4rem 1.6rem 0rem 1.6rem;}
+	padding: .4rem 1.6rem 0rem 1.6rem;
+}
+
+.icon-button.trailing-icon-on-text-field {
+	flex-shrink: 0;
+}
 
 /* TEXT FIELDS / LIGHT */
 

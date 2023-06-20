@@ -4,6 +4,7 @@ import { StringBuilder } from "../Gizmos/StringBuilder";
 import { ITextFieldProps } from "./ITextFieldProps";
 import Typography from "../Typography/Typography";
 import Icon from "../Icon/Icon";
+import IconButton from "../IconButton/IconButton";
 
 const TextField: React.FC<ITextFieldProps> = ({
 	disabled,
@@ -110,7 +111,6 @@ const TextField: React.FC<ITextFieldProps> = ({
 						<div>
 							<Icon
 								className="icon-on-text-field"
-								onClick={handleResetTextFieldValue}
 							>
 								{_leadingIconName}
 							</Icon>
@@ -144,14 +144,15 @@ const TextField: React.FC<ITextFieldProps> = ({
 						></input>
 					</div>
 					{trailingIcon && (
-						<div>
-							<Icon
-								className="icon-on-text-field trailing-icon-on-text-field"
-								onClick={handleResetTextFieldValue}
-							>
-								{!isValidInput ? "error" : "cancel"}
-							</Icon>
+						<div className="icon-wrapper">
+													<IconButton 
+							onClick={handleResetTextFieldValue}
+							className="trailing-icon-on-text-field"
+						>
+							{!isValidInput ? "error" : "cancel"}
+						</IconButton>
 						</div>
+
 					)}
 				</div>
 			</div>
