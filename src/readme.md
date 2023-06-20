@@ -497,3 +497,5 @@ The supported options of <code>{configuration}</code> are the following:
 ## 🍦 Snackbars
 
 ## 🪙 Icon Buttons
+
+## 💊 Segmented Buttons
