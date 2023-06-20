@@ -1,5 +1,4 @@
 import { useEffect, useState, useRef } from "react";
-
 import Hero from "./TRMD3/Hero/Hero";
 import ButtonsFrame from "./Button/Frame/ButtonsFrame";
 import HorizontalDividersFrame from "./Dividers/HorizontalDivider/Frame/HorizontalDividersFrame";
@@ -10,7 +9,6 @@ import CheckboxesFrame from "./Checkbox/Frame/CheckboxesFrame";
 import SwitchesFrame from "./Switch/Frame/SwitchesFrame";
 import TypographiesFrame from "./Typography/Frame/TypographiesFrame";
 import IconsFrame from "./Icon/Frame/IconsFrame";
-import StickyToolbar from "./TRMD3/StickyToolbar/StickyToolbar";
 import hljs from "highlight.js";
 import "highlight.js/styles/base16/material-lighter.css";
 import Cookietrail from "./TRMD3/Cookietrail/Cookietrail";
@@ -31,21 +29,17 @@ import NavigationRail from "./Navigation Rail/NavigationRail";
 import NavigationRailsFrame from "./Navigation Rail/Frame/NavigationRailsFrame";
 import TopAppBar from "./App Bars/Top App Bar/TopAppBar";
 import TopAppBarsFrame from "./App Bars/Top App Bar/Frame/TopAppBarsFrame";
-import Tooltip from "./Tooltip/Tooltip";
 import TooltipsFrame from "./Tooltip/Frame/TooltipsFrame";
-import TextField from "./TextField/TextField";
 import TextFieldsFrame from "./TextField/Frame/TextFieldsFrame";
 import ListsFrame from "./Lists/Frame/ListsFrame";
 import DialogsFrame from "./Dialogs/Frame/DialogsFrame";
 import SideSheet from "./Sheets/Side Sheets/SideSheet";
-import List from "./Lists/List";
-import ListItem from "./Lists/List Items/ListItem";
 import Typography from "./Typography/Typography";
 import SideSheetsFrame from "./Sheets/Side Sheets/Frame/SideSheetsFrame";
 import SlidersFrame from "./Sliders/Frame/SlidersFrame";
-import SnackBar from "./SnackBars/SnackBar";
 import SnackBarsFrame from "./SnackBars/Frame/SnackBarsFrame";
 import IconButtonsFrame from "./IconButton/Frame/IconButtonsFrame";
+import SegmentedButtonsFrame from "./SegmentedButton/Frame/SegmentedButtonsFrame";
 
 function App() {
 	console.log(`	👋 Welcome to TRMD3! 👋	`);
@@ -115,6 +109,13 @@ function App() {
 							openLinkInNewTab(
 								"https://github.com/highnet/Tiny-React-MD3/tree/master/src"
 							);
+						},
+					},
+					{
+						name: "pill",
+						label: "Seg. Buttons",
+						onClick: () => {
+							scrollToSection("segmented-buttons-section", -60);
 						},
 					},
 					{
@@ -303,6 +304,9 @@ function App() {
 				<Hero hasLogo={true} />
 				<Cookietrail />
 				<TourGuide />
+			</div>
+			<div id="section-19-trmd3" className="section-trmd3">
+				<SegmentedButtonsFrame />
 			</div>
 			<div id="section-18-trmd3" className="section-trmd3">
 				<IconButtonsFrame />
