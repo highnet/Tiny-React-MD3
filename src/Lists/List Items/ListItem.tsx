@@ -7,6 +7,7 @@ import Icon from "../../Icon/Icon";
 import Checkbox from "../../Checkbox/Checkbox";
 import Switch from "../../Switch/Switch";
 import RadioButton from "../../Radio Button/RadioButton";
+import IconButton from "../../IconButton/IconButton";
 
 const ListItem: React.FC<IListItemProps> = ({
 	title,
@@ -123,16 +124,7 @@ const ListItem: React.FC<IListItemProps> = ({
 	const _trailingElementComponent = (
 		<div className="list-item-trailing-element-element">
 			{_trailingElement === "icon" && (
-				<div
-					className={`list-item-trailing-element-icon ${
-						onTrailingIconClick
-							? "list-item-trailing-element-icon-interactable"
-							: ""
-					}`}
-					onClick={onTrailingIconClick}
-				>
-					<Icon id={trailingElementId}>{_trailingIconName}</Icon>
-				</div>
+				<IconButton id={trailingElementId} onClick={onTrailingIconClick}>{_trailingIconName}</IconButton>
 			)}
 
 			{_trailingElement === "checkbox" &&
