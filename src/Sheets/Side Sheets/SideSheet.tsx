@@ -7,6 +7,7 @@ import Typography from "../../Typography/Typography";
 import { ISideSheetProps } from "./ISideSheetProps";
 import Button from "../../Button/Button";
 import { toggleSideSheet } from "../../Gizmos/Modals";
+import IconButton from "../../IconButton/IconButton";
 
 const SideSheet: React.FC<ISideSheetProps> = ({
 	className,
@@ -84,21 +85,17 @@ const SideSheet: React.FC<ISideSheetProps> = ({
 			{!isActive && <Icon className="arrow-on-side-sheet">arrow_left</Icon>}
 			<div className="side-sheet-header">
 				{leadingIcon && (
-					<div className="side-sheet-icon-container">
-						<Icon className="side-sheet-icon" onClick={leadingIcon.onClick}>
-							{leadingIcon.name}
-						</Icon>
-					</div>
+					<IconButton onClick={leadingIcon.onClick}>
+						{leadingIcon.name}
+					</IconButton>
 				)}
 				<Typography variant="text-title-large" className="title-on-side-sheet">
 					{_title}
 				</Typography>
 				{trailingIcon && (
-					<div className="side-sheet-icon-container">
-						<Icon className="side-sheet-icon" onClick={trailingIcon.onClick}>
-							{trailingIcon.name}
-						</Icon>
-					</div>
+					<IconButton onClick={trailingIcon.onClick}>
+						{trailingIcon.name}
+					</IconButton>
 				)}
 			</div>
 			<div className="side-sheet-content">{content}</div>
