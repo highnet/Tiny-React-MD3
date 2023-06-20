@@ -4,6 +4,7 @@ import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { ITopAppBarProps } from "./ITopAppBarProps";
 import Typography from "../../Typography/Typography";
 import Icon from "../../Icon/Icon";
+import IconButton from "../../IconButton/IconButton";
 
 const TopAppBar: React.FC<ITopAppBarProps> = ({
 	className,
@@ -86,54 +87,15 @@ const TopAppBar: React.FC<ITopAppBarProps> = ({
 		.toString();
 
 	let iconElements = null;
-	if (_configuration === "small-centered") {
-		iconElements = (
-			<div
-				className={
-					"icon-container-on-top-app-bar icon-container-on-top-app-bar-" +
-					_theme
-				}
-				key={0}
-				tabIndex={0}
-			>
-				<Icon
-					className={"icon-on-top-app-bar icon-on-top-app-bar-" + _theme}
-					onClick={_trailingIcons[0].onClick}
-				>
-					{_trailingIcons[0].name}
-				</Icon>
-			</div>
-		);
-	} else {
-		iconElements = _trailingIcons.map((icon, index) => (
-			<div
-				className={
-					"icon-container-on-top-app-bar icon-container-on-top-app-bar-" +
-					_theme
-				}
-				key={index}
-				tabIndex={0}
-			>
-				<Icon
-					className={"icon-on-top-app-bar icon-on-top-app-bar-" + _theme}
-					onClick={icon.onClick}
-				>
-					{icon.name}
-				</Icon>
-			</div>
-		));
-	}
+	iconElements = _trailingIcons.map((icon, index) => (
+		<IconButton onClick={icon.onClick}>{icon.name}</IconButton>
+	));
 
 	return (
 		<div id={_id} className={_computedComponentClassName}>
 			<div style={{ display: "flex", width: "100%" }}>
 				<div className="left-container-on-top-app-bar">
-					<div
-						className="icon-container-on-top-app-bar"
-						onClick={leadingIcon.onClick}
-					>
-						<Icon className="icon-on-top-app-bar">{leadingIcon.name}</Icon>
-					</div>
+					<IconButton onClick={leadingIcon.onClick}>{leadingIcon.name}</IconButton>
 
 					<Typography
 						variant="text-title-large"

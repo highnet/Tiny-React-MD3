@@ -5,6 +5,7 @@ import { IStackedCardsProps } from "./IStackedCardsProps";
 import Icon from "../../Icon/Icon";
 import Typography from "../../Typography/Typography";
 import Button from "../../Button/Button";
+import IconButton from "../../IconButton/IconButton";
 
 const StackedCard: React.FC<IStackedCardsProps> = ({
 	id,
@@ -112,12 +113,11 @@ const StackedCard: React.FC<IStackedCardsProps> = ({
 						</Typography>
 					</div>
 				</div>
-				<div
+				<IconButton
 					onClick={handleHeaderIconButtonClick}
-					className="stacked-card-header-icon-button"
 				>
-					<Icon>{_iconButtonIconName}</Icon>
-				</div>
+					{_iconButtonIconName}
+				</IconButton>
 			</div>
 			<div className="stacked-card-media">
 				<img src={_imageSrc}></img>
