@@ -5062,3 +5062,11 @@ li {
 .segmented-button-selected.segmented-button-light-theme:active {
 	background-color: var(--m3-state-layers-light-on-secondary-container-opacity-12);
 }	
+
+.segmented-button-left {
+	border-radius: 10rem 0rem 0rem 10rem;
+}
+
+.segmented-button-right {
+	border-radius: 0rem 10rem 10rem 0rem	;
+}
