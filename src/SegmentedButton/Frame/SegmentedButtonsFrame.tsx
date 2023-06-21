@@ -36,35 +36,97 @@ const ComponentsFrame: React.FC = () => {
 				Segmented Buttons
 			</ComponentFrameTitle>
 			<div className="segmented-buttons-subframe-trmd3">
-				<Typography variant={"text-label-small"}>Label & Icon</Typography>
-				<SegmentedButton icon="check" label="Label"></SegmentedButton>
+				<Typography variant={"text-label-small"}>Label & Icon, Center</Typography>
+				<SegmentedButton icon="check" label="Label" position="center"></SegmentedButton>
 				<CodeSnippet>{`
 <SegmentedButton 
     icon="check"
+	position="center"
 >
     
 </SegmentedButton>
 `}</CodeSnippet>
-				<Typography variant={"text-label-small"}>Label Only</Typography>
-				<SegmentedButton label="Label"></SegmentedButton>
+				<Typography variant={"text-label-small"}>Label Only, Center</Typography>
+				<SegmentedButton label="Label" position="center"></SegmentedButton>
 				<CodeSnippet>{`
 <SegmentedButton
 	label="Label"
+	position="center"
 >
     
 </SegmentedButton>
 `}</CodeSnippet>
-				<Typography variant={"text-label-small"}>Icon Only</Typography>
-				<SegmentedButton icon="check"></SegmentedButton>
+				<Typography variant={"text-label-small"}>Icon Only, Center</Typography>
+				<SegmentedButton icon="check" position="center"></SegmentedButton>
 				<CodeSnippet>{`
 <SegmentedButton
 	icon="check"
+	position="center"
+>
+    
+</SegmentedButton>
+`}</CodeSnippet>
+<Typography variant={"text-label-small"}>Label & Icon, Left</Typography>
+				<SegmentedButton icon="check" label="Label" position="left"></SegmentedButton>
+				<CodeSnippet>{`
+<SegmentedButton 
+    icon="left"
+	position="center"
+>
+    
+</SegmentedButton>
+`}</CodeSnippet>
+				<Typography variant={"text-label-small"}>Label Only, Left</Typography>
+				<SegmentedButton label="Label" position="left"></SegmentedButton>
+				<CodeSnippet>{`
+<SegmentedButton
+	label="Label"
+	position="left"
+>
+    
+</SegmentedButton>
+`}</CodeSnippet>
+				<Typography variant={"text-label-small"}>Icon Only, Left</Typography>
+				<SegmentedButton icon="check" position="left"></SegmentedButton>
+				<CodeSnippet>{`
+<SegmentedButton
+	icon="check"
+	position="left"
+>
+    
+</SegmentedButton>
+`}</CodeSnippet>
+<Typography variant={"text-label-small"}>Label & Icon, Right</Typography>
+				<SegmentedButton icon="check" label="Label" position="right"></SegmentedButton>
+				<CodeSnippet>{`
+<SegmentedButton 
+    icon="check"
+	position="right"
+>
+    
+</SegmentedButton>
+`}</CodeSnippet>
+				<Typography variant={"text-label-small"}>Label Only, Right</Typography>
+				<SegmentedButton label="Label" position="right"></SegmentedButton>
+				<CodeSnippet>{`
+<SegmentedButton
+	label="Label"
+	position="right"
+>
+    
+</SegmentedButton>
+`}</CodeSnippet>
+				<Typography variant={"text-label-small"}>Icon Only, Right</Typography>
+				<SegmentedButton icon="check" position="right"></SegmentedButton>
+				<CodeSnippet>{`
+<SegmentedButton
+	icon="check"
+	position="right"
 >
     
 </SegmentedButton>
 `}</CodeSnippet>
 			</div>
-
 		</div>
 	);
 };
