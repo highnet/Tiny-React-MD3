@@ -35,15 +35,36 @@ const ComponentsFrame: React.FC = () => {
 			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-segmented-buttons">
 				Segmented Buttons
 			</ComponentFrameTitle>
-			<Typography variant={"text-label-small"}>Default</Typography>
-			<SegmentedButton icon="check"></SegmentedButton>
-			<CodeSnippet>{`
+			<div className="segmented-buttons-subframe-trmd3">
+				<Typography variant={"text-label-small"}>Label & Icon</Typography>
+				<SegmentedButton icon="check" label="Label"></SegmentedButton>
+				<CodeSnippet>{`
 <SegmentedButton 
     icon="check"
 >
     
 </SegmentedButton>
 `}</CodeSnippet>
+				<Typography variant={"text-label-small"}>Label Only</Typography>
+				<SegmentedButton label="Label"></SegmentedButton>
+				<CodeSnippet>{`
+<SegmentedButton
+	label="Label"
+>
+    
+</SegmentedButton>
+`}</CodeSnippet>
+				<Typography variant={"text-label-small"}>Icon Only</Typography>
+				<SegmentedButton icon="check"></SegmentedButton>
+				<CodeSnippet>{`
+<SegmentedButton
+	icon="check"
+>
+    
+</SegmentedButton>
+`}</CodeSnippet>
+			</div>
+
 		</div>
 	);
 };

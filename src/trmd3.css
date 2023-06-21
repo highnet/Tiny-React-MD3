@@ -1174,7 +1174,6 @@ html {
 	width: fit-content;
 	height: 4rem;
 	white-space: nowrap;
-
 }
 
 .btn text {
@@ -4592,6 +4591,11 @@ li {
 	transition: background-color 0.15s ease-in-out;
 }
 
+.icon-button-disabled{
+	opacity: 38%;
+	pointer-events: none;
+}
+
 /* ICON BUTTONS / LIGHT THEME */  
 
 .icon-button.icon-button-light-theme.icon-button-standard {
@@ -5006,3 +5010,55 @@ li {
 .icon-button.icon-button-dark-theme.icon-button-outlined.icon-button-selected:active {
 	background-color: var(--m3-composite-dark-on-surface-variant-passthrough-on-surface-variant-opacity-12);
 }
+
+/* ==========SEGMENTED BUTTONS========== */
+.segmented-button{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: background-color 0.3s, box-shadow 0.3s;
+	white-space: nowrap;
+	width: 10.8rem;
+	height: 4rem;
+	padding: 1rem 1.2rem;
+	gap: .8rem;
+}
+
+
+.segmented-button-deselected.segmented-button-light-theme {
+	background-color: var(--m3-sys-light-secondary-container);
+	border: .1rem solid var(--m3-sys-light-outline);
+	color: var(--m3-sys-light-on-secondary-container);
+}
+
+.segmented-button-deselected.segmented-button-light-theme:hover {
+	background-color: var(--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-08);
+}
+
+.segmented-button-deselected.segmented-button-light-theme:focus {
+	background-color: var(--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-12);
+}
+
+.segmented-button-deselected.segmented-button-light-theme:active {
+	background-color: var(--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-12);
+}
+
+.segmented-button-selected.segmented-button-light-theme {
+	background-color: transparent;
+	border: .1rem solid var(--m3-sys-light-outline);
+	color: var(--m3-sys-light-on-surface);
+}
+
+.segmented-button-selected.segmented-button-light-theme:hover {
+	background-color: var(--m3-state-layers-light-on-secondary-container-opacity-08);
+}
+
+.segmented-button-selected.segmented-button-light-theme:focus {
+	background-color: var(--m3-state-layers-light-on-secondary-container-opacity-12);
+}
+
+.segmented-button-selected.segmented-button-light-theme:active {
+	background-color: var(--m3-state-layers-light-on-secondary-container-opacity-12);
+}	
