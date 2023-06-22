@@ -58,9 +58,7 @@ const Button: React.FC<IButtonProps> = ({
 		.add(_className)
 		.toString();
 
-	const click = () => {
-		console.log("Thanks for Using Tiny React MD3!");
-	};
+	const click = () => {};
 
 	return (
 		<button
@@ -69,7 +67,6 @@ const Button: React.FC<IButtonProps> = ({
 			disabled={_disabled}
 			onClick={(e) => {
 				onClick?.(e);
-				click();
 			}}
 			onMouseEnter={onMouseEnter}
 			onMouseLeave={onMouseLeave}

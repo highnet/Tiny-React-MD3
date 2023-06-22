@@ -59,21 +59,18 @@ const StackedCard: React.FC<IStackedCardsProps> = ({
 	const handlePrimaryButtonClick = () => {
 		if (onPrimaryButtonClick) {
 			onPrimaryButtonClick();
-			console.log("Stacked Card Primary button clicked");
 		}
 	};
 
 	const handleSecondaryButtonClick = () => {
 		if (onSecondaryButtonClick) {
 			onSecondaryButtonClick();
-			console.log("Stacked Card Secondary button clicked");
 		}
 	};
 
 	const handleHeaderIconButtonClick = () => {
 		if (onHeaderIconButtonClick) {
 			onHeaderIconButtonClick();
-			console.log("Stacked Card Header Icon Button clicked");
 		}
 	};
 
@@ -113,9 +110,7 @@ const StackedCard: React.FC<IStackedCardsProps> = ({
 						</Typography>
 					</div>
 				</div>
-				<IconButton
-					onClick={handleHeaderIconButtonClick}
-				>
+				<IconButton onClick={handleHeaderIconButtonClick}>
 					{_iconButtonIconName}
 				</IconButton>
 			</div>
