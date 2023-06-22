@@ -36,19 +36,25 @@ const InputChipsFrame: React.FC = () => {
 				Input Chips
 			</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>Label Only</Typography>
-			<InputChip onClick={undefined}></InputChip>
+			<InputChip selected={true} onClick={undefined}></InputChip>
 			<CodeSnippet>{`
-<InputChip 
+<InputChip
+	selected={true}
 	onClick={undefined}>
 </InputChip>
 	`}</CodeSnippet>
 			<Typography variant={"text-label-small"}>
 				Label & trailing icon
 			</Typography>
-			<InputChip trailingIcon={true} onClick={undefined}></InputChip>
+			<InputChip
+				selected={true}
+				trailingIcon={true}
+				onClick={undefined}
+			></InputChip>
 			<CodeSnippet>
 				{`
-<InputChip 
+<InputChip
+	selected={true}
 	trailingIcon={true} 
 	onClick={undefined}>
 </InputChip>`}
@@ -56,10 +62,15 @@ const InputChipsFrame: React.FC = () => {
 			<Typography variant={"text-label-small"} className={"text-label-small"}>
 				Leading icon & label
 			</Typography>
-			<InputChip leadingIcon={true} onClick={undefined}></InputChip>
+			<InputChip
+				selected={true}
+				leadingIcon={true}
+				onClick={undefined}
+			></InputChip>
 			<CodeSnippet>
 				{`
-<InputChip 
+<InputChip
+	selected={true}
 	leadingIcon={true} 
 	onClick={undefined}>
 </InputChip>`}
@@ -68,13 +79,15 @@ const InputChipsFrame: React.FC = () => {
 				Leading icon, label & trailing icon
 			</Typography>
 			<InputChip
+				selected={true}
 				leadingIcon={true}
 				trailingIcon={true}
 				onClick={undefined}
 			></InputChip>
 			<CodeSnippet>
 				{`
-<InputChip 
+<InputChip
+	selected={true}
 	leadingIcon={true} 
 	trailingIcon={true} 
 	onClick={undefined}>
@@ -83,10 +96,11 @@ const InputChipsFrame: React.FC = () => {
 			<Typography variant={"text-label-small"} className={"text-label-small"}>
 				Label & avatar
 			</Typography>
-			<InputChip avatar={true} onClick={undefined}></InputChip>
+			<InputChip selected={true} avatar={true} onClick={undefined}></InputChip>
 			<CodeSnippet>
 				{`
-<InputChip 
+<InputChip
+	selected={true}
 	avatar={true} 
 	onClick={undefined}>
 </InputChip>`}
@@ -95,13 +109,15 @@ const InputChipsFrame: React.FC = () => {
 				Label, avatar & trailing icon
 			</Typography>
 			<InputChip
+				selected={true}
 				avatar={true}
 				trailingIcon={true}
 				onClick={undefined}
 			></InputChip>
 			<CodeSnippet>
 				{`
-<InputChip 
+<InputChip
+	selected={true}
 	avatar={true} 
 	trailingIcon={true} 
 	onClick={undefined}>
