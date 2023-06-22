@@ -53,51 +53,43 @@ const SegmentedButtonsFrame: React.FC = () => {
 				<Typography variant={"text-label-small"}>
 					Label & Icon, Center
 				</Typography>
-				<SegmentedButton
-					icon="check"
-					label="Label"
-					position="center"
-				></SegmentedButton>
-				<CodeSnippet>{`<SegmentedButton
-					icon="check"
-					label="Label"
-					position="center"
-				></SegmentedButton>`}</CodeSnippet>
+				<SegmentedButton icon="check" label="Label" position="center" />
+				<CodeSnippet>{`
+<SegmentedButton 
+	icon="check"
+	label="Label" 
+	position="center" 
+/>
+				`}</CodeSnippet>
 				<Typography variant={"text-label-small"}>Label & Icon, Left</Typography>
-				<SegmentedButton
-					icon="check"
-					label="Label"
-					position="left"
-				></SegmentedButton>
-				<CodeSnippet>{`				<SegmentedButton
-					icon="check"
-					label="Label"
-					position="left"
-				></SegmentedButton>`}</CodeSnippet>
+				<SegmentedButton icon="check" label="Label" position="left" />
+				<CodeSnippet>{`
+<SegmentedButton 
+	icon="check" 
+	label="Label" 
+	position="left" 
+/>
+				`}</CodeSnippet>
 				<Typography variant={"text-label-small"}>
 					Label & Icon, Right
 				</Typography>
-				<SegmentedButton
-					icon="check"
-					label="Label"
-					position="right"
-				></SegmentedButton>
-				<CodeSnippet>{`				<SegmentedButton
-					icon="check"
-					label="Label"
-					position="right"
-				></SegmentedButton>`}</CodeSnippet>
+				<SegmentedButton icon="check" label="Label" position="right" />
+				<CodeSnippet>{`
+<SegmentedButton
+	icon="check"
+	label="Label"
+	position="right"
+/>
+				`}</CodeSnippet>
 				<Typography variant={"text-label-small"}>
 					Segmented Button Group
 				</Typography>
 				<CodeSnippet>{`
-	const [segmentedButtonGroupValue, setSegmentedButtonGroupValue] = useState<
-		string | undefined
-	>(undefined);
+const [segmentedButtonGroupValue, setSegmentedButtonGroupValue] = useState<string | undefined>(undefined);
 
-	const handleSegmentedButtonGroupValueChange = (value: string | undefined) => {
-		setSegmentedButtonGroupValue(value);
-	};
+const handleSegmentedButtonGroupValueChange = (value: string | undefined) => {
+	setSegmentedButtonGroupValue(value);
+};
 `}</CodeSnippet>
 				<SegmentedButtonGroup
 					defaultSelectedButtonIndex={-1}
@@ -134,40 +126,43 @@ const SegmentedButtonsFrame: React.FC = () => {
 					{segmentedButtonGroupValue ? segmentedButtonGroupValue : "undefined"}
 				</Typography>
 				<CodeSnippet>{`
-				<SegmentedButtonGroup
-					defaultSelectedButtonIndex={-1}
-					onSelectedValueChange={handleSegmentedButtonGroupValueChange}
-				>
-					<SegmentedButton
-						icon="check"
-						onClick={() => {
-							console.log("0");
-						}}
-						value="alpha"
-					/>
-					<SegmentedButton
-						icon="check"
-						label="Label"
-						onClick={() => {
-							console.log("1");
-						}}
-						value="beta"
-					/>
-					<SegmentedButton
-						label="Label"
-						onClick={() => {
-							console.log("2");
-						}}
-						value="charlie"
-					/>
-				</SegmentedButtonGroup>
-				<Button onClick={() => console.log(segmentedButtonGroupValue)}>
-					Query Value
-				</Button>
-				<Typography variant="text-label-small">
-					Selected value:{" "}
-					{segmentedButtonGroupValue ? segmentedButtonGroupValue : "undefined"}
-				</Typography>`}</CodeSnippet>
+<SegmentedButtonGroup
+	defaultSelectedButtonIndex={-1}
+	onSelectedValueChange={handleSegmentedButtonGroupValueChange}
+>
+	<SegmentedButton
+		icon="check"
+		value="alpha"
+		onClick={() => {
+			console.log("0");
+		}}
+	/>
+	<SegmentedButton
+		icon="check"
+		label="Label"
+		value="beta"
+		onClick={() => {
+			console.log("1");
+			}}
+		
+	/>
+	<SegmentedButton
+		label="Label"
+		value="charlie"
+		onClick={() => {
+			console.log("2");
+		}}
+		
+	/>
+</SegmentedButtonGroup>
+<Button onClick={() => console.log(segmentedButtonGroupValue)}>
+	Query Value
+</Button>
+<Typography variant="text-label-small">
+	Selected value:{" "}
+	{segmentedButtonGroupValue ? segmentedButtonGroupValue : "undefined"}
+</Typography>
+				`}</CodeSnippet>
 			</div>
 		</div>
 	);
