@@ -1,9 +1,11 @@
+import React, { useState } from "react";
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 import CodeSnippet from "../../TRMD3/CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../../TRMD3/ComponentFrameTitle/ComponentFrameTitle";
 import Typography from "../../Typography/Typography";
 import IconButton from "../IconButton";
+import Button from "../../Button/Button";
 
 const IconButtonsFrame: React.FC = () => {
 	const _theme =
@@ -22,6 +24,12 @@ const IconButtonsFrame: React.FC = () => {
 		.add("section-title-trmd3")
 		.add("section-title-" + _theme + "-trmd3")
 		.toString();
+
+	const [toggled, setToggled] = useState(true);
+
+	const handleToggled = () => {
+		setToggled(!toggled);
+	};
 
 	return (
 		<div className={_computedFrameClassName}>
@@ -102,24 +110,57 @@ const IconButtonsFrame: React.FC = () => {
 				<Typography variant={"text-label-small"}>
 					Standard, Toggleable
 				</Typography>
+				<CodeSnippet>
+					{`
+	const [toggled, setToggled] = useState(true);
+
+	const handleToggled = () => {
+		setToggled(!toggled);
+	};
+`}
+				</CodeSnippet>
 				<IconButton
 					configuration="standard"
 					onClick={undefined}
 					toggleAble={true}
 					selected={true}
+					onValueChange={handleToggled}
 				>
 					hive
 				</IconButton>
+				<Button
+					onClick={() => {
+						console.log(toggled);
+					}}
+				>
+					Query Value
+				</Button>
+				<Typography variant={"text-label-small"}>
+					{"Toggled: "}
+					{toggled ? "On" : "Off"}
+				</Typography>
 				<CodeSnippet>
 					{`
-<IconButton 
-    configuration="standard"
-	onClick={undefined}
-	toggleAble={true}
-	selected={true}
->
-    hive
-</IconButton>
+				<IconButton
+					configuration="standard"
+					onClick={undefined}
+					toggleAble={true}
+					selected={true}
+					onValueChange={handleToggled}
+				>
+					hive
+				</IconButton>
+				<Button
+					onClick={() => {
+						console.log(toggled);
+					}}
+				>
+					Query Value
+				</Button>
+				<Typography variant={"text-label-small"}>
+					{"Toggled: "}
+					{toggled ? "On" : "Off"}
+				</Typography>
 `}
 				</CodeSnippet>
 				<Typography variant={"text-label-small"}>Filled, Toggleable</Typography>
