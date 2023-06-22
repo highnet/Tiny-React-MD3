@@ -643,4 +643,5 @@ pre {
 	padding: 1rem;
 	border-radius: 1.6rem;
 	background-color: var(--m3-sys-light-surface-container-low);
+	gap: 1rem;
 }

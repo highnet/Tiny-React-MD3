@@ -6,4 +6,5 @@ export interface ISegmentedButtonProps extends IComponentProps {
 	icon?: string;
 	selected?: boolean;
 	label?: string;
+	value?: string;
 }

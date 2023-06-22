@@ -88,14 +88,18 @@ const TopAppBar: React.FC<ITopAppBarProps> = ({
 
 	let iconElements = null;
 	iconElements = _trailingIcons.map((icon, index) => (
-		<IconButton onClick={icon.onClick}>{icon.name}</IconButton>
+		<IconButton key={index} onClick={icon.onClick}>
+			{icon.name}
+		</IconButton>
 	));
 
 	return (
 		<div id={_id} className={_computedComponentClassName}>
 			<div style={{ display: "flex", width: "100%" }}>
 				<div className="left-container-on-top-app-bar">
-					<IconButton onClick={leadingIcon.onClick}>{leadingIcon.name}</IconButton>
+					<IconButton onClick={leadingIcon.onClick}>
+						{leadingIcon.name}
+					</IconButton>
 
 					<Typography
 						variant="text-title-large"

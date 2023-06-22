@@ -1,11 +1,14 @@
+import { useState } from "react";
+import Button from "../../Button/Button";
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 import CodeSnippet from "../../TRMD3/CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../../TRMD3/ComponentFrameTitle/ComponentFrameTitle";
 import Typography from "../../Typography/Typography";
 import SegmentedButton from "../SegmentedButton";
+import SegmentedButtonGroup from "../SegmentedButtonGroup";
 
-const ComponentsFrame: React.FC = () => {
+const SegmentedButtonsFrame: React.FC = () => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
@@ -23,6 +26,14 @@ const ComponentsFrame: React.FC = () => {
 		.add("section-title-" + _theme + "-trmd3")
 		.toString();
 
+	const [segmentedButtonGroupValue, setSegmentedButtonGroupValue] = useState<
+		string | undefined
+	>(undefined);
+
+	const handleSegmentedButtonGroupValueChange = (value: string | undefined) => {
+		setSegmentedButtonGroupValue(value);
+	};
+
 	return (
 		<div className={_computedFrameClassName}>
 			<Typography
@@ -36,98 +47,129 @@ const ComponentsFrame: React.FC = () => {
 				Segmented Buttons
 			</ComponentFrameTitle>
 			<div className="segmented-buttons-subframe-trmd3">
-				<Typography variant={"text-label-small"}>Label & Icon, Center</Typography>
-				<SegmentedButton icon="check" label="Label" position="center"></SegmentedButton>
+				<Typography variant={"text-label-small"}>
+					Standalone Segmented Buttons
+				</Typography>
+				<Typography variant={"text-label-small"}>
+					Label & Icon, Center
+				</Typography>
+				<SegmentedButton
+					icon="check"
+					label="Label"
+					position="center"
+				></SegmentedButton>
+				<CodeSnippet>{`<SegmentedButton
+					icon="check"
+					label="Label"
+					position="center"
+				></SegmentedButton>`}</CodeSnippet>
+				<Typography variant={"text-label-small"}>Label & Icon, Left</Typography>
+				<SegmentedButton
+					icon="check"
+					label="Label"
+					position="left"
+				></SegmentedButton>
+				<CodeSnippet>{`				<SegmentedButton
+					icon="check"
+					label="Label"
+					position="left"
+				></SegmentedButton>`}</CodeSnippet>
+				<Typography variant={"text-label-small"}>
+					Label & Icon, Right
+				</Typography>
+				<SegmentedButton
+					icon="check"
+					label="Label"
+					position="right"
+				></SegmentedButton>
+				<CodeSnippet>{`				<SegmentedButton
+					icon="check"
+					label="Label"
+					position="right"
+				></SegmentedButton>`}</CodeSnippet>
+				<Typography variant={"text-label-small"}>
+					Segmented Button Group
+				</Typography>
 				<CodeSnippet>{`
-<SegmentedButton 
-    icon="check"
-	position="center"
->
-    
-</SegmentedButton>
+	const [segmentedButtonGroupValue, setSegmentedButtonGroupValue] = useState<
+		string | undefined
+	>(undefined);
+
+	const handleSegmentedButtonGroupValueChange = (value: string | undefined) => {
+		setSegmentedButtonGroupValue(value);
+	};
 `}</CodeSnippet>
-				<Typography variant={"text-label-small"}>Label Only, Center</Typography>
-				<SegmentedButton label="Label" position="center"></SegmentedButton>
+				<SegmentedButtonGroup
+					defaultSelectedButtonIndex={-1}
+					onSelectedValueChange={handleSegmentedButtonGroupValueChange}
+				>
+					<SegmentedButton
+						icon="check"
+						onClick={() => {
+							console.log("0");
+						}}
+						value="alpha"
+					/>
+					<SegmentedButton
+						icon="check"
+						label="Label"
+						onClick={() => {
+							console.log("1");
+						}}
+						value="beta"
+					/>
+					<SegmentedButton
+						label="Label"
+						onClick={() => {
+							console.log("2");
+						}}
+						value="charlie"
+					/>
+				</SegmentedButtonGroup>
+				<Button onClick={() => console.log(segmentedButtonGroupValue)}>
+					Query Value
+				</Button>
+				<Typography variant="text-label-small">
+					Selected value:{" "}
+					{segmentedButtonGroupValue ? segmentedButtonGroupValue : "undefined"}
+				</Typography>
 				<CodeSnippet>{`
-<SegmentedButton
-	label="Label"
-	position="center"
->
-    
-</SegmentedButton>
-`}</CodeSnippet>
-				<Typography variant={"text-label-small"}>Icon Only, Center</Typography>
-				<SegmentedButton icon="check" position="center"></SegmentedButton>
-				<CodeSnippet>{`
-<SegmentedButton
-	icon="check"
-	position="center"
->
-    
-</SegmentedButton>
-`}</CodeSnippet>
-<Typography variant={"text-label-small"}>Label & Icon, Left</Typography>
-				<SegmentedButton icon="check" label="Label" position="left"></SegmentedButton>
-				<CodeSnippet>{`
-<SegmentedButton 
-    icon="left"
-	position="center"
->
-    
-</SegmentedButton>
-`}</CodeSnippet>
-				<Typography variant={"text-label-small"}>Label Only, Left</Typography>
-				<SegmentedButton label="Label" position="left"></SegmentedButton>
-				<CodeSnippet>{`
-<SegmentedButton
-	label="Label"
-	position="left"
->
-    
-</SegmentedButton>
-`}</CodeSnippet>
-				<Typography variant={"text-label-small"}>Icon Only, Left</Typography>
-				<SegmentedButton icon="check" position="left"></SegmentedButton>
-				<CodeSnippet>{`
-<SegmentedButton
-	icon="check"
-	position="left"
->
-    
-</SegmentedButton>
-`}</CodeSnippet>
-<Typography variant={"text-label-small"}>Label & Icon, Right</Typography>
-				<SegmentedButton icon="check" label="Label" position="right"></SegmentedButton>
-				<CodeSnippet>{`
-<SegmentedButton 
-    icon="check"
-	position="right"
->
-    
-</SegmentedButton>
-`}</CodeSnippet>
-				<Typography variant={"text-label-small"}>Label Only, Right</Typography>
-				<SegmentedButton label="Label" position="right"></SegmentedButton>
-				<CodeSnippet>{`
-<SegmentedButton
-	label="Label"
-	position="right"
->
-    
-</SegmentedButton>
-`}</CodeSnippet>
-				<Typography variant={"text-label-small"}>Icon Only, Right</Typography>
-				<SegmentedButton icon="check" position="right"></SegmentedButton>
-				<CodeSnippet>{`
-<SegmentedButton
-	icon="check"
-	position="right"
->
-    
-</SegmentedButton>
-`}</CodeSnippet>
+				<SegmentedButtonGroup
+					defaultSelectedButtonIndex={-1}
+					onSelectedValueChange={handleSegmentedButtonGroupValueChange}
+				>
+					<SegmentedButton
+						icon="check"
+						onClick={() => {
+							console.log("0");
+						}}
+						value="alpha"
+					/>
+					<SegmentedButton
+						icon="check"
+						label="Label"
+						onClick={() => {
+							console.log("1");
+						}}
+						value="beta"
+					/>
+					<SegmentedButton
+						label="Label"
+						onClick={() => {
+							console.log("2");
+						}}
+						value="charlie"
+					/>
+				</SegmentedButtonGroup>
+				<Button onClick={() => console.log(segmentedButtonGroupValue)}>
+					Query Value
+				</Button>
+				<Typography variant="text-label-small">
+					Selected value:{" "}
+					{segmentedButtonGroupValue ? segmentedButtonGroupValue : "undefined"}
+				</Typography>`}</CodeSnippet>
 			</div>
 		</div>
 	);
 };
-export default ComponentsFrame;
+export default SegmentedButtonsFrame;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { getPreferredScheme } from "../Gizmos/Themeing";
 import { StringBuilder } from "../Gizmos/StringBuilder";
 import { ISegmentedButtonProps } from "./ISegmentedButtonProps";
@@ -15,28 +15,24 @@ const SegmentedButton: React.FC<ISegmentedButtonProps> = ({
 	position,
 	icon,
 	selected,
-	onChange,
 	label,
+	value,
 }) => {
 	const [_className] = useState(className || "");
 	const [_id] = useState(id || undefined);
 	const [_children] = useState(label || "");
 	const [_position] = useState(position || "center");
 	const [_icon] = useState(icon || undefined);
+	const [_value] = useState(value || undefined);
 
 	const [_selected, setSelected] = useState(selected || false);
 
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
-	const click = () => {
-		console.log("Thank you for using Tiny React MD3!");
-	};
-
-	const handleClick = () => {
-		setSelected(!_selected);
-		click();
-	};
+	useEffect(() => {
+		setSelected(selected || false);
+	}, [selected]);
 
 	let _computedComponentClassName = new StringBuilder()
 		.add("segmented-button")
@@ -53,10 +49,7 @@ const SegmentedButton: React.FC<ISegmentedButtonProps> = ({
 			onMouseEnter={onMouseEnter}
 			onMouseLeave={onMouseLeave}
 			onMouseMove={onMouseMove}
-			onClick={(e) => {
-				onChange?.(e);
-				handleClick();
-			}}
+			onClick={onClick}
 		>
 			{icon && <Icon>{_icon}</Icon>}
 			<Typography variant="text-label-large">{_children}</Typography>

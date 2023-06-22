@@ -5070,3 +5070,7 @@ li {
 .segmented-button-right {
 	border-radius: 0rem 10rem 10rem 0rem	;
 }
+
+.segmented-button-group{
+	display: flex;
+}

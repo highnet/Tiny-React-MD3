@@ -26,19 +26,12 @@ const Icon: React.FC<IIconProps> = ({
 		.add(_className)
 		.toString();
 
-	const click = () => {
-		console.log("Thanks for Using Tiny React MD3!");
-	};
-
 	return (
 		<div
-			onClick={(e) => {
-				onClick?.(e);
-				click();
-			}}
 			onMouseEnter={onMouseEnter}
 			onMouseLeave={onMouseLeave}
 			onMouseMove={onMouseMove}
+			onClick={onClick}
 			className="icon-wrapper"
 		>
 			<span id={_id} className={_computedComponentClassName}>
