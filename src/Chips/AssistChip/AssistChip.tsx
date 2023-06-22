@@ -40,14 +40,6 @@ const AssistChip: React.FC<IAssistChipProps> = ({
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
-	const click = () => {
-		console.log("Thank you for using Tiny React MD3!");
-	};
-
-	const handleClick = () => {
-		click();
-	};
-
 	let _computedComponentClassName = new StringBuilder()
 		.add("chip")
 		.add("assistchip")
@@ -65,7 +57,6 @@ const AssistChip: React.FC<IAssistChipProps> = ({
 			className={_computedComponentClassName}
 			onClick={(e) => {
 				onClick?.(e);
-				handleClick();
 			}}
 			onMouseEnter={onMouseEnter}
 			onMouseLeave={onMouseLeave}

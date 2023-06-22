@@ -1,9 +1,11 @@
+import React from "react";
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 import CodeSnippet from "../../TRMD3/CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../../TRMD3/ComponentFrameTitle/ComponentFrameTitle";
 import Typography from "../../Typography/Typography";
 import Slider from "../Slider";
+import Button from "../../Button/Button";
 
 const SlidersFrame: React.FC = () => {
 	const _theme =
@@ -23,6 +25,11 @@ const SlidersFrame: React.FC = () => {
 		.add("section-title-" + _theme + "-trmd3")
 		.toString();
 
+	const [sliderValue, setSliderValue] = React.useState(80);
+	const handleSliderValueChange = (e: number) => {
+		setSliderValue(e);
+	};
+
 	return (
 		<div className={_computedFrameClassName}>
 			<Typography
@@ -40,20 +47,51 @@ const SlidersFrame: React.FC = () => {
 					"sliders-subframe-trmd3 sliders-subframe-" + _theme + "-trmd3"
 				}
 			>
+				<CodeSnippet>
+					{`
+const [sliderValue, setSliderValue] = React.useState(80);
+const handleSliderValueChange = (e: number) => {
+	setSliderValue(e);
+};
+`}
+				</CodeSnippet>
 				<Slider
 					onValueChange={(e) => {
 						console.log(e);
+						handleSliderValueChange(e);
 					}}
 					value={80}
 				/>
+				<Button
+					onClick={() => {
+						console.log(sliderValue);
+					}}
+				>
+					Query Value
+				</Button>
+				<Typography variant="text-label-small">
+					{"Slider Value: "} {sliderValue}
+				</Typography>
 				<CodeSnippet>
 					{`
 <Slider
-	value={80}
 	onValueChange={(e) => {
 		console.log(e);
-		}}
-/>`}
+		handleSliderValueChange(e);
+	}}
+	value={80}
+/>
+<Button
+	onClick={() => {
+		console.log(sliderValue);
+	}}
+>
+	Query Value
+</Button>
+<Typography variant="text-label-small">
+	{"Slider Value: "} {sliderValue}
+</Typography>
+`}
 				</CodeSnippet>
 				<Slider step={5} min={50} max={150} value={100} />
 				<CodeSnippet>{`<Slider step={5} min={50} max={150} value={100} />`}</CodeSnippet>

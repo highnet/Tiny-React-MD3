@@ -58,13 +58,8 @@ const InputChip: React.FC<IInputChipProps> = ({
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
-	const click = () => {
-		console.log("Thank you for using Tiny React MD3!");
-	};
-
 	const handleClick = () => {
 		setSelected(!_selected);
-		click();
 	};
 
 	let _computedComponentClassName = new StringBuilder()

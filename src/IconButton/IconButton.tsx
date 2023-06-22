@@ -38,12 +38,7 @@ const IconButton: React.FC<IIconButtonProps> = ({
 		.add(_className)
 		.toString();
 
-	const click = () => {
-		console.log("Thank you for using Tiny React MD3!");
-	};
-
 	const handleClick = () => {
-		click();
 		if (_toggleAble) {
 			setSelected(!_selected);
 			if (onValueChange) {

@@ -31,10 +31,6 @@ const Fab: React.FC<IFabProps> = ({
 		.add(_className)
 		.toString();
 
-	const click = () => {
-		console.log("Thanks for Using Tiny React MD3!");
-	};
-
 	const boxRef = useRef<HTMLButtonElement>(null);
 	const innerCircleRef = useRef<HTMLSpanElement>(null);
 
@@ -69,7 +65,6 @@ const Fab: React.FC<IFabProps> = ({
 			className={_computedComponentClassName}
 			onClick={(e) => {
 				onClick?.(e);
-				click();
 			}}
 			onMouseEnter={onMouseEnter}
 			onMouseLeave={onMouseLeave}

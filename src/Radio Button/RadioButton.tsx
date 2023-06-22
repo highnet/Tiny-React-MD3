@@ -40,10 +40,6 @@ const RadioButton: React.FC<IRadioButtonProps> = ({
 	const [_value] = useState(value || undefined);
 	const [_defaultChecked] = useState(defaultChecked || false);
 
-	const click = () => {
-		console.log("Thank you for using Tiny React MD3!");
-	};
-
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
@@ -67,7 +63,6 @@ const RadioButton: React.FC<IRadioButtonProps> = ({
 			onClick={(e) => {
 				onClick?.(e);
 				onChange?.(e);
-				click();
 			}}
 			onMouseEnter={onMouseEnter}
 			onMouseLeave={onMouseLeave}

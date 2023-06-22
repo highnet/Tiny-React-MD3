@@ -48,12 +48,7 @@ const Checkbox: React.FC<ICheckboxProps> = ({
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
-	const click = () => {
-		console.log("Thanks for Using Tiny React MD3!");
-	};
-
 	const handleClick = () => {
-		click();
 		setSelected(!_selected);
 	};
 
