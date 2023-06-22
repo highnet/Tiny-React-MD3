@@ -102,7 +102,6 @@ export const activateSnackBarId = (
 		}
 		if (dismissable) {
 			const dismissDiv = snackBar.querySelector(".icon-button-on-snackbar");
-			console.log(dismissDiv);
 			dismissDiv?.addEventListener("click", () => {
 				snackBar.classList.remove("snackbar-active");
 				if (timerId) {
