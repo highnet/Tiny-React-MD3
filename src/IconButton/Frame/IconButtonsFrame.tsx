@@ -112,11 +112,11 @@ const IconButtonsFrame: React.FC = () => {
 				</Typography>
 				<CodeSnippet>
 					{`
-	const [toggled, setToggled] = useState(true);
+const [toggled, setToggled] = useState(true);
 
-	const handleToggled = () => {
-		setToggled(!toggled);
-	};
+const handleToggled = () => {
+	setToggled(!toggled);
+};
 `}
 				</CodeSnippet>
 				<IconButton
@@ -141,26 +141,26 @@ const IconButtonsFrame: React.FC = () => {
 				</Typography>
 				<CodeSnippet>
 					{`
-				<IconButton
-					configuration="standard"
-					onClick={undefined}
-					toggleAble={true}
-					selected={true}
-					onValueChange={handleToggled}
-				>
-					hive
-				</IconButton>
-				<Button
-					onClick={() => {
-						console.log(toggled);
-					}}
-				>
-					Query Value
-				</Button>
-				<Typography variant={"text-label-small"}>
-					{"Toggled: "}
-					{toggled ? "On" : "Off"}
-				</Typography>
+<IconButton
+	configuration="standard"
+	onClick={undefined}
+	toggleAble={true}
+	selected={true}
+	onValueChange={handleToggled}
+>
+	hive
+</IconButton>
+<Button
+	onClick={() => {
+		console.log(toggled);
+	}}
+>
+	Query Value
+</Button>
+<Typography variant={"text-label-small"}>
+	{"Toggled: "}
+	{toggled ? "On" : "Off"}
+</Typography>
 `}
 				</CodeSnippet>
 				<Typography variant={"text-label-small"}>Filled, Toggleable</Typography>
