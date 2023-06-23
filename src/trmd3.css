@@ -3894,7 +3894,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	box-shadow: inset 0 0 0 .1rem var(--m3-sys-dark-error);
 }
 
-/* ==========LISTS & ========== */
+/* ========== LISTS ========== */
 
 ul {
 	margin: 0;
@@ -3910,6 +3910,13 @@ li {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	width: 100%;
+}
+
+.list-scroll {
+	height: auto;
+	overflow: clip;
+	overflow-y: scroll;
 	width: 100%;
 }
 
@@ -3941,12 +3948,7 @@ li {
 	height:  5.6rem;
 }
 
-.list-item-divider {
-	box-shadow: inset 0 0 0 .1rem red;
-	width: 100%;
-	height: .3rem;
-	background-color: red;
-}
+
 
 .list-item-content{
 	display: flex;
@@ -4202,12 +4204,7 @@ li {
 	padding: 1.6rem 0rem 0rem;
 }
 
-.list-scroll {
-	height: auto;
-	overflow: clip;
-	overflow-y: scroll;
-	width: 100%;
-}
+
 
 /* DIALOGS / LIGHT THEME */
 .dialog-light-theme {
@@ -5114,3 +5111,30 @@ li {
 .segmented-button-selected.segmented-button-dark-theme:active {
 	background-color: var(--m3-state-layers-dark-on-secondary-container-opacity-12);
 }
+
+/* ========== MENUS ========== */
+
+.menu {
+	position: relative;
+	border: 1px solid red;
+	display: flex;
+	flex-direction: column;
+}
+
+.menu .menu {
+	border: 1px solid blue;
+	position: absolute;
+	left: 100%;
+	top: 0;
+}
+
+.menu-item {
+	position: relative;
+	display: flex;
+	border: 1px solid green;
+	flex-direction: column;
+	width: 3rem;
+	height: 3rem;
+}
+
+

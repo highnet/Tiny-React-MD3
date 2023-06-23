@@ -41,6 +41,7 @@ import SegmentedButtonsFrame from "./SegmentedButton/Frame/SegmentedButtonsFrame
 import TRMD3NavRail from "./TRMD3/TRMD3NavRail/TRMD3NavRail";
 import TRMD3SideSheet from "./TRMD3/TRMD3SideSheet/TRMD3SideSheet";
 import TRMD3BotBar from "./TRMD3/TRMD3BotBar/TRMD3BotBar";
+import MenusFrame from "./Menus/Frame/MenusFrame";
 
 function App() {
 	console.log(`👋 Welcome to TRMD3! 👋`);
@@ -85,6 +86,9 @@ function App() {
 				<Hero hasLogo={true} />
 				<Cookietrail />
 				<TourGuide />
+			</div>
+			<div id="section-20-trmd3" className="section-trmd3">
+				<MenusFrame />
 			</div>
 			<div id="section-19-trmd3" className="section-trmd3">
 				<SegmentedButtonsFrame />

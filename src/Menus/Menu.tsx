@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { getPreferredScheme } from "../Gizmos/Themeing";
 import { StringBuilder } from "../Gizmos/StringBuilder";
-import { IListProps } from "./IListProps";
+import { IMenuProps } from "./IMenuProps";
 
-const List: React.FC<IListProps> = ({
+const Menu: React.FC<IMenuProps> = ({
 	className,
 	id,
 	children,
@@ -11,7 +11,6 @@ const List: React.FC<IListProps> = ({
 	onMouseLeave,
 	onMouseMove,
 	onClick,
-	height,
 }) => {
 	const [_className] = useState(className || "");
 	const [_id] = useState(id || undefined);
@@ -20,25 +19,23 @@ const List: React.FC<IListProps> = ({
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
 	let _computedComponentClassName = new StringBuilder()
-		.add("list")
-		.add("list-" + _theme)
+		.add("menu")
+		.add("menu-" + _theme)
 		.add(_className)
 		.toString();
 
 	return (
-		<div className="list-scroll" style={{ height: height }}>
-			<ul
-				id={_id}
-				className={_computedComponentClassName}
-				onMouseEnter={onMouseEnter}
-				onMouseLeave={onMouseLeave}
-				onMouseMove={onMouseMove}
-				onClick={onClick}
-			>
-				{children}
-			</ul>
-		</div>
+		<ul
+			id={_id}
+			className={_computedComponentClassName}
+			onMouseEnter={onMouseEnter}
+			onMouseLeave={onMouseLeave}
+			onMouseMove={onMouseMove}
+			onClick={onClick}
+		>
+			{children}
+		</ul>
 	);
 };
 
-export default List;
+export default Menu;

@@ -693,3 +693,9 @@ pre {
 .assist-chips-subframe-dark-theme-trmd3 {
 	background-color: var(--m3-sys-dark-surface);
 }
+
+/* MENUS SECTION */
+
+.menus-frame-trmd3{
+	padding-bottom: 20rem;
+}
