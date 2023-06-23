@@ -3610,8 +3610,8 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 }
 
 .tooltip-actions {
-	padding: 0px 8px;
-	gap: 8px;
+	padding: 0rem .8rem;
+	gap: .8rem;
 	display: flex
 }
 
@@ -3698,7 +3698,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	font-weight: 400;
 	font-size: 1.6rem;
 	line-height: 2.4rem;
-	letter-spacing: 0.5px;
+	letter-spacing: 0.05rem;
 	border: none;
 	background-color: transparent;
 	flex: 1;
@@ -4179,9 +4179,9 @@ li {
 .dialog-text-content {
 	display: flex;
 	flex-direction: column;
-	gap: 16px;
+	gap: 1.6rem;
 	width: 100%;
-	padding: 24px 24px 0px;
+	padding: 2.4rem 2.4rem 0rem;
 }
 
 .dialog-actions {
@@ -4189,8 +4189,8 @@ li {
 	flex-direction: row;
 	width: 100%;
 	flex-direction: row-reverse;
-	padding: 24px 24px 24px 8px;
-	gap: 8px;
+	padding: 2.4rem 2.4rem 2.4rem 0.8rem;
+	gap: .8rem;
 }
 
 .dialog-actions .btn {
@@ -4199,7 +4199,7 @@ li {
 }
 
 .dialog-divider {
-	padding: 16px 0px 0px;
+	padding: 1.6rem 0rem 0rem;
 }
 
 .list-scroll {
@@ -4282,7 +4282,7 @@ li {
 
 .side-sheet-header {
 	display: flex;
-	padding: 12px 12px 16px 24px;
+	padding: 1.2rem 1.2rem 1.6rem 2.4rem;
 	block-size: fit-content;
 	width: 100%;
 }
@@ -4315,7 +4315,7 @@ li {
 
 .side-sheet-light-theme {
 	background-color: var(--m3-sys-light-surface-container);
-	border-left: 1px solid var(--m3-sys-light-outline-variant);
+	border-left: .1rem solid var(--m3-sys-light-outline-variant);
 	color: var(--m3-sys-light-on-surface-variant);
 
 }
@@ -4324,7 +4324,7 @@ li {
 
 .side-sheet-dark-theme {
 	background-color: var(--m3-sys-dark-surface-container);
-	border-left: 1px solid var(--m3-sys-dark-outline-variant);
+	border-left: .1rem solid var(--m3-sys-dark-outline-variant);
 	color: var(--m3-sys-dark-on-surface-variant);
 }
 
@@ -4459,8 +4459,8 @@ li {
 	z-index: 5000;
 	opacity: 0;
 	transition: opacity 0.3s ease-in-out;
-	padding: 14px 16px;
-	gap: 4px;
+	padding: 1.4rem 1.6rem;
+	gap: .4rem;
 	text-align: left;
 	display: flex;
 	align-items: center;
@@ -4503,13 +4503,13 @@ li {
 
 .snackbar-two-line {
 	white-space: normal;
-	padding: 14px 8px 14px 16px;
+	padding: 1.4rem .8rem 1.4rem 1.6rem;
 }
 
 .snackbar-three-line {
 	white-space: normal;
 	flex-direction: column;
-	padding: 14px 8px 0px 16px;
+	padding: 1.4rem .8rem 0rem 1.6rem;
 	align-items: end;
 	transform: translate(-40%, -80%);
 }
@@ -5020,12 +5020,12 @@ li {
 	cursor: pointer;
 	transition: background-color 0.3s, box-shadow 0.3s;
 	white-space: nowrap;
-	width: 10.8rem;
+	min-width: 10.8rem;
 	height: 4rem;
 	padding: 1rem 1.2rem;
 	gap: .8rem;
+	width: fit-content;
 }
-
 
 .segmented-button-deselected.segmented-button-light-theme {
 	background-color: var(--m3-sys-light-secondary-container);

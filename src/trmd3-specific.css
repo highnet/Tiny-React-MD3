@@ -642,6 +642,14 @@ pre {
 	align-items: center;
 	padding: 1rem;
 	border-radius: 1.6rem;
-	background-color: var(--m3-sys-light-surface-container-low);
 	gap: 1rem;
+	width: 80%;
+}
+
+.segmented-buttons-subframe-light-theme-trmd3{
+	background-color: var(--m3-sys-light-surface-container-low);
+}
+
+.segmented-buttons-subframe-dark-theme-trmd3 {
+	background-color: var(--m3-sys-dark-surface-container-low);
 }

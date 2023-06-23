@@ -46,7 +46,13 @@ const SegmentedButtonsFrame: React.FC = () => {
 			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-segmented-buttons">
 				Segmented Buttons
 			</ComponentFrameTitle>
-			<div className="segmented-buttons-subframe-trmd3">
+			<div
+				className={
+					"segmented-buttons-subframe-trmd3 segmented-buttons-subframe-" +
+					_theme +
+					"-trmd3"
+				}
+			>
 				<Typography variant={"text-label-small"}>
 					Standalone Segmented Buttons
 				</Typography>
