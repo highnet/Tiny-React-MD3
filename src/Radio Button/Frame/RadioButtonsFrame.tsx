@@ -1,9 +1,11 @@
+import { useState } from "react";
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 import CodeSnippet from "../../TRMD3/CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../../TRMD3/ComponentFrameTitle/ComponentFrameTitle";
 import Typography from "../../Typography/Typography";
 import RadioButton from "../RadioButton";
+import Button from "../../Button/Button";
 
 /*
 	1
@@ -37,6 +39,12 @@ const RadioButtonsFrame: React.FC = () => {
 		.add("section-title-" + _theme + "-trmd3")
 		.toString();
 
+	const [selectedOption, setSelectedOption] = useState("option-2");
+
+	const handleOptionChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+		setSelectedOption(event.target.value);
+	};
+
 	return (
 		<div className={_computedFrameClassName}>
 			{/* RADIO BUTTONS */}
@@ -44,21 +52,69 @@ const RadioButtonsFrame: React.FC = () => {
 				id="radio-buttons-section"
 				variant="text-title-large"
 				className={_computedTrmd3SectionTitlesClassName}
-				>
+			>
 				🔘
 			</Typography>
-			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-radio-button">Radio Buttons</ComponentFrameTitle>
-			<RadioButton name={"trmd3"} value={"option-1"} />
-			<Typography variant="text-label-small">Option 1</Typography>
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-radio-button">
+				Radio Buttons
+			</ComponentFrameTitle>
 			<CodeSnippet>
-				{"<RadioButton name={'trmd3'} value={'option-1'} />"}
+				{`
+const [selectedOption, setSelectedOption] = useState("option-2");
+
+const handleOptionChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+	setSelectedOption(event.target.value);
+};
+				`}
 			</CodeSnippet>
-			<RadioButton name={"trmd3"} value={"option-2"} defaultChecked={true} />
-			<Typography variant="text-label-small">Option 2</Typography>
+			<Typography variant="text-label-small">Option 1</Typography>
+			<RadioButton
+				name={"trmd3"}
+				value={"option-1"}
+				onChange={handleOptionChange}
+			/>
 			<CodeSnippet>
-				{
-					"<RadioButton name={'trmd3'} value={'option-2'} defaultChecked={true} />"
-				}
+				{`
+<RadioButton 
+	name={'trmd3'} 
+	value={'option-1'} 
+/>`}
+			</CodeSnippet>
+			<Typography variant="text-label-small">Option 2</Typography>
+			<RadioButton
+				name={"trmd3"}
+				value={"option-2"}
+				defaultChecked={true}
+				onChange={handleOptionChange}
+			/>
+			<Button
+				onClick={() => {
+					alert(selectedOption);
+				}}
+			>
+				Query Value
+			</Button>
+			<Typography variant="text-label-small">
+				Selected option: {selectedOption}
+			</Typography>
+			<CodeSnippet>
+				{`
+<RadioButton
+	name={"trmd3"}
+	value={"option-2"}
+	defaultChecked={true}
+	onChange={handleOptionChange}
+/>
+<Button
+	onClick={() => {
+		alert(selectedOption);
+	}}
+>
+	Query Value
+</Button>
+<Typography variant="text-label-small">
+		Selected option: {selectedOption}
+</Typography>`}
 			</CodeSnippet>
 		</div>
 	);
