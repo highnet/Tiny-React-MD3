@@ -1,9 +1,11 @@
+import { useState } from "react";
 import { StringBuilder } from "../../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../../Gizmos/Themeing";
 import CodeSnippet from "../../../TRMD3/CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../../../TRMD3/ComponentFrameTitle/ComponentFrameTitle";
 import Typography from "../../../Typography/Typography";
 import InputChip from "../InputChip";
+import Button from "../../../Button/Button";
 
 const InputChipsFrame: React.FC = () => {
 	const _theme =
@@ -23,6 +25,12 @@ const InputChipsFrame: React.FC = () => {
 		.add("section-title-" + _theme + "-trmd3")
 		.toString();
 
+	const [toggled, setToggled] = useState(true);
+
+	const handleToggled = () => {
+		setToggled(!toggled);
+	};
+
 	return (
 		<div className={_computedFrameClassName}>
 			<Typography
@@ -41,12 +49,38 @@ const InputChipsFrame: React.FC = () => {
 				}
 			>
 				<Typography variant={"text-label-small"}>Label Only</Typography>
-				<InputChip selected={true} onClick={undefined}></InputChip>
 				<CodeSnippet>{`
-<InputChip
-	selected={true}
-	onClick={undefined}>
-</InputChip>
+const [toggled, setToggled] = useState(true);
+
+const handleToggled = () => {
+	setToggled(!toggled);
+};
+	`}</CodeSnippet>
+				<InputChip selected={true} onClick={handleToggled}></InputChip>
+				<Typography variant={"text-label-small"}>
+					{"Toggled: "}
+					{toggled ? "On" : "Off"}
+				</Typography>
+				<Button
+					onClick={() => {
+						alert(toggled);
+					}}
+				>
+					Query Value
+				</Button>
+				<CodeSnippet>{`
+<InputChip selected={true} onClick={handleToggled}></InputChip>
+<Typography variant={"text-label-small"}>
+	{"Toggled: "}
+	{toggled ? "On" : "Off"}
+</Typography>
+<Button
+	onClick={() => {
+		alert(toggled);
+	}}
+>
+	Query Value
+</Button>
 	`}</CodeSnippet>
 				<Typography variant={"text-label-small"}>
 					Label & trailing icon

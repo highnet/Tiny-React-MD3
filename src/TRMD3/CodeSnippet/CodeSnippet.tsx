@@ -36,7 +36,7 @@ const CodeSnippet: React.FC<ICodeSnippetProps> = ({ children, className }) => {
 				<pre>
 					<code
 						className={
-							"language-html code-snippet-code-trmd3 code-snippet-code-" +
+							"language-jsx code-snippet-code-trmd3 code-snippet-code-" +
 							_theme +
 							"-trmd3"
 						}
