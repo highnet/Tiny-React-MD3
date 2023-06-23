@@ -653,3 +653,43 @@ pre {
 .segmented-buttons-subframe-dark-theme-trmd3 {
 	background-color: var(--m3-sys-dark-surface-container-low);
 }
+
+/* INPUT CHIPS SECTION */
+.input-chips-subframe-trmd3{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	border-radius: 1.6rem;
+	gap: 1rem;
+	width: 80%;
+}
+
+.input-chips-subframe-light-theme-trmd3{
+	background-color: var(--m3-sys-light-surface);
+}
+
+.input-chips-subframe-dark-theme-trmd3 {
+	background-color: var(--m3-sys-dark-surface);
+}
+
+/* ASSIST CHIPS SECTION */
+.assist-chips-subframe-trmd3{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	border-radius: 1.6rem;
+	gap: 1rem;
+	width: 80%;
+}
+
+.assist-chips-subframe-light-theme-trmd3{
+	background-color: var(--m3-sys-light-surface);
+}
+
+.assist-chips-subframe-dark-theme-trmd3 {
+	background-color: var(--m3-sys-dark-surface);
+}

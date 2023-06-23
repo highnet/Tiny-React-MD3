@@ -35,94 +35,104 @@ const InputChipsFrame: React.FC = () => {
 			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-input-chip">
 				Input Chips
 			</ComponentFrameTitle>
-			<Typography variant={"text-label-small"}>Label Only</Typography>
-			<InputChip selected={true} onClick={undefined}></InputChip>
-			<CodeSnippet>{`
+			<div
+				className={
+					"input-chips-subframe-trmd3 input-chips-subframe-" + _theme + "-trmd3"
+				}
+			>
+				<Typography variant={"text-label-small"}>Label Only</Typography>
+				<InputChip selected={true} onClick={undefined}></InputChip>
+				<CodeSnippet>{`
 <InputChip
 	selected={true}
 	onClick={undefined}>
 </InputChip>
 	`}</CodeSnippet>
-			<Typography variant={"text-label-small"}>
-				Label & trailing icon
-			</Typography>
-			<InputChip
-				selected={true}
-				trailingIcon={true}
-				onClick={undefined}
-			></InputChip>
-			<CodeSnippet>
-				{`
+				<Typography variant={"text-label-small"}>
+					Label & trailing icon
+				</Typography>
+				<InputChip
+					selected={true}
+					trailingIcon={true}
+					onClick={undefined}
+				></InputChip>
+				<CodeSnippet>
+					{`
 <InputChip
 	selected={true}
 	trailingIcon={true} 
 	onClick={undefined}>
 </InputChip>`}
-			</CodeSnippet>
-			<Typography variant={"text-label-small"} className={"text-label-small"}>
-				Leading icon & label
-			</Typography>
-			<InputChip
-				selected={true}
-				leadingIcon={true}
-				onClick={undefined}
-			></InputChip>
-			<CodeSnippet>
-				{`
+				</CodeSnippet>
+				<Typography variant={"text-label-small"} className={"text-label-small"}>
+					Leading icon & label
+				</Typography>
+				<InputChip
+					selected={true}
+					leadingIcon={true}
+					onClick={undefined}
+				></InputChip>
+				<CodeSnippet>
+					{`
 <InputChip
 	selected={true}
 	leadingIcon={true} 
 	onClick={undefined}>
 </InputChip>`}
-			</CodeSnippet>
-			<Typography variant={"text-label-small"} className={"text-label-small"}>
-				Leading icon, label & trailing icon
-			</Typography>
-			<InputChip
-				selected={true}
-				leadingIcon={true}
-				trailingIcon={true}
-				onClick={undefined}
-			></InputChip>
-			<CodeSnippet>
-				{`
+				</CodeSnippet>
+				<Typography variant={"text-label-small"} className={"text-label-small"}>
+					Leading icon, label & trailing icon
+				</Typography>
+				<InputChip
+					selected={true}
+					leadingIcon={true}
+					trailingIcon={true}
+					onClick={undefined}
+				></InputChip>
+				<CodeSnippet>
+					{`
 <InputChip
 	selected={true}
 	leadingIcon={true} 
 	trailingIcon={true} 
 	onClick={undefined}>
 </InputChip>`}
-			</CodeSnippet>
-			<Typography variant={"text-label-small"} className={"text-label-small"}>
-				Label & avatar
-			</Typography>
-			<InputChip selected={true} avatar={true} onClick={undefined}></InputChip>
-			<CodeSnippet>
-				{`
+				</CodeSnippet>
+				<Typography variant={"text-label-small"} className={"text-label-small"}>
+					Label & avatar
+				</Typography>
+				<InputChip
+					selected={true}
+					avatar={true}
+					onClick={undefined}
+				></InputChip>
+				<CodeSnippet>
+					{`
 <InputChip
 	selected={true}
 	avatar={true} 
 	onClick={undefined}>
 </InputChip>`}
-			</CodeSnippet>
-			<Typography variant={"text-label-small"} className={"text-label-small"}>
-				Label, avatar & trailing icon
-			</Typography>
-			<InputChip
-				selected={true}
-				avatar={true}
-				trailingIcon={true}
-				onClick={undefined}
-			></InputChip>
-			<CodeSnippet>
-				{`
+				</CodeSnippet>
+				<Typography variant={"text-label-small"} className={"text-label-small"}>
+					Label, avatar & trailing icon
+				</Typography>
+				<InputChip
+					selected={true}
+					avatar={true}
+					trailingIcon={true}
+					onClick={undefined}
+				></InputChip>
+				<CodeSnippet>
+					{`
 <InputChip
 	selected={true}
 	avatar={true} 
 	trailingIcon={true} 
 	onClick={undefined}>
 </InputChip>`}
-			</CodeSnippet>
+				</CodeSnippet>
+			</div>
 		</div>
 	);
 };
