@@ -8,10 +8,6 @@ const FilterChip: React.FC<IFilterChipProps> = ({}) => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
-	const click = () => {
-		console.log("Thank you for using Tiny React MD3!");
-	};
-
 	let _computedComponentClassName = new StringBuilder().toString();
 
 	return <button></button>;
