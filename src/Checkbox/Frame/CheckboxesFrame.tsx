@@ -1,9 +1,11 @@
+import { useState } from "react";
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 import CodeSnippet from "../../TRMD3/CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../../TRMD3/ComponentFrameTitle/ComponentFrameTitle";
 import Typography from "../../Typography/Typography";
 import Checkbox from "../Checkbox";
+import Button from "../../Button/Button";
 
 /* 
 	1
@@ -39,6 +41,12 @@ const CheckboxesFrame: React.FC = () => {
 		.add("section-title-" + _theme + "-trmd3")
 		.toString();
 
+	const [isChecked, setIsChecked] = useState(true);
+
+	const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+		setIsChecked(!isChecked);
+	};
+
 	return (
 		<div className={_computedFrameClassName}>
 			{/* CHECKBOXES */}
@@ -54,9 +62,13 @@ const CheckboxesFrame: React.FC = () => {
 			</ComponentFrameTitle>
 			<Checkbox
 				selected={true}
-				onChange={undefined}
+				onChange={handleCheckboxChange}
 				configuration={"default"}
 			/>
+			<Button onClick={() => alert(isChecked)}>Query Value</Button>
+			<Typography variant={"text-label-small"}>
+				{isChecked ? "checked" : "unchecked"}
+			</Typography>
 			<CodeSnippet>
 				{`
 <Checkbox 
