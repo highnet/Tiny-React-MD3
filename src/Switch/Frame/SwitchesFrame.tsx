@@ -15,12 +15,14 @@
 	"With Icon (Inactive)."
 */
 
+import { useState } from "react";
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 import CodeSnippet from "../../TRMD3/CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../../TRMD3/ComponentFrameTitle/ComponentFrameTitle";
 import Typography from "../../Typography/Typography";
 import Switch from "../Switch";
+import Button from "../../Button/Button";
 
 const SwitchesFrame: React.FC = () => {
 	const _theme =
@@ -40,6 +42,12 @@ const SwitchesFrame: React.FC = () => {
 		.add("section-title-" + _theme + "-trmd3")
 		.toString();
 
+	const [isSelected, setIsSelected] = useState(true);
+
+	const handleSwitchChange = () => {
+		setIsSelected(!isSelected);
+	};
+
 	return (
 		<div className={_computedFrameClassName}>
 			{/* SWITCHES */}
@@ -54,7 +62,26 @@ const SwitchesFrame: React.FC = () => {
 				Switches
 			</ComponentFrameTitle>
 			<Typography variant="text-label-small">No Icon</Typography>
-			<Switch selected={true} onChange={undefined} />
+			<CodeSnippet>
+				{`
+const [isSelected, setIsSelected] = useState(true);
+
+const handleSwitchChange = () => {
+	setIsSelected(!isSelected);
+};
+				`}
+			</CodeSnippet>
+			<Switch selected={true} onChange={handleSwitchChange} />
+			<Button
+				onClick={() => {
+					alert(isSelected);
+				}}
+			>
+				Query Value
+			</Button>
+			<Typography variant="text-label-small">
+				{"Selected: "} {isSelected ? "true" : "false"}
+			</Typography>
 			<CodeSnippet>
 				{`
 <Switch 
