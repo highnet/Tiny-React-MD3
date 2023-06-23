@@ -4775,16 +4775,16 @@ li {
 }
 
 .icon-button.icon-button-light-theme.icon-button-outlined.icon-button-deselected:hover {
-		background-color: var(--m3-composite-light-inverse-on-surface-passthrough-on-surface-variant-opacity-08);
+	background-color: var(--m3-composite-light-inverse-on-surface-passthrough-on-surface-variant-opacity-08);
 }
 
 .icon-button.icon-button-light-theme.icon-button-outlined.icon-button-deselected:focus {
-		background-color: var(--m3-composite-light-inverse-on-surface-passthrough-on-surface-variant-opacity-12);
-	}
+	background-color: var(--m3-composite-light-inverse-on-surface-passthrough-on-surface-variant-opacity-12);
+}
 
 .icon-button.icon-button-light-theme.icon-button-outlined.icon-button-deselected:active {
-		background-color: var(--m3-composite-light-inverse-on-surface-passthrough-on-surface-variant-opacity-12);
-	}
+	background-color: var(--m3-composite-light-inverse-on-surface-passthrough-on-surface-variant-opacity-12);
+}
 
 .icon-button.icon-button-light-theme.icon-button-outlined.icon-button-selected {
 	color: var(--m3-sys-light-inverse-on-surface);
@@ -5027,6 +5027,20 @@ li {
 	width: fit-content;
 }
 
+.segmented-button-left {
+	border-radius: 10rem 0rem 0rem 10rem;
+}
+
+.segmented-button-right {
+	border-radius: 0rem 10rem 10rem 0rem;
+}
+
+.segmented-button-group {
+	display: flex;
+}
+
+/* SEGMENTED BUTTONS / LIGHT THEME */
+
 .segmented-button-deselected.segmented-button-light-theme {
 	background-color: var(--m3-sys-light-secondary-container);
 	border: .1rem solid var(--m3-sys-light-outline);
@@ -5061,16 +5075,42 @@ li {
 
 .segmented-button-selected.segmented-button-light-theme:active {
 	background-color: var(--m3-state-layers-light-on-secondary-container-opacity-12);
-}	
-
-.segmented-button-left {
-	border-radius: 10rem 0rem 0rem 10rem;
 }
 
-.segmented-button-right {
-	border-radius: 0rem 10rem 10rem 0rem	;
+/* SEGMENTED BUTTONS / DARK THEME */
+
+.segmented-button-deselected.segmented-button-dark-theme {
+	background-color: var(--m3-sys-dark-secondary-container);
+	border: .1rem solid var(--m3-sys-dark-outline);
+	color: var(--m3-sys-dark-on-secondary-container);
 }
 
-.segmented-button-group{
-	display: flex;
+.segmented-button-deselected.segmented-button-dark-theme:hover {
+	background-color: var(--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-08);
+}
+
+.segmented-button-deselected.segmented-button-dark-theme:focus {
+	background-color: var(--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12);
+}
+
+.segmented-button-deselected.segmented-button-dark-theme:active {
+	background-color: var(--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12);
+}
+
+.segmented-button-selected.segmented-button-dark-theme {
+	background-color: transparent;
+	border: .1rem solid var(--m3-sys-dark-outline);
+	color: var(--m3-sys-dark-on-surface);
+}
+
+.segmented-button-selected.segmented-button-dark-theme:hover {
+	background-color: var(--m3-state-layers-dark-on-secondary-container-opacity-08);
+}
+
+.segmented-button-selected.segmented-button-dark-theme:focus {
+	background-color: var(--m3-state-layers-dark-on-secondary-container-opacity-12);
+}
+
+.segmented-button-selected.segmented-button-dark-theme:active {
+	background-color: var(--m3-state-layers-dark-on-secondary-container-opacity-12);
 }
