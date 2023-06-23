@@ -22,6 +22,7 @@ const TextField: React.FC<ITextFieldProps> = ({
 	placeholder = textConfiguration === "label-placeholder" ? "Placeholder" : "",
 	input = textConfiguration !== "label-placeholder" ? "Input" : "",
 	validRegex = "^*$",
+	onChange,
 }) => {
 	const inputRef = useRef<HTMLInputElement>(null);
 	const componentRef = useRef<HTMLDivElement>(null);
@@ -109,11 +110,7 @@ const TextField: React.FC<ITextFieldProps> = ({
 				<div className="text-field-container">
 					{leadingIconName && (
 						<div>
-							<Icon
-								className="icon-on-text-field"
-							>
-								{_leadingIconName}
-							</Icon>
+							<Icon className="icon-on-text-field">{_leadingIconName}</Icon>
 						</div>
 					)}
 					<div className="text-field-content">
@@ -141,18 +138,18 @@ const TextField: React.FC<ITextFieldProps> = ({
 							placeholder={_placeholder}
 							onFocus={handleFocus}
 							onBlur={handleBlur}
+							onChange={onChange}
 						></input>
 					</div>
 					{trailingIcon && (
 						<div className="icon-wrapper">
-													<IconButton 
-							onClick={handleResetTextFieldValue}
-							className="trailing-icon-on-text-field"
-						>
-							{!isValidInput ? "error" : "cancel"}
-						</IconButton>
+							<IconButton
+								onClick={handleResetTextFieldValue}
+								className="trailing-icon-on-text-field"
+							>
+								{!isValidInput ? "error" : "cancel"}
+							</IconButton>
 						</div>
-
 					)}
 				</div>
 			</div>

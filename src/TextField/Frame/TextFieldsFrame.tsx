@@ -1,9 +1,11 @@
+import { useState } from "react";
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 import CodeSnippet from "../../TRMD3/CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../../TRMD3/ComponentFrameTitle/ComponentFrameTitle";
 import Typography from "../../Typography/Typography";
 import TextField from "../TextField";
+import Button from "../../Button/Button";
 
 const ComponentsFrame: React.FC = () => {
 	const _theme =
@@ -23,6 +25,15 @@ const ComponentsFrame: React.FC = () => {
 		.add("section-title-" + _theme + "-trmd3")
 		.toString();
 
+	const [textFieldValue, setTextFieldValue] = useState("");
+	const [isValidInput, setIsValidInput] = useState(true);
+
+	function handleTextFieldChange(event: React.ChangeEvent<HTMLInputElement>) {
+		setTextFieldValue(event.target.value);
+		const isValid = /^$|^[0-9]+$/.test(textFieldValue);
+		setIsValidInput(isValid);
+	}
+
 	return (
 		<div className={_computedFrameClassName}>
 			<Typography
@@ -36,21 +47,48 @@ const ComponentsFrame: React.FC = () => {
 				Text Fields
 			</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>Input, Filled</Typography>
+			<CodeSnippet>
+				{`
+const [textFieldValue, setTextFieldValue] = useState("");
+
+function handleTextFieldChange(event: React.ChangeEvent<HTMLInputElement>) {
+	setTextFieldValue(event.target.value);
+}
+            `}
+			</CodeSnippet>
 			<TextField
 				configuration="filled"
 				textConfiguration="input"
 				validRegex="^$|^[0-9]+$"
+				onChange={handleTextFieldChange}
 			>
 				Please Enter a Number.
 			</TextField>
-			<CodeSnippet>{`
+			<Button
+				onClick={() => {
+					alert(textFieldValue);
+				}}
+			>
+				Query Value
+			</Button>
+			<Typography variant={"text-label-small"}>
+				{"Value: "} {textFieldValue}
+			</Typography>
+			<Typography variant={"text-label-small"}>
+				{" "}
+				{"Valid Input: "} {isValidInput ? "True" : "False"}
+			</Typography>
+
+			<CodeSnippet>
+				{`
 <TextField
     configuration="filled"
     textConfiguration="input"
 	validRegex="[0-9]+"
 >
 </TextField>
-            `}</CodeSnippet>
+            `}
+			</CodeSnippet>
 
 			<Typography variant={"text-label-small"}>
 				Label and Input, Filled
