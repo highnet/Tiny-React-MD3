@@ -33,8 +33,6 @@ import TooltipsFrame from "./Tooltip/Frame/TooltipsFrame";
 import TextFieldsFrame from "./TextField/Frame/TextFieldsFrame";
 import ListsFrame from "./Lists/Frame/ListsFrame";
 import DialogsFrame from "./Dialogs/Frame/DialogsFrame";
-import SideSheet from "./Sheets/Side Sheets/SideSheet";
-import Typography from "./Typography/Typography";
 import SideSheetsFrame from "./Sheets/Side Sheets/Frame/SideSheetsFrame";
 import SlidersFrame from "./Sliders/Frame/SlidersFrame";
 import SnackBarsFrame from "./SnackBars/Frame/SnackBarsFrame";

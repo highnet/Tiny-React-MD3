@@ -43,7 +43,7 @@ const SnackBarsFrame: React.FC = () => {
 				className="snackbar-on-frame-trmd3"
 				configuration={"one-line"}
 				action={() => {
-					console.log("HI");
+					alert("HI");
 				}}
 				message="Lorem ipsum dolor sit amet."
 				dismissable={true}
@@ -57,7 +57,7 @@ const SnackBarsFrame: React.FC = () => {
 						3,
 						"Lorem ipsum dolor sit amet.",
 						() => {
-							console.log("HI");
+							alert("HI");
 						},
 						"Action",
 						true
@@ -78,7 +78,7 @@ const SnackBarsFrame: React.FC = () => {
 			3,
 			"Lorem ipsum dolor sit amet.",
 			() => {
-				console.log("HI");
+				alert("HI");
 			},
 			"Action",
 			true
@@ -93,7 +93,7 @@ const SnackBarsFrame: React.FC = () => {
 				className="snackbar-on-frame-trmd3"
 				configuration={"two-line"}
 				action={() => {
-					console.log("HI");
+					alert("HI");
 				}}
 				message="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 				dismissable={true}
@@ -105,7 +105,7 @@ const SnackBarsFrame: React.FC = () => {
 						3,
 						"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 						() => {
-							console.log("HI");
+							alert("HI");
 						},
 						"Action",
 						true
@@ -126,7 +126,7 @@ const SnackBarsFrame: React.FC = () => {
 		3,
 		"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 		() => {
-			console.log("HI");
+			alert("HI");
 		},
 		"Action",
 		true
@@ -141,7 +141,7 @@ const SnackBarsFrame: React.FC = () => {
 				className="snackbar-on-frame-trmd3"
 				configuration={"three-line"}
 				action={() => {
-					console.log("HI");
+					alert("HI");
 				}}
 				message="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sem nisl, vestibulum ultricies faucibus laoreet, hendrerit quis ligula."
 				dismissable={true}
@@ -153,7 +153,7 @@ const SnackBarsFrame: React.FC = () => {
 						3,
 						"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sem nisl, vestibulum ultricies faucibus laoreet, hendrerit quis ligula.",
 						() => {
-							console.log("HI");
+							alert("HI");
 						},
 						"Action",
 						true
@@ -176,7 +176,7 @@ const SnackBarsFrame: React.FC = () => {
 			Praesent sem nisl, vestibulum ultricies faucibus laoreet,
 			hendrerit quis ligula.",
 			() => {
-				console.log("HI");
+				alert("HI");
 			},
 			"Action",
 			true

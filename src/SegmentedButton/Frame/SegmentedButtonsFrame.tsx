@@ -98,7 +98,7 @@ const handleSegmentedButtonGroupValueChange = (value: string | undefined) => {
 					<SegmentedButton
 						icon="check"
 						onClick={() => {
-							console.log("0");
+							alert("1");
 						}}
 						value="alpha"
 					/>
@@ -106,19 +106,19 @@ const handleSegmentedButtonGroupValueChange = (value: string | undefined) => {
 						icon="check"
 						label="Label"
 						onClick={() => {
-							console.log("1");
+							alert("2");
 						}}
 						value="beta"
 					/>
 					<SegmentedButton
 						label="Label"
 						onClick={() => {
-							console.log("2");
+							alert("3");
 						}}
 						value="charlie"
 					/>
 				</SegmentedButtonGroup>
-				<Button onClick={() => console.log(segmentedButtonGroupValue)}>
+				<Button onClick={() => alert(segmentedButtonGroupValue)}>
 					Query Value
 				</Button>
 				<Typography variant="text-label-small">
@@ -134,7 +134,7 @@ const handleSegmentedButtonGroupValueChange = (value: string | undefined) => {
 		icon="check"
 		value="alpha"
 		onClick={() => {
-			console.log("0");
+			alert("1");
 		}}
 	/>
 	<SegmentedButton
@@ -142,7 +142,7 @@ const handleSegmentedButtonGroupValueChange = (value: string | undefined) => {
 		label="Label"
 		value="beta"
 		onClick={() => {
-			console.log("1");
+			alert("2");
 			}}
 		
 	/>
@@ -150,12 +150,12 @@ const handleSegmentedButtonGroupValueChange = (value: string | undefined) => {
 		label="Label"
 		value="charlie"
 		onClick={() => {
-			console.log("2");
+			alert("3");
 		}}
 		
 	/>
 </SegmentedButtonGroup>
-<Button onClick={() => console.log(segmentedButtonGroupValue)}>
+<Button onClick={() => alert(segmentedButtonGroupValue)}>
 	Query Value
 </Button>
 <Typography variant="text-label-small">

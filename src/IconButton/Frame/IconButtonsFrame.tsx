@@ -130,7 +130,7 @@ const handleToggled = () => {
 				</IconButton>
 				<Button
 					onClick={() => {
-						console.log(toggled);
+						alert(toggled);
 					}}
 				>
 					Query Value
@@ -152,7 +152,7 @@ const handleToggled = () => {
 </IconButton>
 <Button
 	onClick={() => {
-		console.log(toggled);
+		alert(toggled);
 	}}
 >
 	Query Value

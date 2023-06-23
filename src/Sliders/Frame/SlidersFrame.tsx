@@ -57,14 +57,14 @@ const handleSliderValueChange = (e: number) => {
 				</CodeSnippet>
 				<Slider
 					onValueChange={(e) => {
-						console.log(e);
+						alert(e);
 						handleSliderValueChange(e);
 					}}
 					value={80}
 				/>
 				<Button
 					onClick={() => {
-						console.log(sliderValue);
+						alert(sliderValue);
 					}}
 				>
 					Query Value
@@ -76,14 +76,14 @@ const handleSliderValueChange = (e: number) => {
 					{`
 <Slider
 	onValueChange={(e) => {
-		console.log(e);
+		alert(e);
 		handleSliderValueChange(e);
 	}}
 	value={80}
 />
 <Button
 	onClick={() => {
-		console.log(sliderValue);
+		alert(sliderValue);
 	}}
 >
 	Query Value
