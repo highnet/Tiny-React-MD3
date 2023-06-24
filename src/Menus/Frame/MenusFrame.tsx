@@ -39,8 +39,6 @@ const MenusFrame: React.FC = () => {
 			<Menu>
 				<MenuItem label="A">
 					<Menu>
-						{" "}
-						bn
 						<MenuItem label="AA">
 							<Menu>
 								<MenuItem label="AAA"></MenuItem>
