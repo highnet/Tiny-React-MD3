@@ -34,10 +34,18 @@ const MenuItem: React.FC<IMenuItemProps> = ({
 
 	const handleMouseEnter = () => {
 		setShowSubMenu(true);
+		const innerCircle = innerCircleRef.current;
+		if (innerCircle) {
+			innerCircle.style.display = "block";
+		}
 	};
 
 	const handleMouseLeave = () => {
 		setShowSubMenu(false);
+		const innerCircle = innerCircleRef.current;
+		if (innerCircle) {
+			innerCircle.style.display = "none";
+		}
 	};
 
 	let _computedComponentClassName = new StringBuilder()
