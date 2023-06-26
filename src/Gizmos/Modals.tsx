@@ -114,3 +114,10 @@ export const activateSnackBarId = (
 		}, seconds * 1000);
 	}
 };
+
+export function activateMenuId(id: string): void {
+	const menuElement = document.getElementById(id);
+	if (menuElement) {
+	  menuElement.classList.add('menu-active');
+	}
+  }

@@ -1,3 +1,4 @@
+import { activateMenuId } from "../../Gizmos/Modals";
 import { openLinkInNewTab } from "../../Gizmos/Redirection";
 import { scrollToSection } from "../../Gizmos/Scrolling";
 import NavigationRail from "../../Navigation Rail/NavigationRail";
@@ -17,6 +18,13 @@ const TRMD3NavRail: React.FC = () => {
 				fabIconName: "arrow_upward",
 			}}
 			icons={[
+				{
+					name: "build",
+					label: "Components",
+					onClick: () => {
+						activateMenuId("menu-0");
+					},
+				},
 				{
 					name: "bookmark",
 					onClick: () => {

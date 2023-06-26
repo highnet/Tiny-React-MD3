@@ -5109,17 +5109,28 @@ li {
 /* ========== MENUS ========== */
 
 .menu {
-	position: relative;
+	position: fixed;
 	display: flex;
 	flex-direction: column;
-	box-shadow: var(--m3-elevation-light-1);
 	width: fit-content;
+	border: 0.1rem solid rgba(0, 0, 0, 0.2);
+	border-radius: 0.4rem;
+	left: -20rem;
+	top: 5.6rem;
+	background-color: #F3EDF7;
+	transition: left 0.3s ease-in-out;
+}
+
+.menu-active {
+	left: 8rem;
 }
 
 .menu .menu {
 	position: absolute;
 	left: 100%;
-	top: 0;
+	top: 0;	
+	border-left: none;
+
 }
 
 .menu-item {

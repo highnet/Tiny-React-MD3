@@ -10,6 +10,7 @@ const MenusFrame: React.FC = () => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
+
 	let _computedFrameClassName = new StringBuilder()
 		.add("flex-trmd3")
 		.add("flex-column-trmd3")
@@ -37,7 +38,7 @@ const MenusFrame: React.FC = () => {
 				Menus
 			</ComponentFrameTitle>
 			<div className="menu-subframe-trmd3">
-				<Menu>
+				<Menu className="menu-parent" id="menu-0">
 					<MenuItem
 						leadingIcon="hive"
 						trailingIcon="chevron_right"
