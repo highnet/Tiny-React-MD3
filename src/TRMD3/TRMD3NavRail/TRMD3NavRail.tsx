@@ -1,15 +1,12 @@
-import { useState } from "react";
-import { IComponentProps } from "../../Component/IComponentProps";
 import { activateMenuId } from "../../Gizmos/Modals";
 import { openLinkInNewTab } from "../../Gizmos/Redirection";
 import { scrollToSection } from "../../Gizmos/Scrolling";
 import NavigationRail from "../../Navigation Rail/NavigationRail";
 
-const TRMD3NavRail: React.FC<IComponentProps> = ({ id }) => {
-	const [_id] = useState(id || undefined);
+const TRMD3NavRail: React.FC = () => {
 	return (
 		<NavigationRail
-			id={id}
+			id={"nav-rail-0"}
 			className={"main-navigation-rail-trmd3"}
 			fab={{
 				onClick: () => {

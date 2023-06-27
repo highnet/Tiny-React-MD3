@@ -677,7 +677,9 @@ pre {
 	padding-bottom: 20rem;
 }
 
-.menu-subframe-trmd3{
-	padding: 1rem;
-	width: 100%;
+.menu-on-frame-trmd3{
+	position: relative;
+	left: 0;
+	top: 0;
 }
+

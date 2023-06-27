@@ -5110,9 +5110,10 @@ li {
 	border: 0.1rem solid rgba(0, 0, 0, 0.2);
 	border-radius: 0.4rem;
 	left: -25rem;
-	top: 5.6rem;
+	top: 10rem;
 	background-color: #F3EDF7;
 	transition: left 0.3s ease-in-out;
+	z-index: 90;
 }
 
 .menu-active {
@@ -5124,7 +5125,6 @@ li {
 	left: 100%;
 	top: 0;	
 	border-left: none;
-
 }
 
 .menu-item {
