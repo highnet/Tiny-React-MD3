@@ -46,6 +46,7 @@ import { activateMenuId, activateNavRailId } from "./Gizmos/Modals";
 import MenuItem from "./Menus/MenuItem/MenuItem";
 import Menu from "./Menus/Menu";
 import TRMD3Menu from "./TRMD3/TRMD3Menu";
+import TRMD3TopBar from "./TRMD3/TRMD3TopBar";
 
 function App() {
 	console.log(`👋 Welcome to TRMD3! 👋`);
@@ -54,12 +55,12 @@ function App() {
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme"
 	);
 
-	const handleToggleTheme = (): void => {
-		toggleTheme(_theme, setTheme);
-	};
-
 	const handleScrollToTop = (): void => {
 		scrollToSection("tourguide-section", -60);
+	};
+
+	const handleToggleTheme = (): void => {
+		toggleTheme(_theme, setTheme);
 	};
 
 	useEffect(() => {
@@ -77,18 +78,9 @@ function App() {
 
 	return (
 		<div className={"App"}>
-			<TopAppBar
-				configuration="small-centered"
-				leadingIcon={{
-					name: "menu",
-					onClick: () => {
-						activateNavRailId("nav-rail-0");
-					},
-				}}
-				trailingIcons={[
-					{ name: "dark_mode", onClick: handleToggleTheme },
-					{ name: "arrow_upward", onClick: () => handleScrollToTop() },
-				]}
+			<TRMD3TopBar
+				handleToggleTheme={handleToggleTheme}
+				handleScrollToTop={handleScrollToTop}
 			/>
 			<TRMD3NavRail />
 			<TRMD3Menu />
