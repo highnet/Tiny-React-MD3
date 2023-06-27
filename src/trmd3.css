@@ -5135,15 +5135,28 @@ li {
 	width: 20rem;
 	height: 5.6rem;
 }
+		
+.menu-item:hover {
+	background-color: #E6E1E9
+}
 
-.menu-item:hover{
+.menu-item:focus {
 	background-color: #E6E0E9;
+}
+.menu-item:active {
+	background-color: #E6E0E9;
+}
+
+.menu-item-disabled {
+	opacity: 38%;
+	pointer-events: none;
 }
 
 .menu-item-state-layer {
 	display: flex;
 	flex-grow: 1;
-	gap: 1.6rem;
+	gap: 1.2rem;
+	padding-left: 1.2rem;
 }
 
 .menu-item-content {
@@ -5164,6 +5177,7 @@ li {
 	display: flex;
 	justify-content: center;
 	overflow: hidden;
+	align-items: center;
 }
 
 .menu-item-inner-circle {

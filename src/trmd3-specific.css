@@ -168,8 +168,8 @@ html {
 /* COOKIETRAIL SECTION */
 .cookietrail-section-trmd3 {
 	margin-bottom: 0.3rem;
-	margin-right: 5%;
-	margin-left: 5%;
+	margin-right: 10%;
+	margin-left: 10%;
 
 }
 
@@ -207,7 +207,10 @@ html {
 	justify-content: center;
 	text-align: center;
 	overflow: hidden;
-	padding: 3rem;
+	padding-left: 8rem;
+	padding-right: 8rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 
 .tourguide-button {

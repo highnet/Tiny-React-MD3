@@ -11,14 +11,13 @@ const MenuItem: React.FC<IMenuItemProps> = ({
 	className,
 	id,
 	children,
-	onMouseEnter,
-	onMouseLeave,
 	onMouseMove,
 	onClick,
 	leadingIcon,
 	showDivider,
 	trailingIcon,
 	onTrailingIconClick,
+	disabled,
 }) => {
 	const [_className] = useState(className || "");
 	const [_id] = useState(id || undefined);
@@ -26,6 +25,7 @@ const MenuItem: React.FC<IMenuItemProps> = ({
 	const [_showDivider] = useState(showDivider || false);
 	const [_leadingIcon] = useState(leadingIcon || "");
 	const [_trailingIcon] = useState(trailingIcon || "");
+	const [_disabled] = useState(disabled || false);
 
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
@@ -52,6 +52,7 @@ const MenuItem: React.FC<IMenuItemProps> = ({
 		.add("menu-item")
 		.add("menu-item-" + _theme)
 		.add(_showDivider ? "menu-item-with-divider" : "")
+		.add(_disabled ? "menu-item-disabled" : "")
 		.add(_className)
 		.toString();
 
