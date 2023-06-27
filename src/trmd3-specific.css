@@ -5,11 +5,7 @@ html {
 
 /* APP */
 
-@media screen and (min-width: 768px) {
-	.App {
-	  padding-left: 8rem;
-	}
-  }
+
 
 /* BODY */
 
@@ -104,25 +100,6 @@ html {
 	flex-direction: row;
 }
 
-/* STICKY TOOLBAR SECTION */
-
-.sticky-toolbar-trmd3 {
-	display: flex;
-	position: fixed;
-	transform: translateY(1rem);
-	padding: 0rem 3rem 3rem 3rem;
-	gap: 1rem;
-	z-index: 990;
-	top: 0;
-	left: 0;
-	right: 0;
-}
-
-@media screen and (min-width: 768px) {
-	.sticky-toolbar-trmd3 {
-		padding-left: 8.1rem;
-	}
-}
 
 /* THEME TOGGLING */
 .theme-toggler-trmd3 {

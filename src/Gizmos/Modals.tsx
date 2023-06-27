@@ -118,6 +118,13 @@ export const activateSnackBarId = (
 export function activateMenuId(id: string): void {
 	const menuElement = document.getElementById(id);
 	if (menuElement) {
-	  menuElement.classList.add('menu-active');
+		menuElement.classList.toggle("menu-active");
 	}
-  }
+}
+
+export function activateNavRailId(id: string): void {
+	const navRailElement = document.getElementById(id);
+	if (navRailElement) {
+		navRailElement.classList.toggle("navigation-rail-active");
+	}
+}

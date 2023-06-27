@@ -25,35 +25,6 @@ const NavigationRail: React.FC<INavigationRailProps> = ({
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
-	function toggleMenu() {
-		const menu = document.querySelectorAll(
-			".navigation-rail-hamburger-menu-container"
-		);
-		const icons = document.querySelectorAll(
-			".navigation-rail .icons-on-navigation-rail"
-		);
-		const hamburgerElements = document.querySelectorAll(
-			".navigation-rail-hamburger-menu-element"
-		);
-		const navigationRailTop = document.querySelectorAll(".navigation-rail-top");
-
-		navigationRailTop.forEach((rail) => {
-			rail.classList.toggle("active");
-		});
-
-		menu.forEach((menu) => {
-			menu.classList.toggle("active");
-		});
-
-		icons.forEach((icon) => {
-			icon.classList.toggle("hidden-on-navigation-rail");
-		});
-
-		hamburgerElements.forEach((element) => {
-			element.classList.toggle("active");
-		});
-	}
-
 	let _computedComponentClassName = new StringBuilder()
 		.add("navigation-rail")
 		.add("navigation-rail-" + _theme)
@@ -150,10 +121,26 @@ const NavigationRail: React.FC<INavigationRailProps> = ({
 	return (
 		<div id={_id} className={_computedComponentClassName}>
 			<div className="navigation-rail-top">
-				<div
-					className="navigation-rail-hamburger-menu-container"
-					onClick={() => toggleMenu()}
-				>
+				{fab && fab.onClick ? (
+					<Fab
+						configuration="tertiary"
+						size="medium"
+						iconName={_fabIconName}
+						onClick={_fab.onClick}
+					>
+						Components
+					</Fab>
+				) : null}
+			</div>
+			<div className={"icons-on-navigation-rail"}>{iconElements}</div>
+		</div>
+	);
+};
+
+export default NavigationRail;
+
+/* 
+				<div className="navigation-rail-hamburger-menu-container">
 					<div
 						className={`navigation-rail-hamburger-menu-element navigation-rail-hamburger-menu-element-${_theme}`}
 					></div>
@@ -173,20 +160,4 @@ const NavigationRail: React.FC<INavigationRailProps> = ({
 						className={`navigation-rail-hamburger-menu-element navigation-rail-hamburger-menu-element-${_theme}`}
 					></div>
 				</div>
-				{fab && fab.onClick ? (
-					<Fab
-						configuration="tertiary"
-						size="medium"
-						iconName={_fabIconName}
-						onClick={_fab.onClick}
-					></Fab>
-				) : null}
-			</div>
-			<div className={"icons-on-navigation-rail hidden-on-navigation-rail"}>
-				{iconElements}
-			</div>
-		</div>
-	);
-};
-
-export default NavigationRail;
+*/

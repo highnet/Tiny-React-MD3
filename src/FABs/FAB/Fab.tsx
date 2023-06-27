@@ -3,6 +3,7 @@ import { IFabProps } from "./IFabProps";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 import { StringBuilder } from "../../Gizmos/StringBuilder";
 import Icon from "../../Icon/Icon";
+import Typography from "../../Typography/Typography";
 
 const Fab: React.FC<IFabProps> = ({
 	id,
@@ -14,6 +15,7 @@ const Fab: React.FC<IFabProps> = ({
 	onMouseEnter,
 	onMouseLeave,
 	onMouseMove,
+	children,
 }) => {
 	const [_id] = useState(id || undefined);
 	const [_className] = useState(className || "");
@@ -60,20 +62,28 @@ const Fab: React.FC<IFabProps> = ({
 	}, [boxRef, innerCircleRef]);
 
 	return (
-		<button
-			id={_id}
-			className={_computedComponentClassName}
-			onClick={(e) => {
-				onClick?.(e);
-			}}
-			onMouseEnter={onMouseEnter}
-			onMouseLeave={onMouseLeave}
-			onMouseMove={onMouseMove}
-			ref={boxRef}
-		>
-			<Icon className={"icon-on-fab icon-on-fab-" + _theme}>{_iconName}</Icon>
-			<span className="fab-inner-circle" ref={innerCircleRef}></span>
-		</button>
+		<div className="fab-container">
+			<button
+				id={_id}
+				className={_computedComponentClassName}
+				onClick={(e) => {
+					onClick?.(e);
+				}}
+				onMouseEnter={onMouseEnter}
+				onMouseLeave={onMouseLeave}
+				onMouseMove={onMouseMove}
+				ref={boxRef}
+			>
+				<Icon className={"icon-on-fab icon-on-fab-" + _theme}>{_iconName}</Icon>
+				<span className="fab-inner-circle" ref={innerCircleRef}></span>
+			</button>
+			<Typography
+				variant="text-label-medium"
+				className={"label-on-fab label-on-fab-" + _theme}
+			>
+				{children}
+			</Typography>
+		</div>
 	);
 };
 

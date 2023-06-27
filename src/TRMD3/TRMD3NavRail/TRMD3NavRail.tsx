@@ -1,30 +1,24 @@
+import { useState } from "react";
+import { IComponentProps } from "../../Component/IComponentProps";
 import { activateMenuId } from "../../Gizmos/Modals";
 import { openLinkInNewTab } from "../../Gizmos/Redirection";
 import { scrollToSection } from "../../Gizmos/Scrolling";
 import NavigationRail from "../../Navigation Rail/NavigationRail";
 
-const TRMD3NavRail: React.FC = () => {
-	const handleScrollToTop = (): void => {
-		scrollToSection("tourguide-section", -60);
-	};
-
+const TRMD3NavRail: React.FC<IComponentProps> = ({ id }) => {
+	const [_id] = useState(id || undefined);
 	return (
 		<NavigationRail
+			id={id}
 			className={"main-navigation-rail-trmd3"}
 			fab={{
 				onClick: () => {
-					handleScrollToTop();
+					activateMenuId("menu-0");
 				},
-				fabIconName: "arrow_upward",
+				fabIconName: "build",
+				label: "Components",
 			}}
 			icons={[
-				{
-					name: "build",
-					label: "Components",
-					onClick: () => {
-						activateMenuId("menu-0");
-					},
-				},
 				{
 					name: "bookmark",
 					onClick: () => {
@@ -32,6 +26,7 @@ const TRMD3NavRail: React.FC = () => {
 							"https://github.com/highnet/Tiny-React-MD3#----trmd3-tiny-react-material-design-3-"
 						);
 					},
+					label: "Read Me",
 				},
 				{
 					name: "menu_book",
@@ -40,6 +35,7 @@ const TRMD3NavRail: React.FC = () => {
 							"https://github.com/highnet/Tiny-React-MD3/tree/master/src#-tiny-react-md-3-documentation"
 						);
 					},
+					label: "Docs",
 				},
 				{
 					name: "code",
@@ -48,6 +44,7 @@ const TRMD3NavRail: React.FC = () => {
 							"https://github.com/highnet/Tiny-React-MD3/tree/master/src"
 						);
 					},
+					label: "Source Code",
 				},
 				{
 					name: "pill",
