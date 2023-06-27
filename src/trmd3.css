@@ -5184,7 +5184,7 @@ li {
 	width: 2rem;
 	height: 2rem;
 	pointer-events: none;
-	background-color: rgba(255, 0, 0, 0.1);
+	background-color: var(--m3-state-layers-light-primary-opacity-12);
 	display: none;
 }
 
@@ -5192,11 +5192,11 @@ li {
 	position: absolute;
 	border-radius: 50%;
 	transform: translate(-50%, -50%) scale(1);
-	transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+	transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 	opacity: 0;
 }
 
-.menu-item:hover .menu-item-inner-circle {
+.menu-item:active .menu-item-inner-circle {
 	transform: translate(-50%, -50%) scale(2);
 	opacity: 1;
 }
