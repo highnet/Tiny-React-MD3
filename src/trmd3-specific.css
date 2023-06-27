@@ -521,12 +521,12 @@ pre {
 	max-width: 80%;
 }
 
-@media screen and (min-width: 768px) {
-	.top-app-bar-on-frame-trmd3 {
-		margin-left: 0rem;
-		padding-right: 0rem;
+@media screen and (max-width: 768px) {
+	.left-icon-on-top-app-bar {
+		visibility: hidden;
 	}
 }
+
 
 .text-fields-frame-trmd3{
 	gap: 1rem;

@@ -5114,6 +5114,7 @@ li {
 	background-color: #F3EDF7;
 	transition: left 0.3s ease-in-out;
 	z-index: 90;
+	cursor: pointer;
 }
 
 .menu-active {
@@ -5133,6 +5134,10 @@ li {
 	flex-direction: column;
 	width: 20rem;
 	height: 5.6rem;
+}
+
+.menu-item:hover{
+	background-color: #E6E0E9;
 }
 
 .menu-item-state-layer {
