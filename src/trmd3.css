@@ -5134,6 +5134,7 @@ li {
 	flex-direction: column;
 	width: 20rem;
 	height: 5.6rem;
+	user-select: none;
 }
 		
 .menu-item:hover {
