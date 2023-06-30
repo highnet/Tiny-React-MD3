@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { INavigationRailProps } from "./INavigationRailProps";
 import { getPreferredScheme } from "../Gizmos/Themeing";
 import { StringBuilder } from "../Gizmos/StringBuilder";
@@ -118,8 +118,28 @@ const NavigationRail: React.FC<INavigationRailProps> = ({
 		);
 	});
 
+	const navigationRailRef = useRef<HTMLDivElement>(null);
+
+	useEffect(() => {
+		const handleResize = () => {
+			if (navigationRailRef.current) {
+				navigationRailRef.current.classList.remove("navigation-rail-active");
+			}
+		};
+
+		window.addEventListener("resize", handleResize);
+
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
+
 	return (
-		<div id={_id} className={_computedComponentClassName}>
+		<div
+			ref={navigationRailRef}
+			id={_id}
+			className={_computedComponentClassName}
+		>
 			<div className="navigation-rail-top">
 				{fab && fab.onClick ? (
 					<Fab

@@ -493,11 +493,6 @@ pre {
 }
 
 /* NAVIGATION RAILS */
-@media screen and (max-width: 768px) {
-	.main-navigation-rail-trmd3 {
-	  display: none;
-	}
-  }
 
   /* BOTTOM APP BARS */
   .bottom-app-bar-on-frame-trmd3 { 
@@ -524,11 +519,7 @@ pre {
 	max-width: 80%;
 }
 
-@media screen and (max-width: 768px) {
-	.left-icon-on-top-app-bar {
-		visibility: hidden;
-	}
-}
+
 
 
 .text-fields-frame-trmd3{
