@@ -31,9 +31,9 @@ const MenusFrame: React.FC = () => {
 				variant="text-title-large"
 				className={_computedTrmd3SectionTitlesClassName}
 			>
-				PH
+				📖
 			</Typography>
-			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-lists">
+			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#-menus">
 				Menus
 			</ComponentFrameTitle>
 			<div className="menu-subframe-trmd3">
