@@ -91,10 +91,13 @@ const SegmentedButtonsFrame: React.FC = () => {
 					Segmented Button Group
 				</Typography>
 				<CodeSnippet>{`
-const [segmentedButtonGroupValue, setSegmentedButtonGroupValue] = useState<string | undefined>(undefined);
+const [segmentedButtonGroupValue,
+	setSegmentedButtonGroupValue] =
+		useState<string | undefined>(undefined);
 
-const handleSegmentedButtonGroupValueChange = (value: string | undefined) => {
-	setSegmentedButtonGroupValue(value);
+const handleSegmentedButtonGroupValueChange =
+	(value: string | undefined) => {
+		setSegmentedButtonGroupValue(value);
 };
 `}</CodeSnippet>
 				<SegmentedButtonGroup
