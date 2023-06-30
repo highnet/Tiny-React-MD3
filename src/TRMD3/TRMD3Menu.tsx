@@ -113,6 +113,14 @@ const TRMD3Menu: React.FC = () => {
 			>
 				<Menu>
 					<MenuItem
+						leadingIcon="import_contacts"
+						label="Menus"
+						showDivider={true}
+						onClick={() => {
+							scrollToSection("menus-section", -60);
+						}}
+					/>
+					<MenuItem
 						leadingIcon="arrow_back"
 						label="Side Sheets"
 						showDivider={true}
@@ -120,7 +128,6 @@ const TRMD3Menu: React.FC = () => {
 							scrollToSection("side-sheets-section", -60);
 						}}
 					/>
-
 					<MenuItem
 						leadingIcon="dock_to_bottom"
 						label="Bottom Bars"
