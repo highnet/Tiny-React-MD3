@@ -5135,6 +5135,7 @@ li {
 	width: 20rem;
 	height: 5.6rem;
 	user-select: none;
+	transition: width 0.3s ease-in-out;
 }
 
 .menu-item-disabled {
@@ -5188,6 +5189,10 @@ li {
 .menu-item:active .menu-item-inner-circle {
 	transform: translate(-50%, -50%) scale(2);
 	opacity: 1;
+}
+
+.menu-item:hover {
+	width: 20.1rem;
 }
 
 /* MENU ITEM / LIGHT THEME */

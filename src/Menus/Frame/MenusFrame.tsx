@@ -50,37 +50,7 @@ const MenusFrame: React.FC = () => {
 								label="AA"
 								trailingIcon="chevron_right"
 								showDivider={true}
-							>
-								<Menu>
-									<MenuItem
-										leadingIcon="hive"
-										label="AAA"
-										trailingIcon="shopping_cart"
-										onTrailingIconClick={() => {
-											alert("Item Purchased");
-										}}
-										showDivider={true}
-									></MenuItem>
-									<MenuItem
-										leadingIcon="hive"
-										label="AAB"
-										trailingIcon="shopping_cart"
-										onTrailingIconClick={() => {
-											alert("Item Purchased");
-										}}
-										showDivider={true}
-									></MenuItem>
-									<MenuItem
-										leadingIcon="hive"
-										label="AAC"
-										trailingIcon="shopping_cart"
-										onTrailingIconClick={() => {
-											alert("Item Purchased");
-										}}
-										showDivider={true}
-									></MenuItem>
-								</Menu>
-							</MenuItem>
+							></MenuItem>
 							<MenuItem
 								leadingIcon="hive"
 								label="AB"
@@ -119,64 +89,6 @@ const MenusFrame: React.FC = () => {
 						}}
 						showDivider={true}
 					></MenuItem>
-					<MenuItem
-						leadingIcon="hive"
-						label="D"
-						trailingIcon="shopping_cart"
-						onTrailingIconClick={() => {
-							alert("Item Purchased");
-						}}
-						showDivider={true}
-					></MenuItem>
-					<MenuItem
-						leadingIcon="hive"
-						label="E"
-						trailingIcon="shopping_cart"
-						onTrailingIconClick={() => {
-							alert("Item Purchased");
-						}}
-						showDivider={true}
-					></MenuItem>
-					<MenuItem
-						leadingIcon="hive"
-						label="F"
-						trailingIcon="shopping_cart"
-						onTrailingIconClick={() => {
-							alert("Item Purchased");
-						}}
-						showDivider={true}
-					></MenuItem>
-					<MenuItem leadingIcon="hive" label="G" trailingIcon="chevron_right">
-						<Menu>
-							<MenuItem
-								leadingIcon="hive"
-								label="GA"
-								trailingIcon="shopping_cart"
-								onTrailingIconClick={() => {
-									alert("Item Purchased");
-								}}
-								showDivider={true}
-							></MenuItem>
-							<MenuItem
-								leadingIcon="hive"
-								label="GB"
-								trailingIcon="shopping_cart"
-								onTrailingIconClick={() => {
-									alert("Item Purchased");
-								}}
-								showDivider={true}
-							></MenuItem>
-							<MenuItem
-								leadingIcon="hive"
-								label="GC"
-								trailingIcon="shopping_cart"
-								onTrailingIconClick={() => {
-									alert("Item Purchased");
-								}}
-								showDivider={true}
-							></MenuItem>
-						</Menu>
-					</MenuItem>
 				</Menu>
 			</div>
 		</div>
