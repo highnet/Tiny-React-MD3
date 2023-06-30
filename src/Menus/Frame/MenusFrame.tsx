@@ -91,6 +91,66 @@ const MenusFrame: React.FC = () => {
 					></MenuItem>
 				</Menu>
 			</div>
+			<CodeSnippet>{`
+<Menu className="menu-parent menu-on-frame-trmd3">
+	<MenuItem
+		leadingIcon="hive"
+		trailingIcon="chevron_right"
+		label="A"
+		showDivider={true}
+>
+		<Menu>
+			<MenuItem
+				leadingIcon="hive"
+				label="AA"
+				trailingIcon="chevron_right"
+				showDivider={true}
+			>
+			</MenuItem>
+			<MenuItem
+				leadingIcon="hive"
+				label="AB"
+				trailingIcon="shopping_cart"
+				onTrailingIconClick={() => {
+					alert("Item Purchased");
+				}}
+				showDivider={true}
+				>
+				</MenuItem>
+				<MenuItem
+					leadingIcon="hive"
+					label="AC"
+					trailingIcon="shopping_cart"
+					onTrailingIconClick={() => {
+						alert("Item Purchased");
+					}}
+					showDivider={true}
+				>
+				</MenuItem>
+		</Menu>
+	</MenuItem>
+	<MenuItem
+		leadingIcon="hive"
+		label="B"
+		trailingIcon="shopping_cart"
+		onTrailingIconClick={() => {
+			alert("Item Purchased");
+		}}
+		showDivider={true}
+	>
+	</MenuItem>
+	<MenuItem
+		leadingIcon="hive"
+		label="C"
+		trailingIcon="shopping_cart"
+		onTrailingIconClick={() => {
+			alert("Item Purchased");
+		}}
+		showDivider={true}
+		>
+	</MenuItem>
+</Menu>
+`}</CodeSnippet>
 		</div>
 	);
 };
