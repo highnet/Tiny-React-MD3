@@ -1503,9 +1503,6 @@ html {
 .material-symbols {
 	user-select: none;
 	pointer-events: none;
-}
-
-.material-symbols-outlined {
 	font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 20;
 }
 
@@ -5273,4 +5270,57 @@ li {
 	color: var(--m3-sys-dark-on-surface-variant);
 }
 
+/* ========== NAVIGATION DRAWERS ========== */
 
+.navigation-drawer {
+	background-color: #F7F2FA;
+	border-radius: 1.6rem;
+	padding: 1.2rem;
+}
+
+.navigation-drawer-item {
+	width: 33.6rem;
+	height: 5.6rem;
+	background-color: #F7F2FA;
+	color: #1D192B;
+	border-radius: 100rem;
+}
+
+.navigation-drawer-item:hover {
+	background-color: #E8DEF8;
+}
+
+.navigation-drawer-item:focus {
+	background-color: #D0C6DF;
+}
+
+.navigation-drawer-item:active {
+	background-color: #D0C6DF;
+}
+
+.navigation-drawer-state-layer {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	gap: 1.2rem;
+	padding: 1.6rem 2.4rem 1.6rem 1.6rem;
+	text-align: left;
+}
+
+.label-on-navigation-drawer {
+	flex: 1;
+}
+
+.navigation-drawer-item-interactive{
+	cursor: pointer;
+}
+
+.navigation-drawer-item-noninteractive {
+	pointer-events: none;
+}
+
+.divider-on-navigation-drawer {
+
+}

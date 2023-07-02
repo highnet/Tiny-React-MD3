@@ -25,7 +25,7 @@ const NavigationDrawer: React.FC<INavigationDrawerProps> = ({
 		.toString();
 
 	return (
-		<div
+		<ul
 			id={_id}
 			className={_computedComponentClassName}
 			onMouseEnter={onMouseEnter}
@@ -34,7 +34,7 @@ const NavigationDrawer: React.FC<INavigationDrawerProps> = ({
 			onClick={onClick}
 		>
 			{children}
-		</div>
+		</ul>
 	);
 };
 

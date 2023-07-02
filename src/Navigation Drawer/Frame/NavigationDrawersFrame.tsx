@@ -3,6 +3,7 @@ import { getPreferredScheme } from "../../Gizmos/Themeing";
 import CodeSnippet from "../../TRMD3/CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../../TRMD3/ComponentFrameTitle/ComponentFrameTitle";
 import Typography from "../../Typography/Typography";
+import NavigationDrawerItem from "../Navigation Drawer Item/NavigationDrawerItem";
 import NavigationDrawer from "../NavigationDrawer";
 
 const NavigationDrawersFrame: React.FC = () => {
@@ -36,7 +37,43 @@ const NavigationDrawersFrame: React.FC = () => {
 				Navigation Drawers
 			</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>Default</Typography>
-			<NavigationDrawer></NavigationDrawer>
+			<NavigationDrawer>
+				<NavigationDrawerItem label="Components" />
+				<NavigationDrawerItem label="Action" />
+				<NavigationDrawerItem
+					leadingIcon="circle"
+					label="Label"
+					trailingText="100+"
+				/>
+				<NavigationDrawerItem
+					leadingIcon="circle"
+					label="Label"
+					trailingText="100+"
+				/>
+				<NavigationDrawerItem
+					leadingIcon="circle"
+					label="Label"
+					trailingText="100+"
+					showDivider={true}
+				/>
+				<NavigationDrawerItem label="Section Header" />
+				<NavigationDrawerItem
+					leadingIcon="circle"
+					label="Label"
+					trailingText="100+"
+				/>
+				<NavigationDrawerItem
+					leadingIcon="circle"
+					label="Label"
+					trailingText="100+"
+				/>
+				<NavigationDrawerItem
+					leadingIcon="circle"
+					label="Label"
+					trailingText="100+"
+					showDivider={true}
+				/>
+			</NavigationDrawer>
 			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
 		</div>
 	);

@@ -11,6 +11,7 @@ const Icon: React.FC<IIconProps> = ({
 	onMouseEnter,
 	onMouseLeave,
 	onMouseMove,
+	filled,
 }) => {
 	const [_id] = useState(id || undefined);
 	const [_className] = useState(className || "");
@@ -21,6 +22,7 @@ const Icon: React.FC<IIconProps> = ({
 	let _computedComponentClassName = new StringBuilder()
 		.add("material-symbols")
 		.add("material-symbols-outlined")
+		.add(filled ? "material-symbols-filled" : "")
 		.add("icon")
 		.add("icon-" + _theme)
 		.add(_className)
