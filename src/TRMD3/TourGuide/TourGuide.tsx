@@ -17,6 +17,13 @@ const TourGuide: React.FC = () => {
 				<Button
 					className="tourguide-button"
 					configuration="elevated"
+					onClick={() => scrollToSection("navigation-drawers-section", -60)}
+				>
+					🗄️ Navigation Drawers 🗄️
+				</Button>
+				<Button
+					className="tourguide-button"
+					configuration="elevated"
 					onClick={() => scrollToSection("menus-section", -60)}
 				>
 					📖 Menus 📖

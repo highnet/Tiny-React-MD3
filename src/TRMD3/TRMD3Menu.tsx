@@ -113,6 +113,14 @@ const TRMD3Menu: React.FC = () => {
 			>
 				<Menu>
 					<MenuItem
+						leadingIcon="home_storage"
+						label="Navigation Drawers"
+						showDivider={true}
+						onClick={() => {
+							scrollToSection("navigation-drawers-section", -60);
+						}}
+					/>
+					<MenuItem
 						leadingIcon="import_contacts"
 						label="Menus"
 						showDivider={true}
@@ -138,7 +146,7 @@ const TRMD3Menu: React.FC = () => {
 					/>
 					<MenuItem
 						leadingIcon="train"
-						label="Nav Rails"
+						label="Navigation Rails"
 						showDivider={true}
 						onClick={() => {
 							scrollToSection("navigation-rails-section", -60);
