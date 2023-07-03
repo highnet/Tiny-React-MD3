@@ -674,3 +674,10 @@ pre {
 	z-index: 1;
 }
 
+/* NAVIGATION DRAWERS SECTION */
+.navigation-drawer-on-frame-trmd3 {
+	position: relative;
+	z-index: 1;
+	left: 0;
+	top: 0;
+}

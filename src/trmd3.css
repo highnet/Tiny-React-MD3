@@ -5286,12 +5286,10 @@ li {
 	transition: left 0.3s ease-in-out;
 	z-index: 90;
 	cursor: pointer;
-	opacity: 80%;
 }
 
 .navigation-drawer-active {
 	left: 0rem;
-	opacity: 100%;
 }
 
 .navigation-drawer-item {
@@ -5300,6 +5298,7 @@ li {
 	background-color: #F7F2FA;
 	color: #1D192B;
 	border-radius: 100rem;
+	padding-bottom: .1rem;
 }
 
 .navigation-drawer-item:hover {

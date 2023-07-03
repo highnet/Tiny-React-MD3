@@ -48,6 +48,8 @@ import TRMD3Menu from "./TRMD3/TRMD3Menu";
 import TRMD3TopBar from "./TRMD3/TRMD3TopBar";
 import SegmentedButtonsFrame from "./Segmented Button/Frame/SegmentedButtonsFrame";
 import NavigationDrawersFrame from "./Navigation Drawer/Frame/NavigationDrawersFrame";
+import NavigationDrawerItem from "./Navigation Drawer/Navigation Drawer Item/NavigationDrawerItem";
+import NavigationDrawer from "./Navigation Drawer/NavigationDrawer";
 
 function App() {
 	console.log(`👋 Welcome to TRMD3! 👋`);
@@ -85,6 +87,109 @@ function App() {
 			/>
 			<TRMD3NavRail />
 			<TRMD3Menu />
+			<NavigationDrawer id="drawer-0">
+				<NavigationDrawerItem label="Components" />
+				<NavigationDrawerItem
+					leadingIcon="circle"
+					label="Buttons"
+				/>
+				<NavigationDrawerItem
+					leadingIcon="circle"
+					label="Segmented Buttons"
+				/>
+				<NavigationDrawerItem
+					leadingIcon="circle"
+					label="FABs"
+				/>
+				<NavigationDrawerItem
+					leadingIcon="circle"
+					label="Icon Buttons"
+				/>				
+				<NavigationDrawerItem
+					leadingIcon="circle"
+					label="Sliders"
+				/>
+				<NavigationDrawerItem
+					leadingIcon="circle"
+					label="Checkboxes"
+				/>
+				<NavigationDrawerItem
+					leadingIcon="circle"
+					label="Switches"
+				/>
+				<NavigationDrawerItem
+					leadingIcon="circle"
+					label="Text Fields"
+				/>
+				<NavigationDrawerItem
+					leadingIcon="circle"
+					label="Radio Buttons"
+				/>
+				<NavigationDrawerItem
+					leadingIcon="circle"
+					label="Navigation Drawers"
+				/>
+				<NavigationDrawerItem
+					leadingIcon="circle"
+					label="Menus"
+				/>
+				<NavigationDrawerItem
+					leadingIcon="circle"
+					label="Side Sheets"
+				/>
+				<NavigationDrawerItem
+					leadingIcon="circle"
+					label="Bottom Bars"
+				/>
+				<NavigationDrawerItem
+					leadingIcon="circle"
+					label="Navigation Rails"
+				/>
+				<NavigationDrawerItem
+					leadingIcon="circle"
+					label="Top Bars"
+				/>
+				<NavigationDrawerItem
+					leadingIcon="circle"
+					label="Snackbars"
+				/>
+				<NavigationDrawerItem
+					leadingIcon="circle"
+					label="Tooltips"
+				/>
+				<NavigationDrawerItem
+					leadingIcon="circle"
+					label="Dialogs"
+				/>
+				<NavigationDrawerItem
+					leadingIcon="circle"
+					label="Badges"
+				/>
+				<NavigationDrawerItem
+					leadingIcon="circle"
+					label="Typography"
+				/>
+				<NavigationDrawerItem
+					leadingIcon="circle"
+					label="Icons"
+				/>
+				<NavigationDrawerItem
+					leadingIcon="circle"
+					label="Dividers"
+				/>
+				<NavigationDrawerItem
+					leadingIcon="circle"
+					label="Cards"
+				/>
+				<NavigationDrawerItem
+					leadingIcon="circle"
+					label="Carousels"
+				/>
+				<NavigationDrawerItem
+					leadingIcon="circle"
+					label="Lists"
+				/>
+			</NavigationDrawer>
 			<TRMD3SideSheet />
 			<div id="section-0-trmd3" className="section-trmd3">
 				<Hero hasLogo={true} />

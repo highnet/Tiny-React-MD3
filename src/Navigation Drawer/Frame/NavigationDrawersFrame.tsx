@@ -36,10 +36,9 @@ const NavigationDrawersFrame: React.FC = () => {
 			<ComponentFrameTitle link="https://github.com/highnet/Tiny-React-MD3/blob/master/src/readme.md#%EF%B8%8F-navigation-drawers">
 				Navigation Drawers
 			</ComponentFrameTitle>
-			<Typography variant={"text-label-small"}>Default</Typography>
-			<NavigationDrawer id={"drawer-0"}>
-				<NavigationDrawerItem label="Components" />
-				<NavigationDrawerItem label="Action" />
+			<NavigationDrawer className="navigation-drawer-on-frame-trmd3">
+				<NavigationDrawerItem label="Title" />
+				<NavigationDrawerItem label="Section Header" />
 				<NavigationDrawerItem
 					leadingIcon="circle"
 					label="Label"
@@ -74,7 +73,45 @@ const NavigationDrawersFrame: React.FC = () => {
 					showDivider={true}
 				/>
 			</NavigationDrawer>
-			<CodeSnippet>{`<Component>Component</Component>`}</CodeSnippet>
+			<CodeSnippet>{`
+<NavigationDrawer className="navigation-drawer-on-frame-trmd3">
+	<NavigationDrawerItem label="Title" />
+	<NavigationDrawerItem label="Section Header" />
+	<NavigationDrawerItem
+		leadingIcon="circle"
+		label="Label"
+		trailingText="100+"
+	/>
+	<NavigationDrawerItem
+		leadingIcon="circle"
+		label="Label"
+		trailingText="100+"
+	/>
+	<NavigationDrawerItem
+		leadingIcon="circle"
+		label="Label"
+		trailingText="100+"
+		showDivider={true}
+	/>
+	<NavigationDrawerItem label="Section Header" />
+	<NavigationDrawerItem
+		leadingIcon="circle"
+		label="Label"
+		trailingText="100+"
+	/>
+	<NavigationDrawerItem
+				leadingIcon="circle"
+				label="Label"
+				trailingText="100+"
+	/>
+	<NavigationDrawerItem
+				leadingIcon="circle"
+				label="Label"
+				trailingText="100+"
+				showDivider={true}
+	/>
+</NavigationDrawer>
+			`}</CodeSnippet>
 		</div>
 	);
 };
