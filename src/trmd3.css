@@ -4257,7 +4257,6 @@ li {
 		visibility: hidden;
 	}
 }
-
 .arrow-on-side-sheet {
 	position: absolute;
 	left: -.4rem;
@@ -5107,7 +5106,7 @@ li {
 	flex-direction: column;
 	width: fit-content;
 	border-radius: 0.4rem;
-	left: -25rem;
+	left: -80rem;
 	top: 6.8rem;
 	transition: left 0.3s ease-in-out;
 	z-index: 90;
@@ -5286,6 +5285,7 @@ li {
 	transition: left 0.3s ease-in-out;
 	z-index: 90;
 	cursor: pointer;
+	gap: .15rem;
 }
 
 .navigation-drawer-active {
@@ -5294,11 +5294,12 @@ li {
 
 .navigation-drawer-item {
 	width: 33.6rem;
-	height: 5.6rem;
+	height: 1.6rem;
 	background-color: #F7F2FA;
 	color: #1D192B;
 	border-radius: 100rem;
 	padding-bottom: .1rem;
+	white-space: nowrap;
 }
 
 .navigation-drawer-item:hover {
@@ -5320,7 +5321,6 @@ li {
 	height: 100%;
 	align-items: center;
 	gap: 1.2rem;
-	padding: 1.6rem 2.4rem 1.6rem 1.6rem;
 	text-align: left;
 }
 
@@ -5334,4 +5334,8 @@ li {
 
 .navigation-drawer-item-noninteractive {
 	pointer-events: none;
+}
+
+.icon-on-navigation-drawer{
+	font-size: 1.4rem;
 }

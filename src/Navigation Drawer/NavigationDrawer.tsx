@@ -49,17 +49,19 @@ const NavigationDrawer: React.FC<INavigationDrawerProps> = ({
     }, []);
 
     return (
-        <ul
-            id={_id}
-            className={_computedComponentClassName}
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
-            onMouseMove={onMouseMove}
-            onClick={onClick}
-            ref={navDrawerRef}
-        >
+        <div className="nav-drawer-scroll">
+            <ul
+                id={_id}
+                className={_computedComponentClassName}
+                onMouseEnter={onMouseEnter}
+                onMouseLeave={onMouseLeave}
+                onMouseMove={onMouseMove}
+                onClick={onClick}
+                ref={navDrawerRef}
+            >
             {children}
         </ul>
+        </div>
     );
 };
 

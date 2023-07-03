@@ -551,6 +551,10 @@ pre {
 	padding-top: 0;
 }
 
+.side-sheet-on-frame-trmd3 {
+	visibility: visible;
+}
+
 /* SLIDERS */
 .sliders-subframe-trmd3{
 	display: flex;
