@@ -5275,7 +5275,6 @@ li {
 	height: auto;
 	overflow: clip;
 	overflow-y: scroll;
-	width: 100%;
 	position: fixed;
 	max-height: 100vh;
 	z-index: 90;
