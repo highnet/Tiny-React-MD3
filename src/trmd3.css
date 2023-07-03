@@ -5108,7 +5108,7 @@ li {
 	width: fit-content;
 	border-radius: 0.4rem;
 	left: -25rem;
-	top: 10rem;
+	top: 6.8rem;
 	transition: left 0.3s ease-in-out;
 	z-index: 90;
 	cursor: pointer;
@@ -5276,6 +5276,22 @@ li {
 	background-color: #F7F2FA;
 	border-radius: 1.6rem;
 	padding: 1.2rem;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+	border-radius: 0.4rem;
+	left: -80rem;
+	top: 6.8rem;
+	transition: left 0.3s ease-in-out;
+	z-index: 90;
+	cursor: pointer;
+	opacity: 80%;
+}
+
+.navigation-drawer-active {
+	left: 0rem;
+	opacity: 100%;
 }
 
 .navigation-drawer-item {
@@ -5319,8 +5335,4 @@ li {
 
 .navigation-drawer-item-noninteractive {
 	pointer-events: none;
-}
-
-.divider-on-navigation-drawer {
-
 }

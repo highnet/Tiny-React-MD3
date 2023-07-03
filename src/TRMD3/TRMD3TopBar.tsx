@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import TopAppBar from "../App Bars/Top App Bar/TopAppBar";
-import { activateNavRailId } from "../Gizmos/Modals";
+import { toggleDrawerId, toggleNavRailId } from "../Gizmos/Modals";
 import { scrollToSection } from "../Gizmos/Scrolling";
 import { getPreferredScheme, toggleTheme } from "../Gizmos/Themeing";
 
@@ -29,8 +29,8 @@ const TRMD3TopBar: React.FC<TRMD3TopBarProps> = ({
 
 	const onClickFunction =
 		screenWidth < 768
-			? () => alert("hi")
-			: () => activateNavRailId("nav-rail-0");
+			? () => toggleDrawerId("drawer-0")
+			: () => toggleNavRailId("nav-rail-0");
 
 	return (
 		<TopAppBar

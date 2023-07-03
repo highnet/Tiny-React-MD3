@@ -115,16 +115,23 @@ export const activateSnackBarId = (
 	}
 };
 
-export function activateMenuId(id: string): void {
+export function toggleMenuId(id: string): void {
 	const menuElement = document.getElementById(id);
 	if (menuElement) {
 		menuElement.classList.toggle("menu-active");
 	}
 }
 
-export function activateNavRailId(id: string): void {
+export function toggleNavRailId(id: string): void {
 	const navRailElement = document.getElementById(id);
 	if (navRailElement) {
 		navRailElement.classList.toggle("navigation-rail-active");
+	}
+}
+
+export function toggleDrawerId(id: string): void {
+	const drawerElement = document.getElementById(id);
+	if (drawerElement) {
+		drawerElement.classList.toggle("navigation-drawer-active");
 	}
 }

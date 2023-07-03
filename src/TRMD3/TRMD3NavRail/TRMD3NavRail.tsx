@@ -1,6 +1,5 @@
-import { activateMenuId } from "../../Gizmos/Modals";
+import { toggleMenuId } from "../../Gizmos/Modals";
 import { openLinkInNewTab } from "../../Gizmos/Redirection";
-import { scrollToSection } from "../../Gizmos/Scrolling";
 import NavigationRail from "../../Navigation Rail/NavigationRail";
 
 const TRMD3NavRail: React.FC = () => {
@@ -10,7 +9,7 @@ const TRMD3NavRail: React.FC = () => {
 			className={"main-navigation-rail-trmd3"}
 			fab={{
 				onClick: () => {
-					activateMenuId("menu-0");
+					toggleMenuId("menu-0");
 				},
 				fabIconName: "build",
 				label: "Components",

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { getPreferredScheme } from "../Gizmos/Themeing";
 import { StringBuilder } from "../Gizmos/StringBuilder";
 import { INavigationDrawerProps } from "./INavigationDrawerProps";
@@ -24,6 +24,23 @@ const NavigationDrawer: React.FC<INavigationDrawerProps> = ({
 		.add(_className)
 		.toString();
 
+		const navDrawerRef = useRef<HTMLUListElement>(null);
+
+
+		useEffect(() => {
+			const handleResize = () => {
+				if (navDrawerRef.current) {
+					navDrawerRef.current.classList.remove("navigation-drawer-active");
+				}
+			};
+	
+			window.addEventListener("resize", handleResize);
+	
+			return () => {
+				window.removeEventListener("resize", handleResize);
+			};
+		}, []);
+
 	return (
 		<ul
 			id={_id}
@@ -32,6 +49,7 @@ const NavigationDrawer: React.FC<INavigationDrawerProps> = ({
 			onMouseLeave={onMouseLeave}
 			onMouseMove={onMouseMove}
 			onClick={onClick}
+			ref={navDrawerRef}
 		>
 			{children}
 		</ul>

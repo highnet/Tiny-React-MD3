@@ -37,7 +37,7 @@ const NavigationDrawersFrame: React.FC = () => {
 				Navigation Drawers
 			</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>Default</Typography>
-			<NavigationDrawer>
+			<NavigationDrawer id={"drawer-0"}>
 				<NavigationDrawerItem label="Components" />
 				<NavigationDrawerItem label="Action" />
 				<NavigationDrawerItem

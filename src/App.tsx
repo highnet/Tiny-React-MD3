@@ -41,7 +41,7 @@ import TRMD3NavRail from "./TRMD3/TRMD3NavRail/TRMD3NavRail";
 import TRMD3SideSheet from "./TRMD3/TRMD3SideSheet/TRMD3SideSheet";
 import TRMD3BotBar from "./TRMD3/TRMD3BotBar/TRMD3BotBar";
 import MenusFrame from "./Menus/Frame/MenusFrame";
-import { activateMenuId, activateNavRailId } from "./Gizmos/Modals";
+import { toggleMenuId, toggleNavRailId } from "./Gizmos/Modals";
 import MenuItem from "./Menus/MenuItem/MenuItem";
 import Menu from "./Menus/Menu";
 import TRMD3Menu from "./TRMD3/TRMD3Menu";

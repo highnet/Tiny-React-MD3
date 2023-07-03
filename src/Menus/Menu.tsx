@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { getPreferredScheme } from "../Gizmos/Themeing";
 import { StringBuilder } from "../Gizmos/StringBuilder";
 import { IMenuProps } from "./IMenuProps";
@@ -24,13 +24,27 @@ const Menu: React.FC<IMenuProps> = ({
         .add(_className)
         .toString();
 
-    const ulRef = useRef<HTMLUListElement>(null);
+    const menuRef = useRef<HTMLUListElement>(null);
 
     const handleMouseLeave = () => {
-        if (ulRef.current?.classList.contains("menu-parent")) {
-            ulRef.current.classList.remove("menu-active");
+        if (menuRef.current?.classList.contains("menu-parent")) {
+            menuRef.current.classList.remove("menu-active");
         }
     };
+
+	useEffect(() => {
+		const handleResize = () => {
+			if (menuRef.current) {
+				menuRef.current.classList.remove("menu-active");
+			}
+		};
+
+		window.addEventListener("resize", handleResize);
+
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
 
     return (
         <ul
@@ -40,7 +54,7 @@ const Menu: React.FC<IMenuProps> = ({
             onMouseLeave={handleMouseLeave}
             onMouseMove={onMouseMove}
             onClick={onClick}
-            ref={ulRef}
+            ref={menuRef}
         >
             {children}
         </ul>
