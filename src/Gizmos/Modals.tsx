@@ -132,6 +132,6 @@ export function toggleNavRailId(id: string): void {
 export function toggleDrawerId(id: string): void {
 	const drawerElement = document.getElementById(id);
 	if (drawerElement) {
-		drawerElement.classList.toggle("navigation-drawer-active");
+		drawerElement.classList.toggle("nav-drawer-scroll-active");
 	}
 }

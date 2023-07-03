@@ -4,65 +4,68 @@ import { StringBuilder } from "../Gizmos/StringBuilder";
 import { INavigationDrawerProps } from "./INavigationDrawerProps";
 
 const NavigationDrawer: React.FC<INavigationDrawerProps> = ({
-    className,
-    id,
-    children,
-    onMouseEnter,
-    onMouseLeave,
-    onMouseMove,
-    onClick,
+	className,
+	id,
+	children,
+	onMouseEnter,
+	onMouseLeave,
+	onMouseMove,
+	onClick,
 }) => {
-    const [_className] = useState(className || "");
-    const [_id] = useState(id || undefined);
+	const [_className] = useState(className || "");
+	const [_id] = useState(id || undefined);
 
-    const _theme =
-        localStorage.getItem("theme") || getPreferredScheme() + "-theme";
+	const _theme =
+		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
-    let _computedComponentClassName = new StringBuilder()
-        .add("navigation-drawer")
-        .add("navigation-drawer-" + _theme)
-        .add(_className)
-        .toString();
+	let _computedComponentClassName = new StringBuilder()
+		.add("navigation-drawer")
+		.add("navigation-drawer-" + _theme)
+		.add(_className)
+		.toString();
 
-    const navDrawerRef = useRef<HTMLUListElement>(null);
+	const navDrawerScrollRef = useRef<HTMLDivElement>(null);
 
-    useEffect(() => {
-        const handleResize = () => {
-            if (navDrawerRef.current) {
-                navDrawerRef.current.classList.remove("navigation-drawer-active");
-            }
-        };
+	useEffect(() => {
+		const handleResize = () => {
+			if (navDrawerScrollRef.current) {
+				navDrawerScrollRef.current.classList.remove("nav-drawer-scroll-active");
+			}
+		};
 
-        const handleScroll = () => {
-            if (navDrawerRef.current && navDrawerRef.current.classList.contains("navigation-drawer-active")) {
-                navDrawerRef.current.classList.remove("navigation-drawer-active");
-            }
-        };
+		window.addEventListener("resize", handleResize);
 
-        window.addEventListener("resize", handleResize);
-        window.addEventListener("scroll", handleScroll);
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
 
-        return () => {
-            window.removeEventListener("resize", handleResize);
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
+	const handleNavDrawerClick = () => {
+		setTimeout(() => {
+			if (navDrawerScrollRef.current) {
+				navDrawerScrollRef.current.classList.remove("nav-drawer-scroll-active");
+			}
+		}, 100);
+	};
 
-    return (
-        <div className="nav-drawer-scroll">
-            <ul
-                id={_id}
-                className={_computedComponentClassName}
-                onMouseEnter={onMouseEnter}
-                onMouseLeave={onMouseLeave}
-                onMouseMove={onMouseMove}
-                onClick={onClick}
-                ref={navDrawerRef}
-            >
-            {children}
-        </ul>
-        </div>
-    );
+	return (
+		<div
+			id={_id}
+			className="nav-drawer-scroll"
+			ref={navDrawerScrollRef}
+			onClick={handleNavDrawerClick}
+		>
+			<ul
+				className={_computedComponentClassName}
+				onMouseEnter={onMouseEnter}
+				onMouseLeave={onMouseLeave}
+				onMouseMove={onMouseMove}
+				onClick={onClick}
+			>
+				{children}
+			</ul>
+		</div>
+	);
 };
 
 export default NavigationDrawer;

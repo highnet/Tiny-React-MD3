@@ -5271,35 +5271,45 @@ li {
 
 /* ========== NAVIGATION DRAWERS ========== */
 
+.nav-drawer-scroll {
+	height: auto;
+	overflow: clip;
+	overflow-y: scroll;
+	width: 100%;
+	position: fixed;
+	max-height: 100vh;
+	z-index: 90;
+	left: -90rem;
+	transition: left 0.3s ease-in-out;
+}
+
+.nav-drawer-scroll-active{
+	left: 0;
+}
+
 .navigation-drawer {
 	background-color: #F7F2FA;
 	border-radius: 1.6rem;
 	padding: 1.2rem;
-	position: fixed;
 	display: flex;
 	flex-direction: column;
 	width: fit-content;
 	border-radius: 0.4rem;
-	left: -80rem;
 	top: 6.4rem;
-	transition: left 0.3s ease-in-out;
-	z-index: 90;
 	cursor: pointer;
 	gap: .15rem;
 }
 
-.navigation-drawer-active {
-	left: 0rem;
-}
 
 .navigation-drawer-item {
-	width: 33.6rem;
-	height: 1.6rem;
+	height: 5.6rem;
 	background-color: #F7F2FA;
 	color: #1D192B;
 	border-radius: 100rem;
 	padding-bottom: .1rem;
 	white-space: nowrap;
+	padding: 1.6rem 2.4rem 1.6rem 1.6rem;
+
 }
 
 .navigation-drawer-item:hover {
@@ -5337,5 +5347,7 @@ li {
 }
 
 .icon-on-navigation-drawer{
-	font-size: 1.4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
