@@ -63,11 +63,11 @@ const MenuItem: React.FC<IMenuItemProps> = ({
 		const box = boxRef.current;
 		const innerCircle = innerCircleRef.current;
 
-		const handleMouseMove = (e: MouseEvent) => {
+		const handleMouseMove = (event: MouseEvent) => {
 			if (innerCircle && box) {
 				const boxRect = box.getBoundingClientRect();
-				const offsetX = e.clientX - boxRect.left;
-				const offsetY = e.clientY - boxRect.top;
+				const offsetX = event.clientX - boxRect.left;
+				const offsetY = event.clientY - boxRect.top;
 				innerCircle.style.left = `${offsetX / 10}rem`;
 				innerCircle.style.top = `${offsetY / 10}rem`;
 			}
@@ -84,6 +84,13 @@ const MenuItem: React.FC<IMenuItemProps> = ({
 		};
 	}, [boxRef, innerCircleRef]);
 
+	const handleClick = () => {
+		setTimeout(() => {
+			/* @ts-ignore */
+			onClick && onClick();
+		}, 100);
+	};
+
 	return (
 		<li
 			tabIndex={0}
@@ -92,7 +99,7 @@ const MenuItem: React.FC<IMenuItemProps> = ({
 			onMouseEnter={handleMouseEnter}
 			onMouseLeave={handleMouseLeave}
 			onMouseMove={onMouseMove}
-			onClick={onClick}
+			onClick={handleClick}
 			ref={boxRef}
 		>
 			<div className="menu-item-state-layer">
