@@ -90,23 +90,28 @@ function App() {
 			<NavigationDrawer id="drawer-0">
 				<NavigationDrawerItem label="Components" />
 				<NavigationDrawerItem
-					leadingIcon="circle"
+					leadingIcon="joystick"
 					label="Buttons"
 					onClick={() => {scrollToSection("buttons-section", -60)}}
 				/>
 				<NavigationDrawerItem
-					leadingIcon="circle"
+					leadingIcon="pill"
 					label="Segmented Buttons"
 					onClick={() => {scrollToSection("segmented-buttons-section", -60)}}
 
 				/>
 				<NavigationDrawerItem
-					leadingIcon="circle"
+					leadingIcon="cloud"
 					label="FABs"
 					onClick={() => {scrollToSection("fabs-section", -60)}}
 				/>
 				<NavigationDrawerItem
-					leadingIcon="circle"
+					leadingIcon="cookie"
+					label="Chips"
+					onClick={() => {scrollToSection("chips-section", -60)}}
+				/>
+				<NavigationDrawerItem
+					leadingIcon="monetization_on"
 					label="Icon Buttons"
 					onClick={() => {scrollToSection("icon-buttons-section", -60)}}
 
