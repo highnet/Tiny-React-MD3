@@ -16,7 +16,6 @@ const NavigationDrawerItem: React.FC<INavigationDrawerItemProps> = ({
 	leadingIcon,
 	label,
 	trailingText,
-	showDivider,
 }) => {
 	const [_className] = useState(className || "");
 	const [_id] = useState(id || undefined);
@@ -34,7 +33,6 @@ const NavigationDrawerItem: React.FC<INavigationDrawerItemProps> = ({
 				? "navigation-drawer-item-interactive"
 				: "navigation-drawer-item-noninteractive"
 		)
-		.add(showDivider ? "navigation-drawer-item-with-divider" : "")
 		.add(_className)
 		.toString();
 	return (
@@ -56,7 +54,7 @@ const NavigationDrawerItem: React.FC<INavigationDrawerItemProps> = ({
 				{label && (
 					<Typography
 						className="label-on-navigation-drawer"
-						variant="text-label-large"
+						variant={_interactive ? "text-label-large" : "text-title-small"}
 					>
 						{label}
 					</Typography>
@@ -70,9 +68,6 @@ const NavigationDrawerItem: React.FC<INavigationDrawerItemProps> = ({
 					</Typography>
 				)}
 			</div>
-			{showDivider && (
-				<HorizontalDivider className="divider-on-navigation-drawer" />
-			)}
 		</li>
 	);
 };

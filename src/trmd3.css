@@ -2006,6 +2006,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 /* ==========HORIZONTAL DIVIDERS========== */
 .horizontaldivider {
 	display: flex;
+	width: 100%;
 }
 
 .horizontaldivider-inset-right {
@@ -5272,14 +5273,13 @@ li {
 /* ========== NAVIGATION DRAWERS ========== */
 
 .nav-drawer-scroll {
-	height: auto;
-	overflow: clip;
-	overflow-y: scroll;
+	overflow-y: auto;
 	position: fixed;
-	max-height: 100vh;
-	z-index: 90;
+	z-index: 900;
 	left: -90rem;
 	transition: left 0.3s ease-in-out;
+	height: 100%;
+
 }
 
 .nav-drawer-scroll-active{
@@ -5287,57 +5287,38 @@ li {
 }
 
 .navigation-drawer {
-	background-color: #F7F2FA;
 	border-radius: 1.6rem;
 	padding: 1.2rem;
 	display: flex;
 	flex-direction: column;
-	width: fit-content;
 	border-radius: 0.4rem;
-	top: 6.4rem;
 	cursor: pointer;
 	gap: .15rem;
+	padding-top: 5.6rem;
 }
-
 
 .navigation-drawer-item {
-	height: 5.6rem;
-	background-color: #F7F2FA;
-	color: #1D192B;
+	display: flex;
 	border-radius: 100rem;
-	padding-bottom: .1rem;
 	white-space: nowrap;
 	padding: 1.6rem 2.4rem 1.6rem 1.6rem;
-
-}
-
-.navigation-drawer-item:hover {
-	background-color: #E8DEF8;
-}
-
-.navigation-drawer-item:focus {
-	background-color: #D0C6DF;
-}
-
-.navigation-drawer-item:active {
-	background-color: #D0C6DF;
+	height: 5.6rem;
 }
 
 .navigation-drawer-state-layer {
 	display: flex;
 	flex-direction: row;
-	width: 100%;
-	height: 100%;
 	align-items: center;
 	gap: 1.2rem;
 	text-align: left;
+	justify-content: center;
 }
 
 .label-on-navigation-drawer {
 	flex: 1;
 }
 
-.navigation-drawer-item-interactive{
+.navigation-drawer-item-interactive {
 	cursor: pointer;
 }
 
@@ -5345,8 +5326,41 @@ li {
 	pointer-events: none;
 }
 
-.icon-on-navigation-drawer{
+.icon-on-navigation-drawer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+/* NAVIGATION DRAWER / LIGHT THEME */
+
+.navigation-drawer-light-theme {
+	background-color: var(--m3-sys-light-surface-container-low);
+}
+
+.navigation-drawer-item-light-theme {
+	background-color: var(--m3-sys-light-surface-container-low);
+	color: var(--m3-sys-light-on-surface-variant);
+}
+
+.navigation-drawer-item-light-theme:hover {
+	background-color: var(--m3-sys-light-secondary-container);
+	color: var(--m3-sys-light-on-secondary-container);
+}
+
+
+/* NAVIGATION DRAWER / DARK THEME */
+
+.navigation-drawer-dark-theme {
+	background-color: var(--m3-sys-dark-surface-container-low);
+}
+
+.navigation-drawer-item-dark-theme {
+	background-color: var(--m3-sys-dark-surface-container-low);
+	color: var(--m3-sys-dark-on-surface-variant);
+}
+
+.navigation-drawer-item-dark-theme:hover {
+	background-color: var(--m3-sys-dark-secondary-container);
+	color: var(--m3-sys-dark-on-secondary-container);
 }

@@ -21,13 +21,9 @@ import StackedCardsFrame from "./Cards/StackedCard/Frame/StackedCardsFrame";
 import HorizontalCardsFrame from "./Cards/HorizontalCard/Frame/HorizontalCardsFrame";
 import FabsFrame from "./FABs/FAB/Frame/FabsFrame";
 import ExtendedFabsFrame from "./FABs/Extended FAB/Frame/ExtendedFabsFrame";
-import BottomAppBar from "./App Bars/Bottom App Bar/BottomAppBar";
 import BottomAppBarsFrame from "./App Bars/Bottom App Bar/Frame/BottomAppBarsFrame";
-import { openLinkInNewTab } from "./Gizmos/Redirection";
 import CarouselsFrame from "./Carousel/Frame/CarouselsFrame";
-import NavigationRail from "./Navigation Rail/NavigationRail";
 import NavigationRailsFrame from "./Navigation Rail/Frame/NavigationRailsFrame";
-import TopAppBar from "./App Bars/Top App Bar/TopAppBar";
 import TopAppBarsFrame from "./App Bars/Top App Bar/Frame/TopAppBarsFrame";
 import TooltipsFrame from "./Tooltip/Frame/TooltipsFrame";
 import TextFieldsFrame from "./TextField/Frame/TextFieldsFrame";
@@ -41,9 +37,6 @@ import TRMD3NavRail from "./TRMD3/TRMD3NavRail/TRMD3NavRail";
 import TRMD3SideSheet from "./TRMD3/TRMD3SideSheet/TRMD3SideSheet";
 import TRMD3BotBar from "./TRMD3/TRMD3BotBar/TRMD3BotBar";
 import MenusFrame from "./Menus/Frame/MenusFrame";
-import { toggleMenuId, toggleNavRailId } from "./Gizmos/Modals";
-import MenuItem from "./Menus/MenuItem/MenuItem";
-import Menu from "./Menus/Menu";
 import TRMD3Menu from "./TRMD3/TRMD3Menu";
 import TRMD3TopBar from "./TRMD3/TRMD3TopBar";
 import SegmentedButtonsFrame from "./Segmented Button/Frame/SegmentedButtonsFrame";
@@ -89,158 +82,198 @@ function App() {
 			<TRMD3Menu />
 			<NavigationDrawer id="drawer-0">
 				<NavigationDrawerItem label="Components" />
+				<NavigationDrawerItem label="Action" />
+
 				<NavigationDrawerItem
 					leadingIcon="joystick"
 					label="Buttons"
-					onClick={() => {scrollToSection("buttons-section", -60)}}
+					onClick={() => {
+						scrollToSection("buttons-section", -60);
+					}}
 				/>
 				<NavigationDrawerItem
 					leadingIcon="pill"
 					label="Segmented Buttons"
-					onClick={() => {scrollToSection("segmented-buttons-section", -60)}}
-
+					onClick={() => {
+						scrollToSection("segmented-buttons-section", -60);
+					}}
 				/>
 				<NavigationDrawerItem
 					leadingIcon="cloud"
 					label="FABs"
-					onClick={() => {scrollToSection("fabs-section", -60)}}
+					onClick={() => {
+						scrollToSection("fabs-section", -60);
+					}}
 				/>
 				<NavigationDrawerItem
 					leadingIcon="cookie"
 					label="Chips"
-					onClick={() => {scrollToSection("chips-section", -60)}}
+					onClick={() => {
+						scrollToSection("chips-section", -60);
+					}}
 				/>
 				<NavigationDrawerItem
 					leadingIcon="monetization_on"
 					label="Icon Buttons"
-					onClick={() => {scrollToSection("icon-buttons-section", -60)}}
+					onClick={() => {
+						scrollToSection("icon-buttons-section", -60);
+					}}
+				/>
+				<NavigationDrawerItem label="Input" />
 
-				/>				
 				<NavigationDrawerItem
-					leadingIcon="circle"
+					leadingIcon="sliders"
 					label="Sliders"
-					onClick={() => {scrollToSection("sliders-section", -60)}}
-
+					onClick={() => {
+						scrollToSection("sliders-section", -60);
+					}}
 				/>
 				<NavigationDrawerItem
-					leadingIcon="circle"
+					leadingIcon="check_box"
 					label="Checkboxes"
-					onClick={() => {scrollToSection("checkboxes-section", -60)}}
-
+					onClick={() => {
+						scrollToSection("checkboxes-section", -60);
+					}}
 				/>
 				<NavigationDrawerItem
-					leadingIcon="circle"
+					leadingIcon="toggle_on"
 					label="Switches"
-					onClick={() => {scrollToSection("switches-section", -60)}}
-
+					onClick={() => {
+						scrollToSection("switches-section", -60);
+					}}
 				/>
 				<NavigationDrawerItem
-					leadingIcon="circle"
+					leadingIcon="text_fields"
 					label="Text Fields"
-					onClick={() => {scrollToSection("text-fields-section", -60)}}
-
+					onClick={() => {
+						scrollToSection("text-fields-section", -60);
+					}}
 				/>
 				<NavigationDrawerItem
-					leadingIcon="circle"
+					leadingIcon="radio_button_checked"
 					label="Radio Buttons"
-					onClick={() => {scrollToSection("radio-buttons-section", -60)}}
-
+					onClick={() => {
+						scrollToSection("radio-buttons-section", -60);
+					}}
 				/>
+				<NavigationDrawerItem label="Navigation" />
 				<NavigationDrawerItem
-					leadingIcon="circle"
+					leadingIcon="chevron_right"
 					label="Navigation Drawers"
-					onClick={() => {scrollToSection("navigation-drawers-section", -60)}}
-
+					onClick={() => {
+						scrollToSection("navigation-drawers-section", -60);
+					}}
 				/>
 				<NavigationDrawerItem
-					leadingIcon="circle"
+					leadingIcon="import_contacts"
 					label="Menus"
-					onClick={() => {scrollToSection("menus-section", -60)}}
-
+					onClick={() => {
+						scrollToSection("menus-section", -60);
+					}}
 				/>
 				<NavigationDrawerItem
-					leadingIcon="circle"
+					leadingIcon="arrow_back"
 					label="Side Sheets"
-					onClick={() => {scrollToSection("side-sheets-section", -60)}}
-
+					onClick={() => {
+						scrollToSection("side-sheets-section", -60);
+					}}
 				/>
 				<NavigationDrawerItem
-					leadingIcon="circle"
+					leadingIcon="dock_to_bottom"
 					label="Bottom Bars"
-					onClick={() => {scrollToSection("bottom-app-bars-section", -60)}}
-
+					onClick={() => {
+						scrollToSection("bottom-app-bars-section", -60);
+					}}
 				/>
 				<NavigationDrawerItem
-					leadingIcon="circle"
+					leadingIcon="train"
 					label="Navigation Rails"
-					onClick={() => {scrollToSection("navigation-rails-section", -60)}}
-
+					onClick={() => {
+						scrollToSection("navigation-rails-section", -60);
+					}}
 				/>
 				<NavigationDrawerItem
-					leadingIcon="circle"
+					leadingIcon="web_asset"
 					label="Top Bars"
-					onClick={() => {scrollToSection("top-app-bars-section", -60)}}
-
+					onClick={() => {
+						scrollToSection("top-app-bars-section", -60);
+					}}
 				/>
+				<NavigationDrawerItem label="Feedback" />
+
 				<NavigationDrawerItem
-					leadingIcon="circle"
+					leadingIcon="icecream"
 					label="Snackbars"
-					onClick={() => {scrollToSection("snackbars-section", -60)}}
-
+					onClick={() => {
+						scrollToSection("snackbars-section", -60);
+					}}
 				/>
 				<NavigationDrawerItem
-					leadingIcon="circle"
+					leadingIcon="construction"
 					label="Tooltips"
-					onClick={() => {scrollToSection("tooltips-section", -60)}}
-
+					onClick={() => {
+						scrollToSection("tooltips-section", -60);
+					}}
 				/>
 				<NavigationDrawerItem
-					leadingIcon="circle"
+					leadingIcon="chat_bubble"
 					label="Dialogs"
-					onClick={() => {scrollToSection("dialogs-section", -60)}}
-
+					onClick={() => {
+						scrollToSection("dialogs-section", -60);
+					}}
 				/>
+				<NavigationDrawerItem label="Presentation" />
+
 				<NavigationDrawerItem
-					leadingIcon="circle"
+					leadingIcon="verified"
 					label="Badges"
-					onClick={() => {scrollToSection("badges-section", -60)}}
-
+					onClick={() => {
+						scrollToSection("badges-section", -60);
+					}}
 				/>
 				<NavigationDrawerItem
-					leadingIcon="circle"
+					leadingIcon="abc"
 					label="Typography"
-					onClick={() => {scrollToSection("typography-section", -60)}}
-
+					onClick={() => {
+						scrollToSection("typography-section", -60);
+					}}
 				/>
 				<NavigationDrawerItem
-					leadingIcon="circle"
+					leadingIcon="favorite"
 					label="Icons"
-					onClick={() => {scrollToSection("icons-section", -60)}}
-
+					onClick={() => {
+						scrollToSection("icons-section", -60);
+					}}
 				/>
 				<NavigationDrawerItem
-					leadingIcon="circle"
+					leadingIcon="add"
 					label="Dividers"
-					onClick={() => {scrollToSection("horizontal-dividers-section", -60)}}
-
+					onClick={() => {
+						scrollToSection("horizontal-dividers-section", -60);
+					}}
 				/>
+				<NavigationDrawerItem label="Content" />
+
 				<NavigationDrawerItem
-					leadingIcon="circle"
+					leadingIcon="credit_card"
 					label="Cards"
-					onClick={() => {scrollToSection("cards-section", -60)}}
-
+					onClick={() => {
+						scrollToSection("cards-section", -60);
+					}}
 				/>
 				<NavigationDrawerItem
-					leadingIcon="circle"
+					leadingIcon="view_carousel"
 					label="Carousels"
-					onClick={() => {scrollToSection("carousels-section", -60)}}
-
+					onClick={() => {
+						scrollToSection("carousels-section", -60);
+					}}
 				/>
 				<NavigationDrawerItem
-					leadingIcon="circle"
+					leadingIcon="format_list_bulleted"
 					label="Lists"
-					onClick={() => {scrollToSection("lists-section", -60)}}
-
+					onClick={() => {
+						scrollToSection("lists-section", -60);
+					}}
 				/>
 			</NavigationDrawer>
 			<TRMD3SideSheet />

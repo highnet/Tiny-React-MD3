@@ -5,5 +5,4 @@ export interface INavigationDrawerItemProps extends IComponentProps {
 	label?: string;
 	trailingText?: string;
 	interactive?: boolean;
-	showDivider?: boolean;
 }

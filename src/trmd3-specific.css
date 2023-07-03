@@ -680,8 +680,8 @@ pre {
 
 /* NAVIGATION DRAWERS SECTION */
 .navigation-drawer-on-frame-trmd3 {
-	position: relative;
-	z-index: 1;
-	left: 0;
-	top: 0;
+	position: absolute;
+	z-index: 10;
+	width: 30rem;
+	height: 30rem;
 }

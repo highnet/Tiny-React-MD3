@@ -6,8 +6,7 @@ import Button from "../Button/Button";
 import { closeDialogRef } from "../Gizmos/Modals";
 import Typography from "../Typography/Typography";
 import HorizontalDivider from "../Dividers/HorizontalDivider/HorizontalDivider";
-import List from "../Lists/List";
-import ListItem from "../Lists/List Items/ListItem";
+
 import Icon from "../Icon/Icon";
 
 const Dialog: React.FC<IDIalogProps> = ({
