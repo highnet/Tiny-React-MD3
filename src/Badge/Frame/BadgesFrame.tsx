@@ -61,22 +61,34 @@ const BadgesFrame: React.FC = () => {
 				<div>
 					<Typography variant={"text-label-small"}>Small</Typography>
 					<Component>
-						<Badge configuration={"small"} xOffset={4.7} yOffset={-0.2} />
+						<Badge
+							configuration={"small"}
+							anchor="top-right"
+							xOffset={-0.4}
+							yOffset={-0.1}
+						/>
 					</Component>
 				</div>
 				<CodeSnippet>
 					{`
 <Component>
-	<Badge 
-		configuration={"small"} 
-		xOffset={4.7} 
-		yOffset={-0.2} />
+	<Badge
+		configuration={"small"}
+		anchor="top-right"
+		xOffset={-0.4}
+		yOffset={-0.1}
+	/>
 </Component>
 `}
 				</CodeSnippet>
 				<div>
 					<Component>
-						<Badge configuration={"single-digit"} xOffset={2.6} yOffset={-0.6}>
+						<Badge
+							configuration={"single-digit"}
+							anchor="top-right"
+							xOffset={-2.5}
+							yOffset={-0.5}
+						>
 							3
 						</Badge>
 					</Component>
@@ -86,8 +98,10 @@ const BadgesFrame: React.FC = () => {
 <Component>
 	<Badge 
 		configuration={"single-digit"}
-		xOffset={2.6} 
-		yOffset={-0.6}>
+		anchor="top-right"
+		xOffset={-2.5}
+		yOffset={-0.5}
+	>
 			3
 	</Badge>
 </Component>
@@ -98,7 +112,8 @@ const BadgesFrame: React.FC = () => {
 					<Component>
 						<Badge
 							configuration={"multiple-digits"}
-							xOffset={2.5}
+							anchor="top-right"
+							xOffset={-2.5}
 							yOffset={-0.6}
 						>
 							123
@@ -110,7 +125,8 @@ const BadgesFrame: React.FC = () => {
 <Component>
 	<Badge
 		configuration={"multiple-digits"}
-		xOffset={2.5}
+		anchor="top-right"
+		xOffset={-2.5}
 		yOffset={-0.6}
 	>
 		123

@@ -40,6 +40,7 @@ const Badge: React.FC<IBadgeProps> = ({
 	onMouseEnter,
 	onMouseLeave,
 	onMouseMove,
+	anchor,
 }) => {
 	const [_id] = useState(id || undefined);
 	const [_className] = useState(className || "");
@@ -47,6 +48,8 @@ const Badge: React.FC<IBadgeProps> = ({
 	const [_xOffset] = useState(xOffset || 0);
 	const [_yOffset] = useState(yOffset || 0);
 	const [_children] = useState(children || "");
+	const [_anchor] = useState(anchor || "top-left");
+
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
@@ -66,13 +69,33 @@ const Badge: React.FC<IBadgeProps> = ({
 		.add("badge-label-text-" + _theme)
 		.toString();
 
+	let style: React.CSSProperties = {
+		transform: `translate(${_computedXOffset}, ${_computedYOffset})`,
+	};
+
+	switch (_anchor) {
+		case "top-left":
+			style.right = "0%";
+			break;
+		case "top-right":
+			style.left = "100%";
+			break;
+		case "bottom-left":
+			style.top = "100%";
+			break;
+		case "bottom-right":
+			style.top = "100%";
+			style.left = "100%";
+			break;
+		default:
+			break;
+	}
+
 	return (
 		<div
 			id={_id}
 			className={_computedComponentClassName}
-			style={{
-				transform: `translate(${_computedXOffset}, ${_computedYOffset})`,
-			}}
+			style={style}
 			onMouseEnter={onMouseEnter}
 			onMouseLeave={onMouseLeave}
 			onMouseMove={onMouseMove}

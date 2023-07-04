@@ -1820,6 +1820,7 @@ html {
 	display: flex;
 	align-items: center;
 	flex-shrink: 0;
+	position: relative;
 }
 
 .badge-small {
