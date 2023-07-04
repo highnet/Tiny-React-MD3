@@ -53,30 +53,22 @@ const Button: React.FC<IButtonProps> = ({
 		.add("btn")
 		.add("btn-" + _config)
 		.add("btn-" + (_icon ? "with" : "without") + "-icon")
-		.add("btn-" + (_disabled ? "disabled" : "enabled"))
+		.add(_disabled ? "btn-disabled" : "")
 		.add("btn-" + _theme)
 		.add(_className)
 		.toString();
-
-	const click = () => {};
 
 	return (
 		<button
 			id={_id}
 			className={_computedComponentClassName}
 			disabled={_disabled}
-			onClick={(e) => {
-				onClick?.(e);
-			}}
+			onClick={onClick}
 			onMouseEnter={onMouseEnter}
 			onMouseLeave={onMouseLeave}
 			onMouseMove={onMouseMove}
 		>
-			{_icon ? (
-				<Icon className={"element-on-button-" + _theme}>{_iconName}</Icon>
-			) : (
-				""
-			)}
+			{_icon && <Icon>{_iconName}</Icon>}
 			<Typography variant="text-label-large">{_children}</Typography>
 		</button>
 	);

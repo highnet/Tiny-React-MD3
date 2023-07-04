@@ -1191,34 +1191,15 @@ html {
 	gap: 0.8rem;
 }
 
-.btn-tonal:disabled.btn-tonal:hover,
-.btn-filled:disabled.btn-filled:hover {
-	box-shadow: none;
-}
-
-.btn-outlined:disabled {
-	opacity: 38%;
-	background-color: transparent;
-}
-
 .btn-text {
 	background-color: transparent;
 	padding: 1rem 1.2rem;
 }
 
-.btn-filled:disabled {
-	opacity: 38%;
-}
 
-.btn-text:disabled {
+.btn-disabled {
 	opacity: 38%;
 	pointer-events: none;
-}
-
-.btn-elevated:disabled {
-	box-shadow: none;
-	pointer-events: none;
-	opacity: 38%;
 }
 
 .btn-tonal:focus {
@@ -1227,11 +1208,6 @@ html {
 
 .btn-tonal:active {
 	box-shadow: none;
-}
-
-.btn-tonal:disabled {
-	opacity: 38%;
-	pointer-events: none;
 }
 
 /* BUTTONS / LIGHT THEME */
@@ -3155,78 +3131,6 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	text-align: center;
 	user-select: none;
 	white-space: nowrap;
-}
-
-
-
-.navigation-rail-hamburger-menu-container {
-	width: 4.8rem;
-	height: 4.8rem;
-	position: relative;
-	cursor: pointer;
-	flex-shrink: 0;
-}
-
-.navigation-rail-hamburger-menu-element {
-	width: 1.4rem;
-	height: .4rem;
-	background-color: black;
-	transition: transform .2s ease-in-out;
-	position: absolute;
-}
-
-.navigation-rail-hamburger-menu-element:nth-child(1) {
-	transform: translate(1rem, 1.6rem);
-}
-
-.navigation-rail-hamburger-menu-element:nth-child(2) {
-	transform: translate(2.4rem, 1.6rem);
-}
-
-.navigation-rail-hamburger-menu-element:nth-child(3) {
-	transform: translate(1rem, 2.4rem);
-}
-
-.navigation-rail-hamburger-menu-element:nth-child(4) {
-	transform: translate(2.4em, 2.4rem);
-}
-
-.navigation-rail-hamburger-menu-element:nth-child(5) {
-	transform: translate(1rem, 3.2rem);
-}
-
-.navigation-rail-hamburger-menu-element:nth-child(6) {
-	transform: translate(2.4rem, 3.2rem);
-}
-
-.navigation-rail-hamburger-menu-element.active:nth-child(1) {
-	transform: translate(1.3rem, 2rem) rotate(225deg);
-	transition-delay: .125s;
-}
-
-.navigation-rail-hamburger-menu-element.active:nth-child(2) {
-	transform: translate(2.1rem, 2rem) rotate(-225deg);
-	transition-delay: .2s;
-}
-
-.navigation-rail-hamburger-menu-element.active:nth-child(3) {
-	transform: translate(1.3rem, 2rem) rotate(225deg);
-	transition-delay: .125s;
-}
-
-.navigation-rail-hamburger-menu-element.active:nth-child(4) {
-	transform: translate(2.1rem, 2rem) rotate(-225deg);
-	transition-delay: .2s;
-}
-
-.navigation-rail-hamburger-menu-element.active:nth-child(5) {
-	transform: translate(2.1rem, 2.7rem) rotate(225deg);
-	transition-delay: .125s;
-}
-
-.navigation-rail-hamburger-menu-element.active:nth-child(6) {
-	transform: translate(1.4rem, 2.7rem) rotate(-225deg);
-	transition-delay: .2s;
 }
 
 .icon-on-navigation-rail {
