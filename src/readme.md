@@ -11,9 +11,7 @@ The Tiny React MD-3 Documentation helps you on your journey to learn how to use 
 ## ⏬ Bottom app bar
 
 <i>Bottom app bars display navigation and key actions at the bottom of a screen.</i>
-    
-[FRAME_TEXT_PLACEHOLDER]
-    
+        
  ```JSX
 <BottomAppBar />
 ```
@@ -29,8 +27,6 @@ You may supplement the following optional properties to a bottom app bar:
 ## 🪪 Horizontal Card
     
 <i>Cards are versatile containers, holding anything from images to headlines, supporting text, buttons, lists, and other components.</i>
-
-[FRAME_TEXT_PLACEHOLDER]
 
 Place a default horizontal card like this:
     
@@ -58,8 +54,6 @@ The supported options of <code>{configuration}</code> are the following:
 ## 🃏 Stacked Card
 
 <i>Cards are versatile containers, holding anything from images to headlines, supporting text, buttons, lists, and other components.</i>
-
-[FRAME_TEXT_PLACEHOLDER]
 
 Place a default stacked card like this:
 
@@ -97,8 +91,6 @@ The supported options of <code>{configuration}</code> are the following:
 
 <i>Chips help people enter information, make selections, filter content, or trigger actions.</i>
 
-[FRAME_TEXT_PLACEHOLDER]
-
 Place a default assist chip like this:
 
 ```JSX
@@ -123,14 +115,10 @@ The supported options of <code>{iconType}</code> are the following:
 1. <code>"icon"</code>
 2. <code>"favicon"</code>
 3. <code>"branded"</code>
-    
-## 🥅 Filter Chip
 
 ## 🔌 Input Chip
 
 <i>Chips help people enter information, make selections, filter content, or trigger actions.</i>
-
-[FRAME_TEXT_PLACEHOLDER]
 
 Place a default input chip like this:
 
@@ -152,16 +140,11 @@ You may supplement the following optional properties to an input chip:
 | avatar                   | boolean | false        | set to true for an avatar          | [IInputChipProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Chips/InputChip/IInputChipProps.tsx)      |
 | avatarIconNameDeselected | string  | "person"     | avatar icon name when deselected   | [IInputChipProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Chips/InputChip/IInputChipProps.tsx)      |
 | avatarIconNameSelected   | string  | "check"      | avatar icon name when selected     | [IInputChipProps.tsx](https://github.com/highnet/Tiny-React-MD3/blob/master/src/Chips/InputChip/IInputChipProps.tsx)      |
- 
-## 😉 Suggestion Chip
+
 
 ## 👉 Horizontal Divider
 
 <i>A divider is a thin line used to group content in lists and layouts.</i>
-
-    Dividers have an inset prop that determines how much space is left on the left and right sides of the divider. The inset prop can be either
-    “none”, “right”, “left”, or “center”. The dividers also have a showInsets prop that controls whether
-    or not to show the inset spaces with a different color.
 
 Place a default horizontal divider like this:
 
@@ -185,10 +168,6 @@ You may supplement the following optional properties to a horizontal divider:
 
 <i>A divider is a thin line used to group content in lists and layouts.</i>
 
-    Dividers have an inset prop that determines how much space is left on the left and right sides of the divider. The inset prop can be either
-    “none”, “top”, “bottom”, or “center”. The dividers also have a showInsets prop that controls whether
-    or not to show the inset spaces with a different color.
-
 Place a default vertical divider like this:
 
 ```JSX
@@ -211,11 +190,6 @@ You may supplement the following optional properties to a vertical divider:
 
 <i>Radio buttons allow users to select one option from a set. They’re a selection control that often appears when users are asked to make decisions or select a choice from options.</i>
 
-    Each radio button is a component and has a name, value, disabled, and defaultChecked prop. The name prop is a string that
-    groups the radio buttons together. The value prop is a string that assigns a value to each radio button.
-    The disabled prop is a boolean that determines whether or not the radio button is disabled and cannot be selected.
-    The defaultChecked prop is a boolean that determines whether or not the radio button is selected by default.
-
 Place a default radio button like this:
 
 ```JSX
@@ -237,11 +211,6 @@ You may supplement the following optional properties to a radio button:
 
 <i>Badges are used to convey dynamic information, such as a count or status. A badge can include text, labels, or numbers.</i>
 
-    Badges come in different sizes and numbers, and are small circular indicators that can be used to show counts, statuses, or notifications
-    on other elements. The Badge component takes a configuration prop to specify the size of the badge,
-    an xOffset and yOffset prop to adjust the position of the badge relative to its parent element,
-    and an optional label prop to display a number on the badge.
-
 Place a default badge component like this:
 
 ```JSX
@@ -257,6 +226,7 @@ You may supplement the following optional properties to a badge:
 | <code>configuration</code> | <code>`string`</code> | <code>"small"</code> | <code>configuration of the component</code>| [IBadgeProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Badge/IBadgeProps.tsx) |
 | <code>xOffset</code> | <code>`number`</code> | <code>0</code> | <code>x axis offset percentage</code>| [IBadgeProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Badge/IBadgeProps.tsx) |
 | <code>yOffset</code> | <code>`number`</code> | <code>0</code> | <code>y axis offset percentage</code>| [IBadgeProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Badge/IBadgeProps.tsx) |
+| <code>anchor</code> | <code>`string`</code> | <code>"top-left"</code> | <code>positioning anchor relative to parent container/code>| [IBadgeProps](https://github.com/highnet/Tiny-React-MD3/blob/master/Tiny-React-MD3/src/Badge/IBadgeProps.tsx) |
 
 The supported options of <code>{configuration}</code> are the following:
 
@@ -267,12 +237,6 @@ The supported options of <code>{configuration}</code> are the following:
 ## ☑️ Checkbox
 
 <i>Checkboxes allow users to select one or more items from a set and can be used to turn an option on or off. They’re a kind of selection control that helps users make a choice from a set of options.</i>
-
-    Checkboxes can have different configurations, states, and styles.
-    selected: a boolean value that indicates whether the checkbox is checked or not
-    onChange: a function that is called when the user clicks on the checkbox
-    configuration: a string that specifies the style of the checkbox, such as “default” or “error”
-    disabled: a boolean value that indicates whether the checkbox is interactive or not
 
 Place a default checkbox component like this:
 
@@ -299,11 +263,6 @@ The supported options of <code>{configuration}</code> are the following:
 
 <i>Use icons to symbolize common actions, files, devices, and directories.</i>
 
-    Each icon is a span element with a class name of “material-symbols-outlined”, which uses a custom font to render the icons.
-    The icons are specified by the text content of the span elements, such as “search”, “home”, “air”,
-    “water”, or “check”. The code demonstrates how to use the material symbols font to create icons with
-    different names and styles.
-
 Place a default icon like this:
 
 ```JSX
@@ -315,10 +274,6 @@ where <code>{name}</code> is the set of all accepted icon names by [Material Sym
 ## 🔤 Typography
 
 <i>Use typography to present your design and content as clearly and efficiently as possible.</i>
-
-    Typography styles are defined using CSS classes to style text elements inside of div elements. The CSS classes specify the font family,
-    size, weight, line height, and letter spacing of the text elements. There are four typography variants: display, headline, title, and body.
-    Each variant has three subvariants: large, medium, and small.
 
 Place div text components by combining class names like this:
 
@@ -343,18 +298,6 @@ and the possible different of <code>{textSize}</code> are the following:
 ## 🕹️ Buttons
 
 <i>Use buttons to help people take actions, such as sending an email, sharing a document, or liking a comment.</i>
-
-    Buttons are an essential part of websites that inspire action and conversion. The button component can render
-    different styles of buttons based on the configuration prop, which can be either “filled” or “outlined”.
-    It can also render an optional icon inside the button text based on the icon and iconName props.
-    The button component also has a default click function that logs a message to the console.
-    The props for the Button component are:
-    configuration: a string that specifies the style of the button, such as “filled” or “outlined”
-    disabled: a boolean value that indicates whether the button is interactive or not
-    onClick: a function that is called when the user clicks on the button
-    icon: a boolean value that indicates whether the button has an icon or not
-    iconName: a string that specifies the name of the icon, such as “search” or “home” The text inside the
-    button is wrapped in a div with a text-label class to apply some styling.
 
 Create a default button component like this:
 
@@ -386,14 +329,6 @@ The supported options of <code>{configuration}</code> are the following:
 
 <i>Switches toggle the state of a single item on or off.</i>
 
-    The Switch component is essentially a toggle button that can be selected or deselected by the user.
-    The props are: selected: a boolean value that indicates whether the switch is on or off
-    onChange: a function that is called when the user clicks on the switch
-    disabled: a boolean value that indicates whether the switch is interactive or not
-    icon: a boolean value that indicates whether the switch has an icon or not
-    iconNameSelected: a string that specifies the name of the icon when the switch is on
-    iconNameDeselected: a string that specifies the name of the icon when the switch is off
-
 Create a default switch component like this:
 
 ```JSX
@@ -416,8 +351,6 @@ You may supplement the following optional properties to a switch:
 ## ☁️ FABs
     
 <i>FABs help people take primary actions. They’re used to represent the most important action on a screen.</i>
-
-[FRAME_TEXT_PLACEHOLDER]
 
 Place a default FAB like this:
     
@@ -451,8 +384,6 @@ The supported options of <code>{size}</code> are the following:
 ## ⛈️ Extended FABs
 
 <i>FABs help people take primary actions. They’re used to represent the most important action on a screen.</i>
-
-[FRAME_TEXT_PLACEHOLDER]
 
 Place a default Extended FAB like this:
     
