@@ -1161,7 +1161,7 @@ html {
 
 /* ==========BUTTONS==========*/
 
-.btn {
+.button {
 	box-sizing: border-box;
 	display: flex;
 	gap: 0.8rem;
@@ -1178,160 +1178,159 @@ html {
 	white-space: nowrap;
 }
 
-.btn text {
+.button text {
 	display: flex;
 	align-items: center;
 	text-align: center;
 	letter-spacing: 0.01rem;
 }
 
-.btn-with-icon {
+.button-with-icon {
 	flex-direction: row;
 	padding: 0rem 0.9rem;
 	gap: 0.8rem;
 }
 
-.btn-text {
+.button-text {
 	background-color: transparent;
 	padding: 1rem 1.2rem;
 }
 
-
-.btn-disabled {
+.button-disabled {
 	opacity: 38%;
 	pointer-events: none;
 }
 
-.btn-tonal:focus {
+.button-tonal:focus {
 	box-shadow: none;
 }
 
-.btn-tonal:active {
+.button-tonal:active {
 	box-shadow: none;
 }
 
 /* BUTTONS / LIGHT THEME */
-.btn-filled.btn-light-theme {
+.button-filled.button-light-theme {
 	background-color: var(--m3-sys-light-primary);
 }
 
-.btn-filled.btn-light-theme > * {
+.button-filled.button-light-theme > * {
 	color: var(--m3-sys-light-on-primary);
 }
 
-.btn-filled:hover.btn-light-theme,
-.btn-filled:focus.btn-light-theme,
-.btn-filled:active.btn-light-theme {
+.button-filled:hover.button-light-theme,
+.button-filled:focus.button-light-theme,
+.button-filled:active.button-light-theme {
 	box-shadow: none;
 }
-.btn-filled:hover.btn-light-theme {
+.button-filled:hover.button-light-theme {
 	background-color: var(
 		--m3-composite-light-primary-passthrough-on-primary-opacity-08
 	);
 	box-shadow: var(--m3-elevation-light-1);
 }
-.btn-filled:focus.btn-light-theme {
+.button-filled:focus.button-light-theme {
 	background-color: var(
 		--m3-composite-light-primary-passthrough-on-primary-opacity-12
 	);
 }
-.btn-filled:active.btn-light-theme {
+.button-filled:active.button-light-theme {
 	background-color: var(
 		--m3-composite-light-primary-passthrough-on-primary-opacity-12
 	);
 }
 
-.btn-outlined.btn-light-theme {
+.button-outlined.button-light-theme {
 	background-color: var(--m3-sys-light-surface);
 	border: 0.1rem solid var(--m3-sys-light-outline);
 }
 
-.btn-outlined.btn-light-theme > * {
+.button-outlined.button-light-theme > * {
 	color: var(--m3-sys-light-primary);
 }
 
-.btn-outlined:hover.btn-light-theme {
+.button-outlined:hover.button-light-theme {
 	background-color: var(--m3-state-layers-light-primary-opacity-08);
 }
-.btn-outlined:active.btn-light-theme {
+.button-outlined:active.button-light-theme {
 	background-color: var(--m3-state-layers-light-primary-opacity-12);
 }
-.btn-outlined:focus.btn-light-theme {
+.button-outlined:focus.button-light-theme {
 	background-color: var(--m3-state-layers-light-primary-opacity-12);
 	border: 0.1rem solid var(--m3-sys-light-primary);
 }
 
-.btn-text.btn-light-theme > * {
+.button-text.button-light-theme > * {
 	color: var(--m3-sys-light-primary);
 }
 
-.btn-text.btn-with-icon {
+.button-text.button-with-icon {
 	padding: 1rem 1.6rem 1rem 1.2rem;
 }
 
-.btn-text:hover.btn-light-theme,
-.btn-text:focus.btn-light-theme,
-.btn-text:active.btn-light-theme {
+.button-text:hover.button-light-theme,
+.button-text:focus.button-light-theme,
+.button-text:active.button-light-theme {
 	background-color: none;
 }
-.btn-text:hover.btn-light-theme {
+.button-text:hover.button-light-theme {
 	background-color: var(--m3-state-layers-light-primary-opacity-08);
 }
-.btn-text:focus.btn-light-theme {
+.button-text:focus.button-light-theme {
 	background-color: var(--m3-state-layers-light-primary-opacity-12);
 }
-.btn-text:active.btn-light-theme {
+.button-text:active.button-light-theme {
 	background-color: var(--m3-state-layers-light-primary-opacity-12);
 }
 
-.btn-elevated.btn-light-theme {
+.button-elevated.button-light-theme {
 	background-color: var(--m3-sys-light-surface-container-low);
 	box-shadow: var(--m3-elevation-light-1);
 }
 
-.btn-elevated.btn-light-theme > * {
+.button-elevated.button-light-theme > * {
 	color: var(--m3-sys-light-primary);
 }
 
-.btn-elevated:hover.btn-light-theme {
+.button-elevated:hover.button-light-theme {
 	background-color: var(
 		--m3-composite-light-surface-container-low-passthrough-primary-opacity-08
 	);
 	box-shadow: var(--m3-elevation-light-2);
 }
-.btn-elevated:focus.btn-light-theme {
+.button-elevated:focus.button-light-theme {
 	background-color: var(
 		--m3-composite-light-surface-container-low-passthrough-primary-opacity-08
 	);
 	box-shadow: var(--m3-elevation-light-1);
 }
-.btn-elevated:active.btn-light-theme {
+.button-elevated:active.button-light-theme {
 	background-color: var(
 		--m3-composite-light-surface-container-low-passthrough-primary-opacity-12
 	);
 	box-shadow: var(--m3-elevation-light-1);
 }
 
-.btn-tonal.btn-light-theme {
+.button-tonal.button-light-theme {
 	background-color: var(--m3-sys-light-secondary-container);
 }
 
-.btn-tonal.btn-light-theme > * {
+.button-tonal.button-light-theme > * {
 	color: var(--m3-sys-light-on-secondary-container);
 }
 
-.btn-tonal:hover.btn-light-theme {
+.button-tonal:hover.button-light-theme {
 	background-color: var(
 		--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-08
 	);
 	box-shadow: var(--m3-elevation-light-1);
 }
-.btn-tonal:focus.btn-light-theme {
+.button-tonal:focus.button-light-theme {
 	background-color: var(
 		--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-12
 	);
 }
-.btn-tonal:active.btn-light-theme {
+.button-tonal:active.button-light-theme {
 	background-color: var(
 		--m3-composite-light-secondary-container-passthrough-on-secondary-container-opacity-12
 	);
@@ -1339,137 +1338,137 @@ html {
 
 /* BUTTONS / DARK THEME */
 
-.btn-filled.btn-dark-theme {
+.button-filled.button-dark-theme {
 	background-color: var(--m3-sys-dark-primary);
 }
 
-.btn-filled.btn-dark-theme > * {
+.button-filled.button-dark-theme > * {
 		color: var(--m3-sys-dark-on-primary);
 }
 
-.btn-filled:hover.btn-dark-theme,
-.btn-filled:focus.btn-dark-theme,
-.btn-filled:active.btn-dark-theme {
+.button-filled:hover.button-dark-theme,
+.button-filled:focus.button-dark-theme,
+.button-filled:active.button-dark-theme {
 	box-shadow: none;
 }
-.btn-filled:hover.btn-dark-theme {
+.button-filled:hover.button-dark-theme {
 	background-color: var(
 		--m3-composite-dark-primary-passthrough-on-primary-opacity-08
 	);
 	box-shadow: var(--m3-elevation-dark-1);
 }
-.btn-filled:focus.btn-dark-theme {
+.button-filled:focus.button-dark-theme {
 	background-color: var(
 		--m3-composite-dark-primary-passthrough-on-primary-opacity-12
 	);
 }
-.btn-filled:active.btn-dark-theme {
+.button-filled:active.button-dark-theme {
 	background-color: var(
 		--m3-composite-dark-primary-passthrough-on-primary-opacity-12
 	);
 }
 
-.btn-outlined.btn-dark-theme {
+.button-outlined.button-dark-theme {
 	background-color: var(--m3-sys-dark-surface);
 	border: 0.1rem solid var(--m3-sys-dark-outline);
 }
 
-.btn-outlined.btn-dark-theme > * {
+.button-outlined.button-dark-theme > * {
 	color: var(--m3-sys-dark-primary);
 }
 
-.btn-outlined:hover.btn-dark-theme {
+.button-outlined:hover.button-dark-theme {
 	background-color: var(--m3-state-layers-dark-primary-opacity-08);
 }
-.btn-outlined:focus.btn-dark-theme {
+.button-outlined:focus.button-dark-theme {
 	background-color: var(--m3-state-layers-dark-primary-opacity-12);
 	border: 0.1rem solid var(--m3-sys-dark-primary);
 }
-.btn-outlined:active.btn-dark-theme {
+.button-outlined:active.button-dark-theme {
 	background-color: var(--m3-state-layers-dark-primary-opacity-12);
 }
 
 
-.btn-text.btn-dark-theme > * {
+.button-text.button-dark-theme > * {
 	color: var(--m3-sys-dark-primary);
 }
 
-.btn-text:hover.btn-dark-theme,
-.btn-text:focus.btn-dark-theme,
-.btn-text:active.btn-dark-theme {
+.button-text:hover.button-dark-theme,
+.button-text:focus.button-dark-theme,
+.button-text:active.button-dark-theme {
 	background-color: none;
 }
-.btn-text:hover.btn-dark-theme {
+.button-text:hover.button-dark-theme {
 	background-color: var(--m3-state-layers-dark-primary-opacity-08);
 }
-.btn-text:focus.btn-dark-theme {
+.button-text:focus.button-dark-theme {
 	background-color: var(--m3-state-layers-dark-primary-opacity-12);
 }
-.btn-text:active.btn-dark-theme {
+.button-text:active.button-dark-theme {
 	background-color: var(--m3-state-layers-dark-primary-opacity-12);
 }
 
-.btn-elevated.btn-dark-theme {
+.button-elevated.button-dark-theme {
 	background-color: var(--m3-sys-dark-surface-container-low);
 	box-shadow: var(--m3-elevation-dark-1);
 }
 
-.btn-elevated.btn-dark-theme > * {
+.button-elevated.button-dark-theme > * {
 	color: var(--m3-sys-dark-primary);
 }
 
-.btn-elevated:hover.btn-dark-theme,
-.btn-elevated:focus.btn-dark-theme,
-.btn-elevated:active.btn-dark-theme {
+.button-elevated:hover.button-dark-theme,
+.button-elevated:focus.button-dark-theme,
+.button-elevated:active.button-dark-theme {
 	background-color: none;
 }
-.btn-elevated:hover.btn-dark-theme {
+.button-elevated:hover.button-dark-theme {
 	background-color: var(
 		--m3-composite-dark-surface-container-low-passthrough-on-primary-opacity-08
 	);
 	box-shadow: var(--m3-elevation-dark-2);
 }
-.btn-elevated:focus.btn-dark-theme {
+.button-elevated:focus.button-dark-theme {
 	background-color: var(
 		--m3-composite-dark-surface-container-low-passthrough-primary-opacity-12
 	);
 }
-.btn-elevated:active.btn-dark-theme {
+.button-elevated:active.button-dark-theme {
 	background-color: var(
 		--m3-composite-dark-surface-container-low-passthrough-on-primary-opacity-12
 	);
 }
 
-.btn-tonal.btn-dark-theme {
+.button-tonal.button-dark-theme {
 	background-color: var(--m3-sys-dark-secondary-container);
 }
 
-.btn-tonal.btn-dark-theme > * {
+.button-tonal.button-dark-theme > * {
 		color: var(--m3-sys-dark-on-secondary-container);
 }
 
-.btn-tonal:hover.btn-dark-theme,
-.btn-tonal:focus.btn-dark-theme,
-.btn-tonal:active.btn-dark-theme {
+.button-tonal:hover.button-dark-theme,
+.button-tonal:focus.button-dark-theme,
+.button-tonal:active.button-dark-theme {
 	background-color: none;
 }
-.btn-tonal:hover.btn-dark-theme {
+.button-tonal:hover.button-dark-theme {
 	background-color: var(
 		--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-08
 	);
 	box-shadow: var(--m3-elevation-dark-1);
 }
-.btn-tonal:focus.btn-dark-theme {
+.button-tonal:focus.button-dark-theme {
 	background-color: var(
 		--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12
 	);
 }
-.btn-tonal:active.btn-dark-theme {
+.button-tonal:active.button-dark-theme {
 	background-color: var(
 		--m3-composite-dark-secondary-container-passthrough-on-secondary-container-opacity-12
 	);
 }
-.btn-tonal:disabled.btn-dark-theme {
+.button-tonal:disabled.button-dark-theme {
 	background-color: var(--m3-state-layers-dark-on-surface-opacity-12);
 	color: var(--m3-sys-dark-on-surface);
 }
@@ -4087,7 +4086,7 @@ li {
 	gap: .8rem;
 }
 
-.dialog-actions .btn {
+.dialog-actions .button {
 	flex: 1;
 	max-width: 7.7rem;
 }
@@ -4419,19 +4418,19 @@ li {
 	color: var(--m3-sys-light-inverse-on-surface);
 }
 
-.snackbar-light-theme .btn .text {
+.snackbar-light-theme .button .text {
 	color: var(--m3-sys-light-inverse-primary);
 }
 
-.snackbar-light-theme .btn:hover {
+.snackbar-light-theme .button:hover {
 	background-color: var(--m3-state-layers-light-inverse-primary-opacity-08);
 }
 
-.snackbar-light-theme .btn:focus {
+.snackbar-light-theme .button:focus {
 	background-color: var(--m3-state-layers-light-inverse-primary-opacity-12);
 }
 
-.snackbar-light-theme .btn:active {
+.snackbar-light-theme .button:active {
 	background-color: var(--m3-state-layers-light-inverse-primary-opacity-12);
 }
 
@@ -4446,19 +4445,19 @@ li {
 	color: var(--m3-sys-dark-inverse-on-surface);
 }
 
-.snackbar-dark-theme .btn .text {
+.snackbar-dark-theme .button .text {
 	color: var(--m3-sys-dark-inverse-primary);
 }
 
-.snackbar-dark-theme .btn:hover {
+.snackbar-dark-theme .button:hover {
 	background-color: var(--m3-state-layers-dark-inverse-primary-opacity-08);
 }
 
-.snackbar-dark-theme .btn:focus {
+.snackbar-dark-theme .button:focus {
 	background-color: var(--m3-state-layers-dark-inverse-primary-opacity-12);
 }
 
-.snackbar-dark-theme .btn:active {
+.snackbar-dark-theme .button:active {
 	background-color: var(--m3-state-layers-dark-inverse-primary-opacity-12);
 }
 

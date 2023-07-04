@@ -67,11 +67,7 @@ const ButtonsFrame: React.FC = () => {
 				Filled Buttons
 			</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>No Icon</Typography>
-			<Button
-				configuration="filled"
-				onClick={undefined}
-				disabled={true}
-			></Button>
+			<Button configuration="filled" onClick={undefined}></Button>
 			<CodeSnippet>
 				{`
 <Button 

@@ -50,11 +50,11 @@ const Button: React.FC<IButtonProps> = ({
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
 	let _computedComponentClassName = new StringBuilder()
-		.add("btn")
-		.add("btn-" + _config)
-		.add("btn-" + (_icon ? "with" : "without") + "-icon")
-		.add(_disabled ? "btn-disabled" : "")
-		.add("btn-" + _theme)
+		.add("button")
+		.add("button-" + _config)
+		.add(_icon ? "button-with-icon" : "")
+		.add(_disabled ? "button-disabled" : "")
+		.add("button-" + _theme)
 		.add(_className)
 		.toString();
 
