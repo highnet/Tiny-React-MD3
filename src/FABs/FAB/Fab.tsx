@@ -22,19 +22,12 @@ const Fab: React.FC<IFabProps> = ({
 	const [_config] = useState(configuration || "surface");
 	const [_iconName] = useState(iconName || "edit");
 	const [_size] = useState(size || "small");
-	const _theme =
-		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
-
-	let _computedComponentClassName = new StringBuilder()
-		.add("fab")
-		.add("fab-" + _size)
-		.add("fab-" + _config)
-		.add("fab-" + _theme)
-		.add(_className)
-		.toString();
 
 	const boxRef = useRef<HTMLButtonElement>(null);
 	const innerCircleRef = useRef<HTMLSpanElement>(null);
+
+	const _theme =
+		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
 	useEffect(() => {
 		const box = boxRef.current;
@@ -61,28 +54,29 @@ const Fab: React.FC<IFabProps> = ({
 		};
 	}, [boxRef, innerCircleRef]);
 
+	let _computedComponentClassName = new StringBuilder()
+		.add("fab")
+		.add("fab-" + _size)
+		.add("fab-" + _config)
+		.add("fab-" + _theme)
+		.add(_className)
+		.toString();
+
 	return (
 		<div className="fab-container">
 			<button
 				id={_id}
 				className={_computedComponentClassName}
-				onClick={(e) => {
-					onClick?.(e);
-				}}
+				onClick={onClick}
 				onMouseEnter={onMouseEnter}
 				onMouseLeave={onMouseLeave}
 				onMouseMove={onMouseMove}
 				ref={boxRef}
 			>
-				<Icon className={"icon-on-fab icon-on-fab-" + _theme}>{_iconName}</Icon>
+				<Icon>{_iconName}</Icon>
 				<span className="fab-inner-circle" ref={innerCircleRef}></span>
 			</button>
-			<Typography
-				variant="text-label-medium"
-				className={"label-on-fab label-on-fab-" + _theme}
-			>
-				{children}
-			</Typography>
+			<Typography variant="text-label-medium">{children}</Typography>
 		</div>
 	);
 };

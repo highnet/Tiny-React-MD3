@@ -3,10 +3,6 @@ html {
 	scroll-behavior: smooth;
 }
 
-/* APP */
-
-
-
 /* BODY */
 
 .body-light-theme {
@@ -100,7 +96,6 @@ html {
 	flex-direction: row;
 }
 
-
 /* THEME TOGGLING */
 .theme-toggler-trmd3 {
 	flex-basis: 80%;
@@ -170,18 +165,16 @@ html {
 	margin-bottom: 0.3rem;
 	margin-right: 10%;
 	margin-left: 10%;
-
 }
 
 .cookietrail-buttons-trmd3 {
 	gap: 1rem;
 	display: flex;
 	flex-direction: row;
-	}
+}
 
 .cookietrail-button-trmd3 {
 	width: 100%;
-
 }
 
 @media (max-width: 768px) {
@@ -207,8 +200,8 @@ html {
 	justify-content: center;
 	text-align: center;
 	overflow: hidden;
-	padding-left: 8rem;
-	padding-right: 8rem;
+	padding-left: 5%;
+	padding-right: 5%;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 }
@@ -401,7 +394,6 @@ html {
 	font-size: 1.4rem;
 	font-family: "Comic Mono", monospace;
 	text-align: left;
-
 }
 
 @media screen and (max-width: 600px) {
@@ -494,17 +486,17 @@ pre {
 
 /* NAVIGATION RAILS */
 
-  /* BOTTOM APP BARS */
-  .bottom-app-bar-on-frame-trmd3 { 
+/* BOTTOM APP BARS */
+.bottom-app-bar-on-frame-trmd3 {
 	z-index: 1;
-  }
+}
 
-  .bottom-app-bar{
+.bottom-app-bar {
 	justify-content: flex-end;
-  }
+}
 
-  /* NAVIGATION RAILS */
-.navigation-rail-on-frame-trmd3{ 
+/* NAVIGATION RAILS */
+.navigation-rail-on-frame-trmd3 {
 	position: relative;
 	z-index: 1;
 	border: 1px solid gray;
@@ -520,19 +512,19 @@ pre {
 	max-width: 80%;
 }
 
-.text-fields-frame-trmd3{
+.text-fields-frame-trmd3 {
 	gap: 1rem;
 }
 
 /* LISTS SECTION*/
-.lists-subframe-trmd3{
+.lists-subframe-trmd3 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	border-radius: 1.6rem;
 }
 
-.lists-subframe-light-theme-trmd3{
+.lists-subframe-light-theme-trmd3 {
 	background-color: var(--m3-sys-light-surface-container-low);
 }
 
@@ -542,7 +534,7 @@ pre {
 
 /* SIDE SHEETS */
 
-.side-sheet-on-frame-trmd3{
+.side-sheet-on-frame-trmd3 {
 	position: relative;
 	z-index: 1;
 	border: 1px solid gray;
@@ -554,7 +546,7 @@ pre {
 }
 
 /* SLIDERS */
-.sliders-subframe-trmd3{
+.sliders-subframe-trmd3 {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
@@ -564,7 +556,7 @@ pre {
 	justify-content: center;
 }
 
-.sliders-subframe-light-theme-trmd3{
+.sliders-subframe-light-theme-trmd3 {
 	background-color: var(--m3-sys-light-surface);
 }
 
@@ -578,7 +570,7 @@ pre {
 }
 
 /* SNACKBARS */
-.snackbar-on-frame-trmd3{
+.snackbar-on-frame-trmd3 {
 	position: relative;
 	z-index: 1;
 	opacity: 1;
@@ -589,7 +581,7 @@ pre {
 }
 
 /* ICON BUTTONS SECTION */
-.icon-buttons-subframe-trmd3{
+.icon-buttons-subframe-trmd3 {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -598,17 +590,17 @@ pre {
 	padding: 1rem;
 }
 
-.icon-buttons-subframe-light-theme-trmd3{
+.icon-buttons-subframe-light-theme-trmd3 {
 	background-color: var(--m3-sys-light-surface-container);
 }
 
-.icon-buttons-subframe-dark-theme-trmd3{
+.icon-buttons-subframe-dark-theme-trmd3 {
 	background-color: var(--m3-sys-dark-surface-container);
 }
 
 /* SEGMENTED BUTTONS SECTION */
 
-.segmented-buttons-subframe-trmd3{
+.segmented-buttons-subframe-trmd3 {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -619,7 +611,7 @@ pre {
 	width: 80%;
 }
 
-.segmented-buttons-subframe-light-theme-trmd3{
+.segmented-buttons-subframe-light-theme-trmd3 {
 	background-color: var(--m3-sys-light-surface-container-low);
 }
 
@@ -628,7 +620,7 @@ pre {
 }
 
 /* INPUT CHIPS SECTION */
-.input-chips-subframe-trmd3{
+.input-chips-subframe-trmd3 {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -639,7 +631,7 @@ pre {
 	width: 80%;
 }
 
-.input-chips-subframe-light-theme-trmd3{
+.input-chips-subframe-light-theme-trmd3 {
 	background-color: var(--m3-sys-light-surface);
 }
 
@@ -648,7 +640,7 @@ pre {
 }
 
 /* ASSIST CHIPS SECTION */
-.assist-chips-subframe-trmd3{
+.assist-chips-subframe-trmd3 {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -659,7 +651,7 @@ pre {
 	width: 80%;
 }
 
-.assist-chips-subframe-light-theme-trmd3{
+.assist-chips-subframe-light-theme-trmd3 {
 	background-color: var(--m3-sys-light-surface);
 }
 
@@ -669,7 +661,7 @@ pre {
 
 /* MENUS SECTION */
 
-.menu-on-frame-trmd3{
+.menu-on-frame-trmd3 {
 	position: relative;
 	left: 0;
 	top: 0;
@@ -686,4 +678,3 @@ pre {
 	width: 40%;
 	padding-top: 0;
 }
-

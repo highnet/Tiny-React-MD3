@@ -29,23 +29,27 @@ const BottomAppBar: React.FC<IBottomAppBarProps> = ({
 		.add(_className)
 		.toString();
 
+	let _computedComponentIconClassName = new StringBuilder()
+		.add("icon-on-bottom-app-bar")
+		.add("icon-on-bottom-app-bar-" + _theme)
+		.toString();
+
+	let _computedComponentLabelClassName = new StringBuilder()
+		.add("label-on-bottom-app-bar")
+		.add("label-on-bottom-app-bar-" + _theme)
+		.toString();
+
 	const iconElements = _icons.map((icon, index) => (
 		<div
-			className={
-				"icon-container-on-bottom-app-bar icon-container-on-bottom-app-bar-" +
-				_theme
-			}
+			className={"icon-container-on-bottom-app-bar"}
 			key={index}
 			tabIndex={0}
 		>
-			<Icon
-				className={"icon-on-bottom-app-bar icon-on-bottom-app-bar-" + _theme}
-				onClick={icon.onClick}
-			>
+			<Icon className={_computedComponentIconClassName} onClick={icon.onClick}>
 				{icon.name}
 			</Icon>
 			<Typography
-				className={"label-on-bottom-app-bar label-on-bottom-app-bar-" + _theme}
+				className={_computedComponentLabelClassName}
 				variant="text-label-small"
 			>
 				{icon.label}
