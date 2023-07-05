@@ -31,21 +31,17 @@ const ExtendedFab: React.FC<IExtendedFabProps> = ({
 		.add(_className)
 		.toString();
 
-	const click = () => {};
+	let _computedComponentLabelClassName = new StringBuilder()
+		.add("label-on-fab")
+		.add("label-on-fab-" + _theme)
+		.toString();
 
 	return (
-		<button
-			id={_id}
-			className={_computedComponentClassName}
-			onClick={(e) => {
-				onClick?.(e);
-				click();
-			}}
-		>
-			<Icon className={"icon-on-fab icon-on-fab-" + _theme}>{_iconName}</Icon>
+		<button id={_id} className={_computedComponentClassName} onClick={onClick}>
+			<Icon>{_iconName}</Icon>
 			<Typography
 				variant="text-label-large"
-				className={"label-on-fab label-on-fab-" + _theme}
+				className={_computedComponentLabelClassName}
 			>
 				{_children}
 			</Typography>
