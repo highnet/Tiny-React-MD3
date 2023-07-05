@@ -15,19 +15,21 @@
 
 import Button from "../../Button/Button";
 import { openLinkInNewTab } from "../../Gizmos/Redirection";
+import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../../Gizmos/Themeing";
 
 const Cookietrail: React.FC = () => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
+	let _computedComponentClassName = new StringBuilder()
+		.add("cookietrail-section-trmd3")
+		.add("cookietrail-section-" + _theme + "-trmd3")
+		.toString();
+
 	return (
-		<div
-			className={
-				"cookietrail-section-trmd3 cookietrail-section-" + _theme + "-trmd3"
-			}
-		>
-			<div className={"flex-trmd3 flex-row-trmd3 cookietrail-buttons-trmd3"}>
+		<div className={_computedComponentClassName}>
+			<div className={"cookietrail-buttons-trmd3"}>
 				<Button
 					configuration="tonal"
 					icon={true}
