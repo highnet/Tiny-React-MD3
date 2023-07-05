@@ -1702,6 +1702,11 @@ html {
 	position: absolute;
 }
 
+.checkbox-disabled {
+	opacity: 38%;
+	pointer-events: none;
+}
+
 /* CHECKBOXES / LIGHT */
 .checkbox-default.checkbox-light-theme {
 	background-color: var(--m3-sys-light-primary);
@@ -1709,12 +1714,6 @@ html {
 
 .checkbox-error.checkbox-light-theme {
 	background-color: var(--m3-sys-light-error);
-}
-
-.checkbox-disabled.checkbox-light-theme {
-	background-color: var(--m3-sys-light-on-surface);
-	opacity: 38%;
-	pointer-events: none;
 }
 
 .checkbox-deselected.checkbox-light-theme {
@@ -1763,12 +1762,6 @@ html {
 	background-color: var(--m3-sys-dark-error);
 }
 
-.checkbox-disabled.checkbox-dark-theme {
-	background-color: var(--m3-sys-dark-on-surface);
-	opacity: 38%;
-	pointer-events: none;
-}
-
 .checkbox-deselected.checkbox-dark-theme {
 	background-color: transparent;
 	border: 0.2rem solid var(--m3-sys-dark-on-surface-variant);
@@ -1776,14 +1769,6 @@ html {
 
 .checkbox-deselected.checkbox-error.checkbox-dark-theme {
 	border: 0.2rem solid var(--m3-sys-dark-error);
-}
-
-.checkbox-enabled.checkbox-dark-theme > div > .icon-on-checkbox {
-	color: var(--m3-sys-dark-on-primary);
-}
-
-.checkbox-disabled.checkbox-dark-theme > div > .icon-on-checkbox {
-	color: var(--m3-sys-dark-surface);
 }
 
 .checkbox-error.checkbox-dark-theme > .icon-on-checkbox {

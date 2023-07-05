@@ -21,7 +21,7 @@
 	function updates the selected state and triggers the click function.
 */
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { ICheckboxProps } from "./ICheckboxProps";
 import { StringBuilder } from "../Gizmos/StringBuilder";
 import { getPreferredScheme } from "../Gizmos/Themeing";
@@ -55,9 +55,9 @@ const Checkbox: React.FC<ICheckboxProps> = ({
 	let _computedComponentClassName = new StringBuilder()
 		.add("checkbox")
 		.add("checkbox-" + _config)
-		.add("checkbox-" + (_selected ? "selected" : "deselected"))
-		.add("checkbox-" + (_disabled ? "disabled" : "enabled"))
 		.add("checkbox-" + _theme)
+		.add(!_selected ? "checkbox-deselected" : "")
+		.add(_disabled ? "checkbox-disabled" : "")
 		.add(_className)
 		.toString();
 
@@ -67,8 +67,6 @@ const Checkbox: React.FC<ICheckboxProps> = ({
 
 	let _computedComponentOverlayClassName = new StringBuilder()
 		.add("checkbox-overlay")
-		.add("checkbox-overlay-" + (_selected ? "selected" : "deselected"))
-		.add("checkbox-overlay-" + (_disabled ? "disabled" : "enabled"))
 		.toString();
 
 	return (
