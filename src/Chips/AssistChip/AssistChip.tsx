@@ -55,23 +55,17 @@ const AssistChip: React.FC<IAssistChipProps> = ({
 		<button
 			id={_id}
 			className={_computedComponentClassName}
-			onClick={(e) => {
-				onClick?.(e);
-			}}
+			onClick={onClick}
 			onMouseEnter={onMouseEnter}
 			onMouseLeave={onMouseLeave}
 			onMouseMove={onMouseMove}
 		>
-			{_iconType === "icon" ? (
+			{_iconType === "icon" && (
 				<Icon className="icon-on-assistchip">{_iconName}</Icon>
-			) : (
-				""
 			)}
 
-			{_iconType === "favicon" || _iconType === "branded" ? (
+			{(_iconType === "favicon" || _iconType === "branded") && (
 				<img className={_iconType + "-on-assistchip"} src={_iconSrc}></img>
-			) : (
-				""
 			)}
 
 			<Typography variant={"text-label-large"} className="text-on-assistchip">
