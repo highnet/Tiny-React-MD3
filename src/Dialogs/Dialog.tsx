@@ -44,14 +44,6 @@ const Dialog: React.FC<IDIalogProps> = ({
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
-	let _computedComponentClassName = new StringBuilder()
-		.add("dialog")
-		.add("dialog-" + _theme)
-		.add("dialog-" + _configuration)
-		.add(_showDivider ? "dialog-with-divider" : "")
-		.add(_className)
-		.toString();
-
 	const actionButtons = _showActions && (
 		<div className="dialog-actions">
 			{_buttons?.map((button, index) => (
@@ -86,6 +78,13 @@ const Dialog: React.FC<IDIalogProps> = ({
 		};
 	}, []);
 
+	let _computedComponentClassName = new StringBuilder()
+		.add("dialog")
+		.add("dialog-" + _theme)
+		.add("dialog-" + _configuration)
+		.add(_className)
+		.toString();
+
 	return (
 		<div>
 			<dialog
@@ -116,7 +115,7 @@ const Dialog: React.FC<IDIalogProps> = ({
 				)}
 				{_configuration === "list" &&
 					listComponent &&
-					React.cloneElement(listComponent, { className: "list-on-dialog" })}
+					React.cloneElement(listComponent)}
 				{actionButtons}
 			</dialog>
 		</div>
