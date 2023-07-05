@@ -19,7 +19,7 @@ const BottomAppBar: React.FC<IBottomAppBarProps> = ({
 		onClick: fab?.onClick ?? (() => {}),
 	});
 	const [_fabIconName] = useState(fab?.fabIconName ?? "add");
-	
+
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
@@ -32,7 +32,7 @@ const BottomAppBar: React.FC<IBottomAppBarProps> = ({
 	const iconElements = _icons.map((icon, index) => (
 		<div
 			className={
-				"container-on-icon-on-bottom-app-bar container-on-icon-on-bottom-app-bar-" +
+				"icon-container-on-bottom-app-bar icon-container-on-bottom-app-bar-" +
 				_theme
 			}
 			key={index}
@@ -45,8 +45,8 @@ const BottomAppBar: React.FC<IBottomAppBarProps> = ({
 				{icon.name}
 			</Icon>
 			<Typography
-				variant="text-label-small"
 				className={"label-on-bottom-app-bar label-on-bottom-app-bar-" + _theme}
+				variant="text-label-small"
 			>
 				{icon.label}
 			</Typography>
@@ -56,14 +56,14 @@ const BottomAppBar: React.FC<IBottomAppBarProps> = ({
 	return (
 		<div id={_id} className={_computedComponentClassName}>
 			<div className="icons-on-bottom-app-bar">{iconElements}</div>
-			{fab && fab.onClick ? (
+			{fab && fab.onClick && (
 				<Fab
 					configuration="secondary"
 					size="medium"
 					iconName={_fabIconName}
 					onClick={_fab.onClick}
-				></Fab>
-			) : null}
+				/>
+			)}
 		</div>
 	);
 };

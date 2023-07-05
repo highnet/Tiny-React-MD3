@@ -3270,7 +3270,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	display: flex;
 }
 
-.container-on-icon-on-bottom-app-bar {
+.icon-container-on-bottom-app-bar {
 	position: relative;
 	cursor: pointer;
 	display: flex;
@@ -3298,15 +3298,15 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	color: var(--m3-sys-light-on-surface-variant);
 }
 
-.container-on-icon-on-bottom-app-bar:hover.container-on-icon-on-bottom-app-bar-light-theme {
+.icon-container-on-bottom-app-bar:hover.icon-container-on-bottom-app-bar-light-theme {
 	background-color: var(--m3-state-layers-light-on-surface-variant-opacity-08);
 }
 
-.container-on-icon-on-bottom-app-bar:focus.container-on-icon-on-bottom-app-bar-light-theme {
+.icon-container-on-bottom-app-bar:focus.icon-container-on-bottom-app-bar-light-theme {
 	background-color: var(--m3-state-layers-light-on-surface-variant-opacity-12);
 }
 
-.container-on-icon-on-bottom-app-bar:active.container-on-icon-on-bottom-app-bar-light-theme {
+.icon-container-on-bottom-app-bar:active.icon-container-on-bottom-app-bar-light-theme {
 	background-color: var(--m3-state-layers-light-on-surface-variant-opacity-12);
 }
 
@@ -3321,15 +3321,15 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	color: var(--m3-sys-dark-on-surface-variant);
 }
 
-.container-on-icon-on-bottom-app-bar:hover.container-on-icon-on-bottom-app-bar-dark-theme {
+.icon-container-on-bottom-app-bar:hover.icon-container-on-bottom-app-bar-dark-theme {
 	background-color: var(--m3-state-layers-dark-on-surface-variant-opacity-08);
 }
 
-.container-on-icon-on-bottom-app-bar:focus.container-on-icon-on-bottom-app-bar-dark-theme {
+.icon-container-on-bottom-app-bar:focus.icon-container-on-bottom-app-bar-dark-theme {
 	background-color: var(--m3-state-layers-dark-on-surface-variant-opacity-12);
 }
 
-.container-on-icon-on-bottom-app-bar:active.container-on-icon-on-bottom-app-bar-bar-dark-theme {
+.icon-container-on-bottom-app-bar:active.icon-container-on-bottom-app-bar-bar-dark-theme {
 	background-color: var(--m3-state-layers-dark-on-surface-variant-opacity-12);
 }
 
