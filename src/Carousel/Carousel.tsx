@@ -36,8 +36,10 @@ const Carousel: React.FC<ICarouselProps> = ({
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const ref = useRef<HTMLDivElement>(null);
 
-	const _theme =
-		localStorage.getItem("theme") || `${getPreferredScheme()}-theme`;
+	const computedComponentClassName = new StringBuilder()
+		.add("carousel")
+		.add(_className)
+		.toString();
 
 	const handleIndexChange = (newIndex: number) => {
 		setCurrentIndex(newIndex);
@@ -83,12 +85,6 @@ const Carousel: React.FC<ICarouselProps> = ({
 			carousel.scrollLeft = 0;
 		}
 	});
-
-	const computedComponentClassName = new StringBuilder()
-		.add("carousel")
-		.add(`carousel-${_theme}`)
-		.add(_className)
-		.toString();
 
 	return (
 		<div

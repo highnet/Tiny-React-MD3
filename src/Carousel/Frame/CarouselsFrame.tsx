@@ -36,11 +36,6 @@ const CarouselsFrame: React.FC = () => {
 				Carousels
 			</ComponentFrameTitle>
 			<Typography variant={"text-label-small"}>Non-uniform Layout</Typography>
-			<Carousel />
-			<CodeSnippet>{"<Carousel />"}</CodeSnippet>
-			<Typography variant={"text-label-small"}>Uniform Layout</Typography>
-			<Carousel uniformWidths={true} />
-			<CodeSnippet>{"<Carousel uniformWidths={true} />"}</CodeSnippet>
 			<Carousel
 				images={[
 					{
@@ -75,6 +70,9 @@ const CarouselsFrame: React.FC = () => {
 		]}
 	/>`}
 			</CodeSnippet>
+			<Typography variant={"text-label-small"}>Uniform Layout</Typography>
+			<Carousel uniformWidths={true} />
+			<CodeSnippet>{"<Carousel uniformWidths={true} />"}</CodeSnippet>
 		</div>
 	);
 };
