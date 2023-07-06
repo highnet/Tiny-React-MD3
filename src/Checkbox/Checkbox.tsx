@@ -81,10 +81,8 @@ const Checkbox: React.FC<ICheckboxProps> = ({
 			onMouseLeave={onMouseLeave}
 			onMouseMove={onMouseMove}
 		>
-			{_selected ? (
+			{_selected && (
 				<Icon className={_computedComponentIconClassName}>check</Icon>
-			) : (
-				""
 			)}
 			<div className={_computedComponentOverlayClassName}></div>
 		</div>

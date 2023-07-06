@@ -142,14 +142,12 @@ const TextField: React.FC<ITextFieldProps> = ({
 						></input>
 					</div>
 					{trailingIcon && (
-						<div className="icon-wrapper">
-							<IconButton
-								onClick={handleResetTextFieldValue}
-								className="trailing-icon-on-text-field"
-							>
-								{!isValidInput ? "error" : "cancel"}
-							</IconButton>
-						</div>
+						<IconButton
+							onClick={handleResetTextFieldValue}
+							className="trailing-icon-on-text-field"
+						>
+							{!isValidInput ? "error" : "cancel"}
+						</IconButton>
 					)}
 				</div>
 			</div>

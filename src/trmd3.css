@@ -1483,7 +1483,7 @@ html {
 	font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 20;
 }
 
-.icon-wrapper {
+.icon {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1686,7 +1686,6 @@ html {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	right: 13%;
 }
 
 .checkbox-overlay {
@@ -1712,6 +1711,10 @@ html {
 	background-color: var(--m3-sys-light-error);
 }
 
+.checkbox-error.checkbox-light-theme .icon-on-checkbox {
+	color: var(--m3-sys-light-on-error);
+}
+
 .checkbox-deselected.checkbox-light-theme {
 	background-color: transparent;
 	border: 0.2rem solid var(--m3-sys-light-on-surface-variant);
@@ -1721,7 +1724,7 @@ html {
 	border: 0.2rem solid var(--m3-sys-light-error);
 }
 
-.checkbox-light-theme > div > .icon-on-checkbox {
+.checkbox-light-theme .icon-on-checkbox {
 	color: var(--m3-sys-light-on-primary);
 }
 
@@ -1750,6 +1753,10 @@ html {
 }
 
 /* CHECKBOXES / DARK */
+
+.checkbox-dark-theme .icon-on-checkbox {
+	color: var(--m3-sys-dark-on-primary);
+}
 .checkbox-default.checkbox-dark-theme {
 	background-color: var(--m3-sys-dark-primary);
 }
@@ -1767,7 +1774,7 @@ html {
 	border: 0.2rem solid var(--m3-sys-dark-error);
 }
 
-.checkbox-error.checkbox-dark-theme > .icon-on-checkbox {
+.checkbox-error.checkbox-dark-theme .icon-on-checkbox {
 	color: var(--m3-sys-dark-on-error);
 }
 
@@ -3655,7 +3662,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 }
 
 .icon-button.trailing-icon-on-text-field {
-	flex-shrink: 0;
+	height: 5.6rem;
 }
 
 /* TEXT FIELDS / LIGHT */

@@ -62,10 +62,10 @@ const IconsFrame: React.FC = () => {
 					Material Symbols and Icons
 				</a>
 			</Typography>
-			<Icon>hive</Icon>
-			<CodeSnippet>{"<Icon>hive</Icon>"}</CodeSnippet>
-			<Icon>spa</Icon>
-			<CodeSnippet>{"<Icon>spa</Icon>"}</CodeSnippet>
+			<Icon filled={true}>hive</Icon>
+			<CodeSnippet>{"<Icon filled={true}>hive</Icon>"}</CodeSnippet>
+			<Icon filled={true}>spa</Icon>
+			<CodeSnippet>{"<Icon filled={true}>spa</Icon>"}</CodeSnippet>
 			<Icon>air</Icon>
 			<CodeSnippet>{"<Icon>air</Icon>"}</CodeSnippet>
 			<Icon>water</Icon>
