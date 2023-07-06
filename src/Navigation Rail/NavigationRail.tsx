@@ -148,7 +148,12 @@ const NavigationRail: React.FC<INavigationRailProps> = ({
 						iconName={_fabIconName}
 						onClick={_fab.onClick}
 					>
-						Components
+						<Typography
+							variant="text-label-medium"
+							className={`label-on-navigation-rail label-on-navigation-rail-${_theme}`}
+						>
+							{fab.label}
+						</Typography>
 					</Fab>
 				) : null}
 			</div>
