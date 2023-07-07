@@ -67,9 +67,6 @@ const ListsFrame: React.FC = () => {
 					showDivider={true}
 					leadingElement="checkbox"
 					elementSelected={true}
-					onElementChange={() => {
-						alert("hi");
-					}}
 				></ListItem>
 				<ListItem>Item N</ListItem>
 			</List>
