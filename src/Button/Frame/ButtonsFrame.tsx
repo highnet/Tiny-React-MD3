@@ -79,7 +79,6 @@ const ButtonsFrame: React.FC = () => {
 			<Typography variant={"text-label-small"}>With Icon</Typography>
 			<Button
 				configuration="filled"
-				icon={true}
 				iconName={"search"}
 				onClick={undefined}
 			></Button>
@@ -110,7 +109,6 @@ const ButtonsFrame: React.FC = () => {
 			<Button
 				configuration="outlined"
 				onClick={undefined}
-				icon={true}
 				iconName={"search"}
 			></Button>
 			<CodeSnippet>
@@ -140,7 +138,6 @@ const ButtonsFrame: React.FC = () => {
 			<Button
 				configuration="text"
 				onClick={undefined}
-				icon={true}
 				iconName={"search"}
 			></Button>
 			<CodeSnippet>
@@ -170,7 +167,6 @@ const ButtonsFrame: React.FC = () => {
 			<Button
 				configuration="elevated"
 				onClick={undefined}
-				icon={true}
 				iconName={"search"}
 			></Button>
 			<CodeSnippet>
@@ -200,7 +196,6 @@ const ButtonsFrame: React.FC = () => {
 			<Button
 				configuration="tonal"
 				onClick={undefined}
-				icon={true}
 				iconName={"search"}
 			></Button>
 			<CodeSnippet>

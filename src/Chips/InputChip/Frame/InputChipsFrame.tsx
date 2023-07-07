@@ -87,14 +87,14 @@ const handleToggled = () => {
 				</Typography>
 				<InputChip
 					selected={true}
-					trailingIcon={true}
+					trailingIconName="close"
 					onClick={undefined}
 				></InputChip>
 				<CodeSnippet>
 					{`
 <InputChip
 	selected={true}
-	trailingIcon={true} 
+	trailingIconName="close" 
 	onClick={undefined}>
 </InputChip>`}
 				</CodeSnippet>
@@ -103,14 +103,15 @@ const handleToggled = () => {
 				</Typography>
 				<InputChip
 					selected={true}
-					leadingIcon={true}
+					leadingIconName="search"
 					onClick={undefined}
 				></InputChip>
 				<CodeSnippet>
 					{`
 <InputChip
 	selected={true}
-	leadingIcon={true} 
+	leadingIconName="search"
+	trailingIconName="close"
 	onClick={undefined}>
 </InputChip>`}
 				</CodeSnippet>
@@ -119,16 +120,16 @@ const handleToggled = () => {
 				</Typography>
 				<InputChip
 					selected={true}
-					leadingIcon={true}
-					trailingIcon={true}
+					leadingIconName="search"
+					trailingIconName="close"
 					onClick={undefined}
 				></InputChip>
 				<CodeSnippet>
 					{`
 <InputChip
 	selected={true}
-	leadingIcon={true} 
-	trailingIcon={true} 
+	leadingIconName="search"
+	trailingIconName="close"
 	onClick={undefined}>
 </InputChip>`}
 				</CodeSnippet>
@@ -137,14 +138,16 @@ const handleToggled = () => {
 				</Typography>
 				<InputChip
 					selected={true}
-					avatar={true}
+					avatarIconNameDeselected="account_circle"
+					avatarIconNameSelected="check_circle"
 					onClick={undefined}
 				></InputChip>
 				<CodeSnippet>
 					{`
 <InputChip
 	selected={true}
-	avatar={true} 
+	avatarIconNameDeselected="account_circle"
+	avatarIconNameSelected="check_circle"
 	onClick={undefined}>
 </InputChip>`}
 				</CodeSnippet>
@@ -153,16 +156,18 @@ const handleToggled = () => {
 				</Typography>
 				<InputChip
 					selected={true}
-					avatar={true}
-					trailingIcon={true}
+					avatarIconNameDeselected="account_circle"
+					avatarIconNameSelected="check_circle"
+					trailingIconName="close"
 					onClick={undefined}
 				></InputChip>
 				<CodeSnippet>
 					{`
 <InputChip
 	selected={true}
-	avatar={true} 
-	trailingIcon={true} 
+	avatarIconNameDeselected="account_circle"
+	avatarIconNameSelected="check_circle"
+	trailingIconName="close"
 	onClick={undefined}>
 </InputChip>`}
 				</CodeSnippet>

@@ -30,7 +30,6 @@ const Button: React.FC<IButtonProps> = ({
 	className,
 	onClick,
 	configuration,
-	icon,
 	iconName,
 	onMouseEnter,
 	onMouseLeave,
@@ -40,8 +39,7 @@ const Button: React.FC<IButtonProps> = ({
 	const [_id] = useState(id || undefined);
 	const [_className] = useState(className || "");
 	const [_config] = useState(configuration || "filled");
-	const [_icon] = useState(icon || false);
-	const [_iconName] = useState(iconName || "search");
+	const [_iconName] = useState(iconName || undefined);
 	const [_children] = useState(
 		children || (_disabled ? "Disabled" : "Enabled")
 	);
@@ -52,7 +50,7 @@ const Button: React.FC<IButtonProps> = ({
 	let _computedComponentClassName = new StringBuilder()
 		.add("button")
 		.add("button-" + _config)
-		.add(_icon ? "button-with-icon" : "")
+		.add(_iconName ? "button-with-icon" : "")
 		.add(_disabled ? "button-disabled" : "")
 		.add("button-" + _theme)
 		.add(_className)
@@ -68,7 +66,7 @@ const Button: React.FC<IButtonProps> = ({
 			onMouseLeave={onMouseLeave}
 			onMouseMove={onMouseMove}
 		>
-			{_icon && <Icon>{_iconName}</Icon>}
+			{_iconName && <Icon>{_iconName}</Icon>}
 			<Typography variant="text-label-large">{_children}</Typography>
 		</button>
 	);

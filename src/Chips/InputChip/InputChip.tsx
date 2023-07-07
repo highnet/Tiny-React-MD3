@@ -6,13 +6,13 @@ import Icon from "../../Icon/Icon";
 import Typography from "../../Typography/Typography";
 
 function computeNumberOfItems(
-	leadingIcon: boolean,
-	trailingIcon: boolean,
-	avatar: boolean
+	leadingIconName: string | undefined,
+	trailingIconName: string | undefined,
+	avatar: string | undefined
 ): string {
 	let computedNumberOfItems = 1;
-	if (leadingIcon && !avatar) computedNumberOfItems++;
-	if (trailingIcon) computedNumberOfItems++;
+	if (leadingIconName && !avatar) computedNumberOfItems++;
+	if (trailingIconName) computedNumberOfItems++;
 	if (avatar) computedNumberOfItems++;
 
 	const numberToStringDictionary: { [name: number]: string } = {
@@ -30,11 +30,8 @@ const InputChip: React.FC<IInputChipProps> = ({
 	children,
 	onClick,
 	selected,
-	leadingIcon,
 	leadingIconName,
-	trailingIcon,
 	trailingIconName,
-	avatar,
 	avatarIconNameDeselected,
 	avatarIconNameSelected,
 	onMouseEnter,
@@ -45,15 +42,14 @@ const InputChip: React.FC<IInputChipProps> = ({
 	const [_className] = useState(className || "");
 	const [_children] = useState(children || "Label");
 	const [_selected, setSelected] = useState(selected || false);
-	const [_leadingIcon] = useState(leadingIcon || false);
-	const [_leadingIconName] = useState(leadingIconName || "local_taxi");
-	const [_trailingIcon] = useState(trailingIcon || false);
-	const [_trailingIconName] = useState(trailingIconName || "close");
-	const [_avatar] = useState(avatar || false);
+	const [_leadingIconName] = useState(leadingIconName || undefined);
+	const [_trailingIconName] = useState(trailingIconName || undefined);
 	const [_avatarIconNameDeselected] = useState(
-		avatarIconNameDeselected || "person"
+		avatarIconNameDeselected || undefined
 	);
-	const [_avatarIconNameSelected] = useState(avatarIconNameSelected || "check");
+	const [_avatarIconNameSelected] = useState(
+		avatarIconNameSelected || undefined
+	);
 
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
@@ -67,11 +63,19 @@ const InputChip: React.FC<IInputChipProps> = ({
 		.add("inputchip")
 		.add(
 			"inputchip-" +
-				computeNumberOfItems(_leadingIcon, _trailingIcon, _avatar) +
+				computeNumberOfItems(
+					_leadingIconName,
+					_trailingIconName,
+					_avatarIconNameDeselected && _avatarIconNameSelected
+				) +
 				"-items"
 		)
 		.add("inputchip-" + (_selected ? "selected" : "deselected"))
-		.add(_avatar ? "inputchip-avatar" : "")
+		.add(
+			_avatarIconNameDeselected && _avatarIconNameSelected
+				? "inputchip-avatar"
+				: ""
+		)
 		.add("inputchip-" + _theme)
 		.add(_className)
 		.toString();
@@ -88,25 +92,20 @@ const InputChip: React.FC<IInputChipProps> = ({
 			onMouseLeave={onMouseLeave}
 			onMouseMove={onMouseMove}
 		>
-			{_avatar ? (
+			{_avatarIconNameDeselected && _avatarIconNameSelected && (
 				<Icon className="avatar-on-inputchip">
 					{_selected ? _avatarIconNameSelected : _avatarIconNameDeselected}
 				</Icon>
-			) : (
-				""
 			)}
-			{_leadingIcon && !_avatar ? (
-				<Icon className="inputchip-icon-leading">{_leadingIconName}</Icon>
-			) : (
-				""
-			)}
+			{_leadingIconName &&
+				!(_avatarIconNameDeselected && _avatarIconNameSelected) && (
+					<Icon className="inputchip-icon-leading">{_leadingIconName}</Icon>
+				)}
 			<Typography className="label-on-inputchip" variant="text-label-large">
 				{_children}
 			</Typography>
-			{_trailingIcon ? (
+			{_trailingIconName && (
 				<Icon className="inputchip-icon-trailing">{_trailingIconName}</Icon>
-			) : (
-				""
 			)}
 		</button>
 	);
