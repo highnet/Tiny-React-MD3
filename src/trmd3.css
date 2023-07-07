@@ -1971,6 +1971,8 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 .horizontaldivider {
 	display: flex;
 	width: 100%;
+	align-items: center;
+	justify-content: center;
 }
 
 .horizontaldivider-inset-right {
