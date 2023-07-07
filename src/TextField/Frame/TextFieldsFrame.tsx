@@ -75,18 +75,32 @@ function handleTextFieldChange(event: React.ChangeEvent<HTMLInputElement>) {
 				{"Value: "} {textFieldValue}
 			</Typography>
 			<Typography variant={"text-label-small"}>
-				{" "}
 				{"Valid Input: "} {isValidInput ? "True" : "False"}
 			</Typography>
 
 			<CodeSnippet>
 				{`
 <TextField
-    configuration="filled"
-    textConfiguration="input"
-	validRegex="[0-9]+"
+	configuration="filled"
+	textConfiguration="input"
+	validRegex="^$|^[0-9]+$"
+	onChange={handleTextFieldChange}
 >
+	Please Enter a Number.
 </TextField>
+<Button
+	onClick={() => {
+		alert(textFieldValue);
+	}}
+>
+	Query Value
+</Button>
+<Typography variant={"text-label-small"}>
+	{"Value: "} {textFieldValue}
+</Typography>
+<Typography variant={"text-label-small"}>
+	{"Valid Input: "} {isValidInput ? "True" : "False"}
+</Typography>
             `}
 			</CodeSnippet>
 

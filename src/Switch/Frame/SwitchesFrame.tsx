@@ -84,10 +84,18 @@ const handleSwitchChange = () => {
 			</Typography>
 			<CodeSnippet>
 				{`
-<Switch 
-	selected={true} 
-	onChange={undefined} 
-/>`}
+<Switch selected={true} onChange={handleSwitchChange} />
+<Button
+	onClick={() => {
+		alert(isSelected);
+	}}
+>
+	Query Value
+</Button>
+<Typography variant="text-label-small">
+	{"Selected: "} {isSelected ? "true" : "false"}
+</Typography>
+`}
 			</CodeSnippet>
 			<Typography variant="text-label-small">With Icon</Typography>
 			<Switch

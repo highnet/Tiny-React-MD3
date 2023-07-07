@@ -80,11 +80,15 @@ const CheckboxesFrame: React.FC = () => {
 			</Typography>
 			<CodeSnippet>
 				{`
-<Checkbox 
-	selected={true} 
-	onChange={undefined}
+<Checkbox
+	selected={true}
+	onChange={handleCheckboxChange}
 	configuration={"default"}
 />
+<Button onClick={() => alert(isChecked)}>Query Value</Button>
+<Typography variant={"text-label-small"}>
+	{isChecked ? "checked" : "unchecked"}
+</Typography>
 				`}
 			</CodeSnippet>
 			<Typography variant={"text-label-small"}>Error</Typography>
