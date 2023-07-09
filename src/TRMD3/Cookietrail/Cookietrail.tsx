@@ -32,7 +32,6 @@ const Cookietrail: React.FC = () => {
 			<div className={"cookietrail-buttons-trmd3"}>
 				<Button
 					configuration="tonal"
-					icon={true}
 					iconName={"bookmark"}
 					onClick={() =>
 						openLinkInNewTab(
@@ -45,7 +44,6 @@ const Cookietrail: React.FC = () => {
 				</Button>
 				<Button
 					configuration="tonal"
-					icon={true}
 					iconName={"menu_book"}
 					onClick={() =>
 						openLinkInNewTab(
@@ -58,7 +56,6 @@ const Cookietrail: React.FC = () => {
 				</Button>
 				<Button
 					configuration="tonal"
-					icon={true}
 					iconName={"code"}
 					onClick={() =>
 						openLinkInNewTab(
