@@ -49,6 +49,8 @@ const ListItem: React.FC<IListItemProps> = ({
 	const [_leadingIconName] = useState(iconName || "account_circle");
 	const [_trailingIconName] = useState(iconName || "chevron_right");
 	const [_imageSrc] = useState(imageSrc || "default-media-small.png");
+	const boxRef = useRef<HTMLLIElement>(null);
+	const innerCircleRef = useRef<HTMLSpanElement>(null);
 
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
@@ -124,7 +126,9 @@ const ListItem: React.FC<IListItemProps> = ({
 	const _trailingElementComponent = (
 		<div className="list-item-trailing-element-element">
 			{_trailingElement === "icon" && (
-				<IconButton id={trailingElementId} onClick={onTrailingIconClick}>{_trailingIconName}</IconButton>
+				<IconButton id={trailingElementId} onClick={onTrailingIconClick}>
+					{_trailingIconName}
+				</IconButton>
 			)}
 
 			{_trailingElement === "checkbox" &&
@@ -144,9 +148,6 @@ const ListItem: React.FC<IListItemProps> = ({
 				)}
 		</div>
 	);
-
-	const boxRef = useRef<HTMLLIElement>(null);
-	const innerCircleRef = useRef<HTMLSpanElement>(null);
 
 	useEffect(() => {
 		const box = boxRef.current;
