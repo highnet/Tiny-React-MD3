@@ -51,14 +51,6 @@ const MenuItem: React.FC<IMenuItemProps> = ({
 		}
 	};
 
-	let _computedComponentClassName = new StringBuilder()
-		.add("menu-item")
-		.add("menu-item-" + _theme)
-		.add(_showDivider ? "menu-item-with-divider" : "")
-		.add(_disabled ? "menu-item-disabled" : "")
-		.add(_className)
-		.toString();
-
 	useEffect(() => {
 		const box = boxRef.current;
 		const innerCircle = innerCircleRef.current;
@@ -90,6 +82,14 @@ const MenuItem: React.FC<IMenuItemProps> = ({
 			onClick?.(e);
 		}, 100);
 	};
+
+	let _computedComponentClassName = new StringBuilder()
+		.add("menu-item")
+		.add("menu-item-" + _theme)
+		.add(_showDivider ? "menu-item-with-divider" : "")
+		.add(_disabled ? "menu-item-disabled" : "")
+		.add(_className)
+		.toString();
 
 	return (
 		<li
