@@ -33,7 +33,6 @@ const IconButton: React.FC<IIconButtonProps> = ({
 		.add("icon-button-" + _configuration)
 		.add(_toggleAble && _selected ? "icon-button-selected" : "")
 		.add(_toggleAble && !_selected ? "icon-button-deselected" : "")
-
 		.add(disabled ? "icon-button-disabled" : "")
 		.add(_className)
 		.toString();
@@ -50,6 +49,7 @@ const IconButton: React.FC<IIconButtonProps> = ({
 	return (
 		<div
 			id={_id}
+			tabIndex={0}
 			className={_computedComponentClassName}
 			onMouseEnter={onMouseEnter}
 			onMouseLeave={onMouseLeave}
@@ -58,10 +58,9 @@ const IconButton: React.FC<IIconButtonProps> = ({
 				onClick?.(e);
 				handleClick();
 			}}
-			tabIndex={0}
 		>
 			{!_selected && <Icon>{children}</Icon>}
-			{_selected && <Icon className="material-symbols-filled">{children}</Icon>}
+			{_selected && <Icon filled={true}>{children}</Icon>}
 		</div>
 	);
 };
