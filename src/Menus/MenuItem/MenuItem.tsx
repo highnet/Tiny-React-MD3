@@ -27,6 +27,9 @@ const MenuItem: React.FC<IMenuItemProps> = ({
 	const [_trailingIcon] = useState(trailingIcon || "");
 	const [_disabled] = useState(disabled || false);
 
+	const boxRef = useRef<HTMLLIElement>(null);
+	const innerCircleRef = useRef<HTMLSpanElement>(null);
+
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
@@ -56,9 +59,6 @@ const MenuItem: React.FC<IMenuItemProps> = ({
 		.add(_className)
 		.toString();
 
-	const boxRef = useRef<HTMLLIElement>(null);
-	const innerCircleRef = useRef<HTMLSpanElement>(null);
-
 	useEffect(() => {
 		const box = boxRef.current;
 		const innerCircle = innerCircleRef.current;
@@ -87,7 +87,7 @@ const MenuItem: React.FC<IMenuItemProps> = ({
 	const handleClick = () => {
 		setTimeout(() => {
 			/* @ts-ignore */
-			onClick && onClick();
+			onClick?.(e);
 		}, 100);
 	};
 
