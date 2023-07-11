@@ -71,7 +71,7 @@ https://trmd3.com/
 ## 🔥 Deploying with [Firebase](https://firebase.google.com/)
 
 1. Go to https://firebase.google.com/ and start a Firebase project.
-2. Navigate to the Tiny-React-MD3 root folder and type `npm install -g firebase-tools` into the terminal.
+2. Navigate to the root folder and type `npm install -g firebase-tools` into the terminal.
 3. Type `firebase login` and follow the instructions to log in using the google account that created the Firebase project.
 4. Type `firebase init hosting` into the terminal. Select `Use an existing project` and choose the Firebase project from the list.
 5. Use `dist` as your public directory
@@ -87,6 +87,16 @@ https://trmd3.com/
   - [mariapalma.at](https://mariapalma.at/)
 - [Manuel 'Manucapo' Telleria](https://manucapo.me/)
   - [manucapo.me](https://manucapo.me/)
+ 
+## Using TRMD3 In Your Own Application
+
+This repository contains the minimal components required to start developing with the TRMD3 styled component design system. TRMD3 is a set of React components that are designed to work together to create a consistent and cohesive user interface.
+
+To begin, run the command: 
+<code>npm i trmd3components</code>
+
+https://github.com/highnet/TRMD3Components
+https://www.npmjs.com/package/trmd3components
 
 ## 🤖 Test Area
 This is an auxiliary repository for testing UI components in a vacuum for the Tiny-React-MD3 project.
