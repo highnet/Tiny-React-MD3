@@ -79,7 +79,7 @@ const MenuItem: React.FC<IMenuItemProps> = ({
 	const handleClick = () => {
 		setTimeout(() => {
 			/* @ts-ignore */
-			onClick?.(e);
+			onClick?.();
 		}, 100);
 	};
 
