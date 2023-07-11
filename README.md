@@ -61,14 +61,14 @@ https://trmd3.com/
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" width="52" alt="css3 logo"  />
 </div>
 
-# 🤓👆 Running your first development environment:
+## 🤓👆 Running your first development environment:
 
 1. Clone the repository and navigate to it
 2. Type `npm install` into the terminal, this will download all required dependencies
 3. Type `npm run dev` (or, if you want to expose the website to your local network, use `npm run dev -- --host` instead) into the terminal, this will create a localhost development environment
 4. That's it! Get to building and have fun!
 
-# 🔥 Deploying with [Firebase](https://firebase.google.com/)
+## 🔥 Deploying with [Firebase](https://firebase.google.com/)
 
 1. Go to https://firebase.google.com/ and start a Firebase project.
 2. Navigate to the Tiny-React-MD3 root folder and type `npm install -g firebase-tools` into the terminal.
@@ -87,6 +87,10 @@ https://trmd3.com/
   - [mariapalma.at](https://mariapalma.at/)
 - [Manuel 'Manucapo' Telleria](https://manucapo.me/)
   - [manucapo.me](https://manucapo.me/)
+
+## 🤖 Test Area
+This is an auxiliary repository for testing UI components in a vacuum for the Tiny-React-MD3 project.
+https://github.com/highnet/TRMD3ComponentTestArea/tree/main
 
 ## 🛎️ Feedback
 
