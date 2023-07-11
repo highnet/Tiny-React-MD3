@@ -41,6 +41,7 @@ const BottomAppBarsFrame: React.FC = () => {
 			<CodeSnippet>{`<BottomAppBar />`}</CodeSnippet>
 			<Typography variant={"text-label-small"}>N Icons - FAB</Typography>
 			<BottomAppBar
+				className="bottom-app-bar-on-frame-trmd3"
 				icons={[
 					{ name: "hive", label: "Hive", onClick: undefined },
 					{ name: "water", onClick: undefined },
@@ -51,15 +52,22 @@ const BottomAppBarsFrame: React.FC = () => {
 					},
 					fabIconName: "hive",
 				}}
-				className="bottom-app-bar-on-frame-trmd3"
 			/>
 			<CodeSnippet>{`
 <BottomAppBar
+	className="bottom-app-bar-on-frame-trmd3"
 	icons={[
-        { name: "search", label: "Search", onClick: undefined }
-		{ name: "water", onClick: undefined },]}
-    	fab={{ onClick: () => { alert("FAB Clicked!"); ] }}
-    />`}</CodeSnippet>
+		{ name: "hive", label: "Hive", onClick: undefined },
+		{ name: "water", onClick: undefined },
+	]}
+	fab={{
+		onClick: () => {
+			alert("FAB Clicked!");
+		},
+		fabIconName: "hive",
+	}}
+/>
+		`}</CodeSnippet>
 		</div>
 	);
 };
