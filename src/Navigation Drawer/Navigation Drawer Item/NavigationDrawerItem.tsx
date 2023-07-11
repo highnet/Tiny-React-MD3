@@ -4,7 +4,6 @@ import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { INavigationDrawerItemProps } from "./INavigationDrawerItemProps";
 import Icon from "../../Icon/Icon";
 import Typography from "../../Typography/Typography";
-import HorizontalDivider from "../../Dividers/HorizontalDivider/HorizontalDivider";
 
 const NavigationDrawerItem: React.FC<INavigationDrawerItemProps> = ({
 	className,
