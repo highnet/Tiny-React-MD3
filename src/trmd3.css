@@ -2643,6 +2643,14 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 
 /* HORIZONTAL CARDS / LIGHT */
 
+.horizontal-card-light-theme .horizontal-card-header-content-text-header {
+	color: var(--m3-sys-light-on-surface);
+}
+
+.horizontal-card-light-theme .horizontal-card-header-content-text-subhead {
+	color: var(--m3-sys-light-on-surface-variant);
+}
+
 .horizontal-card-outlined.horizontal-card-light-theme {
 	border: 0.1rem solid var(--m3-sys-light-outline-variant);
 	background-color: var(--m3-sys-light-surface);
@@ -2663,6 +2671,14 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 }
 
 /* HORIZONTAL CARDS / DARK */
+
+.horizontal-card-dark-theme .horizontal-card-header-content-text-header {
+	color: var(--m3-sys-dark-on-surface);
+}
+
+.horizontal-card-dark-theme .horizontal-card-header-content-text-subhead {
+	color: var(--m3-sys-dark-on-surface-variant);
+}
 
 .horizontal-card-outlined.horizontal-card-dark-theme {
 	border: 0.1rem solid var(--m3-sys-dark-outline-variant);
