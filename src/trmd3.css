@@ -3130,10 +3130,6 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	background-color: var(--m3-sys-light-secondary-container);
 }
 
-.navigation-rail-hamburger-menu-element-light-theme {
-	background-color: var(--m3-sys-light-on-surface-variant);
-}
-
 .label-on-navigation-rail-light-theme,
 .icon-on-navigation-rail-light-theme {
 	color: var(--m3-sys-light-on-secondary-container);
@@ -3189,10 +3185,6 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 
 .navigation-rail-dark-theme {
 	background-color: var(--m3-sys-dark-secondary-container);
-}
-
-.navigation-rail-hamburger-menu-element-dark-theme {
-	background-color: var(--m3-sys-dark-on-surface-variant);
 }
 
 .label-on-navigation-rail-dark-theme,

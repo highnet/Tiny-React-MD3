@@ -22,14 +22,10 @@ const NavigationRail: React.FC<INavigationRailProps> = ({
 	const [_fabIconName] = useState(fab?.fabIconName ?? "edit");
 	const [currentIndex, setCurrentIndex] = useState(-1);
 
+	const navigationRailRef = useRef<HTMLDivElement>(null);
+
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
-
-	let _computedComponentClassName = new StringBuilder()
-		.add("navigation-rail")
-		.add("navigation-rail-" + _theme)
-		.add(_className)
-		.toString();
 
 	interface BadgeOffsets {
 		[key: string]: {
@@ -118,8 +114,6 @@ const NavigationRail: React.FC<INavigationRailProps> = ({
 		);
 	});
 
-	const navigationRailRef = useRef<HTMLDivElement>(null);
-
 	useEffect(() => {
 		const handleResize = () => {
 			if (navigationRailRef.current) {
@@ -133,6 +127,12 @@ const NavigationRail: React.FC<INavigationRailProps> = ({
 			window.removeEventListener("resize", handleResize);
 		};
 	}, []);
+
+	let _computedComponentClassName = new StringBuilder()
+		.add("navigation-rail")
+		.add("navigation-rail-" + _theme)
+		.add(_className)
+		.toString();
 
 	return (
 		<div
@@ -163,26 +163,3 @@ const NavigationRail: React.FC<INavigationRailProps> = ({
 };
 
 export default NavigationRail;
-
-/* 
-				<div className="navigation-rail-hamburger-menu-container">
-					<div
-						className={`navigation-rail-hamburger-menu-element navigation-rail-hamburger-menu-element-${_theme}`}
-					></div>
-					<div
-						className={`navigation-rail-hamburger-menu-element navigation-rail-hamburger-menu-element-${_theme}`}
-					></div>
-					<div
-						className={`navigation-rail-hamburger-menu-element navigation-rail-hamburger-menu-element-${_theme}`}
-					></div>
-					<div
-						className={`navigation-rail-hamburger-menu-element navigation-rail-hamburger-menu-element-${_theme}`}
-					></div>
-					<div
-						className={`navigation-rail-hamburger-menu-element navigation-rail-hamburger-menu-element-${_theme}`}
-					></div>
-					<div
-						className={`navigation-rail-hamburger-menu-element navigation-rail-hamburger-menu-element-${_theme}`}
-					></div>
-				</div>
-*/
