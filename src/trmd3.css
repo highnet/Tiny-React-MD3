@@ -5350,6 +5350,7 @@ li {
 	gap: 1.2rem;
 	text-align: left;
 	justify-content: center;
+	width: 100%;
 }
 
 .label-on-navigation-drawer {
