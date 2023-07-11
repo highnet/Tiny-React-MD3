@@ -61,7 +61,7 @@ https://trmd3.com/
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" width="52" alt="css3 logo"  />
 </div>
 
-## 🤓👆 Running your first development environment:
+## 👆 Running your first development environment:
 
 1. Clone the repository and navigate to it
 2. Type `npm install` into the terminal, this will download all required dependencies
