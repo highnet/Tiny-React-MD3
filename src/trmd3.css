@@ -2568,7 +2568,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 /* ==========HORIZONTAL CARDS========== */
 
 .horizontal-card {
-	max-width: 100%;
+	max-width: 36rem;
 	height: auto;
 	overflow: clip;
 	border-radius: 1.2rem;
