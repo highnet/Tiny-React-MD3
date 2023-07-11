@@ -15,21 +15,15 @@ const NavigationDrawer: React.FC<INavigationDrawerProps> = ({
 	const [_className] = useState(className || "");
 	const [_id] = useState(id || undefined);
 
+	const navDrawerScrollRef = useRef<HTMLDivElement>(null);
+
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
-
-	let _computedComponentClassName = new StringBuilder()
-		.add("navigation-drawer")
-		.add("navigation-drawer-" + _theme)
-		.add(_className)
-		.toString();
-
-	const navDrawerScrollRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
 		const handleResize = () => {
 			if (navDrawerScrollRef.current) {
-				navDrawerScrollRef.current.classList.remove("nav-drawer-scroll-active");
+				navDrawerScrollRef.current.classList.remove("navigation-drawer-active");
 			}
 		};
 
@@ -43,15 +37,21 @@ const NavigationDrawer: React.FC<INavigationDrawerProps> = ({
 	const handleNavDrawerClick = () => {
 		setTimeout(() => {
 			if (navDrawerScrollRef.current) {
-				navDrawerScrollRef.current.classList.remove("nav-drawer-scroll-active");
+				navDrawerScrollRef.current.classList.remove("navigation-drawer-active");
 			}
 		}, 100);
 	};
 
+	let _computedComponentClassName = new StringBuilder()
+		.add("navigation-drawer")
+		.add("navigation-drawer-" + _theme)
+		.add(_className)
+		.toString();
+
 	return (
 		<div
 			id={_id}
-			className={"nav-drawer-scroll " + _computedComponentClassName}
+			className={_computedComponentClassName}
 			ref={navDrawerScrollRef}
 			onClick={handleNavDrawerClick}
 		>
