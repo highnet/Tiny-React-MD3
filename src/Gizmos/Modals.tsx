@@ -1,5 +1,4 @@
 import Button from "../Button/Button";
-import Icon from "../Icon/Icon";
 import IconButton from "../IconButton/IconButton";
 import Typography from "../Typography/Typography";
 import ReactDOMServer from "react-dom/server";
@@ -82,11 +81,6 @@ export const activateSnackBarId = (
 		let dismissString = "";
 		if (dismissable) {
 			dismissString = ReactDOMServer.renderToString(
-				/*
-				<div className="icon-container-on-snackbar">
-					<Icon className="icon-on-snackbar">close</Icon>{" "}
-				</div>
-				*/
 				<IconButton className="icon-button-on-snackbar">close</IconButton>
 			);
 		}

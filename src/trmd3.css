@@ -4374,7 +4374,7 @@ li {
 		transform: translate(-50%, -50%);
 	}
 	.snackbar-three-line {
-		transform: translate(-50%, -80%);
+		transform: translate(-50%, -50%);
 	}
 }
 
@@ -4410,7 +4410,7 @@ li {
 	flex-direction: column;
 	padding: 1.4rem 0.8rem 0rem 1.6rem;
 	align-items: end;
-	transform: translate(-40%, -80%);
+	transform: translate(-50%, -80%);
 }
 
 .actions-on-snackbar {
