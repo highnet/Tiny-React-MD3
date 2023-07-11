@@ -68,9 +68,11 @@ There are two options to start development with TRMD3, you can clone the main [T
 To begin, run the command: 
 <code>npm i trmd3components</code>
 
-
 The repository for the trmd3components npm module(https://www.npmjs.com/package/trmd3components) can be found here: https://github.com/highnet/TRMD3Components
 
+## 🤖 Test Area
+
+The TRMD3 Component Test Area is an auxiliary application, which is used for for testing UI components in a vacuum for the Tiny-React-MD3 project. The repository can be found here: https://github.com/highnet/TRMD3ComponentTestArea/tree/main
 
 ## 🔥 Deploying a TRMD3 project with [Firebase](https://firebase.google.com/)
 
@@ -91,14 +93,7 @@ The repository for the trmd3components npm module(https://www.npmjs.com/package/
   - [mariapalma.at](https://mariapalma.at/)
 - [Manuel 'Manucapo' Telleria](https://manucapo.me/)
   - [manucapo.me](https://manucapo.me/)
- 
-## 🎡 Using TRMD3 In Your Own Application
 
-
-
-## 🤖 Test Area
-This is an auxiliary repository for testing UI components in a vacuum for the Tiny-React-MD3 project.
-https://github.com/highnet/TRMD3ComponentTestArea/tree/main
 
 ## 🛎️ Feedback
 
