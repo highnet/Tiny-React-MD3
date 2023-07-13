@@ -14,7 +14,6 @@ const SnackBar: React.FC<ISnackBarProps> = ({
 	onMouseLeave,
 	onMouseMove,
 	onClick,
-	configuration,
 	message,
 	dismissable,
 	action,
@@ -22,7 +21,6 @@ const SnackBar: React.FC<ISnackBarProps> = ({
 }) => {
 	const [_className] = useState(className || "");
 	const [_id] = useState(id || undefined);
-	const [_configuration] = useState(configuration || "one-line");
 	const [_message] = useState(message || "Default message");
 	const [_dismissable] = useState(dismissable || false);
 	const [_actionLabel] = useState(actionLabel || "Action");
@@ -33,7 +31,6 @@ const SnackBar: React.FC<ISnackBarProps> = ({
 	let _computedComponentClassName = new StringBuilder()
 		.add("snackbar")
 		.add("snackbar-" + _theme)
-		.add("snackbar-" + _configuration)
 		.add(_className)
 		.toString();
 
@@ -46,21 +43,23 @@ const SnackBar: React.FC<ISnackBarProps> = ({
 			onMouseMove={onMouseMove}
 			onClick={onClick}
 		>
-			<Typography className="message-on-snackbar">{_message}</Typography>
-			<div className="actions-on-snackbar">
-				{action && (
-					<Button
-						onClick={action}
-						className="button-on-snackbar"
-						configuration="text"
-					>
-						{_actionLabel}
-					</Button>
-				)}
+			<div className="snackbar-container">
+				<Typography className="message-on-snackbar">{_message}</Typography>
+				<div className="actions-on-snackbar">
+					{action && (
+						<Button
+							onClick={action}
+							className="button-on-snackbar"
+							configuration="text"
+						>
+							{_actionLabel}
+						</Button>
+					)}
 
-				{_dismissable && (
-					<IconButton className="icon-button-on-snackbar">close</IconButton>
-				)}
+					{_dismissable && (
+						<IconButton className="icon-button-on-snackbar">close</IconButton>
+					)}
+				</div>
 			</div>
 		</div>
 	);

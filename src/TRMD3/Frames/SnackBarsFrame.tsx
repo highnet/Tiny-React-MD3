@@ -41,7 +41,6 @@ const SnackBarsFrame: React.FC = () => {
 			<Typography variant={"text-label-small"}>One Line</Typography>
 			<SnackBar
 				className="snackbar-on-frame-trmd3"
-				configuration={"one-line"}
 				action={() => {
 					alert("HI");
 				}}
@@ -49,7 +48,7 @@ const SnackBarsFrame: React.FC = () => {
 				dismissable={true}
 			/>
 
-			<SnackBar id={"snackbar-0"} configuration={"one-line"} />
+			<SnackBar id={"snackbar-0"} />
 			<Button
 				onClick={() =>
 					activateSnackBarId(
@@ -69,7 +68,6 @@ const SnackBarsFrame: React.FC = () => {
 			<CodeSnippet>{`
 <SnackBar 
 	id={"snackbar-0"} 
-	configuration={"one-line"}
 />
 <Button
 	onClick={() =>
@@ -86,104 +84,6 @@ const SnackBarsFrame: React.FC = () => {
 		}
 >
 	One Line
-</Button>`}</CodeSnippet>
-			<SnackBar id={"snackbar-1"} configuration={"two-line"} />
-			<Typography variant={"text-label-small"}>Two Line</Typography>
-			<SnackBar
-				className="snackbar-on-frame-trmd3"
-				configuration={"two-line"}
-				action={() => {
-					alert("HI");
-				}}
-				message="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-				dismissable={true}
-			/>
-			<Button
-				onClick={() =>
-					activateSnackBarId(
-						"snackbar-1",
-						3,
-						"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-						() => {
-							alert("HI");
-						},
-						"Action",
-						true
-					)
-				}
-			>
-				Two Line
-			</Button>
-			<CodeSnippet>{`
-<SnackBar 
-		id={"snackbar-1"} 
-		configuration={"two-line"} 
-/>
-<Button
-	onClick={() =>
-	activateSnackBarId(
-		"snackbar-1",
-		3,
-		"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-		() => {
-			alert("HI");
-		},
-		"Action",
-		true
-		)
-	}
->
-	Two Line
-</Button>`}</CodeSnippet>
-			<SnackBar id={"snackbar-2"} configuration={"three-line"} />
-			<Typography variant={"text-label-small"}>Three Line</Typography>
-			<SnackBar
-				className="snackbar-on-frame-trmd3"
-				configuration={"three-line"}
-				action={() => {
-					alert("HI");
-				}}
-				message="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sem nisl, vestibulum ultricies faucibus laoreet, hendrerit quis ligula."
-				dismissable={true}
-			/>
-			<Button
-				onClick={() =>
-					activateSnackBarId(
-						"snackbar-2",
-						3,
-						"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sem nisl, vestibulum ultricies faucibus laoreet, hendrerit quis ligula.",
-						() => {
-							alert("HI");
-						},
-						"Action",
-						true
-					)
-				}
-			>
-				Three Line
-			</Button>
-			<CodeSnippet>{`
-<SnackBar 
-	id={"snackbar-2"} 
-	configuration={"three-line"} 
-/>
-<Button
-	onClick={() =>
-		activateSnackBarId(
-			"snackbar-2",
-			3,
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-			Praesent sem nisl, vestibulum ultricies faucibus laoreet,
-			hendrerit quis ligula.",
-			() => {
-				alert("HI");
-			},
-			"Action",
-			true
-			)
-		}
->
-	Three Line
 </Button>`}</CodeSnippet>
 		</div>
 	);

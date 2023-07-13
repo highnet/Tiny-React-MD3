@@ -5,8 +5,6 @@ import Typography from "../../Typography/Typography";
 import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";
 import NavigationRail from "../../Navigation Rail/NavigationRail";
-import { scrollToSection } from "../../Gizmos/Scrolling";
-import { openLinkInNewTab } from "../../Gizmos/Redirection";
 
 const NavigationRailsFrame: React.FC = () => {
 	const _theme =
@@ -108,7 +106,7 @@ const NavigationRailsFrame: React.FC = () => {
 		{ name: "water", onClick : undefined, badge: { configuration: "single-digit", value: 3 } },
 		{ name: "accessibility", onClick: undefined, badge: { configuration: "single-digit", value: 3 }, label: "Accessibility" },
 		{ name: "favorite", onClick: undefined, badge: { configuration: "multiple-digits", value: 123 } },
-		{ name: "language", onClick: undefined, badge: { configuration: "multiple-digits", value: 123 } label: "Language" },
+		{ name: "language", onClick: undefined, badge: { configuration: "multiple-digits", value: 123 }, label: "Language" },
 		]}
 		fab={{
 			onClick: () => {

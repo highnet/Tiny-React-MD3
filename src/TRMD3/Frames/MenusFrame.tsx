@@ -92,7 +92,7 @@ const MenusFrame: React.FC = () => {
 				</Menu>
 			</div>
 			<CodeSnippet>{`
-<Menu className="menu-parent menu-on-frame-trmd3">
+<Menu className="menu-parent">
 	<MenuItem
 		leadingIcon="hive"
 		trailingIcon="chevron_right"

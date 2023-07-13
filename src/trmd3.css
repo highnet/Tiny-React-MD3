@@ -1035,7 +1035,6 @@ html {
 	background-color: #f8af50;
 	width: 5rem;
 	height: 5rem;
-	margin: 0 auto;
 }
 
 .visible {
@@ -1497,6 +1496,8 @@ html {
 	align-items: center;
 }
 
+/* ICONS / LIGHT THEME */
+
 /* ==========SWITCHES========== */
 .switch {
 	display: flex;
@@ -1882,6 +1883,7 @@ input[type="radio"] {
 
 .radio-button {
 	display: flex;
+	width: fit-content;
 }
 
 /* RADIO BUTTONS / DISABLED */
@@ -2768,6 +2770,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 	flex-direction: column;
 	align-items: center;
 	gap: 0.6rem;
+	width: fit-content;
 }
 
 /* FABS / LIGHT */
@@ -4309,6 +4312,7 @@ li {
 .slider-value {
 	transform: translate(0%, -125%);
 	user-select: none;
+	text-align: center;
 }
 
 .slider-thumb-tooltip-active {
@@ -4384,12 +4388,16 @@ li {
 	pointer-events: none;
 }
 
+.snackbar-container {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
 @media only screen and (max-width: 768px) {
 	.snackbar {
 		width: 80%;
-		transform: translate(-50%, -50%);
-	}
-	.snackbar-three-line {
 		transform: translate(-50%, -50%);
 	}
 }
@@ -4400,33 +4408,10 @@ li {
 	transition: opacity 0.15s ease-in-out;
 }
 
-.snackbar-one-line .message-on-snackbar {
-	max-height: 1.6rem;
-}
-.snackbar-two-line .message-on-snackbar {
-	max-height: 3.2rem;
-}
-.snackbar-three-line .message-on-snackbar {
-	max-height: 4.8rem;
-}
-
 .message-on-snackbar {
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-}
-
-.snackbar-two-line {
-	white-space: normal;
-	padding: 1.4rem 0.8rem 1.4rem 1.6rem;
-}
-
-.snackbar-three-line {
-	white-space: normal;
-	flex-direction: column;
-	padding: 1.4rem 0.8rem 0rem 1.6rem;
-	align-items: end;
-	transform: translate(-50%, -80%);
 }
 
 .actions-on-snackbar {

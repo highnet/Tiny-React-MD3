@@ -74,7 +74,7 @@ const NavigationDrawersFrame: React.FC = () => {
 			</NavigationDrawer>
 
 			<CodeSnippet>{`
-<NavigationDrawer className="navigation-drawer-on-frame-trmd3">
+<NavigationDrawer>
 	<NavigationDrawerItem label="Title" />
 	<NavigationDrawerItem label="Section Header" />
 	<NavigationDrawerItem

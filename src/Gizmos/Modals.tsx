@@ -1,7 +1,7 @@
 import Button from "../Button/Button";
 import IconButton from "../IconButton/IconButton";
 import Typography from "../Typography/Typography";
-import ReactDOMServer from "react-dom/server";
+import ReactDOM from "react-dom/client";
 
 export const openDialogId = (elementId: string) => {
 	const dialogRef = document.getElementById(elementId) as HTMLDialogElement;
@@ -64,47 +64,59 @@ export const activateSnackBarId = (
 		}
 		snackBar.classList.add("snackbar-active");
 
-		let messageString = "";
+		let messageElement = null;
 		if (message) {
-			messageString = ReactDOMServer.renderToString(
+			messageElement = (
 				<Typography className="message-on-snackbar">{message}</Typography>
 			);
 		}
-		let actionString = "";
+
+		let actionElement = null;
 		if (action) {
-			actionString = ReactDOMServer.renderToString(
-				<Button className="button-on-snackbar" configuration="text">
+			actionElement = (
+				<Button
+					className="button-on-snackbar"
+					configuration="text"
+					onClick={action}
+				>
 					{actionLabel || "Action"}
 				</Button>
 			);
 		}
-		let dismissString = "";
+
+		let dismissElement = null;
 		if (dismissable) {
-			dismissString = ReactDOMServer.renderToString(
-				<IconButton className="icon-button-on-snackbar">close</IconButton>
+			dismissElement = (
+				<IconButton
+					className="icon-button-on-snackbar"
+					onClick={() => {
+						snackBar.classList.remove("snackbar-active");
+						if (timerId) {
+							clearTimeout(timerId);
+						}
+					}}
+				>
+					close
+				</IconButton>
 			);
 		}
-		snackBar.innerHTML =
-			messageString +
-			"<div class=actions-on-snackbar>" +
-			actionString +
-			dismissString +
-			"</div>";
-		if (action) {
-			const actionButton = snackBar.querySelector(".button-on-snackbar");
-			actionButton?.addEventListener("click", action);
-		}
-		if (dismissable) {
-			const dismissDiv = snackBar.querySelector(".icon-button-on-snackbar");
-			dismissDiv?.addEventListener("click", () => {
-				snackBar.classList.remove("snackbar-active");
-				if (timerId) {
-					clearTimeout(timerId);
-				}
-			});
-		}
+
+		const root = ReactDOM.createRoot(snackBar);
+		root.render(
+			<div className="snackbar-container">
+				{messageElement}
+				<div className="actions-on-snackbar">
+					{actionElement}
+					{dismissElement}
+				</div>
+			</div>
+		);
+
 		timerId = setTimeout(() => {
 			snackBar.classList.remove("snackbar-active");
+			if (root) {
+				root.render(null);
+			}
 		}, seconds * 1000);
 	}
 };
