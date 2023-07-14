@@ -61,18 +61,19 @@ https://trmd3.com/
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" width="52" alt="css3 logo"  />
 </div>
 
-## 👆 Running your first development environment:
+## 👆 Installing TRMD3
 
-There are two options to start development with TRMD3, you can clone the main [TRMD3 repository](https://github.com/highnet/Tiny-React-MD3.git) and transform it into your own website, alternatively, you can use the [trmd3components npm module](https://www.npmjs.com/package/trmd3components), This npm module contains the minimal components required to start developing with the TRMD3 styled component design system. TRMD3 is a set of React components that are designed to work together to create a consistent and cohesive user interface.
+There are two options to start development with TRMD3, you can clone the main [TRMD3 repository](https://github.com/highnet/Tiny-React-MD3.git) and transform it into your own website, or you can use the [trmd3components npm module](https://www.npmjs.com/package/trmd3components), This npm module contains all components required to start developing with the TRMD3 styled components.
 
-To begin, run the command: 
+To begin installation, run the command:
 <code>npm i trmd3components</code>
 
-The repository for the trmd3components npm module(https://www.npmjs.com/package/trmd3components) can be found here: https://github.com/highnet/TRMD3Components
+[trmd3components npm module](https://www.npmjs.com/package/trmd3components)
+[trmd3components repository](https://github.com/highnet/TRMD3Components)
 
 ## 🤖 Test Area
 
-The TRMD3 Component Test Area is an auxiliary application, which is used for for testing UI components in a vacuum for the Tiny-React-MD3 project. The repository can be found here: https://github.com/highnet/TRMD3ComponentTestArea/tree/main
+The TRMD3 Component Test Area is an auxiliary application, which is used for for testing UI components in a vacuum for the Tiny-React-MD3 project. The Test Area repository can be found here: https://github.com/highnet/TRMD3ComponentTestArea/tree/main
 
 ## 🔥 Deploying a TRMD3 project with [Firebase](https://firebase.google.com/)
 
