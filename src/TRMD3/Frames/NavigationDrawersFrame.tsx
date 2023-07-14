@@ -1,10 +1,10 @@
-import { StringBuilder } from "../../Gizmos/StringBuilder";
-import { getPreferredScheme } from "../../Gizmos/Themeing";
+import NavigationDrawer from "trmd3components/NavigationDrawer";
+import NavigationDrawerItem from "trmd3components/NavigationDrawerItem";
+import { StringBuilder } from "trmd3components/StringBuilder";
+import { getPreferredScheme } from "trmd3components/Themeing";
+import Typography from "trmd3components/Typography";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";
-import Typography from "../../Typography/Typography";
-import NavigationDrawerItem from "../../Navigation Drawer/Navigation Drawer Item/NavigationDrawerItem";
-import NavigationDrawer from "../../Navigation Drawer/NavigationDrawer";
 
 const NavigationDrawersFrame: React.FC = () => {
 	const _theme =

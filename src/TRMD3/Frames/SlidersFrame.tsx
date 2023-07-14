@@ -1,11 +1,11 @@
 import React from "react";
-import { StringBuilder } from "../../Gizmos/StringBuilder";
-import { getPreferredScheme } from "../../Gizmos/Themeing";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";
-import Typography from "../../Typography/Typography";
-import Slider from "../../Sliders/Slider";
-import Button from "../../Button/Button";
+import Button from "trmd3components/Button";
+import Slider from "trmd3components/Slider";
+import { StringBuilder } from "trmd3components/StringBuilder";
+import { getPreferredScheme } from "trmd3components/Themeing";
+import Typography from "trmd3components/Typography";
 
 const SlidersFrame: React.FC = () => {
 	const _theme =

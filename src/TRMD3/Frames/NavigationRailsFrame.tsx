@@ -1,10 +1,10 @@
 import React from "react";
-import { getPreferredScheme } from "../../Gizmos/Themeing";
-import { StringBuilder } from "../../Gizmos/StringBuilder";
-import Typography from "../../Typography/Typography";
 import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";
-import NavigationRail from "../../Navigation Rail/NavigationRail";
+import NavigationRail from "trmd3components/NavigationRail";
+import { StringBuilder } from "trmd3components/StringBuilder";
+import { getPreferredScheme } from "trmd3components/Themeing";
+import Typography from "trmd3components/Typography";
 
 const NavigationRailsFrame: React.FC = () => {
 	const _theme =

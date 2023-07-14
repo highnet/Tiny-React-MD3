@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import Icon from "../../Icon/Icon";
-import { getPreferredScheme } from "../../Gizmos/Themeing";
-import { StringBuilder } from "../../Gizmos/StringBuilder";
 import { ICodeSnippetProps } from "./ICodeSnippetProps";
+import { getPreferredScheme } from "trmd3components/Themeing";
+import { StringBuilder } from "trmd3components/StringBuilder";
+import Icon from "trmd3components/Icon";
 
 const CodeSnippet: React.FC<ICodeSnippetProps> = ({ children, className }) => {
 	const [_children] = useState(children || "");

@@ -1,10 +1,9 @@
-import { toggleSideSheet } from "../../Gizmos/Modals";
-import { StringBuilder } from "../../Gizmos/StringBuilder";
-import { getPreferredScheme } from "../../Gizmos/Themeing";
+import SideSheet from "trmd3components/SideSheet";
+import { StringBuilder } from "trmd3components/StringBuilder";
+import { getPreferredScheme } from "trmd3components/Themeing";
+import Typography from "trmd3components/Typography";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";
-import Typography from "../../Typography/Typography";
-import SideSheet from "../../Sheets/Side Sheets/SideSheet";
 
 const SideSheetsFrame: React.FC = () => {
 	const _theme =

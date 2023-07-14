@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { StringBuilder } from "../../Gizmos/StringBuilder";
-import { getPreferredScheme } from "../../Gizmos/Themeing";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";
-import Typography from "../../Typography/Typography";
-import Checkbox from "../../Checkbox/Checkbox";
-import Button from "../../Button/Button";
+import { getPreferredScheme } from "trmd3components/Themeing";
+import { StringBuilder } from "trmd3components/StringBuilder";
+import Typography from "trmd3components/Typography";
+import Checkbox from "trmd3components/Checkbox";
+import Button from "trmd3components/Button";
 
 /* 
 	1

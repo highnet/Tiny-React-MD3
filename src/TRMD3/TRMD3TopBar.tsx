@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
-import TopAppBar from "../App Bars/Top App Bar/TopAppBar";
-import { toggleDrawerId, toggleNavRailId } from "../Gizmos/Modals";
-import { scrollToSection } from "../Gizmos/Scrolling";
-import { getPreferredScheme, toggleTheme } from "../Gizmos/Themeing";
+import { toggleDrawerId, toggleNavRailId } from "trmd3components/Modals";
+import TopAppBar from "trmd3components/TopAppBar";
 
 interface TRMD3TopBarProps {
 	handleToggleTheme: () => void;

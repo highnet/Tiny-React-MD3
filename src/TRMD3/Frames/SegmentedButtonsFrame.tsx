@@ -1,12 +1,12 @@
 import { useState } from "react";
-import Button from "../../Button/Button";
-import { StringBuilder } from "../../Gizmos/StringBuilder";
-import { getPreferredScheme } from "../../Gizmos/Themeing";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";
-import Typography from "../../Typography/Typography";
-import SegmentedButton from "../../Segmented Button/SegmentedButton";
-import SegmentedButtonGroup from "../../Segmented Button/SegmentedButtonGroup";
+import Button from "trmd3components/Button";
+import SegmentedButton from "trmd3components/SegmentedButton";
+import SegmentedButtonGroup from "trmd3components/SegmentedButtonGroup";
+import { StringBuilder } from "trmd3components/StringBuilder";
+import { getPreferredScheme } from "trmd3components/Themeing";
+import Typography from "trmd3components/Typography";
 
 const SegmentedButtonsFrame: React.FC = () => {
 	const _theme =

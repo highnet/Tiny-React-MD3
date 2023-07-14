@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { initializeApp } from "firebase/app";
 import { getDownloadURL, getStorage, ref } from "firebase/storage";
-import { getPreferredScheme } from "../../Gizmos/Themeing";
-import Typography from "../../Typography/Typography";
 import { IHeroProps } from "./IHeroProps";
-import { StringBuilder } from "../../Gizmos/StringBuilder";
+import Typography from "trmd3components/Typography";
 
 const firebaseConfig = {
 	storageBucket: "gs://tiny-react-md3.appspot.com",
@@ -17,9 +15,6 @@ const logoRef = ref(storage, "tiny-react-md3-logo.png");
 const Hero: React.FC<IHeroProps> = ({ hasLogo }) => {
 	const [_hasLogo] = useState(hasLogo || false);
 	const [logoUrl, setLogoUrl] = useState("");
-
-	const _theme =
-		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
 	useEffect(() => {
 		getDownloadURL(logoRef).then((url) => {

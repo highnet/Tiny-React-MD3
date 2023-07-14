@@ -4,11 +4,11 @@
     Each variant has three subvariants: large, medium, and small.
 */
 
-import { StringBuilder } from "../../Gizmos/StringBuilder";
-import { getPreferredScheme } from "../../Gizmos/Themeing";
+import { getPreferredScheme } from "trmd3components/Themeing";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";
-import Typography from "../../Typography/Typography";
+import { StringBuilder } from "trmd3components/StringBuilder";
+import Typography from "trmd3components/Typography";
 
 const TypographiesFrame: React.FC = () => {
 	const _theme =

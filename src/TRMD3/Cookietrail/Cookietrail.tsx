@@ -13,10 +13,10 @@
 	resources for the user.
 */
 
-import Button from "../../Button/Button";
-import { openLinkInNewTab } from "../../Gizmos/Redirection";
-import { StringBuilder } from "../../Gizmos/StringBuilder";
-import { getPreferredScheme } from "../../Gizmos/Themeing";
+import Button from "trmd3components/Button";
+import { openLinkInNewTab } from "trmd3components/Redirection";
+import { StringBuilder } from "trmd3components/StringBuilder";
+import { getPreferredScheme } from "trmd3components/Themeing";
 
 const Cookietrail: React.FC = () => {
 	const _theme =

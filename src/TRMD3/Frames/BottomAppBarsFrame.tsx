@@ -1,10 +1,10 @@
 import React from "react";
-import { getPreferredScheme } from "../../Gizmos/Themeing";
-import { StringBuilder } from "../../Gizmos/StringBuilder";
-import Typography from "../../Typography/Typography";
 import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";
-import BottomAppBar from "../../App Bars/Bottom App Bar/BottomAppBar";
+import { getPreferredScheme } from "trmd3components/Themeing";
+import { StringBuilder } from "trmd3components/StringBuilder";
+import Typography from "trmd3components/Typography";
+import BottomAppBar from "trmd3components/BottomAppBar";
 
 const BottomAppBarsFrame: React.FC = () => {
 	const _theme =

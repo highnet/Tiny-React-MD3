@@ -1,6 +1,6 @@
-import { scrollToSection } from "../Gizmos/Scrolling";
-import Menu from "../Menus/Menu";
-import MenuItem from "../Menus/MenuItem/MenuItem";
+import Menu from "trmd3components/Menu";
+import MenuItem from "trmd3components/MenuItem";
+import { scrollToSection } from "trmd3components/Scrolling";
 
 const TRMD3Menu: React.FC = () => {
 	return (

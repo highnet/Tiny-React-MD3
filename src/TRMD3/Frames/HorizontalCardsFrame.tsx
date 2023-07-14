@@ -1,9 +1,9 @@
 import React from "react";
-import { getPreferredScheme } from "../../Gizmos/Themeing";
-import { StringBuilder } from "../../Gizmos/StringBuilder";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";
-import HorizontalCard from "../../Cards/HorizontalCard/HorizontalCard";
+import HorizontalCard from "trmd3components/HorizontalCard";
+import { StringBuilder } from "trmd3components/StringBuilder";
+import { getPreferredScheme } from "trmd3components/Themeing";
 
 const HorizontalCardsFrame: React.FC = () => {
 	const _theme =
