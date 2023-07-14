@@ -38,11 +38,12 @@ import TRMD3NavDrawer from "./TRMD3/TRMD3NavDrawer/TRMD3NavDrawer";
 import TRMD3NavRail from "./TRMD3/TRMD3NavRail/TRMD3NavRail";
 import TRMD3SideSheet from "./TRMD3/TRMD3SideSheet/TRMD3SideSheet";
 import TourGuide from "./TRMD3/TourGuide/TourGuide";
+import hljs from "highlight.js";
+import "highlight.js/styles/base16/material-lighter.css";
+
 import "trmd3components/trmd3.css";
 import { scrollToSection } from "trmd3components/Scrolling";
 import { getPreferredScheme, toggleTheme } from "trmd3components/Themeing";
-import hljs from "highlight.js";
-import "highlight.js/styles/base16/material-lighter.css";
 
 function App() {
 	console.log(`👋 Welcome to TRMD3! 👋`);
