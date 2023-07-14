@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import { ICodeSnippetProps } from "./ICodeSnippetProps";
 import { getPreferredScheme } from "trmd3components/Themeing";
 import { StringBuilder } from "trmd3components/StringBuilder";
+import { ICodeSnippetProps } from "./ICodeSnippetProps.tsx";
 import Icon from "trmd3components/Icon";
 
 const CodeSnippet: React.FC<ICodeSnippetProps> = ({ children, className }) => {
