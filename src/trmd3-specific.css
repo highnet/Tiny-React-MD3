@@ -379,6 +379,10 @@ pre {
 	tab-size: 4rem;
 }
 
+.hljs-title {
+	color: #6999ff !important;
+}
+
 /* COMPONENT FRAME TITLES */
 .component-frame-title-trmd3 {
 	position: relative;
