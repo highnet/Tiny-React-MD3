@@ -3628,7 +3628,7 @@ input[type="radio"].radio-button-input-disabled.radio-button-input-dark-theme::b
 }
 
 .text-field-active-indicator {
-	width: 100%;
+	width: 21rem;
 	height: 0.1rem;
 }
 
