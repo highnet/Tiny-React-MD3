@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Icon from "../../Icon/Icon";
-import { getPreferredScheme } from "../../Gizmos/Themeing";
-import Typography from "../../Typography/Typography";
-import { openLinkInNewTab } from "../../Gizmos/Redirection";
+import Icon from "trmd3components/Icon";
+import { openLinkInNewTab } from "trmd3components/Redirection";
+import { getPreferredScheme } from "trmd3components/Themeing";
+import Typography from "trmd3components/Typography";
 
 interface IComponentFrameTitlesProps {
 	children?: React.ReactNode;

@@ -1,12 +1,11 @@
-import React, { useState } from "react";
-import Button from "../../Button/Button";
-import { StringBuilder } from "../../Gizmos/StringBuilder";
-import { getPreferredScheme } from "../../Gizmos/Themeing";
+import Button from "trmd3components/Button";
+import { activateSnackBarId } from "trmd3components/Modals";
+import SnackBar from "trmd3components/SnackBars";
+import { StringBuilder } from "trmd3components/StringBuilder";
+import { getPreferredScheme } from "trmd3components/Themeing";
+import Typography from "trmd3components/Typography";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";
-import Typography from "../../Typography/Typography";
-import SnackBar from "../../SnackBars/SnackBar";
-import { activateSnackBarId } from "../../Gizmos/Modals";
 
 const SnackBarsFrame: React.FC = () => {
 	const _theme =

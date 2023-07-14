@@ -10,10 +10,10 @@
 	Each child element also has a code block displaying the HTML code used to create it
 */
 
-import { StringBuilder } from "../../Gizmos/StringBuilder";
-import { getPreferredScheme } from "../../Gizmos/Themeing";
-import Typography from "../../Typography/Typography";
-import Icon from "../../Icon/Icon";
+import Icon from "trmd3components/Icon";
+import { StringBuilder } from "trmd3components/StringBuilder";
+import { getPreferredScheme } from "trmd3components/Themeing";
+import Typography from "trmd3components/Typography";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";
 

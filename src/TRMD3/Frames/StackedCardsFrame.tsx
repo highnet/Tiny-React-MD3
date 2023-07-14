@@ -1,10 +1,10 @@
 import React from "react";
-import { getPreferredScheme } from "../../Gizmos/Themeing";
-import { StringBuilder } from "../../Gizmos/StringBuilder";
-import StackedCard from "../../Cards/StackedCard/StackedCard";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";
-import Typography from "../../Typography/Typography";
 import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";
+import StackedCard from "trmd3components/StackedCard";
+import { StringBuilder } from "trmd3components/StringBuilder";
+import { getPreferredScheme } from "trmd3components/Themeing";
+import Typography from "trmd3components/Typography";
 
 const StackedCardsFrame: React.FC = () => {
 	const _theme =

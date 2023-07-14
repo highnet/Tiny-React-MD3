@@ -1,10 +1,10 @@
-import { getPreferredScheme } from "../../Gizmos/Themeing";
 import React from "react";
-import { StringBuilder } from "../../Gizmos/StringBuilder";
-import Typography from "../../Typography/Typography";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";
-import ExtendedFab from "../../FABs/Extended FAB/ExtendedFab";
+import { getPreferredScheme } from "trmd3components/Themeing";
+import { StringBuilder } from "trmd3components/StringBuilder";
+import Typography from "trmd3components/Typography";
+import ExtendedFab from "trmd3components/ExtendedFab";
 
 const ExtendedFabsFrame: React.FC = () => {
 	const _theme =
@@ -15,13 +15,8 @@ const ExtendedFabsFrame: React.FC = () => {
 		.add("flex-column-trmd3")
 		.add("frame-trmd3")
 		.add("frame-" + _theme + "-trmd3")
-		.add("buttons-frame-trmd3")
-		.add("buttons-frame-" + _theme + "-trmd3")
-		.toString();
-
-	let _computedTrmd3SectionTitlesClassName = new StringBuilder()
-		.add("section-title-trmd3")
-		.add("section-title-" + _theme + "-trmd3")
+		.add("extended-fabs-frame-trmd3")
+		.add("extended-fabs-frame-" + _theme + "-trmd3")
 		.toString();
 
 	return (

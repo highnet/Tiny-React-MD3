@@ -1,10 +1,9 @@
-import Component from "../../Component/Component";
-import { StringBuilder } from "../../Gizmos/StringBuilder";
-import { getPreferredScheme } from "../../Gizmos/Themeing";
+import { StringBuilder } from "trmd3components/StringBuilder";
+import { getPreferredScheme } from "trmd3components/Themeing";
+import TopAppBar from "trmd3components/TopAppBar";
+import Typography from "trmd3components/Typography";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";
-import Typography from "../../Typography/Typography";
-import TopAppBar from "../../App Bars/Top App Bar/TopAppBar";
 
 const TopAppBarsFrame: React.FC = () => {
 	const _theme =

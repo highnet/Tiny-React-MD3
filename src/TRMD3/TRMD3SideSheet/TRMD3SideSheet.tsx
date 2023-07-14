@@ -1,5 +1,5 @@
-import SideSheet from "../../Sheets/Side Sheets/SideSheet";
-import Typography from "../../Typography/Typography";
+import SideSheet from "trmd3components/SideSheet";
+import Typography from "trmd3components/Typography";
 
 const TRMD3SideSheet: React.FC = () => {
 	return (

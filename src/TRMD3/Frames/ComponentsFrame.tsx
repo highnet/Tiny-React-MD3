@@ -1,9 +1,9 @@
-import { StringBuilder } from "../../Gizmos/StringBuilder";
-import { getPreferredScheme } from "../../Gizmos/Themeing";
+import { getPreferredScheme } from "trmd3components/Themeing";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";
-import Typography from "../../Typography/Typography";
-import Component from "../../Component/Component";
+import { StringBuilder } from "trmd3components/StringBuilder";
+import Typography from "trmd3components/Typography";
+import Component from "trmd3components/Component";
 
 const ComponentsFrame: React.FC = () => {
 	const _theme =

@@ -16,13 +16,13 @@
 */
 
 import { useState } from "react";
-import { StringBuilder } from "../../Gizmos/StringBuilder";
-import { getPreferredScheme } from "../../Gizmos/Themeing";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";
-import Typography from "../../Typography/Typography";
-import Switch from "../../Switch/Switch";
-import Button from "../../Button/Button";
+import Button from "trmd3components/Button";
+import { StringBuilder } from "trmd3components/StringBuilder";
+import Switch from "trmd3components/Switch";
+import { getPreferredScheme } from "trmd3components/Themeing";
+import Typography from "trmd3components/Typography";
 
 const SwitchesFrame: React.FC = () => {
 	const _theme =

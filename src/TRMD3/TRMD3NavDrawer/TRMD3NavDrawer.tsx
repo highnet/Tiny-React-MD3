@@ -1,6 +1,6 @@
-import { scrollToSection } from "../../Gizmos/Scrolling";
-import NavigationDrawerItem from "../../Navigation Drawer/Navigation Drawer Item/NavigationDrawerItem";
-import NavigationDrawer from "../../Navigation Drawer/NavigationDrawer";
+import NavigationDrawer from "trmd3components/NavigationDrawer";
+import NavigationDrawerItem from "trmd3components/NavigationDrawerItem";
+import { scrollToSection } from "trmd3components/Scrolling";
 
 const TRMD3NavDrawer: React.FC = () => {
 	return (

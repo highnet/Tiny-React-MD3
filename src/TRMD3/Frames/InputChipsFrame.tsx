@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { StringBuilder } from "../../Gizmos/StringBuilder";
-import { getPreferredScheme } from "../../Gizmos/Themeing";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";
-import Typography from "../../Typography/Typography";
-import InputChip from "../../Chips/InputChip/InputChip";
-import Button from "../../Button/Button";
+import Button from "trmd3components/Button";
+import InputChip from "trmd3components/InputChip";
+import { StringBuilder } from "trmd3components/StringBuilder";
+import { getPreferredScheme } from "trmd3components/Themeing";
+import Typography from "trmd3components/Typography";
 
 const InputChipsFrame: React.FC = () => {
 	const _theme =

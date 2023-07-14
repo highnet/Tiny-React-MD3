@@ -1,6 +1,6 @@
-import { toggleMenuId } from "../../Gizmos/Modals";
-import { openLinkInNewTab } from "../../Gizmos/Redirection";
-import NavigationRail from "../../Navigation Rail/NavigationRail";
+import { toggleMenuId } from "trmd3components/Modals";
+import NavigationRail from "trmd3components/NavigationRail";
+import { openLinkInNewTab } from "trmd3components/Redirection";
 
 const TRMD3NavRail: React.FC = () => {
 	return (

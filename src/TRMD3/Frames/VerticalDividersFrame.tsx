@@ -1,9 +1,9 @@
-import { StringBuilder } from "../../Gizmos/StringBuilder";
-import { getPreferredScheme } from "../../Gizmos/Themeing";
+import { getPreferredScheme } from "trmd3components/Themeing";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";
-import Typography from "../../Typography/Typography";
-import VerticalDivider from "../../Dividers/VerticalDivider/VerticalDivider";
+import { StringBuilder } from "trmd3components/StringBuilder";
+import Typography from "trmd3components/Typography";
+import VerticalDivider from "trmd3components/VerticalDivider";
 
 /*
   Dividers have an inset prop that determines how much space is left on the left and right sides of the divider. The inset prop can be either

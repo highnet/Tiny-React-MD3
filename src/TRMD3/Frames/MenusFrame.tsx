@@ -1,10 +1,10 @@
-import { StringBuilder } from "../../Gizmos/StringBuilder";
-import { getPreferredScheme } from "../../Gizmos/Themeing";
+import Menu from "trmd3components/Menu";
+import MenuItem from "trmd3components/MenuItem";
+import { StringBuilder } from "trmd3components/StringBuilder";
+import { getPreferredScheme } from "trmd3components/Themeing";
+import Typography from "trmd3components/Typography";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";
-import Typography from "../../Typography/Typography";
-import Menu from "../../Menus/Menu";
-import MenuItem from "../../Menus/MenuItem/MenuItem";
 
 const MenusFrame: React.FC = () => {
 	const _theme =

@@ -1,6 +1,6 @@
-import Button from "../../Button/Button";
-import { scrollToSection } from "../../Gizmos/Scrolling";
-import { getPreferredScheme } from "../../Gizmos/Themeing";
+import Button from "trmd3components/Button";
+import { scrollToSection } from "trmd3components/Scrolling";
+import { getPreferredScheme } from "trmd3components/Themeing";
 
 const TourGuide: React.FC = () => {
 	const _theme =

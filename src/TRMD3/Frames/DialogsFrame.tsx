@@ -1,13 +1,13 @@
-import Button from "../../Button/Button";
-import { closeDialogRef, openDialogId } from "../../Gizmos/Modals";
-import { StringBuilder } from "../../Gizmos/StringBuilder";
-import { getPreferredScheme } from "../../Gizmos/Themeing";
-import List from "../../Lists/List";
-import ListItem from "../../Lists/List Items/ListItem";
+import { getPreferredScheme } from "trmd3components/Themeing";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";
-import Typography from "../../Typography/Typography";
-import Dialog from "../../Dialogs/Dialog";
+import { StringBuilder } from "trmd3components/StringBuilder";
+import Typography from "trmd3components/Typography";
+import Button from "trmd3components/Button";
+import Dialog from "trmd3components/Dialog";
+import { openDialogId } from "trmd3components/Modals";
+import List from "trmd3components/List";
+import ListItem from "trmd3components/ListItem";
 
 const DialogsFrame: React.FC = () => {
 	const _theme =

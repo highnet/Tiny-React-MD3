@@ -1,9 +1,9 @@
-import { StringBuilder } from "../../Gizmos/StringBuilder";
-import { getPreferredScheme } from "../../Gizmos/Themeing";
+import { getPreferredScheme } from "trmd3components/Themeing";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";
-import Typography from "../../Typography/Typography";
-import Carousel from "../../Carousel/Carousel";
+import { StringBuilder } from "trmd3components/StringBuilder";
+import Typography from "trmd3components/Typography";
+import Carousel from "trmd3components/Carousel";
 
 const CarouselsFrame: React.FC = () => {
 	const _theme =

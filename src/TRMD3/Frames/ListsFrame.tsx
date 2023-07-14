@@ -1,10 +1,10 @@
-import { StringBuilder } from "../../Gizmos/StringBuilder";
-import { getPreferredScheme } from "../../Gizmos/Themeing";
+import List from "trmd3components/List";
+import ListItem from "trmd3components/ListItem";
+import { StringBuilder } from "trmd3components/StringBuilder";
+import { getPreferredScheme } from "trmd3components/Themeing";
+import Typography from "trmd3components/Typography";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";
-import Typography from "../../Typography/Typography";
-import List from "../../Lists/List";
-import ListItem from "../../Lists/List Items/ListItem";
 
 const ListsFrame: React.FC = () => {
 	const _theme =

@@ -28,12 +28,12 @@
 */
 
 import React from "react";
-import Button from "../../Button/Button";
-import { getPreferredScheme } from "../../Gizmos/Themeing";
-import { StringBuilder } from "../../Gizmos/StringBuilder";
-import Typography from "../../Typography/Typography";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";
+import { getPreferredScheme } from "trmd3components/Themeing";
+import { StringBuilder } from "trmd3components/StringBuilder";
+import Typography from "trmd3components/Typography";
+import Button from "trmd3components/Button";
 
 const ButtonsFrame: React.FC = () => {
 	const _theme =
