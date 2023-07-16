@@ -24,10 +24,6 @@ const NavigationRailsFrame: React.FC = () => {
 		.add("section-title-" + _theme + "-trmd3")
 		.toString();
 
-	function handleScrollToTop() {
-		throw new Error("Function not implemented.");
-	}
-
 	return (
 		<div className={_computedFrameClassName}>
 			<Typography

@@ -18,11 +18,6 @@ const HorizontalCardsFrame: React.FC = () => {
 		.add("horizontal-cards-frame-" + _theme + "-trmd3")
 		.toString();
 
-	let _computedTrmd3SectionTitlesClassName = new StringBuilder()
-		.add("section-title-trmd3")
-		.add("section-title-" + _theme + "-trmd3")
-		.toString();
-
 	return (
 		<div className={_computedFrameClassName}>
 			{/* HORIZONTAL CARDS */}
