@@ -5,7 +5,7 @@ const TRMD3SideSheet: React.FC = () => {
 	return (
 		<SideSheet
 			title="Tiny React MD3"
-			content={
+			contents={
 				<>
 					<Typography variant="text-body-medium">
 						Quickly transform your design kit prototypes into stunning and
