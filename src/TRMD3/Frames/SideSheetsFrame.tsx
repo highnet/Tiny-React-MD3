@@ -38,7 +38,7 @@ const SideSheetsFrame: React.FC = () => {
 			<SideSheet
 				className="side-sheet-on-frame-trmd3"
 				title="Tiny React MD3"
-				content={
+				contents={
 					<>
 						<Typography variant="text-body-medium">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
@@ -61,7 +61,7 @@ const SideSheetsFrame: React.FC = () => {
     title="Tiny React MD3"
     leadingIcon={{onClick: undefined, name:"arrow_back"}} 
     trailingIcon={{onClick: undefined, name:"close"}}
-    content={
+    contents={
         <>
             <Typography variant="text-body-medium">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
