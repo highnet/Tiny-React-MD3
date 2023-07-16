@@ -61,7 +61,7 @@ const SideSheetsFrame: React.FC = () => {
     title="Tiny React MD3"
     leadingIcon={{onClick: undefined, name:"arrow_back"}} 
     trailingIcon={{onClick: undefined, name:"close"}}
-    contents={
+    content={
         <>
             <Typography variant="text-body-medium">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
