@@ -54,7 +54,6 @@ const TRMD3Menu: React.FC = () => {
 					/>
 				</Menu>
 			</MenuItem>
-
 			<MenuItem
 				trailingIcon="chevron_right"
 				leadingIcon="forms_add_on"
@@ -104,7 +103,6 @@ const TRMD3Menu: React.FC = () => {
 					/>
 				</Menu>
 			</MenuItem>
-
 			<MenuItem
 				trailingIcon="chevron_right"
 				leadingIcon="space_dashboard"
@@ -162,7 +160,6 @@ const TRMD3Menu: React.FC = () => {
 					/>
 				</Menu>
 			</MenuItem>
-
 			<MenuItem
 				trailingIcon="chevron_right"
 				leadingIcon="auto_fix"
@@ -196,7 +193,6 @@ const TRMD3Menu: React.FC = () => {
 					/>
 				</Menu>
 			</MenuItem>
-
 			<MenuItem
 				trailingIcon="chevron_right"
 				leadingIcon="format_paint"
@@ -238,7 +234,6 @@ const TRMD3Menu: React.FC = () => {
 					/>
 				</Menu>
 			</MenuItem>
-
 			<MenuItem
 				trailingIcon="chevron_right"
 				leadingIcon="handyman"

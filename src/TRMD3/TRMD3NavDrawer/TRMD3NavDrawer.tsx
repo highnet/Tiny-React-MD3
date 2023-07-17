@@ -7,7 +7,6 @@ const TRMD3NavDrawer: React.FC = () => {
 		<NavigationDrawer id="drawer-0">
 			<NavigationDrawerItem label="Components" />
 			<NavigationDrawerItem label="Action" />
-
 			<NavigationDrawerItem
 				leadingIcon="joystick"
 				label="Buttons"
@@ -44,7 +43,6 @@ const TRMD3NavDrawer: React.FC = () => {
 				}}
 			/>
 			<NavigationDrawerItem label="Input" />
-
 			<NavigationDrawerItem
 				leadingIcon="sliders"
 				label="Sliders"
@@ -124,7 +122,6 @@ const TRMD3NavDrawer: React.FC = () => {
 				}}
 			/>
 			<NavigationDrawerItem label="Feedback" />
-
 			<NavigationDrawerItem
 				leadingIcon="icecream"
 				label="Snackbars"
@@ -147,7 +144,6 @@ const TRMD3NavDrawer: React.FC = () => {
 				}}
 			/>
 			<NavigationDrawerItem label="Presentation" />
-
 			<NavigationDrawerItem
 				leadingIcon="verified"
 				label="Badges"
@@ -177,7 +173,6 @@ const TRMD3NavDrawer: React.FC = () => {
 				}}
 			/>
 			<NavigationDrawerItem label="Content" />
-
 			<NavigationDrawerItem
 				leadingIcon="credit_card"
 				label="Cards"

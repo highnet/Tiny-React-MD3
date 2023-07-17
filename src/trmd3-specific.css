@@ -80,6 +80,7 @@ html {
 }
 
 /* SINGLE-RULE-CLASSES	*/
+
 .flex-trmd3 {
 	display: flex;
 }
@@ -92,7 +93,8 @@ html {
 	flex-direction: row;
 }
 
-/* THEME TOGGLING */
+/* THEMEING */
+
 .theme-toggler-trmd3 {
 	flex-basis: 80%;
 }
@@ -102,6 +104,7 @@ html {
 }
 
 /* HERO SECTION*/
+
 .hero-section-trmd3 {
 	display: flex;
 	flex-direction: column;
@@ -132,101 +135,6 @@ html {
 	scale: 1.2;
 }
 
-/* COOKIETRAIL SECTION */
-.cookietrail-section-trmd3 {
-	margin-bottom: 0.3rem;
-	margin-right: 10%;
-	margin-left: 10%;
-}
-
-.cookietrail-buttons-trmd3 {
-	gap: 1rem;
-	display: flex;
-	flex-direction: row;
-}
-
-.cookietrail-button-trmd3 {
-	width: 100%;
-}
-
-@media (max-width: 768px) {
-	.cookietrail-buttons-trmd3 {
-		flex-direction: column;
-		width: 80%;
-		margin: 0 auto;
-	}
-}
-
-.cookietrail-section-light-theme-trmd3 {
-	color: #533566;
-}
-
-.cookietrail-section-dark-theme-trmd3 {
-	color: #ffffff;
-}
-
-/* TOURGUIDE SECTION */
-.tourguide-section-trmd3 {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	text-align: center;
-	overflow: hidden;
-	padding-left: 5%;
-	padding-right: 5%;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-}
-
-.tourguide-button {
-	display: inline-grid;
-	margin: 0.5rem;
-}
-
-/* SECTION TITLES */
-.section-title-trmd3 {
-	border-radius: 0.6rem;
-	padding: 0.5rem;
-	font-weight: bold;
-	margin: 1rem;
-}
-
-.section-title-light-theme-trmd3 {
-	color: var(--m3-sys-light-primary);
-	background-color: var(--m3-sys-light-surface-container-high);
-	box-shadow: var(--m3-elevation-light-2);
-}
-
-.section-title-dark-theme-trmd3 {
-	color: var(--m3-sys-dark-primary);
-	background-color: var(--m3-sys-dark-surface-container-high);
-	box-shadow: var(--m3-elevation-dark-2);
-}
-
-/* SECTION SUBTITLES */
-.section-subtitle-trmd3 {
-	text-align: center;
-	margin-bottom: 2rem;
-}
-
-.section-subtitle-light-theme-trmd3 {
-	color: var(--m3-sys-light-primary);
-}
-
-.section-subtitle-dark-theme-trmd3 {
-	color: var(--m3-sys-dark-primary);
-}
-
-.subsection-link-trmd3 {
-	transition: font-size 0.3s ease-in-out;
-	text-decoration: none;
-}
-
-.subsection-link-trmd3:hover {
-	text-decoration: underline;
-	font-size: 1.65rem;
-}
-
 /* FRAMES */
 .frame-trmd3 {
 	width: 90%;
@@ -253,52 +161,46 @@ html {
 	box-shadow: var(--m3-elevation-dark-1);
 }
 
-/* HORIZONTAL DIVIDERS FRAME SECTION */
-.horizontaldividers-frame-trmd3 {
-	gap: 3rem;
+.component-frame-title-trmd3 {
+	position: relative;
+	padding: 1rem 2rem 1rem 2rem;
+	border-radius: 0.6rem;
+	cursor: pointer;
+	margin: 1rem;
 }
 
-/* BADGES FRAME SECTION */
-
-/* CHECKBOXES FRAME SECTION */
-
-/* SWITCHES FRAME SECTION */
-.switches-frame-trmd3 {
-	gap: 0.5rem;
+.component-frame-title-trmd3 > .text {
+	font-weight: bold;
 }
 
-/* BUTTONS FRAME SECTION */
-.buttons-frame-trmd3 {
-	gap: 0.5rem;
+.icon-on-component-frame-title-trmd3 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-radius: 0.5rem;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out, scale 0.15s ease-in-out;
+	z-index: 100;
 }
 
-/* TYPOGRAPHIES FRAME SECTION */
-.typographies-frame-trmd3 {
-	gap: 0rem;
+.component-frame-title-trmd3:hover .icon-on-component-frame-title-trmd3 {
+	opacity: 1;
 }
 
-.typographies-subframe-trmd3 {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	padding: 2.4rem;
-	gap: 2.4rem;
-	border-radius: 1.6rem;
+.component-frame-title-trmd3:active .icon-on-component-frame-title-trmd3 {
+	scale: 1.1;
 }
 
-/* ELEVATIONS FRAME SECTION */
-.elevations-frame-trmd3 {
-	gap: 0.5rem;
+.component-frame-title-trmd3.component-frame-title-light-theme-trmd3 {
+	color: var(--m3-sys-light-primary);
+	background-color: var(--m3-sys-light-surface-container-high);
+	box-shadow: var(--m3-elevation-light-2);
 }
 
-/* ICONS FRAME SECTION */
-.icons-frame-trmd3 {
-	gap: 0.1rem;
-}
-
-/* CHIPS FRAME SECTION */
-.chips-frame-trmd3 {
-	gap: 0.5rem;
+.component-frame-title-trmd3.component-frame-title-dark-theme-trmd3 {
+	color: var(--m3-sys-dark-primary);
+	background-color: var(--m3-sys-dark-surface-container-high);
+	box-shadow: var(--m3-elevation-dark-2);
 }
 
 /* CODE SNIPPETS */
@@ -383,48 +285,7 @@ pre {
 	color: #6999ff !important;
 }
 
-/* COMPONENT FRAME TITLES */
-.component-frame-title-trmd3 {
-	position: relative;
-	padding: 1rem 2rem 1rem 2rem;
-	border-radius: 0.6rem;
-	cursor: pointer;
-	margin: 1rem;
-}
-
-.component-frame-title-trmd3 > .text {
-	font-weight: bold;
-}
-
-.icon-on-component-frame-title-trmd3 {
-	position: absolute;
-	top: 0;
-	right: 0;
-	border-radius: 0.5rem;
-	opacity: 0;
-	transition: opacity 0.3s ease-in-out, scale 0.15s ease-in-out;
-	z-index: 100;
-}
-
-.component-frame-title-trmd3:hover .icon-on-component-frame-title-trmd3 {
-	opacity: 1;
-}
-
-.component-frame-title-trmd3:active .icon-on-component-frame-title-trmd3 {
-	scale: 1.1;
-}
-
-.component-frame-title-trmd3.component-frame-title-light-theme-trmd3 {
-	color: var(--m3-sys-light-primary);
-	background-color: var(--m3-sys-light-surface-container-high);
-	box-shadow: var(--m3-elevation-light-2);
-}
-
-.component-frame-title-trmd3.component-frame-title-dark-theme-trmd3 {
-	color: var(--m3-sys-dark-primary);
-	background-color: var(--m3-sys-dark-surface-container-high);
-	box-shadow: var(--m3-elevation-dark-2);
-}
+/* TRMD3 Elements */
 
 .box {
 	width: 400px;
@@ -453,9 +314,135 @@ pre {
 	display: block;
 }
 
-/* NAVIGATION RAILS */
+/* SECTIONS */
+.cookietrail-section-trmd3 {
+	margin-bottom: 0.3rem;
+	margin-right: 10%;
+	margin-left: 10%;
+}
 
-/* BOTTOM APP BARS */
+.cookietrail-buttons-trmd3 {
+	gap: 1rem;
+	display: flex;
+	flex-direction: row;
+}
+
+.cookietrail-button-trmd3 {
+	width: 100%;
+}
+
+@media (max-width: 768px) {
+	.cookietrail-buttons-trmd3 {
+		flex-direction: column;
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
+.cookietrail-section-light-theme-trmd3 {
+	color: #533566;
+}
+
+.cookietrail-section-dark-theme-trmd3 {
+	color: #ffffff;
+}
+
+.tourguide-section-trmd3 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	overflow: hidden;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.tourguide-button {
+	display: inline-grid;
+	margin: 0.5rem;
+}
+
+.section-title-trmd3 {
+	border-radius: 0.6rem;
+	padding: 0.5rem;
+	font-weight: bold;
+	margin: 1rem;
+}
+
+.section-title-light-theme-trmd3 {
+	color: var(--m3-sys-light-primary);
+	background-color: var(--m3-sys-light-surface-container-high);
+	box-shadow: var(--m3-elevation-light-2);
+}
+
+.section-title-dark-theme-trmd3 {
+	color: var(--m3-sys-dark-primary);
+	background-color: var(--m3-sys-dark-surface-container-high);
+	box-shadow: var(--m3-elevation-dark-2);
+}
+
+.section-subtitle-trmd3 {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.section-subtitle-light-theme-trmd3 {
+	color: var(--m3-sys-light-primary);
+}
+
+.section-subtitle-dark-theme-trmd3 {
+	color: var(--m3-sys-dark-primary);
+}
+
+.subsection-link-trmd3 {
+	transition: font-size 0.3s ease-in-out;
+	text-decoration: none;
+}
+
+.subsection-link-trmd3:hover {
+	text-decoration: underline;
+	font-size: 1.65rem;
+}
+
+.horizontaldividers-frame-trmd3 {
+	gap: 3rem;
+}
+
+.switches-frame-trmd3 {
+	gap: 0.5rem;
+}
+
+.buttons-frame-trmd3 {
+	gap: 0.5rem;
+}
+
+.typographies-frame-trmd3 {
+	gap: 0rem;
+}
+
+.typographies-subframe-trmd3 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 2.4rem;
+	gap: 2.4rem;
+	border-radius: 1.6rem;
+}
+
+.elevations-frame-trmd3 {
+	gap: 0.5rem;
+}
+
+.icons-frame-trmd3 {
+	gap: 0.1rem;
+}
+
+.chips-frame-trmd3 {
+	gap: 0.5rem;
+}
+
 .bottom-app-bar-on-frame-trmd3 {
 	z-index: 1;
 }
@@ -464,7 +451,6 @@ pre {
 	justify-content: flex-end;
 }
 
-/* NAVIGATION RAILS */
 .navigation-rail-on-frame-trmd3 {
 	position: relative;
 	z-index: 1;
@@ -473,7 +459,6 @@ pre {
 	left: 0;
 }
 
-/* TOP APP BARS */
 .top-app-bar-on-frame-trmd3 {
 	position: relative;
 	z-index: 1;
@@ -485,7 +470,6 @@ pre {
 	gap: 1rem;
 }
 
-/* LISTS SECTION*/
 .lists-subframe-trmd3 {
 	display: flex;
 	align-items: center;
@@ -501,8 +485,6 @@ pre {
 	background-color: var(--m3-sys-dark-surface-container-low);
 }
 
-/* SIDE SHEETS */
-
 .side-sheet-on-frame-trmd3 {
 	position: relative;
 	z-index: 1;
@@ -514,7 +496,6 @@ pre {
 	visibility: visible;
 }
 
-/* SLIDERS */
 .sliders-subframe-trmd3 {
 	display: flex;
 	flex-direction: column;
@@ -533,12 +514,10 @@ pre {
 	background-color: var(--m3-sys-dark-surface);
 }
 
-/* SNACKBARS SECTION */
 .snackbars-frame-trmd3 {
 	gap: 1rem;
 }
 
-/* SNACKBARS */
 .snackbar-on-frame-trmd3 {
 	position: relative;
 	z-index: 1;
@@ -549,7 +528,6 @@ pre {
 	left: 0;
 }
 
-/* ICON BUTTONS SECTION */
 .icon-buttons-subframe-trmd3 {
 	display: flex;
 	flex-direction: column;
@@ -566,8 +544,6 @@ pre {
 .icon-buttons-subframe-dark-theme-trmd3 {
 	background-color: var(--m3-sys-dark-surface-container);
 }
-
-/* SEGMENTED BUTTONS SECTION */
 
 .segmented-buttons-subframe-trmd3 {
 	display: flex;
@@ -588,7 +564,6 @@ pre {
 	background-color: var(--m3-sys-dark-surface-container-low);
 }
 
-/* INPUT CHIPS SECTION */
 .input-chips-subframe-trmd3 {
 	display: flex;
 	flex-direction: column;
@@ -608,7 +583,6 @@ pre {
 	background-color: var(--m3-sys-dark-surface);
 }
 
-/* ASSIST CHIPS SECTION */
 .assist-chips-subframe-trmd3 {
 	display: flex;
 	flex-direction: column;
@@ -628,8 +602,6 @@ pre {
 	background-color: var(--m3-sys-dark-surface);
 }
 
-/* MENUS SECTION */
-
 .menu-on-frame-trmd3 {
 	position: relative;
 	left: 0;
@@ -637,7 +609,6 @@ pre {
 	z-index: 1;
 }
 
-/* NAVIGATION DRAWERS SECTION */
 .navigation-drawer-on-frame-trmd3 {
 	position: relative;
 	z-index: 10;
