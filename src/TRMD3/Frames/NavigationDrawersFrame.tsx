@@ -1,3 +1,4 @@
+import React from "react";
 import NavigationDrawer from "trmd3components/NavigationDrawer";
 import NavigationDrawerItem from "trmd3components/NavigationDrawerItem";
 import { StringBuilder } from "trmd3components/StringBuilder";
@@ -10,7 +11,7 @@ const NavigationDrawersFrame: React.FC = () => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
-	let _computedFrameClassName = new StringBuilder()
+	const _computedFrameClassName = new StringBuilder()
 		.add("flex-trmd3")
 		.add("flex-column-trmd3")
 		.add("frame-trmd3")
@@ -19,7 +20,7 @@ const NavigationDrawersFrame: React.FC = () => {
 		.add("navigation-drawers-frame-" + _theme + "-trmd3")
 		.toString();
 
-	let _computedTrmd3SectionTitlesClassName = new StringBuilder()
+	const _computedTrmd3SectionTitlesClassName = new StringBuilder()
 		.add("section-title-trmd3")
 		.add("section-title-" + _theme + "-trmd3")
 		.toString();

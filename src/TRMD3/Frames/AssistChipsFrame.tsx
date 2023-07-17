@@ -1,3 +1,4 @@
+import React from "react";
 import AssistChip from "trmd3components/AssistChip";
 import { StringBuilder } from "trmd3components/StringBuilder";
 import { getPreferredScheme } from "trmd3components/Themeing";
@@ -9,7 +10,7 @@ const AssistChipsFrame: React.FC = () => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
-	let _computedFrameClassName = new StringBuilder()
+	const _computedFrameClassName = new StringBuilder()
 		.add("flex-trmd3")
 		.add("flex-column-trmd3")
 		.add("frame-trmd3")

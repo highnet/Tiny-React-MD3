@@ -13,6 +13,7 @@
 	resources for the user.
 */
 
+import React from "react";
 import Button from "trmd3components/Button";
 import { openLinkInNewTab } from "trmd3components/Redirection";
 import { StringBuilder } from "trmd3components/StringBuilder";
@@ -22,7 +23,7 @@ const Cookietrail: React.FC = () => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
-	let _computedComponentClassName = new StringBuilder()
+	const _computedComponentClassName = new StringBuilder()
 		.add("cookietrail-section-trmd3")
 		.add("cookietrail-section-" + _theme + "-trmd3")
 		.toString();

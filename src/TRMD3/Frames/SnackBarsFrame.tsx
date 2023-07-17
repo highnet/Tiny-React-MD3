@@ -1,3 +1,4 @@
+import React from "react";
 import Button from "trmd3components/Button";
 import { activateSnackBarId } from "trmd3components/Modals";
 import SnackBar from "trmd3components/SnackBars";
@@ -11,7 +12,7 @@ const SnackBarsFrame: React.FC = () => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
-	let _computedFrameClassName = new StringBuilder()
+	const _computedFrameClassName = new StringBuilder()
 		.add("flex-trmd3")
 		.add("flex-column-trmd3")
 		.add("frame-trmd3")
@@ -20,7 +21,7 @@ const SnackBarsFrame: React.FC = () => {
 		.add("snackbars-frame-" + _theme + "-trmd3")
 		.toString();
 
-	let _computedTrmd3SectionTitlesClassName = new StringBuilder()
+	const _computedTrmd3SectionTitlesClassName = new StringBuilder()
 		.add("section-title-trmd3")
 		.add("section-title-" + _theme + "-trmd3")
 		.toString();

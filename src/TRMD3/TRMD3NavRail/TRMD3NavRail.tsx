@@ -1,3 +1,4 @@
+import React from "react";
 import { toggleMenuId } from "trmd3components/Modals";
 import NavigationRail from "trmd3components/NavigationRail";
 import { openLinkInNewTab } from "trmd3components/Redirection";

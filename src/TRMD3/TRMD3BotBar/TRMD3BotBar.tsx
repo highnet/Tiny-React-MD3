@@ -1,3 +1,4 @@
+import React from "react";
 import BottomAppBar from "trmd3components/BottomAppBar";
 import { openLinkInNewTab } from "trmd3components/Redirection";
 import { scrollToSection } from "trmd3components/Scrolling";

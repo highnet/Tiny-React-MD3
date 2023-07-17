@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { getPreferredScheme } from "trmd3components/Themeing";
@@ -12,17 +13,17 @@ const CodeSnippet: React.FC<ICodeSnippetProps> = ({ children, className }) => {
 	const handleCopy = () => {};
 	const [_className] = useState(className || "");
 
-	let _computedComponentClassName = new StringBuilder()
+	const _computedComponentClassName = new StringBuilder()
 		.add("code-snippet-trmd3")
 		.add(_className)
 		.toString();
 
-	let _computedComponentCopyIconClassName = new StringBuilder()
+	const _computedComponentCopyIconClassName = new StringBuilder()
 		.add("code-snippet-copy-icon-trmd3")
 		.add("code-snippet-copy-icon-" + _theme + "-trmd3")
 		.toString();
 
-	let _computedComponentCodeClassName = new StringBuilder()
+	const _computedComponentCodeClassName = new StringBuilder()
 		.add("language-jsx")
 		.add("code-snippet-code-trmd3")
 		.add("code-snippet-code-" + _theme + "-trmd3")

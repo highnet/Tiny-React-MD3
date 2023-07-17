@@ -10,7 +10,7 @@ const ExtendedFabsFrame: React.FC = () => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
-	let _computedFrameClassName = new StringBuilder()
+	const _computedFrameClassName = new StringBuilder()
 		.add("flex-trmd3")
 		.add("flex-column-trmd3")
 		.add("frame-trmd3")

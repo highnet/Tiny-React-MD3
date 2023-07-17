@@ -1,3 +1,4 @@
+import React from "react";
 import SideSheet from "trmd3components/SideSheet";
 import Typography from "trmd3components/Typography";
 

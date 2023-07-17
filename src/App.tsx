@@ -1,6 +1,6 @@
+import React from "react";
 import hljs from "highlight.js";
 import "highlight.js/styles/base16/material-lighter.css";
-
 import "trmd3components/trmd3.css";
 import { scrollToSection } from "trmd3components/Scrolling";
 import { getPreferredScheme, toggleTheme } from "trmd3components/Themeing";
@@ -45,7 +45,7 @@ import TRMD3SideSheet from "./TRMD3/TRMD3SideSheet/TRMD3SideSheet.tsx";
 import TRMD3TopBar from "./TRMD3/TRMD3TopBar.tsx";
 import TourGuide from "./TRMD3/TourGuide/TourGuide.tsx";
 
-function App() {
+const App: React.FC = () => {
 	console.log(`👋 Welcome to TRMD3! 👋`);
 
 	const [_theme, setTheme] = useState(
@@ -166,5 +166,5 @@ function App() {
 			<TRMD3BotBar />
 		</div>
 	);
-}
+};
 export default App;

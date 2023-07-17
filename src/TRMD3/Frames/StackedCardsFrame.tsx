@@ -10,7 +10,7 @@ const StackedCardsFrame: React.FC = () => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
-	let _computedFrameClassName = new StringBuilder()
+	const _computedFrameClassName = new StringBuilder()
 		.add("flex-trmd3")
 		.add("flex-column-trmd3")
 		.add("frame-trmd3")
@@ -19,7 +19,7 @@ const StackedCardsFrame: React.FC = () => {
 		.add("stacked-cards-frame-" + _theme + "-trmd3")
 		.toString();
 
-	let _computedTrmd3SectionTitlesClassName = new StringBuilder()
+	const _computedTrmd3SectionTitlesClassName = new StringBuilder()
 		.add("section-title-trmd3")
 		.add("section-title-" + _theme + "-trmd3")
 		.toString();

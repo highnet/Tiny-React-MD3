@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import Icon from "trmd3components/Icon";
 import { openLinkInNewTab } from "trmd3components/Redirection";

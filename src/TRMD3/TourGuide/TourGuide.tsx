@@ -1,3 +1,4 @@
+import React from "react";
 import Button from "trmd3components/Button";
 import { scrollToSection } from "trmd3components/Scrolling";
 import { getPreferredScheme } from "trmd3components/Themeing";

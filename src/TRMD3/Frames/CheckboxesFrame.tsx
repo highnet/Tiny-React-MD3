@@ -1,12 +1,3 @@
-import { useState } from "react";
-import CodeSnippet from "../CodeSnippet/CodeSnippet";
-import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";
-import { getPreferredScheme } from "trmd3components/Themeing";
-import { StringBuilder } from "trmd3components/StringBuilder";
-import Typography from "trmd3components/Typography";
-import Checkbox from "trmd3components/Checkbox";
-import Button from "trmd3components/Button";
-
 /* 
 	1
 	1682423199
@@ -23,11 +14,21 @@ import Button from "trmd3components/Button";
 	a code example inside that shows how to create the checkbox using HTML.
 */
 
+import React from "react";
+import { useState } from "react";
+import CodeSnippet from "../CodeSnippet/CodeSnippet";
+import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";
+import { getPreferredScheme } from "trmd3components/Themeing";
+import { StringBuilder } from "trmd3components/StringBuilder";
+import Typography from "trmd3components/Typography";
+import Checkbox from "trmd3components/Checkbox";
+import Button from "trmd3components/Button";
+
 const CheckboxesFrame: React.FC = () => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
-	let _computedFrameClassName = new StringBuilder()
+	const _computedFrameClassName = new StringBuilder()
 		.add("flex-trmd3")
 		.add("flex-column-trmd3")
 		.add("frame-trmd3")
@@ -36,7 +37,7 @@ const CheckboxesFrame: React.FC = () => {
 		.add("checkboxes-frame-" + _theme + "-trmd3")
 		.toString();
 
-	let _computedTrmd3SectionTitlesClassName = new StringBuilder()
+	const _computedTrmd3SectionTitlesClassName = new StringBuilder()
 		.add("section-title-trmd3")
 		.add("section-title-" + _theme + "-trmd3")
 		.toString();

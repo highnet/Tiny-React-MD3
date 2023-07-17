@@ -14,7 +14,7 @@
 	The fourth switch is similar to the second one, but also includes an icon and is labeled
 	"With Icon (Inactive)."
 */
-
+import React from "react";
 import { useState } from "react";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";
@@ -28,7 +28,7 @@ const SwitchesFrame: React.FC = () => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
-	let _computedFrameClassName = new StringBuilder()
+	const _computedFrameClassName = new StringBuilder()
 		.add("flex-trmd3")
 		.add("flex-column-trmd3")
 		.add("frame-trmd3")
@@ -37,7 +37,7 @@ const SwitchesFrame: React.FC = () => {
 		.add("switches-frame-" + _theme + "-trmd3")
 		.toString();
 
-	let _computedTrmd3SectionTitlesClassName = new StringBuilder()
+	const _computedTrmd3SectionTitlesClassName = new StringBuilder()
 		.add("section-title-trmd3")
 		.add("section-title-" + _theme + "-trmd3")
 		.toString();

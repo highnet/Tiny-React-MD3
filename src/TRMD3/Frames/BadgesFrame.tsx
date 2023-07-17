@@ -1,11 +1,3 @@
-import { getPreferredScheme } from "trmd3components/Themeing";
-import CodeSnippet from "../CodeSnippet/CodeSnippet";
-import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";
-import { StringBuilder } from "trmd3components/StringBuilder";
-import Typography from "trmd3components/Typography";
-import Component from "trmd3components/Component";
-import Badge from "trmd3components/Badge";
-
 /*  
 	1	
 	1682360238
@@ -25,11 +17,20 @@ import Badge from "trmd3components/Badge";
 	and "code" elements with the "language-html" class.
 */
 
+import React from "react";
+import { getPreferredScheme } from "trmd3components/Themeing";
+import CodeSnippet from "../CodeSnippet/CodeSnippet";
+import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";
+import { StringBuilder } from "trmd3components/StringBuilder";
+import Typography from "trmd3components/Typography";
+import Component from "trmd3components/Component";
+import Badge from "trmd3components/Badge";
+
 const BadgesFrame: React.FC = () => {
 	const _theme =
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme";
 
-	let _computedFrameClassName = new StringBuilder()
+	const _computedFrameClassName = new StringBuilder()
 		.add("flex-trmd3")
 		.add("flex-column-trmd3")
 		.add("frame-trmd3")
@@ -38,7 +39,7 @@ const BadgesFrame: React.FC = () => {
 		.add("badges-frame-" + _theme + "-trmd3")
 		.toString();
 
-	let _computedTrmd3SectionTitlesClassName = new StringBuilder()
+	const _computedTrmd3SectionTitlesClassName = new StringBuilder()
 		.add("section-title-trmd3")
 		.add("section-title-" + _theme + "-trmd3")
 		.toString();
