@@ -15,8 +15,8 @@ const NavigationDrawersFrame: React.FC = () => {
 		.add("flex-column-trmd3")
 		.add("frame-trmd3")
 		.add("frame-" + _theme + "-trmd3")
-		.add("component-frame-trmd3")
-		.add("component-frame-" + _theme + "-trmd3")
+		.add("navigation-drawers-frame-trmd3")
+		.add("navigation-drawers-frame-" + _theme + "-trmd3")
 		.toString();
 
 	let _computedTrmd3SectionTitlesClassName = new StringBuilder()
