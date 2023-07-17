@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "deploy": "tsc && vite build && firebase deploy"
+    "deploy": "tsc && vite build && firebase deploy",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
     "@types/highlight.js": "^10.1.0",
@@ -24,7 +25,11 @@
     "@types/react": "^18.0.27",
     "@types/react-copy-to-clipboard": "^5.0.4",
     "@types/react-dom": "^18.0.10",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
     "@vitejs/plugin-react": "^3.1.0",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.32.2",
     "prettier": "2.8.7",
     "rollup-plugin-terser": "^7.0.2",
     "terser": "^5.17.5",
