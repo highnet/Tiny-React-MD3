@@ -1,3 +1,30 @@
+/*
+This code represents the main component of a React application for a website called TRMD3.
+It imports various modules and components for building the user interface. The imported 
+modules include "highlight.js" for syntax highlighting, and several CSS files for styling.
+The imported components are responsible for different sections and frames of the website.
+The App component is a functional component that sets up the main structure of the website.
+It defines several state variables and event handlers using the useState and useEffect hooks
+provided by React. The state variable "_theme" is used to manage the theme of the website
+and is initialized with the value stored in the browser's local storage or the preferred
+scheme. The handleToggleTheme function toggles the theme when called, and the
+handleScrollToTop function scrolls to the top of a specific section when triggered.
+There are two useEffect hooks used in the component. The first one sets the chosen theme
+in the local storage and updates the body class of the document to reflect the selected
+theme. The second one configures the "highlight.js" library and highlights all code blocks
+on the page. The return statement of the component renders a div with the class "App" as
+the root element. It then includes various components in a specific order to construct the
+layout of the TRMD3 website. These components include the top bar, navigation rail, menu,
+navigation drawer, side sheet, and several other frames and sections of the website. The TRMD3
+website is organized into sections identified by unique IDs. Each section represents a
+specific feature or topic, and the corresponding component is rendered inside the respective
+section. The sections are arranged in the same order as the imported components. At the end
+of the component, the TRMD3BotBar component is rendered, which represents a bottom bar
+of the website. Overall, this code sets up the structure and content of the TRMD3 website
+using React components, handles theme toggling and scrolling functionality, and imports
+necessary modules and styles for proper functionality and styling.
+*/
+
 import React from "react";
 import hljs from "highlight.js";
 import "highlight.js/styles/base16/material-lighter.css";
