@@ -618,3 +618,10 @@ pre {
 	width: 40%;
 	padding-top: 0;
 }
+
+.badges-subframe-trmd3 {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}

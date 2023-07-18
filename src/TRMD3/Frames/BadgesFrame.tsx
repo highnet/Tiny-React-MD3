@@ -58,7 +58,7 @@ const BadgesFrame: React.FC = () => {
 				Badges
 			</ComponentFrameTitle>
 
-			<div>
+			<div className="badges-subframe-trmd3">
 				<div>
 					<Typography variant={"text-label-small"}>Small</Typography>
 					<Component>
