@@ -37,9 +37,7 @@ const TRMD3NavRail: React.FC = () => {
 				{
 					name: "code",
 					onClick: () => {
-						openLinkInNewTab(
-							"https://github.com/highnet/Tiny-React-MD3/tree/master/src"
-						);
+						openLinkInNewTab("https://github.com/highnet/TRMD3Components");
 					},
 					label: "Source Code",
 				},

@@ -3,6 +3,7 @@ import { initializeApp } from "firebase/app";
 import { getDownloadURL, getStorage, ref } from "firebase/storage";
 import { IHeroProps } from "./IHeroProps";
 import Typography from "trmd3components/Typography";
+import CodeSnippet from "../CodeSnippet/CodeSnippet";
 
 const firebaseConfig = {
 	storageBucket: "gs://tiny-react-md3.appspot.com",
@@ -55,6 +56,21 @@ const Hero: React.FC<IHeroProps> = ({ hasLogo }) => {
 					<Typography variant="text-headline-medium">MD3</Typography>
 				</a>
 			</div>
+			<a
+				className={"hero-link-trmd3"}
+				href="https://www.npmjs.com/package/trmd3components"
+			>
+				<Typography variant="text-title-medium">
+					🔗 TRMD3 Components npm module
+				</Typography>
+			</a>
+			<Typography variant="text-body-medium">
+				To get started with the TRMD3, you will need to have Node.js and npm
+				installed on your machine. Once you have those installed, you can
+				install the package onto your React project using npm by entering the
+				following command:
+			</Typography>
+			<CodeSnippet>npm install trmd3components</CodeSnippet>
 		</div>
 	);
 };
