@@ -3,7 +3,7 @@
 Use Tiny React MD-3 to create web apps, and experiences.
 
 <ul>
-<li>Download Tiny React MD-3 here https://github.com/highnet/Tiny-React-MD3.git</li>
+<li>Download Tiny React MD-3 here: https://www.npmjs.com/package/trmd3components</li>
 <li>Visit the trmd3 web page here: https://trmd3.com/</li>
 
 The Tiny React MD-3 Documentation helps you on your journey to learn how to use Tiny React MD-3 and its associated services. You can read it from start to finish, or use it as a reference.
