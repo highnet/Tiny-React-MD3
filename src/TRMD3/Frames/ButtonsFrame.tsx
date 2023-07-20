@@ -1,30 +1,23 @@
 /* 
-	1
-	1682423199
-
-	The code defines a functional component called ButtonsFrame. The component
-	returns a collection of buttons with different configurations (filled, outlined,
-	text, elevated, and tonal) and states (enabled or disabled) for each
-	configuration.
-
-	The component also allows the addition of icons to the buttons when desired.
-	Each button has a label indicating whether it is enabled or disabled. The
-	component uses the localStorage API to check for the theme preference set by
-	the user and applies the corresponding CSS class to the button container.
-
-	The code includes HTML and CSS classes that determine the layout and styling of
-	the buttons. The HTML is wrapped in a div container with a flex display and
-	several CSS classes that determine the layout and theme of the buttons.
-
-	The button configurations and properties are passed as props to the Button
-	component, which is imported from another module. The Button component is
-	responsible for rendering each button with its respective configuration and
-	properties. The button labels and icon names are passed as children props to
-	the Button component.
-
-	The code also includes a <pre> element containing a <code> element with the
-	HTML code that should be used to create each button, which can be copied and
-	pasted to use in other parts of the application.
+The code defines a React functional component called ButtonsFrame. This
+component represents a frame that displays different types of buttons 
+with various configurations and states. The frame is divided into sections,
+each containing a type of button (filled, outlined, text, elevated, and tonal).
+The buttons can have an icon associated with them. The component uses the
+localStorage API to check for the user's preferred theme and applies
+corresponding CSS classes to the button container to style the buttons
+accordingly. Each button is constructed using the 'Button' component
+imported from another module. The Button component is responsible for
+rendering the buttons with the specified configuration and properties. The code
+includes a set of HTML and CSS classes that determine the layout and styling
+of the buttons. The buttons are wrapped in a flexbox container with various
+CSS classes to arrange them in a specific manner. Each button's configuration,
+icon name, and click event are passed as props to the Button component,
+and the button labels and icon names are provided as children props. The code
+also includes a <pre> element with a <code> element inside it, 
+containing the HTML code snippets for each button configuration.
+These code snippets can be copied and pasted to use in other parts of the
+application.
 */
 
 import React from "react";

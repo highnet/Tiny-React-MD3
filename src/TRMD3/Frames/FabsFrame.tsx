@@ -1,3 +1,12 @@
+/*
+This component renders a frame containing Floating Action Buttons (FABs).
+It provides options for small, medium, and large size FABs in various
+configurations (primary, secondary, and tertiary). The appearance of the FABs
+is determined based on the current theme stored in the localStorage or the
+preferred scheme. The component uses the trmd3components library for Typography,
+CodeSnippet, and Fab components.
+ */
+
 import React from "react";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";

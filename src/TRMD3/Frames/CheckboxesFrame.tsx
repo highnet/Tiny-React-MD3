@@ -1,17 +1,24 @@
-/* 
-	1
-	1682423199
-
-	The code defines a function called CheckboxesFrame() that returns a div container with four different types
-	of checkboxes inside it. The appearance of the container and checkboxes is determined by several CSS classes
-	added to the className attribute of the div.
-
-	Each checkbox is represented by a Checkbox component with various props, such as selected, onChange,
-	configuration, and disabled. The props are used to specify the appearance and behavior of the checkboxes.
-
-	The checkboxes are grouped into two categories: default and error. Each category has an active and an inactive
-	checkbox. The text describing each checkbox is displayed in a div element with a label, and a pre element with
-	a code example inside that shows how to create the checkbox using HTML.
+/*
+The code defines a React functional component called CheckboxesFrame. This
+component represents a frame that displays different types of checkboxes and
+provides examples of their usage. The component includes HTML and CSS classes to
+structure and style the checkboxes. The checkboxes are arranged in a flexbox
+container with various CSS classes to define the layout and theme of the frame.
+The checkboxes are constructed using the 'Checkbox' component imported from
+another module. The Checkbox component is responsible for rendering the
+checkboxes with the specified configuration and properties. The component uses
+the 'useState' hook from React to manage the state of a checkbox. A boolean
+state variable 'isChecked' is used to track whether the checkbox is checked or
+unchecked. The component includes a set of <Typography> elements to display
+section titles and labels for the different types of checkboxes. The first
+example shows a default styled checkbox with the 'selected' prop set to true,
+indicating that the checkbox is initially checked. The checkbox can be toggled
+to change its state using the 'handleCheckboxChange' function. Below the
+checkbox, there is a 'Button' component with an onClick handler that displays
+an alert with the current value of 'isChecked'. The label "checked" or
+"unchecked" is also displayed using the 'isChecked' state variable. The second
+example demonstrates an error styled checkbox, which has a different
+visual appearance from the default checkbox.
 */
 
 import React from "react";

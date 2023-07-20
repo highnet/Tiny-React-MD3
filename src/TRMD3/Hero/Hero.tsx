@@ -1,3 +1,18 @@
+/*
+This component represents a hero section on a webpage, typically used for
+displaying introductory content. The component takes an optional 'hasLogo'
+prop to determine whether to show a logo alongside the hero content. It utilizes
+the Firebase SDK to fetch and display the logo image (if available). The hero
+section includes a main title, subtitle, and several hyperlinks to external
+resources. The 'TRMD3' text serves as the primary title, and 'Tiny React
+Material Design 3' as the subtitle. The hyperlinks point to the React
+website, the TRMD3 GitHub repository, and an MD3 Figma resource. Additionally,
+there is a link to the 'TRMD3 Components' npm module for further information.
+A code snippet is displayed, showing how to install the 'trmd3components'
+package using npm. The component uses the trmd3components library for Typography
+and CodeSnippet components.
+*/
+
 import React, { useState, useEffect } from "react";
 import { initializeApp } from "firebase/app";
 import { getDownloadURL, getStorage, ref } from "firebase/storage";

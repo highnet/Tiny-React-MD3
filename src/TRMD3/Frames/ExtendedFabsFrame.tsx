@@ -1,3 +1,16 @@
+/*
+The code imports required modules and components from various files to use in
+the ExtendedFabsFrame component. The main component is defined as a functional
+component named ExtendedFabsFrame. It doesn't take any props and is responsible
+for rendering different examples of ExtendedFab buttons. The component retrieves
+the preferred theme from local storage or uses a default theme and creates CSS
+class names for the frame based on the theme. The JSX code renders the component
+frame, displaying ExtendedFab buttons with different configurations
+(surface, primary, secondary, and tertiary) and their corresponding code snippets.
+The component demonstrates four examples of ExtendedFab buttons, each with a
+different configuration (color scheme) – surface, primary, secondary, and tertiary.
+*/
+
 import React from "react";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";

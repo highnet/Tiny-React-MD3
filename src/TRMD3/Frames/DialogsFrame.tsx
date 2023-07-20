@@ -1,3 +1,22 @@
+/*
+his React component represents a frame containing different types of dialog
+examples. The code showcases various types of dialogs, including basic dialogs,
+dialogs with hero icons, and scrollable list dialogs. The code imports required
+modules and components from various files to use in the DialogsFrame component.
+The component retrieves the preferred theme from local storage or uses a default
+theme and creates CSS class names based on the theme and other configurations.
+The JSX code renders the component frame, displaying several buttons that trigger
+different dialog examples. The first set of buttons and dialogs demonstrate basic
+dialogs with the title "Lorem Ipsum" and a supporting text. The dialog may have
+action buttons with alerts. The second set of buttons and dialogs showcase
+dialogs with hero icons (e.g., "mobile_friendly") along with the title and
+supporting text. They also include action buttons with alerts. The third and 
+fourth sets of buttons and dialogs demonstrate list dialogs with supporting
+line texts and dividers. They also include action buttons with alerts. The last
+two sets of buttons and dialogs are similar to the list dialogs, but they have
+a scrollable list to accommodate more content.
+*/
+
 import React from "react";
 import { getPreferredScheme } from "trmd3components/Themeing";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";

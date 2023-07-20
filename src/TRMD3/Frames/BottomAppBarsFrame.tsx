@@ -1,3 +1,24 @@
+/*
+This React functional component, "BottomAppBarsFrame," displays a frame
+containing examples of bottom app bars. The component first fetches the
+preferred theme from local storage or the user's system preferences and applies
+it to create dynamic class names for styling. The frame contains section titles
+and examples of bottom app bars with icons and an optional floating action
+button (FAB). "1 Icon - no FAB" Example: Displays a simple bottom app bar with
+a single icon (default settings, no FAB). The "BottomAppBar" component is
+used without any additional props. "N Icons - FAB" Example: Displays a bottom
+app bar with multiple icons and a FAB. The "BottomAppBar" component is used
+with the following props: "icons": An array of icon objects with names,
+labels (optional), and onClick functions (optional). "fab": An object
+representing the FAB with an onClick function and the FAB icon's name. The HTML
+code for each bottom app bar example is displayed below each example using the
+"CodeSnippet" component with the "language-html" class. Note: The "BottomAppBar"
+component is imported and used to render the bottom app bars with icons and FABs.
+The "Typography" component is used for displaying section titles and labels.
+The "StringBuilder" class from "trmd3components" is utilized for creating
+dynamic class names.
+*/
+
 import React from "react";
 import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";

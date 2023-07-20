@@ -6,5 +6,5 @@ as a comment block that will go at the top of the code. Write short sentences. D
 Do not use passive verbs. Keep it simple and concise. Do not repeat yourself.
 You do not need to comment on every single line of the code, and you do not
 need to explain everything, just the essentials. Just explain what really
-needs explaining and is notself-evident, making the code block 
+needs explaining and is not self-evident, making the code block 
 documentation comprehensible. 

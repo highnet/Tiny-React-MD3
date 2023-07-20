@@ -1,16 +1,14 @@
 /*
-	1
-	1682423199
-
-	The code defines a React functional component called Cookietrail, which
-	doesn't receive any properties. The component initializes a variable called
-	_theme to determine the user's preferred color scheme. The component returns a
-	div element with a class name based on the theme. The div includes two child
-	elements, each of them being a Button component with different properties such
-	as configuration, disabled, icon, iconName, onClick, and className. The Buttons
-	have icons and labels, and clicking on them opens a link in a new tab. The
-	component is likely used to display links to documentation or additional
-	resources for the user.
+This Cookietrail component represents a section that displays a set of buttons.
+The buttons are used as navigation links and include a "Read Me" button, a
+"Documentation" button, and a "Source Code" button. Each button has a
+corresponding link to external resources, and clicking on any button will
+open the link in a new browser tab. The component applies specific CSS
+classes based on the current theme obtained from local storage or the preferred
+scheme from "trmd3components/Themeing". This helps ensure consistent theming
+across the application. The buttons are styled using the "Button" component
+from "trmd3components/Button", and each button has a unique icon and label text
+associated with it.
 */
 
 import React from "react";

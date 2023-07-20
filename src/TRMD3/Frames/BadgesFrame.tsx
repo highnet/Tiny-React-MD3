@@ -1,20 +1,22 @@
 /*  
-	1	
-	1682360238
-	
-	This function returns a React component called "BadgesFrame" which displays
-	a set of badges of different configurations.
-
-	The component first gets the preferred theme from local storage or the user's
-	system preferences and applies it to the class name of the component.
-
-	The component then displays three badges of different configurations: small,
-	single-digit, and multiple-digits. The badges are displayed inside a div with
-	the class "badge-box-trmd3". Each badge has its own label and offsets for
-	positioning.
-
-	The HTML code for each badge is also displayed below each badge using the "pre"
-	and "code" elements with the "language-html" class.
+	This React functional component, "BadgesFrame," renders a collection of badges
+	of various configurations. It fetches the preferred theme from local storage
+	or the user's system preferences and uses it to build class names for styling.
+  The component displays a header with an emoji "📛" as a section title for the
+	badges. It then displays three types of badges:
+  	a) "Small" badge with a default configuration and positioned at the top-right
+		with specified x and y offsets.
+  	b) "Single-digit" badge with the value "3," positioned at the top-right
+		with specific offsets.
+  	c) "Multiple-digits" badge with the value "123," also positioned at the
+		top-right with specific offsets.
+	Each badge example is wrapped in a "Component" element for styling consistency.
+	The HTML code for each badge example is displayed below it using the
+	"CodeSnippet" component with "language-html" class. Note: The "Badge"
+	component is imported and used to render the individual badges with 
+	different configurations and positions. The "Typography" component is
+	used for displaying section titles and label text. The "StringBuilder"
+	class from "trmd3components" is utilized for creating dynamic class names.
 */
 
 import React from "react";
