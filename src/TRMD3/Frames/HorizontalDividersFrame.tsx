@@ -1,14 +1,21 @@
 /* 
-	1
-	1682423199
-
-	The code creates a React functional component called HorizontalDividersFrame.
-	The component gets the preferred color scheme of the user from localStorage.
-	The component returns a div with a combination of class names for styling.
-	The div includes several child elements that represent horizontal dividers.
-	Each child element has a different inset value for positioning.
-	Each child element has a prop for showing or hiding the insets.
-	Each child element also has a code block displaying the HTML code used to create it.
+This code defines a React functional component named HorizontalDividersFrame.
+It is responsible for rendering a frame containing various horizontal
+dividers with different insets and styles. The component imports several
+utility components from "trmd3components" and uses them to build the frame's
+layout and style. The _theme variable is determined based on the localStorage
+"theme" value or a default value if not present. The _computedFrameClassName
+variable is constructed using the StringBuilder utility, combining multiple
+class names to style the frame based on the selected theme. 
+The _computedTrmd3SectionTitlesClassName variable is constructed similarly to
+style the section titles within the frame. The JSX output of this
+component is a div with a class name based on the computed frame class name.
+It contains multiple instances of the HorizontalDivider component with
+different insets and their corresponding code snippets. Each divider is
+displayed with a section title, a link to its GitHub page, and the code
+snippet for rendering that specific divider with its props. The component
+serves as a showcase of different horizontal dividers with different inset
+options and how they can be used in the application.
 */
 
 import React from "react";

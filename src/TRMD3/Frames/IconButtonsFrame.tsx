@@ -1,3 +1,22 @@
+/*
+This code defines a React functional component named IconButtonsFrame.
+The component is used to showcase various types of IconButtons with
+different configurations and interactions. The IconButtonsFrame component
+contains multiple instances of IconButton components with different
+configurations, such as standard, filled, tonal, and outlined. Each
+IconButton represents an interactive button with an icon and is displayed
+in a specific section of the webpage. The component uses React's useState
+hook to manage the 'toggled' state, representing whether the toggleAble
+IconButton is currently selected or not. The JSX output of this component
+displays a set of IconButton examples, each with different configurations
+and interactions. The buttons can be standard, filled, tonal, or outlined,
+and some of them are toggleable, allowing users to switch between the
+selected and deselected states. In addition to the IconButton components,
+the component also displays Button and Typography components to indicate
+the current state of the toggleable IconButton and provide a "Query Value"
+button to alert the current toggled state.
+*/
+
 import React, { useState } from "react";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";
 import ComponentFrameTitle from "../ComponentFrameTitle/ComponentFrameTitle";

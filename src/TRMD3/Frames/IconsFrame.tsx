@@ -1,13 +1,16 @@
 /*
-	1
-	1682423199
-
-	The code defines a React function component called IconsFrame.
-	The component retrieves the preferred color scheme of the user from localStorage.
-	The component returns a div with a combination of class names for styling.
-	The div includes several child elements that represent icons.
-	Each child element has a class name corresponding to a Material symbol.
-	Each child element also has a code block displaying the HTML code used to create it
+This code defines a React functional component named IconsFrame. The
+component is used to display and showcase various icons on a webpage.
+The IconsFrame component imports the necessary components and utilities
+for rendering the icons, including Icon, StringBuilder, Typography, and
+CodeSnippet. The component uses React's useState hook to manage the
+'_theme' variable, which is determined based on the localStorage "theme"
+value or a default value if not present. The JSX output of this component
+displays a set of icons, each with a unique representation. The icons are
+represented by the Icon component and are displayed in a specific section
+of the webpage. The IconsFrame component also includes Typography components
+to provide a section title, subtitle, and links to external resources related
+to the icons.
 */
 
 import React from "react";
