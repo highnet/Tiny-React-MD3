@@ -1,3 +1,26 @@
+/*
+This is a React functional component called "InputChipsFrame" that represents a
+frame containing examples of the "InputChip" component. The component
+demonstrates different use cases of the "InputChip" component with various
+configurations. The frame contains multiple sections, each showcasing different
+variations of the "InputChip" component. Each section displays a code snippet
+alongside the rendered "InputChip" component with specific props. The frame's
+styling is determined based on the preferred theme, which is retrieved from
+local storage or defaults to a predefined theme. The frame is divided into
+sections, and each section demonstrates a different scenario for using the
+"InputChip" component: "Label Only" - A basic "InputChip" with only a label and
+the ability to toggle its selection state. "Label & trailing icon" - An
+"InputChip" with a label and a trailing icon. "Leading icon & label" - An
+"InputChip" with a leading icon and a label. "Leading icon, label & trailing
+icon" - An "InputChip" with both leading and trailing icons along with a label.
+"Label & avatar" - An "InputChip" with a label and an avatar icon that changes
+based on the selection state. "Label, avatar & trailing icon" - An "InputChip"
+with a label, an avatar icon, and a trailing icon. The "InputChipsFrame"
+component provides a convenient way to visualize and test different
+configurations of the "InputChip" component, making it easier for developers to
+understand and integrate the "InputChip" in their applications.
+*/
+
 import React from "react";
 import { useState } from "react";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";

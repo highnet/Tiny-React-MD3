@@ -1,3 +1,25 @@
+/*
+This component represents a frame displaying lists and list items. It uses
+various imported components from "trmd3components" library, including Typography,
+CodeSnippet, ComponentFrameTitle, List, and ListItem. The frame's appearance is
+determined by the theme, which is fetched from local storage or determined 
+based on user preference if available. The frame is divided into sections using
+Typography component with specific styling classes
+(_computedTrmd3SectionTitlesClassName). Inside the frame, there is a List
+component with a fixed height of 20rem, containing multiple ListItem components.
+Each ListItem represents a list item with different variations (size, leading
+elements, trailing elements). The CodeSnippet components within the frame are
+code snippets used to demonstrate the usage of the List and ListItem components
+with different configurations. ListItems can have different sizes (1-line, 2-line,
+or 3-line) and can show dividers between them. ListItems can have various leading
+elements (monogram, image-small, image-big, checkbox, icon, radio, switch) with
+respective configurations. Leading elements are displayed before the text
+content. ListItems can have trailing elements (checkbox, icon) with respective
+configurations. Trailing elements are displayed after the text content and can
+trigger events on user interaction. The ListItem components are accompanied by
+CodeSnippet components demonstrating their usage.
+*/
+
 import React from "react";
 import List from "trmd3components/List";
 import ListItem from "trmd3components/ListItem";
